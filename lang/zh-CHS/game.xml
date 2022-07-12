@@ -8,12 +8,12 @@
             </meta>
             <version verNum="1.1"><![CDATA[
             <b> July 11th, 2022</b>
-            • 新公会: 探索者 - 经过社区投票, 探索者在Commerceville开设了商店!<br>
-            • Unlocks a new "Survey" action in all zones - Survey progress minorly increases the number of limited resources (% * 0.5)<br>
-            • Overall Survey progress also unlocks shortcuts for new ways to move between zones<br>
-            • Bugfix: Mana well costs could become negative, subtracting mana from the player<br>
-            • Bugfix: Excursion didn't check if you had enough gold to start<br>
-            • Bugfix: Reputation display wasn't updated after fall from grace action<br>
+            • 新公会: 探索者 - 经过社区投票, 探索者在商业村庄开设了商店!<br>
+            • 在所有区域解锁了一个新的 "探索" 行动 - 探索的进度会增加有限资源的上限 (% * 0.5)<br>
+            • 全局的探索进度还为区域移动提供了更便捷的捷径<br>
+            • Bug修复: 法力井消耗可能为负, 导致反而从玩家身上吸取法力<br>
+            • Bug修复: 远行没有检查你是否有足够的金块开始<br>
+            • Bug修复: Reputation display wasn't updated after fall from grace action<br>
             • Backend: Major rework of how skill bonuses are calculated in code. The results should be the same, but make the code easier to read and maintain. Unfortunately, I expect at least a few bugs from typos in this.<br>
             ]]></version>
             <version verNum="1.0"><![CDATA[
@@ -102,29 +102,29 @@
         </changelog>
         <save>
             <meta>
-                <title>Saving</title>
+                <title>保存</title>
             </meta>
-            <manual_save>Save Manually</manual_save>
-            <export_list>Export Current List</export_list>
-            <import_list>Import List to Current</import_list>
-            <list_label>Export/Import List</list_label>
-            <list_comment>Export's the current list in a plain-text format you can paste and share with others</list_comment>
-            <input_label>Export/Import Savefile</input_label>
-            <export_button>Export</export_button>
-            <export_button_old>Export To Stopsign</export_button_old>
-            <export_comment><![CDATA[Click Export to export to your clipboard (ctrl-v somewhere else).<br>
-              Paste a save and click Import to import.]]></export_comment>
-            <import_button>Import</import_button>
+            <manual_save>立即保存</manual_save>
+            <export_list>导出当前列表</export_list>
+            <import_list>导入列表</import_list>
+            <list_label>导出/导入列表</list_label>
+            <list_comment>列表可以以纯文本形式导出，因此你可以和其他玩家分享你的列表</list_comment>
+            <input_label>导出/导入存档</input_label>
+            <export_button>导出</export_button>
+            <export_button_old>导出到Stopsign</export_button_old>
+            <export_comment><![CDATA[点击导出会把存档复制到剪贴板 (ctrl-v 粘贴到别的地方).<br>
+              粘贴一个存档然后点击导入可以导入.]]></export_comment>
+            <import_button>导入</import_button>
             <import_comment><![CDATA[
-              WARNING: Import will break the game if invalid save. Empty import will hard clear the game<br>
-              If you reaaallly want to edit your save file, ]]></import_comment>
-            <import_hover_special>hover me</import_hover_special>
+              警告: 导入无效的存档会卡死. 空的导入会清除存档<br>
+              如果你真的真的真的想编辑你的存档, ]]></import_comment>
+            <import_hover_special>悬停查看</import_hover_special>
             <import_hover_special_tooltip>
                 <![CDATA[In the console, use decode("pasted savefile"), edit, then encode('pasted savefile'), then import it<br>This is mainly for fixing broken savefiles - don't be a cheater.]]></import_hover_special_tooltip>
         </save>
         <faq>
             <meta>
-                <title>FAQ</title>
+                <title>问答</title>
                 <q_prefix><![CDATA[<b>Q:</b>]]></q_prefix>
                 <a_prefix><![CDATA[<b>A:</b>]]></a_prefix>
             </meta>
@@ -451,12 +451,12 @@
     <skills>
         <title>技能</title>
         <scombat>
-            <label>单人战斗力</label>
+            <label>个人战斗力</label>
             <desc>担任战斗力 = (战斗技能 + 火焰魔法 * 5) * (1 + (护甲 + 3 * 附魔护甲) * 制造工会倍率 / 5)</desc>
         </scombat>
         <tcombat>
             <label>团队战斗力</label>
-            <desc>团队战斗力 = 单人战斗力 + (战斗技能 + 恢复技能 * 2) * (队友 / 2) * 冒险公会乘数</desc>
+            <desc>团队战斗力 = 个人战斗力 + (战斗技能 + 恢复技能 * 2) * (队友 / 2) * 冒险公会乘数</desc>
         </tcombat>
         <combat>
             <label>战斗</label>
@@ -507,157 +507,156 @@
         <spatiomancy>
             <label>空间魔法</label>
             <desc>谁能想到空间魔法竟然这么有用!</desc>
-            <desc2><![CDATA[Mana Geyser and Mana Well are reduced to the original / (1 + level / 100).<br>
-            Houses to build increased by 1% per level from 1 - 500. <br>
-            Locked houses is increased by 0.5% per level from 101-300.<br>
-            Short quests to finish is increased by 0.5% per level from 201-400.<br>
-            Long quests to finish is increased by 0.5% per level from 301-500.<br>
-            Animals in the forest increased by 0.5% per level from 401-600.<br>
-            Herbs to gather increased by 0.5% per level from 501-700.<br>
-            Possible suckers is increased by 0.5% per level from 601-800.<br>
-            Soulstones to mine increased by 0.5% per level from 701-900.<br>
-            Artifacts to take increased by 0.5% per level from 801-1000.<br>
-            People to ask for donations increased by 0.5% per level from 901-1100.<br>
-            Buildings to check for pylons increased by 0.5% per level from 1001-1200.<br>
-            Pockets to pick increased by 0.5% per level from from 1101-1300.<br>
-            Warehouses to rob increased by 0.5% per level from 1201-1400.<br>
-            Insurance companies to defraud increased by 0.5% per level from 1301-1500.<br>
-            Currently multiplying costs by <div id='skillBonusSpatiomancy'></div>x.]]></desc2>
+            <desc2><![CDATA[法力喷泉和法力井消耗降低 初始 / (1 + 等级 / 100).<br>
+            1 - 500 每级使建造房屋增加 1% . <br>
+            101-300 每级使锁住的房子增加 0.5% .<br>
+            201-400 每级使短任务增加 0.5% .<br>
+            301-500 每级使长任务增加 0.5% .<br>
+            401-600 每级使森林中的动物增加 0.5% .<br>
+            501-700 每级使可采集的草药增加 0.5% .<br>
+            601-800 每级使好骗的人增加 0.5% .<br>
+            701-900 每级使可采集的灵魂石增加 0.5% .<br>
+            801-1000 每级使可获取的古董增加 0.5% .<br>
+            901-1100 每级使需要捐款的人增加 0.5% .<br>
+            1001-1200 每级使可以找到电缆塔的建筑增加 0.5% .<br>
+            1101-1300 每级使能捡到的钱包增加 0.5% .<br>
+            1201-1400 每级使可抢劫的仓库增加 0.5% .<br>
+            1301-1500 每级使可诈骗的保险公司增加 0.5% .<br>
+            当前可降低消耗 <div id='skillBonusSpatiomancy'></div>x.]]></desc2>
         </spatiomancy>
 		<mercantilism>
-			<label>Mercantilism</label>
-			<desc>Smooth talk your way to better rates with the mana merchants.</desc>
-			<desc2><![CDATA[Multiply the mana gain from Buy Mana by (1 + level / 60) ^ 0.25.<br>
-            Currently granting <div id='skillBonusMercantilism'></div>x mana gains.]]></desc2>
+			<label>重商主义</label>
+			<desc>和法力商人讲价以获得更好的价格.</desc>
+			<desc2><![CDATA[购买法力的法力量提高 (1 + 等级 / 60) ^ 0.25.<br>
+            当前给予 <div id='skillBonusMercantilism'></div>x 法力量.]]></desc2>
 		</mercantilism>
         <divine>
-            <label>Divine Favor</label>
-            <desc>The gods have answered your prayers and given you their blessing.</desc>
-            <desc2><![CDATA[Increases soulstones gained from actions by (1 + level / 60) ^ 0.25.<br>
-            Currently granting <div id='skillBonusDivine'></div>x soulstone gains.]]></desc2>
+            <label>神恩术</label>
+            <desc>神回应了你的祈祷并授予了神恩.</desc>
+            <desc2><![CDATA[行动获得的灵魂石增加 (1 + 等级 / 60) ^ 0.25.<br>
+            当前给予 <div id='skillBonusDivine'></div>x 灵魂石.]]></desc2>
         </divine>
         <commune>
-            <label>Communing</label>
-            <desc>Your blood sacrifices to dark beings makes it easier to communicate with them.</desc>
-            <desc2><![CDATA[Dark Ritual soulstone costs are reduced to the original / (1 + level / 100).<br>
-            Currently multiplying costs by <div id='skillBonusCommune'></div>x.]]></desc2>
+            <label>黑暗神谕</label>
+            <desc>你的血祭使你与黑暗生物的沟通更加顺畅.</desc>
+            <desc2><![CDATA[黑暗仪式的灵魂石成本降低 初始 / (1 + 等级 / 100).<br>
+            当前成本倍率 <div id='skillBonusCommune'></div>x.]]></desc2>
         </commune>
         <wunderkind>
-            <label>Wunderkind</label>
-            <desc>Even with your eyes closed, you still see the glow of the totem.</desc>
-            <desc2><![CDATA[Talent exp gain is increased by (1 + level / 60) ^ 0.25.<br>
-            Currently granting <div id='skillBonusWunderkind'></div>x talent exp.]]></desc2>
+            <label>神童</label>
+            <desc>即使你闭着眼, 你还是能看到图腾的光辉.</desc>
+            <desc2><![CDATA[天赋经验获取提高 (1 + 等级 / 60) ^ 0.25.<br>
+            当前获取 <div id='skillBonusWunderkind'></div>x 天赋经验.]]></desc2>
         </wunderkind>
         <gluttony>
-            <label>Gluttony</label>
-            <desc>The insatiable hunger of the jungle has started to rub off on you.</desc>
-            <desc2><![CDATA[Great Feast soulstone costs are reduced to the original / (1 + level / 100).<br>
-            Currently multiplying costs by <div id='skillBonusGluttony'></div>x.]]></desc2>
+            <label>暴食</label>
+            <desc>丛林中永不满足的饥饿侵蚀了你.</desc>
+            <desc2><![CDATA[盛宴灵魂石消耗降低 初始 / (1 + 等级 / 100).<br>
+            当前消耗倍率 <div id='skillBonusGluttony'></div>x.]]></desc2>
         </gluttony>
         <thievery>
-            <label>Thievery</label>
-            <desc>Allows for the redistribution of wealth.</desc>
-            <desc2><![CDATA[Increases gold gain from Pick Locks, Gamble, and Thieving Guild actions by (1 + level / 60) ^ 0.25.<br>
-            Currently granting <div id='skillBonusThievery'></div>x increased gold.]]></desc2>
+            <label>偷窃</label>
+            <desc>进行一个财富的再分配.</desc>
+            <desc2><![CDATA[提高开锁, 赌博, 以及盗贼工会的金块获取 (1 + 等级 / 60) ^ 0.25.<br>
+            当前给予 <div id='skillBonusThievery'></div>x 金块倍率.]]></desc2>
         </thievery>
         <tooltip>
-            <level>Level:</level>
-            <level_exp>Level Exp:</level_exp>
-            <no_reset_on_restart>Skills last through resets.</no_reset_on_restart>
+            <level>等级:</level>
+            <level_exp>等级经验:</level_exp>
+            <no_reset_on_restart>技能持续时间直到重置.</no_reset_on_restart>
         </tooltip>
     </skills>
     <buffs>
-        <title>Buffs</title>
+        <title>加成</title>
         <dark_ritual>
-            <label>Dark Ritual</label>
-            <desc>The witch appreciates your dedication to the dark arts. +1% to Dark Magic exp gain from the Dark Magic action (rounded down) per ritual.</desc>
-            <desc2><![CDATA[<br>Actions are 10% faster in Beginnersville per ritual from 1-20.<br>
-            Actions are 5% faster in the Forest Path per ritual from 21-40.<br>
-            Actions are 2.5% faster in Merchanton per ritual from 41-60.<br>
-            Actions are 1.5% faster in Mt. Olympus per ritual from 61-80.<br>
-            Actions are 1.0% faster in Valhalla per ritual from 81-100.<br>
-            Actions are 0.5% faster in Startington per ritual from 101-150.<br>
-            Actions are 0.5% faster in Jungle Path per ritual from 151-200.<br>
-            Actions are 0.5% faster in Commerceville per ritual from 201-250.<br>
-            Actions are 0.5% faster in Valley of Olympus per ritual from 251-300.<br>
-            Actions are 0.1% faster globally per ritual from 301-666.<br>
+            <label>黑暗仪式</label>
+            <desc>女巫感谢你对黑魔法的贡献. 每级使黑魔法行动的黑魔法经验 +1% (向下取整) .</desc>
+            <desc2><![CDATA[<br>1-20 每级使新手村的行动速度提高 10% .<br>
+            21-40 每级使森林小径的行动速度提高 5% .<br>
+            41-60 每级使商业小镇的行动速度提高 2.5% .<br>
+            61-80 每级使奥林匹斯山的行动速度提高 1.5% .<br>
+            81-100 每级使瓦尔哈拉的行动速度提高 1.0% .<br>
+            101-150 每级使初始小镇的行动速度提高 0.5% .<br>
+            151-200 每级使丛林小路的行动速度提高 0.5% .<br>
+            201-250 每级使商业村庄的行动速度提高 0.5% .<br>
+            251-300 每级使山谷的行动速度提高 0.5% .<br>
+            301-666 每级使全局的行动速度提高 0.1% .<br>
             ]]></desc2>
         </dark_ritual>
         <imbue_mind>
-            <label>Imbue Mind</label>
-            <desc><![CDATA[Using power from soulstones, you can increase your mental prowess.<br>
-            Increases the max amount of times you can do each training action by 1 per level and improves some actions.]]>
+            <label>精神灌注</label>
+            <desc><![CDATA[使用灵魂石的力量, 你可以增强你的精神力.<br>
+            每级使你能做的训练次数上限增加 1 且会加成一些其他行动.]]>
             </desc>
         </imbue_mind>
         <imbue_body>
-            <label>Imbue Body</label>
-            <desc><![CDATA[By sacrificing your accumulated talent, you can permanently improve yourself.<br>
-            At the start of a new loop, all stats begin at Imbue Body level.]]>
+            <label>躯体灌注</label>
+            <desc><![CDATA[献祭你积累的天赋, 你可以永久的提高自己的能力.<br>
+            每次新的循环开始, 所有能力从躯体灌注的等级开始.]]>
             </desc>
         </imbue_body>
          <great_feast>
-            <label>Great Feast</label>
-            <desc><![CDATA[That feast was so filling that it manages to keep you well satiated through your loops! That's some impressive magic.<br>
-            Self combat is increased by 5% per level. (rounded down)]]>
+            <label>盛宴</label>
+            <desc><![CDATA[丰盛的盛宴使你整个循环都不会感到饥饿! 真是让人印象深刻的魔法.<br>
+            每级使个人战斗力提高 5% . (向下取整)]]>
             </desc>
         </great_feast>
         <aspirant>
-            <label>Aspirant</label>
-            <desc><![CDATA[Reaching new heights in the spire fills your mind and soul with vigor and clarity.<br>
-            Talent Exp gain is increased by 1% per level.]]>
+            <label>野心家</label>
+            <desc><![CDATA[抵达尖塔新的高度使你的头脑和灵魂焕然一新.<br>
+            每级使天赋经验获取提高 1% .]]>
             </desc>
         </aspirant>
         <imbue_soul>
-            <label>Imbue Soul</label>
-            <desc><![CDATA[(Incomplete) Sacrifice everything for the ultimate power.<br>
-            Increases all action speed by 50% per level (additively).
+            <label>灵魂灌注</label>
+            <desc><![CDATA[(未完成) 献祭所有东西以获得强大的加成.<br>
+            每级使所有行动加速 50% (加法计算).
             ]]></desc>
         </imbue_soul>
         <tooltip>
-            <level>Level</level>
-            <no_reset_on_restart><![CDATA[Buffs last through resets.<br>You can click on the right hand number to edit it and adjust the cap for that buff. (buff actions will automatically fail and not spend soulstones past your set cap)]]></no_reset_on_restart>
+            <level>等级</level>
+            <no_reset_on_restart><![CDATA[加成将持续到重置.<br>你可以右键点击来编辑它，并设置上限. (当加成抵达上限时行动会自动失败且不会消耗灵魂石)]]></no_reset_on_restart>
         </tooltip>
     </buffs>
     <towns>
         <town0>
-            <name>Beginnersville</name>
-            <desc>Rats in basements, aggressive solo boars, bouncing slimes, and strangers that love exposition are some
-                of the the common things you'll see around Beginnersville. Some people are missing helmets or shoes, and
-                the fanciest sword around is still made out of iron. You got lucky with decent towns to start looping at.
-                If only there weren't so many rules not letting you do dangerous things, it'd be perfect.
+            <name>新手村</name>
+            <desc>地下室里的老鼠、咄咄逼人的野猪、蹦蹦跳跳的史莱姆和喜欢诉说的陌生人都是你在新手村随处可见的东西.
+                有些人甚至没有戴头盔或者没有穿鞋子，但至少剑还是铁制的. 你很庆幸至少你是在一个体面的城市开始循环.
+                如果没有那些不允许你做危险的事的一大堆规矩，那就完美了.
             </desc>
         </town0>
         <town1>
-            <name>Forest Path</name>
-            <desc>A forever green forest. You feel mana flowing around, but hiding in the dark, you sense an evil presence...</desc>
+            <name>森林小径</name>
+            <desc>仿佛永远是绿色的森林. 你感觉到了空气中有法力弥漫, 但它们的源头隐藏在黑暗中, 你还感觉到了一些邪恶的存在...</desc>
         </town1>
         <town2>
-            <name>Merchanton</name>
-            <desc>Merchanton! A modest town bustling with activity. You can find many attractions here, such as the library, the adventuring guild, the crafting guild, and the bazaar. Oh, and did I mention there's loads of suckers to swindle?</desc>
+            <name>商业小镇</name>
+            <desc>商业小镇! 一个熙熙攘攘的普通小镇. 你可以在这里找到很多特殊建筑物, 像是图书馆, 冒险公会, 制造公会, 还有集市. 噢, 我差点忘了说了, 赌场里还有很多容易上当的家伙.</desc>
         </town2>
         <town3>
-            <name>Mt. Olympus</name>
-            <desc>You could have taken that path to the other town, but no! You just <i>had</i> to go to Mt. Olympus, didn't you. But anyways, while you're here, thanks to being neither a canine nor old, you can learn a few new tricks. And kill some innocent trolls while you're at it.</desc>
+            <name>奥林匹斯山</name>
+            <desc>你可以去其他小镇, 但不! 你 <i>必须</i> 前往奥林匹斯山, 不是吗. 但不管怎么说, 当你来到这里, 只要你不是小狗或者老爷爷, 你就可以学到一些新的小技巧. 然后顺手杀死一些无辜的巨魔.</desc>
         </town3>
         <town4>
-            <name>Valhalla</name>
-            <desc>A sprawling and jolly city filled with all manner of nice things. Vikings, beer, angels, beer, blah blah blah, and beer! You can spend your time in the great hall, or in the outskirts of the city. Either way, you'll surely have a great time.</desc>
+            <name>瓦尔哈拉</name>
+            <desc>一个到处都是美好事物的快乐城市. 维京人, 熊, 天使, 啤酒, 各种乱七八糟的东西, 还有啤酒! 你可以在大会堂里消磨时间, 或者前往城市的郊区. 不管你去哪, 你都肯定能度过一段愉快的时光.</desc>
         </town4>
         <town5>
-            <name>Startington</name>
-            <desc>A once familiar place, now crawling with shadows and ominous feelings of wasted sick days. There stands a large pillar of gloomy purple light in the center of it all, eminating from a spire surrounded by black clouds. It's emitting 10 weak beams of purple light to various points around the town, and appears to be casting all the shadows. Maybe you should check those spots out.</desc>
+            <name>初始小镇</name>
+            <desc>一个似曾相识的地方, 但这里遍布着匍匐的阴影和不详的气息. 在中心矗立着一个被乌云环绕的尖塔, 笼罩在昏暗的紫色光柱之下. 有 10 束紫光射向城镇周围, 似乎是那些阴影的源头. 也许你该去检查一下它们.</desc>
         </town5>
         <town6>
-            <name>Jungle Path</name>
-            <desc>A twisting jungle that seems determined to swallow you in its depths.</desc>
+            <name>丛林小路</name>
+            <desc>一个扭曲的丛林，似乎要把你吸到深处.</desc>
         </town6>
         <town7>
-            <name>Commerceville</name>
-            <desc>Everyone here is looking to make a buck.</desc>
+            <name>商业村庄</name>
+            <desc>这里每个人都想赚钱.</desc>
         </town7>
         <town8>
-            <name>Valley of Olympus</name>
-            <desc>A mountain shaped hole in the groud.</desc>
+            <name>奥林匹斯山谷</name>
+            <desc>形状就像被挖掉了一座山.</desc>
         </town8>
     </towns>
     <talents>
