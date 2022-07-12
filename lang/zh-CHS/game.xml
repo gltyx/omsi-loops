@@ -8,7 +8,7 @@
             </meta>
             <version verNum="1.1"><![CDATA[
             <b> July 11th, 2022</b>
-            • New Guild: Explorers - Voted by the community, the explorers guild has opened shop in Commerceville!<br>
+            • 新公会: 探索者 - 经过社区投票, 探索者在Commerceville开设了商店!<br>
             • Unlocks a new "Survey" action in all zones - Survey progress minorly increases the number of limited resources (% * 0.5)<br>
             • Overall Survey progress also unlocks shortcuts for new ways to move between zones<br>
             • Bugfix: Mana well costs could become negative, subtracting mana from the player<br>
@@ -129,215 +129,211 @@
                 <a_prefix><![CDATA[<b>A:</b>]]></a_prefix>
             </meta>
             <q_a>
-                <q>What do stats do?</q>
-                <a>Hover over "Stats" for how they work. What stats are important depend on what actions you need that
-                    uses them.
+                <q>属性有什么用?</q>
+                <a>鼠标悬停在 "属性" 上可以查看. 属性的效果权值取决于你进行的行动.
                 </a>
             </q_a>
             <q_a>
-                <q>Short runs seem better.</q>
-                <a>Short runs are better, for the early game and current balance. But as your runs get longer and you accrue
-                    talent and soulstones, longer runs become more useful.
+                <q>短循环更有利.</q>
+                <a>以目前的平衡来说短循环效果更好, 尤其是早期游戏. 但当你开始大量获取灵魂石和天赋后, 长循环也许会更优秀.
                 </a>
             </q_a>
             <q_a>
-                <q>What should my first goal be?</q>
-                <a>Start with wandering until you have ways of getting mana back. Then try to find how to get some
-                    warrior lessions to give yourself a permanent boost, and then try fighting monsters!
+                <q>我的第一个目标是什么?</q>
+                <a>去漫步直到你找到获得法力的途径. 然后尝试学习一些战斗技能使你获得永久的加成, 接着试着和怪物战斗!
                 </a>
             </q_a>
         </faq>
         <options>
             <meta>
-                <title>Options</title>
+                <title>选项</title>
             </meta>
-            <localization_title>Language</localization_title>
-            <theme_title>Theme</theme_title>
+            <localization_title>语言</localization_title>
+            <theme_title>主题</theme_title>
             <theme>
-                <normal>Normal</normal>
+                <normal>普通</normal>
             </theme>
             <theme>
-                <dark>Dark</dark>
+                <dark>黑色</dark>
             </theme>
             <theme>
-                <cubic>Cubic</cubic>
+                <cubic>立体</cubic>
             </theme>
             <!--changed discord link for analytical reasons-->
             <discord>
                 <link>https://discord.gg/dnKA6Xd</link>
-                <title>Discord Link</title>
+                <title>Discord 链接</title>
             </discord>
-            <adblock_warning>WARNING: For some reason, Adblock Plus can cause massive lag. This game won't ever have ads, so if your game is freezing frequently, please disable it on this page.
+            <adblock_warning>警告: 由于一些原因, Adblock Plus可能导致严重卡顿. 这个游戏并没有广告, 所以如果你的游戏经常卡死, 请把它关掉.
             </adblock_warning>
             <pause_audio_cue>Ping on pause</pause_audio_cue>
             <hotkeys>Hotkeys</hotkeys>
             <hotkeys_tooltip><![CDATA[
-                Spacebar: Pause/play<br>
-                R: Restart<br>
-                B: Toggle bonus seconds<br>
-                1-5: Select loadout 1-5<br>
-                Shift+1-5: Select and load loadout 1-5<br>
-                +/-: Increase/decrease action list size<br>
-                Shift+S: Save current list to selected loudout<br>
-                Shift+L: Load selected loudout<br>
-                Shift+C: Clear current list<br>
-                Right/D: Show next zone<br>
-                Left/A: Show previous zone<br>
-                Shift+Right/D: Show action stories<br>
-                Shift+Left/A: Show action options<br>
-                Shift+Z: Undo most recent change to action list
+                空格: 暂停/继续<br>
+                R: 重置<br>
+                B: 启动奖励时间<br>
+                1-5: 选择预存列表 1-5<br>
+                Shift+1-5: 选择并立即加载预存列表 1-5<br>
+                +/-: 增长/缩短行动列表长度<br>
+                Shift+S: 把当前列表保存到预存列表<br>
+                Shift+L: 加载当前预存列表<br>
+                Shift+C: 清空当前列表<br>
+                →/D: 显示下一个区域<br>
+                ←/A: 显示上一个区域<br>
+                Shift+→/D: 显示行动故事<br>
+                Shift+←/A: 显示行动选项<br>
+                Shift+Z: 撤销对行动列表的上一次更改
         ]]></hotkeys_tooltip>
-            <update_rate>Updates per second:</update_rate>
+            <update_rate>每秒更新次数:</update_rate>
         </options>
     </menu>
     <tutorial><![CDATA[
-      TUTORIAL:<br>
-      Click the Wander action and click Play to start.<br>
-      Wander for a bit, then smash pots.<br>
-      Watch the numbers change, read all the tooltips.<br>
-      Complete the town, go to the next one.<br><br>
-      Hey there, it looks like you're starting the game on omsi6.github.io.<br>
-      Before you start, you should know that this is a fanmade modification<br>
-      for the original game, located <a href="http://stopsign.github.io/idleLoops/">here</a>. You can import your save from the<br>
-      original, but if you import it back to the original, you'll lose any progress in features specific to this version.<br><br>
-      Thanks for playing, and have fun!<br><br>
+      教程:<br>
+      点击漫步然后点击继续来开始.<br>
+      漫步一小会, 然后就可以踢罐子了.<br>
+      注意数字变化, 尽量阅读所有提示.<br>
+      完成小镇, 然后进入下一个区域.<br><br>
+      那边那个家伙, 你现在正在 omsi6.github.io 玩游戏.<br>
+      在开始之前, 你应该知道这只是一个粉丝做的改版<br>
+      想玩原版游戏, 地址是 <a href="http://stopsign.github.io/idleLoops/"></a>. 原版的存档可以直接导入到<br>
+      这边, 但你如果把这边的存档导入到原版, 你将会失去所有这个版本新增加的内容.<br><br>
+      感谢游玩, 祝你玩得开心!<br><br>
       ]]></tutorial>
     <tracked_resources>
         <reset_on_restart_txt>Resets when the loop restarts.</reset_on_restart_txt>
         <!--countable items with names and counts on the top bar-->
         <resource no_reset_on_restart="true">
-            <title>Mana:</title>
+            <title>法力:</title>
             <id>timer</id>
-            <desc>Your main resource. The higher your mana, the more you can do before reset.</desc>
+            <desc>你的主要资源. 你的法力越多, 你在重置前就能做越多的事.</desc>
         </resource>
         <resource>
-            <title>Gold:</title>
+            <title>金块:</title>
             <id>gold</id>
-            <desc>Sell for mana, or use for actions.</desc>
+            <desc>卖掉它换点法力, 或者在某些行动里使用它.</desc>
         </resource>
         <resource initially_hidden="true">
-            <title>Reputation:</title>
+            <title>声望:</title>
             <id>reputation</id>
-            <desc>The influence you have over the people in town.</desc>
+            <desc>小镇的人对你的看法.</desc>
         </resource>
         <resource initially_hidden="true">
-            <title>Herbs:</title>
+            <title>草药:</title>
             <id>herbs</id>
-            <desc>The beneficial plants you've found.</desc>
+            <desc>也许很有用的植物.</desc>
         </resource>
         <resource initially_hidden="true">
-            <title>Hide:</title>
+            <title>皮革:</title>
             <id>hide</id>
-            <desc>Results of successful hunting.</desc>
+            <desc>一次成功打猎的成果.</desc>
         </resource>
         <resource initially_hidden="true">
-            <title>Potions:</title>
+            <title>药水:</title>
             <id>potions</id>
-            <desc>Rare, but not complex. Worth some money.</desc>
+            <desc>稀有, 但并不复杂. 可以卖些钱.</desc>
         </resource>
         <resource initially_hidden="true">
-            <title>Team Members:</title>
+            <title>队友:</title>
             <id>teamMembers</id>
-            <desc>You know their personalities and fighting style. They don't know your name.</desc>
+            <desc>你非常了解他们的战斗风格和性格. 但他们甚至不知道你叫什么.</desc>
         </resource>
         <resource initially_hidden="true">
-            <title>Armor:</title>
+            <title>护甲:</title>
             <id>armor</id>
-            <desc>Crafted by your own hand, it protects you from dangers.</desc>
+            <desc>你亲手制作的, 它可以从危险中保护你.</desc>
         </resource>
         <resource initially_hidden="true">
-            <title>Blood:</title>
+            <title>血液:</title>
             <id>blood</id>
-            <desc>Regailed for it's regenerative properties. (this does nothing currently)</desc>
+            <desc>它的再生能力令它备受推崇. (目前没有用)</desc>
         </resource>
         <resource initially_hidden="true">
-            <title>Artifacts:</title>
+            <title>古董:</title>
             <id>artifacts</id>
-            <desc>Various old rings, bracelets, amulets, and pendants. You might be able to fetch a pretty penny for them.</desc>
+            <desc>各种旧戒指, 手镯, 护身符, 还有项链. 也许你能用它们赚一大笔钱.</desc>
         </resource>
         <resource initially_hidden="true">
-            <title>Favors:</title>
+            <title>支持度:</title>
             <id>favors</id>
-            <desc>You've been generous to important people.</desc>
+            <desc>你对关键人物真的很慷慨.</desc>
         </resource>
         <resource initially_hidden="true">
-            <title>Enchanted Armor:</title>
+            <title>附魔护甲:</title>
             <id>enchantments</id>
-            <desc>Divinely blessed weapons and armor, like a hero of legend.</desc>
+            <desc>神圣的武器和护甲, 就像英雄史诗里的那种.</desc>
         </resource>
         <resource initially_hidden="true">
-            <title>Houses:</title>
+            <title>住宅:</title>
             <id>houses</id>
-            <desc>Property constructed in Valhalla. You can collect taxes from tenants.</desc>
+            <desc>在瓦尔哈拉建造的房子. 你可以向租户收租.</desc>
         </resource>
         <resource initially_hidden="true">
-            <title>Pylons:</title>
+            <title>电缆塔:</title>
             <id>pylons</id>
-            <desc>Small fragments from the destroyed pylon.</desc>
+            <desc>从损毁的电缆塔上回收的碎片.</desc>
         </resource>
         <resource initially_hidden="true">
-            <title>Zombies:</title>
+            <title>僵尸:</title>
             <id>zombie</id>
-            <desc>A shambling pile of deceased flesh. Super gross.</desc>
+            <desc>一群摇摇晃晃的尸体. 真恶心.</desc>
         </resource>
         <!--singular items with img icons rather than counts-->
         <resource initially_hidden="true" no_count="true">
             <title><![CDATA[<img src="img/buyGlasses.svg" class="smallIcon">]]></title>
             <id>glasses</id>
-            <desc>Woah, trees have so many leaves on them.</desc>
+            <desc>噢, 树上的叶子真多啊.</desc>
         </resource>
         <resource initially_hidden="true" no_count="true">
             <title><![CDATA[<img src="img/buySupplies.svg" class="smallIcon">]]></title>
             <id>supplies</id>
-            <desc>Needed to go to the next town.</desc>
+            <desc>前往下一个镇子需要它们.</desc>
         </resource>
         <resource initially_hidden="true" no_count="true">
             <title><![CDATA[<img src="img/buyPickaxe.svg" class="smallIcon">]]></title>
             <id>pickaxe</id>
-            <desc>It's heavy, but you can make use of it.</desc>
+            <desc>很重, 但是你会用到的.</desc>
         </resource>
         <resource initially_hidden="true" no_count="true">
             <title><![CDATA[<img src="img/loopingPotion.svg" class="smallIcon">]]></title>
             <id>loopingPotion</id>
-            <desc>It's a potion made with the very same formula that got you into this mess. Why exactly did you make this?</desc>
+            <desc>一瓶和让你陷入循环的那瓶药非常相似的药水. 说真的你为什么要做这个?</desc>
         </resource>
         <resource initially_hidden="true" no_count="true">
             <title><![CDATA[<img src="img/seekCitizenship.svg" class="smallIcon">]]></title>
             <id>citizenship</id>
-            <desc>You're one of Valhalla's proud citizens now, giving you the right to fight in their honor.</desc>
+            <desc>你成为了光荣的瓦尔哈拉公民, 你现在有正当的理由为荣誉而战了.</desc>
         </resource>
         <resource initially_hidden="true" no_count="true">
             <title><![CDATA[<img src="img/pegasus.svg" class="smallIcon">]]></title>
             <id>pegasus</id>
-            <desc>A horse with great angelic wings. It can run across clouds as easily as dirt.</desc>
+            <desc>长者天使翅膀的马. 它在云上跑起来就像在地上一样轻松.</desc>
         </resource>
         <resource initially_hidden="true" no_count="true">
             <title><![CDATA[<img src="img/purchaseKey.svg" class="smallIcon">]]></title>
             <id>key</id>
-            <desc>Needed to go to the next town.</desc>
+            <desc>前往下一个镇子会需要它的.</desc>
         </resource>
     </tracked_resources>
     <time_controls>
-        <play_button>Play</play_button>
-        <pause_button>Pause</pause_button>
-        <pause_before_restart>Pause before restart</pause_before_restart>
-        <pause_on_failed_loop>Pause on failed loop</pause_on_failed_loop>
-        <restart_button>Restart</restart_button>
-        <restart_text>Resets the loop. Not a hard reset.</restart_text>
-        <hours>h</hours>
-        <minutes>m</minutes>
-        <seconds>s</seconds>
-        <talents_button>Talents</talents_button>
-        <story_title>Story</story_title>
+        <play_button>继续</play_button>
+        <pause_button>暂停</pause_button>
+        <pause_before_restart>在重置前暂停</pause_before_restart>
+        <pause_on_failed_loop>循环失败时立即暂停</pause_on_failed_loop>
+        <restart_button>重置</restart_button>
+        <restart_text>重置循环. 并不是硬重置.</restart_text>
+        <hours>时</hours>
+        <minutes>分</minutes>
+        <seconds>秒</seconds>
+        <talents_button>天赋</talents_button>
+        <story_title>故事</story_title>
         <stories>
             <story num="0">
-                You're a simple courier, on a long trip to deliver a high priority package. Just as you entered town,
-                you tripped - breaking your glasses - and the package burst open, spilling a strange liquid on you.
-                Immediately, your meager amount of mana started draining rapidly. Right as your mana became empty, you
-                found yourself back in the moment the liquid was absorbed into your skin, with your tiny reserves
-                filled... yet draining just as before. This happened again and again, the world resetting with you,
-                until you decided you had to figure out a way to prolong how long these 'loops' were. Mana crystals are
-                often stored in pottery around town, perhaps you'll start there ...
+                你是个普通的送货员, 正在运送一个相当高级的长途包裹. 就在你进入小镇时,
+                你滑倒了 - 摔坏了你的眼镜 - 而且包裹还摔开了, 一股奇怪的液体溅到了你身上.
+                瞬间, 你微薄的法力开始迅速消耗. 就在你法力耗尽的时候, 你发现你回到了
+                液体溅到你身上的瞬间, 你微薄的法力储备也充满了...虽然并没有比之前更多.
+                循环不断重复, 世界似乎也随之不断重置, 直到你下定决心找出延长循环的办法.
+                这个镇子似乎经常会把法力水晶存储到罐子里，也许你可以从那里开始...
             </story>
             <story num="1">
                 You reach the end of the dungeon, where a softly glowing orb floats on a pedastal. You've found the
@@ -361,91 +357,91 @@
         <bonus_seconds>
             <title>Bonus Seconds</title>
             <main_text><![CDATA[
-          When bonus is on, you get 4 extra seconds per second (5x faster).<br>
-          Accrue 1 bonus second per second when paused or offline. (capped at 1 month per offline period)<br>
+          当奖励开启, 你每秒额外获得 4 秒 (5x 速度).<br>
+          离线或暂停时每秒可以获得 1 点奖励点. (离线奖励最多 1 个月)<br>
           Bonus is
         ]]></main_text>
             <state>
-                <on>ON</on>
-                <off>OFF</off>
+                <on>开</on>
+                <off>关</off>
             </state>
-            <counter_text>Total Bonus Seconds</counter_text>
+            <counter_text>总奖励时间</counter_text>
         </bonus_seconds>
     </time_controls>
     <stats>
-        <title>Stats</title>
+        <title>能力</title>
         <dex>
-            <blurb>Know your body.</blurb>
-            <long_form>Dexterity</long_form>
+            <blurb>了解你的身体.</blurb>
+            <long_form>敏捷</long_form>
             <short_form>Dex</short_form>
         </dex>
         <str>
-            <blurb>Train your body.</blurb>
-            <long_form>Strength</long_form>
+            <blurb>训练你的身体.</blurb>
+            <long_form>力量</long_form>
             <short_form>Str</short_form>
         </str>
         <con>
-            <blurb>Just a little longer. Just a little more.</blurb>
-            <long_form>Constitution</long_form>
+            <blurb>再长一点. 再多一点.</blurb>
+            <long_form>体质</long_form>
             <short_form>Con</short_form>
         </con>
         <spd>
-            <blurb>Gotta go fast.</blurb>
-            <long_form>Speed</long_form>
+            <blurb>跑快快.</blurb>
+            <long_form>速度</long_form>
             <short_form>Spd</short_form>
         </spd>
         <per>
-            <blurb>Look a little closer...</blurb>
-            <long_form>Perception</long_form>
+            <blurb>凑近点...</blurb>
+            <long_form>观察</long_form>
             <short_form>Per</short_form>
         </per>
         <cha>
-            <blurb>Conversation is a battle.</blurb>
-            <long_form>Charisma</long_form>
+            <blurb>交流也是一场战斗.</blurb>
+            <long_form>魅力</long_form>
             <short_form>Cha</short_form>
         </cha>
         <int>
-            <blurb>Learning to learn.</blurb>
-            <long_form>Intelligence</long_form>
+            <blurb>学会学习.</blurb>
+            <long_form>智力</long_form>
             <short_form>Int</short_form>
         </int>
         <luck>
-            <blurb>Opportunity favors the fortunate.</blurb>
-            <long_form>Luck</long_form>
+            <blurb>机遇总是青睐幸运者.</blurb>
+            <long_form>幸运</long_form>
             <short_form>Luck</short_form>
         </luck>
         <soul>
-            <blurb>You are the captain.</blurb>
-            <long_form>Soul</long_form>
+            <blurb>你才是你的主人.</blurb>
+            <long_form>灵魂</long_form>
             <short_form>Soul</short_form>
         </soul>
         <tooltip>
-            <level>Level</level>
-            <level_exp>Level Exp</level_exp>
-            <exp>Exp</exp>
-            <talent>Talent</talent>
-            <talent_exp>Talent Exp</talent_exp>
-            <talent_multiplier>Talent Mult</talent_multiplier>
-            <soulstone>Soulstones</soulstone>
-            <soulstone_multiplier>Soulstone Mult</soulstone_multiplier>
-            <total_multiplier>Total Mult</total_multiplier>
-            <bonus_xp>Bonus XP</bonus_xp>
-            <mana_cost_reduction>Mana Cost Reduction</mana_cost_reduction>
+            <level>等级</level>
+            <level_exp>等级经验</level_exp>
+            <exp>经验</exp>
+            <talent>天赋</talent>
+            <talent_exp>天赋经验</talent_exp>
+            <talent_multiplier>天赋倍率</talent_multiplier>
+            <soulstone>灵魂石</soulstone>
+            <soulstone_multiplier>灵魂石倍率</soulstone_multiplier>
+            <total_multiplier>总倍率</total_multiplier>
+            <bonus_xp>奖励经验</bonus_xp>
+            <mana_cost_reduction>法力消耗减少</mana_cost_reduction>
             <explanation><![CDATA[
-          Each stat level reduces the relevant part of an action's mana cost by 1%.<br>
-          Talent exp gain is equal to 1% of stat exp gain, and persists through loops.<br>
-          Talent multiplies xp gain by (1+(talentLevel)^0.4/3).<br>
-          XP gain towards a stat per action is (original mana / actual mana) * (talent bonus) per tick.<br>
-          Total Mult is a combination of your talent and soulstone bonuses.<br><br>
-          e.g. Meet People costs 800 mana and has a breakdown of <div class="bold">Int</div> 10% <div class="bold">Cha</div> 80% <div class="bold">Soul</div> 10%.<br>
-          This effectively means 80 of the mana is controlled by <div class="bold">Int</div>, another 80 by <div class="bold">Soul</div>, and the remaining 640 by <div class="bold">Cha</div>.<br>
-          If your <div class="bold">Cha</div> is level 20 when the action is started, the bonus would be x1.2 so it'd be 640 / 1.2 = 533.33<br>
-          Adding back the 160 from <div class="bold">Soul</div> and <div class="bold">Int</div>, the total mana the action takes (rounded up) is now 694, so ~87% of the original mana cost.<br>
-          The action would give (800/694)*(1+(talent)^0.4/3) level exp per mana for the 694 mana.]]></explanation>
+          每级能力都会减少对应行动的法力消耗 1%.<br>
+          天赋经验获取是能力经验的 1% , 并且循环不会重置它.<br>
+          天赋可以给予能力经验 (1+(天赋等级)^0.4/3) 倍率加成.<br>
+          一个行动能获得的经验是 (原始法力 / 当前法力) * (天赋加成) 每刻度.<br>
+          总倍率等于天赋倍率乘灵魂石倍率.<br><br>
+          举例：交朋友消耗800法力且属性比例为 <div class="bold">Int</div> 10% <div class="bold">Cha</div> 80% <div class="bold">Soul</div> 10%.<br>
+          意思是其中80法力是 <div class="bold">Int</div>, 另外 80 是 <div class="bold">Soul</div>, 然后剩余的 640 是 <div class="bold">Cha</div>.<br>
+          如果你的 <div class="bold">Cha</div> 在行动开始时等级为 20 , 加成就是 x1.2 也就是实际法力消耗为 640 / 1.2 = 533.33<br>
+          再加上 <div class="bold">Soul</div> 和 <div class="bold">Int</div> 的 160 法力消耗, 总行动消耗 (向下取整) 应该是 694, 也就是 ~87% 的总消耗.<br>
+          行动将提供 (800/694)*(1+(天赋)^0.4/3) 经验每法力总计 694 法力.]]></explanation>
             <graph_legend><![CDATA[
-          Click the legend to show/hide each.<br>
-          Upon freshly starting, Levels and Talent won't change much.<br>
-          Hover Stats for more info.]]></graph_legend>
+          点击传说以显示/隐藏它们.<br>
+          在刚开始, 等级和天赋对游戏的影响很小.<br>
+          悬停在能力上获取更多信息.]]></graph_legend>
         </tooltip>
         <view>
             <regular>Regular View</regular>
@@ -453,64 +449,64 @@
         </view>
     </stats>
     <skills>
-        <title>Skills</title>
+        <title>技能</title>
         <scombat>
-            <label>Self Combat</label>
-            <desc>Self Combat = (Combat skill + Pyromancy skill * 5) * (1 + (armor + 3 * enchanted armor) * Crafting Guild Multiplier / 5)</desc>
+            <label>单人战斗力</label>
+            <desc>担任战斗力 = (战斗技能 + 火焰魔法 * 5) * (1 + (护甲 + 3 * 附魔护甲) * 制造工会倍率 / 5)</desc>
         </scombat>
         <tcombat>
-            <label>Team Combat</label>
-            <desc>Team Combat = Self Combat + (Combat Skill + Restoration skill * 2) * (Team Members / 2) * Adventure Guild Multiplier</desc>
+            <label>团队战斗力</label>
+            <desc>团队战斗力 = 单人战斗力 + (战斗技能 + 恢复技能 * 2) * (队友 / 2) * 冒险公会乘数</desc>
         </tcombat>
         <combat>
-            <label>Combat</label>
-            <desc>Fight for your lives.</desc>
+            <label>战斗</label>
+            <desc>为了生存而战.</desc>
         </combat>
         <magic>
-            <label>Magic</label>
-            <desc>Control the aether to cast and conjure.</desc>
+            <label>魔法</label>
+            <desc>掌控以太并用它战斗.</desc>
         </magic>
         <practical>
-            <label>Practical Magic</label>
-            <desc>Mage Hand, Prestidigitation, Detect Magic, and other useful tricks to help out.</desc>
-            <desc2><![CDATA[Smash Pots and Wild Mana costs are reduced to the original / (1 + level / 100) (rounded up).<br>
-      Pick Locks get 1% more gold per level from 1-200 (rounded down).<br>
-      Short Quests get 1% more gold per level from 101-300 (rounded down).<br>
-      Long Quests get 1% more gold per level from 201-400 (rounded down).<br>
-      Currently multiplying costs by <div id='skillBonusPractical'></div>x.]]></desc2>
+            <label>实用魔术</label>
+            <desc>魔法手, 变戏法, 侦测魔法, 以及一些其他实用的小魔法.</desc>
+            <desc2><![CDATA[踢罐子和野生法力的法力消耗降低 初始消耗 / (1 + 等级 / 100) (向下取整).<br>
+      1-200级每级使开锁获得 1% 额外金币 (向下取整).<br>
+      101-300级每级使短任务获得 1% 额外金币 (向下取整).<br>
+      201-400级每级使长任务获得 1% 额外金币 (向下取整).<br>
+      当前使成本乘以 <div id='skillBonusPractical'></div>x.]]></desc2>
         </practical>
         <alchemy>
-            <label>Alchemy</label>
-            <desc>Brewing potions is hard work! It's a good thing you found a teacher.</desc>
-            <desc2>The Magic teacher in Beginnersville adores alchemists. +1% Magic exp gain from the Mage Lessons action (rounded down) per level.</desc2>
+            <label>炼金术</label>
+            <desc>熬制药水很辛苦! 幸运的是你找到了个好老师.</desc>
+            <desc2>新手村的魔法师非常崇拜炼金术. 每级可以使魔法课程的魔法经验+1% (向下取整) .</desc2>
         </alchemy>
         <dark>
-            <label>Dark Magic</label>
-            <desc>Use various dark arts to help you harvest mana.</desc>
-            <desc2><![CDATA[Multiply the mana gain from Smash Pots and Wild Mana by (1 + level / 60) ^ 0.25 (rounded down).<br> Currently granting <div id='skillBonusDark'></div>x mana gains.]]></desc2>
+            <label>黑魔法</label>
+            <desc>使用黑魔法来帮助你获得法力.</desc>
+            <desc2><![CDATA[踢罐子和野生法力的法力获取乘以 (1 + 等级 / 60) ^ 0.25 (向下取整).<br> 当前 <div id='skillBonusDark'></div>x 倍法力获取.]]></desc2>
         </dark>
         <crafting>
-            <label>Crafting</label>
-            <desc>The skill of using your hands and creativity when doing physical work.</desc>
+            <label>制造</label>
+            <desc>使用双手和你的创造力做一些物理性质的工作.</desc>
         </crafting>
         <chronomancy>
-            <label>Chronomancy</label>
-            <desc>Harness the magic of time to, well, speed up time.</desc>
-            <desc2><![CDATA[Actions in all zones are (1 + level / 60) ^ 0.25 times faster.<br> Currently granting <div id='skillBonusChronomancy'></div>x speed.]]></desc2>
+            <label>时间魔法</label>
+            <desc>利用时间的魔法, 对, 加速时间.</desc>
+            <desc2><![CDATA[所有区域的行动速度加速 (1 + 等级 / 60) ^ 0.25 .<br> 当前 <div id='skillBonusChronomancy'></div>x 速度.]]></desc2>
         </chronomancy>
         <pyromancy>
-            <label>Pyromancy</label>
-            <desc>Fireball, Firebolt, Fire Shield, Burning Rays, just a veritable assortment of flaming fun!</desc>
-            <desc2><![CDATA[Increases self combat with 5x the efficiency of the combat skill.]]></desc2>
+            <label>火焰魔法</label>
+            <desc>火球术, 火焰爆破, 火墙, 喷射火焰, 名副其实的火爆组合!</desc>
+            <desc2><![CDATA[对个人战斗力有 5x 加成.]]></desc2>
         </pyromancy>
         <restoration>
-            <label>Restoration</label>
-            <desc>From healing cantrips to mass resurrection, you'll be sure to make good use of these spells.</desc>
-            <desc2><![CDATA[Increases team combat with 2x the efficiency of the combat skill and improves the Heal the Sick action.]]></desc2>
+            <label>恢复魔法</label>
+            <desc>从小治疗术到复活术, 你肯定能用好它们.</desc>
+            <desc2><![CDATA[对团队战斗力有 2x 加成，并增强治病行动.]]></desc2>
         </restoration>
         <spatiomancy>
-            <label>Spatiomancy</label>
-            <desc>Who knew bending reality to your will could be so useful!</desc>
+            <label>空间魔法</label>
+            <desc>谁能想到空间魔法竟然这么有用!</desc>
             <desc2><![CDATA[Mana Geyser and Mana Well are reduced to the original / (1 + level / 100).<br>
             Houses to build increased by 1% per level from 1 - 500. <br>
             Locked houses is increased by 0.5% per level from 101-300.<br>
