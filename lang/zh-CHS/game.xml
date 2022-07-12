@@ -1,0 +1,863 @@
+<?xml version="1.0"?>
+<body>
+    <menu>
+        <changelog>
+            <meta>
+                <title>更新日志</title>
+                <version_prefix>版本</version_prefix>
+            </meta>
+            <version verNum=".77"><![CDATA[
+            * Ranks start at F now instead of E pt. 2<br>
+            * Fixed drag and drop for firefox<br>
+            * Adding small amounts of exp to Fight Monsters, Heal the Sick, and Small/Large Dungeon<br>
+            * Hermit is properly improved by 1% from shortcut<br>
+            * Hermit's reduction affect made linear<br>
+            * Fixed tooltip for Small Dungeon, Talk to Hermit, Stats, and Gamble<br>
+            * Fixed discord link
+      ]]></version>
+            <version verNum=".76"><![CDATA[
+            * Ranks start at F now instead of E<br>
+            * Fixed wild mana tooltip<br>
+            * Added Tournament, which uses self combat.
+      ]]></version>
+            <version verNum=".75"><![CDATA[
+            * Skill training actions have 150% exp.<br>
+            * Practical magic updates the gold cost tooltip correctly<br>
+            * Ping on Pause toggle saves on refresh<br>
+            * Started French support (thanks to Guizmus)<br>
+            * Haggle tooltip updates on reset correctly. Continue On mana reduction tooltip works.<br>
+            * Can't use repeat last action to get around training caps<br>
+            * New actions - Adventure Guild, Crafting Guild, Gather Team, Craft Armor, Large Dungeon, Apprentice, Mason, Architect<br>
+            * Short Quest mana cost 800 -> 600. LQuest mana cost 2k -> 1500, gold reward 25 -> 30<br>
+            * Buy Supplies requires 400 -> 300 gold.<br>
+            * Wild Mana 200 gain -> 250 gain.<br>
+            * Removing old versions as I add new ones now<br>
+            * Removed Get Drunk's gold cost, gave it 3x exp<br>
+            * Reworked dungeons - small dungeon is now capped at 6 floors, with soulstone chances and completed bonuses applying per-floor. Your existing completions were divided amongst the new floors.<br>
+            * Small Dungeon mana cost to 2k (until I get an option to short-circuit upon floor completion) and gets harder faster.<br>
+            * Made talent gain scale the same way that soulstone does, made soulstones 1/3rd as effective. This means talent gives 3% at level 1 instead of 1%.<br>
+            * HtS requires (not costs) 1 reputation, Fight Monster and Small Dungeon require 2 reputation.<br>
+            * Training caps reduced to 10 (action coming soon to improve this), and all trainings have 2000 mana cost.<br>
+            * Train Dex/Train Speed to zone 2.<br>
+            * Soulstones recover half as fast (because there's more of them)
+      ]]></version>
+            <version verNum=".74"><![CDATA[
+            * Radar chart - different and confusing way to visualize your data!<br>
+            * Some tooltip changes<br>
+            * Glasses icons on relevant actions<br>
+            * Offline progress!<br>
+            * Showing Hunt again (still useless)
+      ]]></version>
+            <version verNum=".73"><![CDATA[
+            * Changed formula for how Old Shortcut reduces Continue On<br>
+            * Repeat last action on list saves now<br>
+            * Lootable first checkboxes save now<br>
+            * Window title switches when paused correctly<br>
+            * Dragging an action image doesn't change the URL in firefox<br>
+            * 2 more story parts, unlocked at Small Dungeon completion<br>
+            * Re-arrange icon/loop count order on lists<br>
+            * Get Drunk removes 2 gold instead of adding it
+      ]]></version>
+            <version verNum=".72"><![CDATA[
+            * Sound on pause available in options<br>
+            * training limit set to 50 from 10 (for now)<br>
+            * Mana Original is multipled by # loops<br>
+            * Travel Action styling change<br>
+            * Saving in town 3<br>
+            * DRAG AND DROP (Thanks to Hunter)
+      ]]></version>
+            <version verNum=".71"><![CDATA[
+            * Tooltip on reset button<br>
+            * Glasses give x2 to forest<br>
+            * Mana cost reflects the tooltips now rather than an average of stat reduction<br>
+            * Trainings are capped at 10 per loop<br>
+            * New actions! Brew Potions, Continue On, Explore City, Gamble, Get Drunk, Purchase Mana, Sell Potions<br>
+            * Some new actions are usless at the moment.
+      ]]></version>
+            <version verNum=".70"><![CDATA[
+            * Reverted skill nerf (too harsh)<br>
+            * Actually capped glasses<br>
+            * Sell Gold -> Buy Mana<br>
+            * Double soulstone recovery<br>
+            * Nerfed practical magic (more uses for it later)
+      ]]></version>
+            <version verNum=".69"><![CDATA[
+            * Nerfed the soulstone nerf<br>
+            * Cleared additional purple bars on exp<br>
+            * Corrected glasses/throw party tooltips<br>
+            * Actually nerfed skill growth - it's cheaper than before for level 2 - 23, and about 4x harder at level 100<br>
+            * Add action to top of list option
+      ]]></version>
+        </changelog>
+        <save>
+            <meta>
+                <title>保存</title>
+            </meta>
+            <manual_save>手动保存</manual_save>
+            <export_list>导出当前列表</export_list>
+            <import_list>导入列表</import_list>
+            <list_label>导出/导入列表</list_label>
+            <list_comment>以纯文本格式导出当前列表，您可以粘贴并与他人共享</list_comment>
+            <input_label>导出/导入保存文件</input_label>
+            <export_button>导出</export_button>
+            <export_comment><![CDATA[点击导出按钮，导出到你的存档到剪贴板(然后按 ctrl - v，粘贴保存到其他地方)<br>粘贴一个存档到框里，并单击导入以导入存档。]]></export_comment>
+            <import_button>导入</import_button>
+            <import_comment><![CDATA[
+              警告:如果存档无效，强行导入将破坏游戏。空导入将很难清除游戏存档<br>
+              如果你真的想编辑你的存档文件, ]]></import_comment>
+            <import_hover_special>鼠标悬浮我</import_hover_special>
+            <import_hover_special_tooltip>
+                <![CDATA[在控制台中，使用 decode("这里粘贴你的存档"), 编辑, 然后 encode('这里粘贴你的存档'), 然后导入存档到游戏<br>这主要是为了修复损坏的保存文件——不要作弊。]]></import_hover_special_tooltip>
+        </save>
+        <faq>
+            <meta>
+                <title>常见问题</title>
+                <q_prefix>问</q_prefix>
+                <a_prefix>答</a_prefix>
+            </meta>
+            <q_a>
+                <q>能力值有什么用?</q>
+                <a>鼠标悬停在 “能力值” 上来看看它们有什么用。 能力值的效果取决于你执行的行动对它们的需求。
+
+                </a>
+            </q_a>
+            <q_a>
+                <q>短周期的行动比较好。</q>
+                <a>早期游戏一个平衡的短周期循环效率更高。 随着游戏的深入你会获得能力和灵魂石，
+                    这会让长周期行动变得有用。
+                </a>
+            </q_a>
+            <q_a>
+                <q>我的第一步该做什么?</q>
+                <a>通过漫步获得获取法力的渠道。 然后尝试找到如何进行战斗训练，
+                    这会给你带来永久的提升, 然后尝试和“怪兽”战斗!
+                </a>
+            </q_a>
+        </faq>
+        <options>
+            <meta>
+                <title>选项</title>
+            </meta>
+            <localization_title>切换语言</localization_title>
+            <discord>
+                <link>https://discord.gg/EmRuWPp</link>
+                <title>Discord Link</title>
+            </discord>
+            <adblock_warning>警告：由于某些原因，Adblock Plus会导致大量延迟。 我不会有广告，如果你的游戏经常卡死，请把本页面列到白名单。
+            </adblock_warning>
+            <pause_audio_cue>Ping on pause</pause_audio_cue>
+        </options>
+    </menu>
+    <tutorial><![CDATA[
+      教程<br>
+      单击“漫步”操作，然后单击“开始”以开始游戏。<br>
+      漫步一会儿，然后粉碎罐子。<br>
+      观察数字变化，阅读所有提示文字。<br>
+      完成这个城镇，然后去下一个。<br><br>
+      ]]></tutorial>
+    <tracked_resources>
+        <reset_on_restart_txt>循环重启时重置。</reset_on_restart_txt>
+        <resource no_reset_on_restart="true">
+            <title>法力</title>
+            <id>timer</id>
+            <desc>你的主要资源。 你的法力值越高，你在复位前就能做的越多。</desc>
+        </resource>
+        <resource>
+            <title>黄金</title>
+            <id>gold</id>
+            <desc>售价为法力值，或用于行动。</desc>
+        </resource>
+        <resource>
+            <title>声誉</title>
+            <id>reputation</id>
+            <desc>你对城里人的影响。</desc>
+        </resource>
+        <resource initially_hidden="true">
+            <title>物资</title>
+            <id>supplies</id>
+            <desc>去下一个城镇所需要的。</desc>
+        </resource>
+        <resource initially_hidden="true">
+            <title>草药</title>
+            <id>herbs</id>
+            <desc>你找到的有益植物。</desc>
+        </resource>
+        <resource initially_hidden="true">
+            <title>兽皮</title>
+            <id>hide</id>
+            <desc>成功狩猎的结果。</desc>
+        </resource>
+        <resource initially_hidden="true">
+            <title>药水</title>
+            <id>potions</id>
+            <desc>很少见，但并不复杂。 值一些钱。</desc>
+        </resource>
+        <resource initially_hidden="true" no_count="true">
+            <title>眼镜</title>
+            <id>glasses</id>
+            <desc>哇，树上有很多叶子。</desc>
+        </resource>
+        <resource initially_hidden="true">
+            <title>团队成员</title>
+            <id>teamNum</id>
+            <desc>你知道他们的个性和战斗风格。 他们不知道你的名字。</desc>
+        </resource>
+        <resource initially_hidden="true">
+            <title>盔甲</title>
+            <id>armor</id>
+            <desc>由您自己手工制作，它可以保护您免受危险。</desc>
+        </resource>
+    </tracked_resources>
+    <time_controls>
+        <play_button>开始</play_button>
+        <pause_button>暂停</pause_button>
+        <pause_before_restart>重新开始前暂停</pause_before_restart>
+        <restart_button>重新开始</restart_button>
+        <restart_text>重置循环。 不是硬复位。</restart_text>
+        <story_title>故事</story_title>
+        <stories>
+            <story num="0">
+                你是一个普通的快递员, 正在派送一个非常远的高优先级包裹. 当你进入小镇,
+                你摔倒了 - 摔碎了你的眼镜 - 包裹突然炸开, 一些奇怪的液体流到了你身上.
+                紧接着, 你微薄的法力开始迅速消耗. 当你的法力耗尽时, 你
+                发现你回到了液体被你皮肤吸收的时刻，你那贫瘠的法力也
+                恢复了... 然后再一次像上次那样消耗. 它不断的重复重复, 整个世界都在为你不断重置,
+                直到你决定你要找一个方法去延长这个“循环”. 魔法水晶
+                通常在镇子的罐子里存着, 也许你可以从这里开始 ...
+            </story>
+            <story num="1">
+                你抵达了地牢的终点, 一颗发光的球悬浮在底座上. 你找到了
+                地牢的核心 - 尽管只是第一层的. 当你拿到它的时候, 它的精华融入了
+                你的身体, 使你拥有了它的里力量. 这虽然只是一点点力量, 但这仅仅是一个
+                小地牢. 你还会再一次回来拿到它, 你在朋友那里了解到
+                它将一直伴随着你，无论你在哪里.
+            </story>
+            <story num="2">
+                你再一次抵达了地牢的终点, 但上次的核心并没有在这里. 一直以来人们都认为
+                它是由周围的法力生成的, 但你开始猜测这个核心的精髓
+                被以某种形式消耗掉了. 它并不是永远消失了, 但你必须
+                多使用法力让它再一次出现. 你耸耸肩, 接受了
+                这个奇怪的现象.
+            </story>
+            <story num="3">
+                你成功了! 你赢得了比赛并治好了自己. 你现在可以停下这个该死的循环了.
+                不过, 你还有些事情想做 ... (恭喜通关, 如果你想，你可以继续游戏).
+            </story>
+        </stories>
+        <bonus_seconds>
+            <title>额外奖励</title>
+            <main_text><![CDATA[
+          当奖励生效时，你会得到每秒额外奖励3秒(快了4倍)。<br>
+          当暂停或离线时，每秒钟增加0.8秒。<br>
+          奖励状态是
+        ]]></main_text>
+            <state>
+                <on>开启</on>
+                <off>关闭</off>
+            </state>
+            <counter_text>总奖励的秒数</counter_text>
+        </bonus_seconds>
+    </time_controls>
+    <stats>
+        <title>属性</title>
+        <dex>
+            <blurb>了解你的身体。</blurb>
+            <long_form>敏捷</long_form>
+            <short_form>敏捷</short_form>
+        </dex>
+        <str>
+            <blurb>训练你的身体。</blurb>
+            <long_form>力量</long_form>
+            <short_form>力量</short_form>
+        </str>
+        <con>
+            <blurb>再坚持一会，就一小会。</blurb>
+            <long_form>体质
+</long_form>
+            <short_form>体质
+</short_form>
+        </con>
+        <spd>
+            <blurb>必须更快。</blurb>
+            <long_form>速度</long_form>
+            <short_form>速度</short_form>
+        </spd>
+        <per>
+            <blurb>有什么正在接近...</blurb>
+            <long_form>感知</long_form>
+            <short_form>感知</short_form>
+        </per>
+        <cha>
+            <blurb>交流也是需要技巧的。</blurb>
+            <long_form>魅力</long_form>
+            <short_form>魅力</short_form>
+        </cha>
+        <int>
+            <blurb>你得学会学习。</blurb>
+            <long_form>智力</long_form>
+            <short_form>智力</short_form>
+        </int>
+        <luck>
+            <blurb>幸运的人总是有更多的机会。</blurb>
+            <long_form>幸运</long_form>
+            <short_form>幸运</short_form>
+        </luck>
+        <soul>
+            <blurb>你的灵魂属于你。</blurb>
+            <long_form>灵魂</long_form>
+            <short_form>灵魂</short_form>
+        </soul>
+        <tooltip>
+            <level>等级</level>
+            <level_exp>等级经验</level_exp>
+            <talent>天赋</talent>
+            <talent_exp>天赋经验</talent_exp>
+            <talent_multiplier>天赋加成</talent_multiplier>
+            <soulstone>灵魂石</soulstone>
+            <soulstone_multiplier>灵魂石加成</soulstone_multiplier>
+            <total_multiplier>总加成</total_multiplier>
+            <explanation><![CDATA[
+          每级能力值降低相关行动的1%法力消耗.<br>
+          获取能力值同时也会获得1%的天赋, 并且循环后仍然保留.<br>
+          天赋给经验值一个（1+（天赋等级）^.5/5）的加成.<br>
+          每次行动的经验获取速度是(初始法力消耗 / 实际法力消耗) * (天赋加成) 每个TICK.<br>
+          天赋加成和灵魂石加成是相乘的.<br><br>
+          举例 结识朋友的能力比例是 <div class="bold">智力</div> 10% <div class="bold">魅力</div> 80% <div class="bold">灵魂</div> 10%.<br>
+          这些比例意味着 80 点消耗是受到 <div class="bold">智力</div> 影响, 另外 80 由 <div class="bold">灵魂</div> 影响, 而剩余的 640 由 <div class="bold">魅力</div>.<br> 影响。
+          如果你的 <div class="bold">魅力</div> 在任务开始时是20级, 这个法力消耗加成就是 x1.2 也就是 640 / 1.2 = 533.33<br>
+          然后再加上剩余的受 <div class="bold">灵魂</div> 和 <div class="bold">智力</div> 影响的160点消耗, 总的法力消耗 (四舍五入) 就是 694, 也就是 ~87% 的初始消耗。<br>
+          行动会给你 (800/694)*(1+(天赋等级)^.5/5) 经验值每法力消耗，总共 694 法力.1]]></explanation>
+            <graph_legend><![CDATA[
+          点击上面的色块来显示/隐藏.<br>
+          在刚开始的时候, 等级和天赋的效果非常小.<br>
+          鼠标悬停在上面获得更多信息.]]></graph_legend>
+        </tooltip>
+        <view>
+            <regular>常规图</regular>
+            <radar>雷达图</radar>
+        </view>
+    </stats>
+    <skills>
+        <title>技能</title>
+        <scombat>
+            <label>自己战斗</label>
+            <desc>个人战斗力 = 战斗技能 * (1 + 防御 * 工艺等级 / 5)</desc>
+        </scombat>
+        <tcombat>
+            <label>团队战斗</label>
+            <desc>团队战斗力 = 个人战斗力 + 战斗技能 * 团队成员数 * 冒险协会等级 / 2</desc>
+        </tcombat>
+        <combat>
+            <label>战斗</label>
+            <desc>为你自己而战.</desc>
+        </combat>
+        <magic>
+            <label>魔法</label>
+            <desc>掌控魔法，然后使用它.</desc>
+        </magic>
+        <practical_magic>
+            <label>实用魔术</label>
+            <desc>魔力之手, 变形术, 探测术, 和其他小法术都很实用.</desc>
+            <desc2><![CDATA[每级减少 1% 打破罐子和收集法力的法力消耗 (向上取整).<br>
+      1-200级每级让开锁获得 1% 额外金币 (向下取整).<br>
+      101-300级每级让短任务获得 1% 额外金币 (向下取整).<br>
+      201-400级每级让长任务获得 1% 额外金币 (向下取整).]]></desc2>
+        </practical_magic>
+        <alchemy>
+            <label>炼金术</label>
+            <desc>制作药水可不简单! 幸运的是你找到了一个老师.</desc>
+            <desc2>新手村的魔法老师非常崇拜炼金术. 每级使魔法课程效果增加+1% 
+            (向下取整) .
+            </desc2>
+        </alchemy>
+        <tooltip>
+            <level>等级</level>
+            <no_reset_on_restart>重新开始后技能也保留。</no_reset_on_restart>
+        </tooltip>
+    </skills>
+    <towns>
+        <town0>
+            <name>初学者</name>
+            <desc>地下室的老鼠, 凶猛的游荡野猪, 蹦蹦跳跳的史莱姆, 以及喜欢讲故事的陌生人在新手村是非常常见的。
+                有些人遗失了他的帽子和鞋子, 
+                周围最好的剑仅仅是铁做的。 幸运的是你可以很体面的在新城市进行循环。
+                如果这里没有那么多规则禁止你做危险的事, 那就完美了。
+            </desc>
+        </town0>
+        <town1>
+            <name>森林小径</name>
+            <desc>一个似乎永远都是绿色的森林. 你感觉到这里法力充沛...</desc>
+        </town1>
+        <town2>
+            <name>商船</name>
+            <desc>一个需要更好描述的城镇。</desc>
+        </town2>
+    </towns>
+    <actions>
+        <title>行动选项</title>
+        <title_list>行动列表</title_list>
+        <title_loadout>列表</title_loadout>
+        <tooltip>
+            <desc><![CDATA[
+          法力消耗按比例受能力值影响 %s.<br>
+          经验获取也是.<br>
+          每个TICK都会获得经验值.<br>
+          执行未执行过的行动有可能会解锁新的行动.]]></desc>
+            <mana_cost>法力消耗</mana_cost>
+            <exp_multiplier>经验加成</exp_multiplier>
+            <mana_used>法力使用</mana_used>
+            <mana_used_explanation><![CDATA[
+          Shows stat gain affecting speed.<br>
+          Updates every completed action.<br>
+          Accurate at end of run.]]></mana_used_explanation>
+            <amount>数量</amount>
+            <current_list_active>保持当前列表激活</current_list_active>
+            <repeat_last_action>重复列表上的最后一个行动</repeat_last_action>
+            <add_action_top>将行动添加到列表的顶部</add_action_top>
+            <save_loadout>保存列表</save_loadout>
+            <load_loadout>加载已选择列表</load_loadout>
+            <clear_list>清除列表</clear_list>
+            <higher_done_percent_benefic>你可以找到更多％的东西。</higher_done_percent_benefic>
+            <progress_label>进度</progress_label>
+            <total_found>总计找到</total_found>
+            <icons>
+                <circle_thin>上限到当前最大值</circle_thin>
+                <plus>添加一个循环</plus>
+                <minus>减去一个循环</minus>
+                <arrows_h>拆分行动</arrows_h>
+                <sort_up>向上移动行动</sort_up>
+                <sort_down>向下移动行动</sort_down>
+                <times>移除行动</times>
+            </icons>
+            <list_explanation><![CDATA[
+      拖动行动可以调整它们的顺序.<br>
+      右边的列表就是你下一次循环执行的行动.<br>
+      1秒 = 50 法力.<br>
+      每个行动至少需要1TICK.<br>
+      当所有行动都完成后会直接进入下一次循环.]]></list_explanation>
+        </tooltip>
+        <current_action>
+            <mana_original>初始法力消耗</mana_original>
+            <mana_used>实际消耗</mana_used>
+            <mana_remaining>剩余的法力</mana_remaining>
+            <gold_remaining>剩余的黄金</gold_remaining>
+            <failed_attempts>失败的尝试</failed_attempts>
+            <error>出错</error>
+        </current_action>
+        <wander>
+            <label>漫步</label>
+            <label_done>探索</label_done>
+            <tooltip>探索城镇，寻找隐藏的区域和宝藏。</tooltip>
+        </wander>
+        <meet_people>
+            <label>结识朋友</label>
+            <label_done>结识朋友</label_done>
+            <tooltip><![CDATA[
+        他们不会让你通过一个简单的聊天逃脱。<br>探索22％后解锁。
+      ]]></tooltip>
+        </meet_people>
+        <investigate>
+            <label>调查</label>
+            <label_done>调查</label_done>
+            <tooltip><![CDATA[
+        你听见了一些传闻...<br>解锁于 25% 结识朋友.
+      ]]></tooltip>
+        </investigate>
+        <explore_forest>
+            <label>探索森林</label>
+            <label_done>森林探索</label_done>
+            <tooltip><![CDATA[
+        多棒的地方啊.眼镜获得 <br>2x 效果.
+      ]]></tooltip>
+        </explore_forest>
+        <old_shortcut>
+            <label>探索捷径</label>
+            <label_done>捷径探索</label_done>
+            <tooltip><![CDATA[
+        已经很久没有人踏足这条路了.<br>额外获得一些草药.<br>老人看上去很痛苦，但你不知道他在想什么. 每增加1%探索进度都能增加1%的交谈效果.<br>解锁于 20% 探索森林.
+      ]]></tooltip>
+        </old_shortcut>
+        <hermit>
+            <label>与隐士交谈</label>
+            <label_done>隐士知识</label_done>
+            <tooltip><![CDATA[
+        老人很高兴有人能听他说话, 当然他有不少有用的知识， 但愿. 他最初不太愿意和你说话, 直到你和他谈论起这条小路.<br>降低拾取药草、实用魔术的法力消耗, 每 1% 隐士知识都会提升 .5% 的炼金术.<br>解锁于 20% 捷径探索 和 40 魔法.
+      ]]></tooltip>
+        </hermit>
+        <explore_city>
+            <label>探索城市</label>
+            <label_done>城市探索</label_done>
+            <tooltip><![CDATA[
+        每个人都很忙, 这里有很多事情要做.眼镜获得 <br>2x 效果.
+      ]]></tooltip>
+        </explore_city>
+        <get_drunk>
+            <label>喝酒</label>
+            <label_done>传闻</label_done>
+            <tooltip><![CDATA[
+        有时候你需要去喝一杯.<br>至少需要-3声誉.<br>有3倍经验值<br>消耗1声誉.<br>解锁于 20% 城市探索.
+      ]]></tooltip>
+        </get_drunk>
+        <apprentice>
+            <label>学徒</label>
+            <label_done>书本知识</label_done>
+            <tooltip><![CDATA[
+        你决定研究一下建筑的知识. 你用工艺协会的许可证换到了一些书.<br>等级越高知识获取越快.<br>根据 0-100%工艺等级给予 10-20 经验值<br>解锁于 40% 传闻.
+      ]]></tooltip>
+        </apprentice>
+        <mason>
+            <label>石匠</label>
+            <label_done>建筑进度</label_done>
+            <tooltip><![CDATA[
+        你已经有足够多的理论知识了 - 现在你可以试着动手了.<br>等级越高进度提升越快.<br>需要工艺协会.<br>根据 0-100%工艺等级给予 20-40 经验值<br>解锁于 60% 传闻和 100% 书本知识.
+      ]]></tooltip>
+        </mason>
+        <architect>
+            <label>建筑师</label>
+            <label_done>图纸绘制</label_done>
+            <tooltip><![CDATA[
+        你现在知道它们是怎么运作的了, 最好学着如何设计它们.<br>等级越高进度提升越快.<br>需要工艺协会.<br>根据 0-100%工艺等级给予 40-80 经验值<br>解锁于 80% 传闻和 100% 石匠.
+      ]]></tooltip>
+        </architect>
+        <buy_glasses>
+            <label>购买眼镜</label>
+            <tooltip><![CDATA[
+        这是不公平的。现在有时间了。这就是我所需要的时间。<br>现在你必须再花10金买一副新的眼镜!<br>使后续所有漫步效果提升4倍。<br>只对带有眼镜图标的动作产生影响。<br>只能有一个买眼镜的动作。<br>在探索达到20%时解锁。
+      ]]></tooltip>
+        </buy_glasses>
+        <buy_mana>
+            <label>购买法力</label>
+            <tooltip><![CDATA[
+        1 黄金 = 50 法力。 用你全部的黄金来购买法力。<br>探索到20%时解锁。
+      ]]></tooltip>
+        </buy_mana>
+        <train_str>
+            <label>训练力量</label>
+            <tooltip><![CDATA[
+        锻炼你的肌肉。再来一次。<br>对天赋和经验都有四倍效果, 每次行动只能执行 <div id='trainingLimitStr'></div> 次。<br>结识朋友达到5%时解锁.
+      ]]></tooltip>
+        </train_str>
+        <throw_party>
+            <label>举行派对</label>
+            <tooltip><![CDATA[
+        休息一下参与社交.增加 结识朋友进度 ，效果为结识朋友的八倍.<br>消耗2名誉.<br>解锁于 30% 调查.
+      ]]></tooltip>
+        </throw_party>
+        <warrior_lesson>
+            <label>战士训练</label>
+            <tooltip><![CDATA[
+        学会战斗也许非常重要; 你未来有一段很长的旅途.<br>需要 2 声誉.<br>解锁于 20% 调查.
+      ]]></tooltip>
+        </warrior_lesson>
+        <mage_lesson>
+            <label>魔法训练</label>
+            <tooltip><![CDATA[
+        神秘的力量把一切弄得一团糟, 也许它可以帮你离开.<br>需要 2 声誉.<br>解锁于 20% 调查.
+      ]]></tooltip>
+        </mage_lesson>
+        <buy_supplies>
+            <label>购买物资</label>
+            <tooltip><![CDATA[
+          准备继续前进.<br>消耗 <div id='suppliesCost'></div> 金币.<br>你只需要购买一次物资.<br>技能总值达到35级解锁.
+      ]]></tooltip>
+        </buy_supplies>
+        <haggle>
+            <label>讨价还价</label>
+            <tooltip><![CDATA[
+          他们不太喜欢这样, 但是 - 你正在转身离开.<br>消耗1点名誉降低20点物资价格. <br>技能总值达到35级解锁.
+      ]]></tooltip>
+        </haggle>
+        <start_journey>
+            <label>开始旅途</label>
+            <tooltip><![CDATA[
+          沿着小路走向下一个城镇. 你必须继续前进直到你找到如何结束这个循环.<br>消耗1物资. 完成一次就能看见森林小径, 然后继续旅途来解锁它.<br>技能总值达到35级解锁.
+      ]]></tooltip>
+        </start_journey>
+        <train_soul>
+            <label>坐在瀑布旁边</label>
+            <tooltip><![CDATA[
+        这里很平静. 很吵, 但很平静.<br>4倍经验和天赋获取, 并且只能做 <div id='trainingLimitSoul'></div> 次每次循环<br>解锁于 70% 森林探索.
+      ]]></tooltip>
+        </train_soul>
+        <practical_magic>
+            <label>实用魔术</label>
+            <tooltip><![CDATA[
+        简单而实用的魔术. 想出这些魔术的真是天才. 尽管很困难，但你总算从隐士那里学到了这些知识.<br>解锁于 20% 隐士知识和 50 魔法.
+      ]]></tooltip>
+        </practical_magic>
+        <learn_alchemy>
+            <label>学习炼金术</label>
+            <tooltip><![CDATA[
+          你一边听他唠叨一边看他制作治疗药水.<br>你开始思考导致你进入循环的是不是一种复杂的药剂.<br>你需要提供原料; 消耗 10 药草.<br>获得炼金术和魔法技能.<br>解锁于 40% 隐士知识和 60 魔法.
+      ]]></tooltip>
+        </learn_alchemy>
+        <brew_potions>
+            <label>制作药剂</label>
+            <tooltip><![CDATA[
+          泡泡和烧瓶. 药水和魔法.<br>如果你没有5声誉他是不会让你接近他的资料的.<br>使用10个药草制作一个药水，然后在下一个城镇卖掉它.<br>会对炼金术和魔法技能.<br>解锁于 10 炼金术.
+      ]]></tooltip>
+        </brew_potions>
+        <train_dex>
+            <label>敏捷训练</label>
+            <tooltip><![CDATA[
+        有一个非常棒的石阵，你可以在其中跳跃. 这非常有趣.<br>获得4倍经验值和天赋, 并且只能执行 <div id='trainingLimitDex'></div> 次每循环<br>解锁于 60% 森林探索.
+      ]]></tooltip>
+        </train_dex>
+        <train_spd>
+            <label>速度训练</label>
+            <tooltip><![CDATA[
+        在森林中快速奔跑有些不切实际. 当你挑战自己的极限时，你学到了很多东西.<br>获得4倍经验值和天赋, 并且只能执行 <div id='trainingLimitSpd'></div> 次每循环<br>解锁于 80% 森林探索.
+      ]]></tooltip>
+        </train_spd>
+        <continue_on>
+            <label>继续前进</label>
+            <tooltip><![CDATA[
+          继续前往下一个城镇, 贸易镇.<br>每 捷径探索% 降低60点法力消耗.
+      ]]></tooltip>
+        </continue_on>
+        <purchase_mana>
+            <label>购买法力</label>
+            <tooltip><![CDATA[
+          1 金币 = 50 法力。 尽可能的购买法力。
+      ]]></tooltip>
+        </purchase_mana>
+        <sell_potions>
+            <label>出售药水</label>
+            <tooltip><![CDATA[
+        药水价格是 1 金币每炼金术等级, 但你需要花些时间卖掉它.
+    ]]></tooltip>
+        </sell_potions>
+        <read_books>
+            <label>读书</label>
+            <tooltip><![CDATA[
+        这里有一个图书馆! 你一直都很喜欢阅读.<br>发现新世界和新观点, 从小说中获得灵感, 并让你更加渴望变强.<br>需要眼镜.<br>获得4倍经验值和天赋, 并且只能执行 <div id='trainingLimitInt'></div> 次每循环<br>解锁于 50% 城市探索.
+      ]]></tooltip>
+        </read_books>
+        <gather_team>
+            <label>寻找队友</label>
+            <tooltip><![CDATA[
+        你并不需要独自面对一切.<br>最多有5个队友.<br>消耗 <div id='teamCost'></div>
+         黄金, 最高200黄金.<br>每个队友为团队战斗力增加 (等级加成) * (战斗技能 + 魔法技能)/2 .<br>需要冒险者协会.<br>获得3倍经验值和天赋.<br>解锁于 20% 城市探索.
+      ]]></tooltip>
+        </gather_team>
+        <craft_armor>
+            <label>制作防具</label>
+            <tooltip><![CDATA[
+        努力把兽皮制作成防具.<br>每个防具给予 (20% * 工艺等级加成) 个人战斗力加成.<br>消耗2兽皮.<br>解锁于 30% 城市探索.
+      ]]></tooltip>
+        </craft_armor>
+        <smash_pots>
+            <label>打破罐子</label>
+            <label_done>砸罐</label_done>
+            <info_text1>还没砸的罐子</info_text1>
+            <info_text2>有法力的罐子</info_text2>
+            <info_text3>未鉴定的罐子</info_text3>
+            <tooltip><![CDATA[
+          它们只是坐在那里，坚不可摧，充满潜力。每10罐有一罐有法力值。
+      ]]></tooltip>
+        </smash_pots>
+        <locks>
+            <label>开锁</label>
+            <label_done>已开锁</label_done>
+            <info_text1>还没捡钱的房子</info_text1>
+            <info_text2>有钱的房子</info_text2>
+            <info_text3>没搜索过的房子</info_text3>
+            <tooltip><![CDATA[
+          别担心; 他们不记得了。<br>有钱的房子有 
+      ]]></tooltip>
+            <tooltip2><![CDATA[
+           黄金。<br>每10栋房屋有一栋有黄金。<br>探索20％时解锁。
+      ]]></tooltip2>
+        </locks>
+        <short_quest>
+            <label>短任务</label>
+            <label_done>已完成短任务</label_done>
+            <info_text1>还没完成的任务</info_text1>
+            <info_text2>有奖励的任务</info_text2>
+            <info_text3>新任务</info_text3>
+            <tooltip><![CDATA[
+          做一个英雄!…如果回报是好的，而且不需要太长时间。<br>短任务会给你
+      ]]></tooltip>
+            <tooltip2><![CDATA[
+           黄金作为奖励。<br>每5个短任务有一个有奖励。解锁在 5% 结识朋友。
+      ]]></tooltip2>
+        </short_quest>
+        <long_quest>
+            <label>长任务</label>
+            <label_done>已完成长任务</label_done>
+            <info_text1>还没完成的任务</info_text1>
+            <info_text2>有奖励的任务</info_text2>
+            <info_text3>新任务</info_text3>
+            <tooltip><![CDATA[
+          成为一个显赫的英雄! ...如果有人在看着的话。<br>长任务的奖励非常多。 
+      ]]></tooltip>
+            <tooltip2><![CDATA[
+           黄金和1声誉.<br>每5个长任务有一个有奖励.<br>解锁在 10% 调查.
+      ]]></tooltip2>
+        </long_quest>
+        <wild_mana>
+            <label>野外的法力</label>
+            <label_done>搜索法力之泉</label_done>
+            <info_text1>还没有收集的法力之泉</info_text1>
+            <info_text2>发现的法力之泉</info_text2>
+            <info_text3>需要检查的法力源头</info_text3>
+            <tooltip><![CDATA[
+          大多数旅行者都没有发现它们, 但你有很多时间来发现并收集它们.<br>每一个法力之泉里都能收集250法力.<br>每10个法力源头有一个是法力之泉.
+      ]]></tooltip>
+        </wild_mana>
+        <gather_herbs>
+            <label>收集药草</label>
+            <label_done>寻找特别的植物</label_done>
+            <info_text1>还没拔起的药草</info_text1>
+            <info_text2>发现的药草</info_text2>
+            <info_text3>特别的植物</info_text3>
+            <tooltip><![CDATA[
+          最好把你觉得有用的东西都挖起来.<br>每10个特别的植物有一株是药草.<br>解锁于 10% 森林探索.
+      ]]></tooltip>
+        </gather_herbs>
+        <hunt>
+            <label>打猎</label>
+            <label_done>猎取动物</label_done>
+            <info_text1>还没猎取的有兽皮的动物</info_text1>
+            <info_text2>有兽皮的动物</info_text2>
+            <info_text3>没见过的动物</info_text3>
+            <tooltip><![CDATA[
+          这是森林的馈赠.<br>每10个动物有一个可以获取兽皮.<br>解锁于 40% 森林探索.
+      ]]></tooltip>
+        </hunt>
+        <gamble>
+            <label>赌博</label>
+            <label_done>骗钱</label_done>
+            <info_text1>还没骗的傻瓜</info_text1>
+            <info_text2>这些人是傻瓜</info_text2>
+            <info_text3>还没确认是不是傻瓜的人</info_text3>
+            <tooltip><![CDATA[
+          卡片偶尔也会有一些变化.<br>获得2倍经验值和天赋<br>消耗20金币和1声誉.<br>至少要有-5声誉.<br>每十个人里有一个是傻瓜, 赢了可以拿到60金币.
+      ]]></tooltip>
+        </gamble>
+        <heal_sick>
+            <label>治病</label>
+            <label_done>治愈了</label_done>
+            <label_part>病人</label_part>
+            <tooltip><![CDATA[
+          你不能把他们全都治好, 但他们会感谢你.<br>治疗分为三个部分, 每个部分各自受不同能力影响 - 诊断 (感知), 治疗 (智力), 通知 (魅力).<br>给予 (魔法技能) * (1 + 主能力值 / 100) * sqrt(1 + 完成次数 / 100) * (初始法力消耗 / 实际法力消耗) 治疗进度每法力消耗.<br>需要 12 魔法技能和1声誉.<br>完成治疗可以获得3声誉.<br>每次行动完成获得10魔法技能经验值.
+      ]]></tooltip>
+            <segment_names>
+                <name>诊断</name>
+                <name>治疗</name>
+                <name>通知</name>
+            </segment_names>
+        </heal_sick>
+        <fight_monsters>
+            <label>和怪物战斗</label>
+            <label_done>击杀</label_done>
+            <tooltip><![CDATA[
+          逐渐的, 你弄清楚了它们的行动规律.<br>战斗分为三种类型, 每种类型各自受不同能力影响 - 快速 (速度), 防御 (力量), 攻击 (体质).<br>给予 (战斗技能) * (1 + 主能力值 / 100) * sqrt(1 + 完成次数 / 100) * (初始法力消耗 / 实际法力消耗) 战斗进度每法力消耗.<br>需要 10 战斗技能和2声誉.<br>完成战斗可以获得20金币.<br>每次行动完成获得10战斗技能经验值.
+      ]]></tooltip>
+            <segment_names>
+                <name>小鹿</name>
+                <name>巨型海龟</name>
+                <name>哥布林</name>
+                <name>恶魔兔</name>
+                <name>巨型蜜獾</name>
+                <name>毒蛇</name>
+                <name>愤怒的猴子</name>
+                <name>巨魔</name>
+                <name>食人魔</name>
+                <name>小精灵</name>
+                <name>树人</name>
+                <name>方形凝胶</name>
+                <name>小仙女</name>
+                <name>兽人</name>
+                <name>眼魔</name>
+                <name>幽灵</name>
+                <name>巨树妖</name>
+                <name>腐坏蘑菇人</name>
+                <name>巨型猫头鹰</name>
+                <name>血巨魔</name>
+                <name>幼年龙</name>
+                <name>皮卡丘</name>
+                <name>豪力</name>
+                <name>胡地</name>
+            </segment_names>
+            <segment_alt_names>
+                <name>快速的怪兽</name>
+                <name>顽强的怪兽</name>
+                <name>可怕的怪兽</name>
+            </segment_alt_names>
+            <segment_modifier_1>几个</segment_modifier_1>
+            <segment_modifier_2>一些</segment_modifier_2>
+            <segment_modifier_3>一大群</segment_modifier_3>
+        </fight_monsters>
+        <small_dungeon>
+            <label>小型地牢</label>
+            <label_done>已掠夺</label_done>
+            <label_complete>完成</label_complete>
+            <label_part>小型地牢</label_part>
+            <tooltip><![CDATA[
+          每一次它都有一些变化; 这让你很难习惯。 灵魂石会在你循环后仍然保留, 但它们并不总是在地牢里... 真奇怪.<br>地牢需要不同的能力来完成不同的进度。<br>如果你的能力够强，每次行动甚至可以一次通过数个楼层。<br>给予 (魔法技能 + 战斗技能) * (1 + 主能力值 / 100) * sqrt(1 + 楼层完成次数 / 200) * (初始法力消耗 / 实际法力消耗) 进度每法力.<br>需要35技能总值, 和2声誉.<br>每次完成获得1灵魂石 - 鼠标悬停在“完成”上获取信息.<br>每次行动完成获得5点战斗经验和魔法经验.
+      ]]></tooltip>
+            <completed_tooltip><![CDATA[
+        每个灵魂石都会给随机一个能力增加 (1+(灵魂石)^.8/30).<br>每一层都有一个灵魂石, 当你拿到之后, 将使你下一次拿到概率降低2%.<br>每消耗一点法力值，获得的概率增加  .00001%.<br>
+      ]]></completed_tooltip>
+            <chance_label>机会</chance_label>
+            <last_stat_label>统计</last_stat_label>
+            <segment_names>
+                <name>尖刺陷阱</name>
+                <name>长走廊</name>
+                <name>箭陷阱</name>
+                <name>解谜关卡</name>
+                <name>摆动的巨斧</name>
+                <name>打Boss</name>
+                <name>奖励</name>
+            </segment_names>
+        </small_dungeon>
+        <large_dungeon>
+            <label>大型地牢</label>
+            <label_done>已掠夺</label_done>
+            <label_complete>完成</label_complete>
+            <label_part>大型地牢</label_part>
+            <tooltip><![CDATA[
+          带着你的队伍, 你可以开始探索大型地牢了，这是之前你一个人做不到的.<br>给予 (魔法 + 团队战斗力) * (1 + 主属性 / 100) * sqrt(1 + 完成次数 / 200) * (初始法力消耗 / 实际法力消耗) 进度每法力.<br>至少需要一个队友.<br>每次完成获得10灵魂石 - 鼠标悬浮在“完成”上获取更多信息.<br>每个行动完成获得15战斗经验和魔法经验.
+      ]]></tooltip>
+            <completed_tooltip><![CDATA[
+        每个灵魂石都会给能力值一个 (1+(灵魂石)^.8/10)的经验加成.<br>每一层有10灵魂石, 但是每次获取之后会降低你2%的获取概率.<br>每消耗一点法力会提高 .00001% 的获取概率.<br>
+      ]]></completed_tooltip>
+            <chance_label>机会</chance_label>
+            <last_stat_label>统计</last_stat_label>
+            <segment_names>
+                <name>拉力赛</name>
+                <name>入口之旅</name>
+                <name>对抗守卫者</name>
+                <name>争论战利品</name>
+                <name>躲避陷阱</name>
+                <name>避开友军</name>
+                <name>打Boss</name>
+            </segment_names>
+        </large_dungeon>
+        <adventure_guild>
+            <label>冒险协会</label>
+            <label_done>声望</label_done>
+            <tooltip><![CDATA[
+          这里可以满足你所有的冒险需求.<br>完成他们的测试并获得一个等级!<br>你一次只能加入一个协会, 只能尝试一次测试.<br>每个等级给予200法力.<br>给予 ((魔法技能)/2 + (个人战斗力)) * (1 + 主属性 / 100) * sqrt(1 + 完成次数 / 1000) * (初始法力消耗 / 实际法力消耗) 进度每法力.<br>解锁于 20% 传闻.
+      ]]></tooltip>
+        </adventure_guild>
+        <craft_guild>
+            <label>工艺协会</label>
+            <label_done>工艺</label_done>
+            <tooltip><![CDATA[
+          学会用你的双手制作各种器具.<br>完成他们的测试并获得一个等级!<br>你一次只能加入一个协会, 只能尝试一次测试.<br>每个等级给予50工艺经验和10金币.<br>给予 ((魔法技能)/2 + (工艺等级)) * (1 + 主属性 / 100) * sqrt(1 + 完成次数 / 1000) * (初始法力消耗 / 实际法力消耗) p进度每法力.<br>解锁于 30% 传闻
+      ]]></tooltip>
+        </craft_guild>
+        <tournament>
+            <label>比赛</label>
+            <label_done>击败参赛者</label_done>
+            <tooltip><![CDATA[
+          争夺最终的大奖, 或是其它较差的奖励.<br>每次锦标赛只能尝试一次.<br>给予 (100 + (5 - Division) * 50) 战斗技能和 (40 + (5 - Division) * 20) 金币每级.<br>当你赢得整场比赛，你将获得一个强大的治愈药水!<br>给予 (魔法 + 个人战斗力) * (1 + 主属性 / 100) * sqrt(1 + 完成次数 / 1000) * (初始法力消耗 / 实际法力消耗) p进度每法力.<br>解锁于 40% 传闻
+      ]]></tooltip>
+        </tournament>
+    </actions>
+    <spells>
+        <title>法术</title>
+    </spells>
+</body>

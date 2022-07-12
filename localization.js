@@ -2,8 +2,9 @@ window.Localization = {
     // config
     // set to true for more console.log
     debug: false,
-    defaultLang: "en-EN",
+    defaultLang: "zh-CHS",
     supportedLang: {
+        "zh-CHS": "简体中文",
         "en-EN": "English",
         "fr-FR": "Français",
     },
