@@ -14,6 +14,11 @@ function cheat() {
     else gameSpeed = 1;
 }
 
+function bonusCheat()
+{
+    totalOfflineMs = 1000000000000000;
+}
+
 let mainTickLoop;
 const saveName = "idleLoops1";
 
@@ -60,7 +65,8 @@ let resources = {
     pickaxe: false,
     loopingPotion: false,
     citizenship: false,
-    pegasus: false
+    pegasus: false,
+    key: false
 };
 const resourcesTemplate = copyObject(resources);
 // eslint-disable-next-line prefer-const
@@ -100,7 +106,7 @@ let skillShowing;
 let curActionShowing;
 let dungeonShowing;
 let actionTownNum;
-let trainingLimits;
+let trainingLimits = 10;
 let storyShowing = 0;
 let storyMax = 0;
 const storyReqs = {
@@ -305,15 +311,12 @@ function load() {
         towns[i] = new Town(i);
     }
     actionTownNum = toLoad.actionTownNum === undefined ? 0 : toLoad.actionTownNum;
-    trainingLimits = toLoad.trainingLimits === undefined ? 10 : toLoad.trainingLimits;
+    trainingLimits = 10 + getBuffLevel("Imbuement");
     goldInvested = toLoad.goldInvested === undefined ? 0 : toLoad.goldInvested;
 
     actions.next = [];
     if (toLoad.nextList) {
         for (const action of toLoad.nextList) {
-            if (action.name === "Guided Tour") {
-                continue;
-            }
             if (action.name === "Sell Gold") {
                 action.name = "Buy Mana";
             }
@@ -484,7 +487,6 @@ function save() {
     toSave.dungeons = dungeons;
     toSave.townsUnlocked = townsUnlocked;
     toSave.actionTownNum = actionTownNum;
-    toSave.trainingLimits = trainingLimits;
 
     toSave.stats = stats;
     toSave.totalTalent = totalTalent;

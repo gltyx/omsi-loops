@@ -6,6 +6,32 @@
                 <title>Changelog</title>
                 <version_prefix>Version</version_prefix>
             </meta>
+            <version verNum="1.3"><![CDATA[
+            <b> July 12th, 2022</b>
+            • Change: Added max actions to oracle and charm school<br>
+            • Change: Completing totem for the first time doubles the bonus from imbue body<br>
+            ]]></version>
+            <version verNum="1.2"><![CDATA[
+            <b> July 12th, 2022</b>
+            Minor Survey Rework - still needs a bit more attention and explorers guild needs a use<br>
+            • Change: Survey is unlocked in all zones after joining explorers guild<br>
+            • Change: Survey actions cap raised to 500, but now applies across all survey actions<br>
+            • Change: Survey added as limited action, so the circle icon can be used<br>
+            • Bugfix: Looping potion tooltip<br>
+            • Bugfix: Spatiomancy was increasing mana well costs
+            ]]></version>
+            <version verNum="1.2"><![CDATA[
+            <b> July 12th, 2022</b>
+            • Change: Constructed additional warehouses so numbers would be prettier with all increases<br>
+            • Bugfix: Player was falling asleep on the wagon, missing the merchantville stop, and ending up on the mountain<br>
+            • Bugfix: Imbue soul wasn't resetting buffs<br>
+            • Bugfix: Excursion costs weren't modified by explorers guild<br>
+            • Bugfix: Key wasn't being reset correctly<br>
+            • Bugfix: Underworld action was showing failed, even when successful<br>
+            • Bugfix: Mana well and Buy mana tooltips now update when leveling skills that benefit them<br>
+            • Bugfix: Skill rework was causing pick locks to give double gold<br>
+            • Bugfix: Guided tour was being removed from active list on refresh
+            ]]></version>
             <version verNum="1.1"><![CDATA[
             <b> July 11th, 2022</b>
             • New Guild: Explorers - Voted by the community, the explorers guild has opened shop in Commerceville!<br>
@@ -549,7 +575,9 @@
         <wunderkind>
             <label>Wunderkind</label>
             <desc>Even with your eyes closed, you still see the glow of the totem.</desc>
-            <desc2><![CDATA[Talent exp gain is increased by (1 + level / 60) ^ 0.25.<br>
+            <desc2><![CDATA[
+            Doubles the initial stat gain of Imbue Body<br>
+            Talent exp gain is increased by (1 + level / 60) ^ 0.25.<br>
             Currently granting <div id='skillBonusWunderkind'></div>x talent exp.]]></desc2>
         </wunderkind>
         <gluttony>
@@ -742,8 +770,8 @@
             <label_done>Surveyed</label_done>
             <tooltip><![CDATA[
             The explorers guild has taught you to find what most would miss.<br>
-            Gives progress equal to the square root of survey progress in all zones.<br>
-            Can only be completed <div class='surveyLimit'>100</div> times per loop<br>
+            Gives progress equal to the square root of average survey progress across all zones.<br>
+            Can only be completed <div class='surveyLimit'>500</div> times per loop.<br>
             Currently granting <div class='surveySkill'></div> exp per action.
             ]]></tooltip>
         </surveyZ0>
@@ -752,8 +780,8 @@
             <label_done>Surveyed</label_done>
             <tooltip><![CDATA[
             The explorers guild has taught you to find what most would miss.<br>
-            Gives progress equal to the square root of survey progress in all zones.<br>
-            Can only be completed <div class='surveyLimit'>100</div> times per loop<br>
+            Gives progress equal to the square root of average survey progress across all zones.<br>
+            Can only be completed <div class='surveyLimit'>500</div> times per loop.<br>
             Currently granting <div class='surveySkill'></div> exp per action.
             ]]></tooltip>
         </surveyZ1>
@@ -762,8 +790,8 @@
             <label_done>Surveyed</label_done>
             <tooltip><![CDATA[
             The explorers guild has taught you to find what most would miss.<br>
-            Gives progress equal to the square root of survey progress in all zones.<br>
-            Can only be completed <div class='surveyLimit'>100</div> times per loop<br>
+            Gives progress equal to the square root of average survey progress across all zones.<br>
+            Can only be completed <div class='surveyLimit'>500</div> times per loop.<br>
             Currently granting <div class='surveySkill'></div> exp per action.
             ]]></tooltip>
         </surveyZ2>
@@ -772,8 +800,8 @@
             <label_done>Surveyed</label_done>
             <tooltip><![CDATA[
             The explorers guild has taught you to find what most would miss.<br>
-            Gives progress equal to the square root of survey progress in all zones.<br>
-            Can only be completed <div class='surveyLimit'>100</div> times per loop<br>
+            Gives progress equal to the square root of average survey progress across all zones.<br>
+            Can only be completed <div class='surveyLimit'>500</div> times per loop.<br>
             Currently granting <div class='surveySkill'></div> exp per action.
             ]]></tooltip>
         </surveyZ3>
@@ -782,8 +810,8 @@
             <label_done>Surveyed</label_done>
             <tooltip><![CDATA[
             The explorers guild has taught you to find what most would miss.<br>
-            Gives progress equal to the square root of survey progress in all zones.<br>
-            Can only be completed <div class='surveyLimit'>100</div> times per loop<br>
+            Gives progress equal to the square root of average survey progress across all zones.<br>
+            Can only be completed <div class='surveyLimit'>500</div> times per loop.<br>
             Currently granting <div class='surveySkill'></div> exp per action.
             ]]></tooltip>
         </surveyZ4>
@@ -792,8 +820,8 @@
             <label_done>Surveyed</label_done>
             <tooltip><![CDATA[
             The explorers guild has taught you to find what most would miss.<br>
-            Gives progress equal to the square root of survey progress in all zones.<br>
-            Can only be completed <div class='surveyLimit'>100</div> times per loop<br>
+            Gives progress equal to the square root of average survey progress across all zones.<br>
+            Can only be completed <div class='surveyLimit'>500</div> times per loop.<br>
             Currently granting <div class='surveySkill'></div> exp per action.
             ]]></tooltip>
         </surveyZ5>
@@ -802,8 +830,8 @@
             <label_done>Surveyed</label_done>
             <tooltip><![CDATA[
             The explorers guild has taught you to find what most would miss.<br>
-            Gives progress equal to the square root of survey progress in all zones.<br>
-            Can only be completed <div class='surveyLimit'>100</div> times per loop<br>
+            Gives progress equal to the square root of average survey progress across all zones.<br>
+            Can only be completed <div class='surveyLimit'>500</div> times per loop.<br>
             Currently granting <div class='surveySkill'></div> exp per action.
             ]]></tooltip>
         </surveyZ6>
@@ -812,8 +840,8 @@
             <label_done>Surveyed</label_done>
             <tooltip><![CDATA[
             The explorers guild has taught you to find what most would miss.<br>
-            Gives progress equal to the square root of survey progress in all zones.<br>
-            Can only be completed <div class='surveyLimit'>100</div> times per loop<br>
+            Gives progress equal to the square root of average survey progress across all zones.<br>
+            Can only be completed <div class='surveyLimit'>500</div> times per loop.<br>
             Currently granting <div class='surveySkill'></div> exp per action.
             ]]></tooltip>
         </surveyZ7>
@@ -822,8 +850,8 @@
             <label_done>Surveyed</label_done>
             <tooltip><![CDATA[
             The explorers guild has taught you to find what most would miss.<br>
-            Gives progress equal to the square root of survey progress in all zones.<br>
-            Can only be completed <div class='surveyLimit'>100</div> times per loop<br>
+            Gives progress equal to the square root of average survey progress across all zones.<br>
+            Can only be completed <div class='surveyLimit'>500</div> times per loop.<br>
             Currently granting <div class='surveySkill'></div> exp per action.
             ]]></tooltip>
         </surveyZ8>
@@ -1638,7 +1666,7 @@
         <looping_potion>
             <label>Looping Potion</label>
             <tooltip><![CDATA[
-            Using your aptness of alchemy and your talent for time, you've managed to recreate the very potion that got you into this whole mess! It can't cure you, but maybe you can find another use for it. (this does nothing right now)<br>Requires 400 herbs.<br>Unlocked with both 500 Alchemy.
+            Using your aptness of alchemy and your talent for time, you've managed to recreate the very potion that got you into this whole mess! It can't cure you, but maybe you can find another use for it.<br>Requires 400 herbs.<br>Unlocked with 500 Alchemy.
         ]]></tooltip>
 			<story_1><![CDATA[<b>Potion Made:</b>⮀ There's no mistake, it's the same potion that you were transporting what feels like an eternity ago. This is chronomancy you'd never have been able to do as a spell, and you take a moment to feel proud at how far you've come. And yet, you don't really know what to do with the thing. Maybe you'll figure something out later.]]></story_1>
         </looping_potion>
@@ -1978,7 +2006,9 @@
             <info_text2>Spots with full wells total</info_text2>
             <info_text3>Spots to check for wells</info_text3>
             <tooltip><![CDATA[
-            Search the town for wells that still have any mana left. They seem to be rapidly draining.<br>Full wells have 5000 mana, but lose 10 mana for every second that has passed in the loop.<br>Every 100 wells still has mana.
+            Search the town for wells that still have any mana left. They seem to be rapidly draining.<br>
+            Full wells have 5000 mana, but lose 10 mana for every second that has passed in the loop.<br>
+            Every 100 wells still has mana.
         ]]></tooltip>
         </mana_well>
         <destroy_pylons>
@@ -2084,6 +2114,7 @@
             <label>Totem</label>
             <tooltip><![CDATA[
             Deep within the jungle, you find a totem pulsing with energy. Just standing near it, you feel more capable. If you drink a looping potion here, perhaps some of that energy will stay with you on future loops.<br>
+            Doubles the initial stat gain bonus of Imbue Body on first completion.<br>
             Requires a looping potion.<br>
             Unlocked at Jungle Explored 50%.<br>
             Grants 100 Wunderkind exp.
@@ -2196,7 +2227,7 @@
             <tooltip><![CDATA[
             Resets all talent levels, soulstones, imbue mind and imbue body. Other skills and buffs are unchanged.<br>
             Requires 500 Imbue Mind and Body.<br>
-            (Temporary)Raises all action speeds by 50%.
+            (Temporary - may change later)Raises all action speeds by 50%.
         ]]></tooltip>
         </imbue_soul>
         <challenge_gods>
