@@ -503,8 +503,8 @@
             <desc2>新手村的魔法师非常崇拜炼金术. 每级可以使魔法课程的魔法经验+1% (向下取整) .</desc2>
         </alchemy>
         <dark>
-            <label>黑魔法</label>
-            <desc>使用黑魔法来帮助你获得法力.</desc>
+            <label>黑暗魔法</label>
+            <desc>使用黑暗魔法来帮助你获得法力.</desc>
             <desc2><![CDATA[踢罐子和野生法力的法力获取乘以 (1 + 等级 / 60) ^ 0.25 (向下取整).<br> 当前 <div id='skillBonusDark'></div>x 倍法力获取.]]></desc2>
         </dark>
         <crafting>
@@ -594,7 +594,7 @@
         <title>加成</title>
         <dark_ritual>
             <label>黑暗仪式</label>
-            <desc>女巫感谢你对黑魔法的贡献. 每级使黑魔法行动的黑魔法经验 +1% (向下取整) .</desc>
+            <desc>女巫感谢你对黑暗魔法的贡献. 每级使黑暗魔法行动的黑暗魔法经验 +1% (向下取整) .</desc>
             <desc2><![CDATA[<br>1-20 每级使新手村的行动速度提高 10% .<br>
             21-40 每级使森林小径的行动速度提高 5% .<br>
             41-60 每级使商业小镇的行动速度提高 2.5% .<br>
@@ -1173,7 +1173,7 @@
         <open_rift>
             <label>打开裂缝</label>
             <tooltip><![CDATA[
-            利用你渊博的黑暗知识, 你可以打开一条通往初始小镇的裂缝.<br>不幸的是, 它看上去并不能让你带着补给通过.<br>解锁于 300 黑魔法和 100 空间魔法.
+            利用你渊博的黑暗知识, 你可以打开一条通往初始小镇的裂缝.<br>不幸的是, 它看上去并不能让你带着补给通过.<br>解锁于 300 黑暗魔法和 100 空间魔法.
         ]]></tooltip>
             <!--TODO: give this action story-->
         </open_rift>
@@ -1219,30 +1219,30 @@
             <story_1><![CDATA[<b>Plant checked for use:</b>⮀ You pull up random plants across the forest that emanate mana only to find that in most cases, they're simply plants that have started gathering mana, but in some cases they're actually magical plants. Small distinction, but a significant one.]]></story_1>
         </gather_herbs>
         <hunt>
-            <label>Hunt</label>
-            <label_done>Animals Skinned</label_done>
-            <info_text1>Animals with hides left</info_text1>
-            <info_text2>Animals with hides total</info_text2>
-            <info_text3>Animals to check for hides</info_text3>
+            <label>打猎</label>
+            <label_done>已剥皮动物</label_done>
+            <info_text1>可剥皮动物剩余</info_text1>
+            <info_text2>可剥皮动物总计</info_text2>
+            <info_text3>还需要检查的动物</info_text3>
             <tooltip><![CDATA[
-            The forest provides.<br>Every 10 animals have good hides.<br>Unlocked at 40% Forest Explored.
+            感谢大自然的馈赠.<br>每 10 个动物有一个有优质皮.<br>解锁于 40% 森林探索度.
         ]]></tooltip>
             <story_1><![CDATA[<b>Animal checked for hide:</b>⮀ You manage to track down a relatively harmless animal, but in the time it took you to bring the critter down you had ruined its pelt beyond all use. You needed practice.]]></story_1>
             <story_2><![CDATA[<b>10 Animals with hide:</b>⮀ You ghost through the forest, targeting packs that you know graze or are moving through locations easily reached and ambushed. You're starting to get good at this tracking thing, but you suppose you only really have to do it once.]]></story_2>
             <story_3><![CDATA[<b>20 Animals with hide:</b>⮀ A deer languishes by the water, lapping gently at the water seemingly unaware of your presence. It remains unaware of your presence as you slowly edge closer, the deer remains unaware of your presence until it is unaware of everything forevermore. You ghost through the forest on silent feet, swift as the wind and as deadly as a viper, your body swaying as you slip between blind spots and perception to reach your targets. The animals feel nothing as they die, you've had much practice. You offer a silent thanks as their pelts will be of value to you.]]></story_3>
         </hunt>
         <sit_by_waterfall>
-            <label>Sit By Waterfall</label>
+            <label>瀑布下静坐</label>
             <tooltip><![CDATA[
-            It's peaceful here. Loud, but peaceful.<br>Has 4x exp/talent gain, and can only be done <div id='trainingLimitSoul'></div> times per reset.<br>Unlocked at 70% Forest Explored.
+            完美的地方. 瀑布轰鸣, 但非常和平.<br>获得 4x 能力/天赋经验, 每次循环只能完成 <div id='trainingLimitSoul'></div> 次.<br>解锁于 70% 森林探索度.
         ]]></tooltip>
             <story_1><![CDATA[<b>Sat by waterfall:</b>⮀ You find a waterfall flowing from a higher point in a mountain down the side oddly scenic and decide stop to stare for awhile, simply to observe the natural beauty of the sight. As you watched, the force of the water managed to dislodge a small pebble from the top of the waterfall and send it careening down. You watch oddly mesmerized at it bounces along the path, constantly being immersed and spat out by the water. You don't know when you sat down and began meditating, only that you woke from your deep realization hours later.]]></story_1>
         </sit_by_waterfall>
         <old_shortcut>
-            <label>Old Shortcut</label>
-            <label_done>Shortcut Explored</label_done>
+            <label>古老的捷径</label>
+            <label_done>捷径探索度</label_done>
             <tooltip><![CDATA[
-            No one has come down this way in quite some time.<br>Gives some additional herbs.<br>Old men are a pain unless you know something they care about. Talk to Hermit gives 1% more Hermit Knowledge Learned per 1% Shortcut Explored.<br>Unlocked at 20% Forest Explored.
+            很久没人踏上这条小路了.<br>可以找到更多的草药.<br>这个老人很难交流, 也许可以找点他感兴趣的东西. 每 1% 捷径探索度可以使 与隐士交谈 产生额外 1% 隐士知识.<br>解锁于 20% 森林探索度.
         ]]></tooltip>
             <story_1><![CDATA[<b>1% Shortcut explored:</b>⮀ You continued on with your trip and discovered a small and worn path leading off the main thoroughfare. You wondered what it was and decided to explore.]]></story_1>
             <story_2><![CDATA[<b>10% Shortcut explored:</b>⮀ You're mildly surprised to discover a seemingly sprawling network of interconnected paths that seem to get almost everywhere within the forest.]]></story_2>
@@ -1253,10 +1253,10 @@
             <story_7><![CDATA[<b>100% Shortcut explored:</b>⮀ You dust your hands and smile contently, you've done it. You've traveled every single path to completion. You could start at a completely random point and find your way out. That old hermit seems to like these paths.]]></story_7>
         </old_shortcut>
         <talk_to_hermit>
-            <label>Talk To Hermit</label>
-            <label_done>Hermit Knowledge Learned</label_done>
+            <label>与隐士交谈</label>
+            <label_done>隐士知识</label_done>
             <tooltip><![CDATA[
-            This old man is happy to have a listening ear, surely he has some useful knowledge. You hope. He's initially confrontational, but opens up once you start talking about the road.<br>Reduces mana cost of Gather Herbs, Practical Magic, and Learn Alchemy by 0.5% per 1% of Hermit Knowledge.<br>Unlocked with both 20% Shortcut Explored and 40 Magic.
+            这个老人很高兴有人愿意倾听他的故事, 显然他有很多有用的知识. 至少你这么希望. 最初他不怎么热情, 直到你开始谈论起这条小路.<br>每 1% 隐士知识降低采集草药, 实用魔法, 以及学习炼金术 0.5% 法力消耗.<br>解锁于 20% 捷径探索度 40 魔法技能.
         ]]></tooltip>
             <story_1><![CDATA[<b>1% Hermit knowledge learned:</b>⮀ The Hermit is old, scraggly and surprisingly, not bald. Looks old as dirt. He doesn't know the name of the surrounding provinces, but knows the names of the provinces before the current ones.]]></story_1>
             <story_2><![CDATA[<b>10% Hermit knowledge learned:</b>⮀ The old hermit is an absolute genius at using magic to speed things up and just in general make things quicker and easier. You have much information to wring from him. He doesn't tell you his name and insists you call him 'Old man', or 'Hermit'.]]></story_2>
@@ -1267,49 +1267,49 @@
             <story_7><![CDATA[<b>100% Hermit knowledge learned:</b>⮀ He finally told you his name. Gelt. He seemed almost knowing as he told you.]]></story_7>
         </talk_to_hermit>
         <practical_magic>
-            <label>Practical Magic</label>
+            <label>实用魔法</label>
             <tooltip><![CDATA[
-            Such simple uses to help out with everyday tasks. Genius, really. It's like pulling teeth getting this knowledge from the Hermit though.<br>Unlocked with both 20% Hermit Knowledge and 50 Magic.
+            日常用的简单魔法. 天才的构思, 真的. 你艰难的从隐士那里学到了它们.<br>解锁于 20% 隐士知识和 50 魔法技能.
         ]]></tooltip>
             <story_1><![CDATA[<b>1 Practical magic:</b>⮀ You pester the hermit about magic and how to use it to make things easier on yourself. It's surprisingly handy to be able to move things around without havin to be there, rather than smashing pots you can instead lift them or knock them off edges. Why open a lock when you can unlock a latch with Mage Hand, why walk over to the wardrobe if you can just fling it open and ransack it? Magic, but practical. You're a little astonished that not everyone does this.]]></story_1>
         </practical_magic>
         <learn_alchemy>
-            <label>Learn Alchemy</label>
+            <label>学习炼金术</label>
             <tooltip><![CDATA[
-            You can listen to him yammer while making light healing and remedy potions.<br>You're starting to think the potion that caused you to loop time was a complex one.<br>You provide the ingredients; costs 10 herbs.<br>Gives alchemy and magic skill.<br>Unlocked with both 40% Hermit Knowledge and 60 Magic.
+            你可以在他的抱怨声中炼制轻型治疗和恢复药剂.<br>你意识到导致你进入循环的药水相当复杂.<br>你需要自备原料; 消耗 10 药草.<br>给予炼金术和魔法技能.<br>解锁于 40% 隐士知识 60 魔法技能.
         ]]></tooltip>
             <story_1><![CDATA[<b>Alchemy learned:</b>⮀ You ask the hermit about potion's and are regaled of tales from his time as an apprentice, the mistakes he made and how one time, he managed to douse his masters beard with potion that would wildly change the color of it every minute, for a full year his master had to deal with a beard that was either glowing white like pure fallen snow or was more fit to be in the sky after rain. You take notes as the hermit speaks.]]></story_1>
             <story_2><![CDATA[<b>25 Alchemy:</b>⮀ You sit by the fire inside the hermits clearing, fire dancing merrily away as he feeds magical herbs to the fire while throwing precise amounts into the large pot boiling above it. The stories he tells of his youth and learning alchemy under his master make you howl with laughter and provoke deep thoughtful silences.]]></story_2>
             <story_3><![CDATA[<b>50 Alchemy:</b>⮀ As you learn more and more about alchemy, the potion that caused you to start looping begins to seem more and more hideously complex. Something as simple as your reputation can effect the outcome of a potion. It's more of an art than a science, or anything even easily conveyed really.]]></story_3>
         </learn_alchemy>
         <brew_potions>
-            <label>Brew Potions</label>
+            <label>炼制药水</label>
             <tooltip><![CDATA[
-            Bubbles and Flasks. Potions and Magic.<br>Requires a reputation of 5 or above, or he won't let you near his stuff.<br>Creates a potion from 10 herbs to sell at the next town.<br>Gives alchemy and magic skill.<br>Unlocked with 10 Alchemy.
+            泡泡和烧瓶. 药水和魔法.<br>至少需要 5 声誉, 否则他不会让你靠近他的工具.<br>用 10 草药炼制一瓶药水并在下一个城镇卖掉它.<br>给予炼金术和魔法技能.<br>解锁于 10 炼金术.
         ]]></tooltip>
             <story_1><![CDATA[<b>Potion brewed:</b>⮀ The old man happily lets you use his apparatus to brew your own potions after much haranguing about your technique and the fact that you're not buying ingredients off him, he leaves you to it. His workstations are old, well used and obviously well looked after. The only fault you can lay at their feet is that the measuring system used is older than dirt. Fits you suppose.]]></story_1>
             <story_2><![CDATA[<b>Action failed with low reputation:</b>⮀ The hermit refuses to allow you near his workstations and potion brewing equipment no matter how much you ask and offer to pay. He tells you that you don't have a good enough karma for him to even be willing to risk you using his workstations and potion benches.]]></story_2>
             <story_3><![CDATA[<b>Action failed with negative reputation:</b>⮀ The hermit shoos you away from his clearing when you even make a mention of using his potion supplies, something about not wanting you to taint his equipment with your karma.]]></story_3>
         </brew_potions>
         <train_dexterity>
-            <label>Train Dexterity</label>
+            <label>训练敏捷</label>
             <tooltip><![CDATA[
-            There's a nice array of rocks to hop between. It's a lot of fun.<br>Has 4x exp/talent gain, and can only be done <div id='trainingLimitDex'></div> times per reset.<br>Unlocked at 60% Forest Explored.
+            有一排相当规整的石头可以供你来回跳跃. 这真的挺有意思的.<br>给予 4x 能力/天赋经验, 每次循环只能进行 <div id='trainingLimitDex'></div> 次.<br>解锁于 60% 森林探索度.
         ]]></tooltip>
             <story_1><![CDATA[<b>Dexterity trained:</b>⮀ You find rocks spaced intermittently in an open clearing. Your best guess is that they were set up as a training field for some mercenary group that had passed by. Either way, it's fun to bounce from one rock to another parrying invisible enemies and fighting the air.]]></story_1>
         </train_dexterity>
         <train_speed>
-            <label>Train Speed</label>
+            <label>训练速度</label>
             <tooltip><![CDATA[
-            A forest run is fantastic. You feel like you're learning a lot as you push your limits.<br>Has 4x exp/talent gain, and can only be done <div id='trainingLimitSpd'></div> times per reset.<br>Unlocked at 80% Forest Explored.
+            在森林飞奔真是太棒了. 你感觉到了你正在突破极限.<br>给予 4x 能力/天赋经验, 每次循环只能完成 <div id='trainingLimitSpd'></div> 次.<br>解锁于 80% 森林探索度.
         ]]></tooltip>
             <story_1><![CDATA[<b>Speed trained:</b>⮀ Sprinting through the forest is an exhilarating experience. The vines whip past your head, the roots beneath your feet. The leaves whip past your face and the breeze blows hard enough against your ears that you hear nothing but. You feel at one with the forest as you chase a finch around, up and down and even under trees at times. Through dilapidated trunks and wooden labyrinths.]]></story_1>
         </train_speed>
         <follow_flowers>
-            <label>Follow Flowers</label>
-            <label_done>Flower Trail Followed</label_done>
+            <label>探索花径</label>
+            <label_done>花径探索度</label_done>
             <tooltip><![CDATA[
-            You've located an oddly out of place trail of flowers, why not see where it leads. You can find more herbs along the path.<br>2x progress with glasses.<br>Unlocked at 50% Forest Explored.
+            你找到了一条奇特的花径, 为什么看看它通向哪里呢. 你可以在这条路上找到更多草药.<br>眼镜可以使你获得 2x 进度.<br>解锁于 50% 森林探索度.
         ]]></tooltip>
             <story_1><![CDATA[<b>1% Flower trail followed:</b>⮀ You stumble across a small lane of flowers that are obviously planted by hand. You decide to follow it.]]></story_1>
             <story_2><![CDATA[<b>10% Flower trail followed:</b>⮀ The planted flowers seem almost sprawling, threading to and fro across the forest.]]></story_2>
@@ -1320,17 +1320,17 @@
             <story_7><![CDATA[<b>100% Flower trail followed:</b>⮀ The patterns were strangely geometric, and you had an inkling that the flower path had some sinister beginnings. Regardless, you'd explored the entire path. You were right too, it never did stray from the darker side of the forest.]]></story_7>
         </follow_flowers>
         <bird_watching>
-            <label>Bird Watching</label>
+            <label>看鸟</label>
             <tooltip><![CDATA[
-            Far along the flower trail, there seems to be a large variety of birds flying about. Perhaps you could take up a new hobby.<br>Requires glasses.<br>Has 4x exp/talent gain, and can only be done <div id='trainingLimitPer'></div> times per reset.<br>Unlocked at 80% Flower Trail Followed.
+            沿着花径往下走, 前方似乎有很多鸟在飞. 也许你可以培养一个新的兴趣.<br>需要眼镜.<br>给予 4x 能力/天赋经验, 每次循环只能完成 <div id='trainingLimitPer'></div> 次.<br>解锁于 80% 花径探索度.
         ]]></tooltip>
             <story_1><![CDATA[<b>Birds watched:</b>⮀ You spot a colorful bird and attempt to follow it with your eyes, you fail. You try again and again until you can reliable pick out fast moving birds and animals with pinpoint precision. It's also strangely relaxing to watch birds congregate together, listening to the bird-call and watching them interact. Its fast, frenetic and savage at times, but that's nature.]]></story_1>
         </bird_watching>
         <clear_thicket>
-            <label>Clear Thicket</label>
-            <label_done>Thicket Explored</label_done>
+            <label>清除灌木丛</label>
+            <label_done>灌木丛探索度</label_done>
             <tooltip><![CDATA[
-            The path of flowers has lead you to a thicket, seemingly in the middle of nowhere. Perhaps it's some strange magic. You can clear out the thicket to find some more wild mana.<br>Unlocked at 20% Flower Trail Followed.
+            花径的终点是灌木丛, 不知道灌木丛中间有什么. 也许里面有一些奇怪的魔法. 清除灌木丛可以找到更多的野生法力.<br>解锁于 20% 花茎探索.
         ]]></tooltip>
             <story_1><![CDATA[<b>1% Thicket explored:</b>⮀ You trek to a thicket you found while following the flower path and decide to explore it. Maybe you'll find some more mana. It's not like it belongs to anyone.]]></story_1>
             <story_2><![CDATA[<b>10% Thicket explored:</b>⮀ You've found more of these secluded thickets off the flower path than you thought you would, and you have a sense that there are many more that you haven't found yet.]]></story_2>
@@ -1341,10 +1341,10 @@
             <story_7><![CDATA[<b>100% Thicket explored:</b>⮀ You stumbled across another thicket and throw your hands up. You would question how you missed all these extra thickets but you don't really care at this point. You've gotten disturbingly good at ripping nature to pieces in search of more mana.]]></story_7>
         </clear_thicket>
         <talk_to_witch>
-            <label>Talk To Witch</label>
-            <label_done>Witch Knowledge Learned</label_done>
+            <label>与女巫交谈</label>
+            <label_done>女巫知识学习</label_done>
             <tooltip><![CDATA[
-            Talk to the witch to learn her secrets of the dark arts.<br>Unlocked with both 60% Thicket Explored and 80 Magic.<br>Reduces mana cost of Dark Magic and Dark Ritual by 0.5% per 1% of Witch Knowledge.
+            向女巫学习黑暗魔法相关的知识.<br>解锁于 60% 灌木丛探索度以及 80 魔法技能.<br>每 1% 女巫知识学习进度降低黑暗魔法和黑暗仪式的法力消耗 0.5% .
         ]]></tooltip>
             <story_1><![CDATA[<b>1% Witch knowledge learned:</b>⮀ You stumble across a small crooked hut and as you approach the boundary, a small slip of a woman step outs. She's stunning and you're immediately on guard. The area pulses with a heady hum of magic that sends shivers down your spine. She introduces herself as Evis.]]></story_1>
             <story_2><![CDATA[<b>10% Witch knowledge learned:</b>⮀ The Witch as you taken to referring to her as, seeing as she changes her name every time she introduces herself to you, is a veritable font of magical knowledge, of how to dominate the mana itself and make more from less.]]></story_2>
@@ -1356,22 +1356,22 @@
             <story_8><![CDATA[<b>100% Witch knowledge learned:</b>⮀ Somehow she seems to sense something about you this loop, and she tells you her name, and its the name she gives for every loop after. Trisha. You manage to pry most of her relationship with the hermit from her. They were lovers once, this you knew, but what you didn't was that she was of nobility and he a common vagabond. She fell for him and him for her, it was a love for the ages she tells you while drunk from the wine you brought along with you. He wanted to run away with her and she agreed, too love struck to question why. He was running from deals he had made and bargains he had forsaken, his glib tounge landing him in trouble of the otherworldly nature. Trisha seems frustrated with her youth's naivety as she tells you how she was made a scapegoat for his failings and forfeits in his deals and bargains. How she was essentially sold to the dark gods as his forfeit. When you ask what she did in return, all Trisha does is smile with dark satisfaction, the fire flaring briefly.]]></story_8>
         </talk_to_witch>
         <dark_magic>
-            <label>Dark Magic</label>
+            <label>黑暗魔法</label>
             <tooltip><![CDATA[
-            Embrace the dark arts to more efficiently harvest mana. But at what cost?<br>Adds 1 negative reputation.<br>Requires a reputation of 0 or below.<br>Unlocked with both 20% Witch Knowledge and 100 Magic.
+            拥抱黑暗以更好的获取法力. 但代价是什么?<br>增加 1 负面声望.<br>不能多于 0 声望.<br>解锁于 20% 女巫知识学习和 100 魔法技能.
         ]]></tooltip>
             <story_1><![CDATA[<b>1 Dark magic:</b>⮀ You ask the witch for more information on dark magic and then during the conversation slowly reveal your interest in the subject and float the offer that you would be willing to trade if she would teach you the beginning steps. She smirks deviously and agrees to the deal.]]></story_1>
             <story_2><![CDATA[<b>25 Dark magic:</b>⮀ The witch demands more and more of you and you slowly figure out ways of broaching the subject with her that doesn't startle her enough that she stops talking to you or just flat out shuts you down. The magic she begins to teach is brutal, ominous and forceful. You do not work with or help, you take and dominate.]]></story_2>
             <story_3><![CDATA[<b>50 Dark magic:</b>⮀ The dark magic she teaches seems to veer more to the side of ritualistic sacrifice and communion with the dark gods, she tells you when you ask that its because she can't really teach you too much more unless you have a darker being backing you as her mana isn't inherent but a gift from the darker divine powers. She teaches you of a ritual that you can use to summon the dark gods and strike a bargain. She warns that you'll need souls as payment.]]></story_3>
         </dark_magic>
         <dark_ritual>
-            <label>Dark Ritual</label>
-            <label_done>Completed</label_done>
+            <label>黑暗仪式</label>
+            <label_done>已完成</label_done>
             <tooltip><![CDATA[
-            Sacrifice an increasing amount of soulstones to the dark gods, granting a permanent speed 10% boost to all actions in Beginnersville.<br>Gives (dark magic skill) * (1 + witch knowledge / 100) * (1 + main stat / 100) * (original mana cost / actual mana cost) progress points per mana.<br>Requires a reputation of -5 or below.<br>Can only have 1 Dark Ritual action.<br>Unlocked with both 50% Witch Knowledge and 50 Dark Magic.<br>Sacrifices (50 * (rituals completed+1)) soulstones. Currently sacrificing 
+            献祭越来越多的灵魂石给黑暗之神, 使你新手村的所有速度永久提高 10% .<br>每点法力给予 (黑暗魔法等级) * (1 + 女巫知识 / 100) * (1 + 主能力 / 100) * (初始法力消耗 / 实际法力消耗) 进度点.<br>需要不高于 -5 声望.<br>一次循环只能进行 1 次黑暗仪式.<br>解锁于 50% 女巫知识学习以及 50 黑暗魔法.<br>需献祭 (50 * (仪式完成次数+1)) 灵魂石. 当前献祭 
         ]]></tooltip>
             <tooltip2><![CDATA[
-             soulstones.
+             灵魂石.
         ]]></tooltip2>
             <segment_names>
                 <name>Clear the Area</name>
