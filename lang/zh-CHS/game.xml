@@ -395,47 +395,47 @@
         <dex>
             <blurb>了解你的身体.</blurb>
             <long_form>敏捷</long_form>
-            <short_form>Dex</short_form>
+            <short_form>敏捷</short_form>
         </dex>
         <str>
             <blurb>训练你的身体.</blurb>
             <long_form>力量</long_form>
-            <short_form>Str</short_form>
+            <short_form>力量</short_form>
         </str>
         <con>
             <blurb>再长一点. 再多一点.</blurb>
             <long_form>体质</long_form>
-            <short_form>Con</short_form>
+            <short_form>体质</short_form>
         </con>
         <spd>
             <blurb>跑快快.</blurb>
             <long_form>速度</long_form>
-            <short_form>Spd</short_form>
+            <short_form>速度</short_form>
         </spd>
         <per>
             <blurb>凑近点...</blurb>
-            <long_form>观察</long_form>
-            <short_form>Per</short_form>
+            <long_form>感知</long_form>
+            <short_form>感知</short_form>
         </per>
         <cha>
             <blurb>交流也是一场战斗.</blurb>
             <long_form>魅力</long_form>
-            <short_form>Cha</short_form>
+            <short_form>魅力</short_form>
         </cha>
         <int>
             <blurb>学会学习.</blurb>
             <long_form>智力</long_form>
-            <short_form>Int</short_form>
+            <short_form>智力</short_form>
         </int>
         <luck>
             <blurb>机遇总是青睐幸运者.</blurb>
             <long_form>幸运</long_form>
-            <short_form>Luck</short_form>
+            <short_form>幸运</short_form>
         </luck>
         <soul>
             <blurb>你才是你的主人.</blurb>
             <long_form>灵魂</long_form>
-            <short_form>Soul</short_form>
+            <short_form>灵魂</short_form>
         </soul>
         <tooltip>
             <level>等级</level>
