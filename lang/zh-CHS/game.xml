@@ -568,8 +568,8 @@
             <label>神童</label>
             <desc>即使你闭着眼, 你还是能看到图腾的光辉.</desc>
             <desc2><![CDATA[
-            Doubles the initial stat gain of Imbue Body<br>
-            Talent exp gain is increased by (1 + level / 60) ^ 0.25.<br>
+            使灌注躯体的初始收益翻倍<br>
+            天赋经验获取增加 (1 + 等级 / 60) ^ 0.25.<br>
             当前获取 <div id='skillBonusWunderkind'></div>x 天赋经验.]]></desc2>
         </wunderkind>
         <gluttony>
@@ -985,7 +985,7 @@
         <warrior_lessons>
             <label>战士课程</label>
             <tooltip><![CDATA[
-            学会战斗也许很重要; 你后面的旅途还很长.<br>至少需要 2 声誉.<br>在 20% 已调查解锁.
+            学会战斗也许很重要; 你后面的旅途还很长.<br>至少需要 2 声望.<br>在 20% 已调查解锁.
         ]]></tooltip>
             <story_1><![CDATA[<b>1 Combat:</b>⮀ You manage to track down the warrior that was staying in town, and are greeted by a small woman holding a sword almost as tall as her. She introduces herself as "Iron" and smiles politely, doesn't stop her from thoroughly trouncing you.]]></story_1>
             <story_2><![CDATA[<b>100 Combat:</b>⮀ You manage to give Iron a run for her money, but she still manages to eek out a victory, she's noticeably worn out afterwards.]]></story_2>
@@ -995,7 +995,7 @@
         <mage_lessons>
             <label>魔法课程</label>
             <tooltip><![CDATA[
-            这些神秘事物把你弄得一团糟, 但也许也能帮你脱离麻烦.<br>至少需要 2 声誉.<br>解锁于 20% 已调查.
+            这些神秘事物把你弄得一团糟, 但也许也能帮你脱离麻烦.<br>至少需要 2 声望.<br>解锁于 20% 已调查.
         ]]></tooltip>
             <story_1><![CDATA[<b>1 Magic:</b>⮀ You approach a burly man dressed in flowing robes, and ask if he would be willing to teach you some magic. The man agrees to teach you some basic cantrips if you help him out with menial tasks. He introduces himself as Warrick.]]></story_1>
             <story_2><![CDATA[<b>100 Magic:</b>⮀ Warrick compliments you on your ability to wield mana, and is happy to share some more dangerous cantrips with your promise to not use it for ill. He refuses to teach you about alchemy.]]></story_2>
@@ -1010,7 +1010,7 @@
             <label_done>已治愈</label_done>
             <label_part>病人</label_part>
             <tooltip><![CDATA[
-            你肯定不可能全部治好, 但他们会感谢你尽力救治.<br>一共有 3 治疗阶段, 每个阶段都有对应的能力 - 诊断 (感知), 处理 (智力), 通知 (魅力).<br>每点法力给予 (魔法技能) * (治疗魔法 / 50) * (1 + 主能力 / 100) * 开方(1 + 完成次数 / 100) * (初始法力消耗 / 实际法力消耗) 进度点.<br>需要至少 1 声誉.<br>解锁于 12 魔法技能.<br>每个治愈的病人可以让你获得 3 声誉.
+            你肯定不可能全部治好, 但他们会感谢你尽力救治.<br>一共有 3 治疗阶段, 每个阶段都有对应的能力 - 诊断 (感知), 处理 (智力), 通知 (魅力).<br>每点法力给予 (魔法技能) * (治疗魔法 / 50) * (1 + 主能力 / 100) * 开方(1 + 完成次数 / 100) * (初始法力消耗 / 实际法力消耗) 进度点.<br>需要至少 1 声望.<br>解锁于 12 魔法技能.<br>每个治愈的病人可以让你获得 3 声望.
         ]]></tooltip>
             <story_1><![CDATA[<b>Patient healed:</b>⮀ You're allowed in to see the patients and begin healing. It's excellent practice and everyone you heal, be it from broken bones to small scrapes is extraordinarily thankful for your help.]]></story_1>
             <story_2><![CDATA[<b>10 Patients healed in a loop:</b>⮀ Your reputation is absolutely sterling, you've basically cleared out the entire healing home and the nurses and healers are more than thankful for your help.]]></story_2>
@@ -1026,7 +1026,7 @@
             <label>和怪物战斗</label>
             <label_done>已击杀</label_done>
             <tooltip><![CDATA[
-            慢慢的, 你就能摸清楚他们的战斗习惯.<br>战斗会有 3 种形式, 每个形式有对应的主能力 - 突袭 (速度), 防御 (力量), 进攻 (体质).<br>每点法力给予 (个人战斗力) * (1 + 主能力 / 100) * 开方(1 + 完成次数 / 100) * (初始法力消耗 / 实际法力消耗) 进度点.<br>需要至少 2 声誉.<br>解锁于 10 战斗技能.<br>每个完成的战斗阶段可以让你获得 20 金块.
+            慢慢的, 你就能摸清楚他们的战斗习惯.<br>战斗会有 3 种形式, 每个形式有对应的主能力 - 突袭 (速度), 防御 (力量), 进攻 (体质).<br>每点法力给予 (个人战斗力) * (1 + 主能力 / 100) * 开方(1 + 完成次数 / 100) * (初始法力消耗 / 实际法力消耗) 进度点.<br>需要至少 2 声望.<br>解锁于 10 战斗技能.<br>每个完成的战斗阶段可以让你获得 20 金块.
         ]]></tooltip>
             <segment_names>
                 <name>Deer</name>
@@ -1118,7 +1118,7 @@
             <label_complete>已完成</label_complete>
             <label_part>小地牢</label_part>
             <tooltip><![CDATA[
-            每次进入都会有一些小变化; 真的很难适应. 地牢终点的灵魂石可以伴随你通过循环, 但它们并不总是在地牢里... 真奇怪.<br>地牢每个阶段都会要求不同的主能力.<br>如果你的能力足够高, 一次行动也可以清除多层地牢.<br>每点法力给予 (魔法 + 战斗技能) * (1 + 主能力 / 100) * 开方(1 + 完成楼层次数 / 200) * (初始法力消耗 / 实际法力消耗) 进度点.<br>解锁于 35 魔法与战斗技能总和.<br>需要至少 2 声誉.<br>每次完成给予 1 灵魂石 - 悬停在已收获上获取更多信息.
+            每次进入都会有一些小变化; 真的很难适应. 地牢终点的灵魂石可以伴随你通过循环, 但它们并不总是在地牢里... 真奇怪.<br>地牢每个阶段都会要求不同的主能力.<br>如果你的能力足够高, 一次行动也可以清除多层地牢.<br>每点法力给予 (魔法 + 战斗技能) * (1 + 主能力 / 100) * 开方(1 + 完成楼层次数 / 200) * (初始法力消耗 / 实际法力消耗) 进度点.<br>解锁于 35 魔法与战斗技能总和.<br>需要至少 2 声望.<br>每次完成给予 1 灵魂石 - 悬停在已收获上获取更多信息.
         ]]></tooltip>
             <completed_tooltip><![CDATA[
             每个灵魂石都会使随机一项能力倍率提高 (1+(灵魂石)^.8/30).<br>每层楼都有一个灵魂石, 每当你获得它, 会降低你下次获得的概率 2%.<br>你每消耗一点法力会使获得概率恢复 0.00001% .<br>
@@ -1285,7 +1285,7 @@
         <brew_potions>
             <label>炼制药水</label>
             <tooltip><![CDATA[
-            泡泡和烧瓶. 药水和魔法.<br>至少需要 5 声誉, 否则他不会让你靠近他的工具.<br>用 10 草药炼制一瓶药水并在下一个城镇卖掉它.<br>给予炼金术和魔法技能.<br>解锁于 10 炼金术.
+            泡泡和烧瓶. 药水和魔法.<br>至少需要 5 声望, 否则他不会让你靠近他的工具.<br>用 10 草药炼制一瓶药水并在下一个城镇卖掉它.<br>给予炼金术和魔法技能.<br>解锁于 10 炼金术.
         ]]></tooltip>
             <story_1><![CDATA[<b>Potion brewed:</b>⮀ The old man happily lets you use his apparatus to brew your own potions after much haranguing about your technique and the fact that you're not buying ingredients off him, he leaves you to it. His workstations are old, well used and obviously well looked after. The only fault you can lay at their feet is that the measuring system used is older than dirt. Fits you suppose.]]></story_1>
             <story_2><![CDATA[<b>Action failed with low reputation:</b>⮀ The hermit refuses to allow you near his workstations and potion brewing equipment no matter how much you ask and offer to pay. He tells you that you don't have a good enough karma for him to even be willing to risk you using his workstations and potion benches.]]></story_2>
@@ -1382,18 +1382,18 @@
             <story_2><![CDATA[<b>Ritual completed:</b>⮀ You commune with the dark gods long past the point that the blood has faded. The deal is struck thusly: time itself will move faster for you only in select areas, and you will pay a cost in souls. The dark god you commune with seems almost surprised as you immediately offer up some of the soulstones that you have.]]></story_2>
         </dark_ritual>
         <continue_on>
-            <label>Continue On</label>
+            <label>继续前进</label>
             <tooltip><![CDATA[
-            Keep walking to the next town, Merchanton.<br>Mana cost reduced by 60 per Old Shortcut %.
+            继续前往下一个小镇, 商业小镇.<br>每个捷径探索度 % 降低 60 法力消耗.
         ]]></tooltip>
             <story_1><![CDATA[<b>Traveled to the third zone:</b>⮀ You sigh gustily to yourself, you've done all you cared to do here and there was nothing left to do really, time to move on and out of the boonies and into civilized territory. Laws, taxes and bribes. You were almost looking forward to it, given how long you had been out in the country for at this point.]]></story_1>
         </continue_on>
         <!--town 3-->
         <explore_city>
-            <label>Explore City</label>
-            <label_done>City Explored</label_done>
+            <label>探索城镇</label>
+            <label_done>城镇探索度</label_done>
             <tooltip><![CDATA[
-            Everyone is so busy, and there's so much to do.<br>2x progress with glasses.
+            所有人都很忙, 有太多东西要做了.<br>拥有眼镜可以获得 2x 进度.
         ]]></tooltip>
 			<story_1><![CDATA[<b>1% City Explored:</b>⮀ This is a relatively big city, and as busy as you've ever seen. You have no idea where anything is and nobody seems inclined to spare enough time to talk to you.]]></story_1>
 			<story_2><![CDATA[<b>10% City Explored:</b>⮀ You've found a jovial man willing to chat with you on his way to the casino, where he invited you in for a game of poker. You declined, but it might be a good idea to come here on your own sometime.]]></story_2>
@@ -1406,13 +1406,13 @@
 			<story_9><![CDATA[<b>100% City Explored:</b>⮀ You've seen all that Merchanton has to offer, from all levels of society. The one constant is that no matter where you go, people are busy. This city is a hub for rare items and clandestine deals, and fortunes are made and lost like water to the frantic beat of the city.]]></story_9>
         </explore_city>
         <gamble>
-            <label>Gamble</label>
-            <label_done>Suckers Swindled</label_done>
-            <info_text1>Suckers left</info_text1>
-            <info_text2>Suckers total</info_text2>
-            <info_text3>People to check if they're suckers</info_text3>
+            <label>赌博</label>
+            <label_done>已骗的傻子</label_done>
+            <info_text1>可骗的傻子剩余</info_text1>
+            <info_text2>可骗的傻子总计</info_text2>
+            <info_text3>还需检查是否好骗的人</info_text3>
             <tooltip><![CDATA[
-            The cards still somehow come out different every time.<br>Has 2x exp/talent gain<br>Costs 20 gold and 1 reputation.<br>Requires a reputation above -6.<br>You win against every 10 suckers, and get 60 gold for winning.<br>Unlocked at 10% City Explored.
+            牌每次还是会有一些变化.<br>提供 2x 能力/天赋经验<br>消耗 20 金块和 1 声望.<br>至少需要 -6 声望.<br>每 10 个人里有一个傻子, 可以骗到 60 金块.<br>解锁于 10% 城市探索度.
         ]]></tooltip>
 			<story_1><![CDATA[<b>Sucker checked:</b>⮀ You sit down at the poker table… and promptly lose everything you bet. It seems Merchanton has a very competitive gambling culture. Still, there must be some people you can win against.]]></story_1>
 			<story_2><![CDATA[<b>Sucker swindled:</b>⮀ You've found him, barely old enough to enter and clearly struggling to remember the rules of the game. It doesn't take long before all his money belongs to you, and you make a mental note to find him next time you come here.]]></story_2>
