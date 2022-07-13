@@ -42,7 +42,7 @@
             • Bug修复: Reputation display wasn't updated after fall from grace action<br>
             • Backend: Major rework of how skill bonuses are calculated in code. The results should be the same, but make the code easier to read and maintain. Unfortunately, I expect at least a few bugs from typos in this.<br>
             ]]></version>
-            <version verNum="1.0"><![CDATA[
+            <version verNum="1.0"><![CDATA[Sorry, something went wrong.
             <b> July 9th, 2022</b>
             • New Skill: Wunderkind - Increases talent exp gain<br>
             • New Action (Jungle Path): Totem - Consumes a looping potion to give Wunderkind skill Exp<br>
