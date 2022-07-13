@@ -8,17 +8,17 @@
             </meta>
             <version verNum="1.3"><![CDATA[
             <b> July 12th, 2022</b>
-            • Change: Added max actions to oracle and charm school<br>
-            • Change: Completing totem for the first time doubles the bonus from imbue body<br>
+            • 变化: 为神谕和礼仪学校增加一个行动上限<br>
+            • 变化: 首次完成图腾会翻倍灌注躯体的奖励<br>
             ]]></version>
             <version verNum="1.2"><![CDATA[
             <b> July 12th, 2022</b>
-            Minor Survey Rework - still needs a bit more attention and explorers guild needs a use<br>
-            • Change: Survey is unlocked in all zones after joining explorers guild<br>
-            • Change: Survey actions cap raised to 500, but now applies across all survey actions<br>
-            • Change: Survey added as limited action, so the circle icon can be used<br>
-            • Bugfix: Looping potion tooltip<br>
-            • Bugfix: Spatiomancy was increasing mana well costs
+            全局探索重做 - 还需要继续观察并且应该让探险家公会派上用场<br>
+            • 变化: 探索将存在于所有区域并解锁于探险家公会<br>
+            • 变化: 探索行动上限提高到 500, 但现在它是所有探索行动的共同上限<br>
+            • 变化: 探索现在是有限行动, 你现在可以使用圆圈图标控制了<br>
+            • Bug修复: 循环药剂的提示<br>
+            • Bug修复: 空间魔法增加了魔法井的法力消耗
             ]]></version>
             <version verNum="1.2"><![CDATA[
             <b> July 12th, 2022</b>
