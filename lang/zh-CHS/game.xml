@@ -848,74 +848,74 @@
         </surveyZ8>
         <!--town 1-->
         <wander>
-            <label>Wander</label>
-            <label_done>Explored</label_done>
-            <tooltip>Explore the town, look for hidden areas and treasures.</tooltip>
-            <story_1><![CDATA[<b>20% Explored:</b>⮀ You know the general layout of the small village now, you don't get lost walking from one side to another!]]></story_1>
-            <story_2><![CDATA[<b>40% Explored:</b>⮀ You're starting to really know your way around, you can almost figure your way around without following a set path!]]></story_2>
-            <story_3><![CDATA[<b>60% Explored:</b>⮀ You've tread all the main roads and you avail yourself to the unkempt side paths and well worn paths. If you let yourself into some houses, well, no one needs to know, do they?]]></story_3>
-            <story_4><![CDATA[<b>80% Explored:</b>⮀ You've decided to explore the houses now that you've trod every single feasible path in this small village. Man, the stuff people keep around.]]></story_4>
-            <story_5><![CDATA[<b>100% Explored:</b>⮀ You've been everywhere, there is absolutely nowhere in this town you haven't been. You've been in every cellar, under every bed, and in every closet. You've pried all the floorboards, and just in general, been into everything. Except the houses with locks, those dastardly locks.]]></story_5>
+            <label>漫步</label>
+            <label_done>已探索</label_done>
+            <tooltip>探索这个小镇, 寻找隐藏的区域和宝藏.</tooltip>
+            <story_1><![CDATA[<b>20% 探索度:</b>⮀ 你大致了解了村庄的整体布局, 你至少不会在穿过村庄时迷路了!]]></story_1>
+            <story_2><![CDATA[<b>40% 探索度:</b>⮀ You're starting to really know your way around, you can almost figure your way around without following a set path!]]></story_2>
+            <story_3><![CDATA[<b>60% 探索度:</b>⮀ You've tread all the main roads and you avail yourself to the unkempt side paths and well worn paths. If you let yourself into some houses, well, no one needs to know, do they?]]></story_3>
+            <story_4><![CDATA[<b>80% 探索度:</b>⮀ You've decided to explore the houses now that you've trod every single feasible path in this small village. Man, the stuff people keep around.]]></story_4>
+            <story_5><![CDATA[<b>100% 探索度:</b>⮀ You've been everywhere, there is absolutely nowhere in this town you haven't been. You've been in every cellar, under every bed, and in every closet. You've pried all the floorboards, and just in general, been into everything. Except the houses with locks, those dastardly locks.]]></story_5>
         </wander>
         <smash_pots>
-            <label>Smash Pots</label>
-            <label_done>Pots Smashed</label_done>
-            <info_text1>Pots with mana left</info_text1>
-            <info_text2>Pots with mana total</info_text2>
-            <info_text3>Pots to check for mana</info_text3>
+            <label>踢罐子</label>
+            <label_done>打破的罐子</label_done>
+            <info_text1>有法力的罐子剩余</info_text1>
+            <info_text2>有法力的罐子总计</info_text2>
+            <info_text3>需要检查的罐子</info_text3>
             <tooltip><![CDATA[
-            They're just sitting there, unbroken, full of potential.<br>Pots with mana in them have 
+            它们就静静地站在那里, 完整, 富有潜力.<br>有法力的罐子里有 
         ]]></tooltip>
             <tooltip2><![CDATA[
-            mana.<br>Every 10 pots have mana.
+            法力.<br>每 10 个罐子有一个有法力.
         ]]></tooltip2>
             <story_1><![CDATA[<b>50 Pots with mana:</b>⮀ You've smashed every single pot in this village, and have figured out all the pots that contain any trace of mana. Having to break them all physically was time consuming, and your skills at absorbing the mana weren't the best. There must be more efficient ways of doing it.]]></story_1>
         </smash_pots>
         <pick_locks>
-            <label>Pick Locks</label>
-            <label_done>Locks Picked</label_done>
-            <info_text1>Houses with valuables left</info_text1>
-            <info_text2>Houses with valuables total</info_text2>
-            <info_text3>Houses to check for valuables</info_text3>
+            <label>开锁</label>
+            <label_done>已开锁</label_done>
+            <info_text1>有财物的房子剩余</info_text1>
+            <info_text2>有财物的房子总计</info_text2>
+            <info_text3>需要检查的房子</info_text3>
             <tooltip><![CDATA[
-            Don't worry; they won't remember.<br>Houses with valuables in them have 
+            别担心; 他们不会记得的.<br>有财物的房子里有 
         ]]></tooltip>
             <tooltip2><![CDATA[
-            gold.<br>Every 10 houses have gold.<br>Unlocked at 20% Explored.
+            金块.<br>每 10 个房子有一个有金块.<br>解锁于 20% 探索度.
         ]]></tooltip2>
             <story_1><![CDATA[<b>House checked:</b>⮀ You manage to pick a lock that was in disrepair and opened the door, only to walk into the home's inhabitant. Good thing the loop ended not soon after. You're gonna have to figure out which houses are worth hitting. Some money wouldn't go astray.]]></story_1>
             <story_2><![CDATA[<b>50 Houses known:</b>⮀ You really should look at hitting those locked houses around, who knows what goodies you'll manage to scrounge up.]]></story_2>
             <story_3><![CDATA[<b>10 Houses with loot:</b>⮀ You've figured out which houses are uninhabited and have enough gold for it to be worth your time. As they say, time is mana!]]></story_3>
         </pick_locks>
         <buy_glasses>
-            <label>Buy Glasses</label>
+            <label>购买眼镜</label>
             <tooltip><![CDATA[
-            That's not fair. There was time now. There was all the time I needed.<br>Now you have to get new glasses again for 10 gold!<br>Causes Wander to be 4x as effective for the rest of the loop.<br>Affects any action with the glasses icon<br>Can only have 1 Buy Glasses action.<br>Unlocked at 20% explored.
+            这不公平. 是时候了. 我总是需要它.<br>现在你需要花费 10 金块来买一副新眼镜!<br>在本次循环的剩余时间使漫步效果 4x .<br>对所有带有眼镜标记的行动生效<br>你只能进行 1 次购买眼镜行动.<br>解锁于 20% 探索度.
         ]]></tooltip>
             <story_1><![CDATA[<b>Glasses bought:</b>⮀ The world snaps into sharp focus as you put them on and you gawk a little as details that had slipped your eyes previously stood out in sharp contrast. You're a little gobsmacked at how much of a difference they make.]]></story_1>
         </buy_glasses>
         <found_glasses>
-            <label>Found Glasses</label>
+            <label>找到眼镜</label>
             <tooltip><![CDATA[
-            You could have sworn you had a spare pair of glasses somewhere. Now you've explored to the ends of the world. Every nook or cranny has revealed to you their secrets. And you've found them - in the last place anyone would ever think to look. On top of your head.<br>
-            You now start all loops with glasses.
+            你发誓你肯定在什么地方准备了一副备用眼镜. 你几乎翻遍了世界的所有角落. 每个角落的秘密都被你挖掘出来. 你终于找到了它 - 在一个任何人都想不到的地方. 你的头上.<br>
+            你现在总是戴着眼镜开始循环.
         ]]></tooltip>
         </found_glasses>
         <buy_mana_z1>
-            <label>Buy Mana</label>
+            <label>购买法力</label>
             <tooltip><![CDATA[
-            1 gold = 
+            1 金块 = 
         ]]></tooltip>
             <tooltip2><![CDATA[
-            mana. Buys all the mana you can.<br>Unlocked at 20% Explored.
+            法力. 尽可能的花掉所有金块购买.<br>解锁于 20% 探索度.
         ]]></tooltip2>
             <!--TODO: give this action story-->
         </buy_mana_z1>
         <meet_people>
-            <label>Meet People</label>
-            <label_done>People Met</label_done>
+            <label>结识朋友</label>
+            <label_done>已结识朋友</label_done>
             <tooltip><![CDATA[
-            They won't let you get away with a simple chat.<br>Unlocked at 22% Explored.
+            只是简短的聊天他们是不会放你走的.<br>解锁于 22% 探索度.
         ]]></tooltip>
             <story_1><![CDATA[<b>1% People Met:</b>⮀ You stand there, a little stumped at the situation you’ve gotten yourself into, when a young lass asks you about your day so far.]]></story_1>
             <story_2><![CDATA[<b>20% People Met:</b>⮀ The people here are generally nice enough, if a bit brusque at times. Some people have small tasks that they're happy to pay for.]]></story_2>
@@ -925,34 +925,34 @@
             <story_6><![CDATA[<b>100% People Met:</b>⮀ You've spoken to everyone. Every child, adult, teen, animal and plant in this village. Everyone, and everything.]]></story_6>
         </meet_people>
         <train_strength>
-            <label>Train Strength</label>
+            <label>训练力量</label>
             <tooltip><![CDATA[
-            Build up those muscles. Again.<br>Has 4x exp/talent gain, and can only be done <div id='trainingLimitStr'></div> times per reset.<br>Unlocked at 5% People Met.
+            锻炼肌肉. 再来一次.<br>获取经验/天赋的速度 4x , 每次循环只能执行 <div id='trainingLimitStr'></div> 次行动.<br>解锁于 5% 已结识朋友.
         ]]></tooltip>
             <story_1><![CDATA[<b>Strength trained:</b>⮀ You lift the oak barrel filled with water, holding it while you squat again and again. The barrel rests upon your back as you do push up after push up. It's a trusty companion in your quest to regain your muscle.]]></story_1>
             <story_2><![CDATA[<b>100 Strength talent:</b>⮀ Your body adapts faster and faster to the strains you put upon it. You know exactly how far to push it and can tell almost instinctively when to stop.]]></story_2>
             <story_3><![CDATA[<b>1,000 Strength talent:</b>⮀ Your body seems to build itself up faster and faster each time you break it down. You can practically feel your mana purr in satisfaction as it rebuilds your body to be stronger and stronger.]]></story_3>
         </train_strength>
         <short_quest>
-            <label>Short Quest</label>
-            <label_done>Short Quests Accomplished</label_done>
-            <info_text1>Quests with loot left</info_text1>
-            <info_text2>Quests with loot total</info_text2>
-            <info_text3>Quests to finish</info_text3>
+            <label>短任务</label>
+            <label_done>完成的短任务</label_done>
+            <info_text1>有奖励的短任务剩余</info_text1>
+            <info_text2>有奖励的短任务总计</info_text2>
+            <info_text3>还没完成过的短任务</info_text3>
             <tooltip><![CDATA[
-            Be a hero! ...If the reward is good and it doesn't take too long.<br>Short Quests with loot give 
+            成为英雄! ...只要奖励合适且耗时不长.<br>每个短任务奖励 
         ]]></tooltip>
             <tooltip2><![CDATA[
-            gold as a reward.<br>Every 5 Short Quests have loot.<br>Unlocked at 5% People Met.
+            金块.<br>每 5 个短任务有一个有奖励.<br>解锁于 5% 已结识朋友.
         ]]></tooltip2>
             <story_1><![CDATA[<b>Short Quest finished:</b>⮀ You help an elderly woman get her cat down from atop her house, she rewards you handsomely for your efforts.]]></story_1>
             <story_2><![CDATA[<b>20 Short Quests with loot in a loop:</b>⮀ You’ve helped everyone who’s been willing to take you on, and the gold from your work jingles beautifully in your pockets. The satisfaction of a job well done fills you with pride.]]></story_2>
         </short_quest>
         <investigate>
-            <label>Investigate</label>
-            <label_done>Investigated</label_done>
+            <label>调查</label>
+            <label_done>已调查</label_done>
             <tooltip><![CDATA[
-            You've been hearing some rumors...<br>Unlocked at 25% People Met.
+            你听到了一些传闻...<br>解锁于 25% 已结识朋友.
         ]]></tooltip>
             <story_1><![CDATA[<b>20% Investigated:</b>⮀ You catch some snippets of truly interesting gossip. Apparently a Mage and Warrior duo had stopped in and were sticking around for a little while.]]></story_1>
             <story_2><![CDATA[<b>40% Investigated:</b>⮀ People are really helpful when you help them, you're almost starting to get a reputation as a busybody around here, but it's offset in that you actually do help people.]]></story_2>
@@ -961,31 +961,31 @@
             <story_5><![CDATA[<b>100% Investigated:</b>⮀ You've done it, spoken to everyone in this village. Spent a loop or more on each of them, actually. You know what needs to be done, and at this point you can just go straight there. You can also engineer a situation in which the more stubborn ones will offer you a quest.]]></story_5>
         </investigate>
         <long_quest>
-            <label>Long Quest</label>
-            <label_done>Long Quests Accomplished</label_done>
-            <info_text1>Quests with loot left</info_text1>
-            <info_text2>Quests with loot total</info_text2>
-            <info_text3>Quests to finish</info_text3>
+            <label>长任务</label>
+            <label_done>完成的长任务</label_done>
+            <info_text1>有奖励的长任务剩余</info_text1>
+            <info_text2>有奖励的长任务总计</info_text2>
+            <info_text3>还未完成过的长任务</info_text3>
             <tooltip><![CDATA[
-            Be a more impressive hero! ...As long as someone is watching.<br>Long Quests with loot give 
+            成为令人印象深刻的英雄! ...在有人注视的前提下.<br>每个长任务奖励 
         ]]></tooltip>
             <tooltip2><![CDATA[
-            gold and 1 reputation as a reward.<br>Every 5 Long Quests have loot.<br>Unlocked at 10% Investigated.
+            金块和 1 声望.<br>每 5 个长任务有一个有奖励.<br>解锁于 10% 已调查.
         ]]></tooltip2>
             <story_1><![CDATA[<b>Long Quest finished:</b>⮀ You cleared out a cellar of rats; there were at least sixty of the blighters. You were rewarded handsomely, and you got a small reputation boost to boot.]]></story_1>
             <story_2><![CDATA[<b>10 Long Quests with loot in a loop:</b>⮀ You’ve cleared out cellars, helped build a house, collected flowers for dyes, worked in the bakery, taken out trash, and helped a seamstress finish a gift for her husband. Your reputation is spreading as the helpful courier. Everyone is at the very least willing to listen to you.]]></story_2>
         </long_quest>
         <throw_party>
-            <label>Throw Party</label>
+            <label>参加派对</label>
             <tooltip><![CDATA[
-            Take a break and socialize.<br>Gives people met progress equivalent to 16 Meet People actions.<br>Costs 2 reputation.<br>Unlocked at 30% Investigated.
+            休息一下去参加社交活动.<br>以结识朋友的 16 倍的效果推进已结识朋友进度.<br>消耗 2 声望.<br>解锁于 30% 已调查.
         ]]></tooltip>
             <story_1><![CDATA[<b>Party thrown:</b>⮀ You announce that its your birthday and you want to throw a party. You commandeer the village square and the people necessary to make it happen. You don't have the gold but people aren't quite able to say no. You promise you'll pay it off with the money from this current job.]]></story_1>
         </throw_party>
         <warrior_lessons>
-            <label>Warrior Lessons</label>
+            <label>战士课程</label>
             <tooltip><![CDATA[
-            Learning to fight is probably important; you have a long journey ahead of you.<br>Requires a reputation of 2 or above.<br>Unlocked at 20% Investigated.
+            学会战斗也许很重要; 你后面的旅途还很长.<br>至少需要 2 声誉.<br>在 20% 已调查解锁.
         ]]></tooltip>
             <story_1><![CDATA[<b>1 Combat:</b>⮀ You manage to track down the warrior that was staying in town, and are greeted by a small woman holding a sword almost as tall as her. She introduces herself as "Iron" and smiles politely, doesn't stop her from thoroughly trouncing you.]]></story_1>
             <story_2><![CDATA[<b>100 Combat:</b>⮀ You manage to give Iron a run for her money, but she still manages to eek out a victory, she's noticeably worn out afterwards.]]></story_2>
@@ -993,9 +993,9 @@
             <story_4><![CDATA[<b>250 Combat:</b>⮀ You manage to finally defeat Iron, all your experience fighting her finally pays off. You feel really proud of yourself, right up until she smacks your head with her sword and demands a rematch.]]></story_4>
         </warrior_lessons>
         <mage_lessons>
-            <label>Mage Lessons</label>
+            <label>魔法课程</label>
             <tooltip><![CDATA[
-            The mystic got you into this mess, maybe it can help you get out of it.<br>Requires a reputation of 2 or above.<br>Unlocked at 20% Investigated.
+            这些神秘事物把你弄得一团糟, 但也许也能帮你脱离麻烦.<br>至少需要 2 声誉.<br>解锁于 20% 已调查.
         ]]></tooltip>
             <story_1><![CDATA[<b>1 Magic:</b>⮀ You approach a burly man dressed in flowing robes, and ask if he would be willing to teach you some magic. The man agrees to teach you some basic cantrips if you help him out with menial tasks. He introduces himself as Warrick.]]></story_1>
             <story_2><![CDATA[<b>100 Magic:</b>⮀ Warrick compliments you on your ability to wield mana, and is happy to share some more dangerous cantrips with your promise to not use it for ill. He refuses to teach you about alchemy.]]></story_2>
@@ -1006,27 +1006,27 @@
             <story_7><![CDATA[<b>100 Alchemy:</b>⮀ You offer to teach Warrick about alchemy if he teaches you about the branches of magic you have little grounding in. The man himself is a genius and has much to teach. He gives it his all, tempted by the secrets of Alchemy.]]></story_7>
         </mage_lessons>
         <heal_the_sick>
-            <label>Heal The Sick</label>
-            <label_done>Healed</label_done>
-            <label_part>Patient</label_part>
+            <label>治病</label>
+            <label_done>已治愈</label_done>
+            <label_part>病人</label_part>
             <tooltip><![CDATA[
-            You won't be able to heal them all, but they'll be thankful for doing what you can.<br>Healing is always 3 parts, each with a main stat - Diagnose (Per), Treat (Int), Inform (Cha).<br>Gives (magic skill) * (restoration skill / 50) * (1 + main stat / 100) * sqrt(1 + times completed / 100) * (original mana cost / actual mana cost) progress points per mana.<br>Requires a reputation of 1 or above.<br>Unlocked at 12 Magic skill.<br>Gives 3 reputation upon patient completion.
+            你肯定不可能全部治好, 但他们会感谢你尽力救治.<br>一共有 3 治疗阶段, 每个阶段都有对应的能力 - 诊断 (感知), 处理 (智力), 通知 (魅力).<br>每点法力给予 (魔法技能) * (治疗魔法 / 50) * (1 + 主能力 / 100) * 开方(1 + 完成次数 / 100) * (初始法力消耗 / 实际法力消耗) 进度点.<br>需要至少 1 声誉.<br>解锁于 12 魔法技能.<br>每个治愈的病人可以让你获得 3 声誉.
         ]]></tooltip>
             <story_1><![CDATA[<b>Patient healed:</b>⮀ You're allowed in to see the patients and begin healing. It's excellent practice and everyone you heal, be it from broken bones to small scrapes is extraordinarily thankful for your help.]]></story_1>
             <story_2><![CDATA[<b>10 Patients healed in a loop:</b>⮀ Your reputation is absolutely sterling, you've basically cleared out the entire healing home and the nurses and healers are more than thankful for your help.]]></story_2>
             <story_3><![CDATA[<b>Failed Action:</b>⮀ You're turned away at the door, the small healers home stating that they can't trust you to not poison the people inside or make the situation worse.]]></story_3>
             <segment_names>
-                <name>Diagnose</name>
-                <name>Treat</name>
-                <name>Inform</name>
+                <name>诊断</name>
+                <name>处理</name>
+                <name>通知</name>
             </segment_names>
             <!--TODO: give this action story-->
         </heal_the_sick>
         <fight_monsters>
-            <label>Fight Monsters</label>
-            <label_done>Killed</label_done>
+            <label>和怪物战斗</label>
+            <label_done>已击杀</label_done>
             <tooltip><![CDATA[
-            Slowly, you're figuring out their patterns.<br>Fighting rotates between 3 types of battles, each with a main stat - Quick (Spd), Defensive (Str), Aggressive (Con).<br>Gives (self combat) * (1 + main stat / 100) * sqrt(1 + times completed / 100) * (original mana cost / actual mana cost) progress points per mana.<br>Requires a reputation of 2 or above.<br>Unlocked at 10 Combat skill.<br>Gives 20 gold per fight segment completion.
+            慢慢的, 你就能摸清楚他们的战斗习惯.<br>战斗会有 3 种形式, 每个形式有对应的主能力 - 突袭 (速度), 防御 (力量), 进攻 (体质).<br>每点法力给予 (个人战斗力) * (1 + 主能力 / 100) * 开方(1 + 完成次数 / 100) * (初始法力消耗 / 实际法力消耗) 进度点.<br>需要至少 2 声誉.<br>解锁于 10 战斗技能.<br>每个完成的战斗阶段可以让你获得 20 金块.
         ]]></tooltip>
             <segment_names>
                 <name>Deer</name>
@@ -1113,26 +1113,26 @@
             <story_7><![CDATA[<b>20,000 Monsters killed:</b>⮀ This is a joke, the only reason you're still doing this is the gold it rakes in. You need it.]]></story_7>
         </fight_monsters>
         <small_dungeon>
-            <label>Small Dungeon</label>
-            <label_done>Looted</label_done>
-            <label_complete>Completed</label_complete>
-            <label_part>Small Dungeon</label_part>
+            <label>小地牢</label>
+            <label_done>已收获</label_done>
+            <label_complete>已完成</label_complete>
+            <label_part>小地牢</label_part>
             <tooltip><![CDATA[
-            There are small changes each time; it's harder to get used to. The soulstones at the end last through loops, but they're not always in the dungeon... Strange.<br>The dungeon requires different skills at different points.<br>One action can clear multiple floors if your stats are high enough.<br>Gives (magic + self combat) * (1 + main stat / 100) * sqrt(1 + times floor completed / 200) * (original mana cost / actual mana cost) progress points per mana.<br>Unlocked at a combined Combat and Magic skill of 35.<br>Requires a reputation of 2 or above.<br>Gives 1 soulstone per completion - hover over Looted for info.
+            每次进入都会有一些小变化; 真的很难适应. 地牢终点的灵魂石可以伴随你通过循环, 但它们并不总是在地牢里... 真奇怪.<br>地牢每个阶段都会要求不同的主能力.<br>如果你的能力足够高, 一次行动也可以清除多层地牢.<br>每点法力给予 (魔法 + 战斗技能) * (1 + 主能力 / 100) * 开方(1 + 完成楼层次数 / 200) * (初始法力消耗 / 实际法力消耗) 进度点.<br>解锁于 35 魔法与战斗技能总和.<br>需要至少 2 声誉.<br>每次完成给予 1 灵魂石 - 悬停在已收获上获取更多信息.
         ]]></tooltip>
             <completed_tooltip><![CDATA[
-            Each soulstone improves a random stat's exp gain by (1+(soulstones)^.8/30).<br>Each floor has a soulstone that, when received, reduces the chance you'll get the next one by 2%.<br>Chance to receive a soulstone recovers per floor at 0.00001% per mana.<br>
+            每个灵魂石都会使随机一项能力倍率提高 (1+(灵魂石)^.8/30).<br>每层楼都有一个灵魂石, 每当你获得它, 会降低你下次获得的概率 2%.<br>你每消耗一点法力会使获得概率恢复 0.00001% .<br>
         ]]></completed_tooltip>
-            <chance_label>Chance</chance_label>
-            <last_stat_label>Last</last_stat_label>
+            <chance_label>概率</chance_label>
+            <last_stat_label>上一次</last_stat_label>
             <segment_names>
-                <name>Spike Traps</name>
-                <name>Long Hallways</name>
-                <name>Arrow Traps</name>
-                <name>Riddle Guardian</name>
-                <name>Swinging Axes</name>
+                <name>尖刺陷阱</name>
+                <name>长走廊</name>
+                <name>飞箭陷阱</name>
+                <name>谜题守卫</name>
+                <name>摆斧陷阱</name>
                 <name>Boss</name>
-                <name>Loot</name>
+                <name>奖励</name>
             </segment_names>
             <story_1><![CDATA[<b>Small dungeon attempted:</b>⮀ The cavernous entrance to the villages dungeon greets you. It's dark and looming, with rocks forming jagged fangs. It's the most imposing thing you've found in this town so far.]]></story_1>
             <story_2><![CDATA[<b>1,000 Dungeon floors looted:</b>⮀ You know your way around the dungeon like no one else, almost as if you've explored every nook and cranny. You have.]]></story_2>
@@ -1141,48 +1141,48 @@
             <story_5><![CDATA[<b>6 Floors cleared in a loop:</b>⮀ You reach the actual end of the dungeon, the dungeon core glows an angry red as if irritated that you're at this floor at all. Regardless, you take your soulstone and leave, the dungeon core's red glow following you the whole time.]]></story_5>
         </small_dungeon>
         <buy_supplies>
-            <label>Buy Supplies</label>
+            <label>购买补给</label>
             <tooltip><![CDATA[
-            Prepare to move on.<br>Costs <div id='suppliesCost'></div> gold.<br>You only need one set of supplies.
+            是时候为出发做准备了.<br>消耗 <div id='suppliesCost'></div> 金块.<br>你只需要一份补给.
         ]]></tooltip>
             <story_1><![CDATA[<b>Supplies bought:</b>⮀ A tent, enough rations to last for a month, portable cooking equipment and other assorted paraphernalia for your trip. The tent is durable and the rations don't taste bland and lifeless. It was probably worth the 300 gold asking price. Good thing you knew how to haggle.]]></story_1>
             <story_2><![CDATA[<b>Supplies bought without haggling:</b>⮀ How luxurious! You had the gold to just throw it away now, even though the mana would've been more beneficial in the long run, not having to haggle once in awhile was surprisingly nice. Truly, you have grown luxuriant.]]></story_2>
         </buy_supplies>
         <haggle>
-            <label>Haggle</label>
+            <label>讲价</label>
             <tooltip><![CDATA[
-            They won't like you as much, but hey - you're leaving.<br>Costs 1 reputation to reduce the price of supplies by 20. <br>Unlocked at a combined Combat and Magic skill of 35.
+            他们不太喜欢你这么做, 但是 - 你要离开了.<br>消耗 1 声望可以降低购买补给价格 20 . <br>解锁于 35 战斗和魔法技能总和.
         ]]></tooltip>
             <story_1><![CDATA[<b>Haggle:</b>⮀ The shopkeep has some of the supplies you need, but they are of inferior quality and you're not paying his asking price for them, at least that's what you tell him. You argue, grumble, make sharp comments and are just in general unpleasant to one another.]]></story_1>
             <story_2><![CDATA[<b>15 Haggles in a loop:</b>⮀ The shopkeep basically throws you out the store shouting and cursing vociferously at you. You ears ring slightly at the barrage.]]></story_2>
             <story_3><![CDATA[<b>16 Haggles in a loop:</b>⮀ At this point, it served no purpose, you were doing this solely for the fun of it. No matter how much you haggled, the merchant wasn't going to pay you to take the supplies. That was just wishful thinking. Although, losing the reputation you had accrued could be useful in the long run...]]></story_3>
         </haggle>
         <start_journey>
-            <label>Start Journey</label>
+            <label>开始旅途</label>
             <tooltip><![CDATA[
-            Follow the trail to end up at the next town. You need to keep moving until you can learn how to shut these loops off.<br>Costs 1 supplies. Finish once to unlock Forest Path's actions, then finish this in order to use Forest Path's actions.<br>Unlocked at a combined Combat and Magic skill of 35.
+            顺着小路前往下一个城镇. 你必须继续旅途直到你找到停下循环的方法.<br>消耗 1 补给. 完成一次就可以解锁森林小径的行动, 但你下次仍需完成它才能执行森林小径的行动.<br>解锁于 35 战斗和魔法技能总和.
         ]]></tooltip>
             <story_1><![CDATA[<b>Traveled to the second zone:</b>⮀ You leave town, heading towards the forest that stood between the village and Merchanton. You had exhausted every option in Beginnersville and there was nothing here that would stop the loops, it was time to look for other areas and solutions.]]></story_1>
         </start_journey>
         <hitch_ride>
-            <label>Hitch Ride</label>
+            <label>搭便车</label>
             <tooltip><![CDATA[
-            The explorers guild has a contract with various caravaans for transport around the world. They have taught you the secret handsigns to gain passage. And this one just happens to have some spare mana to share on the journey!
+            探险者公会与各种各样的大篷车签订了旅行合同. 他们教会了你获取通行证的秘密手势. 而且这辆车正好还有一些逸散的法力可以在旅途中吸收!
         ]]></tooltip>
         </hitch_ride>
         <open_rift>
-            <label>Open Rift</label>
+            <label>打开裂缝</label>
             <tooltip><![CDATA[
-            Using your vast knowledge of the dark arts, you can open a rift into the shadow realm to send you straight to Startington.<br>Unfortunately, it doesn't seem like you can fit any supplies through the rift.<br>Unlocked at 300 Dark Magic and 100 Spatiomancy.
+            利用你渊博的黑暗知识, 你可以打开一条通往初始小镇的裂缝.<br>不幸的是, 它看上去并不能让你带着补给通过.<br>解锁于 300 黑魔法和 100 空间魔法.
         ]]></tooltip>
             <!--TODO: give this action story-->
         </open_rift>
         <!--town 2-->
         <explore_forest>
-            <label>Explore Forest</label>
-            <label_done>Forest Explored</label_done>
+            <label>探索森林</label>
+            <label_done>森林探索度</label_done>
             <tooltip><![CDATA[
-            What a pleasant area.<br>2x progress with glasses.
+            多棒的森林.<br>戴着眼镜可以获得 2x 进度.
         ]]></tooltip>
             <story_1><![CDATA[<b>1% Forest explored:</b>⮀ You look at the side of the path from your little campsite, and are struck with a sense of wanderlust. You leave your camp to explore. Not too far from your campsite you find a tiny glade practically overflowing with mana.]]></story_1>
             <story_2><![CDATA[<b>10% Forest explored:</b>⮀ The sense of wanderlust hasn't faded but you've definitely discovered the darker side of this forest. You continue to find tiny glades filled with mana throughout the forest.]]></story_2>
@@ -1194,27 +1194,27 @@
             <story_8><![CDATA[<b>100% Forest explored:</b>⮀ You've done it, you find it impossible to get lost in the forest now, and your sense of wanderlust has faded. You've seen practically all you can in this forest. There were areas barred to you, and you found no way to enter them with a cursory examination.]]></story_8>
         </explore_forest>
         <wild_mana>
-            <label>Wild Mana</label>
-            <label_done>Mana Sources Tapped</label_done>
-            <info_text1>Sources with mana left</info_text1>
-            <info_text2>Sources with mana total</info_text2>
-            <info_text3>Sources to check for mana</info_text3>
+            <label>野生法力</label>
+            <label_done>已抽取法力源</label_done>
+            <info_text1>有法力的法力源剩余</info_text1>
+            <info_text2>有法力的法力源总计</info_text2>
+            <info_text3>还需检查的法力源</info_text3>
             <tooltip><![CDATA[
-            They're out of sight of most travellers, but you have time to find and harvest them.<br>Every good mana spot has 
+            大多数旅行者都看不见它们, 但你有充足的时间去检查并吸收它们.<br>每个有法力的法力源可以抽取 
         ]]></tooltip>
             <tooltip2><![CDATA[
-            mana.<br>Every 10 mana spots have good mana.
+            法力.<br>每 10 个法力源有一个有法力的法力源.
         ]]></tooltip2>
             <story_1><![CDATA[<b>Source checked for mana:</b>⮀ It's just sitting there, stray slightly from the beaten path and you find an abundance of mana just waiting for someone to take it, the only catch being you need to extract it from the plants surrounding it and they've proven slightly unwilling to part with it.]]></story_1>
         </wild_mana>
         <gather_herbs>
-            <label>Gather Herbs</label>
-            <label_done>Funny Plants Uprooted</label_done>
-            <info_text1>Plants with use left</info_text1>
-            <info_text2>Plants with use total</info_text2>
-            <info_text3>Plants to check for use</info_text3>
+            <label>采集草药</label>
+            <label_done>找到的有用植物</label_done>
+            <info_text1>有用的植物剩余</info_text1>
+            <info_text2>有用的植物总计</info_text2>
+            <info_text3>还需要检查的植物</info_text3>
             <tooltip><![CDATA[
-            Might as well dig up anything useful you find.<br>Every 10 funny plants are herbs.<br>Unlocked at 10% Forest Explored.
+            不妨把所有看起来有用的植物都挖出来.<br>每 10 个植物里有一个有用.<br>解锁于 10% 森林探索度.
         ]]></tooltip>
             <story_1><![CDATA[<b>Plant checked for use:</b>⮀ You pull up random plants across the forest that emanate mana only to find that in most cases, they're simply plants that have started gathering mana, but in some cases they're actually magical plants. Small distinction, but a significant one.]]></story_1>
         </gather_herbs>
