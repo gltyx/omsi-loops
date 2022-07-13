@@ -1798,11 +1798,11 @@
             <!--TODO: give this action story-->
         </guided_tour>
         <canvass>
-            <label>Canvass</label>
-            <label_done>Houses Canvassed</label_done>
+            <label>游说</label>
+            <label_done>游说过的屋子</label_done>
             <tooltip><![CDATA[
-            The city has a local charity that's looking for volunteers to canvass around for potential benefactors. Maybe if you know the information of some of said people, it could be helpful.<br>
-            Unlocked at 10% of city toured.
+            这个城市有一个当地的慈善机构，正在招募志愿者四处游说，寻找潜在的捐助者。也许如果您知道其中一些人的信息，这可能会有所帮助<br>
+            解锁于10%的city toured.
         ]]></tooltip>
             <!--TODO: give this action story-->
         </canvass>
