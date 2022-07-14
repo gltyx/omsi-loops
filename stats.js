@@ -128,11 +128,11 @@ function getArmorLevel() {
 }
 
 function getSelfCombat() {
-    return (getSkillLevel("Combat") + getSkillLevel("Pyromancy") * 5 + getSkillLevel("Restoration") * 2) * getArmorLevel() * (1 + getBuffLevel("Feast") * .05);
+    return (getSkillLevel("Combat") + getSkillLevel("Pyromancy") * 5) * getArmorLevel() * (1 + getBuffLevel("Feast") * .05);
 }
 
 function getTeamCombat() {
-    return getSelfCombat("Combat") + (getSkillLevel("Dark") * resources.zombie / 2) + getSkillLevel("Combat") * (resources.teamMembers / 2) * getAdvGuildRank().bonus;
+    return getSelfCombat() + (getSkillLevel("Dark") * resources.zombie / 2) + (getSkillLevel("Combat") + getSkillLevel("Restoration") * 2) * (resources.teamMembers / 2) * getAdvGuildRank().bonus;
 }
 
 function getPrcToNextSkillLevel(skill) {
@@ -143,6 +143,7 @@ function getPrcToNextSkillLevel(skill) {
 }
 
 function addSkillExp(name, amount) {
+    if (name === "Combat" || name === "Pyromancy" || name === "Restoration") amount *= 1 + getBuffLevel("Heroism") * 0.02;
     skills[name].exp += amount;
     view.requestUpdate("updateSkill", name);
 }
@@ -171,7 +172,7 @@ function addExp(name, amount) {
 
 function restartStats() {
     for (let i = 0; i < statList.length; i++) {
-        if(getSkillLevel("Wunderkind") > 1) stats[statList[i]].exp = getExpOfLevel(getBuffLevel("Imbuement2") * 2);
+        if(getSkillLevel("Wunderkind") > 0) stats[statList[i]].exp = getExpOfLevel(getBuffLevel("Imbuement2") * 2);
         else stats[statList[i]].exp = getExpOfLevel(getBuffLevel("Imbuement2"));
         view.updateStat(statList[i]);
     }

@@ -6,12 +6,28 @@
                 <title>更新日志</title>
                 <version_prefix>Version</version_prefix>
             </meta>
-            <version verNum="1.3"><![CDATA[
+            <version verNum="1.6"><![CDATA[
+            <b> July 12th, 2022</b>
+            • Change: Reworked Loadouts, allowing up to 15 to be saved<br>
+            • Bugfix: Restoration skill was applying to self combat instead of team combat<br>
+            • Bugfix: A number of actions that had skill exp added to them weren't properly granting the exp<br>
+            • Bugfix: Added descriptions of where each shortcut takes you to the tooltip
+            ]]></version>
+            <version verNum="1.5"><![CDATA[
+            <b> July 13th, 2022</b>
+            • New Action Type: Trial - Trials are longer form dungeons, but without the soulstone gain<br>
+            • New Trial (Merchanton): Heroes Trial - 50 floors. Grants Heroism buff per floor completed<br>
+            • New Buff: Heroism - Grants 2% increased Combat, Pyromancy, and Restoration skill exp per level<br>
+            • Bugfix: Rewrote soulstone sacrifice code<br>
+            • Bugfix: The Spire was based on self-combat rather than team-combat<br>
+            • Bugfix: Totem didn't effect Imbue Body until the third completion
+            ]]></version>
+            <version verNum="1.4"><![CDATA[
             <b> July 12th, 2022</b>
             • 变化: 为神谕和礼仪学校增加一个行动上限<br>
             • 变化: 首次完成图腾会翻倍灌注躯体的奖励<br>
             ]]></version>
-            <version verNum="1.2"><![CDATA[
+            <version verNum="1.3"><![CDATA[
             <b> July 12th, 2022</b>
             全局探索重做 - 还需要继续观察并且应该让探险家公会派上用场<br>
             • 变化: 探索将存在于所有区域并解锁于探险家公会<br>
@@ -631,6 +647,12 @@
             每级使天赋经验获取提高 1% .]]>
             </desc>
         </aspirant>
+        <heroism>
+            <label>Heroism</label>
+            <desc><![CDATA[Completing the trial fills you with determination.<br>
+            Combat, Pyromancy, and Restoration Skill Exp gain increased by 2% per level.]]>
+            </desc>
+        </heroism>
         <imbue_soul>
             <label>灵魂灌注</label>
             <desc><![CDATA[(未完成) 献祭所有东西以获得强大的加成.<br>
@@ -721,8 +743,8 @@
             <current_list_active>保持当前已激活列表</current_list_active>
             <repeat_last_action>重复列表最后一个行动</repeat_last_action>
             <add_action_top>把行动添加到列表最上方</add_action_top>
-            <save_loadout>保存列表</save_loadout>
-            <load_loadout>加载选中列表</load_loadout>
+            <save_loadout>保存到列表</save_loadout>
+            <load_loadout>从列表加载</load_loadout>
             <clear_list>清空列表</clear_list>
             <higher_done_percent_benefic>随着 % 提高你可以找到更多内容.</higher_done_percent_benefic>
             <progress_label>进度</progress_label>
@@ -1167,7 +1189,8 @@
         <hitch_ride>
             <label>搭便车</label>
             <tooltip><![CDATA[
-            探险者公会与各种各样的大篷车签订了旅行合同. 他们教会了你获取通行证的秘密手势. 而且这辆车正好还有一些逸散的法力可以在旅途中吸收!
+            探险者公会与各种各样的大篷车签订了旅行合同. 他们教会了你获取通行证的秘密手势. 而且这辆车正好还有一些逸散的法力可以在旅途中吸收!<br/>
+            前往默奇顿.
         ]]></tooltip>
         </hitch_ride>
         <open_rift>
@@ -1589,6 +1612,26 @@
         ]]></tooltip>
 			<story_1><![CDATA[<b>Pickaxe bought:</b>⮀ The shopowner assures you that the pickaxe is made out of only the most sturdy materials and will last a lifetime without needing repair. You're not entirely convinced, but you don't need it to last a lifetime anyways, and it does have a good heft to it.]]></story_1>
         </buy_pickaxe>
+        <heroes_trial>
+            <label>Heroes Trial</label>
+            <label_done>Done</label_done>
+            <label_complete>Completed</label_complete>
+            <label_part>Heroes Trial</label_part>
+            <tooltip><![CDATA[
+            Gather your party to take on the trial of heroes! 
+        ]]></tooltip>
+            <segment_names>
+                <name>Locate Entrance</name>
+                <name>Navigate Door Maze</name>
+                <name>Slay Spectres</name>
+                <name>Escape Evaporating Tunnel</name>
+                <name>Fend Off Spider Ambush</name>
+                <name>Avoid Explosive Runes</name>
+                <name>Disable Miniature Pylons</name>
+                <name>Fight Dark Amalgamation</name>
+                <name>Cleanse Floor</name>
+            </segment_names>
+        </heroes_trial>
         <start_trek>
             <label>开始徒步旅行</label>
             <tooltip><![CDATA[
@@ -1599,7 +1642,8 @@
         <underworld>
             <label>地下世界</label>
             <tooltip><![CDATA[
-            你从探索者公会那里学到的知识让你打开了一个新的大门. 在右边的铰链上涂一点金, 谁知道你该在哪里停止.<br>消耗
+            你从探索者公会那里学到的知识让你打开了一个新的大门. 在右边的铰链上涂一点金, 谁知道你该在哪里停止.<br>
+            前往商业镇.<br>消耗
         ]]></tooltip>
         <tooltip2>金块.</tooltip2>
         </underworld>
@@ -1785,6 +1829,7 @@
         <guru>
             <label>大师</label>
             <tooltip><![CDATA[据说公会有史以来最伟大的探险家找到了一条不需要审判就能通往瓦尔哈拉的道路. 现在, 你就在他面前, 你只需要给他带来一些草药他就为你指明道路.<br>
+            前往瓦尔哈拉，绕过面部判断和声誉要求.<br>
             需要 1000 草药.
             ]]></tooltip>
         </guru>
@@ -1961,7 +2006,10 @@
             <label>盛宴</label>
             <label_done>完成</label_done>
             <tooltip><![CDATA[
-            你意识到你已经忘记了食物的乐趣, 你已经非常 "长时间" 没有吃东西了. 是时候来一场盛大的盛宴了. 不幸的是, 这里的所有餐饮都只支持灵魂石支付.<br>每点法力给予 (实用魔法) * (1 + 主能力 / 100) * (初始法力消耗 / 实际法力消耗) 进度点.<br>每次循环只能进行 1 次盛宴行动.<br>需要至少 100 声望.<br>献祭 (5,000 * (盛宴+1)) 灵魂石. 当前献祭 
+            你意识到你已经忘记了食物的乐趣, 你已经非常 "长时间" 没有吃东西了. 是时候来一场盛大的盛宴了. 不幸的是, 这里的所有餐饮都只支持灵魂石支付.<br>
+           永久增加自身战斗力.<br>
+            每点法力给予 (实用魔法) * (1 + 主能力 / 100) * (初始法力消耗 / 实际法力消耗) 进度点.<br>每次循环只能进行 1 次盛宴行动.<br>需要至少 100 声望.<br>献祭 (5,000 * (盛宴+1)) 灵魂石. 当前献祭 
+
         ]]></tooltip>
             <tooltip2><![CDATA[
              灵魂石.
@@ -2120,6 +2168,7 @@
             <label>Open Portal</label>
             <tooltip><![CDATA[
             The explorers guild tells you of a secret grove within jungle where the space between realms is weakest. With enough restoration skill, you may be able to open a rift back and leave the shadow realm.<br>
+            Travels to Forest Path<br>
             Requires 1000 Restoration.
         ]]></tooltip>
         </open_portal>
