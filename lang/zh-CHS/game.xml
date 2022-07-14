@@ -4,23 +4,23 @@
         <changelog>
             <meta>
                 <title>更新日志</title>
-                <version_prefix>Version</version_prefix>
+                <version_prefix>版本</version_prefix>
             </meta>
             <version verNum="1.6"><![CDATA[
             <b> July 12th, 2022</b>
-            • Change: Reworked Loadouts, allowing up to 15 to be saved<br>
-            • Bugfix: Restoration skill was applying to self combat instead of team combat<br>
-            • Bugfix: A number of actions that had skill exp added to them weren't properly granting the exp<br>
-            • Bugfix: Added descriptions of where each shortcut takes you to the tooltip
+            • 变化: 重做队列保存, 现在允许保存最多 15 个队列了<br>
+            • Bug修复: 恢复技能对个人战斗力生效<br>
+            • Bug修复: 有一些奖励技能经验的行动实际没有奖励经验<br>
+            • Bug修复: 增加了一个说明使你知道工具提示的快捷键
             ]]></version>
             <version verNum="1.5"><![CDATA[
             <b> July 13th, 2022</b>
-            • New Action Type: Trial - Trials are longer form dungeons, but without the soulstone gain<br>
-            • New Trial (Merchanton): Heroes Trial - 50 floors. Grants Heroism buff per floor completed<br>
-            • New Buff: Heroism - Grants 2% increased Combat, Pyromancy, and Restoration skill exp per level<br>
-            • Bugfix: Rewrote soulstone sacrifice code<br>
-            • Bugfix: The Spire was based on self-combat rather than team-combat<br>
-            • Bugfix: Totem didn't effect Imbue Body until the third completion
+            • 新行动类型: 试炼 - 试炼和地牢类似, 但没有灵魂石奖励<br>
+            • 新试炼 (商业小镇): 英雄试炼 - 50 层. 每次完成获得一层英雄气概<br>
+            • 新加成: 英雄气概 - 每级给予战斗技能, 火焰技能, 以及恢复技能经验加成 2% <br>
+            • Bug修复: 重写了灵魂石的献祭代码<br>
+            • Bug修复: 尖塔计算了个人战斗力而不是团队战斗力<br>
+            • Bug修复: 图腾完成三次才使灌注躯体效果翻倍
             ]]></version>
             <version verNum="1.4"><![CDATA[
             <b> July 12th, 2022</b>
@@ -38,70 +38,70 @@
             ]]></version>
             <version verNum="1.2"><![CDATA[
             <b> July 12th, 2022</b>
-            • Change: Constructed additional warehouses so numbers would be prettier with all increases<br>
-            • Bugfix: Player was falling asleep on the wagon, missing the merchantville stop, and ending up on the mountain<br>
-            • Bugfix: Imbue soul wasn't resetting buffs<br>
-            • Bugfix: Excursion costs weren't modified by explorers guild<br>
-            • Bugfix: Key wasn't being reset correctly<br>
-            • Bugfix: Underworld action was showing failed, even when successful<br>
-            • Bugfix: Mana well and Buy mana tooltips now update when leveling skills that benefit them<br>
-            • Bugfix: Skill rework was causing pick locks to give double gold<br>
-            • Bugfix: Guided tour was being removed from active list on refresh
+            • 变化: 增加更多的仓库让各种加成计算起来更舒服<br>
+            • Bug修复: 玩家会在大篷车上睡着, 导致错过商业小镇, 直接到达山上<br>
+            • Bug修复: 灵魂灌注没有重置加成<br>
+            • Bug修复: 探险协会并没有改变短途旅行消耗<br>
+            • Bug修复: 钥匙没有被循环重置<br>
+            • Bug修复: 地下世界行动总是显示失败, 哪怕它成功了<br>
+            • Bug修复: 法力井和购买法力的效果现在会随着各种加成同步更新<br>
+            • Bug修复: 重做技能导致开锁产生双倍的金块<br>
+            • Bug修复: 刷新会导致短途旅行从列表上消失
             ]]></version>
             <version verNum="1.1"><![CDATA[
             <b> July 11th, 2022</b>
             • 新公会: 探索者 - 经过社区投票, 探索者在商业村庄开设了商店!<br>
             • 在所有区域解锁了一个新的 "探索" 行动 - 探索的进度会增加有限资源的上限 (% * 0.5)<br>
             • 全局的探索进度还为区域移动提供了更便捷的捷径<br>
-            • Bug修复: 法力井消耗可能为负, 导致反而从玩家身上吸取法力<br>
+            • Bug修复: 法力井可能流失到负值, 导致反而从玩家身上吸取法力<br>
             • Bug修复: 远行没有检查你是否有足够的金块开始<br>
-            • Bug修复: Reputation display wasn't updated after fall from grace action<br>
-            • Backend: Major rework of how skill bonuses are calculated in code. The results should be the same, but make the code easier to read and maintain. Unfortunately, I expect at least a few bugs from typos in this.<br>
+            • Bug修复: 完成堕落行动后声望并没有及时更新<br>
+            • 后端处理: 大规模重写了各种奖励的代码. 效果基本没什么变化, 只是让它们更好阅读和整理. 不幸的是, 这可能会导致一些Bug.<br>
             ]]></version>
             <version verNum="1.0"><![CDATA[
             <b> July 9th, 2022</b>
-            • New Skill: Wunderkind - Increases talent exp gain<br>
-            • New Action (Jungle Path): Totem - Consumes a looping potion to give Wunderkind skill Exp<br>
-            • Change: Moved the Oracle skill to be next to Charm School<br>
-            • Bugfix: Aspirant bonus was being applied to all exp gain, not just talent exp<br>
-            • Bugfix: Gamble action gold was not rounding<br>
-            • Bugfix: Removed reputation requirement from collect interest tooltip<br>
-            • Bugfix: Removed "this does nothing" from Collect Artifacts<br>
-            • Bugfix: Added the max quantity button to the Collect Artifacts action<br>
-            • Removed versions from changelog >1 year old
+            • 新技能: 神童 - 增加天赋经验获取<br>
+            • 新行动 (丛林小路): 图腾 - 消耗一瓶循环药剂以获得神童经验<br>
+            • 变化: 把神谕移动到礼仪学校旁边<br>
+            • Bug修复: 野心家加成对所有经验生效, 而非仅天赋<br>
+            • Bug修复: 赌博的金块奖励并未取整<br>
+            • Bug修复: 移除取利息需要的声望要求<br>
+            • Bug修复: 移除收集古董上的"暂时没有用"<br>
+            • Bug修复: 收集古董现在有上限了<br>
+            • 移除超过一年的更新记录
             ]]></version>
             <version verNum=".99"><![CDATA[
             <b> July 7th, 2022</b>
-            • New Action (Commerceville): Excursion - Exploration action to reveal other actions in the zone<br>
-            • New Actions (Commerceville): Pick Pocket, Rob Warehouse, Insurance Fraud - Gold gain based on thieves guild bonus & thievery<br>
-            • Finished implementation of thievery skill - Increases gold gain of pick locks, gamble, and thieves guild actions<br>
-            • Added temporary effect for imbue soul - Adds 50% action speed per completion. Will likely be changed later<br>
-            • Improved handling of bonus time on time-gated actions. Effective time used for these actions can be viewed in the "Mana Used" tooltip<br>
-            • Bugfix: Donate allowed going negative on gold<br>
-            • Bugfix: Collect interest was only rewarding 1/10th of the intended amount<br>
-            • Bugfix: Excursion didn't cost gold<br>
-            • Bugfix: Imbue Soul didn't have costs<br>
-            • Bugfix: Thieves guild segments weren't resetting<br>
-            • Bugfix: Great feast throwing an error<br>
-            • Numerous updates and clarifications in various tooltips
+            • 新行动 (商业村庄): 短途旅行 - 一个解锁其他行动的探索行动<br>
+            • 新行动 (商业村庄): 偷钱包, 抢劫仓库, 保险欺诈 - 金块奖励基于盗贼公会倍率和偷窃技能<br>
+            • 完成偷窃技能制作 - 增加开锁, 赌博, 和盗贼公会行动的金块奖励<br>
+            • 为灌注灵魂增加一个临时的效果 - 每次完成增加 50% 行动速度. 未来可能会改变<br>
+            • 增加了一个不会受到奖励时间影响的时间统计. 实际经过时间可以把鼠标悬停在 "已消耗法力" 上查看<br>
+            • Bug修复: 捐款允许捐 0 金块<br>
+            • Bug修复: 只有 1/10 捐赠者愿意捐给你<br>
+            • Bug修复: 短途旅行不消耗金块<br>
+            • Bug修复: 灌注灵魂没有消耗<br>
+            • Bug修复: 盗贼公会的进度并没有重置<br>
+            • Bug修复: 盛宴会报错<br>
+            • 新增了各种提示和大量说明
             ]]></version>
             <version verNum=".98"><![CDATA[
             <b> July 6th, 2022</b>
-            • New Zones - Jungle Path, Commerceville, and Valley of Olympus. Major milestones are implemented, with more content to come
-            • New Buff: Imbue Body - Sacrifices talent exp to permanently raise starting stats.<br>
-            • New Skill: Gluttony - Decreases the soulstone cost of great feast.<br>
-            • New Skill: Thievery - Improves gold gain of certain actions<br>
-            • New Action (Startington): Mana Well - Gives mana based on how quickly in the loop it is completed (adjusted for bonus second use)<br>
-            • New Actions (Jungle Path): Explore Jungle & Fight Jungle Monsters - Generic exploration/progress action where exp is based on fight monsters completion<br>
-            • New Actions (Jungle Path): Rescue Survivors & Prepare Buffet - Uses Resto skill, then herbs and hide to give Gluttony exp<br>
-            • New Action (Jungle Path): Escape - Unlocks next zone, but requires being completed within 60 seconds of starting the loop (adjusted for bonus second use) 
-            • New Actions (Commerceville): Thieves Guild - Functions similar to crafting guild, but with a focus on gold income<br>
-            • New Actions (Commerceville): Invest & Collect interest. Grants a small percentage of lifetime investments<br>
-            • New Actions (Commerceville): Purchase Key & Leave City - Progress to next zone for cost of 1M gold<br>
-            • New Actions (Valley Of Olympus): Imbue Soul & Challenge Gods - (Incomplete) Planned end of game<br>
-            • Dark Ritual now works in all zones and provides a very minor speed increase up to max level. Need to find a way to hide description for locked zones<br>
-            • Decreased mana cost of open rift from 100k -> 50k<br> 
-            • Minor fix to how Spatiomancy effects herbs
+            • 新区域 - 丛林小路, 商业村庄, 和奥林匹斯山谷. 主要的里程碑已经添加, 还有一些其他内容
+            • 新加成: 灌注躯体 - 献祭天赋等级以提高初始能力等级.<br>
+            • 新技能: 暴食 - 降低盛宴的灵魂石消耗.<br>
+            • 新技能: 偷窃 - 增加一些行动的金块获取<br>
+            • 新行动 (初始城镇): 法力井 - 你越快抵达能获取到的法力越多 (也计算奖励秒数)<br>
+            • 新行动 (丛林小路): 探索丛林和与丛林搏斗 - 对应的探索/进度行动都会受到生物击杀进度影响<br>
+            • 新行动 (丛林小路): 拯救幸存者和准备自助餐 - 通过恢复技能, 消耗草药和皮革来获取暴食经验<br>
+            • 新行动 (丛林小路): 逃脱 - 杰索下一区域, 但必须在本次循环 60 秒内完成 (也计算奖励秒数) 
+            • 新行动 (商业村庄): 盗贼公会 - 结构类似制造公会, 但金块收入很高<br>
+            • 新行动 (商业村庄): 投资和收取利息. 进行一些终身投资<br>
+            • 新行动 (商业村庄): 获取钥匙和离开村庄 - 消耗 1M 金块来离开村庄<br>
+            • 新行动 (奥林匹斯山谷): 灌注灵魂和挑战神 - (未完成) 预计游戏终点<br>
+            • 黑暗仪式现在对所有区域都有一个微小的加成. 也许需要找一个不显示未解锁区域描述的方法<br>
+            • 打开裂缝的消耗 100k -> 50k<br> 
+            • 稍微修复了空间魔法对采集草药的影响
             ]]></version>
             <version verNum=".97"><![CDATA[
             <b> July 4th, 2022</b>
@@ -648,9 +648,9 @@
             </desc>
         </aspirant>
         <heroism>
-            <label>Heroism</label>
-            <desc><![CDATA[Completing the trial fills you with determination.<br>
-            Combat, Pyromancy, and Restoration Skill Exp gain increased by 2% per level.]]>
+            <label>英雄气概</label>
+            <desc><![CDATA[完成试炼让你充满气势.<br>
+            每级使战斗技能, 火焰魔法, 和恢复魔法经验获取增加 2% .]]>
             </desc>
         </heroism>
         <imbue_soul>
@@ -1332,7 +1332,7 @@
             <label>探索花径</label>
             <label_done>花径探索度</label_done>
             <tooltip><![CDATA[
-            你找到了一条奇特的花径, 为什么看看它通向哪里呢. 你可以在这条路上找到更多草药.<br>眼镜可以使你获得 2x 进度.<br>解锁于 50% 森林探索度.
+            你找到了一条奇特的花径, 为什么不看看它通向哪里呢. 你可以在这条路上找到更多草药.<br>眼镜可以使你获得 2x 进度.<br>解锁于 50% 森林探索度.
         ]]></tooltip>
             <story_1><![CDATA[<b>1% Flower trail followed:</b>⮀ You stumble across a small lane of flowers that are obviously planted by hand. You decide to follow it.]]></story_1>
             <story_2><![CDATA[<b>10% Flower trail followed:</b>⮀ The planted flowers seem almost sprawling, threading to and fro across the forest.]]></story_2>
@@ -1353,7 +1353,7 @@
             <label>清除灌木丛</label>
             <label_done>灌木丛探索度</label_done>
             <tooltip><![CDATA[
-            花径的终点是灌木丛, 不知道灌木丛中间有什么. 也许里面有一些奇怪的魔法. 清除灌木丛可以找到更多的野生法力.<br>解锁于 20% 花茎探索.
+            花径的终点是灌木丛, 不知道灌木丛中间有什么. 也许里面有一些奇怪的魔法. 清除灌木丛可以找到更多的野生法力.<br>解锁于 20% 花径探索.
         ]]></tooltip>
             <story_1><![CDATA[<b>1% Thicket explored:</b>⮀ You trek to a thicket you found while following the flower path and decide to explore it. Maybe you'll find some more mana. It's not like it belongs to anyone.]]></story_1>
             <story_2><![CDATA[<b>10% Thicket explored:</b>⮀ You've found more of these secluded thickets off the flower path than you thought you would, and you have a sense that there are many more that you haven't found yet.]]></story_2>
