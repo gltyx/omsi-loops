@@ -1189,7 +1189,7 @@
         <hitch_ride>
             <label>搭便车</label>
             <tooltip><![CDATA[
-            探险者公会与各种各样的大篷车签订了旅行合同. 他们教会了你获取通行证的秘密手势. 而且这辆车正好还有一些逸散的法力可以在旅途中吸收!<br/>
+            探索者公会与各种各样的大篷车签订了旅行合同. 他们教会了你获取通行证的秘密手势. 而且这辆车正好还有一些逸散的法力可以在旅途中吸收!<br/>
             前往默奇顿.
         ]]></tooltip>
         </hitch_ride>
@@ -1820,7 +1820,7 @@
         <face_judgement>
             <label>面对审判</label>
             <tooltip><![CDATA[
-            面对神的审判. 如果你的声望高于 50 , 你将得到神的青睐并被允许前往瓦尔哈拉. 如果你的声望低于 -50 , 你将被扔进阴影王国并回到旅途的初始.<br>解锁于 100% 山探索度.
+            面对神的审判. 如果你的声望高于 50 , 你将得到神的青睐并被允许前往瓦尔哈拉. 如果你的声望低于 -50 , 你将被扔进阴影界并回到旅途的初始.<br>解锁于 100% 山探索度.
         ]]></tooltip>
 			<story_1><![CDATA[<b>Judgement Faced:</b>⮀ Their civilization may have fallen, but their gods are still very real, and the weight of their attention nearly drives you to your knees. Seeking to justify your presence, you begin to speak. Of your life, of your goal, and of your moral fibre. They are not impressed, you can tell, but they seem willing to lend you a hand. Before your eyes the world shifts and warps, and when it snaps back into focus you appear to be somewhere else entirely.]]></story_1>
 			<story_2><![CDATA[<b>Accepted by the Gods:</b>⮀ At the end of your story, a crack of lightning strikes behind the altar and leaves behind a cheerful man. Between the perfect bodily form and the power radiating from him, there's no doubt you're meeting a god in the flesh. He extends his hand, an offer of invitation, and you happily reach out and take it.]]></story_2>
@@ -2032,59 +2032,59 @@
         </fall_from_grace>
         <!--town 6-->
         <meander>
-            <label>Meander</label>
-            <label_done>Explored</label_done>
+            <label>漫步</label>
+            <label_done>探索度</label_done>
             <tooltip><![CDATA[
-            This place seems familiar, and yet... not. Everything is twisted and wrong. Just being here hurts your head. You'll need to fortify your mind to make any progress here.<br>Gives exp equal to Imbue Mind level.
+            这地方看上去很熟悉, 但是... 又有点陌生. 所有的东西都是扭曲的. 只是站在这里就会让你感到头疼. 你必须集中精神才能在这里取得进展.<br>奖励等同于灌注精神等级的经验.
             ]]></tooltip>
         </meander>
         <mana_well>
-            <label>Mana Well</label>
-            <label_done>Wells Checked</label_done>
-            <info_text1>Full wells left</info_text1>
-            <info_text2>Spots with full wells total</info_text2>
-            <info_text3>Spots to check for wells</info_text3>
+            <label>法力井</label>
+            <label_done>已查看的法力井</label_done>
+            <info_text1>法力井剩余</info_text1>
+            <info_text2>法力井总计</info_text2>
+            <info_text3>还需要检查的井</info_text3>
             <tooltip><![CDATA[
-            Search the town for wells that still have any mana left. They seem to be rapidly draining.<br>
-            Full wells have 5000 mana, but lose 10 mana for every second that has passed in the loop.<br>
-            Every 100 wells still has mana.
+            检查镇子里的井来找点法力. 它们似乎在迅速流失.<br>
+            法力井初始有 5000 法力, 但你每在本次循环中经过一秒它就会流失 10 法力.<br>
+            每 100 个井有一个法力井.
         ]]></tooltip>
         </mana_well>
         <destroy_pylons>
-            <label>Destroy Pylons</label>
-            <label_done>Pylons Destroyed</label_done>
-            <info_text1>Buildings with intact pylons</info_text1>
-            <info_text2>Buildings with pylons total</info_text2>
-            <info_text3>Buildings to check for pylons</info_text3>
+            <label>摧毁电缆塔</label>
+            <label_done>电缆塔已摧毁</label_done>
+            <info_text1>具有电缆塔的建筑物剩余</info_text1>
+            <info_text2>具有电缆塔的建筑物总计</info_text2>
+            <info_text3>还没检查过的建筑物</info_text3>
             <tooltip><![CDATA[
-            There are strange pylons humming with energy in the abandoned buildings of this town. You're not sure why, but you feel compelled to break them.<br>Reduces the mana cost of The Spire by 10% for each pylon destroyed.
+            在废弃的城镇中有一些奇怪的电缆塔在嗡鸣. 你虽然不知道它有什么用, 但你觉得你得摧毁它们.<br>每个被破坏的电缆塔都会降低 10% 尖塔法力消耗.
         ]]></tooltip>
         </destroy_pylons>
         <raise_zombie>
-            <label>Raise Zombie</label>
+            <label>复活僵尸</label>
             <tooltip><![CDATA[
-            Upon stumbling by the local cemetery, you realize that those numerous tombstones could perhaps benefit you in a meaningful way. With your knowledge of dark magic, and a hint of troll's blood, you might just be able to raise a zombie of your very own!<br>Costs 1 blood.<br>Each zombie adds (dark magic / 2) to your team combat.<br>Unlocked at 1000 dark magic.
+            随着你在墓地摔了一跤, 你注意到也许你可以利用一下这个墓地. 利用你出色的黑暗魔法, 再加上一点巨魔的血, 你就可以复活一只属于你的僵尸!<br>消耗 1 血.<br>每只僵尸增加 (黑暗魔法 / 2) 团队战斗力.<br>解锁于 1000 黑暗魔法.
         ]]></tooltip>
         </raise_zombie>
         <dark_sacrifice>
-            <label>Dark Sacrifice</label>
+            <label>黑暗献祭</label>
             <tooltip><![CDATA[
-            You make a sacrifice of trolls blood to dark gods.<br>Costs 1 blood.<br>Reduces the soulstone cost of dark ritual.<br>Unlocked at 60 dark ritual.
+            你向黑暗之神献祭一些巨魔的血.<br>消耗 1 血.<br>降低黑暗仪式的灵魂石消耗.<br>解锁于 60 黑暗仪式.
         ]]></tooltip>
         </dark_sacrifice>
         <the_spire>
-            <label>The Spire</label>
-            <label_done>Looted</label_done>
-            <label_complete>Completed</label_complete>
-            <label_part>The Spire</label_part>
+            <label>尖塔</label>
+            <label_done>已收获</label_done>
+            <label_complete>完成</label_complete>
+            <label_part>尖塔</label_part>
             <tooltip><![CDATA[
-            Standing tall in the dead center of the town is the towering spire. Surrounded by a storm, and almost emanating gloom. This is surely your greatest task yet.<br>Gives (team combat) * (1 + main stat / 100) * sqrt(1 + times floor completed / 200) * (original mana cost / actual mana cost) progress points per mana.<br>Progress scaling per floor is reduced by 0.1x per pylon disabled.<br>Unlocked at 20% Rumors Heard.<br>Gives 100 soulstones per completion - hover over Looted for info.
+            城镇中间耸立着一座高大尖塔. 周围风暴环绕, 并且几乎看不到光. 这恐怕是迄今为止最艰难的挑战.<br>每点法力给予 (团队战斗力) * (1 + 主能力 / 100) * 开方(1 + 楼层完成数 / 200) * (初始法力消耗 / 实际法力消耗) 进度点.<br>每个被破坏的电缆塔会降低 0.1x 楼层膨胀比例.<br>解锁于 20% 传闻获取.<br>每次完成奖励 100 灵魂石 - 悬停在已收获上获得更多信息.
         ]]></tooltip>
             <completed_tooltip><![CDATA[
-            Each soulstone improves a random stat's exp gain by (1+(soulstones)^.8/30).<br>Each floor has 100 soulstones that, when received, reduces the chance you'll get the next one by 2%.<br>Chance to receive a soulstone recovers per floor at 0.00001% per mana.<br>
+            灵魂石可以给随机能力经验加成 (1+(灵魂石)^.8/30).<br>每层都有 100 灵魂石, 每当获取, 降低下一次在本层获取的概率 2%.<br>你每消耗一点法力获取概率就会恢复 0.00001% .<br>
         ]]></completed_tooltip>
-            <chance_label>Chance</chance_label>
-            <last_stat_label>Last</last_stat_label>
+            <chance_label>概率</chance_label>
+            <last_stat_label>上一次</last_stat_label>
             <segment_names>
                 <name>Locate Entrance</name>
                 <name>Navigate Door Maze</name>
@@ -2099,185 +2099,185 @@
             <!--TODO: give this action story-->
         </the_spire>
         <purchase_supplies>
-        <label>Buy Supplies</label>
+        <label>购买补给</label>
             <tooltip><![CDATA[
-            Prepare to move on.<br>Costs 500 gold.<br>This merchant doesn't seem to be willing to haggle with you though.<br>You only need one set of supplies.<br>Unlocked at a combined Combat and Magic skill of 35.
+            是时候出发了.<br>消耗 500 金块.<br>商人看上去并不想和你讨价还价.<br>每次循环只能进行一次购买补给行动.<br>解锁于 35 战斗和魔法技能总和.
         ]]></tooltip>
         </purchase_supplies>
         <journey_forth>
-            <label>Journey Forth</label>
+            <label>前进的旅程</label>
             <tooltip><![CDATA[
-            Follow the trail out of town. Anywhere has to be better than here. You think.<br>Costs 1 supplies. Finish once to unlock Jungle Path's actions, then finish this in order to use Jungle Path's actions.
+            跟随着小路离开小镇. 任何地方都比这里要好. 至少你这么想.<br>消耗 1 补给. 完成一次就可以解锁丛林小路的行动, 但你下次仍需完成它才能执行丛林小路的行动.
         ]]></tooltip>
         </journey_forth>
         <fight_jungle_monsters>
-            <label>Fight Jungle</label>
-            <label_done>Creatures Defeated</label_done>
+            <label>和丛林战斗</label>
+            <label_done>被击败的生物</label_done>
             <tooltip><![CDATA[
-            Even the basic creatures here are terrifying.<br>
-            Gives (self combat) * (1 + main stat / 100) * sqrt(1 + times completed / 1000) * (original mana cost / actual mana cost) progress points per mana.<br>
-            Gives 1 hide per segment completed.
+            这里的所有生物都很危险.<br>
+            每点法力给予 (个人战斗力) * (1 + 主能力 / 100) * 开方(1 + 完成次数 / 1000) * (初始法力消耗 / 实际法力消耗) 进度点.<br>
+            每完成一个阶段奖励 1 皮革.
         ]]></tooltip>
         </fight_jungle_monsters>
         <explore_jungle>
-            <label>Explore Jungle</label>
-            <label_done>Explored</label_done>
+            <label>探索丛林</label>
+            <label_done>探索度</label_done>
             <tooltip><![CDATA[
-            It would be easier to explore here if something didn't jump out at you from behind every tree.<br>
-            Gives progress based on Jungle Creatures Defeated.<br>
-            Gives 1 herb.
+            探索并不轻松, 因为每棵树后面都潜藏着危险.<br>
+            基于被击败的生物获得进度.<br>
+            奖励 1 草药.
         ]]></tooltip>
         </explore_jungle>
         <rescue_survivors>
-            <label>Rescue Survivors</label>
-            <label_done>Saved</label_done>
-            <label_part>Survivor</label_part>
+            <label>拯救幸存者</label>
+            <label_done>已拯救</label_done>
+            <label_part>幸存者</label_part>
             <tooltip><![CDATA[
-            There are people lost wandering the jungle. If you can find them, you can patch them up and bring them back to camp.<br>Gives (magic skill) * (restoration skill / 100) * (1 + main stat / 100) * sqrt(1 + times completed / 100) * (original mana cost / actual mana cost) * (Jungle Explored %) progress points per mana.<br>Rescued survivors give 4 reputation.
+            丛林里有一些迷路的人. 如果你能找到他们, 你可以把他们带回你的帐篷.<br>每点法力给予 (魔法技能) * (恢复技能 / 100) * (1 + 主能力 / 100) * sqrt(1 + 完成次数 / 100) * (初始法力消耗 / 实际法力消耗) * (丛林探索度 %) 进度点.<br>拯救幸存者奖励 4 声望.
         ]]></tooltip>
             <segment_names>
-                <name>Find</name>
-                <name>Help</name>
-                <name>Assure</name>
+                <name>搜索</name>
+                <name>帮助</name>
+                <name>保护</name>
             </segment_names>
         </rescue_survivors>
         <prepare_buffet>
-            <label>Prepare Buffet</label>
+            <label>准备自助餐</label>
             <tooltip><![CDATA[
-            It's not quite the same as making potions, but you can use your alchemy skills to prepare food for the gathered group.<br>
-            Costs 10 herbs and a hide.<br>
-            Gives Gluttony exp equal to (Rescued Survivors * 5).
+            这里没有平静到可以让你熬制药水, 但你至少可以用炼金术做一些简单的食物给大家吃.<br>
+            消耗 10 草药和 1 皮革.<br>
+            暴食经验增加 (已拯救幸存者 * 5).
         ]]></tooltip>
         </prepare_buffet>
         <totem>
-            <label>Totem</label>
+            <label>图腾</label>
             <tooltip><![CDATA[
-            Doubles the initial stat gain bonus of Imbue Body on first completion.<br>
-            Requires a looping potion.<br>
-            Unlocked at Jungle Explored 50%.<br>
-            Grants 100 Wunderkind exp.
+            第一次完成可以使灌注躯体的奖励翻倍.<br>
+            需要一瓶循环药剂.<br>
+            解锁于 50% 丛林探索度.<br>
+            奖励 100 神童经验.
         ]]></tooltip>
         </totem>
         <escape>
-            <label>Escape</label>
+            <label>逃脱</label>
             <tooltip><![CDATA[
-            The jungle seems to grow ever larger with every moment that passes. You'll have to get out of here fast.<br>Must be completed within 60 seconds of the loop (hover Mana Used for effective time).
+            丛林似乎变得更大了. 你得快点离开这里.<br>必须在本次循环60秒内完成 (悬停在已使用法力上查看当前实际秒数).
         ]]></tooltip>
         </escape>
         <open_portal>
-            <label>Open Portal</label>
+            <label>打开传送门</label>
             <tooltip><![CDATA[
-            The explorers guild tells you of a secret grove within jungle where the space between realms is weakest. With enough restoration skill, you may be able to open a rift back and leave the shadow realm.<br>
-            Travels to Forest Path<br>
-            Requires 1000 Restoration.
+            探索者公会的人指引你前往了一个秘密小树林, 据说那里的阴影界空间非常脆弱. 如果你有足够的恢复技能等级, 也许你可以打开一条裂缝离开阴影界.<br>
+            前往森林小径<br>
+            需要 1000 恢复技能.
         ]]></tooltip>
         </open_portal>
         <excursion>
-            <label>Excursion</label>
-            <label_done>Seen</label_done>
+            <label>短途旅游</label>
+            <label_done>见识</label_done>
             <tooltip><![CDATA[
-            Pay a local street urchin to show you around town. As a tourist, it feels like you're getting ripped off.<br>
-            Cost is reduced by 80% with local guild membership.<br>
-            Currently costs 
+            花钱请一个当地人带你参观小镇. 在转了一圈之后, 你觉得你好像被坑了.<br>
+            如果你有当地的公会证明, 消耗降低 80% .<br>
+            当前消耗 
             ]]></tooltip>
-            <tooltip2>gold.</tooltip2>
+            <tooltip2>金块.</tooltip2>
         </excursion>
         <explorers_guild>
-            <label>Explorers Guild</label>
+            <label>探索者公会</label>
             <tooltip><![CDATA[
-            Ever feel like there's more stuff out there that you're missing? The explorer's guild knows it! Learn to find more of everything, and with enough standing even new ways to move about the world.<br>
-            You can only join 1 guild at a time (including from Merchanton), and only try once.<br>
-            Unlocks the Survey action in other zones based on world survey progress.<br>
-            Unlocks new shortcuts for every 25% world survey progress<br>
-            Current world survey progress: <div id='totalSurveyProgress'></div>%.
+            有没有觉得你好像错过了很多东西? 探索者公会知道它们! 学习并借此找到任何东西, 当你经过充分的学习你甚至可以用新的方式跨越区域.<br>
+            每个循环只能加入 1 个公会 (包括商业小镇), 且只能尝试一次.<br>
+            解锁一个探索行动, 进度基于全局平均探索度.<br>
+            每 25% 世界探索度将提供一个新的捷径<br>
+            当前世界探索度: <div id='totalSurveyProgress'></div>%.
         ]]></tooltip>
         </explorers_guild>
         <thieves_guild>
-            <label>Thieves Guild</label>
-            <label_done>Pursestrings Cut</label_done>
+            <label>盗贼公会</label>
+            <label_done>切开钱包</label_done>
             <tooltip><![CDATA[
-            Learn to transfer wealth to those most in need. You, mostly.<br>Take their tests and get a rank!<br>Requires negative reputation.<br>You can only join 1 guild at a time (including from Merchanton), and only try once.<br>Gives 10 gold per segment completed.<br>Gives ((practical magic skill) + (thievery skill)) * (1 + main stat / 100) * sqrt(1 + times completed / 1000) * (original mana cost / actual mana cost) progress points per mana.<br>Gives Thievery exp upon segment completion, rather than upon action completion.
+            学会进行一个财富的再分配. 当然, 你最多.<br>完成他们的测试以获得一个等级!<br>需要负面的声望.<br>每个循环只能加入 1 个公会 (包括商业小镇), 且只能尝试一次.<br>每个阶段完成都会奖励 10 金块.<br>每点法力给予 ((实用魔法等级) + (偷窃等级)) * (1 + 主能力 / 100) * 开方(1 + 完成次数 / 1000) * (初始法力消耗 / 实际法力消耗) 进度点.<br>每个阶段完成奖励偷窃经验, 与行动完成的经验一样.
         ]]></tooltip>
         </thieves_guild>
         <pick_pockets>
-            <label>Pick Pockets</label>
-            <label_done>Pockets Picked</label_done>
+            <label>偷钱包</label>
+            <label_done>偷到的钱包</label_done>
             <tooltip><![CDATA[
-            Help travels by making their load a bit lighter.<br>
-            Requires thieves guild.<br>
-            Can be completed <div id='actionAllowedPockets'>x</div> times based on excursion progress and spatiomancy.<br>
-            Rewards
+            帮旅行者们减轻负担.<br>
+            需要盗贼公会.<br>
+            每次循环只能完成 <div id='actionAllowedPockets'>x</div> 次,  数量基于短途旅游进度和空间魔法.<br>
+            每级盗贼公会等级奖励
         ]]></tooltip>
-        <tooltip2>gold per thieves guild rank.</tooltip2>
+        <tooltip2>金块.</tooltip2>
         </pick_pockets>
         <rob_warehouse>
-            <label>Rob Warehouse</label>
-            <label_done>Warehouses Robbed</label_done>
+            <label>抢劫仓库</label>
+            <label_done>已抢劫仓库</label_done>
             <tooltip><![CDATA[
-            Diversify your skills into inventory management.<br>
-            Requires thieves guild and 100% pockets picked.<br>
-            Can be completed <div id='actionAllowedWarehouses'>x</div> times based on excursion progress and spatiomancy.<br>
-            Rewards
+            利用你多种多样的技能来进行仓库物品整理.<br>
+            需要盗贼公会和 100% 偷到的钱包.<br>
+            每次循环只能完成 <div id='actionAllowedWarehouses'>x</div> 次,  数量基于短途旅游进度和空间魔法.<br>
+            每级盗贼公会等级奖励
         ]]></tooltip>
-        <tooltip2>gold per thieves guild rank.</tooltip2>
+        <tooltip2>金块.</tooltip2>
         </rob_warehouse>
         <insurance_fraud>
-            <label>Insurance Fraud</label>
-            <label_done>Fraud Committed</label_done>
+            <label>保险欺诈</label>
+            <label_done>欺诈行为</label_done>
             <tooltip><![CDATA[
-            Insurance is a scam, anyway. You're basically robin hood.<br>
-            Requires thieves guild and 100% warehouses robbed.<br>
-            Can be completed <div id='actionAllowedInsurance'>x</div> times based on excursion progress and spatiomancy.<br>
-            Rewards
+            保险是个骗局, 不管你怎么说. 你几乎就是个侠盗.<br>
+            需要盗贼公会和 100% 已抢劫仓库.<br>
+            每次循环只能完成 <div id='actionAllowedInsurance'>x</div> 次,  数量基于短途旅游进度和空间魔法.<br>
+            每级盗贼公会等级奖励
         ]]></tooltip>
-        <tooltip2>gold per thieves guild rank.</tooltip2>
+        <tooltip2>金块.</tooltip2>
         </insurance_fraud>
         <invest>
-            <label>Invest</label>
+            <label>投资</label>
             <tooltip><![CDATA[
-            Invest into the perpetual bank. The interest it makes should be available to you in the future.<br>
-            Total gold invested: <div id='goldInvested'></div>
+            向永恒银行投资. 未来你可以得到它的利息.<br>
+            总投资金块: <div id='goldInvested'></div>
         ]]></tooltip>
         </invest>
         <collect_interest>
-            <label>Collect Interest</label>
+            <label>回收利息</label>
             <tooltip><![CDATA[
-            Collect your interest from the perpetual bank.<br>
-            Gives 0.1% of your total gold invested.<br>
-            Current interest: <div id='bankInterest'></div>
+            向永恒银行收取利息.<br>
+            奖励 0.1% 投资量.<br>
+            当前利息: <div id='bankInterest'></div>
         ]]></tooltip>
         </collect_interest>
         <purchase_key>
-            <label>Purchase Key</label>
+            <label>购买钥匙</label>
             <tooltip><![CDATA[
-            With enough money, you can buy the town itself. Then they'll have to let you out.<br>Costs
+            当你有足够的钱, 以至于你可以买下这座城镇. 他们就会让你出去.<br>消耗
         ]]></tooltip>
-        <tooltip2>gold.</tooltip2>
+        <tooltip2>金块.</tooltip2>
         </purchase_key>
         <leave_city>
-            <label>Leave City</label>
+            <label>离开城镇</label>
             <tooltip><![CDATA[
-            These people are wolves, it's time to get out of here.<br>Requires Key to the City.
+            这些人太贪婪了, 是时候离开这里了.<br>需要城镇钥匙.
         ]]></tooltip>
         </leave_city>
         <imbue_soul>
-            <label>Imbue Soul</label>
-            <label_done>Completed</label_done>
+            <label>灌注灵魂</label>
+            <label_done>完成</label_done>
             <tooltip><![CDATA[
-            Resets all talent levels, soulstones, imbue mind and imbue body. Other skills and buffs are unchanged.<br>
-            Requires 500 Imbue Mind and Body.<br>
-            (Temporary - may change later)Raises all action speeds by 50%.
+            重置所有天赋等级, 灵魂石, 精神灌注和躯体灌注. 其他技能和加成都不会重置.<br>
+            需要 500 精神和躯体灌注.<br>
+            (暂时性 - 后续更新也许会改)所有行动加速 50% .
         ]]></tooltip>
         </imbue_soul>
         <challenge_gods>
-            <label>Challenge Gods</label>
+            <label>挑战神</label>
             <tooltip><![CDATA[
-            This is it. The final showdown. If you can defeat the seven gods, you can finally end all this looping nonsense for good.<br>
-            Requires Imbue Soul 7.
+            是时候了. 最后的决战. 如果你能杀死所有七个神, 你就可以结束这狗屎的循环了.<br>
+            需要灌注灵魂 7.
         ]]></tooltip>
         </challenge_gods>
     </actions>
     <spells>
-        <title>Spells</title>
+        <title>技能</title>
     </spells>
 </body>
