@@ -1790,10 +1790,10 @@
         </guru>
         <!--town 5-->
         <guided_tour>
-            <label>Guided Tour</label>
-            <label_done>Tour Routes Followed</label_done>
+            <label>跟随导游</label>
+            <label_done>游览路线探索度</label_done>
             <tooltip><![CDATA[
-            The city doesn't take too kindly to visitors snooping around, so you'll have to take all their tours to scope it out instead.<br>Costs 10 gold.<br>2x progress with glasses.
+            这座城市并不欢迎四处乱逛的游客, 所以你必须找个导游带领你探索.<br>消耗 10 金块.<br>持有眼镜时进度 2x .
         ]]></tooltip>
             <!--TODO: give this action story-->
         </guided_tour>
@@ -1801,35 +1801,35 @@
             <label>游说</label>
             <label_done>游说过的屋子</label_done>
             <tooltip><![CDATA[
-            这个城市有一个当地的慈善机构，正在招募志愿者四处游说，寻找潜在的捐助者。也许如果您知道其中一些人的信息，这可能会有所帮助<br>
-            解锁于10%的city toured.
+            这个城市有一个当地的慈善机构，正在招募志愿者四处游说，寻找潜在的捐助者。假如你知道这些人的信息，肯定会顺利许多<br>
+            解锁于10%的游览路线探索度.
         ]]></tooltip>
             <!--TODO: give this action story-->
         </canvass>
         <donate>
-            <label>Donate</label>
+            <label>捐款</label>
             <tooltip><![CDATA[
-            You can donate to the charity yourself if you'd like.<br>Costs 20 gold.<br>Gives 1 reputation.
+            如果你想你也可以自己给慈善机构捐款.<br>消耗 20 金块.<br>奖励 1 声望.
         ]]></tooltip>
             <!--TODO: give this action story-->
         </donate>
         <accept_donations>
-            <label>Collect Donations</label>
-            <label_done>Donations Accepted</label_done>
-            <info_text1>Meaningful donations left</info_text1>
-            <info_text2>Meaningful donations total</info_text2>
-            <info_text3>Donations to check for value</info_text3>
+            <label>募捐</label>
+            <label_done>收到的捐款</label_done>
+            <info_text1>愿意捐助者剩余</info_text1>
+            <info_text2>愿意捐助者总计</info_text2>
+            <info_text3>还需要检查的捐助者</info_text3>
             <tooltip><![CDATA[
-            After doing some canvassing for the local charity, you're now able to accept some donations on their behalf, since you know the routine.<br>Costs 1 reputation.<br>Requires a reputation above 0.<br>Meaningful donations are worth 20 gold each.<br>Every 5 donations is worth a meaningful amount. 
+            在为慈善机构募捐之后, 你现在可以代表它接受一部分捐款了, 毕竟你已经了解了规则.<br>消耗 1 声望.<br>至少需要 0 声望.<br>每笔捐款可以获得 20 金块.<br>每 5 名捐助者有一名会捐给你. 
         ]]></tooltip>
             <!--TODO: give this action story-->
         </accept_donations>
 		<tidy_up>
-			<label>Tidy Up</label>
-            <label_done>Tidied</label_done>
-            <label_part>Mess</label_part>
+			<label>打扫</label>
+            <label_done>已打扫</label_done>
+            <label_part>杂乱度</label_part>
 			<tooltip><![CDATA[
-			Tidy up the place.<br>Gives 5 gold and 1 reputation.
+			把这里打扫干净.<br>奖励 5 金块和 1 声望.
 		]]></tooltip>
 			<segment_names>
                 <name>Temp1</name>
@@ -1839,145 +1839,145 @@
             <!--TODO: give this action story-->
 		</tidy_up>
 		<buy_mana_z5>
-            <label>Buy Mana</label>
+            <label>购买法力</label>
             <tooltip><![CDATA[
-            1 gold = 
+            1 金块 = 
         ]]></tooltip>
             <tooltip2><![CDATA[
-            mana. Buys all the mana you can.
+            法力. 尽可能的购买法力.
         ]]></tooltip2>
             <!--TODO: give this action story-->
 		</buy_mana_z5>
 		<sell_artifact>
-			<label>Sell Artifact</label>
+			<label>出售古董</label>
 			<tooltip><![CDATA[
-			Sell one of the artifacts you found on Mt. Olympus as a priceless ancient heirloom.<br>Costs one artifact.<br>Gives 50 gold.
+			把你在奥林匹斯山上发现的古董以无价之宝的形式卖出去.<br>消耗一个古董.<br>获得 50 金块.
 		]]></tooltip>
             <!--TODO: give this action story-->
 		</sell_artifact>
 		<gift_artifact>
-			<label>Donate Artifact</label>
+			<label>捐赠古董</label>
 			<tooltip><![CDATA[
-			Donate a precious artifact to the museum of heroes. It's okay - with each act of generosity you earn friends in high places.<br>Costs one artifact.<br>Gives one favor.
+			向英雄博物馆捐赠一个古董. 这很好 - 高尚的行为会为你赢得更多的尊重.<br>消耗一个古董.<br>奖励一点支持度.
 		]]></tooltip>
             <!--TODO: give this action story-->
 		</gift_artifact>
         <mercantilism>
-            <label>Mercantilism</label>
+            <label>重商主义</label>
             <tooltip><![CDATA[
-            Practice your merchandising skills, which are sorely lacking considering how poor of a deal you're getting from those mana merchants.<br>Costs 1 reputation.<br>Requires positive reputation.
+            练习你的商业技巧, 你发现你和法力商人的交易仿佛在做慈善.<br>消耗 1 声望.<br>需要良好的声望.
         ]]></tooltip>
             <!--TODO: give this action story-->
         </mercantilism>
         <charm_school>
-            <label>Charm School</label>
+            <label>礼仪学校</label>
             <tooltip><![CDATA[
-            Learn to make people love you!<br>Has 4x exp/talent gain, and can only be done <div id='trainingLimitCha'></div> times per reset.
+            学会让人们热爱你!<br>给予 4x 能力/天赋经验, 每次循环只能进行 <div id='trainingLimitCha'></div> 次.
         ]]></tooltip>
             <!--TODO: give this action story-->
         </charm_school>
 		<enchant_armor>
-			<label>Enchant Armor</label>
+			<label>附魔护甲</label>
 			<tooltip><![CDATA[
-			Pull some strings to convince a divine blacksmith to enchant your armor.<br>Costs one favor and one armor.<br>Gives one enchanted armor.<br>Enchanted armor is three times as effective as normal armor.
+			托关系拜托神圣铁匠帮你的护甲附魔.<br>消耗一个支持度和一个护甲.<br>获得一个附魔护甲.<br>附魔护甲的效果是普通护甲的三倍.
 		]]></tooltip>
             <!--TODO: give this action story-->
 		</enchant_armor>
         <wizard_college>
-            <label>Wizard College</label>
+            <label>巫师学院</label>
             <label_done>Spontaneously Combusted From Wonder</label_done>
             <tooltip><![CDATA[
-            The wizard college is the finest school in all of the realms, you're lucky to be afforded a chance to get in. Although, it will cost you a small fortune in tuition.<br>Take their tests and get a grade!<br>Can only have 1 Wizard College action.<br>Costs 500 gold and 10 favors.<br>Gives (all schools of magic skills) * (1 + main stat / 100) * sqrt(1 + times completed / 1000) * (original mana cost / actual mana cost) progress points per mana.
+            巫师学院是全世界最好的学院, 幸运的是你获得了入学的机会. 尽管, 这将花费你一大笔学费.<br>完成测试以获得一个等级!<br>一次循环只能进行 1 次巫师学院行动.<br>消耗 500 金块和 10 支持度.<br>每点法力给予 (所有的魔法等级) * (1 + 主能力 / 100) * 开方(1 + 完成次数 / 1000) * (初始法力消耗 / 实际法力消耗) 进度点.
         ]]></tooltip>
             <!--TODO: give this action story-->
         </wizard_college>
         <restoration>
-            <label>Restoration</label>
+            <label>恢复魔法</label>
             <tooltip><![CDATA[
-            You've gone all this way without learning how to use your magic to heal people, or even yourself. You should probably get around to learning that.<br>Mana cost is reduced by Wizard College Grade.
+            你竟然没有学过怎么用魔法治疗, 哪怕只是治疗你自己. 你得赶紧来学学了.<br>根据巫师学院等级降低法力消耗.
         ]]></tooltip>
             <!--TODO: give this action story-->
         </restoration>
         <spatiomancy>
-            <label>Spatiomancy</label>
+            <label>空间魔法</label>
             <tooltip><![CDATA[
-            Learn how to control space and matter. Turns out making big changes is <i>hard</i>, but even small changes might allow you to get more done each loop.
-            <br>Mana cost is reduced by Wizard College Grade.
+            了解如何控制空间和物质. 对大范围施展是 <i>非常困难</i> 的, 但是也许可以在循环中对一些小东西用.
+            <br>根据巫师学院等级降低法力消耗.
         ]]></tooltip>
             <!--TODO: give this action story-->
         </spatiomancy>
         <seek_citizenship>
-            <label>Seek Citizenship</label>
-			<label_done>Citizenship Exam Studied</label_done>
+            <label>寻求公民身份</label>
+			<label_done>入籍考试进度</label_done>
             <tooltip><![CDATA[
-            Right now, you're just visiting.  If you want to be accepted into their ranks for real, you'll need to study and pass a rigorous exam on Valhallan history and culture.
+            现在, 你只是个游客.  如果你想真正加入他们的行列, 你得学习并通过瓦尔哈拉的历史与文化测试.
         ]]></tooltip>
             <!--TODO: give this action story-->
         </seek_citizenship>
 		<build_housing>
-			<label>Build Housing</label>
+			<label>盖房子</label>
             <tooltip><![CDATA[
-            Build a house in the city that you can rent out.<br>Can build as many houses as your crafting guild bonus.<br>Requires 100% citizenship.<br>Unlocked at 100% Citizenship Exam Studied.
+            在城里建一栋房子来收租.<br>可以建造的数量等同于你制造公会的倍率.<br>需要 100% 公民身份.<br>解锁于 100% 入籍考试.
         ]]></tooltip>
             <!--TODO: give this action story-->
 		</build_housing>
 		<collect_taxes>
-			<label>Collect Taxes</label>
+			<label>收租</label>
             <tooltip><![CDATA[
-            Collect taxes from the properties you have built.<br>Gives (houses * Mercantilism / 20) gold.<br>Requires housing.<br>Unlocked at 100% Citizenship Exam Studied.
+            从你建造的房子里收租.<br>给予 (房子数 * 重商主义 / 20) 金块.<br>需要建造房子.<br>解锁于 100% 入籍考试.
         ]]></tooltip>
             <!--TODO: give this action story-->
 		</collect_taxes>
         <oracle>
-            <label>Oracle</label>
+            <label>神谕</label>
             <tooltip><![CDATA[
-            Peer into the future to better your fortune!<br>Has 4x exp/talent gain, and can only be done <div id='trainingLimitLuck'></div> times per reset.
+            仔细观察未来以获得更多的财富!<br>给予 4x 能力/天赋经验, 每次循环只能进行 <div id='trainingLimitLuck'></div> 次.
         ]]></tooltip>
             <!--TODO: give this action story-->
         </oracle>
 		<pegasus>
-			<label>Pegasus</label>
+			<label>飞马</label>
 			<tooltip><![CDATA[
-			Valhalla has its share of wonders. Amongst them are the Pegasi; mythical winged steeds, only available to the finest of citizens. If you wish to get your hands on one you'll need to convince a local to guide you to one of their meeting grounds, and then prove yourself to it. Swift on land and sky, it takes more than just gold to own a creature like this.<br>Allows access to special fights.<br>Costs 200 gold and 20 favors.
+			瓦尔哈拉有很多神奇的东西. 其中就包括了帕加索斯; 就像神话中的飞马, 只有最优秀的公民可以获得. 如果你想得到一匹, 你需要根据当地人的指引前往一个广场, 然后证明自己. 飞马能翱翔在天空也能在陆地上飞奔, 想要拥有这样的生物可不仅仅需要黄金.<br>允许进行特殊的战斗.<br>消耗 200 金块和 20 支持度.
 		]]></tooltip>
             <!--TODO: give this action story-->
 		</pegasus>
         <fight_frost_giants>
-            <label>Fight Giants</label>
-            <label_done>Frost Giants Vanquished</label_done>
+            <label>和巨人战斗</label>
+            <label_done>已战胜冰霜巨人</label_done>
             <tooltip><![CDATA[
-            Join the valkryies in their fight against the frost giants.<br>Improves your ability to seek favor from the gods.<br>Can only have 1 Fight Frost Giants action.<br>Requires a pegasus.<br>Gives (self combat) * (1 + main stat / 100) * sqrt(1 + times completed / 1000) * (original mana cost / actual mana cost) progress points per mana.<br>Unlocked at 100% citizenship studied.
+            加入瓦尔基里并与冰霜巨人搏斗.<br>提高众神对你的青睐.<br>每次循环只能进行 1 次和巨人战斗行动.<br>需要一匹帕加索斯.<br>每点法力给予 (个人战斗力) * (1 + 主属性 / 100) * 开方(1 + 完成次数 / 1000) * (初始法力消耗 / 实际法力消耗) 进度点.<br>解锁于 100% 入籍考试进度.
         ]]></tooltip>
             <!--TODO: give this action story-->
         </fight_frost_giants>
         <seek_blessing>
-            <label>Seek Blessing</label>
+            <label>寻求神恩</label>
             <tooltip><![CDATA[
-            Pray to the gods to grant you their favor.<br>Increases the number of soulstones earned from all actions.<br>Can only have 1 Seek Blessing action.<br>Requires a pegasus.<br>Gives (50 * Frost Giants Multi) Divine Favor experience.<br>Unlocked at 100% citizenship studied.
+            向众神祈祷以获得神恩.<br>增加所有行动可获得的灵魂石数量.<br>每次循环只能进行 1 次寻求神恩.<br>需要一匹帕加索斯.<br>奖励 (50 * 冰霜巨人倍率) 神恩术经验.<br>解锁于 100% 入籍考试进度.
         ]]></tooltip>
             <!--TODO: give this action story-->
         </seek_blessing>
         <great_feast>
-            <label>Great Feast</label>
-            <label_done>Completed</label_done>
+            <label>盛宴</label>
+            <label_done>完成</label_done>
             <tooltip><![CDATA[
-            You realize now that you've forgotten the joy of food, after having gone for so "long" without needing to eat anything. It's about time for a feast of grand proportions. Unfortunately, all the catering services here only accepts payments in soulstones.<br>Gives (practical magic skill) * (1 + main stat / 100) * (original mana cost / actual mana cost) progress points per mana.<br>Can only have 1 Great Feast action.<br>Requires 100 reputation.<br>Sacrifices (5,000 * (feasts+1)) soulstones. Currently sacrificing 
+            你意识到你已经忘记了食物的乐趣, 你已经非常 "长时间" 没有吃东西了. 是时候来一场盛大的盛宴了. 不幸的是, 这里的所有餐饮都只支持灵魂石支付.<br>每点法力给予 (实用魔法) * (1 + 主能力 / 100) * (初始法力消耗 / 实际法力消耗) 进度点.<br>每次循环只能进行 1 次盛宴行动.<br>需要至少 100 声望.<br>献祭 (5,000 * (盛宴+1)) 灵魂石. 当前献祭 
         ]]></tooltip>
             <tooltip2><![CDATA[
-             soulstones.
+             灵魂石.
         ]]></tooltip2>
             <segment_names>
-                <name>Explain Your Order</name>
-                <name>Give Them Your Information</name>
-                <name>Verify Your Identity</name>
-                <name>Confirm Your Address</name>
+                <name>开始点菜</name>
+                <name>填写备注</name>
+                <name>验证身份</name>
+                <name>提供地址</name>
             </segment_names>
             <!--TODO: give this action story-->
         </great_feast>
         <fall_from_grace>
-            <label>Fall From Grace</label>
+            <label>堕落</label>
             <tooltip><![CDATA[
-            Looks like the only way out of this place is to make them dislike you enough to kick you out. Some moderate vandalism will probably do the job. Some people just want to watch something outside of the world burn. You'll be cast into the shadow realm and thrown back to the beginning of your journey.<br>Unlocked at 200 Pyromancy.
+            看来离开这里的唯一办法是让他们讨厌你. 一些适度的作恶行为也许有帮助. 有些人只想看着世界燃烧. 你会被投入阴影界并回到旅途的起点.<br>解锁于 200 火焰魔法.
         ]]></tooltip>
 			<story_1><![CDATA[<b>Fell From Grace:</b>⮀ Incomplete]]></story_1>
             <!--TODO: give this action story-->
