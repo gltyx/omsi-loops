@@ -1497,7 +1497,7 @@
             <label>组建队伍</label>
             <tooltip><![CDATA[
             你不需要全都自己承担.<br>最多 5 个队友.<br>消耗 <div id='teamCost'></div>
-            金块, 消耗最高提高至 100 金块每人.<br>每个队友增加你的团队战斗力 (冒险者公会倍率) * (战斗技能 / 2) .<br>需要冒险者公会.<br>给予 3x 能力/天赋经验.<br>解锁于 20% 传闻获取.
+            金块, 每招募一个队友消耗提高 100 金块.<br>每个队友增加你的团队战斗力 (冒险者公会倍率) * (战斗技能 / 2) .<br>需要冒险者公会.<br>给予 3x 能力/天赋经验.<br>解锁于 20% 传闻获取.
         ]]></tooltip>
 			<story_1><![CDATA[<b>Teammate gathered:</b>⮀ Cassandra, self-professed expert spell-slinger, makes no attempt to hide her suspicion of the newcomer who's insisting on an expedition the same day they joined the guild. Still, you're paying the asking price, so she grudgingly accepts. You can tell that she won't be a pleasant companion, though.]]></story_1>
 			<story_2><![CDATA[<b>Full party:</b>⮀ Cassandra was a solo adventurer, but you've located a full party willing to join you in the dungeon. There's Marcus the swordsman, Raven the archer, Harvey the spell-slinger, Emily the healer, and Kyla, a rare specialist in magic-augmented dagger fighting. And you, now that you've paid them handsomely to join you.]]></story_2>
