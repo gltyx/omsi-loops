@@ -1419,9 +1419,9 @@
              灵魂石.
         ]]></tooltip2>
             <segment_names>
-                <name>Clear the Area</name>
-                <name>Prepare the Altar</name>
-                <name>Summon the Dark Gods</name>
+                <name>清理区域</name>
+                <name>准备祭坛</name>
+                <name>召唤黑暗之神</name>
             </segment_names>
             <story_1><![CDATA[<b>3rd ritual segment reached:</b>⮀ Knowing what the ritual was and how large a space you would need, you were mildly surprised to find a clearing large enough in the forest. Well, the clearing itself wasn't really large enough on its own. It was a dense cluster of clearings that you've taken mana from that you could easily clear out to make a ritual space. Preparing the altar is surprisingly tame, all said and done. Stone and wood comprise most of the altar and the rest you brought with you when you made this plan. In the end the altar you build is only small, a communion point instead of a summoning. Holding a heart from nearby deer, you pierce it and begin to chant ritualistic words of power. The clearing grows dark and the forest quietens, nary a sound is heard apart from the drip drip drip of the blood from the pierced heart in your hand. The blood you've spilled on the altar begins to blacken and swirl without outside force and eventually forms into a small face, disgusting to look at but enough to communicate through.]]></story_1>
             <story_2><![CDATA[<b>Ritual completed:</b>⮀ You commune with the dark gods long past the point that the blood has faded. The deal is struck thusly: time itself will move faster for you only in select areas, and you will pay a cost in souls. The dark god you commune with seems almost surprised as you immediately offer up some of the soulstones that you have.]]></story_2>
@@ -1481,7 +1481,7 @@
 			<story_8><![CDATA[<b>100% Rumors Heard:</b>⮀ You've been to every bar and dinner party, and heard every bit of gossip there is to hear. While you've only met a tiny fraction of Merchanton's population you've had drinks with every rung of society, and you're starting to feel like the city's running out of secrets for you to uncover.]]></story_8>
         </get_drunk>
         <buy_mana_z3>
-            <label>Buy Mana</label>
+            <label>购买法力</label>
             <tooltip><![CDATA[
             1 金块 = 
         ]]></tooltip>
@@ -1539,13 +1539,13 @@
             <chance_label>概率</chance_label>
             <last_stat_label>上一次</last_stat_label>
             <segment_names>
-                <name>Rally Party</name>
-                <name>Journey to the Entrance</name>
-                <name>Fight Door Guardians</name>
-                <name>Argue over Loot</name>
-                <name>Dodge Traps</name>
-                <name>Dodge Friendly Fire</name>
-                <name>Fight Boss</name>
+                <name>集合队伍</name>
+                <name>前往入口</name>
+                <name>击败门卫</name>
+                <name>争夺奖励</name>
+                <name>回避陷阱</name>
+                <name>避免内讧</name>
+                <name>击败BOSS</name>
             </segment_names>
 			<story_1><![CDATA[<b>Large Dungeon Attempted:</b>⮀ You quickly understand why you couldn't do this alone. The strong guardians at the entrance aside, many of the traps can only be disarmed by multiple people working together. If you tried this on your own you would've been squashed like a bug.]]></story_1>
 			<story_2><![CDATA[<b>2,000 Dungeon Floors Looted:</b>⮀ Adventuring in a party is tricky. Everyone wants the kill, everyone wants the loot, and one wrong word from anyone can spell a cascade of arguments. It's frustrating how much time you need to spend defusing tensions and keeping the party focused.]]></story_2>
@@ -1555,7 +1555,7 @@
         </large_dungeon>
         <crafting_guild>
             <label>制造公会</label>
-            <label_done>Cried From Beauty</label_done>
+            <label_done>壮丽的艺术品</label_done>
             <tooltip><![CDATA[
             学会使用你的双手来制作壮丽的艺术品.<br>完成测试以获取一个等级!<br>你同一时间只能加入 1 个公会, 且只能尝试一次.<br>每个阶段完成都会奖励 10 金块.<br>每点法力给予 ((魔法技能)/2 + (制造技能)) * (1 + 主能力 / 100) * 开方(1 + 完成次数 / 1000) * (初始法力消耗 / 实际法力消耗) 进度点.<br>解锁于 30% 传闻获取.<br>完成每个阶段都会奖励制造技能经验, 相当于制造行动.
         ]]></tooltip>
@@ -1635,23 +1635,23 @@
 			<story_1><![CDATA[<b>Pickaxe bought:</b>⮀ The shopowner assures you that the pickaxe is made out of only the most sturdy materials and will last a lifetime without needing repair. You're not entirely convinced, but you don't need it to last a lifetime anyways, and it does have a good heft to it.]]></story_1>
         </buy_pickaxe>
         <heroes_trial>
-            <label>Heroes Trial</label>
-            <label_done>Done</label_done>
-            <label_complete>Completed</label_complete>
-            <label_part>Heroes Trial</label_part>
+            <label>英雄试炼</label>
+            <label_done>完成</label_done>
+            <label_complete>完成</label_complete>
+            <label_part>英雄试炼</label_part>
             <tooltip><![CDATA[
-            Gather your party to take on the trial of heroes! 
+            带着你的队友完成英雄试炼! 
         ]]></tooltip>
             <segment_names>
-                <name>Locate Entrance</name>
-                <name>Navigate Door Maze</name>
-                <name>Slay Spectres</name>
-                <name>Escape Evaporating Tunnel</name>
-                <name>Fend Off Spider Ambush</name>
-                <name>Avoid Explosive Runes</name>
-                <name>Disable Miniature Pylons</name>
-                <name>Fight Dark Amalgamation</name>
-                <name>Cleanse Floor</name>
+                <name>寻找入口</name>
+                <name>破解大门</name>
+                <name>杀死幽灵</name>
+                <name>逃离蒸汽通道</name>
+                <name>击退蜘蛛</name>
+                <name>回避爆炸符文</name>
+                <name>关闭小型电缆塔</name>
+                <name>击败黑暗融合兽</name>
+                <name>清理楼层</name>
             </segment_names>
         </heroes_trial>
         <start_trek>
@@ -1817,9 +1817,9 @@
              灵魂石.
         ]]></tooltip2>
             <segment_names>
-                <name>Submerge the Soulstones</name>
-                <name>Arrange the Soulstones</name>
-                <name>Absorb Knowledge</name>
+                <name>浸没灵魂石</name>
+                <name>排列灵魂石</name>
+                <name>吸收知识</name>
             </segment_names>
 			<story_1><![CDATA[<b>Third phase reached:</b>⮀ The soulstones are all arranged, glowing a bright uniform white. You sit in the center and close your eyes as the ritual begins. You can sense the soulstones all around you, bathed in light, and you mentally reach out and start pulling them closer.]]></story_1>
 			<story_2><![CDATA[<b>Imbuement complete:</b>⮀ It's overwhelming. You're thinking faster than you remember ever thinking before, your mind flashing from scene to scene as fragments of knowledge float by on the sidelines. Slowing down would be fatal, you have no choice but to trust the strength of your mind. Finally, it ends, and you open your eyes. The soulstones are nowhere to be found and the lake is just clear water now.]]></story_2>
@@ -1834,9 +1834,9 @@
              等级的天赋.
         ]]></tooltip2>
             <segment_names>
-                <name>Submerge youself</name>
-                <name>Focus essence</name>
-                <name>Absorb Knowledge</name>
+                <name>浸没在湖里</name>
+                <name>聚集精华</name>
+                <name>吸收知识</name>
             </segment_names>
         </imbue_body>
         <face_judgement>
@@ -1844,9 +1844,9 @@
             <tooltip><![CDATA[
             面对神的审判. 如果你的声望高于 50 , 你将得到神的青睐并被允许前往瓦尔哈拉. 如果你的声望低于 -50 , 你将被扔进阴影界并回到旅途的初始.<br>解锁于 100% 山探索度.
         ]]></tooltip>
-			<story_1><![CDATA[<b>Judgement Faced:</b>⮀ Their civilization may have fallen, but their gods are still very real, and the weight of their attention nearly drives you to your knees. Seeking to justify your presence, you begin to speak. Of your life, of your goal, and of your moral fibre. They are not impressed, you can tell, but they seem willing to lend you a hand. Before your eyes the world shifts and warps, and when it snaps back into focus you appear to be somewhere else entirely.]]></story_1>
-			<story_2><![CDATA[<b>Accepted by the Gods:</b>⮀ At the end of your story, a crack of lightning strikes behind the altar and leaves behind a cheerful man. Between the perfect bodily form and the power radiating from him, there's no doubt you're meeting a god in the flesh. He extends his hand, an offer of invitation, and you happily reach out and take it.]]></story_2>
-			<story_3><![CDATA[<b>Cast into the Shadow Realm:</b>⮀ There is only one word for the act of facing the gods while the stench of their dark cousins emanates from you: defiance. They know you aren't here to win their favour, but to spit in their faces as an emissary of their hated nemeses. Enraged, the gods strike you down, and you sink into a world of roiling black turmoil. And yet, the dark gods you're aligned with act too, and you see in front of you a path leading out of the abyss.]]></story_3>
+			<story_1><![CDATA[<b>面对审判:</b>⮀ 也许是失落的文明, 但是他们的神仍在, 并且它的注视几乎快把你逼疯了. 为了证明你的存在, 你开始说话. 关于你的生活, 你的目标, 还有你的道德. 它们没有印象, 你可以随意说, 但它们似乎愿意帮你一把. 你眼前的世界开始扭曲, 当你的视野恢复清晰你似乎到了另一个地方.]]></story_1>
+			<story_2><![CDATA[<b>神的认可:</b>⮀ 在你的故事说完后, 一道闪电击中了祭坛并留下了一个快乐的人. 他有着完美的身体和充沛的力量, 毫无疑问这就是神. 他伸出手发出邀请, 你高兴的握住了那只手.]]></story_2>
+			<story_3><![CDATA[<b>进入阴影界:</b>⮀ 你身上散发的黑暗魔法气息让神对你只有一句话: 拒绝. 他们认为你来这里不是为了赢取他们的好感, 而是代表它们憎恨的敌人过来欺辱它们. 众神愤怒的把你击倒, 并把你投入了阴影界. 当然, 你也可以和黑暗之神结盟, 你的眼前有一条通往深渊的小路.]]></story_3>
         </face_judgement>
         <guru>
             <label>大师</label>
@@ -2108,15 +2108,15 @@
             <chance_label>概率</chance_label>
             <last_stat_label>上一次</last_stat_label>
             <segment_names>
-                <name>Locate Entrance</name>
-                <name>Navigate Door Maze</name>
-                <name>Slay Spectres</name>
-                <name>Escape Evaporating Tunnel</name>
-                <name>Fend Off Spider Ambush</name>
-                <name>Avoid Explosive Runes</name>
-                <name>Disable Miniature Pylons</name>
-                <name>Fight Dark Amalgamation</name>
-                <name>Cleanse Floor</name>
+                <name>寻找入口</name>
+                <name>破解大门</name>
+                <name>杀死幽灵</name>
+                <name>逃离蒸汽通道</name>
+                <name>击退蜘蛛</name>
+                <name>回避爆破符文</name>
+                <name>关闭小型电缆塔</name>
+                <name>击败黑暗融合怪</name>
+                <name>清理楼层</name>
             </segment_names>
             <!--TODO: give this action story-->
         </the_spire>
