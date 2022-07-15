@@ -874,10 +874,10 @@
             <label_done>已探索</label_done>
             <tooltip>探索这个小镇, 寻找隐藏的区域和宝藏.</tooltip>
             <story_1><![CDATA[<b>20% 探索度:</b>⮀ 你大致了解了村庄的整体布局, 你至少不会在穿过村庄时迷路了!]]></story_1>
-            <story_2><![CDATA[<b>40% 探索度:</b>⮀ You're starting to really know your way around, you can almost figure your way around without following a set path!]]></story_2>
-            <story_3><![CDATA[<b>60% 探索度:</b>⮀ You've tread all the main roads and you avail yourself to the unkempt side paths and well worn paths. If you let yourself into some houses, well, no one needs to know, do they?]]></story_3>
-            <story_4><![CDATA[<b>80% 探索度:</b>⮀ You've decided to explore the houses now that you've trod every single feasible path in this small village. Man, the stuff people keep around.]]></story_4>
-            <story_5><![CDATA[<b>100% 探索度:</b>⮀ You've been everywhere, there is absolutely nowhere in this town you haven't been. You've been in every cellar, under every bed, and in every closet. You've pried all the floorboards, and just in general, been into everything. Except the houses with locks, those dastardly locks.]]></story_5>
+            <story_2><![CDATA[<b>40% 探索度:</b>⮀ 你现在已经完全了解了附近的路线, 你现在可以不用看路标就能找到路了!]]></story_2>
+            <story_3><![CDATA[<b>60% 探索度:</b>⮀ 你已经踏遍了所有的大路, 开始尝试探索无人经过的小路. 也许你需要从一些房子里穿过, 没关系, 没人会知道的, 对吧?]]></story_3>
+            <story_4><![CDATA[<b>80% 探索度:</b>⮀ 你已经踏遍了村庄的所有道路, 是时候看看那些房子了. 有拿着家伙的人在周围警戒.]]></story_4>
+            <story_5><![CDATA[<b>100% 探索度:</b>⮀ 你已经完全探索了这个村庄, 这个村庄的每个角落你都去过. 你去过每个地窖, 躲过每个床底, 钻进过每个衣柜. 你撬开过所有的地板, 并且字面意义上的, 深入了解了所有东西. 除了那些锁住的房子, 那些卑鄙的锁.]]></story_5>
         </wander>
         <smash_pots>
             <label>踢罐子</label>
@@ -891,7 +891,7 @@
             <tooltip2><![CDATA[
             法力.<br>每 10 个罐子有一个有法力.
         ]]></tooltip2>
-            <story_1><![CDATA[<b>50 Pots with mana:</b>⮀ You've smashed every single pot in this village, and have figured out all the pots that contain any trace of mana. Having to break them all physically was time consuming, and your skills at absorbing the mana weren't the best. There must be more efficient ways of doing it.]]></story_1>
+            <story_1><![CDATA[<b>50 个有法力的罐子:</b>⮀ 你打破过村庄里的所有罐子, 并找到了所有有法力的罐子. 把所有罐子都打破太浪费时间了, 但你可以利用你的经验跳过那些没有法力的罐子. 也许有更有效率的方式.]]></story_1>
         </smash_pots>
         <pick_locks>
             <label>开锁</label>
@@ -905,16 +905,16 @@
             <tooltip2><![CDATA[
             金块.<br>每 10 个房子有一个有金块.<br>解锁于 20% 探索度.
         ]]></tooltip2>
-            <story_1><![CDATA[<b>House checked:</b>⮀ You manage to pick a lock that was in disrepair and opened the door, only to walk into the home's inhabitant. Good thing the loop ended not soon after. You're gonna have to figure out which houses are worth hitting. Some money wouldn't go astray.]]></story_1>
-            <story_2><![CDATA[<b>50 Houses known:</b>⮀ You really should look at hitting those locked houses around, who knows what goodies you'll manage to scrounge up.]]></story_2>
-            <story_3><![CDATA[<b>10 Houses with loot:</b>⮀ You've figured out which houses are uninhabited and have enough gold for it to be worth your time. As they say, time is mana!]]></story_3>
+            <story_1><![CDATA[<b>房子已检查:</b>⮀ 你设法撬开了一个老旧的锁, 就像走进自己家一样走进了房子里. 好消息是循环并没有那么快结束. 你也许需要看看到底哪些房子值得花时间撬锁. 不是所有房子都有钱.]]></story_1>
+            <story_2><![CDATA[<b>50 房子已检查:</b>⮀ 你真该仔细看看那些锁着的房子, 谁知道里面有什么好东西.]]></story_2>
+            <story_3><![CDATA[<b>10 有财物的房子:</b>⮀ 你已经找出了所有值得你花时间撬锁的房子. 就像古话说的, 时间就是法力!]]></story_3>
         </pick_locks>
         <buy_glasses>
             <label>购买眼镜</label>
             <tooltip><![CDATA[
             这不公平. 是时候了. 我总是需要它.<br>现在你需要花费 10 金块来买一副新眼镜!<br>在本次循环的剩余时间使漫步效果 4x .<br>对所有带有眼镜标记的行动生效<br>你只能进行 1 次购买眼镜行动.<br>解锁于 20% 探索度.
         ]]></tooltip>
-            <story_1><![CDATA[<b>Glasses bought:</b>⮀ The world snaps into sharp focus as you put them on and you gawk a little as details that had slipped your eyes previously stood out in sharp contrast. You're a little gobsmacked at how much of a difference they make.]]></story_1>
+            <story_1><![CDATA[<b>已购买眼镜:</b>⮀ 当你戴上它时整个世界瞬间变得清晰起来, 与之前的世界形成了鲜明的对比. 你甚至有点惊讶于这个变化.]]></story_1>
         </buy_glasses>
         <found_glasses>
             <label>找到眼镜</label>
@@ -939,21 +939,21 @@
             <tooltip><![CDATA[
             只是简短的聊天他们是不会放你走的.<br>解锁于 22% 探索度.
         ]]></tooltip>
-            <story_1><![CDATA[<b>1% People Met:</b>⮀ You stand there, a little stumped at the situation you’ve gotten yourself into, when a young lass asks you about your day so far.]]></story_1>
-            <story_2><![CDATA[<b>20% People Met:</b>⮀ The people here are generally nice enough, if a bit brusque at times. Some people have small tasks that they're happy to pay for.]]></story_2>
-            <story_3><![CDATA[<b>40% People Met:</b>⮀ There are a surprising amount of people in the village. You didn’t catch that when you were looking around.]]></story_3>
-            <story_4><![CDATA[<b>60% People Met:</b>⮀ It almost seems that most people have something they want done, the real problem is figuring out whats worth your time.]]></story_4>
-            <story_5><![CDATA[<b>80% People Met:</b>⮀ Having met such a large portion of the people in this village, you almost feel guilty about stealing from them. Almost.]]></story_5>
-            <story_6><![CDATA[<b>100% People Met:</b>⮀ You've spoken to everyone. Every child, adult, teen, animal and plant in this village. Everyone, and everything.]]></story_6>
+            <story_1><![CDATA[<b>1% 已结识朋友:</b>⮀ 有个年轻女孩向你询问你的来历, 这让你感到非常为难.]]></story_1>
+            <story_2><![CDATA[<b>20% 已结识朋友:</b>⮀ 这里的人除了有点粗俗, 别的都挺好的. 有些人甚至会发布一些小任务并给予奖励.]]></story_2>
+            <story_3><![CDATA[<b>40% 已结识朋友:</b>⮀ 这个村庄里的人真多啊. 你刚开始还没发现.]]></story_3>
+            <story_4><![CDATA[<b>60% 已结识朋友:</b>⮀ 似乎所有人都有想做的事, 问题在于哪些事值得你花时间去做.]]></story_4>
+            <story_5><![CDATA[<b>80% 已结识朋友:</b>⮀ 你已经见过村庄的大部分人了, 你几乎对从他们那偷东西感到愧疚. 几乎.]]></story_5>
+            <story_6><![CDATA[<b>100% 已结识朋友:</b>⮀ 你已经和所有人都说过话了. 村庄里的每个小孩, 大人, 青年, 动物和植物. 所有人, 还有所有东西.]]></story_6>
         </meet_people>
         <train_strength>
             <label>训练力量</label>
             <tooltip><![CDATA[
             锻炼肌肉. 再来一次.<br>获取经验/天赋的速度 4x , 每次循环只能执行 <div id='trainingLimitStr'></div> 次行动.<br>解锁于 5% 已结识朋友.
         ]]></tooltip>
-            <story_1><![CDATA[<b>Strength trained:</b>⮀ You lift the oak barrel filled with water, holding it while you squat again and again. The barrel rests upon your back as you do push up after push up. It's a trusty companion in your quest to regain your muscle.]]></story_1>
-            <story_2><![CDATA[<b>100 Strength talent:</b>⮀ Your body adapts faster and faster to the strains you put upon it. You know exactly how far to push it and can tell almost instinctively when to stop.]]></story_2>
-            <story_3><![CDATA[<b>1,000 Strength talent:</b>⮀ Your body seems to build itself up faster and faster each time you break it down. You can practically feel your mana purr in satisfaction as it rebuilds your body to be stronger and stronger.]]></story_3>
+            <story_1><![CDATA[<b>力量训练:</b>⮀ 你举起装满水的木桶, 并不断地蹲起. 然后把它放在你的背上进行俯卧撑. 它肯定能让你锻炼肌肉.]]></story_1>
+            <story_2><![CDATA[<b>100 力量天赋:</b>⮀ 你身体逐渐适应了训练的压力. 你已经可以准确的判断桶该举到哪, 然后本能的停止.]]></story_2>
+            <story_3><![CDATA[<b>1,000 力量天赋:</b>⮀ 你的力量训练越来越快了. 你似乎可以听到你的法力在发出满足的呻吟, 你的身体越来越强壮.]]></story_3>
         </train_strength>
         <short_quest>
             <label>短任务</label>
@@ -967,8 +967,8 @@
             <tooltip2><![CDATA[
             金块.<br>每 5 个短任务有一个有奖励.<br>解锁于 5% 已结识朋友.
         ]]></tooltip2>
-            <story_1><![CDATA[<b>Short Quest finished:</b>⮀ You help an elderly woman get her cat down from atop her house, she rewards you handsomely for your efforts.]]></story_1>
-            <story_2><![CDATA[<b>20 Short Quests with loot in a loop:</b>⮀ You’ve helped everyone who’s been willing to take you on, and the gold from your work jingles beautifully in your pockets. The satisfaction of a job well done fills you with pride.]]></story_2>
+            <story_1><![CDATA[<b>短任务完成:</b>⮀ 你帮助一个老太太把猫从房子上弄下来, 她非常慷慨的给予了你奖励.]]></story_1>
+            <story_2><![CDATA[<b>20 有奖励的短任务:</b>⮀ 你帮助了所有需要帮助的人, 并且这些任务的奖励让你钱包鼓鼓的. 完成工作的满足感让你感到自豪.]]></story_2>
         </short_quest>
         <investigate>
             <label>调查</label>
