@@ -8,25 +8,25 @@
             </meta>
             <version verNum="1.8"><![CDATA[
             <b> July 14th, 2022</b>
-            • New Trial: Trial of the Dead (Startington) - Basely soley off your Zombie contributions to team combat, completing floors rewards even more zombies<br>
-            • Bugfix: Swapped the Clear List and Manage Loadout buttons so the loadout popup would be less likely to get in the way when editing action amounts<br>
-            • Bugfix: Added survey icon to new actions added by survey so they are easier to notice
+            • 新试炼: 死亡试炼 (初始城镇) - 失去僵尸对团队战斗力的加成, 完成每一层都会奖励更多的僵尸<br>
+            • Bug修复: 交换了清除队列和管理储存队列的位置以避免在整理队列时误操作<br>
+            • Bug修复: 给幸存者增加了一个图标让他们更显眼
             ]]></version>
             <version verNum="1.7"><![CDATA[
             <b> July 14th, 2022</b>
-            Endgame content complete!<br>
-            The endgame has been reworked to be a series of a team trial, solo trial, and final action that must all be completed in order in a single loop.<br>
-            This update marks the end of my planned content. From here out it'll be mostly balancing, bugfixes, and perhaps the occasional addition as whimsy strikes.<br>
-            • New Actions: Delve & Haul - Find and collect temporal stones used for an end-game action (Note: completely unbalanced right now - attempt at your own peril)<br>
-            • New Action: Build Tower - New endgame action (Note: completely unbalanced right now - attempt at your own peril)<br>
-            • New Actions: Endgame trials (Note: completely unbalanced right now - attempt at your own peril)<br>
-            • New Action: Secret Trial - No one should ever bother with this, but some of you all are just crazy enough to try<br>
-            • Balance: Buy Mana is no longer available after using the Jungle Portal<br>
-            • Balance: Reduced Stat and Skill gain from heroes trial<br>
-            • Balance: Reduced Combat Skill exp gain from late game fight actions<br>
-            • Change: New option available for simple tooltips. Removes the formulas from skill and action tooltips to reduce clutter. You can select this from the options menu under "Language".<br>
-            • Change: Removed the ability to edit buff caps<br>
-            • Bugfix: Minor tooltip updates<br>
+            游戏结局做好了!<br>
+            游戏结局改成了一系列的团队试炼, 单人试炼, 和一个必须同时完成所有试炼才能执行的行动.<br>
+            这次更新意味着我计划中的内容全部做好了. 接下来的更新主要是平衡性, bug修复, 也许偶尔会增加一些新的创意.<br>
+            • 新行动: 挖掘和搬运 - 寻找并收集用于完成游戏结局的时间石头 (提示: 现在完全没有平衡 - 也许会严重影响你的游戏)<br>
+            • 新行动: 建造塔 - 新的游戏结局行动 (提示: 现在完全没有平衡 - 也许会严重影响你的游戏)<br>
+            • 新行动: 最终试炼 (提示: 现在完全没有平衡 - 也许会严重影响你的游戏)<br>
+            • 新行动: 秘密试炼 - 没有人想尝试这个, 但你也许足够闲可以来试试<br>
+            • 平衡调整: 通过丛林传送门后不再允许购买法力<br>
+            • 平衡调整: 降低英雄试炼可以获得的能力和技能经验<br>
+            • 平衡调整: 降低后期战斗技能可获取的战斗技能经验<br>
+            • 变化: 增加一个简化信息的选项. 可以从技能和行动信息中去除公式. 你可以在语言选项中找到它.<br>
+            • 变化: 移除了编辑加成上限的功能<br>
+            • Bug修复: 少量行动信息更新<br>
             ]]></version>
             <version verNum="1.6"><![CDATA[
             <b> July 13th, 2022</b>
@@ -230,7 +230,7 @@
             </discord>
             <adblock_warning>警告: 由于一些原因, Adblock Plus可能导致严重卡顿. 这个游戏并没有广告, 所以如果你的游戏经常卡死, 请把它关掉.
             </adblock_warning>
-            <pause_audio_cue>Ping on pause</pause_audio_cue>
+            <pause_audio_cue>暂停时提示</pause_audio_cue>
             <hotkeys>Hotkeys</hotkeys>
             <hotkeys_tooltip><![CDATA[
                 空格: 暂停/继续<br>
@@ -264,7 +264,7 @@
       感谢游玩, 祝你玩得开心!<br><br>
       ]]></tutorial>
     <tracked_resources>
-        <reset_on_restart_txt>Resets when the loop restarts.</reset_on_restart_txt>
+        <reset_on_restart_txt>循环重置时重置.</reset_on_restart_txt>
         <!--countable items with names and counts on the top bar-->
         <resource no_reset_on_restart="true">
             <title>法力:</title>
