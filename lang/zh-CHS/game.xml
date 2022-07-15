@@ -659,7 +659,7 @@
         <tooltip>
             <level>等级:</level>
             <level_exp>等级经验:</level_exp>
-            <no_reset_on_restart>技能持续时间直到重置.</no_reset_on_restart>
+            <no_reset_on_restart>技能不会被重置重置.</no_reset_on_restart>
         </tooltip>
     </skills>
     <buffs>
@@ -717,7 +717,7 @@
         </imbue_soul>
         <tooltip>
             <level>等级</level>
-            <no_reset_on_restart><![CDATA[加成将持续到重置.<br>你可以右键点击来编辑它，并设置上限. (当加成抵达上限时行动会自动失败且不会消耗灵魂石)]]></no_reset_on_restart>
+            <no_reset_on_restart><![CDATA[加成不会被重置重置.<br>你可以点击右边的数字来编辑它，设置上限. (当加成抵达上限时行动会自动失败且不会消耗灵魂石)]]></no_reset_on_restart>
         </tooltip>
     </buffs>
     <towns>
@@ -926,79 +926,79 @@
         </surveyZ8>
         <!--ruins-->
         <ruinsZ1>
-            <label>Ruins</label>
-            <label_done>Delved</label_done>
+            <label>遗迹</label>
+            <label_done>翻找</label_done>
             <tooltip><![CDATA[
-            As you've explored, you've found a number of old ruins scattered around. It's probably worth your time to explore them.
+            在你探索时, 你发现周围有许多古遗迹. 也许这值得你花些时间探索一下.
             ]]></tooltip>
         </ruinsZ1>
         <ruinsZ3>
-            <label>Ruins</label>
-            <label_done>Delved</label_done>
+            <label>遗迹</label>
+            <label_done>翻找</label_done>
             <tooltip><![CDATA[
-            As you've explored, you've found a number of old ruins scattered around. It's probably worth your time to explore them.
+            在你探索时, 你发现周围有许多古遗迹. 也许这值得你花些时间探索一下.
             ]]></tooltip>
         </ruinsZ3>
         <ruinsZ5>
-            <label>Ruins</label>
-            <label_done>Delved</label_done>
+            <label>遗迹</label>
+            <label_done>翻找</label_done>
             <tooltip><![CDATA[
-            As you've explored, you've found a number of old ruins scattered around. It's probably worth your time to explore them.
+            在你探索时, 你发现周围有许多古遗迹. 也许这值得你花些时间探索一下.
             ]]></tooltip>
         </ruinsZ5>
         <ruinsZ6>
-            <label>Ruins</label>
-            <label_done>Delved</label_done>
+            <label>遗迹</label>
+            <label_done>翻找</label_done>
             <tooltip><![CDATA[
-            As you've explored, you've found a number of old ruins scattered around. It's probably worth your time to explore them.
+            在你探索时, 你发现周围有许多古遗迹. 也许这值得你花些时间探索一下.
             ]]></tooltip>
         </ruinsZ6>
         <haulZ1>
-            <label>Haul</label>
-            <label_done>Stones Hauled</label_done>
-            <info_text1>Temporal Stones left</info_text1>
-            <info_text2>Temporal Stones total</info_text2>
-            <info_text3>Stones to check</info_text3>
+            <label>拖动</label>
+            <label_done>已拖动石头</label_done>
+            <info_text1>时间石头剩余</info_text1>
+            <info_text2>时间石头总计</info_text2>
+            <info_text3>还需检查的石头</info_text3>
             <tooltip><![CDATA[
-            You find a strange stones that resists change from the loop. When you move them, they remain in the new location the next time you return. Most of the rocks are just ordinary though. It'll take a while to find the interesting ones.<br>
-            You're sure you can use them for something. They're too heavy to move more than one at a time though.<br>
-            One in every thousand Stones is temporal.
+            你发现了一块能抵抗循环变化的奇怪石头. 当你移动它们, 下一次循环它们将在你移动过的地方出现. 不过大部分的石头都很普通. 找出它们会很花时间.<br>
+            你确信你可以用它们做些什么. 它们太重了以至于你每次循环只能拖动一块.<br>
+            每一千块石头里有一块时间石头.
         ]]></tooltip>
         </haulZ1>
         <haulZ3>
-            <label>Haul</label>
-            <label_done>Stones Hauled</label_done>
-            <info_text1>Temporal Stones left</info_text1>
-            <info_text2>Temporal Stones total</info_text2>
-            <info_text3>Stones to check</info_text3>
+            <label>拖动</label>
+            <label_done>已拖动石头</label_done>
+            <info_text1>时间石头剩余</info_text1>
+            <info_text2>时间石头总计</info_text2>
+            <info_text3>还需检查的石头</info_text3>
             <tooltip><![CDATA[
-            You find a strange stones that resists change from the loop. When you move them, they remain in the new location the next time you return. Most of the rocks are just ordinary though. It'll take a while to find the interesting ones.<br>
-            You're sure you can use them for something. They're too heavy to move more than one at a time though.<br>
-            One in every thousand Stones is temporal.
+            你发现了一块能抵抗循环变化的奇怪石头. 当你移动它们, 下一次循环它们将在你移动过的地方出现. 不过大部分的石头都很普通. 找出它们会很花时间.<br>
+            你确信你可以用它们做些什么. 它们太重了以至于你每次循环只能拖动一块.<br>
+            每一千块石头里有一块时间石头.
         ]]></tooltip>
         </haulZ3>
         <haulZ5>
-            <label>Haul</label>
-            <label_done>Stones Hauled</label_done>
-            <info_text1>Temporal Stones left</info_text1>
-            <info_text2>Temporal Stones total</info_text2>
-            <info_text3>Stones to check</info_text3>
+            <label>拖动</label>
+            <label_done>已拖动石头</label_done>
+            <info_text1>时间石头剩余</info_text1>
+            <info_text2>时间石头总计</info_text2>
+            <info_text3>还需检查的石头</info_text3>
             <tooltip><![CDATA[
-            You find a strange stones that resists change from the loop. When you move them, they remain in the new location the next time you return. Most of the rocks are just ordinary though. It'll take a while to find the interesting ones.<br>
-            You're sure you can use them for something. They're too heavy to move more than one at a time though.<br>
-            One in every thousand Stones is temporal.
+            你发现了一块能抵抗循环变化的奇怪石头. 当你移动它们, 下一次循环它们将在你移动过的地方出现. 不过大部分的石头都很普通. 找出它们会很花时间.<br>
+            你确信你可以用它们做些什么. 它们太重了以至于你每次循环只能拖动一块.<br>
+            每一千块石头里有一块时间石头.
         ]]></tooltip>
         </haulZ5>
         <haulZ6>
-            <label>Haul</label>
-            <label_done>Stones Hauled</label_done>
-            <info_text1>Temporal Stones left</info_text1>
-            <info_text2>Temporal Stones total</info_text2>
-            <info_text3>Stones to check</info_text3>
+            <label>拖动</label>
+            <label_done>已拖动石头</label_done>
+            <info_text1>时间石头剩余</info_text1>
+            <info_text2>时间石头总计</info_text2>
+            <info_text3>还需检查的石头</info_text3>
             <tooltip><![CDATA[
-            You find a strange stones that resists change from the loop. When you move them, they remain in the new location the next time you return. Most of the rocks are just ordinary though. It'll take a while to find the interesting ones.<br>
-            You're sure you can use them for something. They're too heavy to move more than one at a time though.<br>
-            One in every thousand Stones is temporal.
+            你发现了一块能抵抗循环变化的奇怪石头. 当你移动它们, 下一次循环它们将在你移动过的地方出现. 不过大部分的石头都很普通. 找出它们会很花时间.<br>
+            你确信你可以用它们做些什么. 它们太重了以至于你每次循环只能拖动一块.<br>
+            每一千块石头里有一块时间石头.
         ]]></tooltip>
         </haulZ6>
         <!--town 1-->
@@ -1109,11 +1109,11 @@
             <tooltip><![CDATA[
             你听到了一些传闻...<br>解锁于 25% 已结识朋友.
         ]]></tooltip>
-            <story_1><![CDATA[<b>20% Investigated:</b>⮀ You catch some snippets of truly interesting gossip. Apparently a Mage and Warrior duo had stopped in and were sticking around for a little while.]]></story_1>
-            <story_2><![CDATA[<b>40% Investigated:</b>⮀ People are really helpful when you help them, you're almost starting to get a reputation as a busybody around here, but it's offset in that you actually do help people.]]></story_2>
-            <story_3><![CDATA[<b>60% Investigated:</b>⮀ People are generally more willing to open up if you seem like you know things, and you do know things, as you've been around here awhile now.]]></story_3>
-            <story_4><![CDATA[<b>80% Investigated:</b>⮀ The villagers are all to happy to share some stories with you at this point, it doesn't hurt that you know a little about most people now and are more than willing to strike up a conversation.]]></story_4>
-            <story_5><![CDATA[<b>100% Investigated:</b>⮀ You've done it, spoken to everyone in this village. Spent a loop or more on each of them, actually. You know what needs to be done, and at this point you can just go straight there. You can also engineer a situation in which the more stubborn ones will offer you a quest.]]></story_5>
+            <story_1><![CDATA[<b>20% 已调查:</b>⮀ 你听到了一些非常有趣的流言. 村庄里似乎有一个战士和一名法师打算在这里停留一段时间.]]></story_1>
+            <story_2><![CDATA[<b>40% 已调查:</b>⮀ 当你帮助人们时他们真的很有用, 你开始尝试获得声望, 这会使你非常忙碌, 但收益也仅仅只足够抵消你的付出罢了.]]></story_2>
+            <story_3><![CDATA[<b>60% 已调查:</b>⮀ 如果你显得非常博学, 人们就会愿意对你敞开心扉, 而你确实知道不少东西, 毕竟你已经在这里调查了一段时间了.]]></story_3>
+            <story_4><![CDATA[<b>80% 已调查:</b>⮀ 现在村民很愿意和你分享一些故事, 了解村庄里的大多数人并没有什么坏处, 并且你还可以继续深入了解.]]></story_4>
+            <story_5><![CDATA[<b>100% 已调查:</b>⮀ 你成功了, 你和村庄里的所有人都说过话了. 和每个人交流了至少一个循环, 至少. 你知道你需要做什么, 借助这一点你可以直达目标. 你也可以主动设计场景来诱使他们发布任务.]]></story_5>
         </investigate>
         <long_quest>
             <label>长任务</label>
@@ -1127,38 +1127,38 @@
             <tooltip2><![CDATA[
             金块和 1 声望.<br>每 5 个长任务有一个有奖励.<br>解锁于 10% 已调查.
         ]]></tooltip2>
-            <story_1><![CDATA[<b>Long Quest finished:</b>⮀ You cleared out a cellar of rats; there were at least sixty of the blighters. You were rewarded handsomely, and you got a small reputation boost to boot.]]></story_1>
-            <story_2><![CDATA[<b>10 Long Quests with loot in a loop:</b>⮀ You’ve cleared out cellars, helped build a house, collected flowers for dyes, worked in the bakery, taken out trash, and helped a seamstress finish a gift for her husband. Your reputation is spreading as the helpful courier. Everyone is at the very least willing to listen to you.]]></story_2>
+            <story_1><![CDATA[<b>完成长任务:</b>⮀ 你清理了地窖里的老鼠; 至少有六十只讨厌的老鼠. 奖励相当慷慨, 你的声望也有了小小的提升.]]></story_1>
+            <story_2><![CDATA[<b>10 有奖励的长任务完成:</b>⮀ 你清理了地窖, 帮助别人盖房子, 采集染料用的花, 在面包店打工, 扔垃圾, 还帮女裁缝给丈夫做好了礼物. 你乐于助人的声望广为传播. 大家至少都愿意听你说话.]]></story_2>
         </long_quest>
         <throw_party>
             <label>参加派对</label>
             <tooltip><![CDATA[
             休息一下去参加社交活动.<br>以结识朋友的 16 倍的效果推进已结识朋友进度.<br>消耗 2 声望.<br>解锁于 30% 已调查.
         ]]></tooltip>
-            <story_1><![CDATA[<b>Party thrown:</b>⮀ You announce that its your birthday and you want to throw a party. You commandeer the village square and the people necessary to make it happen. You don't have the gold but people aren't quite able to say no. You promise you'll pay it off with the money from this current job.]]></story_1>
+            <story_1><![CDATA[<b>参加派对:</b>⮀ 你宣称今天是你的生日并开了个派对. 你征用了村庄的广场并招募了必须的人. 你虽然没付钱但人们也不好拒绝. 你保证之后会付钱的.]]></story_1>
         </throw_party>
         <warrior_lessons>
             <label>战士课程</label>
             <tooltip><![CDATA[
             学会战斗也许很重要; 你后面的旅途还很长.<br>至少需要 2 声望.<br>在 20% 已调查解锁.
         ]]></tooltip>
-            <story_1><![CDATA[<b>1 Combat:</b>⮀ You manage to track down the warrior that was staying in town, and are greeted by a small woman holding a sword almost as tall as her. She introduces herself as "Iron" and smiles politely, doesn't stop her from thoroughly trouncing you.]]></story_1>
-            <story_2><![CDATA[<b>100 Combat:</b>⮀ You manage to give Iron a run for her money, but she still manages to eek out a victory, she's noticeably worn out afterwards.]]></story_2>
-            <story_3><![CDATA[<b>200 Combat:</b>⮀ You push Iron to the brink of defeat and then she starts fighting dirty.]]></story_3>
-            <story_4><![CDATA[<b>250 Combat:</b>⮀ You manage to finally defeat Iron, all your experience fighting her finally pays off. You feel really proud of yourself, right up until she smacks your head with her sword and demands a rematch.]]></story_4>
+            <story_1><![CDATA[<b>1 战斗技能:</b>⮀ 你找到了村庄里留宿的战士, 迎接你的是一名拿着几乎和她一样高的大剑的娇小少女. 她告诉你她叫"铁", 脸上带着礼貌的微笑, 但这并不妨碍她把你打爆.]]></story_1>
+            <story_2><![CDATA[<b>100 战斗技能:</b>⮀ 你开始尝试找机会击败铁, 但她还是设法取得了胜利, 事后她明显非常疲惫.]]></story_2>
+            <story_3><![CDATA[<b>200 战斗技能:</b>⮀ 你把铁逼到了绝境, 铁的战斗方式逐渐变得凶狠.]]></story_3>
+            <story_4><![CDATA[<b>250 战斗技能:</b>⮀ 你终于成功击败了铁, 你的战斗训练总算有了回报. 你感到非常自豪, 直到她拿起巨剑要求再来一场.]]></story_4>
         </warrior_lessons>
         <mage_lessons>
             <label>魔法课程</label>
             <tooltip><![CDATA[
             这些神秘事物把你弄得一团糟, 但也许也能帮你脱离麻烦.<br>至少需要 2 声望.<br>解锁于 20% 已调查.
         ]]></tooltip>
-            <story_1><![CDATA[<b>1 Magic:</b>⮀ You approach a burly man dressed in flowing robes, and ask if he would be willing to teach you some magic. The man agrees to teach you some basic cantrips if you help him out with menial tasks. He introduces himself as Warrick.]]></story_1>
-            <story_2><![CDATA[<b>100 Magic:</b>⮀ Warrick compliments you on your ability to wield mana, and is happy to share some more dangerous cantrips with your promise to not use it for ill. He refuses to teach you about alchemy.]]></story_2>
-            <story_3><![CDATA[<b>200 Magic:</b>⮀ Warrick is suspicious about your proficiency with mana for someone he's just run into in the wild, but is still more than willing to humor you. If he throws appraising glances at you every now and then, you pay them no mind.]]></story_3>
-            <story_4><![CDATA[<b>250 Magic:</b>⮀ You and Warrick duel, your lessons from that point on are finding an out of the way location and duking it out with magic. Warrick seems appreciative about the exertion.]]></story_4>
-            <story_5><![CDATA[<b>10 Alchemy:</b>⮀ You offer to help him with his alchemy work and he immdiately seems to develop a soft spot for you, talking about herbs and their effects when combined with eachother and how they build together to create mystical potions. The man's passionate, that's for sure.]]></story_5>
-            <story_6><![CDATA[<b>50 Alchemy:</b>⮀ You offer Warrick some alchemy techniques that he's never heard of in exchange for some more magic techniques and lessons. He agrees readily.]]></story_6>
-            <story_7><![CDATA[<b>100 Alchemy:</b>⮀ You offer to teach Warrick about alchemy if he teaches you about the branches of magic you have little grounding in. The man himself is a genius and has much to teach. He gives it his all, tempted by the secrets of Alchemy.]]></story_7>
+            <story_1><![CDATA[<b>1 魔法技能:</b>⮀ You approach a burly man dressed in flowing robes, and ask if he would be willing to teach you some magic. The man agrees to teach you some basic cantrips if you help him out with menial tasks. He introduces himself as Warrick.]]></story_1>
+            <story_2><![CDATA[<b>100 魔法技能:</b>⮀ Warrick compliments you on your ability to wield mana, and is happy to share some more dangerous cantrips with your promise to not use it for ill. He refuses to teach you about alchemy.]]></story_2>
+            <story_3><![CDATA[<b>200 魔法技能:</b>⮀ Warrick is suspicious about your proficiency with mana for someone he's just run into in the wild, but is still more than willing to humor you. If he throws appraising glances at you every now and then, you pay them no mind.]]></story_3>
+            <story_4><![CDATA[<b>250 魔法技能:</b>⮀ You and Warrick duel, your lessons from that point on are finding an out of the way location and duking it out with magic. Warrick seems appreciative about the exertion.]]></story_4>
+            <story_5><![CDATA[<b>10 炼金术:</b>⮀ You offer to help him with his alchemy work and he immdiately seems to develop a soft spot for you, talking about herbs and their effects when combined with eachother and how they build together to create mystical potions. The man's passionate, that's for sure.]]></story_5>
+            <story_6><![CDATA[<b>50 炼金术:</b>⮀ You offer Warrick some alchemy techniques that he's never heard of in exchange for some more magic techniques and lessons. He agrees readily.]]></story_6>
+            <story_7><![CDATA[<b>100 炼金术:</b>⮀ You offer to teach Warrick about alchemy if he teaches you about the branches of magic you have little grounding in. The man himself is a genius and has much to teach. He gives it his all, tempted by the secrets of Alchemy.]]></story_7>
         </mage_lessons>
         <heal_the_sick>
             <label>治病</label>
