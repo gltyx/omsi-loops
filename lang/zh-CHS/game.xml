@@ -105,41 +105,41 @@
             ]]></version>
             <version verNum=".97"><![CDATA[
             <b> July 4th, 2022</b>
-            • Added Build Housing and Collect Taxes actions in Valhalla - a new source of gold gain that uses Crafting Guild Rank and Mercantilism skill.<br>
-            • Renamed Adeptsville to Startington<br>
-            • Added Meander action in Startington and set as a requirement to see other actions<br>
-            • Added Destroy Pylon action in startington to reduce the mana cost of spire<br>
-            • Increased the base mana cost of The Spire significantly, mostly offset by destroying pylons<br>
-            • Allowed Spatiomancy to benefit more actions<br>
-            • Fixed Great Feast buff so it actually improves Self Combat<br>
-            • Training mercantilism now costs reputation<br>
-            • Fall From Grace now removes all positive reputation<br>
-            • Tweaked Looping potion to require doubling herbs with spatiomancy in anticipation of end-game use<br>
-            • Cleaned up a bunch more tooltips
+            • 在瓦尔哈拉增加建造房子和收税行动 - 一个新的金块获取手段需要制造公会和重商主义.<br>
+            • 把强化村庄重命名为初始小镇<br>
+            • 在初始小镇新增一个漫步行动以解锁其他行动<br>
+            • 新增一个破坏电缆塔行动用以降低尖塔法力消耗<br>
+            • 大幅提高尖塔法力消耗, 主要是用来抵消电缆塔行动<br>
+            • 允许空间魔法对更多内容生效<br>
+            • 修复盛宴使它正确的对个人战斗力生效<br>
+            • 训练重商主义现在会消耗声望<br>
+            • 堕落现在会清空声望<br>
+            • 考虑到游戏终局的空间魔法等级把循环药剂的草药需求翻倍了<br>
+            • 整理了一大堆提示
             ]]></version>
             <version verNum=".96"><![CDATA[
             <b> June 24th, 2022</b>
-            • The spire now gives rewards! It gives 100 soulstones per floor and well as aspirant ranks <br>
-            • New Skill: Divine Favor. Increases soulstones gained from actions<br>
-            • New Skill: Communing. Reduces soulstone costs of dark ritual<br>
-            • New Buff: Aspirant. Increases talent xp multiplier<br>
-            • New Action: Fight Giants - Self combat fight that increases the effectiveness of seek blessing<br>
-            • New Action: Seek Blessing - Gives divine favor skill xp based on fight giants progress<br>
-            • New Action: Raise Zombies - Increases team combat<br>
-            • New Action: Dark Sacrifice - Gives communing skill xp<br>
-            • Cleaned up a number of tooltips
+            • 尖塔现在有奖励了! 现在每层奖励 100 灵魂石并提供野心家等级 <br>
+            • 新技能: 神恩. 增加行动可获得的灵魂石<br>
+            • 新技能: 神谕. 降低黑暗仪式消耗的灵魂石<br>
+            • 新加成: 野心家. 增加天赋经验获取<br>
+            • 新行动: 与巨人搏斗 - 一个个人战斗力的行动用于加成寻求神恩<br>
+            • 新行动: 寻求神恩 - 基于与巨人搏斗进度奖励神恩经验<br>
+            • 新行动: 复活僵尸 - 增加团队战斗力<br>
+            • 新行动: 黑暗献祭 - 奖励神谕经验<br>
+            • 整理一些提示
             ]]></version>
             <version verNum=".95"><![CDATA[
             <b> March 18th, 2022</b>
-            • Omsi's beta content!
-            • Added Valhalla zone with numerous new actions - reachable with Face Judgement<br>
-            • Added Adeptsville zone and The Spire dungeon - reachable with Face Judgement<br>
-            • New Skill: Restoration - Improves team combat and effectiveness of Heal the Sick<br>
-            • New Skill: Spatiomancy - Reduces mana gyser costs and increases possible rewards from zone 1 and 3 actions<br>
-            • New Skill: Mercantilism - Increases gold received from Buy Mana actions<br>
-            • New Buff: Great Feast - Increases self combat score<br>
-            • More new actions than you can shake a stick at!<br>
-            • Probably lots more stuff, too?
+            • Omsi's 的测试版!
+            • 新增瓦尔哈拉以及相关行动 - 通过面对审判进入<br>
+            • 新增强化村庄和尖塔 - 通过面对审判进入<br>
+            • 新技能: 恢复魔法 - 增加团队战斗力和治疗病人的效果<br>
+            • 新技能: 空间魔法 - 大幅降低法力消耗并对区域 1 和 3 的部分行动加成<br>
+            • 新技能: 重商主义 - 增加购买法力能得到的法力量<br>
+            • 新加成: 盛宴 - 增加个人战斗力 score<br>
+            • 增加了许多新的行动!<br>
+            • 也许还有更多, 大概?
             ]]></version>
         </changelog>
         <save>
@@ -505,9 +505,9 @@
             <desc>掌控以太并用它战斗.</desc>
         </magic>
         <practical>
-            <label>实用魔术</label>
+            <label>实用魔法</label>
             <desc>魔法手, 变戏法, 侦测魔法, 以及一些其他实用的小魔法.</desc>
-            <desc2><![CDATA[踢罐子和野生法力的法力消耗降低 初始消耗 / (1 + 等级 / 100) (向下取整).<br>
+            <desc2><![CDATA[踢罐子和野生法力的法力消耗降低 初始消耗 / (1 + 等级 / 100) (向上取整).<br>
       1-200级每级使开锁获得 1% 额外金币 (向下取整).<br>
       101-300级每级使短任务获得 1% 额外金币 (向下取整).<br>
       201-400级每级使长任务获得 1% 额外金币 (向下取整).<br>
