@@ -453,7 +453,7 @@
             <main_text><![CDATA[
           当奖励开启, 你每秒额外获得 4 秒 (5x 速度).<br>
           离线或暂停时每秒可以获得 1 点奖励点. (离线奖励最多 1 个月)<br>
-          奖励点有
+          奖励点开关
         ]]></main_text>
             <state>
                 <on>开</on>
@@ -1181,83 +1181,83 @@
             <label>和怪物战斗</label>
             <label_done>已击杀</label_done>
             <tooltip><![CDATA[
-            慢慢的, 你就能摸清楚他们的战斗习惯.<br>战斗会有 3 种形式, 每个形式有对应的主能力 - 突袭 (速度), 防御 (力量), 进攻 (体质).<br>每点法力给予 (个人战斗力) * (1 + 主能力 / 100) * 开方(1 + 完成次数 / 100) * (初始法力消耗 / 实际法力消耗) 进度点.<br>需要至少 2 声望.<br>解锁于 10 战斗技能.<br>每个完成的战斗阶段可以让你获得 20 金块.
+            慢慢的, 你就能摸清楚他们的战斗习惯.<br>战斗会有 3 种形式, 每个形式有对应的主能力 - 迅捷 (速度), 凶猛 (力量), 危险 (体质).<br>每点法力给予 (个人战斗力) * (1 + 主能力 / 100) * 开方(1 + 完成次数 / 100) * (初始法力消耗 / 实际法力消耗) 进度点.<br>需要至少 2 声望.<br>解锁于 10 战斗技能.<br>每个完成的战斗阶段可以让你获得 20 金块.
         ]]></tooltip>
             <segment_names>
-                <name>Deer</name>
-                <name>Giant Turtles</name>
-                <name>Goblins</name>
-                <name>Demon Rabbits</name>
-                <name>Giant Honey badgers</name>
-                <name>Venomous Snakes</name>
-                <name>Angry Monkeys</name>
-                <name>Trolls</name>
-                <name>Ogres</name>
-                <name>Pixies</name>
-                <name>Treants</name>
-                <name>Gelatinous Cubes</name>
-                <name>Fairies</name>
-                <name>Orcs</name>
-                <name>Beholders</name>
-                <name>Spectres</name>
-                <name>Mimics</name>
-                <name>Shambling Mounds</name>
-                <name>Corrupted Mushroomfolk</name>
-                <name>Giant Owls</name>
-                <name>Blood Trolls</name>
-                <name>Small Wyrms</name>
-                <name>Displacer Beasts</name>
-                <name>Gibbering Mouthers</name>
-                <name>Mind Flayers</name>
-                <name>Aboleths</name>
-                <name>Ancient Dragons</name>
-                <name>Liches</name>
-                <name>Tarrasques</name>
-                <name>Demiliches</name>
-                <name>Demigods</name>
-                <name>Gods</name>
-                <name>Deer but they're jerks and slightly larger than before</name>
-                <name>Giant Turtles with spherical shells</name>
-                <name>Goblins but they're late on their rent</name>
-                <name>Demon rabbits but they have massive teeth</name>
-                <name>Giant Honey badgers but they can turn invisible</name>
-                <name>Venomous Snakes that are also poisonous</name>
-                <name>Angry Monkeys with twelve arms</name>
-                <name>Trolls that aren't weak against fire</name>
-                <name>Ogres but they're smarter</name>
-                <name>Pixies with sand instead of pixie dust</name>
-                <name>Treants but they're on fire</name>
-                <name>Gelatinous Cubes that are constantly growing in size</name>
-                <name>Fairies with blindingly bright dresses</name>
-                <name>Orcs with multiple weapons</name>
-                <name>Beholders with mouthes on every eye</name>
-                <name>Spectres that are actually scary</name>
-                <name>Mimics without an obvious tell</name>
-                <name>Shambling Mounds that can locomote quickly</name>
-                <name>Corrupted Mushroomfolk that taste bad</name>
-                <name>Giant Owls that can swim</name>
-                <name>Blood Trolls that don't like your hairstyle</name>
-                <name>Small Wyrms that aren't grounded</name>
-                <name>Displacer Beasts that can properly place themselves</name>
-                <name>Gibbering Mouthers with eyes on every mouth</name>
-                <name>Mind Flayers with pitchforks</name>
-                <name>Aboleths but harder, better, faster, and stronger</name>
-                <name>Ancient Dragons who've graduated from college</name>
-                <name>Liches with strong political opinions</name>
-                <name>Tarrasques that actually notice you</name>
-                <name>Demiliches happy about their condition</name>
-                <name>Demigods that are even more elitist than before</name>
-                <name>Gods but they had to come in on saturday</name>
+                <name>鹿</name>
+                <name>大乌龟</name>
+                <name>哥布林</name>
+                <name>恶魔兔</name>
+                <name>大蜜獾</name>
+                <name>吸血蛇</name>
+                <name>愤怒猴子</name>
+                <name>巨魔</name>
+                <name>食人魔</name>
+                <name>小精灵</name>
+                <name>树人</name>
+                <name>方形史莱姆</name>
+                <name>妖精</name>
+                <name>兽人</name>
+                <name>眼魔</name>
+                <name>幽灵</name>
+                <name>模仿怪</name>
+                <name>蔓生怪</name>
+                <name>腐败蘑菇人</name>
+                <name>巨型猫头鹰</name>
+                <name>鲜血巨魔</name>
+                <name>小型飞龙</name>
+                <name>合成兽</name>
+                <name>惧噬体</name>
+                <name>夺心魔</name>
+                <name>底栖魔鱼</name>
+                <name>古代龙</name>
+                <name>巫妖</name>
+                <name>泰拉斯奎</name>
+                <name>半神巫妖</name>
+                <name>半神</name>
+                <name>神</name>
+                <name>鹿但比之前的更大更凶猛</name>
+                <name>有巨型护盾的大乌龟</name>
+                <name>没交房租的哥布林</name>
+                <name>有恐怖利齿的恶魔兔</name>
+                <name>会隐身的大蜜獾</name>
+                <name>有毒的吸血蛇</name>
+                <name>十二只手的愤怒猴子</name>
+                <name>不怕火焰的巨魔</name>
+                <name>聪明的食人魔</name>
+                <name>掉落沙子而不是精灵粉的小精灵</name>
+                <name>燃烧的树人</name>
+                <name>超级巨大的方形史莱姆</name>
+                <name>穿着华贵礼服的妖精</name>
+                <name>带着精良武器的兽人</name>
+                <name>每个眼睛下面还有张嘴的眼魔</name>
+                <name>恐怖的幽灵</name>
+                <name>没有确切外形的模仿怪</name>
+                <name>快速移动的蔓生怪</name>
+                <name>超级难吃的腐败蘑菇人</name>
+                <name>会游泳的巨型猫头鹰</name>
+                <name>不喜欢你的发型的鲜血巨魔</name>
+                <name>不会落地的小型飞龙</name>
+                <name>完美的合成兽</name>
+                <name>每张嘴上都有眼睛的惧噬体</name>
+                <name>使用干草叉的夺心魔</name>
+                <name>更坚固, 更快, 更强壮, 更厉害的底栖魔鱼</name>
+                <name>大学毕业的古代龙</name>
+                <name>有强烈政治嗅觉的巫妖</name>
+                <name>泰拉斯奎盯上了你</name>
+                <name>对当前处境感到高兴的半神巫妖</name>
+                <name>比之前更加精锐的半神</name>
+                <name>周六的神</name>
             </segment_names>
             <segment_alt_names>
-                <name>Speedy Monsters</name>
-                <name>Tough Monsters</name>
-                <name>Scary Monsters</name>
+                <name>迅捷怪兽</name>
+                <name>凶猛怪兽</name>
+                <name>危险怪兽</name>
             </segment_alt_names>
             <segment_modifiers>
-                <segment_modifier>A couple</segment_modifier>
-                <segment_modifier>A few</segment_modifier>
-                <segment_modifier>A bunch of</segment_modifier>
+                <segment_modifier>一小队</segment_modifier>
+                <segment_modifier>一小组</segment_modifier>
+                <segment_modifier>一大群</segment_modifier>
             </segment_modifiers>
             <story_1><![CDATA[<b>Monster killed:</b>⮀ It's all so new, the way they respond and attack, you're not ashamed to admit that you almost got brained by a deer. Either way, their hides and rendered components will sell well.]]></story_1>
             <story_2><![CDATA[<b>100 Monsters killed:</b>⮀ You've fought enough that you're really starting to figure out how they'll respond to most things.]]></story_2>
