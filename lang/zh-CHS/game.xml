@@ -199,8 +199,8 @@
             </q_a>
             <q_a>
                 <q>短循环更有利.</q>
-                <a>Short runs are better for the early game, but as your runs get longer and you accrue
-                    talent and soulstones, longer runs become more useful.
+                <a>游戏早期短循环显然更有利, 但当你有了足够多的天赋和灵魂石,
+                   或许长循环更有效率.
                 </a>
             </q_a>
             <q_a>
@@ -209,15 +209,15 @@
                 </a>
             </q_a>
             <q_a>
-                <q>How do skill increases / reductions work?</q>
-                <a>Increases multiply a reward by (1 + level / 60) ^ .25, so you'll see diminishing returns at higher levels.
-                Reductions multiply a cost by 1 / (1 + level / 100), so you'll never be able to bring a cost completely to zero.
+                <q>技能增益 / 减耗如何工作的?</q>
+                <a>增益类通常会给予 (1 + 等级 / 60) ^ .25 倍, 因此高等级往往会有一个相当明显的边际衰减.
+                减耗类将会使消耗变为 1 / (1 + level / 100) 倍, 因此减耗类并不能让你的消耗归零.
                 </a>
             </q_a>
             <q_a>
-                <q>When should I use Dark Ritual?</q>
-                <a>Many people recommend performing another ritual when the cost is less than 5% of your soulstones.
-                Of course, the choice is up to you and there may be cases where it's better to perform it sooner or later.
+                <q>我什么时候该进行黑暗仪式?</q>
+                <a>以大家的反馈来看, 黑暗仪式消耗量少于你灵魂石总量的 5% 是合适的.
+                当然, 选择权在你, 而且未来可能会出现一些其他功能导致优先级变化.
                 </a>
             </q_a>
         </faq>
@@ -282,7 +282,7 @@
         <resource initially_hidden="true">
             <title><![CDATA[<img src="img/power.svg" class="smallIcon">]]></title>
             <id>power</id>
-            <desc>Powers of the gods.</desc>
+            <desc>神的力量.</desc>
         </resource>
         <resource no_reset_on_restart="true">
             <title>法力:</title>
@@ -360,9 +360,9 @@
             <desc>一群摇摇晃晃的尸体. 真恶心.</desc>
         </resource>
         <resource initially_hidden="true">
-            <title>Meat:</title>
+            <title>肉:</title>
             <id>meat</id>
-            <desc>Powers of the gods.</desc>
+            <desc>神的力量.</desc>
         </resource>
         <!--singular items with img icons rather than counts-->
         <resource initially_hidden="true" no_count="true">
@@ -403,7 +403,7 @@
         <resource initially_hidden="true" no_count="true">
             <title><![CDATA[<img src="img/temporalStone.svg" class="smallIcon">]]></title>
             <id>stone</id>
-            <desc>A strange rock that seems to resist change from looping.</desc>
+            <desc>一块奇怪的能抵抗循环的石头.</desc>
         </resource>
     </tracked_resources>
     <time_controls>
@@ -438,12 +438,12 @@
                 你只能耸耸肩, 接受了这个奇怪的设定, 继续你的循环.
             </story>
             <story num="3"><![CDATA[
-            You've done it! You've bested the gods themselves and restored time to its rightful flow. You can stop looping at any moment.
-                But, then again, you could keep going. There's always time later...<br><br>
-                Thanks for playing my fan mod of Idle Loops! 
-                Big shout-out to the wonderful Stop_Sign for creating this amazing game and Omsi for all the Omsi version.
-                You both have inspired me more than you can imagine.
-                Hope everyone had fun! <3 <br>
+            你成功了! 你击败了众神并让时间恢复了正常. 你现在随时可以停止循环.
+                但, 话说回来, 你可以继续. 如果你之后还想玩...<br><br>
+                感谢游玩我的循环放置粉丝版! 
+                感谢Stop_Sign创造了这么有意思的游戏, 也感谢Omsi天才般的改版.
+                你们俩的创造力超乎我的想象.
+                希望大家玩的开心! <3 <br>
                 --Lloyd
             ]]>                
             </story>
@@ -563,7 +563,7 @@
         <practical>
             <label>实用魔法</label>
             <desc>魔法手, 变戏法, 侦测魔法, 以及一些其他实用的小魔法.</desc>
-            <desc2><![CDATA[踢罐子和野生法力的法力消耗降低 初始消耗 / (1 + 等级 / 100) (向上取整).<br>
+            <desc2><![CDATA[踢罐子和野生法力的法力消耗乘以 初始消耗 / (1 + 等级 / 100) (向上取整).<br>
       1-200级每级使开锁获得 1% 额外金币 (向下取整).<br>
       101-300级每级使短任务获得 1% 额外金币 (向下取整).<br>
       201-400级每级使长任务获得 1% 额外金币 (向下取整).<br>
@@ -601,7 +601,7 @@
         <spatiomancy>
             <label>空间魔法</label>
             <desc>谁能想到空间魔法竟然这么有用!</desc>
-            <desc2><![CDATA[法力喷泉和法力井消耗降低 初始 / (1 + 等级 / 100).<br>
+            <desc2><![CDATA[法力喷泉和法力井消耗乘以 初始 / (1 + 等级 / 100).<br>
             1 - 500 每级使建造房屋增加 1% . <br>
             101-300 每级使锁住的房子增加 0.5% .<br>
             201-400 每级使短任务增加 0.5% .<br>
@@ -633,7 +633,7 @@
         <commune>
             <label>黑暗神谕</label>
             <desc>你的血祭使你与黑暗生物的沟通更加顺畅.</desc>
-            <desc2><![CDATA[黑暗仪式的灵魂石成本降低 初始 / (1 + 等级 / 100).<br>
+            <desc2><![CDATA[黑暗仪式的灵魂石成本乘以 初始 / (1 + 等级 / 100).<br>
             当前成本倍率 <div id='skillBonusCommune'></div>x.]]></desc2>
         </commune>
         <wunderkind>
@@ -647,7 +647,7 @@
         <gluttony>
             <label>暴食</label>
             <desc>丛林中永不满足的饥饿侵蚀了你.</desc>
-            <desc2><![CDATA[盛宴灵魂石消耗降低 初始 / (1 + 等级 / 100).<br>
+            <desc2><![CDATA[盛宴灵魂石消耗乘以 初始 / (1 + 等级 / 100).<br>
             当前消耗倍率 <div id='skillBonusGluttony'></div>x.]]></desc2>
         </gluttony>
         <thievery>
@@ -1152,13 +1152,13 @@
             <tooltip><![CDATA[
             这些神秘事物把你弄得一团糟, 但也许也能帮你脱离麻烦.<br>至少需要 2 声望.<br>解锁于 20% 已调查.
         ]]></tooltip>
-            <story_1><![CDATA[<b>1 魔法技能:</b>⮀ You approach a burly man dressed in flowing robes, and ask if he would be willing to teach you some magic. The man agrees to teach you some basic cantrips if you help him out with menial tasks. He introduces himself as Warrick.]]></story_1>
-            <story_2><![CDATA[<b>100 魔法技能:</b>⮀ Warrick compliments you on your ability to wield mana, and is happy to share some more dangerous cantrips with your promise to not use it for ill. He refuses to teach you about alchemy.]]></story_2>
-            <story_3><![CDATA[<b>200 魔法技能:</b>⮀ Warrick is suspicious about your proficiency with mana for someone he's just run into in the wild, but is still more than willing to humor you. If he throws appraising glances at you every now and then, you pay them no mind.]]></story_3>
-            <story_4><![CDATA[<b>250 魔法技能:</b>⮀ You and Warrick duel, your lessons from that point on are finding an out of the way location and duking it out with magic. Warrick seems appreciative about the exertion.]]></story_4>
-            <story_5><![CDATA[<b>10 炼金术:</b>⮀ You offer to help him with his alchemy work and he immdiately seems to develop a soft spot for you, talking about herbs and their effects when combined with eachother and how they build together to create mystical potions. The man's passionate, that's for sure.]]></story_5>
-            <story_6><![CDATA[<b>50 炼金术:</b>⮀ You offer Warrick some alchemy techniques that he's never heard of in exchange for some more magic techniques and lessons. He agrees readily.]]></story_6>
-            <story_7><![CDATA[<b>100 炼金术:</b>⮀ You offer to teach Warrick about alchemy if he teaches you about the branches of magic you have little grounding in. The man himself is a genius and has much to teach. He gives it his all, tempted by the secrets of Alchemy.]]></story_7>
+            <story_1><![CDATA[<b>1 魔法技能:</b>⮀ 你靠近了那个穿着飘逸长袍的壮汉, 并请求他教你一些魔法. 如果你愿意帮他完成一些简单的任务, 他就可以教你一些基础魔法. 他说他叫瓦里克.]]></story_1>
+            <story_2><![CDATA[<b>100 魔法技能:</b>⮀ 瓦里克对你的魔法天赋大加赞赏, 他很乐意教你一些更为危险的魔法, 但你得保证不能用来做坏事. 他拒绝教你炼金术.]]></story_2>
+            <story_3><![CDATA[<b>200 魔法技能:</b>⮀ 你熟练的法术技巧让瓦里克对你自称野路子的出身感到怀疑, 但还是满足了你的要求. 虽然他时不时对你投来审视的目光, 但你毫不在意.]]></story_3>
+            <story_4><![CDATA[<b>250 魔法技能:</b>⮀ 你和瓦里克进行了对决, 你的经验让你找到了一个偏僻的角落并用魔法展开了战斗. 瓦里克对你的魔法水平非常满意.]]></story_4>
+            <story_5><![CDATA[<b>10 炼金术:</b>⮀ 你主动提出你会一些炼金术, 他相当高兴, 热情的与你讨论不同草药在制作药水时的效果与注意事项. 这可能就是这个男人的浪漫吧.]]></story_5>
+            <story_6><![CDATA[<b>50 炼金术:</b>⮀ 你用一些瓦里克未曾听过的炼金术知识向他交换了更多的魔法知识. 他几乎瞬间就同意了.]]></story_6>
+            <story_7><![CDATA[<b>100 炼金术:</b>⮀ 你教瓦里克炼金术, 而瓦里克教你各种魔法分支. 这个男人简直就是个魔法天才, 他会的东西真多. 他倾囊而授, 以换取炼金术的秘密.]]></story_7>
         </mage_lessons>
         <heal_the_sick>
             <label>治病</label>
@@ -1167,9 +1167,9 @@
             <tooltip><![CDATA[
             你肯定不可能全部治好, 但他们会感谢你尽力救治.<br>一共有 3 治疗阶段, 每个阶段都有对应的能力 - 诊断 (感知), 处理 (智力), 通知 (魅力).<br>每点法力给予 (魔法技能) * (治疗魔法 / 50) * (1 + 主能力 / 100) * 开方(1 + 完成次数 / 100) * (初始法力消耗 / 实际法力消耗) 进度点.<br>需要至少 1 声望.<br>解锁于 12 魔法技能.<br>每个治愈的病人可以让你获得 3 声望.
         ]]></tooltip>
-            <story_1><![CDATA[<b>Patient healed:</b>⮀ You're allowed in to see the patients and begin healing. It's excellent practice and everyone you heal, be it from broken bones to small scrapes is extraordinarily thankful for your help.]]></story_1>
-            <story_2><![CDATA[<b>10 Patients healed in a loop:</b>⮀ Your reputation is absolutely sterling, you've basically cleared out the entire healing home and the nurses and healers are more than thankful for your help.]]></story_2>
-            <story_3><![CDATA[<b>Failed Action:</b>⮀ You're turned away at the door, the small healers home stating that they can't trust you to not poison the people inside or make the situation worse.]]></story_3>
+            <story_1><![CDATA[<b>已治愈病人:</b>⮀ 你被允许去看看病人并尝试治疗. 这是很好的机会, 对你和对病人都是. 无论是骨折还是小擦伤, 病人都会非常感谢你.]]></story_1>
+            <story_2><![CDATA[<b>10 单次循环已治愈病人:</b>⮀ 你声名远播, 你几乎清空了整个医院, 护士和治疗师都非常感谢你.]]></story_2>
+            <story_3><![CDATA[<b>行动失败:</b>⮀ 你被赶出去了, 治疗师认为无法保证你不对病人下毒或者使伤势恶化.]]></story_3>
             <segment_names>
                 <name>诊断</name>
                 <name>处理</name>
@@ -1259,13 +1259,13 @@
                 <segment_modifier>一小组</segment_modifier>
                 <segment_modifier>一大群</segment_modifier>
             </segment_modifiers>
-            <story_1><![CDATA[<b>Monster killed:</b>⮀ It's all so new, the way they respond and attack, you're not ashamed to admit that you almost got brained by a deer. Either way, their hides and rendered components will sell well.]]></story_1>
-            <story_2><![CDATA[<b>100 Monsters killed:</b>⮀ You've fought enough that you're really starting to figure out how they'll respond to most things.]]></story_2>
-            <story_3><![CDATA[<b>500 Monsters killed:</b>⮀ You've pretty much figured out their patterns now, how they respond to what you do.]]></story_3>
-            <story_4><![CDATA[<b>1,000 Monsters killed:</b>⮀ You know exactly what they're going to do, pretty much nothing surprises you anymore.]]></story_4>
-            <story_5><![CDATA[<b>5,000 Monsters killed:</b>⮀ You're able to effectively plan ambushes and set traps to kill them without even being there anymore.]]></story_5>
-            <story_6><![CDATA[<b>10,000 Monsters killed:</b>⮀ You don't struggle or need to worry about anything they throw at you anymore, you know everything.]]></story_6>
-            <story_7><![CDATA[<b>20,000 Monsters killed:</b>⮀ This is a joke, the only reason you're still doing this is the gold it rakes in. You need it.]]></story_7>
+            <story_1><![CDATA[<b>怪兽击杀:</b>⮀ 这实在太陌生了, 无论是行动方式还是战斗方式, 你并不为差点被鹿撞到脑袋而感到羞愧. 不管怎么说, 它们的皮和素材都可以卖个好价钱.]]></story_1>
+            <story_2><![CDATA[<b>100 怪兽击杀:</b>⮀ 你已经通过战斗充分了解了如何应对它们.]]></story_2>
+            <story_3><![CDATA[<b>500 怪兽击杀:</b>⮀ 你几乎已经完全了解了它们的行动模式, 并可以进行一定的预判.]]></story_3>
+            <story_4><![CDATA[<b>1,000 怪兽击杀:</b>⮀ 你完全了解了它们的行动模式, 已经没有什么能让你惊讶的了.]]></story_4>
+            <story_5><![CDATA[<b>5,000 怪兽击杀:</b>⮀ 你熟练的设置陷阱击杀怪兽, 甚至不需要你本人去看着.]]></story_5>
+            <story_6><![CDATA[<b>10,000 怪兽击杀:</b>⮀ 你一点也不担心它们扔过来的东西, 你什么都知道.]]></story_6>
+            <story_7><![CDATA[<b>20,000 怪兽击杀:</b>⮀ 这简直就是娱乐, 你还在做这件事的唯一原因是它们会掉素材. 你需要钱.]]></story_7>
         </fight_monsters>
         <small_dungeon>
             <label>小地牢</label>
