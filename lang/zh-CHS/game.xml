@@ -8,25 +8,25 @@
             </meta>
             <version verNum="2.0"><![CDATA[
             <b> July 16th, 2022</b>
-            Added Challenge Modes!<br>
-            Challenges are super hard modifications to the base game with extra restrictions in place.<br>
-            These are only for fun and do not give any rewards.<br>
+            新增挑战模式!<br>
+            挑战模式是有特殊限制的比正常游戏更难的模式.<br>
+            只用于娱乐而没有任何额外奖励.<br>
             ]]></version>
             <version verNum="1.9"><![CDATA[
             <b> July 16th, 2022</b>
-            • Change: Added "Max Training" button to bottom of action list that will cap all training actions present on the list. This button only appears after players have completed their first imbue mind to reduce clutter<br>
-            • Change: Completing the "Imbue Mind" action will automatically cap any training actions on the list. This can be disabled in the options menu<br>
-            • Bugfix: StonesUsed from Haul was not properly resetting on clearing saves<br>
-            • Bugfix: Off-by-One error in final trial was preventing players from being able to finish<br>
-            • Bugfix: Trial tooltips were displaying incorrect floor numbers<br>
-            • Bugfix: Trolls, Frost Giants, and Jungle Monsters were giving combat exp per action rather than per kill. These actions will likely need significant combat skill exp buffs after to compensate for this fix
+            • 变化: 在行动列表底部新增一个"最大化训练"来使所有训练最大化. 这个按钮将在首次完成灌注精神后解锁用以减少点击量<br>
+            • 变化: 完成"灌注精神"将会自动把列表里的训练行动提升到上限. 你可以在设置里关闭它<br>
+            • Bug修复: 清除存档时没有正确清除已拖动石头数量<br>
+            • Bug修复: 最终审判因为一个错误导致无法完成<br>
+            • Bug修复: 试炼的提示没有正确显示对应楼层<br>
+            • Bug修复: 巨魔, 冰霜巨人, 和丛林生物只在行动完成时奖励战斗经验. 也许需要为这次更新增强一下战斗经验获取.
             ]]></version>
             <version verNum="1.8"><![CDATA[
             <b> July 14th, 2022</b>
             • 新试炼: 死亡试炼 (初始城镇) - 失去僵尸对团队战斗力的加成, 完成每一层都会奖励更多的僵尸<br>
             • Bug修复: 交换了清除队列和管理储存队列的位置以避免在整理队列时误操作<br>
-            • Bugfix: Added survey icon to new actions added by survey so they are easier to notice<br>
-            • Bugfix: Haul wasn't being properly capped per zone, allowing stones to become negative
+            • Bug修复: 受到调查影响的新行动增加调查角标以让它更显眼<br>
+            • Bug修复: 拖动行动没有设置上限, 导致石头可以变成负数
             ]]></version>
             <version verNum="1.7"><![CDATA[
             <b> July 14th, 2022</b>
@@ -205,8 +205,8 @@
         <faq>
             <meta>
                 <title>问答</title>
-                <q_prefix><![CDATA[<b>Q:</b>]]></q_prefix>
-                <a_prefix><![CDATA[<b>A:</b>]]></a_prefix>
+                <q_prefix><![CDATA[<b>问:</b>]]></q_prefix>
+                <a_prefix><![CDATA[<b>答:</b>]]></a_prefix>
             </meta>
             <q_a>
                 <q>属性有什么用?</q>
@@ -259,8 +259,8 @@
             </discord>
             <adblock_warning>警告: 由于一些原因, Adblock Plus可能导致严重卡顿. 这个游戏并没有广告, 所以如果你的游戏经常卡死, 请把它关掉.
             </adblock_warning>
-            <auto_max_training>Max All Training Actions on Training cap increase</auto_max_training>
-            <hotkeys>Hotkeys</hotkeys>
+            <auto_max_training>最大化所有训练行动</auto_max_training>
+            <hotkeys>快捷键</hotkeys>
             <hotkeys_tooltip><![CDATA[
                 空格: 暂停/继续<br>
                 R: 重置<br>
@@ -281,10 +281,10 @@
         </options>
         <challenges>
             <meta>
-                <title>Challenges</title>
+                <title>挑战</title>
             </meta>
-            <mana_drought>The mana merchant in Beginnersville only has 5k mana to sell, and they're charging double the usual price. No other mana merchants exist.</mana_drought>
-            <noodle_arms>You have no Self-Combat ability. All combat is based on followers.</noodle_arms>
+            <mana_drought>新手村的法力商人只出售 5k 法力, 并且价格翻倍. 没有其他法力商人.</mana_drought>
+            <noodle_arms>你没有个人战斗力. 所有战斗都依赖队友.</noodle_arms>
         </challenges>
     </menu>
     <tutorial><![CDATA[
@@ -825,7 +825,7 @@
             <save_loadout>保存到列表</save_loadout>
             <load_loadout>从列表加载</load_loadout>
             <clear_list>清空列表</clear_list>
-            <max_training>Max Training</max_training>
+            <max_training>最大化训练</max_training>
             <higher_done_percent_benefic>随着 % 提高你可以找到更多内容.</higher_done_percent_benefic>
             <progress_label>进度</progress_label>
             <total_found>总找到</total_found>
