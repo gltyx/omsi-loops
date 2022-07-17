@@ -6,11 +6,27 @@
                 <title>更新日志</title>
                 <version_prefix>版本</version_prefix>
             </meta>
+            <version verNum="2.0"><![CDATA[
+            <b> July 16th, 2022</b>
+            Added Challenge Modes!<br>
+            Challenges are super hard modifications to the base game with extra restrictions in place.<br>
+            These are only for fun and do not give any rewards.<br>
+            ]]></version>
+            <version verNum="1.9"><![CDATA[
+            <b> July 16th, 2022</b>
+            • Change: Added "Max Training" button to bottom of action list that will cap all training actions present on the list. This button only appears after players have completed their first imbue mind to reduce clutter<br>
+            • Change: Completing the "Imbue Mind" action will automatically cap any training actions on the list. This can be disabled in the options menu<br>
+            • Bugfix: StonesUsed from Haul was not properly resetting on clearing saves<br>
+            • Bugfix: Off-by-One error in final trial was preventing players from being able to finish<br>
+            • Bugfix: Trial tooltips were displaying incorrect floor numbers<br>
+            • Bugfix: Trolls, Frost Giants, and Jungle Monsters were giving combat exp per action rather than per kill. These actions will likely need significant combat skill exp buffs after to compensate for this fix
+            ]]></version>
             <version verNum="1.8"><![CDATA[
             <b> July 14th, 2022</b>
             • 新试炼: 死亡试炼 (初始城镇) - 失去僵尸对团队战斗力的加成, 完成每一层都会奖励更多的僵尸<br>
             • Bug修复: 交换了清除队列和管理储存队列的位置以避免在整理队列时误操作<br>
-            • Bug修复: 给幸存者增加了一个图标让他们更显眼
+            • Bugfix: Added survey icon to new actions added by survey so they are easier to notice<br>
+            • Bugfix: Haul wasn't being properly capped per zone, allowing stones to become negative
             ]]></version>
             <version verNum="1.7"><![CDATA[
             <b> July 14th, 2022</b>
@@ -243,7 +259,7 @@
             </discord>
             <adblock_warning>警告: 由于一些原因, Adblock Plus可能导致严重卡顿. 这个游戏并没有广告, 所以如果你的游戏经常卡死, 请把它关掉.
             </adblock_warning>
-            <pause_audio_cue>暂停时提示</pause_audio_cue>
+            <auto_max_training>Max All Training Actions on Training cap increase</auto_max_training>
             <hotkeys>Hotkeys</hotkeys>
             <hotkeys_tooltip><![CDATA[
                 空格: 暂停/继续<br>
@@ -263,6 +279,13 @@
         ]]></hotkeys_tooltip>
             <update_rate>每秒更新次数:</update_rate>
         </options>
+        <challenges>
+            <meta>
+                <title>Challenges</title>
+            </meta>
+            <mana_drought>The mana merchant in Beginnersville only has 5k mana to sell, and they're charging double the usual price. No other mana merchants exist.</mana_drought>
+            <noodle_arms>You have no Self-Combat ability. All combat is based on followers.</noodle_arms>
+        </challenges>
     </menu>
     <tutorial><![CDATA[
       教程:<br>
@@ -802,6 +825,7 @@
             <save_loadout>保存到列表</save_loadout>
             <load_loadout>从列表加载</load_loadout>
             <clear_list>清空列表</clear_list>
+            <max_training>Max Training</max_training>
             <higher_done_percent_benefic>随着 % 提高你可以找到更多内容.</higher_done_percent_benefic>
             <progress_label>进度</progress_label>
             <total_found>总找到</total_found>
@@ -1066,6 +1090,16 @@
         ]]></tooltip2>
             <!--TODO: give this action story-->
         </buy_mana_z1>
+        <buy_mana_challenge>
+            <label>购买法力</label>
+            <tooltip><![CDATA[
+            1 gold = 
+        ]]></tooltip>
+            <tooltip2><![CDATA[
+            mana. Buys all the mana you can.<br>The merchant only has 5000 mana to sell, though.<br>Unlocked at 20% Explored.
+        ]]></tooltip2>
+            <!--TODO: give this action story-->
+        </buy_mana_challenge>
         <meet_people>
             <label>结识朋友</label>
             <label_done>已结识朋友</label_done>
@@ -2007,7 +2041,7 @@
             <label_done>已打扫</label_done>
             <label_part>杂乱度</label_part>
 			<tooltip><![CDATA[
-			把这里打扫干净.<br>奖励 5 金块和 1 声望.
+			Tidy up the place.<br>Progress is based on Practical Magic Skill and total completions.<br>Gives 5 gold and 1 reputation.
 		]]></tooltip>
 			<segment_names>
                 <name>Temp1</name>
@@ -2429,7 +2463,8 @@
             <label_done>Tower Progress</label_done>
             <tooltip><![CDATA[
             You've hit rock bottom and now there's nowhere to go but up. If only you had some way to climb back to Valhalla.<br>
-            Requires a Temporal Stone.
+            Requires a Temporal Stone.<br>
+            Hauling and Building persist through loops. Each stone used to build removes one from the pile in those ruins.
         ]]></tooltip>
         </build_tower>
         <gods_trial>

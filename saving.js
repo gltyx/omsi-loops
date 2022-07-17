@@ -39,6 +39,7 @@ function cheatProgress()
             view.updateProgressAction(action.varName, towns[action.townNum]);
         }
     }
+    stonesUsed = {1:250, 3:250, 5:250, 6:250};
 }
 
 function cheatTalent(stat, targetTalentLevel) 
@@ -95,6 +96,7 @@ let resources = {
     houses: 0,
     pylons: 0,
     zombie: 0,
+    meat: 0,
     power: 0,
     glasses: false,
     supplies: false,
@@ -139,7 +141,7 @@ const buffCaps = {
 };
 const buffs = {};
 let goldInvested = 0;
-let stonesUsed = {1:0, 3:0, 5:0, 6:0};
+let stonesUsed;
 // eslint-disable-next-line prefer-const
 let townShowing = 0;
 // eslint-disable-next-line prefer-const
@@ -224,6 +226,9 @@ let totalOfflineMs = 0;
 let bonusSpeed = 1;
 const offlineRatio = 1;
 
+let challenge = 0;
+let totalMerchantMana = 5000;
+
 // eslint-disable-next-line prefer-const
 let curAdvGuildSegment = 0;
 // eslint-disable-next-line prefer-const
@@ -245,6 +250,7 @@ const options = {
     pauseBeforeRestart: false,
     pauseOnFailedLoop: false,
     pingOnPause: false,
+    autoMaxTraining: false,
     hotkeys: true,
     updateRate: 50
 };
@@ -360,7 +366,7 @@ function load() {
     actionTownNum = toLoad.actionTownNum === undefined ? 0 : toLoad.actionTownNum;
     trainingLimits = 10 + getBuffLevel("Imbuement");
     goldInvested = toLoad.goldInvested === undefined ? 0 : toLoad.goldInvested;
-    if (toLoad.stonesUsed) stonesUsed = toLoad.stonesUsed;
+    stonesUsed = toLoad.stonesUsed === undefined ? {1:0, 3:0, 5:0, 6:0} : toLoad.stonesUsed;
 
     actions.next = [];
     if (toLoad.nextList) {
@@ -452,9 +458,11 @@ function load() {
     if(toLoad.trials === undefined) toLoad.trials = copyArray(trials);
     for (let i = 0; i < trials.length; i++) {
         floors = trialFloors[i];
+        trials[i].highestFloor = 0;
         for (let j = 0; j < floors; j++) {
             if (toLoad.trials[i] != undefined && toLoad.trials && toLoad.trials[i][j]) {
                 trials[i][j] = toLoad.trials[i][j];
+                if (trials[i][j].completed > 0) trials[i].highestFloor = j;
             } else {
                 trials[i][j] = copyArray(trialLevel);
             }
@@ -465,6 +473,7 @@ function load() {
         options.theme = toLoad.currentTheme === undefined ? "normal" : toLoad.currentTheme;
         options.repeatLastAction = toLoad.repeatLast;
         options.pingOnPause = toLoad.pingOnPause === undefined ? false : toLoad.pingOnPause;
+        options.autoMaxTraining = toLoad.autoMaxTraining === undefined ? true : toLoad.autoMaxTraining;
         options.hotkeys = toLoad.hotkeys === undefined ? true : toLoad.hotkeys;
         options.updateRate = toLoad.updateRate === undefined ? 50 : toLoad.updateRate;
     } else {
@@ -512,6 +521,9 @@ function load() {
     }
     storyShowing = toLoad.storyShowing === undefined ? 0 : toLoad.storyShowing;
     storyMax = toLoad.storyMax === undefined ? 0 : toLoad.storyMax;
+
+    challenge = toLoad.challenge === undefined ? 0 : toLoad.challenge;
+    if (challenge === 1) gameSpeed = 2;
 
     totalOfflineMs = toLoad.totalOfflineMs === undefined ? 0 : toLoad.totalOfflineMs;
     // capped at 1 month of gain
@@ -587,6 +599,7 @@ function save() {
     //toSave.buffCaps = buffCaps;
 
     toSave.date = new Date();
+    toSave.challenge = challenge;
     toSave.totalOfflineMs = totalOfflineMs;
 
     window.localStorage[saveName] = JSON.stringify(toSave);
@@ -649,4 +662,19 @@ function importCurrentList() {
         }
     }
     view.updateNextActions();
+}
+
+function beginChallenge(challengeNum) {
+    if (confirm("Beginning a new challenge will delete your current save. Are you sure you have an export saved to your computer?")) {
+        clearSave();
+        actions.next = [];
+        actions.current = [];
+        load();
+        challenge = challengeNum;
+        totalOfflineMs = 1000000;
+        pauseGame();
+        restart();
+    } else {
+        return;
+    }
 }
