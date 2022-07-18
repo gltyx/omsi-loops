@@ -569,7 +569,7 @@
         <title>技能</title>
         <scombat>
             <label>个人战斗力</label>
-            <desc>担任战斗力 = (战斗技能 + 火焰魔法 * 5) * (1 + (护甲 + 3 * 附魔护甲) * 制造工会倍率 / 5)</desc>
+            <desc>单人战斗力 = (战斗技能 + 火焰魔法 * 5) * (1 + (护甲 + 3 * 附魔护甲) * 制造工会倍率 / 5)</desc>
         </scombat>
         <tcombat>
             <label>团队战斗力</label>
