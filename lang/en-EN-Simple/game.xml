@@ -6,6 +6,18 @@
                 <title>Changelog</title>
                 <version_prefix>Version</version_prefix>
             </meta>
+            <version verNum="2.1"><![CDATA[
+            <b> July 18th, 2022</b>
+            • Balance: Imbue soul now adds +100% exp mult to training actions per level<br>
+            • Balance: Reducted Alchemy Skill requirement of Looping potion from 500 to 200<br>
+            • Balance: Jungle Escape now only needs to be started within 60s, not completed within 60s<br>
+            • Bugfix: Excursion was requiring the player to have more gold than the cost rather than more or equal<br>
+            • Bugfix: Troll's blood still said it did nothing<br>
+            • Bugfix: Reduce the amount of time "Saved" appear on loadouts from 2s -> 1s<br>
+            • Bugfix: Secret trial couldn't be started<br>
+            • Bugfix: Soulstone display wasn't being updated after imbue soul<br>
+            • Change: The game will now persist any current options set when starting a new game or beginning a challenge<br>
+            ]]></version>
             <version verNum="2.0"><![CDATA[
             <b> July 16th, 2022</b>
             Added Challenges!<br>
@@ -740,7 +752,7 @@
         <imbue_soul>
             <label>Imbue Soul</label>
             <desc><![CDATA[Sacrifice everything for the ultimate power.<br>
-            Increases all action speed by 50% per level additively.
+            Increases the exp multiplier of training actions by 100% and raises all action speeds by 50% per level additively.
             ]]></desc>
         </imbue_soul>
         <tooltip>
@@ -1883,7 +1895,7 @@
         <looping_potion>
             <label>Looping Potion</label>
             <tooltip><![CDATA[
-            Using your aptness of alchemy and your talent for time, you've managed to recreate the very potion that got you into this whole mess! It can't cure you, but maybe you can find another use for it.<br>Requires 400 herbs.<br>Unlocked with 500 Alchemy.
+            Using your aptness of alchemy and your talent for time, you've managed to recreate the very potion that got you into this whole mess! It can't cure you, but maybe you can find another use for it.<br>Requires 400 herbs.<br>Unlocked with 200 Alchemy.
         ]]></tooltip>
 			<story_1><![CDATA[<b>Potion Made:</b>⮀ There's no mistake, it's the same potion that you were transporting what feels like an eternity ago. This is chronomancy you'd never have been able to do as a spell, and you take a moment to feel proud at how far you've come. And yet, you don't really know what to do with the thing. Maybe you'll figure something out later.]]></story_1>
         </looping_potion>
@@ -1991,7 +2003,7 @@
             With your new knowledge, you believe you can also use the lake to renforce your body across time. Each imbuement will increase starting stats by 1.<br>Progress is based on Magic Skill.<br>Can only have 1 Imbue Body action.<br>Level is limited by imbue mind rank.<br>Sacrifices a level of talent per Imbue Body completion. Currently sacrificing 
         ]]></tooltip>
             <tooltip2><![CDATA[
-             levels of talent.
+             levels of talent from each stat.
         ]]></tooltip2>
             <segment_names>
                 <name>Submerge youself</name>
@@ -2354,7 +2366,7 @@
         <escape>
             <label>Escape</label>
             <tooltip><![CDATA[
-            The jungle seems to grow ever larger with every moment that passes. You'll have to get out of here fast.<br>Must be completed within 60 seconds of the loop (hover Mana Used for effective time).
+            The jungle seems to grow ever larger with every moment that passes. You'll have to get out of here fast.<br>Must be started within 60 seconds of the loop (hover Mana Used for effective time).
         ]]></tooltip>
         </escape>
         <open_portal>
@@ -2476,7 +2488,7 @@
             <tooltip><![CDATA[
             Resets all talent levels, soulstones, imbue mind and imbue body. Other skills and buffs are unchanged.<br>
             Requires 500 Imbue Mind and Body.<br>
-            Raises all action speeds by 50%.
+            Increases the exp multiplier of training actions by 100% and raises all action speeds by 50% per level.
         ]]></tooltip>
         </imbue_soul>
         <build_tower>

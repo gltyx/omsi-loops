@@ -6,6 +6,18 @@
                 <title>更新日志</title>
                 <version_prefix>版本</version_prefix>
             </meta>
+            <version verNum="2.1"><![CDATA[
+            <b> July 18th, 2022</b>
+            • Balance: Imbue soul now adds +100% exp mult to training actions per level<br>
+            • Balance: Reducted Alchemy Skill requirement of Looping potion from 500 to 200<br>
+            • Balance: Jungle Escape now only needs to be started within 60s, not completed within 60s<br>
+            • Bugfix: Excursion was requiring the player to have more gold than the cost rather than more or equal<br>
+            • Bugfix: Troll's blood still said it did nothing<br>
+            • Bugfix: Reduce the amount of time "Saved" appear on loadouts from 2s -> 1s<br>
+            • Bugfix: Secret trial couldn't be started<br>
+            • Bugfix: Soulstone display wasn't being updated after imbue soul<br>
+            • Change: The game will now persist any current options set when starting a new game or beginning a challenge<br>
+            ]]></version>
             <version verNum="2.0"><![CDATA[
             <b> July 16th, 2022</b>
             新增挑战模式!<br>
@@ -350,7 +362,7 @@
         <resource initially_hidden="true">
             <title>血液:</title>
             <id>blood</id>
-            <desc>它的再生能力令它备受推崇. (目前没有用)</desc>
+            <desc>它的再生能力令它备受推崇. </desc>
         </resource>
         <resource initially_hidden="true">
             <title>古董:</title>
@@ -721,7 +733,7 @@
         <imbue_soul>
             <label>灵魂灌注</label>
             <desc><![CDATA[(未完成) 献祭所有东西以获得强大的加成.<br>
-            每级使所有行动加速 50% (加法计算).
+            Increases the exp multiplier of training actions by 100% and raises all action speeds by 50% per level additively.
             ]]></desc>
         </imbue_soul>
         <tooltip>
@@ -1854,7 +1866,7 @@
         <looping_potion>
             <label>循环药剂</label>
             <tooltip><![CDATA[
-            凭借炼金术天赋和漫长的时间, 你成功复现了让你陷入麻烦的药剂! 它虽然不能治愈你, 但你也许可以找点别的用法.<br>需要 400 药草.<br>解锁于 500 炼金术.
+            凭借炼金术天赋和漫长的时间, 你成功复现了让你陷入麻烦的药剂! 它虽然不能治愈你, 但你也许可以找点别的用法.<br>需要 400 药草.<br>解锁于 200 炼金术.
         ]]></tooltip>
 			<story_1><![CDATA[<b>Potion Made:</b>⮀ There's no mistake, it's the same potion that you were transporting what feels like an eternity ago. This is chronomancy you'd never have been able to do as a spell, and you take a moment to feel proud at how far you've come. And yet, you don't really know what to do with the thing. Maybe you'll figure something out later.]]></story_1>
         </looping_potion>
@@ -1962,7 +1974,7 @@
             通过你的知识, 你确信你也可以利用这个湖重塑你的身体. 每次灌注会使你循环开始时的所有能力等级提高 1.<br>每点法力给予 (魔法技能) * (1 + 主能力 / 100) * (初始法力消耗 / 实际法力消耗) 进度点.<br>每次循环只能进行 1 次灌注躯体.<br>等级不能超过灌注精神的等级.<br>献祭 (灌注次数+1) 等级的天赋. 当前献祭 
         ]]></tooltip>
             <tooltip2><![CDATA[
-             等级的天赋.
+             levels of talent from each stat.
         ]]></tooltip2>
             <segment_names>
                 <name>浸没在湖里</name>
@@ -2325,7 +2337,7 @@
         <escape>
             <label>逃脱</label>
             <tooltip><![CDATA[
-            丛林似乎变得更大了. 你得快点离开这里.<br>必须在本次循环60秒内完成 (悬停在已使用法力上查看当前实际秒数).
+            丛林似乎变得更大了. 你得快点离开这里.<br>必须在本次循环60秒内开始 (悬停在已使用法力上查看当前实际秒数).
         ]]></tooltip>
         </escape>
         <open_portal>
@@ -2441,7 +2453,7 @@
             <tooltip><![CDATA[
             重置所有天赋等级, 灵魂石, 精神灌注和躯体灌注. 其他技能和加成都不会重置.<br>
             需要 500 精神和躯体灌注.<br>
-            (暂时性 - 后续更新也许会改)所有行动加速 50% .
+            Increases the exp multiplier of training actions by 100% and raises all action speeds by 50% per level.
         ]]></tooltip>
         </imbue_soul>
         <build_tower>
