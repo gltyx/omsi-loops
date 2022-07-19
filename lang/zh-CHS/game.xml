@@ -8,15 +8,15 @@
             </meta>
             <version verNum="2.1"><![CDATA[
             <b> July 18th, 2022</b>
-            • Balance: Imbue soul now adds +100% exp mult to training actions per level<br>
-            • Balance: Reducted Alchemy Skill requirement of Looping potion from 500 to 200<br>
-            • Balance: Jungle Escape now only needs to be started within 60s, not completed within 60s<br>
-            • Bugfix: Excursion was requiring the player to have more gold than the cost rather than more or equal<br>
-            • Bugfix: Troll's blood still said it did nothing<br>
-            • Bugfix: Reduce the amount of time "Saved" appear on loadouts from 2s -> 1s<br>
-            • Bugfix: Secret trial couldn't be started<br>
-            • Bugfix: Soulstone display wasn't being updated after imbue soul<br>
-            • Change: The game will now persist any current options set when starting a new game or beginning a challenge<br>
+            • 平衡: 灌注灵魂现在每级还会使所有训练技能 +100% 经验获取<br>
+            • 平衡: 循环药剂的炼金术要求从 500 降低到 200<br>
+            • 平衡: 逃脱行动现在只要求开始时循环时间不长于 60s, 而不是完成时<br>
+            • Bug修复: 短途旅行在恰好有足够金块时会显示金块不足<br>
+            • Bug修复: 巨魔的血提示里仍显示没有效果<br>
+            • Bug修复: 在保存队列时 "Saved" 显示时间 2s -> 1s<br>
+            • Bug修复: 秘密试炼不能开始<br>
+            • Bug修复: 灵魂石并没有在灌注灵魂后更新<br>
+            • 变化: 当你开始挑战时你会保留你现有的所有设置<br>
             ]]></version>
             <version verNum="2.0"><![CDATA[
             <b> July 16th, 2022</b>
@@ -37,7 +37,7 @@
             <b> July 14th, 2022</b>
             • 新试炼: 死亡试炼 (初始城镇) - 失去僵尸对团队战斗力的加成, 完成每一层都会奖励更多的僵尸<br>
             • Bug修复: 交换了清除队列和管理储存队列的位置以避免在整理队列时误操作<br>
-            • Bug修复: 受到调查影响的新行动增加调查角标以让它更显眼<br>
+            • Bug修复: 受到勘测影响的新行动增加勘测角标以让它更显眼<br>
             • Bug修复: 拖动行动没有设置上限, 导致石头可以变成负数
             ]]></version>
             <version verNum="1.7"><![CDATA[
@@ -79,10 +79,10 @@
             ]]></version>
             <version verNum="1.3"><![CDATA[
             <b> July 12th, 2022</b>
-            全局探索重做 - 还需要继续观察并且应该让探险家公会派上用场<br>
-            • 变化: 探索将存在于所有区域并解锁于探险家公会<br>
-            • 变化: 探索行动上限提高到 500, 但现在它是所有探索行动的共同上限<br>
-            • 变化: 探索现在是有限行动, 你现在可以使用圆圈图标控制了<br>
+            全局勘测重做 - 还需要继续观察并且应该让探险家公会派上用场<br>
+            • 变化: 勘测将存在于所有区域并解锁于探险家公会<br>
+            • 变化: 勘测行动上限提高到 500, 但现在它是所有勘测行动的共同上限<br>
+            • 变化: 勘测现在是有限行动, 你现在可以使用圆圈图标控制了<br>
             • Bug修复: 循环药剂的提示<br>
             • Bug修复: 空间魔法增加了魔法井的法力消耗
             ]]></version>
@@ -101,8 +101,8 @@
             <version verNum="1.1"><![CDATA[
             <b> July 11th, 2022</b>
             • 新公会: 探索者 - 经过社区投票, 探索者在商业村庄开设了商店!<br>
-            • 在所有区域解锁了一个新的 "探索" 行动 - 探索的进度会增加有限资源的上限 (% * 0.5)<br>
-            • 全局的探索进度还为区域移动提供了更便捷的捷径<br>
+            • 在所有区域解锁了一个新的 "勘测" 行动 - 勘测的进度会增加有限资源的上限 (% * 0.5)<br>
+            • 全局的勘测进度还为区域移动提供了更便捷的捷径<br>
             • Bug修复: 法力井可能流失到负值, 导致反而从玩家身上吸取法力<br>
             • Bug修复: 远行没有检查你是否有足够的金块开始<br>
             • Bug修复: 完成堕落行动后声望并没有及时更新<br>
@@ -857,8 +857,8 @@
         </current_action>
         <!--survey-->
             <surveyZ0>
-            <label>调查</label>
-            <label_done>已调查</label_done>
+            <label>勘测</label>
+            <label_done>已勘测</label_done>
             <tooltip><![CDATA[
             探索者公会让你学到了许多非常容易错过的东西.<br>
             进度等于所有区域平均进度的平方根.<br>
@@ -867,8 +867,8 @@
             ]]></tooltip>
         </surveyZ0>
         <surveyZ1>
-            <label>调查</label>
-            <label_done>已调查</label_done>
+            <label>勘测</label>
+            <label_done>已勘测</label_done>
             <tooltip><![CDATA[
             探索者公会让你学到了许多非常容易错过的东西.<br>
             进度等于所有区域平均进度的平方根.<br>
@@ -877,8 +877,8 @@
             ]]></tooltip>
         </surveyZ1>
         <surveyZ2>
-            <label>调查</label>
-            <label_done>已调查</label_done>
+            <label>勘测</label>
+            <label_done>已勘测</label_done>
             <tooltip><![CDATA[
             探索者公会让你学到了许多非常容易错过的东西.<br>
             进度等于所有区域平均进度的平方根.<br>
@@ -887,8 +887,8 @@
             ]]></tooltip>
         </surveyZ2>
         <surveyZ3>
-            <label>调查</label>
-            <label_done>已调查</label_done>
+            <label>勘测</label>
+            <label_done>已勘测</label_done>
             <tooltip><![CDATA[
             探索者公会让你学到了许多非常容易错过的东西.<br>
             进度等于所有区域平均进度的平方根.<br>
@@ -897,8 +897,8 @@
             ]]></tooltip>
         </surveyZ3>
         <surveyZ4>
-            <label>调查</label>
-            <label_done>已调查</label_done>
+            <label>勘测</label>
+            <label_done>已勘测</label_done>
             <tooltip><![CDATA[
             探索者公会让你学到了许多非常容易错过的东西.<br>
             进度等于所有区域平均进度的平方根.<br>
@@ -907,8 +907,8 @@
             ]]></tooltip>
         </surveyZ4>
         <surveyZ5>
-            <label>调查</label>
-            <label_done>已调查</label_done>
+            <label>勘测</label>
+            <label_done>已勘测</label_done>
             <tooltip><![CDATA[
             探索者公会让你学到了许多非常容易错过的东西.<br>
             进度等于所有区域平均进度的平方根.<br>
@@ -917,8 +917,8 @@
             ]]></tooltip>
         </surveyZ5>
         <surveyZ6>
-            <label>调查</label>
-            <label_done>已调查</label_done>
+            <label>勘测</label>
+            <label_done>已勘测</label_done>
             <tooltip><![CDATA[
             探索者公会让你学到了许多非常容易错过的东西.<br>
             进度等于所有区域平均进度的平方根.<br>
@@ -927,8 +927,8 @@
             ]]></tooltip>
         </surveyZ6>
         <surveyZ7>
-            <label>调查</label>
-            <label_done>已调查</label_done>
+            <label>勘测</label>
+            <label_done>已勘测</label_done>
             <tooltip><![CDATA[
             探索者公会让你学到了许多非常容易错过的东西.<br>
             进度等于所有区域平均进度的平方根.<br>
@@ -937,8 +937,8 @@
             ]]></tooltip>
         </surveyZ7>
         <surveyZ8>
-            <label>调查</label>
-            <label_done>已调查</label_done>
+            <label>勘测</label>
+            <label_done>已勘测</label_done>
             <tooltip><![CDATA[
             探索者公会让你学到了许多非常容易错过的东西.<br>
             进度等于所有区域平均进度的平方根.<br>
@@ -1197,7 +1197,7 @@
             <label_done>已治愈</label_done>
             <label_part>病人</label_part>
             <tooltip><![CDATA[
-            你肯定不可能全部治好, 但他们会感谢你尽力救治.<br>一共有 3 治疗阶段, 每个阶段都有对应的能力 - 诊断 (感知), 处理 (智力), 通知 (魅力).<br>每点法力给予 (魔法技能) * (治疗魔法 / 50) * (1 + 主能力 / 100) * 开方(1 + 完成次数 / 100) * (初始法力消耗 / 实际法力消耗) 进度点.<br>需要至少 1 声望.<br>解锁于 12 魔法技能.<br>每个治愈的病人可以让你获得 3 声望.
+            你肯定不可能全部治好, 但他们会感谢你尽力救治.<br>一共有 3 治疗阶段, 每个阶段都有对应的能力 - 诊断 (感知), 处理 (智力), 通知 (魅力).<br>每点法力给予 (魔法技能) * (恢复魔法 / 50) * (1 + 主能力 / 100) * 开方(1 + 完成次数 / 100) * (初始法力消耗 / 实际法力消耗) 进度点.<br>需要至少 1 声望.<br>解锁于 12 魔法技能.<br>每个治愈的病人可以让你获得 3 声望.
         ]]></tooltip>
             <story_1><![CDATA[<b>已治愈病人:</b>⮀ 你被允许去看看病人并尝试治疗. 这是很好的机会, 对你和对病人都是. 无论是骨折还是小擦伤, 病人都会非常感谢你.]]></story_1>
             <story_2><![CDATA[<b>10 单次循环已治愈病人:</b>⮀ 你声名远播, 你几乎清空了整个医院, 护士和治疗师都非常感谢你.]]></story_2>
@@ -1873,7 +1873,7 @@
         <pyromancy>
             <label>火焰魔法</label>
             <tooltip><![CDATA[
-            召唤炽烈的火焰并将它运用在你的战斗中. 对, 符文里也有这玩意. <br>解锁于 60% 符文符号破译以及 200 技能.
+            召唤炽烈的火焰并将它运用在你的战斗中. 对, 符文里也有这玩意. <br>解锁于 60% 符文符号破译以及 200 魔法技能.
         ]]></tooltip>
 			<story_1><![CDATA[<b>1 Pyromancy:</b>⮀ Pyromancy is more normal than chronomancy, but it makes up for it by being extra dangerous. Fire, you quickly learn, will consume you just as happily as your foes. Your control has to be ironclad at all times or you might lose a hand in the time it takes to draw a breath.]]></story_1>
 			<story_2><![CDATA[<b>50 Pyromancy:</b>⮀ Without the loops to restore you to normal you'd probably be dead five times over by now, but the rewards you've gained are impressive indeed. Turning that lethality on monsters is a sight to behold, and it's much more versatile than melee combat. Fights often end before they even have a chance to get close.]]></story_2>
@@ -1974,7 +1974,7 @@
             通过你的知识, 你确信你也可以利用这个湖重塑你的身体. 每次灌注会使你循环开始时的所有能力等级提高 1.<br>每点法力给予 (魔法技能) * (1 + 主能力 / 100) * (初始法力消耗 / 实际法力消耗) 进度点.<br>每次循环只能进行 1 次灌注躯体.<br>等级不能超过灌注精神的等级.<br>献祭 (灌注次数+1) 等级的天赋. 当前献祭 
         ]]></tooltip>
             <tooltip2><![CDATA[
-             levels of talent from each stat.
+             级每种能力天赋.
         ]]></tooltip2>
             <segment_names>
                 <name>浸没在湖里</name>
@@ -2039,7 +2039,7 @@
             <label_done>已打扫</label_done>
             <label_part>杂乱度</label_part>
 			<tooltip><![CDATA[
-			Tidy up the place.<br>Progress is based on Practical Magic Skill and total completions.<br>Gives 5 gold and 1 reputation.
+			打扫干净.<br>进度基于实用魔法和完成次数.<br>每次打扫干净奖励 5 金块和 1 声望.
 		]]></tooltip>
 			<segment_names>
                 <name>Temp1</name>
@@ -2270,14 +2270,14 @@
         ]]></tooltip>
         </purchase_supplies>
         <dead_trial>
-            <label>Trial of the Dead</label>
-            <label_done>Corpses Liberated</label_done>
-            <label_part>Necropolis</label_part>
-            <label_complete>Grave Defiled</label_complete>
+            <label>死亡试炼</label>
+            <label_done>解放的尸体</label_done>
+            <label_part>大墓地</label_part>
+            <label_complete>已亵渎墓地</label_complete>
             <tooltip><![CDATA[
-            You've found an old necropolis. It's way too haunted for you and your party, but you could probably send some zombies in to look for more bodies.<br>
-            Progress is based on (Dark Magic Skill * Zombies / 2)<br>
-            Rewards 1 Zombie per floor completion.
+            你找到了一个古老的大墓地. 对你的队伍来说这里的鬼魂太危险了, 但你也许可以让僵尸进去找些尸体.<br>
+            进度基于 (黑暗魔法 * 僵尸 / 2)<br>
+            每层奖励 1 僵尸.
         ]]></tooltip>
         </dead_trial>
         <journey_forth>
@@ -2432,13 +2432,13 @@
         <tooltip2>金块.</tooltip2>
         </purchase_key>
         <secret_trial>
-            <label>Trial of Vanity</label>
-            <label_done>Total Floors</label_done>
-            <label_part>Floor</label_part>
-            <label_complete>Did you cheat?</label_complete>
+            <label>虚荣试炼</label>
+            <label_done>总层数</label_done>
+            <label_part>楼层</label_part>
+            <label_complete>你作弊了?</label_complete>
             <tooltip><![CDATA[
-            You're really going to try it, huh? Well, good luck!<br>
-            Rewards +1 Bragging Rights.
+            你真的打算挑战它, 嗯? 好吧, 祝你好运!<br>
+            奖励 +1 吹牛权.
         ]]></tooltip>
         </secret_trial>
         <leave_city>
@@ -2453,25 +2453,25 @@
             <tooltip><![CDATA[
             重置所有天赋等级, 灵魂石, 精神灌注和躯体灌注. 其他技能和加成都不会重置.<br>
             需要 500 精神和躯体灌注.<br>
-            Increases the exp multiplier of training actions by 100% and raises all action speeds by 50% per level.
+            每级增加所有训练的经验倍率 100% 并增加所有行动速度 50% .
         ]]></tooltip>
         </imbue_soul>
         <build_tower>
-            <label>Build Tower</label>
-            <label_done>Tower Progress</label_done>
+            <label>建造塔</label>
+            <label_done>塔进度</label_done>
             <tooltip><![CDATA[
-            You've hit rock bottom and now there's nowhere to go but up. If only you had some way to climb back to Valhalla.<br>
-            Requires a Temporal Stone.<br>
-            Hauling and Building persist through loops. Each stone used to build removes one from the pile in those ruins.
+            你现在已经到达了谷底, 除了往上爬以外没有别的路了. 假如你有什么办法可以从这里爬到瓦尔哈拉上的话.<br>
+            需要一块时间石头.<br>
+            通过不断循环的运输和建造. 你从遗迹里找到的每一块时间石头都物尽其用.
         ]]></tooltip>
         </build_tower>
         <gods_trial>
-            <label>Trial of the Gods</label>
-            <label_done>Done</label_done>
-            <label_complete>100 Floors Completed</label_complete>
-            <label_part>Gods Trial</label_part>
+            <label>神的试炼</label>
+            <label_done>完成</label_done>
+            <label_complete>100 层完成</label_complete>
+            <label_part>神的试炼</label_part>
             <tooltip><![CDATA[
-            The gods have filled the 100 floors of the tower you built with monsters to stop you from returning to Valhalla. Rude. 
+            众神在 100 层的塔里塞满了怪物以阻止你前往瓦尔哈拉. 真粗鲁. 
         ]]></tooltip>
             <segment_names>
 
@@ -2479,19 +2479,19 @@
         </gods_trial>
         <challenge_gods>
             <label>挑战神</label>
-            <label_done>Gods Defeated</label_done>
-            <label_part>Challenge Gods</label_part>
-            <label_complete>All Gods Defeated</label_complete>
+            <label_done>击败神</label_done>
+            <label_part>挑战神</label_part>
+            <label_complete>所有神击败</label_complete>
             <tooltip><![CDATA[
             是时候了. 最后的决战. 如果你能杀死所有七个神, 你就可以结束这狗屎的循环了.<br>
-            Requires all 100 floors of Trial of the gods completed this loop.
+            需要在一次循环内完成所有神的试炼 100 层.
         ]]></tooltip>
         </challenge_gods>
         <restore_time>
-            <label>Restore Time</label>
+            <label>恢复时间</label>
             <tooltip><![CDATA[
-            You've done it. With the power of the gods, you can undo this looping nonsense and fix time.<br>
-            Requires the powers of the gods.
+            你成功了. 利用神的力量, 你可以结束循环并修复时间.<br>
+            需要神的力量.
         ]]></tooltip>
         </restore_time>
     </actions>
