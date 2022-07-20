@@ -6,6 +6,23 @@
                 <title>更新日志</title>
                 <version_prefix>版本</version_prefix>
             </meta>
+            <version verNum="2.3"><![CDATA[
+            <b> July 19th, 2022</b>
+            • Bugfix: With thanks to Kallious from the Discord, we've finally fixed the bug sometimes making soulstones go negative on DR/IM/GF<br>
+            • Bugfix: Added additonal error checks to loading save files to autofix some of the common error states<br>
+            • Bugfix: Trial of dead was not using updated zombie strength formula<br>
+            • Bugfix: Imbue Soul was not updating training tooltips until next restart
+            ]]></version>
+            <version verNum="2.2"><![CDATA[
+            <b> July 19th, 2022</b>
+            • New Skill: Leadership - Increases your max follower count by 1 for every 100 levels and increases their contribution to team combat<br>
+            • New Action (Commerceville): Motivational Seminar - Get advice from the head of a totally-not-an-MLM to learn how to be a better leader<br> 
+            • Balance: Zombie Strength is now increased by Dark Ritual / 100(min 1x, up to 6.66x increase)<br>
+            • Balance: Fight Jungle Monsters now rewards blood instead of hides. Prepare Buffet is now made of blood instead of hide. Still gross.<br>
+            Note - We'll have to see how these changes land. It may end up being that now Team Combat is too strong compared to self combat. Also, trials will almost certainly need rebalancing.<br>
+            • Bugfix: Fight actions were giving exp on segment in addition to completion. Increased combat exp of frost/giants & jungle monsters to compensate<br>
+            • Bugfix: Explorer's guild was not reducing the cost of excursion<br>
+            ]]></version>
             <version verNum="2.1"><![CDATA[
             <b> July 18th, 2022</b>
             • 平衡: 灌注灵魂现在每级还会使所有训练技能 +100% 经验获取<br>
@@ -296,7 +313,7 @@
                 <title>挑战</title>
             </meta>
             <mana_drought>新手村的法力商人只出售 5k 法力, 并且价格翻倍. 没有其他法力商人.</mana_drought>
-            <noodle_arms>你没有个人战斗力. 所有战斗都依赖队友.</noodle_arms>
+            <noodle_arms>You have no base Self-Combat ability. All combat is based on followers. Self combat is half of your team member or zombie strength (whichever is higher).</noodle_arms>
         </challenges>
     </menu>
     <tutorial><![CDATA[
@@ -571,7 +588,7 @@
         </scombat>
         <tcombat>
             <label>团队战斗力</label>
-            <desc>团队战斗力 = 个人战斗力 + (战斗技能 + 恢复技能 * 2) * (队友 / 2) * 冒险公会乘数</desc>
+            <desc>Team Combat = Self Combat + (Combat Skill + Restoration skill * 2) * (Team Members / 2) * Adventure Guild Multiplier * Leadership Bonus + Dark Magic Skill * Zombies / 2 * Dark Ritural / 100.</desc>
         </tcombat>
         <combat>
             <label>战斗</label>
@@ -677,6 +694,12 @@
             <desc2><![CDATA[提高开锁, 赌博, 以及盗贼工会的金块获取 (1 + 等级 / 60) ^ 0.25.<br>
             当前给予 <div id='skillBonusThievery'></div>x 金块倍率.]]></desc2>
         </thievery>
+        <leadership>
+            <label>Leadership</label>
+            <desc>You're ready to start your own cult!</desc>
+            <desc2><![CDATA[Increases the number of followers you can recruit for every 100 levels. Increases your follower's contributions to team combat by (1 + level / 60) ^ 0.25.<br>
+            Currently granting <div id='skillBonusLeadership'></div>x increased follower strength.]]></desc2>
+        </leadership>
         <tooltip>
             <level>等级:</level>
             <level_exp>等级经验:</level_exp>
@@ -1094,7 +1117,7 @@
             1 gold = 
         ]]></tooltip>
             <tooltip2><![CDATA[
-            mana. Buys all the mana you can.<br>The merchant only has 5000 mana to sell, though.<br>Unlocked at 20% Explored.
+            mana. Buys all the mana you can.<br>The merchant only has 7500 mana to sell, though.<br>Unlocked at 20% Explored.
         ]]></tooltip2>
             <!--TODO: give this action story-->
         </buy_mana_challenge>
@@ -1661,7 +1684,7 @@
         <gather_team>
             <label>组建队伍</label>
             <tooltip><![CDATA[
-            你不需要全都自己承担.<br>最多 5 个队友.<br>消耗 <div id='teamCost'></div>
+            You don't have to take them on by yourself.<br>Max 5 other team members, plus 1 for each 100 levels of Leadership.<br>Costs <div id='teamCost'></div>
             金块, 每招募一个队友消耗提高 100 金块.<br>每个队友增加你的团队战斗力 (冒险者公会倍率) * (战斗技能 / 2) .<br>需要冒险者公会.<br>给予 3x 能力/天赋经验.<br>解锁于 20% 传闻获取.
         ]]></tooltip>
 			<story_1><![CDATA[<b>Teammate gathered:</b>⮀ Cassandra, self-professed expert spell-slinger, makes no attempt to hide her suspicion of the newcomer who's insisting on an expedition the same day they joined the guild. Still, you're paying the asking price, so she grudgingly accepts. You can tell that she won't be a pleasant companion, though.]]></story_1>
@@ -2292,7 +2315,7 @@
             <tooltip><![CDATA[
             这里的所有生物都很危险.<br>
             每点法力给予 (个人战斗力) * (1 + 主能力 / 100) * 开方(1 + 完成次数 / 1000) * (初始法力消耗 / 实际法力消耗) 进度点.<br>
-            每完成一个阶段奖励 1 皮革.
+            每完成一个阶段奖励 1 血液.
         ]]></tooltip>
         </fight_jungle_monsters>
         <explore_jungle>
@@ -2321,7 +2344,7 @@
             <label>准备自助餐</label>
             <tooltip><![CDATA[
             这里没有平静到可以让你熬制药水, 但你至少可以用炼金术做一些简单的食物给大家吃.<br>
-            消耗 10 草药和 1 皮革.<br>
+            消耗 10 草药和 1 血液.<br>
             暴食经验增加 (已拯救幸存者 * 5).
         ]]></tooltip>
         </prepare_buffet>
@@ -2424,6 +2447,13 @@
             当前利息: <div id='bankInterest'></div>
         ]]></tooltip>
         </collect_interest>
+        <seminar>
+            <label>Seminar</label>
+            <tooltip><![CDATA[
+            You can buy entrance to a motivational seminar - learn to be the best you and make people love you. You're pretty sure turning back time is the only way you can get off these people's list.<br>Costs
+        ]]></tooltip>
+        <tooltip2>gold.</tooltip2>
+        </seminar>
         <purchase_key>
             <label>购买钥匙</label>
             <tooltip><![CDATA[

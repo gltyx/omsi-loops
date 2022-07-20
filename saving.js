@@ -119,7 +119,7 @@ let curLoadout = 0;
 let loadouts;
 let loadoutnames;
 //let loadoutnames = ["1", "2", "3", "4", "5"];
-const skillList = ["Combat", "Magic", "Practical", "Alchemy", "Crafting", "Dark", "Chronomancy", "Pyromancy", "Restoration", "Spatiomancy", "Mercantilism", "Divine", "Commune", "Wunderkind", "Gluttony", "Thievery"];
+const skillList = ["Combat", "Magic", "Practical", "Alchemy", "Crafting", "Dark", "Chronomancy", "Pyromancy", "Restoration", "Spatiomancy", "Mercantilism", "Divine", "Commune", "Wunderkind", "Gluttony", "Thievery", "Leadership"];
 const skills = {};
 const buffList = ["Ritual", "Imbuement", "Imbuement2", "Feast", "Aspirant", "Heroism", "Imbuement3"];
 const dungeonFloors = [6, 9, 20];
@@ -152,6 +152,7 @@ let actionStoriesShowing = false;
 let townsUnlocked = [];
 let statShowing;
 let skillShowing;
+let buffShowing;
 let curActionShowing;
 let dungeonShowing;
 let actionTownNum;
@@ -230,7 +231,7 @@ let bonusSpeed = 1;
 const offlineRatio = 1;
 
 let challenge = 0;
-let totalMerchantMana = 5000;
+let totalMerchantMana = 7500;
 
 // eslint-disable-next-line prefer-const
 let curAdvGuildSegment = 0;
@@ -309,13 +310,15 @@ function load() {
 
     for (const property in toLoad.stats) {
         if (toLoad.stats.hasOwnProperty(property)) {
-            stats[property].talent = toLoad.stats[property].talent;
-            stats[property].soulstone = toLoad.stats[property].soulstone;
+            stats[property].talent =  toLoad.stats[property].talent > 0 ? toLoad.stats[property].talent : 0;
+            stats[property].soulstone = toLoad.stats[property].soulstone > 0 ? toLoad.stats[property].soulstone : 0;
         }
     }
+
+
     for (const property in toLoad.skills) {
         if (toLoad.skills.hasOwnProperty(property)) {
-            skills[property].exp = toLoad.skills[property].exp;
+            skills[property].exp = toLoad.skills[property].exp > 0 ? toLoad.skills[property].exp : toLoad.skills[property].exp;
         }
     }
 
@@ -326,14 +329,14 @@ function load() {
         }
     }
 
-    /*if (toLoad.buffCaps !== undefined) {
+    if (toLoad.buffCaps !== undefined) {
         for (const property in buffCaps) {
             if (toLoad.buffCaps.hasOwnProperty(property)) {
                 buffCaps[property] = toLoad.buffCaps[property];
                 document.getElementById(`buff${property}Cap`).value = buffCaps[property];
             }
         }
-    }*/
+    }
 
     if (toLoad.storyReqs !== undefined) {
         for (const property in storyReqs) {
@@ -389,7 +392,8 @@ function load() {
             if (action.name === "Purchase Mana") {
                 action.name = "Buy Mana Z3";
             }
-            actions.next.push(action);
+            if(totalActionList.some(x => x.name === action.name))
+                actions.next.push(action);
         }
     }
     actions.nextLast = copyObject(actions.next);
@@ -416,7 +420,8 @@ function load() {
                 if (action.name === "Purchase Mana") {
                     action.name = "Buy Mana Z3";
                 }
-                loadouts[i].push(action);
+                if(totalActionList.some(x => x.name === action.name))
+                    loadouts[i].push(action);
             }
         }
     }

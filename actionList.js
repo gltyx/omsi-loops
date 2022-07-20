@@ -593,7 +593,7 @@ Action.BuyManaChallenge = new Action("Buy Mana Challenge", {
         return 25;
     },
     finish() {
-        let spendGold = Math.min(resources.gold, 200);
+        let spendGold = Math.min(resources.gold, 300);
         let buyMana = Math.min(spendGold * this.goldCost(), totalMerchantMana);
         addMana(buyMana);
         totalMerchantMana -= buyMana;
@@ -2131,30 +2131,26 @@ Action.DarkRitual = new MultipartAction("Dark Ritual", {
 });
 
 function checkSoulstoneSac(amount) {
-    let check = true;
-    for (const stat in stats) {
-        if (stats[stat].soulstone < amount / 9) check = false;
-    }
-    return check;
+    let sum = 0;
+    for (const stat in stats) 
+        sum += stats[stat].soulstone;
+    return sum >= amount ? true : false;
 }
 
 function sacrificeSoulstones(amount) {
-    let batch;
-    amount > 9000 ? batch = 1000 : amount > 900 ? batch = 100 : amount > 90 ? batch = 10 : batch = 1;
     while (amount > 0)
     {
         let highestSoulstoneStat = "";
         let highestSoulstone = -1;
-        if (batch > amount) batch = amount;
         for (const stat in stats) {
             if (stats[stat].soulstone > highestSoulstone) {
                 highestSoulstoneStat = stat;
                 highestSoulstone = stats[stat].soulstone;
             }
         }
-        //console.log("Subtracting " + batch + " soulstones from " + highestSoulstoneStat + ". Old total: " + stats[highestSoulstoneStat].soulstone + ". New Total: " + (stats[highestSoulstoneStat].soulstone - batch));
-        stats[highestSoulstoneStat].soulstone -= batch;
-        amount -= batch;
+        //console.log("Subtracting " + Math.ceil(amount/9) + " soulstones from " + highestSoulstoneStat + ". Old total: " + stats[highestSoulstoneStat].soulstone + ". New Total: " + (stats[highestSoulstoneStat].soulstone - Math.ceil(amount/9)));
+        stats[highestSoulstoneStat].soulstone -= Math.ceil(amount/9);
+        amount -= Math.ceil(amount/9);
     }
 }
 
@@ -2545,7 +2541,7 @@ Action.GatherTeam = new Action("Gather Team", {
     },
     affectedBy: ["Adventure Guild"],
     allowed() {
-        return 5;
+        return 5 + Math.floor(getSkillLevel("Leadership") / 100);
     },
     canStart() {
         return guild === "Adventure" && resources.gold >= (resources.teamMembers + 1) * 100;
@@ -3050,28 +3046,12 @@ Action.HeroesTrial = new TrialAction("Heroes Trial", 0, {
     canStart() {
         return this.currentFloor() < trialFloors[this.trialNum];
     },
-    /*loopCost(segment) {
-        return precision3(Math.pow(2, Math.floor((towns[this.townNum].HTrialLoopCounter + segment) / this.segments + 0.0000001)) * 1e8);
-    },*/
     baseProgress() {
         return getTeamCombat();
     },
     floorReward() {
         if (this.currentFloor() >= getBuffLevel("Heroism")) addBuffAmt("Heroism", 1);
     },
-    /*tickProgress(offset) {
-        const floor = Math.floor((towns[this.townNum].HTrialLoopCounter) / this.segments + 0.0000001);
-        return getTeamCombat() *
-            (1 + getLevel(this.loopStats[(towns[this.townNum].HTrialLoopCounter + offset) % this.loopStats.length]) / 100) *
-            Math.sqrt(1 + trials[this.trialNum][floor].completed / 200);
-    },*/
-    /*loopsFinished() {
-        const curFloor = this.currentFloor();
-        trials[this.trialNum][curFloor].completed++;
-        if (curFloor >= getBuffLevel("Heroism")) addBuffAmt("Heroism", 1);
-        if (curFloor + 1 > trials[this.trialNum].highestFloor || trials[this.trialNum].highestFloor === undefined) trials[this.trialNum].highestFloor = curFloor + 1;
-        view.updateTrialInfo(this.trialNum, curFloor);
-    },*/
     visible() {
         return towns[this.townNum].getLevel("Survey") >= 100;
     },
@@ -3542,7 +3522,6 @@ Action.HuntTrolls = new MultipartAction("Hunt Trolls", {
         if (resources.blood >= 10) unlockStory("slay10TrollsInALoop");
     },
     segmentFinished() {
-        handleSkillExp(this.skills);
     },
     getPartName() {
         return "Hunt Troll";
@@ -4556,7 +4535,7 @@ Action.FightFrostGiants = new MultipartAction("Fight Frost Giants", {
         Per: 0.2,
     },
     skills: {
-        Combat: 1250
+        Combat: 1500
     },
     loopStats: ["Per", "Con", "Str"],
     manaCost() {
@@ -4581,7 +4560,6 @@ Action.FightFrostGiants = new MultipartAction("Fight Frost Giants", {
     },
     segmentFinished() {
         curFightFrostGiantsSegment++;
-        handleSkillExp(this.skills);
         // Additional thing?
     }, 
     getPartName() {
@@ -4972,7 +4950,7 @@ Action.DeadTrial = new TrialAction("Dead Trial", 4, {
     },
     baseProgress() {
         //Determines what skills give progress to the trial
-        return getSkillLevel("Dark") * resources.zombie / 2;
+        return getZombieStrength();
     },
     floorReward() {
         //Rewards given per floor
@@ -4981,22 +4959,6 @@ Action.DeadTrial = new TrialAction("Dead Trial", 4, {
     canStart() {
         return this.currentFloor() < trialFloors[this.trialNum];
     },
-    /*loopCost(segment) {
-        return precision3(Math.pow(this.floorScaling, Math.floor((towns[this.townNum][`${this.varName}LoopCounter`] + segment) / this.segments + 0.0000001)) * this.baseScaling);
-    },*/
-    /*tickProgress(offset) {
-        const floor = Math.floor((towns[this.townNum][`${this.varName}LoopCounter`]) / this.segments + 0.0000001);
-        return this.baseProgress() *
-            (1 + getLevel(this.loopStats[(towns[this.townNum][`${this.varName}LoopCounter`] + offset) % this.loopStats.length]) / 100) *
-            Math.sqrt(1 + trials[this.trialNum][floor].completed / 200);
-    },*/
-    /*loopsFinished() {
-        const curFloor = Math.floor((towns[this.townNum][`${this.varName}LoopCounter`]) / this.segments + 0.0000001 - 1);
-        trials[this.trialNum][curFloor].completed++;
-        if (curFloor + 1 > trials[this.trialNum].highestFloor || trials[this.trialNum].highestFloor === undefined) trials[this.trialNum].highestFloor = curFloor + 1;
-        view.updateTrialInfo(this.trialNum, curFloor + 1);
-        this.floorReward();
-    },*/
     visible() {
         return towns[this.townNum].getLevel("Survey") >= 100;
     },
@@ -5080,7 +5042,7 @@ Action.FightJungleMonsters = new MultipartAction("Fight Jungle Monsters", {
         Per: 0.4,
     },
     skills: {
-        Combat: 1500
+        Combat: 2000
     },
     loopStats: ["Dex", "Str", "Per"],
     manaCost() {
@@ -5101,11 +5063,10 @@ Action.FightJungleMonsters = new MultipartAction("Fight Jungle Monsters", {
         handleSkillExp(this.skills);
     },
     segmentFinished() {
-        handleSkillExp(this.skills);
     },
     segmentFinished() {
         curFightJungleMonstersSegment++;
-        addResource("hide", 1);
+        addResource("blood", 1);
         // Additional thing?
     }, 
     getPartName() {
@@ -5218,11 +5179,11 @@ Action.PrepareBuffet = new Action("Prepare Buffet", {
         Gluttony: 5
     },
     canStart() {
-        return resources.herbs >= 10 && resources.hide > 0;
+        return resources.herbs >= 10 && resources.blood > 0;
     },
     cost() {
         addResource("herbs", -10);
-        addResource("hide", -1);
+        addResource("blood", -1);
     },
     manaCost() {
         return 30000;
@@ -5367,7 +5328,7 @@ Action.Excursion = new Action("Excursion", {
     },
     finish() {
         towns[7].finishProgress(this.varName, 50 * (resources.glasses ? 2 : 1));
-        addResource("gold", guild === "Thieves" ? -2 : -10);
+        addResource("gold", -1 * this.goldCost());
     }
 });
 function adjustPockets() {
@@ -5707,6 +5668,41 @@ Action.CollectInterest = new Action("Collect Interest", {
     },
 });
 
+Action.Seminar = new Action("Seminar", {
+    type: "normal",
+    expMult: 1,
+    townNum: 7,
+    stats: {
+        Cha: 0.8,
+        Luck: 0.1,
+        Soul: 0.1
+    },
+    skills: {
+        Leadership: 200
+    },
+    manaCost() {
+        return 20000;
+    },
+    canStart() {
+        return resources.gold >= 1000;
+    },
+    cost() {
+        addResource("gold", -1000);
+    },
+    visible() {
+        return towns[this.townNum].getLevel("Survey") >= 100;
+    },
+    unlocked() {
+        return towns[this.townNum].getLevel("Survey") >= 100;
+    },
+    goldCost() {
+        return 1000;
+    },
+    finish() {
+        handleSkillExp(this.skills);
+    },
+});
+
 Action.PurchaseKey = new Action("Purchase Key", {
     type: "normal",
     expMult: 1,
@@ -5867,6 +5863,7 @@ Action.ImbueSoul = new MultipartAction("Imbue Soul", {
     },
     finish() {
         view.updateBuff("Imbuement3");
+        adjustTrainingExpMult();
     },
 });
 
@@ -5949,22 +5946,6 @@ Action.GodsTrial = new TrialAction("Gods Trial", 1, {
     floorReward() {
         if (this.currentFloor() === trialFloors[this.trialNum] - 1) addResource("power", 1);
     },
-    /*loopCost(segment) {
-        return precision3(Math.pow(1.3, Math.floor((towns[this.townNum].GTrialLoopCounter + segment) / this.segments + 0.0000001)) * 1e7);
-    },*/
-    /*tickProgress(offset) {
-        const floor = Math.floor((towns[this.townNum].GTrialLoopCounter) / this.segments + 0.0000001);
-        return getTeamCombat() *
-            (1 + getLevel(this.loopStats[(towns[this.townNum].GTrialLoopCounter + offset) % this.loopStats.length]) / 100) *
-            Math.sqrt(1 + trials[this.trialNum][floor].completed / 200);
-    },*/
-    /*loopsFinished() {
-        const curFloor = Math.floor((towns[this.townNum].GTrialLoopCounter) / this.segments + 0.0000001 - 1);
-        trials[this.trialNum][curFloor].completed++;
-        if (curFloor + 1 > trials[this.trialNum].highestFloor || trials[this.trialNum].highestFloor === undefined) trials[this.trialNum].highestFloor = curFloor + 1;
-        view.updateTrialInfo(this.trialNum, curFloor + 1);
-        if (curFloor + 1 === 100) addResource("power", 1);
-    },*/
     visible() {
         return towns[this.townNum].getLevel("BuildTower") >= 100;
     },
@@ -6011,22 +5992,6 @@ Action.ChallengeGods = new TrialAction("Challenge Gods", 2, {
     floorReward() {
         addResource("power", 1);
     },
-    /*loopCost(segment) {
-        return precision3(Math.pow(2, Math.floor((towns[this.townNum].GFightLoopCounter + segment) / this.segments + 0.0000001)) * 1e16);
-    },*/
-    /*tickProgress(offset) {
-        const floor = Math.floor((towns[this.townNum].GFightLoopCounter) / this.segments + 0.0000001);
-        return getSelfCombat() *
-            (1 + getLevel(this.loopStats[(towns[this.townNum].GFightLoopCounter + offset) % this.loopStats.length]) / 100) *
-            Math.sqrt(1 + trials[this.trialNum][floor].completed / 200);
-    },*/
-    /*loopsFinished() {
-        const curFloor = Math.floor((towns[this.townNum].GFightLoopCounter) / this.segments + 0.0000001 - 1);
-        trials[this.trialNum][curFloor].completed++;
-        if (curFloor + 1 > trials[this.trialNum].highestFloor || trials[this.trialNum].highestFloor === undefined) trials[this.trialNum].highestFloor = curFloor + 1;
-        view.updateTrialInfo(this.trialNum, curFloor + 1);
-        addResource("power", 1);
-    },*/
     visible() {
         return towns[this.townNum].getLevel("BuildTower") >= 100;
     },

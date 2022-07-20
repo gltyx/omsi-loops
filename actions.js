@@ -159,7 +159,7 @@ function Actions() {
         escapeStarted = false;
         portalUsed = false;
         stoneLoc = 0;
-        totalMerchantMana = 5000;
+        totalMerchantMana = 7500;
         if (options.keepCurrentList) {
             this.currentPos = 0;
             this.completedTicks = 0;
@@ -205,6 +205,7 @@ function Actions() {
         view.requestUpdate("updateMultiPartActions");
         view.requestUpdate("updateNextActions");
         view.requestUpdate("updateTime");
+        view.updateActionTooltips();
     };
 
     this.adjustTicksNeeded = function() {
