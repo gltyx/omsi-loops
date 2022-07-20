@@ -8,20 +8,20 @@
             </meta>
             <version verNum="2.3"><![CDATA[
             <b> July 19th, 2022</b>
-            • Bugfix: With thanks to Kallious from the Discord, we've finally fixed the bug sometimes making soulstones go negative on DR/IM/GF<br>
-            • Bugfix: Added additonal error checks to loading save files to autofix some of the common error states<br>
-            • Bugfix: Trial of dead was not using updated zombie strength formula<br>
-            • Bugfix: Imbue Soul was not updating training tooltips until next restart
+            • Bug修复: 感谢 Kallious 在 Discord 的帮助, 我们终于修复了有时 DR/IM/GF 会导致灵魂石变负的BUG<br>
+            • Bug修复: 加载存档时增加一个错误检测以处理一些常见的错误<br>
+            • Bug修复: 死亡试炼没有实时更新僵尸的属性<br>
+            • Bug修复: 灌注灵魂必须在下次重置时才更新提示
             ]]></version>
             <version verNum="2.2"><![CDATA[
             <b> July 19th, 2022</b>
-            • New Skill: Leadership - Increases your max follower count by 1 for every 100 levels and increases their contribution to team combat<br>
-            • New Action (Commerceville): Motivational Seminar - Get advice from the head of a totally-not-an-MLM to learn how to be a better leader<br> 
-            • Balance: Zombie Strength is now increased by Dark Ritual / 100(min 1x, up to 6.66x increase)<br>
-            • Balance: Fight Jungle Monsters now rewards blood instead of hides. Prepare Buffet is now made of blood instead of hide. Still gross.<br>
-            Note - We'll have to see how these changes land. It may end up being that now Team Combat is too strong compared to self combat. Also, trials will almost certainly need rebalancing.<br>
-            • Bugfix: Fight actions were giving exp on segment in addition to completion. Increased combat exp of frost/giants & jungle monsters to compensate<br>
-            • Bugfix: Explorer's guild was not reducing the cost of excursion<br>
+            • 新技能: 领导力 - 每 100 级增加你的队友上限 1 并增加他们对团队战斗力的效果<br>
+            • 新行动 (商业村庄): 演讲培训 - 从一个 绝-对-不-是 传销人的老板那里学习经验成为更好的领导者<br> 
+            • 平衡: 僵尸强度现在是黑暗仪式 / 100(最少 1x, 最高 6.66x )<br>
+            • 平衡: 击败丛林生物现在奖励血而不是皮革. 自助餐现在需要血而不是皮革. 还是很恶心.<br>
+            提示 - 我们还需要观察这么改效果如何. 也许会导致团队战斗力比个人战斗力强太多. 另外, 试炼可能全都需要重新平衡.<br>
+            • Bug修复: 战斗行动还会在完成时额外奖励每个阶段的经验. 增加冰霜巨人和丛林生物的经验奖励作为补偿<br>
+            • Bug修复: 探索者公会没有正确降低短途旅行的费用<br>
             ]]></version>
             <version verNum="2.1"><![CDATA[
             <b> July 18th, 2022</b>
@@ -584,7 +584,7 @@
         <title>技能</title>
         <scombat>
             <label>个人战斗力</label>
-            <desc>单人战斗力 = (战斗技能 + 火焰魔法 * 5) * (1 + (护甲 + 3 * 附魔护甲) * 制造工会倍率 / 5)</desc>
+            <desc>个人战斗力 = (战斗技能 + 火焰魔法 * 5) * (1 + (护甲 + 3 * 附魔护甲) * 制造工会倍率 / 5)</desc>
         </scombat>
         <tcombat>
             <label>团队战斗力</label>
@@ -695,10 +695,10 @@
             当前给予 <div id='skillBonusThievery'></div>x 金块倍率.]]></desc2>
         </thievery>
         <leadership>
-            <label>Leadership</label>
-            <desc>You're ready to start your own cult!</desc>
-            <desc2><![CDATA[Increases the number of followers you can recruit for every 100 levels. Increases your follower's contributions to team combat by (1 + level / 60) ^ 0.25.<br>
-            Currently granting <div id='skillBonusLeadership'></div>x increased follower strength.]]></desc2>
+            <label>领导力</label>
+            <desc>你准备好开始建立邪教了!</desc>
+            <desc2><![CDATA[每 100 级增加一个队友上限. 队友的属性提高 (1 + 等级 / 60) ^ 0.25.<br>
+            当前给予 <div id='skillBonusLeadership'></div>x 队友属性.]]></desc2>
         </leadership>
         <tooltip>
             <level>等级:</level>
@@ -2315,7 +2315,7 @@
             <tooltip><![CDATA[
             这里的所有生物都很危险.<br>
             每点法力给予 (个人战斗力) * (1 + 主能力 / 100) * 开方(1 + 完成次数 / 1000) * (初始法力消耗 / 实际法力消耗) 进度点.<br>
-            每完成一个阶段奖励 1 血液.
+            每完成一个阶段奖励 1 血.
         ]]></tooltip>
         </fight_jungle_monsters>
         <explore_jungle>
@@ -2344,7 +2344,7 @@
             <label>准备自助餐</label>
             <tooltip><![CDATA[
             这里没有平静到可以让你熬制药水, 但你至少可以用炼金术做一些简单的食物给大家吃.<br>
-            消耗 10 草药和 1 血液.<br>
+            消耗 10 草药和 1 血.<br>
             暴食经验增加 (已拯救幸存者 * 5).
         ]]></tooltip>
         </prepare_buffet>
@@ -2366,9 +2366,9 @@
         <open_portal>
             <label>打开传送门</label>
             <tooltip><![CDATA[
-            The explorers guild tells you of a secret grove within jungle where the space between realms is weakest. With enough restoration skill, you may be able to open a rift back and leave the shadow realm. However, it seems a bit of time passes when you take the portal, and some merchants have closed up shop.<br>
-            Travels to Forest Path.<br>
-            Buy Mana actions are no longer possible.<br>
+            探索者公会的人带着你找到了丛林里的空间薄弱点. 你的恢复技能足够的话, 你也许可以打开一个传送门并回到主世界. 不过, 你通过传送门会消耗一些时间, 那些法力商人可能都关门了.<br>
+            旅行至森林小路.<br>
+            不再能购买法力.<br>
             需要 1000 恢复技能.
         ]]></tooltip>
         </open_portal>
@@ -2387,9 +2387,9 @@
             <tooltip><![CDATA[
             有没有觉得你好像错过了很多东西? 探索者公会知道它们! 学习并借此找到任何东西, 当你经过充分的学习你甚至可以用新的方式跨越区域.<br>
             每个循环只能加入 1 个公会 (包括商业小镇), 且只能尝试一次.<br>
-            解锁一个探索行动, 进度基于全局平均探索度.<br>
-            每 25% 世界探索度将提供一个新的捷径<br>
-            当前世界探索度: <div id='totalSurveyProgress'></div>%.
+            解锁一个勘测行动, 进度基于全局平均勘测度.<br>
+            每 25% 世界勘测度将提供一个新的捷径<br>
+            当前世界勘测度: <div id='totalSurveyProgress'></div>%.
         ]]></tooltip>
         </explorers_guild>
         <thieves_guild>
@@ -2448,11 +2448,11 @@
         ]]></tooltip>
         </collect_interest>
         <seminar>
-            <label>Seminar</label>
+            <label>培训</label>
             <tooltip><![CDATA[
-            You can buy entrance to a motivational seminar - learn to be the best you and make people love you. You're pretty sure turning back time is the only way you can get off these people's list.<br>Costs
+            你可以买一张演讲培训的票 - 学会如何成为大家最喜欢的人. 你很清楚一旦加入想从名单上消失就必须重置循环.<br>消耗
         ]]></tooltip>
-        <tooltip2>gold.</tooltip2>
+        <tooltip2>金块.</tooltip2>
         </seminar>
         <purchase_key>
             <label>购买钥匙</label>
