@@ -2417,9 +2417,9 @@
             帮旅行者们减轻负担.<br>
             需要盗贼公会.<br>
             每次循环只能完成 <div id='actionAllowedPockets'>x</div> 次,  数量基于短途旅游进度和空间魔法.<br>
-            每级盗贼公会等级奖励
+            根据盗贼公会倍率奖励
         ]]></tooltip>
-        <tooltip2>gold per thieves guild multiplier.</tooltip2>
+        <tooltip2>金块.</tooltip2>
         </pick_pockets>
         <rob_warehouse>
             <label>抢劫仓库</label>
@@ -2428,9 +2428,9 @@
             利用你多种多样的技能来进行仓库物品整理.<br>
             需要盗贼公会和 100% 偷到的钱包.<br>
             每次循环只能完成 <div id='actionAllowedWarehouses'>x</div> 次,  数量基于短途旅游进度和空间魔法.<br>
-            每级盗贼公会等级奖励
+            根据盗贼公会倍率奖励
         ]]></tooltip>
-        <tooltip2>gold per thieves guild multiplier.</tooltip2>
+        <tooltip2>金块.</tooltip2>
         </rob_warehouse>
         <insurance_fraud>
             <label>保险欺诈</label>
@@ -2439,9 +2439,9 @@
             保险是个骗局, 不管你怎么说. 你几乎就是个侠盗.<br>
             需要盗贼公会和 100% 已抢劫仓库.<br>
             每次循环只能完成 <div id='actionAllowedInsurance'>x</div> 次,  数量基于短途旅游进度和空间魔法.<br>
-            每级盗贼公会等级奖励
+            根据盗贼公会倍率奖励
         ]]></tooltip>
-        <tooltip2>gold per thieves guild multiplier.</tooltip2>
+        <tooltip2>金块.</tooltip2>
         </insurance_fraud>
         <invest>
             <label>投资</label>
