@@ -6,6 +6,15 @@
                 <title>更新日志</title>
                 <version_prefix>版本</version_prefix>
             </meta>
+            <version verNum="2.4"><![CDATA[
+            <b> July 20th, 2022</b>
+            • Balance: Team combat buffs! Restoration now contributes 4x its level instead of 2x to team member strength<br>
+            We'll see how this feels, and can revisit and improve leadership, too, if needed<br>
+            • New Option: Players can now enable a setting to have the game automatically pause when a progress action reaches 100% so they can accrue bonus seconds rather than waste time on a loop making little progress<br>
+            • Tooltip Updates: Many thanks to MakroCZ from the discord for tireless work on a fix for tooltip placement<br>
+            • Tooltip Updates: Kallious from the discord has helped clarify a number of unlock conditions and tided up the tidy up action in Valhalla<br>
+            • Bugfix: Imbue Soul could be started at max buff rank, reseting all progress for no reward<br>
+            ]]></version>
             <version verNum="2.3"><![CDATA[
             <b> July 19th, 2022</b>
             • Bug修复: 感谢 Kallious 在 Discord 的帮助, 我们终于修复了有时 DR/IM/GF 会导致灵魂石变负的BUG<br>
@@ -463,6 +472,7 @@
         <pause_button>暂停</pause_button>
         <pause_before_restart>在重置前暂停</pause_before_restart>
         <pause_on_failed_loop>循环失败时立即暂停</pause_on_failed_loop>
+        <pause_on_complete>进度完成时暂停</pause_on_complete>
         <restart_button>重置</restart_button>
         <restart_text>重置循环. 并不是硬重置.</restart_text>
         <hours>时</hours>
@@ -588,7 +598,7 @@
         </scombat>
         <tcombat>
             <label>团队战斗力</label>
-            <desc>Team Combat = Self Combat + (Combat Skill + Restoration skill * 2) * (Team Members / 2) * Adventure Guild Multiplier * Leadership Bonus + Dark Magic Skill * Zombies / 2 * Dark Ritural / 100.</desc>
+            <desc>Team Combat = Self Combat + (Combat Skill + Restoration skill * 4) * (Team Members / 2) * Adventure Guild Multiplier * Leadership Bonus + Dark Magic Skill * Zombies / 2 * Dark Ritural / 100.</desc>
         </tcombat>
         <combat>
             <label>战斗</label>
@@ -2042,7 +2052,8 @@
         <donate>
             <label>捐款</label>
             <tooltip><![CDATA[
-            如果你想你也可以自己给慈善机构捐款.<br>消耗 20 金块.<br>奖励 1 声望.
+            如果你想你也可以自己给慈善机构捐款.<br>消耗 20 金块.<br>奖励 1 声望.<br>Unlocked at 5% of houses canvassed.
+
         ]]></tooltip>
             <!--TODO: give this action story-->
         </donate>
@@ -2053,7 +2064,7 @@
             <info_text2>愿意捐助者总计</info_text2>
             <info_text3>还需要检查的捐助者</info_text3>
             <tooltip><![CDATA[
-            在为慈善机构募捐之后, 你现在可以代表它接受一部分捐款了, 毕竟你已经了解了规则.<br>消耗 1 声望.<br>至少需要 0 声望.<br>每笔捐款可以获得 20 金块.<br>每 5 名捐助者有一名会捐给你. 
+            在为慈善机构募捐之后, 你现在可以代表它接受一部分捐款了, 毕竟你已经了解了规则.<br>消耗 1 声望.<br>至少需要 0 声望.<br>每笔捐款可以获得 20 金块.<br>每 5 名捐助者有一名会捐给你. <br>Unlocked at 5% of houses canvassed.
         ]]></tooltip>
             <!--TODO: give this action story-->
         </accept_donations>
@@ -2062,7 +2073,7 @@
             <label_done>已打扫</label_done>
             <label_part>杂乱度</label_part>
 			<tooltip><![CDATA[
-			打扫干净.<br>进度基于实用魔法和完成次数.<br>每次打扫干净奖励 5 金块和 1 声望.
+			Tidy up the place.<br>Progress is based on Practical Magic Skill and total completions.<br>Gives 5 gold and 1 reputation per mess cleaned.<br>Unlocked at 30% of houses canvassed.
 		]]></tooltip>
 			<segment_names>
                 <name>Temp1</name>
@@ -2084,35 +2095,35 @@
 		<sell_artifact>
 			<label>出售古董</label>
 			<tooltip><![CDATA[
-			把你在奥林匹斯山上发现的古董以无价之宝的形式卖出去.<br>消耗一个古董.<br>获得 50 金块.
+			把你在奥林匹斯山上发现的古董以无价之宝的形式卖出去.<br>消耗一个古董.<br>获得 50 金块.<br>Unlocked at 20% of city toured.
 		]]></tooltip>
             <!--TODO: give this action story-->
 		</sell_artifact>
 		<gift_artifact>
 			<label>捐赠古董</label>
 			<tooltip><![CDATA[
-			向英雄博物馆捐赠一个古董. 这很好 - 高尚的行为会为你赢得更多的尊重.<br>消耗一个古董.<br>奖励一点支持度.
+			向英雄博物馆捐赠一个古董. 这很好 - 高尚的行为会为你赢得更多的尊重.<br>消耗一个古董.<br>奖励一点支持度.<br>Unlocked at 20% of city toured.
 		]]></tooltip>
             <!--TODO: give this action story-->
 		</gift_artifact>
         <mercantilism>
             <label>重商主义</label>
             <tooltip><![CDATA[
-            练习你的商业技巧, 你发现你和法力商人的交易仿佛在做慈善.<br>消耗 1 声望.<br>需要良好的声望.
+            练习你的商业技巧, 你发现你和法力商人的交易仿佛在做慈善.<br>消耗 1 声望.<br>需要良好的声望.<br>Unlocked at 30% of city toured.
         ]]></tooltip>
             <!--TODO: give this action story-->
         </mercantilism>
         <charm_school>
             <label>礼仪学校</label>
             <tooltip><![CDATA[
-            学会让人们热爱你!<br>给予 4x 能力/天赋经验, 每次循环只能进行 <div id='trainingLimitCha'></div> 次.
+            学会让人们热爱你!<br>给予 4x 能力/天赋经验, 每次循环只能进行 <div id='trainingLimitCha'></div> 次.<br>Unlocked at 30% of city toured.
         ]]></tooltip>
             <!--TODO: give this action story-->
         </charm_school>
 		<enchant_armor>
 			<label>附魔护甲</label>
 			<tooltip><![CDATA[
-			托关系拜托神圣铁匠帮你的护甲附魔.<br>消耗一个支持度和一个护甲.<br>获得一个附魔护甲.<br>附魔护甲的效果是普通护甲的三倍.
+			托关系拜托神圣铁匠帮你的护甲附魔.<br>消耗一个支持度和一个护甲.<br>获得一个附魔护甲.<br>附魔护甲的效果是普通护甲的三倍.<br>Unlocked at 40% of city toured.
 		]]></tooltip>
             <!--TODO: give this action story-->
 		</enchant_armor>
@@ -2120,14 +2131,14 @@
             <label>巫师学院</label>
             <label_done>Spontaneously Combusted From Wonder</label_done>
             <tooltip><![CDATA[
-            巫师学院是全世界最好的学院, 幸运的是你获得了入学的机会. 尽管, 这将花费你一大笔学费.<br>完成测试以获得一个等级!<br>一次循环只能进行 1 次巫师学院行动.<br>消耗 500 金块和 10 支持度.<br>每点法力给予 (所有的魔法等级) * (1 + 主能力 / 100) * 开方(1 + 完成次数 / 1000) * (初始法力消耗 / 实际法力消耗) 进度点.
+            巫师学院是全世界最好的学院, 幸运的是你获得了入学的机会. 尽管, 这将花费你一大笔学费.<br>完成测试以获得一个等级!<br>一次循环只能进行 1 次巫师学院行动.<br>消耗 500 金块和 10 支持度.<br>每点法力给予 (所有的魔法等级) * (1 + 主能力 / 100) * 开方(1 + 完成次数 / 1000) * (初始法力消耗 / 实际法力消耗) 进度点.<br>Unlocked at 60% of city toured.
         ]]></tooltip>
             <!--TODO: give this action story-->
         </wizard_college>
         <restoration>
             <label>恢复魔法</label>
             <tooltip><![CDATA[
-            你竟然没有学过怎么用魔法治疗, 哪怕只是治疗你自己. 你得赶紧来学学了.<br>根据巫师学院等级降低法力消耗.
+            你竟然没有学过怎么用魔法治疗, 哪怕只是治疗你自己. 你得赶紧来学学了.<br>根据巫师学院等级降低法力消耗.<br>Unlocked at 60% of city toured.
         ]]></tooltip>
             <!--TODO: give this action story-->
         </restoration>
@@ -2135,7 +2146,7 @@
             <label>空间魔法</label>
             <tooltip><![CDATA[
             了解如何控制空间和物质. 对大范围施展是 <i>非常困难</i> 的, 但是也许可以在循环中对一些小东西用.
-            <br>根据巫师学院等级降低法力消耗.
+            <br>根据巫师学院等级降低法力消耗.<br>Unlocked at 60% of city toured.
         ]]></tooltip>
             <!--TODO: give this action story-->
         </spatiomancy>
@@ -2143,7 +2154,7 @@
             <label>寻求公民身份</label>
 			<label_done>入籍考试进度</label_done>
             <tooltip><![CDATA[
-            现在, 你只是个游客.  如果你想真正加入他们的行列, 你得学习并通过瓦尔哈拉的历史与文化测试.
+            现在, 你只是个游客.  如果你想真正加入他们的行列, 你得学习并通过瓦尔哈拉的历史与文化测试.<br>Unlocked at 80% of city toured.
         ]]></tooltip>
             <!--TODO: give this action story-->
         </seek_citizenship>
@@ -2164,14 +2175,14 @@
         <oracle>
             <label>神谕</label>
             <tooltip><![CDATA[
-            仔细观察未来以获得更多的财富!<br>给予 4x 能力/天赋经验, 每次循环只能进行 <div id='trainingLimitLuck'></div> 次.
+            仔细观察未来以获得更多的财富!<br>给予 4x 能力/天赋经验, 每次循环只能进行 <div id='trainingLimitLuck'></div> 次.<br>Unlocked at 40% of city toured.
         ]]></tooltip>
             <!--TODO: give this action story-->
         </oracle>
 		<pegasus>
 			<label>飞马</label>
 			<tooltip><![CDATA[
-			瓦尔哈拉有很多神奇的东西. 其中就包括了帕加索斯; 就像神话中的飞马, 只有最优秀的公民可以获得. 如果你想得到一匹, 你需要根据当地人的指引前往一个广场, 然后证明自己. 飞马能翱翔在天空也能在陆地上飞奔, 想要拥有这样的生物可不仅仅需要黄金.<br>允许进行特殊的战斗.<br>消耗 200 金块和 20 支持度.
+			瓦尔哈拉有很多神奇的东西. 其中就包括了帕加索斯; 就像神话中的飞马, 只有最优秀的公民可以获得. 如果你想得到一匹, 你需要根据当地人的指引前往一个广场, 然后证明自己. 飞马能翱翔在天空也能在陆地上飞奔, 想要拥有这样的生物可不仅仅需要黄金.<br>允许进行特殊的战斗.<br>消耗 200 金块和 20 支持度.<br>Unlocked at 90% of city toured.
 		]]></tooltip>
             <!--TODO: give this action story-->
 		</pegasus>
@@ -2200,7 +2211,7 @@
 
         ]]></tooltip>
             <tooltip2><![CDATA[
-             灵魂石.
+             灵魂石.<br>Unlocked at 100% of city toured.
         ]]></tooltip2>
             <segment_names>
                 <name>开始点菜</name>
