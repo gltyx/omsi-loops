@@ -8,12 +8,12 @@
             </meta>
             <version verNum="2.4"><![CDATA[
             <b> July 20th, 2022</b>
-            • Balance: Team combat buffs! Restoration now contributes 4x its level instead of 2x to team member strength<br>
-            We'll see how this feels, and can revisit and improve leadership, too, if needed<br>
-            • New Option: Players can now enable a setting to have the game automatically pause when a progress action reaches 100% so they can accrue bonus seconds rather than waste time on a loop making little progress<br>
-            • Tooltip Updates: Many thanks to MakroCZ from the discord for tireless work on a fix for tooltip placement<br>
-            • Tooltip Updates: Kallious from the discord has helped clarify a number of unlock conditions and tided up the tidy up action in Valhalla<br>
-            • Bugfix: Imbue Soul could be started at max buff rank, reseting all progress for no reward<br>
+            • 平衡: 团队战斗力加强! 恢复魔法现在对团队战斗力的效果 4x 而不是 2x <br>
+            我们会继续观察这个改动的效果, 如果有需要的话, 也许会再次加强或者加强领导力<br>
+            • 新菜单: 玩家现在可以勾选一个设置使任意探索度达到 100% 时游戏暂停, 这样就可以避免跑无效轮次转而积累奖励时间<br>
+            • 提示更新: 感谢 MakroCZ 在 discord 的帮助修复了提示显示的一个问题<br>
+            • 提示更新: 感谢 Kallious 在 discord 帮忙整理补充了瓦尔哈拉的一大堆提示<br>
+            • Bug修复: 灌注灵魂可以在达到上限后开始, 重置所有进度但没有奖励<br>
             ]]></version>
             <version verNum="2.3"><![CDATA[
             <b> July 19th, 2022</b>
@@ -598,7 +598,7 @@
         </scombat>
         <tcombat>
             <label>团队战斗力</label>
-            <desc>Team Combat = Self Combat + (Combat Skill + Restoration skill * 4) * (Team Members / 2) * Adventure Guild Multiplier * Leadership Bonus + Dark Magic Skill * Zombies / 2 * Dark Ritural / 100.</desc>
+            <desc>团队战斗力 = 个人战斗力 + (战斗技能 + 恢复魔法 * 4) * (队友 / 2) * 冒险者公会倍率 * 领导力加成 + 黑暗魔法 * 僵尸 / 2 * 黑暗仪式 / 100.</desc>
         </tcombat>
         <combat>
             <label>战斗</label>
@@ -766,7 +766,7 @@
         <imbue_soul>
             <label>灵魂灌注</label>
             <desc><![CDATA[(未完成) 献祭所有东西以获得强大的加成.<br>
-            Increases the exp multiplier of training actions by 100% and raises all action speeds by 50% per level additively.
+            每级增加所有训练项目的经验倍率 100% 并增加所有行动速度 50% (加法计算).
             ]]></desc>
         </imbue_soul>
         <tooltip>
@@ -1127,7 +1127,7 @@
             1 gold = 
         ]]></tooltip>
             <tooltip2><![CDATA[
-            mana. Buys all the mana you can.<br>The merchant only has 7500 mana to sell, though.<br>Unlocked at 20% Explored.
+            法力. 尽可能的花掉所有金块购买.<br>法力商人只有 7500 法力卖, 尽管如此.<br>解锁于 20% 探索度.
         ]]></tooltip2>
             <!--TODO: give this action story-->
         </buy_mana_challenge>
@@ -2073,7 +2073,7 @@
             <label_done>已打扫</label_done>
             <label_part>杂乱度</label_part>
 			<tooltip><![CDATA[
-			Tidy up the place.<br>Progress is based on Practical Magic Skill and total completions.<br>Gives 5 gold and 1 reputation per mess cleaned.<br>Unlocked at 30% of houses canvassed.
+			打扫干净.<br>进度取决于实用魔法和完成次数.<br>每个杂乱度奖励 5 金块和 1 声望.<br>解锁于 30% 游说过的屋子.
 		]]></tooltip>
 			<segment_names>
                 <name>Temp1</name>
@@ -2095,35 +2095,35 @@
 		<sell_artifact>
 			<label>出售古董</label>
 			<tooltip><![CDATA[
-			把你在奥林匹斯山上发现的古董以无价之宝的形式卖出去.<br>消耗一个古董.<br>获得 50 金块.<br>Unlocked at 20% of city toured.
+			把你在奥林匹斯山上发现的古董以无价之宝的形式卖出去.<br>消耗一个古董.<br>获得 50 金块.<br>解锁于 20% 游览路线探索度.
 		]]></tooltip>
             <!--TODO: give this action story-->
 		</sell_artifact>
 		<gift_artifact>
 			<label>捐赠古董</label>
 			<tooltip><![CDATA[
-			向英雄博物馆捐赠一个古董. 这很好 - 高尚的行为会为你赢得更多的尊重.<br>消耗一个古董.<br>奖励一点支持度.<br>Unlocked at 20% of city toured.
+			向英雄博物馆捐赠一个古董. 这很好 - 高尚的行为会为你赢得更多的尊重.<br>消耗一个古董.<br>奖励一点支持度.<br>解锁于 20% 游览路线探索度.
 		]]></tooltip>
             <!--TODO: give this action story-->
 		</gift_artifact>
         <mercantilism>
             <label>重商主义</label>
             <tooltip><![CDATA[
-            练习你的商业技巧, 你发现你和法力商人的交易仿佛在做慈善.<br>消耗 1 声望.<br>需要良好的声望.<br>Unlocked at 30% of city toured.
+            练习你的商业技巧, 你发现你和法力商人的交易仿佛在做慈善.<br>消耗 1 声望.<br>需要良好的声望.<br>解锁于 30% 游览路线探索度.
         ]]></tooltip>
             <!--TODO: give this action story-->
         </mercantilism>
         <charm_school>
             <label>礼仪学校</label>
             <tooltip><![CDATA[
-            学会让人们热爱你!<br>给予 4x 能力/天赋经验, 每次循环只能进行 <div id='trainingLimitCha'></div> 次.<br>Unlocked at 30% of city toured.
+            学会让人们热爱你!<br>给予 4x 能力/天赋经验, 每次循环只能进行 <div id='trainingLimitCha'></div> 次.<br>解锁于 30% 游览路线探索度.
         ]]></tooltip>
             <!--TODO: give this action story-->
         </charm_school>
 		<enchant_armor>
 			<label>附魔护甲</label>
 			<tooltip><![CDATA[
-			托关系拜托神圣铁匠帮你的护甲附魔.<br>消耗一个支持度和一个护甲.<br>获得一个附魔护甲.<br>附魔护甲的效果是普通护甲的三倍.<br>Unlocked at 40% of city toured.
+			托关系拜托神圣铁匠帮你的护甲附魔.<br>消耗一个支持度和一个护甲.<br>获得一个附魔护甲.<br>附魔护甲的效果是普通护甲的三倍.<br>解锁于 40% 游览路线探索度.
 		]]></tooltip>
             <!--TODO: give this action story-->
 		</enchant_armor>
@@ -2131,14 +2131,14 @@
             <label>巫师学院</label>
             <label_done>Spontaneously Combusted From Wonder</label_done>
             <tooltip><![CDATA[
-            巫师学院是全世界最好的学院, 幸运的是你获得了入学的机会. 尽管, 这将花费你一大笔学费.<br>完成测试以获得一个等级!<br>一次循环只能进行 1 次巫师学院行动.<br>消耗 500 金块和 10 支持度.<br>每点法力给予 (所有的魔法等级) * (1 + 主能力 / 100) * 开方(1 + 完成次数 / 1000) * (初始法力消耗 / 实际法力消耗) 进度点.<br>Unlocked at 60% of city toured.
+            巫师学院是全世界最好的学院, 幸运的是你获得了入学的机会. 尽管, 这将花费你一大笔学费.<br>完成测试以获得一个等级!<br>一次循环只能进行 1 次巫师学院行动.<br>消耗 500 金块和 10 支持度.<br>每点法力给予 (所有的魔法等级) * (1 + 主能力 / 100) * 开方(1 + 完成次数 / 1000) * (初始法力消耗 / 实际法力消耗) 进度点.<br>解锁于 60% 游览路线探索度.
         ]]></tooltip>
             <!--TODO: give this action story-->
         </wizard_college>
         <restoration>
             <label>恢复魔法</label>
             <tooltip><![CDATA[
-            你竟然没有学过怎么用魔法治疗, 哪怕只是治疗你自己. 你得赶紧来学学了.<br>根据巫师学院等级降低法力消耗.<br>Unlocked at 60% of city toured.
+            你竟然没有学过怎么用魔法治疗, 哪怕只是治疗你自己. 你得赶紧来学学了.<br>根据巫师学院等级降低法力消耗.<br>解锁于 60% 游览路线探索度.
         ]]></tooltip>
             <!--TODO: give this action story-->
         </restoration>
@@ -2146,7 +2146,7 @@
             <label>空间魔法</label>
             <tooltip><![CDATA[
             了解如何控制空间和物质. 对大范围施展是 <i>非常困难</i> 的, 但是也许可以在循环中对一些小东西用.
-            <br>根据巫师学院等级降低法力消耗.<br>Unlocked at 60% of city toured.
+            <br>根据巫师学院等级降低法力消耗.<br>解锁于 60% 游览路线探索度.
         ]]></tooltip>
             <!--TODO: give this action story-->
         </spatiomancy>
@@ -2154,7 +2154,7 @@
             <label>寻求公民身份</label>
 			<label_done>入籍考试进度</label_done>
             <tooltip><![CDATA[
-            现在, 你只是个游客.  如果你想真正加入他们的行列, 你得学习并通过瓦尔哈拉的历史与文化测试.<br>Unlocked at 80% of city toured.
+            现在, 你只是个游客.  如果你想真正加入他们的行列, 你得学习并通过瓦尔哈拉的历史与文化测试.<br>解锁于 80% 游览路线探索度.
         ]]></tooltip>
             <!--TODO: give this action story-->
         </seek_citizenship>
@@ -2175,14 +2175,14 @@
         <oracle>
             <label>神谕</label>
             <tooltip><![CDATA[
-            仔细观察未来以获得更多的财富!<br>给予 4x 能力/天赋经验, 每次循环只能进行 <div id='trainingLimitLuck'></div> 次.<br>Unlocked at 40% of city toured.
+            仔细观察未来以获得更多的财富!<br>给予 4x 能力/天赋经验, 每次循环只能进行 <div id='trainingLimitLuck'></div> 次.<br>解锁于 40% 游览路线探索度.
         ]]></tooltip>
             <!--TODO: give this action story-->
         </oracle>
 		<pegasus>
 			<label>飞马</label>
 			<tooltip><![CDATA[
-			瓦尔哈拉有很多神奇的东西. 其中就包括了帕加索斯; 就像神话中的飞马, 只有最优秀的公民可以获得. 如果你想得到一匹, 你需要根据当地人的指引前往一个广场, 然后证明自己. 飞马能翱翔在天空也能在陆地上飞奔, 想要拥有这样的生物可不仅仅需要黄金.<br>允许进行特殊的战斗.<br>消耗 200 金块和 20 支持度.<br>Unlocked at 90% of city toured.
+			瓦尔哈拉有很多神奇的东西. 其中就包括了帕加索斯; 就像神话中的飞马, 只有最优秀的公民可以获得. 如果你想得到一匹, 你需要根据当地人的指引前往一个广场, 然后证明自己. 飞马能翱翔在天空也能在陆地上飞奔, 想要拥有这样的生物可不仅仅需要黄金.<br>允许进行特殊的战斗.<br>消耗 200 金块和 20 支持度.<br>解锁于 90% 游览路线探索度.
 		]]></tooltip>
             <!--TODO: give this action story-->
 		</pegasus>
@@ -2211,7 +2211,7 @@
 
         ]]></tooltip>
             <tooltip2><![CDATA[
-             灵魂石.<br>Unlocked at 100% of city toured.
+             灵魂石.<br>解锁于 100% of 游览路线探索度.
         ]]></tooltip2>
             <segment_names>
                 <name>开始点菜</name>
