@@ -6,6 +6,13 @@
                 <title>更新日志</title>
                 <version_prefix>版本</version_prefix>
             </meta>
+            <version verNum="2.5"><![CDATA[
+            <b> July 19th, 2022</b>
+            • New Option: Stat Colors - Changes stat menu bars to be the same colors used in multipart action bars<br>
+            • Removed Simple Tooltips Option - It was extra work to maintain on every update / change<br>
+            • Bugfix: DR was not properly increasing zombie strength<br>
+            • Balance: Added great feast's bonus to team members and zombies to bring team combat better in line with self combat (this seemed more interesting than just adding a flat x5, but may be changed later)
+            ]]></version>
             <version verNum="2.4"><![CDATA[
             <b> July 20th, 2022</b>
             • 平衡: 团队战斗力加强! 恢复魔法现在对团队战斗力的效果 4x 而不是 2x <br>
@@ -297,6 +304,7 @@
             </discord>
             <adblock_warning>警告: 由于一些原因, Adblock Plus可能导致严重卡顿. 这个游戏并没有广告, 所以如果你的游戏经常卡死, 请把它关掉.
             </adblock_warning>
+            <stat_colors>Use stat colors on menu (requires save and refresh)</stat_colors>
             <auto_max_training>最大化所有训练行动</auto_max_training>
             <hotkeys>快捷键</hotkeys>
             <hotkeys_tooltip><![CDATA[
@@ -748,7 +756,7 @@
          <great_feast>
             <label>盛宴</label>
             <desc><![CDATA[丰盛的盛宴使你整个循环都不会感到饥饿! 真是让人印象深刻的魔法.<br>
-            每级使个人战斗力提高 5% . (向下取整)]]>
+            每级使个人和团队战斗力提高 5% . (向下取整)]]>
             </desc>
         </great_feast>
         <aspirant>
@@ -2206,7 +2214,7 @@
             <label_done>完成</label_done>
             <tooltip><![CDATA[
             你意识到你已经忘记了食物的乐趣, 你已经非常 "长时间" 没有吃东西了. 是时候来一场盛大的盛宴了. 不幸的是, 这里的所有餐饮都只支持灵魂石支付.<br>
-           永久增加自身战斗力.<br>
+           永久增加自身和团队战斗力.<br>
             每点法力给予 (实用魔法) * (1 + 主能力 / 100) * (初始法力消耗 / 实际法力消耗) 进度点.<br>每次循环只能进行 1 次盛宴行动.<br>需要至少 100 声望.<br>献祭 (5,000 * (盛宴+1)) 灵魂石. 当前献祭 
 
         ]]></tooltip>

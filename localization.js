@@ -5,8 +5,7 @@ window.Localization = {
     defaultLang: "zh-CHS",
     supportedLang: {
         "zh-CHS": "简体中文",
-        "en-EN": "English (高级提示)",
-        "en-EN-Simple": "English (简单提示)"
+        "en-EN": "English",
         //"fr-FR": "Français",
     },
     // key used in the get parameter of the URL to set a specific language
