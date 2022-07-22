@@ -8,10 +8,10 @@
             </meta>
             <version verNum="2.5"><![CDATA[
             <b> July 19th, 2022</b>
-            • New Option: Stat Colors - Changes stat menu bars to be the same colors used in multipart action bars<br>
-            • Removed Simple Tooltips Option - It was extra work to maintain on every update / change<br>
-            • Bugfix: DR was not properly increasing zombie strength<br>
-            • Balance: Added great feast's bonus to team members and zombies to bring team combat better in line with self combat (this seemed more interesting than just adding a flat x5, but may be changed later)
+            • 新菜单: 能力颜色 - 你可以更改能力的进度条颜色使其与右边进度条颜色相同<br>
+            • 移除简易提示 - 每次更新的工作量太大了<br>
+            • Bug修复: 黑暗仪式没有正确增加僵尸属性<br>
+            • 平衡: 盛宴现在对团队战斗力有效, 同样也会加成僵尸战斗力 (我觉得这比直接变成 x5 更好, 但是也许之后还会改)
             ]]></version>
             <version verNum="2.4"><![CDATA[
             <b> July 20th, 2022</b>
@@ -304,7 +304,7 @@
             </discord>
             <adblock_warning>警告: 由于一些原因, Adblock Plus可能导致严重卡顿. 这个游戏并没有广告, 所以如果你的游戏经常卡死, 请把它关掉.
             </adblock_warning>
-            <stat_colors>Use stat colors on menu (requires save and refresh)</stat_colors>
+            <stat_colors>改变能力颜色 (保存后刷新生效)</stat_colors>
             <auto_max_training>最大化所有训练行动</auto_max_training>
             <hotkeys>快捷键</hotkeys>
             <hotkeys_tooltip><![CDATA[
@@ -330,7 +330,7 @@
                 <title>挑战</title>
             </meta>
             <mana_drought>新手村的法力商人只出售 5k 法力, 并且价格翻倍. 没有其他法力商人.</mana_drought>
-            <noodle_arms>You have no base Self-Combat ability. All combat is based on followers. Self combat is half of your team member or zombie strength (whichever is higher).</noodle_arms>
+            <noodle_arms>你没有个人战斗力. 所有战斗力都得依靠队友. 个人战斗力等于你队友和僵尸中更高的那个的一半.</noodle_arms>
         </challenges>
     </menu>
     <tutorial><![CDATA[
