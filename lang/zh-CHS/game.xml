@@ -1362,35 +1362,35 @@
                 <name>Boss</name>
                 <name>奖励</name>
             </segment_names>
-            <story_1><![CDATA[<b>Small dungeon attempted:</b>⮀ The cavernous entrance to the villages dungeon greets you. It's dark and looming, with rocks forming jagged fangs. It's the most imposing thing you've found in this town so far.]]></story_1>
-            <story_2><![CDATA[<b>1,000 Dungeon floors looted:</b>⮀ You know your way around the dungeon like no one else, almost as if you've explored every nook and cranny. You have.]]></story_2>
-            <story_3><![CDATA[<b>5,000 Dungeon floors looted:</b>⮀ The dungeon poses less and less of a threat to you each time you conquer it, the soulstones growing your power by small amounts now that you've accumulated so many of them.]]></story_3>
-            <story_4><![CDATA[<b>10,000 Dungeon floors looted:</b>⮀ The dungeon is a joke to you, if you could teleport you'd simply jump straight to them, the dungeon in your mind has been reduced to how short it is to get from one soulstone to the next. If you have to destroy a couple walls, so be it.]]></story_4>
-            <story_5><![CDATA[<b>6 Floors cleared in a loop:</b>⮀ You reach the actual end of the dungeon, the dungeon core glows an angry red as if irritated that you're at this floor at all. Regardless, you take your soulstone and leave, the dungeon core's red glow following you the whole time.]]></story_5>
+            <story_1><![CDATA[<b>小型地牢击破:</b>⮀ 你来到了村子的地牢入口. 这里很黑, 岩锥像犬牙一样交错着. 这也许是镇子里你找到的最重要的东西了.]]></story_1>
+            <story_2><![CDATA[<b>1,000 楼层已收获:</b>⮀ 你比周围所有人都了解这个地牢, 就好像你早已探索过这个地牢的每个角落. 你确实是.]]></story_2>
+            <story_3><![CDATA[<b>5,000 楼层已收获:</b>⮀ 地牢已经没有什么能使你惊讶了, 灵魂石现在对你的加成微乎其微.]]></story_3>
+            <story_4><![CDATA[<b>10,000 楼层已收获:</b>⮀ 清理地牢就像娱乐, 假如你能传送你肯定能准确传送到终点, 你脑子里可以清晰的看见与地牢核心之间的那条直线. 只要你拆掉几堵墙, 就能直达.]]></story_4>
+            <story_5><![CDATA[<b>一次循环完成 6 楼层:</b>⮀ 你抵达了地牢真正的终点, 地牢核心散发着红光, 仿佛对你的到来感到愤怒. 你毫不在乎, 只是拿着灵魂石在红光环绕中默默离开.]]></story_5>
         </small_dungeon>
         <buy_supplies>
             <label>购买补给</label>
             <tooltip><![CDATA[
             是时候为出发做准备了.<br>消耗 <div id='suppliesCost'></div> 金块.<br>你只需要一份补给.
         ]]></tooltip>
-            <story_1><![CDATA[<b>Supplies bought:</b>⮀ A tent, enough rations to last for a month, portable cooking equipment and other assorted paraphernalia for your trip. The tent is durable and the rations don't taste bland and lifeless. It was probably worth the 300 gold asking price. Good thing you knew how to haggle.]]></story_1>
-            <story_2><![CDATA[<b>Supplies bought without haggling:</b>⮀ How luxurious! You had the gold to just throw it away now, even though the mana would've been more beneficial in the long run, not having to haggle once in awhile was surprisingly nice. Truly, you have grown luxuriant.]]></story_2>
+            <story_1><![CDATA[<b>购买补给:</b>⮀ 一顶帐篷, 一个月的口粮, 一整套厨具和其他旅行必需品. 帐篷很结实, 口粮也不难吃. 这确实值得 300 金块. 幸好你知道怎么讲价.]]></story_1>
+            <story_2><![CDATA[<b>不讲价购买补给:</b>⮀ 多么奢侈! 你钱多到可以扔着玩, 尽管金块用来购买法力在长期显然更划算, 但是不用讲价直接买真的很爽. 说真的, 你真有钱.]]></story_2>
         </buy_supplies>
         <haggle>
             <label>讲价</label>
             <tooltip><![CDATA[
             他们不太喜欢你这么做, 但是 - 你要离开了.<br>消耗 1 声望可以降低购买补给价格 20 . <br>解锁于 35 战斗和魔法技能总和.
         ]]></tooltip>
-            <story_1><![CDATA[<b>Haggle:</b>⮀ The shopkeep has some of the supplies you need, but they are of inferior quality and you're not paying his asking price for them, at least that's what you tell him. You argue, grumble, make sharp comments and are just in general unpleasant to one another.]]></story_1>
-            <story_2><![CDATA[<b>15 Haggles in a loop:</b>⮀ The shopkeep basically throws you out the store shouting and cursing vociferously at you. You ears ring slightly at the barrage.]]></story_2>
-            <story_3><![CDATA[<b>16 Haggles in a loop:</b>⮀ At this point, it served no purpose, you were doing this solely for the fun of it. No matter how much you haggled, the merchant wasn't going to pay you to take the supplies. That was just wishful thinking. Although, losing the reputation you had accrued could be useful in the long run...]]></story_3>
+            <story_1><![CDATA[<b>讲价:</b>⮀ 店主有一些你需要的商品, 但它们的质量并不高所以你觉得不值得原价买, 至少你是这么说的. 你争辩, 抱怨, 尖锐的批评弄得大家都不开心.]]></story_1>
+            <story_2><![CDATA[<b>一次循环进行 15 次讲价:</b>⮀ 店主大声咒骂你, 几乎把你从店里扔出去. 你的耳朵震得生疼.]]></story_2>
+            <story_3><![CDATA[<b>一次循环进行 16 次讲价:</b>⮀ 现在, 它没有效果, 你做这件事只是因为你高兴. 无论你怎么讲价, 店主都不会再让你拿走任何商品. 你只是一厢情愿. 不过, 降低声望也许在长循环中会有别的作用...]]></story_3>
         </haggle>
         <start_journey>
             <label>开始旅途</label>
             <tooltip><![CDATA[
             顺着小路前往下一个城镇. 你必须继续旅途直到你找到停下循环的方法.<br>消耗 1 补给. 完成一次就可以解锁森林小径的行动, 但你下次仍需完成它才能执行森林小径的行动.<br>解锁于 35 战斗和魔法技能总和.
         ]]></tooltip>
-            <story_1><![CDATA[<b>Traveled to the second zone:</b>⮀ You leave town, heading towards the forest that stood between the village and Merchanton. You had exhausted every option in Beginnersville and there was nothing here that would stop the loops, it was time to look for other areas and solutions.]]></story_1>
+            <story_1><![CDATA[<b>旅行到第二个区域:</b>⮀ 你离开村子, 走上了去往商业小镇的林间小路. 你找遍了整个新手村并确信这里没有能让你停下循环的东西, 是时候去其他地方找找别的办法了.]]></story_1>
         </start_journey>
         <hitch_ride>
             <label>搭便车</label>
@@ -1413,14 +1413,14 @@
             <tooltip><![CDATA[
             多棒的森林.<br>戴着眼镜可以获得 2x 进度.
         ]]></tooltip>
-            <story_1><![CDATA[<b>1% Forest explored:</b>⮀ You look at the side of the path from your little campsite, and are struck with a sense of wanderlust. You leave your camp to explore. Not too far from your campsite you find a tiny glade practically overflowing with mana.]]></story_1>
-            <story_2><![CDATA[<b>10% Forest explored:</b>⮀ The sense of wanderlust hasn't faded but you've definitely discovered the darker side of this forest. You continue to find tiny glades filled with mana throughout the forest.]]></story_2>
-            <story_3><![CDATA[<b>20% Forest explored:</b>⮀ You were exploring the forest when you found what looked like game trails but was actually a footpath worn into the ground, you decided to follow it.]]></story_3>
-            <story_4><![CDATA[<b>40% Forest explored:</b>⮀ You continue exploring the forest, and you've discovered something odd about it. One side of the main path is... calm you suppose, peaceful even. Welcoming. The other makes you feel ill at ease, as if there are unseen eyes constantly on you. One side is light and airy, the other dark and gloomy.]]></story_4>
-            <story_5><![CDATA[<b>50% Forest explored:</b>⮀ You found flowers in the forest, growing in the almost pitch black beneath the thick canopy on the gloomy side of the forest. Yet the flowers grow. There's a desire to follow them, almost as if they're saying, "Follow Me!"]]></story_5>
-            <story_6><![CDATA[<b>60% Forest explored:</b>⮀ You continue searching around the forest, finding tracks and trails, boltholes and hollowed out tree trunks. Life is abundant in this forest, and you're seeing that. On both sides.]]></story_6>
-            <story_7><![CDATA[<b>80% Forest explored:</b>⮀ You've managed to figure out where most of the herds in this forest are during your trip through, you've also stumbled across a fair amount of plants that produce mana, you wonder if they have a use.]]></story_7>
-            <story_8><![CDATA[<b>100% Forest explored:</b>⮀ You've done it, you find it impossible to get lost in the forest now, and your sense of wanderlust has faded. You've seen practically all you can in this forest. There were areas barred to you, and you found no way to enter them with a cursory examination.]]></story_8>
+            <story_1><![CDATA[<b>1% 森林探索度:</b>⮀ 你从帐篷里往外看, 你感到你似乎染上了旅行癖. 你离开帐篷开始探索. 没走多远你就发现了森林里充盈着的法力.]]></story_1>
+            <story_2><![CDATA[<b>10% 森林探索度:</b>⮀ 旅行癖虽然没有消退, 但你已经发现了森林的黑暗气息. 你继续探索森林的空旷地带寻找法力.]]></story_2>
+            <story_3><![CDATA[<b>20% 森林探索度:</b>⮀ 在探索森林时你发现了一条小路, 尽管它看上去已经很久没人走了, 你决定走上去看看.]]></story_3>
+            <story_4><![CDATA[<b>40% 森林探索度:</b>⮀ 你继续探索森林, 你找到了一些奇怪的东西. 路的其中一边... 让你感觉不舒服, 虽然很平静. 冷静下来. 令你感到不舒服的那边, 仿佛有很多双眼睛在盯着你. 一边明亮而清新, 另一边却黑暗又阴森.]]></story_4>
+            <story_5><![CDATA[<b>50% 森林探索度:</b>⮀ 你在森林里找到了花, 它们生长在浓密的树冠下, 几乎漆黑一片. 但花还是在长. 你很想跟上去看看, 它们好像在说, "跟我来!"]]></story_5>
+            <story_6><![CDATA[<b>60% 森林探索度:</b>⮀ 你继续探索森林, 搜索小路和足迹, 坑洞和树洞. 森林里有丰富的生物, 你随时都能看见. 两边都是.]]></story_6>
+            <story_7><![CDATA[<b>80% 森林探索度:</b>⮀ 你几乎找到了所有兽群的位置, 你还偶然发现了许多能产生法力的植物, 你在思考它们有什么用.]]></story_7>
+            <story_8><![CDATA[<b>100% 森林探索度:</b>⮀ 你成功了, 你现在不会在森林里迷路了, 你的旅游癖好像也治好了. 你看遍了森林的每个部分. 但有些区域你进不去, 你甚至找不到靠近看看的方法.]]></story_8>
         </explore_forest>
         <wild_mana>
             <label>野生法力</label>
@@ -1434,7 +1434,7 @@
             <tooltip2><![CDATA[
             法力.<br>每 10 个法力源有一个有法力的法力源.
         ]]></tooltip2>
-            <story_1><![CDATA[<b>Source checked for mana:</b>⮀ It's just sitting there, stray slightly from the beaten path and you find an abundance of mana just waiting for someone to take it, the only catch being you need to extract it from the plants surrounding it and they've proven slightly unwilling to part with it.]]></story_1>
+            <story_1><![CDATA[<b>有法力的法力源:</b>⮀ 它就在那里, 就在路边不远的地方默默的囤积着大量的法力等人获取, 唯一的难题在于周围遍布植物, 想过去得花些力气.]]></story_1>
         </wild_mana>
         <gather_herbs>
             <label>采集草药</label>
@@ -1445,7 +1445,7 @@
             <tooltip><![CDATA[
             不妨把所有看起来有用的植物都挖出来.<br>每 10 个植物里有一个有用.<br>解锁于 10% 森林探索度.
         ]]></tooltip>
-            <story_1><![CDATA[<b>Plant checked for use:</b>⮀ You pull up random plants across the forest that emanate mana only to find that in most cases, they're simply plants that have started gathering mana, but in some cases they're actually magical plants. Small distinction, but a significant one.]]></story_1>
+            <story_1><![CDATA[<b>有用的植物:</b>⮀ 你随便找了几棵植物, 它们大部分都没什么用, 只是单纯的在呼吸法力, 但有一些是真正的魔法植物. 外貌区别很小, 但用途区别巨大.]]></story_1>
         </gather_herbs>
         <hunt>
             <label>打猎</label>
