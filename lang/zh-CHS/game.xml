@@ -6,6 +6,16 @@
                 <title>更新日志</title>
                 <version_prefix>版本</version_prefix>
             </meta>
+            <version verNum="2.7"><![CDATA[
+            <b> July 20th, 2022</b>
+            • Survey Update! Survey is now completed using maps purchased in Beginnersville. Completed maps can be returned to the explorer's guild for extra progress in a random uncompleted area.<br>
+            • A few minor bugfixes
+            ]]></version>
+            <version verNum="2.6"><![CDATA[
+            <b> July 20th, 2022</b>
+            • Added Quick Travel Menu to better navigate all the zones<br>
+            • Dark Ritual now only shows speed increases for unlocked zones
+            ]]></version>
             <version verNum="2.5"><![CDATA[
             <b> July 19th, 2022</b>
             • 新菜单: 能力颜色 - 你可以更改能力的进度条颜色使其与右边进度条颜色相同<br>
@@ -429,6 +439,16 @@
             <desc>一群摇摇晃晃的尸体. 真恶心.</desc>
         </resource>
         <resource initially_hidden="true">
+            <title>Maps:</title>
+            <id>map</id>
+            <desc>A cartographer's kit that can be used to survey areas and discover new secrets.</desc>
+        </resource>
+        <resource initially_hidden="true">
+            <title>Finished Maps:</title>
+            <id>completedMap</id>
+            <desc>You've mapped out some more of the world. The Explorer's guild would happily trade you for this knowledge.</desc>
+        </resource>
+        <resource initially_hidden="true">
             <title>肉:</title>
             <id>meat</id>
             <desc>神的力量.</desc>
@@ -652,7 +672,7 @@
         <restoration>
             <label>恢复魔法</label>
             <desc>从小治疗术到复活术, 你肯定能用好它们.</desc>
-            <desc2><![CDATA[对团队战斗力有 2x 加成，并增强治病行动.]]></desc2>
+            <desc2><![CDATA[对团队战斗力有 4x 加成，并增强治病行动.]]></desc2>
         </restoration>
         <spatiomancy>
             <label>空间魔法</label>
@@ -729,17 +749,7 @@
         <dark_ritual>
             <label>黑暗仪式</label>
             <desc>女巫感谢你对黑暗魔法的贡献. 每级使黑暗魔法行动的黑暗魔法经验 +1% (向下取整) .</desc>
-            <desc2><![CDATA[<br>1-20 每级使新手村的行动速度提高 10% .<br>
-            21-40 每级使森林小径的行动速度提高 5% .<br>
-            41-60 每级使商业小镇的行动速度提高 2.5% .<br>
-            61-80 每级使奥林匹斯山的行动速度提高 1.5% .<br>
-            81-100 每级使瓦尔哈拉的行动速度提高 1.0% .<br>
-            101-150 每级使初始小镇的行动速度提高 0.5% .<br>
-            151-200 每级使丛林小路的行动速度提高 0.5% .<br>
-            201-250 每级使商业村庄的行动速度提高 0.5% .<br>
-            251-300 每级使山谷的行动速度提高 0.5% .<br>
-            301-666 每级使全局的行动速度提高 0.1% .<br>
-            ]]></desc2>
+            <desc2><![CDATA[<div id='DRText'></div>
         </dark_ritual>
         <imbue_mind>
             <label>精神灌注</label>
@@ -903,7 +913,8 @@
             <tooltip><![CDATA[
             探索者公会让你学到了许多非常容易错过的东西.<br>
             进度等于所有区域平均进度的平方根.<br>
-            每个循环只能完成 <div class='surveyLimit'>500</div> 次.<br>
+            Cannot re-survey completed zones.<br>
+            Requires a map for each action.<br>
             当前每次行动给予 <div class='surveySkill'></div> 经验.
             ]]></tooltip>
         </surveyZ0>
@@ -913,7 +924,8 @@
             <tooltip><![CDATA[
             探索者公会让你学到了许多非常容易错过的东西.<br>
             进度等于所有区域平均进度的平方根.<br>
-            每个循环只能完成 <div class='surveyLimit'>500</div> 次.<br>
+            Cannot re-survey completed zones.<br>
+            Requires a map for each action.<br>
             当前每次行动给予 <div class='surveySkill'></div> 经验.
             ]]></tooltip>
         </surveyZ1>
@@ -923,7 +935,8 @@
             <tooltip><![CDATA[
             探索者公会让你学到了许多非常容易错过的东西.<br>
             进度等于所有区域平均进度的平方根.<br>
-            每个循环只能完成 <div class='surveyLimit'>500</div> 次.<br>
+            Cannot re-survey completed zones.<br>
+            Requires a map for each action.<br>
             当前每次行动给予 <div class='surveySkill'></div> 经验.
             ]]></tooltip>
         </surveyZ2>
@@ -933,7 +946,8 @@
             <tooltip><![CDATA[
             探索者公会让你学到了许多非常容易错过的东西.<br>
             进度等于所有区域平均进度的平方根.<br>
-            每个循环只能完成 <div class='surveyLimit'>500</div> 次.<br>
+            Cannot re-survey completed zones.<br>
+            Requires a map for each action.<br>
             当前每次行动给予 <div class='surveySkill'></div> 经验.
             ]]></tooltip>
         </surveyZ3>
@@ -943,7 +957,8 @@
             <tooltip><![CDATA[
             探索者公会让你学到了许多非常容易错过的东西.<br>
             进度等于所有区域平均进度的平方根.<br>
-            每个循环只能完成 <div class='surveyLimit'>500</div> 次.<br>
+            Cannot re-survey completed zones.<br>
+            Requires a map for each action.<br>
             当前每次行动给予 <div class='surveySkill'></div> 经验.
             ]]></tooltip>
         </surveyZ4>
@@ -953,7 +968,8 @@
             <tooltip><![CDATA[
             探索者公会让你学到了许多非常容易错过的东西.<br>
             进度等于所有区域平均进度的平方根.<br>
-            每个循环只能完成 <div class='surveyLimit'>500</div> 次.<br>
+            Cannot re-survey completed zones.<br>
+            Requires a map for each action.<br>
             当前每次行动给予 <div class='surveySkill'></div> 经验.
             ]]></tooltip>
         </surveyZ5>
@@ -963,7 +979,8 @@
             <tooltip><![CDATA[
             探索者公会让你学到了许多非常容易错过的东西.<br>
             进度等于所有区域平均进度的平方根.<br>
-            每个循环只能完成 <div class='surveyLimit'>500</div> 次.<br>
+            Cannot re-survey completed zones.<br>
+            Requires a map for each action.<br>
             当前每次行动给予 <div class='surveySkill'></div> 经验.
             ]]></tooltip>
         </surveyZ6>
@@ -973,7 +990,8 @@
             <tooltip><![CDATA[
             探索者公会让你学到了许多非常容易错过的东西.<br>
             进度等于所有区域平均进度的平方根.<br>
-            每个循环只能完成 <div class='surveyLimit'>500</div> 次.<br>
+            Cannot re-survey completed zones.<br>
+            Requires a map for each action.<br>
             当前每次行动给予 <div class='surveySkill'></div> 经验.
             ]]></tooltip>
         </surveyZ7>
@@ -983,7 +1001,8 @@
             <tooltip><![CDATA[
             探索者公会让你学到了许多非常容易错过的东西.<br>
             进度等于所有区域平均进度的平方根.<br>
-            每个循环只能完成 <div class='surveyLimit'>500</div> 次.<br>
+            Cannot re-survey completed zones.<br>
+            Requires a map for each action.<br>
             当前每次行动给予 <div class='surveySkill'></div> 经验.
             ]]></tooltip>
         </surveyZ8>
@@ -1065,6 +1084,12 @@
         ]]></tooltip>
         </haulZ6>
         <!--town 1-->
+        <map>
+            <label>Purchase Map</label>
+            <tooltip><![CDATA[The explorer's guild has taught you how to use cartographer's kits to map where you're going. This will let you keep track of things better and find all sorts of new secrets.<br>
+            There's a shop here in Beginnersville that will sell them for just ]]></tooltip>
+            <tooltip2>gold each.</tooltip2>
+        </map>
         <wander>
             <label>漫步</label>
             <label_done>已探索</label_done>
@@ -2407,6 +2432,8 @@
             有没有觉得你好像错过了很多东西? 探索者公会知道它们! 学习并借此找到任何东西, 当你经过充分的学习你甚至可以用新的方式跨越区域.<br>
             每个循环只能加入 1 个公会 (包括商业小镇), 且只能尝试一次.<br>
             解锁一个勘测行动, 进度基于全局平均勘测度.<br>
+            If you bring completed maps, they'll trade 2x knowledge with you on areas you haven't surveyed.<br>
+            If you have no maps, they'll give you a few to help you get started.<br>
             每 25% 世界勘测度将提供一个新的捷径<br>
             当前世界勘测度: <div id='totalSurveyProgress'></div>%.
         ]]></tooltip>
