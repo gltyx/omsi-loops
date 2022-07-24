@@ -5088,6 +5088,8 @@ Action.FightJungleMonsters = new MultipartAction("Fight Jungle Monsters", {
         handleSkillExp(this.skills);
     },
     segmentFinished() {
+    },
+    segmentFinished() {
         curFightJungleMonstersSegment++;
         addResource("blood", 1);
         // Additional thing?
