@@ -119,7 +119,8 @@ function View() {
         updateTotalTicks: [],
         updateCurrentActionLoops: [],
         updateSoulstones: [],
-        updateResource: []
+        updateResource: [],
+        createTravelMenu: []
     };
 
     // requesting an update will call that update on the next view.update tick (based off player set UPS)

@@ -324,7 +324,7 @@ function unlockTown(townNum) {
         // refresh current
         view.showTown(townNum);
     }
-    view.createTravelMenu();
+    view.requestUpdate("createTravelMenu",null);
     curTown = townNum;
 }
 
