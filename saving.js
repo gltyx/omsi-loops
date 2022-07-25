@@ -57,7 +57,7 @@ function cheatSoulstone(stat, targetSS)
         for (const stat in stats)
             stats[stat].soulstone = targetSS;
     else stats[stat].soulstone = targetSS;
-    view.updateSoulstones();
+    view.requestUpdate("updateSoulstones", null);
 }
 
 
