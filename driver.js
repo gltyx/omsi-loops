@@ -143,7 +143,7 @@ function prepareRestart() {
         }
         if (curAction) {
             actions.completedTicks += actions.getNextValidAction().ticks;
-            view.updateTotalTicks();
+            view.requestUpdate("updateTotalTicks", null);
         }
         for (let i = 0; i < actions.current.length; i++) {
             view.updateCurrentActionBar(i);

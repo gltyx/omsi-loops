@@ -115,7 +115,9 @@ function View() {
         updateMultiPartActions: [],
         updateNextActions: [],
         updateTime: [],
-        updateCurrentActionBar: []
+        updateCurrentActionBar: [],
+        updateTotalTicks: [],
+        updateCurrentActionLoops: []
     };
 
     // requesting an update will call that update on the next view.update tick (based off player set UPS)

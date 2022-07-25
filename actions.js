@@ -50,7 +50,7 @@ function Actions() {
                     partUpdateRequired = true;
                     if (curAction.canStart && !curAction.canStart()) {
                         this.completedTicks += curAction.ticks;
-                        view.updateTotalTicks();
+                        view.requestUpdate("updateTotalTicks", null);
                         curAction.loopsLeft = 0;
                         curAction.ticks = 0;
                         curAction.manaRemaining = timeNeeded - timer;
@@ -86,7 +86,7 @@ function Actions() {
             curAction.goldRemaining = resources.gold;
 
             this.adjustTicksNeeded();
-            view.updateCurrentActionLoops(this.currentPos);
+            view.requestUpdate("updateCurrentActionLoops", this.currentPos);
         }
         view.requestUpdate("updateCurrentActionBar", this.currentPos);
         if (curAction.loopsLeft === 0) {
@@ -219,7 +219,7 @@ function Actions() {
             remainingTicks += action.loopsLeft * action.adjustedTicks;
         }
         this.totalNeeded = this.completedTicks + remainingTicks;
-        view.updateTotalTicks();
+        view.requestUpdate("updateTotalTicks", null);
     };
 
 
