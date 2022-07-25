@@ -224,7 +224,7 @@ AssassinAction.prototype.tickProgress = function(offset) {
     let loopStat = (1 + getLevel(this.loopStats[(towns[this.townNum][`${this.varName}LoopCounter`] + offset) % this.loopStats.length]) / 1000);
     let completions = Math.sqrt(1 + towns[this.townNum]["total"+this.varName] / 100);
     let reputationPenalty = resources.reputation != 0 ? Math.abs(resources.reputation) : 1;
-    let killStreak = resources.heart > 0 ? Math.pow(resources.heart, 2) : 1;
+    let killStreak = resources.heart > 0 ? resources.heart : 1;
     return baseSkill * loopStat * completions / reputationPenalty / killStreak;
 }
 AssassinAction.prototype.getPartName = function() {
@@ -235,7 +235,7 @@ AssassinAction.prototype.loopsFinished = function() {
     hearts.push(this.varName);
 }
 AssassinAction.prototype.finish = function() {
-    let rep = Math.min((this.townNum + 1) * -500 + getSkillLevel("Assassin"), 0);
+    let rep = Math.min((this.townNum + 1) * -250 + getSkillLevel("Assassin"), 0);
     addResource("reputation", rep);
 }
 AssassinAction.prototype.visible = function() {return getSkillLevel("Assassin") > 0;}
