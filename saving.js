@@ -638,7 +638,7 @@ function save() {
     toSave.storyShowing = storyShowing;
     toSave.storyMax = storyMax;
     toSave.storyReqs = storyReqs;
-    //toSave.buffCaps = buffCaps;
+    toSave.buffCaps = buffCaps;
 
     toSave.date = new Date();
     toSave.challenge = challenge;

@@ -1929,7 +1929,7 @@
 			<story_8><![CDATA[<b>100% Cavern Explored:</b>⮀ As you go down the last tunnel, you wonder what's causing all this heat. Maybe there's a giant lava pool just beneath your feet, heating the entire mountain. You reach the final dead-end, and the only thing your heat-baked mind can think of is that it doesn't look like you'll be getting an answer.]]></story_8>
         </explore_cavern>
         <mine_soulstones>
-            <label>Mine Soulstones</label>
+            <label>Mine Soulstone</label>
             <label_done>Shiny Spots Checked</label_done>
             <info_text1>Spots with soulstones left</info_text1>
             <info_text2>Spots with soulstones total</info_text2>
@@ -2150,7 +2150,7 @@
             <!--TODO: give this action story-->
         </spatiomancy>
         <seek_citizenship>
-            <label>Seek Citizenship</label>
+            <label>Citizenship</label>
 			<label_done>Citizenship Exam Studied</label_done>
             <tooltip><![CDATA[
             Right now, you're just visiting.  If you want to be accepted into their ranks for real, you'll need to study and pass a rigorous exam on Valhallan history and culture.<br>Unlocked at 80% of city toured.
@@ -2337,7 +2337,7 @@
         ]]></tooltip>
         </explore_jungle>
         <rescue_survivors>
-            <label>Rescue Survivors</label>
+            <label>Rescue Survivor</label>
             <label_done>Saved</label_done>
             <label_part>Survivor</label_part>
             <tooltip><![CDATA[
