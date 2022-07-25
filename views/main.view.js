@@ -952,8 +952,8 @@ function View() {
                         <div id='expBar${i}${varName}' class='segmentBar'></div>
                         <div class='showthis' id='tooltip${i}${varName}'>
                             <div id='segmentName${i}${varName}'></div><br>
-                            <div class='bold'>Main Stat</div> <div id='mainStat${i}${varName}'></div><br>
-                            <div class='bold'>Progress</div> <div id='progress${i}${varName}'></div> / <div id='progressNeeded${i}${varName}'></div>
+                            <div class='bold'>主能力</div> <div id='mainStat${i}${varName}'></div><br>
+                            <div class='bold'>进度</div> <div id='progress${i}${varName}'></div> / <div id='progressNeeded${i}${varName}'></div>
                         </div>
                     </div>`;
         }
