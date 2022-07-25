@@ -2726,10 +2726,10 @@ Action.CraftingGuild = new MultipartAction("Crafting Guild", {
         addResource("gold", 10);
     },
     getPartName() {
-        return `Rank ${getCraftGuildRank().name}`;
+        return `等级 ${getCraftGuildRank().name}`;
     },
     getSegmentName(segment) {
-        return `Rank ${getCraftGuildRank(segment % 3).name}`;
+        return `等级 ${getCraftGuildRank(segment % 3).name}`;
     },
     visible() {
         return towns[2].getLevel("Drunk") >= 5;
