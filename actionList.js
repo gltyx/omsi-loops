@@ -218,7 +218,7 @@ AssassinAction.prototype.constructor = AssassinAction;
 AssassinAction.prototype.manaCost = function() {return 50000;}
 AssassinAction.prototype.allowed = function() {return 1;}
 AssassinAction.prototype.canStart = function() {return towns[this.townNum][`${this.varName}LoopCounter`] === 0;}
-AssassinAction.prototype.loopCost = function(segment) {return 100000000 * (segment * 5 + 1);}
+AssassinAction.prototype.loopCost = function(segment) {return 50000000;}
 AssassinAction.prototype.tickProgress = function(offset) {
     let baseSkill = Math.sqrt(getSkillLevel("Practical")) + getSkillLevel("Thievery") + getSkillLevel("Assassin");
     let loopStat = (1 + getLevel(this.loopStats[(towns[this.townNum][`${this.varName}LoopCounter`] + offset) % this.loopStats.length]) / 1000);
@@ -228,14 +228,14 @@ AssassinAction.prototype.tickProgress = function(offset) {
     return baseSkill * loopStat * completions / reputationPenalty / killStreak;
 }
 AssassinAction.prototype.getPartName = function() {
-    return "Test";
+    return "Assassination";
 }
 AssassinAction.prototype.loopsFinished = function() {
     addResource("heart", 1);
     hearts.push(this.varName);
 }
 AssassinAction.prototype.finish = function() {
-    let rep = Math.min((this.townNum + 1) * -1000 + getSkillLevel("Assassin"), 0);
+    let rep = Math.min((this.townNum + 1) * -500 + getSkillLevel("Assassin"), 0);
     addResource("reputation", rep);
 }
 AssassinAction.prototype.visible = function() {return getSkillLevel("Assassin") > 0;}
