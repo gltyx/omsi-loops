@@ -113,7 +113,7 @@ function View() {
         updateBuff: [],
         updateTrialInfo: [],
         updateRegular: [],
-        updateProgress: [],
+        updateProgressAction: [],
         updateMultiPartSegments: [],
         updateMultiPart: [],
         updateMultiPartActions: [],

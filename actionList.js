@@ -635,8 +635,6 @@ Action.FoundGlasses = new Action("Found Glasses", {
         return false;
     },
     finish() {
-        addResource("glasses", true);
-        unlockStory("glassesBought");
     }
 });
 
