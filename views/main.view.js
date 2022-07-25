@@ -932,7 +932,7 @@ function View() {
                 <div id='good${action.varName}'>0</div> <i class='fa fa-arrow-left'></i>
                 <div id='unchecked${action.varName}'>0</div>
                 <input type='checkbox' id='searchToggler${action.varName}' style='margin-left:10px;'>
-                <label for='searchToggler${action.varName}'> Lootable first</label>
+                <label for='searchToggler${action.varName}'> 优先有奖励</label>
                 <div class='showthis'>${action.infoText()}</div>
             </div><br>`;
 
