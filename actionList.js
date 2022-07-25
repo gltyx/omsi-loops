@@ -1263,7 +1263,7 @@ function finishDungeon(dungeonNum, floorNum) {
         floor.lastStat = statToAdd;
         stats[statToAdd].soulstone = stats[statToAdd].soulstone ? (stats[statToAdd].soulstone + Math.floor(Math.pow(10, dungeonNum) * getSkillBonus("Divine"))) : 1;
         floor.ssChance *= 0.98;
-        view.updateSoulstones();
+        view.requestUpdate("updateSoulstones",null);
         return true;
     }
     return false;
@@ -1354,7 +1354,7 @@ Action.Haggle = new Action("Haggle", {
         if (towns[0].suppliesCost < 0) {
             towns[0].suppliesCost = 0;
         }
-        view.updateResource("supplies");
+        view.requestUpdate("updateResource", "supplies");
         unlockStory("haggle");
     },
 });
@@ -2207,7 +2207,7 @@ Action.DarkRitual = new MultipartAction("Dark Ritual", {
     loopsFinished() {
         sacrificeSoulstones(this.goldCost());
         addBuffAmt("Ritual", 1);
-        view.updateSoulstones();
+        view.requestUpdate("updateSoulstones", null);
         view.adjustGoldCost("DarkRitual", this.goldCost());
     },
     getPartName() {
@@ -3573,7 +3573,7 @@ Action.MineSoulstones = new Action("Mine Soulstones", {
         towns[3].finishRegular(this.varName, 10, () => {
             const statToAdd = statList[Math.floor(Math.random() * statList.length)];
             stats[statToAdd].soulstone +=  Math.floor(getSkillBonus("Divine"));
-            view.updateSoulstones();
+            view.requestUpdate("updateSoulstones", null);
         });
     },
 });
@@ -3762,7 +3762,7 @@ Action.ImbueMind = new MultipartAction("Imbue Mind", {
         sacrificeSoulstones(this.goldCost());
         trainingLimits++;
         addBuffAmt("Imbuement", 1);
-        view.updateSoulstones();
+        view.requestUpdate("updateSoulstones", null);
         view.adjustGoldCost("ImbueMind", this.goldCost());
     },
     getPartName() {
@@ -4604,7 +4604,7 @@ Action.GreatFeast = new MultipartAction("Great Feast", {
     loopsFinished() {
         sacrificeSoulstones(this.goldCost());
         addBuffAmt("Feast", 1);
-        view.updateSoulstones();
+        view.requestUpdate("updateSoulstones", null);
         view.adjustGoldCost("GreatFeast", this.goldCost());
     },
     getPartName() {
@@ -4779,7 +4779,7 @@ Action.FallFromGrace = new Action("Fall From Grace", {
     },
     finish() {
         if (resources.reputation >= 0) resources.reputation = -1;
-        view.updateResource('reputation');
+        view.requestUpdate("updateResource", 'reputation');
         unlockStory("fellFromGrace");
         unlockTown(5);
     },
@@ -6011,7 +6011,7 @@ Action.ImbueSoul = new MultipartAction("Imbue Soul", {
         addBuffAmt("Imbuement3", 1);
         view.updateBuffs();
         view.updateStats();
-        view.updateSoulstones();
+        view.requestUpdate("updateSoulstones", null);
     },
     getPartName() {
         return "Imbue Soul";

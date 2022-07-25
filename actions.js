@@ -142,7 +142,7 @@ function Actions() {
         this.completedTicks = 0;
         curTown = 0;
         towns[0].suppliesCost = 300;
-        view.updateResource("supplies");
+        view.requestUpdate("updateResource","supplies");
         curAdvGuildSegment = 0;
         curCraftGuildSegment = 0;
 		curWizCollegeSegment = 0;

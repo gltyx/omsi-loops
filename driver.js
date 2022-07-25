@@ -233,14 +233,14 @@ function addMana(amount) {
 function addResource(resource, amount) {
     if (Number.isFinite(amount)) resources[resource] += amount;
     else resources[resource] = amount;
-    view.updateResource(resource);
+    view.requestUpdate("updateResource", resource);
 
-    if (resource === "teamMembers" || resource === "armor" || resource === "zombie") view.updateTeamCombat();
+    if (resource === "teamMembers" || resource === "armor" || resource === "zombie") view.requestUpdate("updateTeamCombat",null);
 }
 
 function resetResource(resource) {
     resources[resource] = resourcesTemplate[resource];
-    view.updateResource(resource);
+    view.requestUpdate("updateResource", resource);
 }
 
 function resetResources() {
@@ -345,7 +345,7 @@ function unlockTown(townNum) {
         // refresh current
         view.showTown(townNum);
     }
-    view.createTravelMenu();
+    view.requestUpdate("createTravelMenu",null);
     curTown = townNum;
 }
 
