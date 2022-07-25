@@ -2506,10 +2506,10 @@ Action.AdventureGuild = new MultipartAction("Adventure Guild", {
         addMana(200);
     },
     getPartName() {
-        return `Rank ${getAdvGuildRank().name}`;
+        return `等级 ${getAdvGuildRank().name}`;
     },
     getSegmentName(segment) {
-        return `Rank ${getAdvGuildRank(segment % 3).name}`;
+        return `等级 ${getAdvGuildRank(segment % 3).name}`;
     },
     visible() {
         return towns[2].getLevel("Drunk") >= 5;
@@ -2537,7 +2537,7 @@ function getAdvGuildRank(offset) {
         name = "Godlike";
         bonus = 10;
     }
-    name += `, Mult x${bonus}`;
+    name += `, 倍率 x${bonus}`;
     return { name, bonus };
 }
 
@@ -2757,7 +2757,7 @@ function getCraftGuildRank(offset) {
         name = "Godlike";
         bonus = 10;
     }
-    name += `, Mult x${bonus}`;
+    name += `, 倍率 x${bonus}`;
     return { name, bonus };
 }
 
@@ -4308,7 +4308,7 @@ function getWizCollegeRank(offset) {
         name = "Merlin";
         bonus = 5;
     }
-    name += `, Mult x${bonus}`;
+    name += `, 倍率 x${bonus}`;
     return { name, bonus };
 }
 
@@ -4636,7 +4636,7 @@ function getFrostGiantsRank(offset) {
         name = "Admiral";
         bonus = 10;
     }
-    name += `, Mult x${bonus}`;
+    name += `, 倍率 x${bonus}`;
     return { name, bonus };
 }
 
@@ -5142,7 +5142,7 @@ function getFightJungleMonstersRank(offset) {
         name = "Stampede";
         bonus = 10;
     }
-    name += `, Mult x${bonus}`;
+    name += `, 倍率 x${bonus}`;
     return { name, bonus };
 }
 
@@ -5509,7 +5509,7 @@ function getThievesGuildRank(offset) {
         name = "Godlike";
         bonus = 10;
     }
-    name += `, Mult x${bonus}`;
+    name += `, 倍率 x${bonus}`;
     return { name, bonus };
 }
 
