@@ -4549,7 +4549,7 @@ Action.Pegasus = new Action("Pegasus", {
         Soul: 0.3,
         Cha: 0.2,
         Luck: 0.2,
-        int: 0.2
+        Int: 0.2
     },
     allowed() {
         return 1;
