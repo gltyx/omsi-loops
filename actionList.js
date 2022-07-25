@@ -202,7 +202,7 @@ TrialAction.prototype.loopsFinished = function() {
     //console.log("Finished floor: " + finishedFloor + " Current Floor: " + this.currentFloor());
     trials[this.trialNum][finishedFloor].completed++;
     if (finishedFloor > trials[this.trialNum].highestFloor || trials[this.trialNum].highestFloor === undefined) trials[this.trialNum].highestFloor = finishedFloor;
-    view.updateTrialInfo(this.trialNum, this.currentFloor());
+    view.requestUpdate("updateTrialInfo", {trialNum: this.trialNum, curFloor: this.currentFloor()});
     this.floorReward();
 }
 
@@ -1263,7 +1263,7 @@ function finishDungeon(dungeonNum, floorNum) {
         floor.lastStat = statToAdd;
         stats[statToAdd].soulstone = stats[statToAdd].soulstone ? (stats[statToAdd].soulstone + Math.floor(Math.pow(10, dungeonNum) * getSkillBonus("Divine"))) : 1;
         floor.ssChance *= 0.98;
-        view.updateSoulstones();
+        view.requestUpdate("updateSoulstones",null);
         return true;
     }
     return false;
@@ -1354,7 +1354,7 @@ Action.Haggle = new Action("Haggle", {
         if (towns[0].suppliesCost < 0) {
             towns[0].suppliesCost = 0;
         }
-        view.updateResource("supplies");
+        view.requestUpdate("updateResource", "supplies");
         unlockStory("haggle");
     },
 });
@@ -1710,7 +1710,7 @@ Action.OldShortcut = new Action("Old Shortcut", {
     },
     finish() {
         towns[1].finishProgress(this.varName, 100);
-        view.adjustManaCost("Continue On");
+        view.requestUpdate("adjustManaCost", "Continue On");
     },
 });
 
@@ -1754,9 +1754,9 @@ Action.TalkToHermit = new Action("Talk To Hermit", {
     },
     finish() {
         towns[1].finishProgress(this.varName, 50 * (1 + towns[1].getLevel("Shortcut") / 100));
-        view.adjustManaCost("Learn Alchemy");
-        view.adjustManaCost("Gather Herbs");
-        view.adjustManaCost("Practical Magic");
+        view.requestUpdate("adjustManaCost", "Learn Alchemy");
+        view.requestUpdate("adjustManaCost", "Gather Herbs");
+        view.requestUpdate("adjustManaCost", "Practical Magic");
     },
 });
 
@@ -1790,8 +1790,8 @@ Action.PracticalMagic = new Action("Practical Magic", {
     },
     finish() {
         handleSkillExp(this.skills);
-        view.adjustManaCost("Wild Mana");
-        view.adjustManaCost("Smash Pots");
+        view.requestUpdate("adjustManaCost", "Wild Mana");
+        view.requestUpdate("adjustManaCost", "Smash Pots");
         view.adjustGoldCosts();
     },
 });
@@ -1837,7 +1837,7 @@ Action.LearnAlchemy = new Action("Learn Alchemy", {
     },
     finish() {
         handleSkillExp(this.skills);
-        view.adjustExpGain(Action.MageLessons);
+        view.requestUpdate("adjustExpGain", Action.MageLessons);
     },
 });
 
@@ -2118,8 +2118,8 @@ Action.TalkToWitch = new Action("Talk To Witch", {
     },
     finish() {
         towns[1].finishProgress(this.varName, 100);
-        view.adjustManaCost("Dark Magic");
-        view.adjustManaCost("Dark Ritual");
+        view.requestUpdate("adjustManaCost", "Dark Magic");
+        view.requestUpdate("adjustManaCost", "Dark Ritual");
     },
 });
 
@@ -2165,8 +2165,8 @@ Action.DarkMagic = new Action("Dark Magic", {
     },
     finish() {
         handleSkillExp(this.skills);
-        view.adjustGoldCost("Pots", Action.SmashPots.goldCost());
-        view.adjustGoldCost("WildMana", Action.WildMana.goldCost());
+        view.requestUpdate("adjustGoldCost", {varName: "Pots", cost: Action.SmashPots.goldCost()});
+        view.requestUpdate("adjustGoldCost", {varName: "WildMana", cost: Action.WildMana.goldCost()});
     },
 });
 
@@ -2207,8 +2207,8 @@ Action.DarkRitual = new MultipartAction("Dark Ritual", {
     loopsFinished() {
         sacrificeSoulstones(this.goldCost());
         addBuffAmt("Ritual", 1);
-        view.updateSoulstones();
-        view.adjustGoldCost("DarkRitual", this.goldCost());
+        view.requestUpdate("updateSoulstones", null);
+        view.requestUpdate("adjustGoldCost", {varName: "DarkRitual", cost: this.goldCost()});
     },
     getPartName() {
         return "Perform Dark Ritual";
@@ -2223,8 +2223,8 @@ Action.DarkRitual = new MultipartAction("Dark Ritual", {
         return Math.ceil(50 * (getBuffLevel("Ritual") + 1) * getSkillBonus("Commune"));
     },
     finish() {
-        view.updateBuff("Ritual");
-        view.adjustExpGain(Action.DarkMagic);
+        view.requestUpdate("updateBuff", "Ritual");
+        view.requestUpdate("adjustExpGain", Action.DarkMagic);
         if (towns[1].DarkRitualLoopCounter >= 0) unlockStory("darkRitualThirdSegmentReached");
     },
 });
@@ -2930,7 +2930,7 @@ Action.Apprentice = new Action("Apprentice", {
     finish() {
         towns[2].finishProgress(this.varName, 30 * getCraftGuildRank().bonus);
         handleSkillExp(this.skills);
-        view.adjustExpGain(Action.Apprentice);
+        view.requestUpdate("adjustExpGain", Action.Apprentice);
     },
 });
 
@@ -2983,7 +2983,7 @@ Action.Mason = new Action("Mason", {
     finish() {
         towns[2].finishProgress(this.varName, 20 * getCraftGuildRank().bonus);
         handleSkillExp(this.skills);
-        view.adjustExpGain(Action.Mason);
+        view.requestUpdate("adjustExpGain", Action.Mason);
     },
 });
 
@@ -3036,7 +3036,7 @@ Action.Architect = new Action("Architect", {
     finish() {
         towns[2].finishProgress(this.varName, 10 * getCraftGuildRank().bonus);
         handleSkillExp(this.skills);
-        view.adjustExpGain(Action.Architect);
+        view.requestUpdate("adjustExpGain", Action.Architect);
     },
 });
 
@@ -3161,8 +3161,7 @@ Action.HeroesTrial = new TrialAction("Heroes Trial", 0, {
     },
     finish() {
         handleSkillExp(this.skills);
-        view.updateBuff("Heroism");
-        view.updateSkills();
+        view.requestUpdate("updateBuff", "Heroism");
     },
 });
 
@@ -3369,8 +3368,8 @@ Action.DecipherRunes = new Action("Decipher Runes", {
     },
     finish() {
         towns[3].finishProgress(this.varName, 100 * (resources.glasses ? 2 : 1));
-        view.adjustManaCost("Chronomancy");
-        view.adjustManaCost("Pyromancy");
+        view.requestUpdate("adjustManaCost", "Chronomancy");
+        view.requestUpdate("adjustManaCost", "Pyromancy");
     },
 });
 
@@ -3573,7 +3572,7 @@ Action.MineSoulstones = new Action("Mine Soulstones", {
         towns[3].finishRegular(this.varName, 10, () => {
             const statToAdd = statList[Math.floor(Math.random() * statList.length)];
             stats[statToAdd].soulstone +=  Math.floor(getSkillBonus("Divine"));
-            view.updateSoulstones();
+            view.requestUpdate("updateSoulstones", null);
         });
     },
 });
@@ -3762,8 +3761,8 @@ Action.ImbueMind = new MultipartAction("Imbue Mind", {
         sacrificeSoulstones(this.goldCost());
         trainingLimits++;
         addBuffAmt("Imbuement", 1);
-        view.updateSoulstones();
-        view.adjustGoldCost("ImbueMind", this.goldCost());
+        view.requestUpdate("updateSoulstones", null);
+        view.requestUpdate("adjustGoldCost", {varName: "ImbueMind", cost: this.goldCost()});
     },
     getPartName() {
         return "Imbue Mind";
@@ -3778,7 +3777,7 @@ Action.ImbueMind = new MultipartAction("Imbue Mind", {
         return 20 * (getBuffLevel("Imbuement") + 1);
     },
     finish() {
-        view.updateBuff("Imbuement");
+        view.requestUpdate("updateBuff", "Imbuement");
         if (options.autoMaxTraining) capAllTraining();
         if (towns[3].ImbueMindLoopCounter >= 0) unlockStory("imbueMindThirdSegmentReached");
     },
@@ -3820,7 +3819,7 @@ Action.ImbueBody = new MultipartAction("Imbue Body", {
         }
         view.updateStats();
         addBuffAmt("Imbuement2", 1);
-        view.adjustGoldCost("ImbueBody", this.goldCost());
+        view.requestUpdate("adjustGoldCost", {varName: "ImbueBody", cost: this.goldCost()});
     },
     getPartName() {
         return "Imbue Body";
@@ -3835,7 +3834,7 @@ Action.ImbueBody = new MultipartAction("Imbue Body", {
         return getBuffLevel("Imbuement2") + 1;
     },
     finish() {
-        view.updateBuff("Imbuement2");
+        view.requestUpdate("updateBuff", "Imbuement2");
     },
 });
 
@@ -4202,9 +4201,9 @@ Action.Mercantilism = new Action("Mercantilism", {
     },
     finish() {
         handleSkillExp(this.skills);
-        view.adjustManaCost("Buy Mana Z1");
-        view.adjustManaCost("Buy Mana Z3");
-        view.adjustManaCost("Buy Mana Z5");
+        view.requestUpdate("adjustManaCost", "Buy Mana Z1");
+        view.requestUpdate("adjustManaCost", "Buy Mana Z3");
+        view.requestUpdate("adjustManaCost", "Buy Mana Z5");
     },
 });
 
@@ -4331,8 +4330,8 @@ Action.WizardCollege = new MultipartAction("Wizard College", {
     },
     segmentFinished() {
         curWizCollegeSegment++;
-        view.adjustManaCost("Restoration");
-        view.adjustManaCost("Spatiomancy");
+        view.requestUpdate("adjustManaCost", "Restoration");
+        view.requestUpdate("adjustManaCost", "Spatiomancy");
     }, 
     getPartName() {
         return `${getWizCollegeRank().name}`;
@@ -4440,12 +4439,12 @@ Action.Spatiomancy = new Action("Spatiomancy", {
     },
     finish() {
         handleSkillExp(this.skills);
-        view.adjustManaCost("Mana Geyser");
-        view.adjustManaCost("Mana Well");
+        view.requestUpdate("adjustManaCost", "Mana Geyser");
+        view.requestUpdate("adjustManaCost", "Mana Well");
         adjustAll();
         for (const action of totalActionList) {
             if (towns[action.townNum].varNames.indexOf(action.varName) !== -1) {
-                view.updateRegular(action.varName, action.townNum);
+                view.RequestUpdate("updateRegular", {name: action.varName, town: action.townNum});
             }
         }
     },
@@ -4550,7 +4549,7 @@ Action.Pegasus = new Action("Pegasus", {
         Soul: 0.3,
         Cha: 0.2,
         Luck: 0.2,
-        int: 0.2
+        Int: 0.2
     },
     allowed() {
         return 1;
@@ -4604,8 +4603,8 @@ Action.GreatFeast = new MultipartAction("Great Feast", {
     loopsFinished() {
         sacrificeSoulstones(this.goldCost());
         addBuffAmt("Feast", 1);
-        view.updateSoulstones();
-        view.adjustGoldCost("GreatFeast", this.goldCost());
+        view.requestUpdate("updateSoulstones", null);
+        view.requestUpdate("adjustGoldCost", {varName: "GreatFeast", cost: this.goldCost()});
     },
     getPartName() {
         return "Host Great Feast";
@@ -4620,7 +4619,7 @@ Action.GreatFeast = new MultipartAction("Great Feast", {
         return Math.ceil(5000 * (getBuffLevel("Feast") + 1) * getSkillBonus("Gluttony"));
     },
     finish() {
-        view.updateBuff("Feast");
+        view.requestUpdate("updateBuff", "Feast");
     },
 });
 
@@ -4779,7 +4778,7 @@ Action.FallFromGrace = new Action("Fall From Grace", {
     },
     finish() {
         if (resources.reputation >= 0) resources.reputation = -1;
-        view.updateResource('reputation');
+        view.requestUpdate("updateResource", 'reputation');
         unlockStory("fellFromGrace");
         unlockTown(5);
     },
@@ -4877,7 +4876,7 @@ Action.DestroyPylons = new Action("Destroy Pylons", {
     finish() {
         towns[5].finishRegular(this.varName, 100, () => {
             addResource("pylons", 1);
-            view.adjustManaCost("The Spire");
+            view.requestUpdate("adjustManaCost", "The Spire");
             return 1;
         });
     },
@@ -4944,7 +4943,7 @@ Action.DarkSacrifice = new Action("Dark Sacrifice", {
     },
     finish() {
         handleSkillExp(this.skills);
-        view.adjustGoldCost("DarkRitual", Action.DarkRitual.goldCost());
+        view.requestUpdate("adjustGoldCost", {varName: "DarkRitual", cost: Action.DarkRitual.goldCost()});
     },
 });
 
@@ -4996,7 +4995,7 @@ Action.TheSpire = new DungeonAction("The Spire", 2, {
     },
     finish() {
         handleSkillExp(this.skills);
-        view.updateBuff("Aspirant");
+        view.requestUpdate("updateBuff", "Aspirant");
     },
 });
 
@@ -5478,7 +5477,7 @@ Action.ExplorersGuild = new Action("Explorers Guild", {
         if (resources.map === 0) addResource("map", 30);
         if (resources.completedMap > 0) exchangeMap();
         guild = "Explorer";
-        view.adjustGoldCost("Excursion", Action.Excursion.goldCost());
+        view.requestUpdate("adjustGoldCost", {varName: "Excursion", cost: Action.Excursion.goldCost()});
     }
 });
 function getExploreProgress() {
@@ -5507,7 +5506,7 @@ function exchangeMap() {
                 if ( unfinishedSurveyZones[i] === rand) 
                     unfinishedSurveyZones.splice(i, 1); 
         }
-        view.updateProgressAction("SurveyZ"+rand, towns[rand]);
+        view.RequestUpdate("updateProgressAction", {name: "SurveyZ"+rand, town: towns[rand]});
         addResource("completedMap", -1);
     }
 }
@@ -5566,7 +5565,7 @@ Action.ThievesGuild = new MultipartAction("Thieves Guild", {
     },
     finish() {
         guild = "Thieves";
-        view.adjustGoldCost("Excursion", Action.Excursion.goldCost());
+        view.requestUpdate("adjustGoldCost", {varName: "Excursion", cost: Action.Excursion.goldCost()});
         handleSkillExp(this.skills);
     },
 });
@@ -5625,7 +5624,7 @@ Action.PickPockets = new Action("Pick Pockets", {
     finish() {
         towns[7].finishProgress(this.varName, 30 * getThievesGuildRank().bonus);
         handleSkillExp(this.skills);
-        view.adjustExpGain(Action.ThievesGuild);
+        view.requestUpdate("adjustExpGain", Action.ThievesGuild);
         const goldGain = Math.floor(this.goldCost() * getThievesGuildRank().bonus);
         addResource("gold", goldGain);
         return goldGain;
@@ -5669,7 +5668,7 @@ Action.RobWarehouse = new Action("Rob Warehouse", {
     finish() {
         towns[7].finishProgress(this.varName, 20 * getThievesGuildRank().bonus);
         handleSkillExp(this.skills);
-        view.adjustExpGain(Action.ThievesGuild);
+        view.requestUpdate("adjustExpGain", Action.ThievesGuild);
         const goldGain = Math.floor(this.goldCost() * getThievesGuildRank().bonus);
         addResource("gold", goldGain);
         return goldGain;
@@ -5713,7 +5712,7 @@ Action.InsuranceFraud = new Action("Insurance Fraud", {
     finish() {
         towns[7].finishProgress(this.varName, 10 * getThievesGuildRank().bonus);
         handleSkillExp(this.skills);
-        view.adjustExpGain(Action.ThievesGuild);
+        view.requestUpdate("adjustExpGain", Action.ThievesGuild);
         const goldGain = Math.floor(this.goldCost() * getThievesGuildRank().bonus);
         addResource("gold", goldGain);
         return goldGain;
@@ -6011,7 +6010,7 @@ Action.ImbueSoul = new MultipartAction("Imbue Soul", {
         addBuffAmt("Imbuement3", 1);
         view.updateBuffs();
         view.updateStats();
-        view.updateSoulstones();
+        view.requestUpdate("updateSoulstones", null);
     },
     getPartName() {
         return "Imbue Soul";
@@ -6023,7 +6022,7 @@ Action.ImbueSoul = new MultipartAction("Imbue Soul", {
         return getBuffLevel("Imbuement") > 499 && getBuffLevel("Imbuement2") > 499;
     },
     finish() {
-        view.updateBuff("Imbuement3");
+        view.requestUpdate("updateBuff", "Imbuement3");
         capAllTraining();
         adjustTrainingExpMult();
     },
@@ -6116,7 +6115,6 @@ Action.GodsTrial = new TrialAction("Gods Trial", 1, {
     },
     finish() {
         handleSkillExp(this.skills);
-        view.updateSkills();
     },
 });
 
@@ -6162,7 +6160,6 @@ Action.ChallengeGods = new TrialAction("Challenge Gods", 2, {
     },
     finish() {
         handleSkillExp(this.skills);
-        view.updateSkills();
     },
 });
 
