@@ -224,7 +224,7 @@ AssassinAction.prototype.tickProgress = function(offset) {
     let loopStat = (1 + getLevel(this.loopStats[(towns[this.townNum][`${this.varName}LoopCounter`] + offset) % this.loopStats.length]) / 1000);
     let completions = Math.sqrt(1 + towns[this.townNum]["total"+this.varName] / 100);
     let reputationPenalty = resources.reputation != 0 ? Math.abs(resources.reputation) : 1;
-    let killStreak = resources.hearts > 0 ? Math.pow(resources.hearts, 2) : 1;
+    let killStreak = resources.heart > 0 ? Math.pow(resources.heart, 2) : 1;
     return baseSkill * loopStat * completions / reputationPenalty / killStreak;
 }
 AssassinAction.prototype.getPartName = function() {
@@ -5751,10 +5751,10 @@ Action.GuildAssassin = new Action("Guild Assassin", {
     finish() {
         let assassinExp = 0;
         if (getSkillLevel("Assassin") === 0) assassinExp = 100;
-        if (resources.hearts > 0) assassinExp = 100 * Math.pow(resources.hearts, 2);
+        if (resources.heart > 0) assassinExp = 100 * Math.pow(resources.heart, 2);
         this.skills.Assassin = assassinExp;
         handleSkillExp(this.skills);
-        resources.hearts = 0;
+        resources.heart = 0;
         guild = "Assassin";
     }
 });
