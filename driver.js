@@ -214,7 +214,7 @@ function addResource(resource, amount) {
     else resources[resource] = amount;
     view.requestUpdate("updateResource", resource);
 
-    if (resource === "teamMembers" || resource === "armor" || resource === "zombie") view.updateTeamCombat();
+    if (resource === "teamMembers" || resource === "armor" || resource === "zombie") view.requestUpdate("updateTeamCombat",null);
 }
 
 function resetResource(resource) {
