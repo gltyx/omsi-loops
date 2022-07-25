@@ -2135,7 +2135,7 @@ Action.DarkRitual = new MultipartAction("Dark Ritual", {
         view.adjustGoldCost("DarkRitual", this.goldCost());
     },
     getPartName() {
-        return "Perform Dark Ritual";
+        return "举行黑暗仪式";
     },
     visible() {
         return towns[1].getLevel("Witch") >= 20;
@@ -5477,10 +5477,10 @@ Action.ThievesGuild = new MultipartAction("Thieves Guild", {
         addResource("gold", 10);
     },
     getPartName() {
-        return `Rank ${getThievesGuildRank().name}`;
+        return `等级 ${getThievesGuildRank().name}`;
     },
     getSegmentName(segment) {
-        return `Rank ${getThievesGuildRank(segment % 3).name}`;
+        return `等级 ${getThievesGuildRank(segment % 3).name}`;
     },
     visible() {
         return towns[7].getLevel("Excursion") >= 20;
