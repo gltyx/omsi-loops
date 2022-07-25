@@ -1086,10 +1086,10 @@
         </haulZ6>
         <!--town 1-->
         <map>
-            <label>Purchase Map</label>
-            <tooltip><![CDATA[The explorer's guild has taught you how to use cartographer's kits to map where you're going. This will let you keep track of things better and find all sorts of new secrets.<br>
-            There's a shop here in Beginnersville that will sell them for just ]]></tooltip>
-            <tooltip2>gold each.</tooltip2>
+            <label>购买地图</label>
+            <tooltip><![CDATA[探险者公会教会了你如何绘制地图. 这能让你更好的勘测并发现秘密.<br>
+            新手村有个商店会售卖空地图, 每张只要 ]]></tooltip>
+            <tooltip2>金块.</tooltip2>
         </map>
         <wander>
             <label>漫步</label>
