@@ -4442,7 +4442,7 @@ Action.Spatiomancy = new Action("Spatiomancy", {
         adjustAll();
         for (const action of totalActionList) {
             if (towns[action.townNum].varNames.indexOf(action.varName) !== -1) {
-                view.RequestUpdate("updateRegular", {name: action.varName, town: action.townNum});
+                view.requestUpdate("updateRegular", {name: action.varName, town: action.townNum});
             }
         }
     },
@@ -5504,7 +5504,7 @@ function exchangeMap() {
                 if ( unfinishedSurveyZones[i] === rand) 
                     unfinishedSurveyZones.splice(i, 1); 
         }
-        view.RequestUpdate("updateProgressAction", {name: "SurveyZ"+rand, town: towns[rand]});
+        view.requestUpdate("updateProgressAction", {name: "SurveyZ"+rand, town: towns[rand]});
         addResource("completedMap", -1);
     }
 }
