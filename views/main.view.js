@@ -110,6 +110,10 @@ function View() {
     this.requests = {
         updateStat: [],
         updateSkill: [],
+        updateBuff: [],
+        updateTrialInfo: [],
+        updateRegular: [],
+        updateProgress: [],
         updateMultiPartSegments: [],
         updateMultiPart: [],
         updateMultiPartActions: [],
@@ -120,8 +124,13 @@ function View() {
         updateCurrentActionLoops: [],
         updateSoulstones: [],
         updateResource: [],
+        updateActionTooltips: [],
+        updateLockedHidden: [],
         createTravelMenu: [],
-        updateTeamCombat: []
+        updateTeamCombat: [],
+        adjustManaCost: [],
+        adjustGoldCost: [],
+        adjustExpGain: [],
     };
 
     // requesting an update will call that update on the next view.update tick (based off player set UPS)
@@ -567,12 +576,16 @@ function View() {
 
     this.updateCurrentActionLoops = function(index) {
         const action = actions.current[index];
-        document.getElementById(`action${index}LoopsDone`).textContent = (action.loops - action.loopsLeft) > 99999 
-            ? toSuffix(action.loops - action.loopsLeft) : formatNumber(action.loops - action.loopsLeft);
-        document.getElementById(`action${index}Loops`).textContent = action.loops > 99999 ? toSuffix(action.loops) : formatNumber(action.loops);
+        if (action !== undefined) {
+            document.getElementById(`action${index}LoopsDone`).textContent = (action.loops - action.loopsLeft) > 99999 
+                ? toSuffix(action.loops - action.loopsLeft) : formatNumber(action.loops - action.loopsLeft);
+            document.getElementById(`action${index}Loops`).textContent = action.loops > 99999 ? toSuffix(action.loops) : formatNumber(action.loops);
+        }
     };
 
-    this.updateProgressAction = function(varName, town) {
+    this.updateProgressAction = function(updateInfo) {
+        const varName = updateInfo.name;
+        const town = updateInfo.town;
         const level = town.getLevel(varName);
         const levelPrc = `${town.getPrcToNext(varName)}%`;
         document.getElementById(`prc${varName}`).textContent = level;
@@ -585,7 +598,7 @@ function View() {
         for (const town of towns) {
             for (let i = 0; i < town.progressVars.length; i++) {
                 const varName = town.progressVars[i];
-                this.updateProgressAction(varName, town);
+                this.updateProgressAction({name: varName, town: town});
             }
         }
     };
@@ -728,7 +741,9 @@ function View() {
         actionStoriesShowing = stories;
     };
 
-    this.updateRegular = function(varName, index) {
+    this.updateRegular = function(updateInfo) {
+        const varName = updateInfo.name;
+        const index = updateInfo.index;
         const town = towns[index];
         document.getElementById(`total${varName}`).textContent = town[`total${varName}`];
         document.getElementById(`checked${varName}`).textContent = town[`checked${varName}`];
@@ -1056,11 +1071,13 @@ function View() {
     this.updateTrials = function() {
         for(let i = 0; i < trials.length; i++)
         {
-            this.updateTrialInfo(i,0);
+            this.updateTrialInfo({trialNum: i, curFloor: 0});
         }
     };
 
-    this.updateTrialInfo = function(trialNum, curFloor) {
+    this.updateTrialInfo = function(updateInfo) {
+        const curFloor = updateInfo.curFloor;
+        const trialNum = updateInfo.trialNum;
         const trial = trials[trialNum];
             document.getElementById(`trial${trialNum}HighestFloor`).textContent = trial.highestFloor + 1;
             if (curFloor >= trial.length) {

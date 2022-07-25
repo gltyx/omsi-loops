@@ -25,7 +25,7 @@ function cheatSurvey()
     {
         varName = "SurveyZ" + i
         towns[i][`exp${varName}`] = 505000;
-        view.updateProgressAction(varName, towns[i]);
+        view.updateProgressAction({name: varName, town: towns[i]});
     }
 }
 
@@ -36,7 +36,7 @@ function cheatProgress()
         if (action.type == "progress")
         {
             towns[action.townNum][`exp${action.varName}`] = 505000;
-            view.updateProgressAction(action.varName, towns[action.townNum]);
+            view.updateProgressAction({name: action.varName, town: towns[action.townNum]});
         }
     }
     stonesUsed = {1:250, 3:250, 5:250, 6:250};
@@ -544,7 +544,7 @@ function load() {
                 if (toLoad[`searchToggler${varName}`] !== undefined) {
                     document.getElementById(`searchToggler${varName}`).checked = toLoad[`searchToggler${varName}`];
                 }
-                view.updateRegular(action.varName, town.index);
+                view.updateRegular({name: action.varName, index: town.index});
             }
         }
     }

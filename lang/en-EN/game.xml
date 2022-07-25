@@ -6,6 +6,13 @@
                 <title>Changelog</title>
                 <version_prefix>Version</version_prefix>
             </meta>
+            <version verNum="2.9"><![CDATA[
+            <b> July 25th, 2022</b>
+            Performance Update!<br>
+            With help from Hordex from Discord, we've rewritten most of the explicit update calls to be deferred to the update handler.<br>
+            This means that most UI refreshes are now correctly controlled by the "Updates Per Second" setting in the options menu.<br>
+            High level players who are still experiencing lag can significantly improve performance by reducing this number - this will only decrease how often the screen refreshes, not how often the game updates.
+            ]]></version>            
             <version verNum="2.8"><![CDATA[
             <b> July 25th, 2022</b>
             • A new guild has opened in Commerceville - Assassins Guild! Kill targets across the world, collect their hearts (why is it always hearts?), and return them to the guild to learn the ways of the assassin<br>
@@ -348,7 +355,7 @@
                 Shift+Left/A: Show action options<br>
                 Shift+Z: Undo most recent change to action list
         ]]></hotkeys_tooltip>
-            <update_rate>Updates per second:</update_rate>
+            <update_rate>Visual updates per second:</update_rate>
         </options>
         <challenges>
             <meta>

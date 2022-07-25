@@ -111,12 +111,12 @@ function Actions() {
         if (curAction.allowed && getNumOnCurList(curAction.name) > curAction.allowed()) {
             curAction.ticks = 0;
             curAction.timeSpent = 0;
-            view.updateCurrentActionBar(this.currentPos);
+            view.requestUpdate("updateCurrentActionBar", this.currentPos);
             return undefined;
         }
         while ((curAction.canStart && !curAction.canStart() && curAction.townNum === curTown) || curAction.townNum !== curTown) {
             curAction.errorMessage = this.getErrorMessage(curAction);
-            view.updateCurrentActionBar(this.currentPos);
+            view.requestUpdate("updateCurrentActionBar", this.currentPos);
             this.currentPos++;
             if (this.currentPos >= this.current.length) {
                 curAction = undefined;
@@ -208,7 +208,7 @@ function Actions() {
         view.requestUpdate("updateMultiPartActions");
         view.requestUpdate("updateNextActions");
         view.requestUpdate("updateTime");
-        view.updateActionTooltips();
+        view.requestUpdate("updateActionTooltips");
     };
 
     this.adjustTicksNeeded = function() {
