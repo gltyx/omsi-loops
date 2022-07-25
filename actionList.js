@@ -5730,6 +5730,9 @@ Action.GuildAssassin = new Action("Guild Assassin", {
         Dex: 0.4,
         Luck: 0.2
     },
+    skills: {
+        Assassin: 100
+    },
     manaCost() {
         return 100000;
     },
@@ -5749,6 +5752,8 @@ Action.GuildAssassin = new Action("Guild Assassin", {
         let assassinExp = 0;
         if (getSkillLevel("Assassin") === 0) assassinExp = 100;
         if (resources.hearts > 0) assassinExp = 100 * Math.pow(resources.hearts, 2);
+        this.skills.Assassin = assassinExp;
+        handleSkillExp(this.skills);
         resources.hearts = 0;
         guild = "Assassin";
     }
