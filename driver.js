@@ -212,14 +212,14 @@ function addMana(amount) {
 function addResource(resource, amount) {
     if (Number.isFinite(amount)) resources[resource] += amount;
     else resources[resource] = amount;
-    view.updateResource(resource);
+    view.requestUpdate("updateResource", resource);
 
     if (resource === "teamMembers" || resource === "armor" || resource === "zombie") view.updateTeamCombat();
 }
 
 function resetResource(resource) {
     resources[resource] = resourcesTemplate[resource];
-    view.updateResource(resource);
+    view.requestUpdate("updateResource", resource);
 }
 
 function resetResources() {

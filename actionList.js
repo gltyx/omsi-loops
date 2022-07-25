@@ -1278,7 +1278,7 @@ Action.Haggle = new Action("Haggle", {
         if (towns[0].suppliesCost < 0) {
             towns[0].suppliesCost = 0;
         }
-        view.updateResource("supplies");
+        view.requestUpdate("updateResource", "supplies");
         unlockStory("haggle");
     },
 });
@@ -4703,7 +4703,7 @@ Action.FallFromGrace = new Action("Fall From Grace", {
     },
     finish() {
         if (resources.reputation >= 0) resources.reputation = -1;
-        view.updateResource('reputation');
+        view.requestUpdate("updateResource", 'reputation');
         unlockStory("fellFromGrace");
         unlockTown(5);
     },
