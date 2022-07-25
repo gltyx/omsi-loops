@@ -2057,7 +2057,7 @@
             <!--TODO: give this action story-->
         </donate>
         <accept_donations>
-            <label>Collect Donations</label>
+            <label>Collect Donation</label>
             <label_done>Donations Accepted</label_done>
             <info_text1>Meaningful donations left</info_text1>
             <info_text2>Meaningful donations total</info_text2>
