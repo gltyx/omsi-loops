@@ -74,6 +74,7 @@ function tick() {
         }
 
         if (shouldRestart || timer >= timeNeeded) {
+            loopEnd();
             prepareRestart();
         }
 
@@ -132,12 +133,22 @@ function pauseGame(ping) {
     }
 }
 
+function loopEnd() {
+    totals.time += timeCounter;
+    totals.effectiveTime += effectiveTime;
+    if (effectiveTime > 0) totals.loops++;
+    view.updateTotals();
+    const loopCompletedActions = actions.current.slice(0, actions.currentPos + 1);
+    markActionsComplete(loopCompletedActions);
+    if (options.highlightNew) {
+        view.removeAllHighlights();
+        view.highlightIncompleteActions();
+    }
+    //unlockActionStory(completedActions);
+}
+
 function prepareRestart() {
     const curAction = actions.getNextValidAction();
-    actions.next.forEach(action => {
-        let varName = Action[withoutSpaces(action.name)].varName;
-        if (!completedActions.includes(varName)) completedActions.push(varName);
-    });
     if (options.pauseBeforeRestart ||
         (options.pauseOnFailedLoop && 
          (actions.current.filter(action => action.loopsLeft - action.extraLoops > 0).length > 0))) {
@@ -159,10 +170,6 @@ function prepareRestart() {
 }
 
 function restart() {
-    totals.time += timeCounter;
-    totals.effectiveTime += effectiveTime;
-    if (effectiveTime > 0) totals.loops++;
-    view.updateTotals();
     shouldRestart = false;
     timer = 0;
     timeCounter = 0;
@@ -178,9 +185,13 @@ function restart() {
     actions.restart();
     view.updateCurrentActionsDivs();
     view.updateTrials();
-    view.removeAllHighlights();
-    if (options.highlightNew) view.highlightIncompleteActions();
 }
+
+function manualRestart() {
+    loopEnd();
+    restart();
+}
+
 
 function addActionToList(name, townNum, isTravelAction, insertAtIndex) {
     actions.nextLast = copyObject(actions.next);

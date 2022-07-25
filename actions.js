@@ -282,6 +282,19 @@ function addExpFromAction(action) {
     }
 }
 
+function markActionsComplete(loopCompletedActions) {
+    loopCompletedActions.forEach(action => {
+        let varName = Action[withoutSpaces(action.name)].varName;
+        if (!completedActions.includes(varName)) completedActions.push(varName);
+    });
+}
+
+function unlockActionStory(loopCompletedActions) {
+    loopCompletedActions.forEach(action => {
+        if (action.storyUnlocks !== undefined) action.storyUnlocks();
+    });
+}
+
 function getNumOnList(actionName) {
     let count = 0;
     for (const action of actions.next) {
