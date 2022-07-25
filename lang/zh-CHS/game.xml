@@ -8,13 +8,13 @@
             </meta>
             <version verNum="2.7"><![CDATA[
             <b> July 20th, 2022</b>
-            • Survey Update! Survey is now completed using maps purchased in Beginnersville. Completed maps can be returned to the explorer's guild for extra progress in a random uncompleted area.<br>
-            • A few minor bugfixes
+            • 勘测更新! 现在勘测需要在新手村购买地图. 完成地图会使任意未完成的区域获得进展.<br>
+            • 一些小Bug修复
             ]]></version>
             <version verNum="2.6"><![CDATA[
             <b> July 20th, 2022</b>
-            • Added Quick Travel Menu to better navigate all the zones<br>
-            • Dark Ritual now only shows speed increases for unlocked zones
+            • 为区域菜单添加一个快速跳转功能<br>
+            • 黑暗仪式现在只显示已解锁的区域
             ]]></version>
             <version verNum="2.5"><![CDATA[
             <b> July 19th, 2022</b>
@@ -439,14 +439,14 @@
             <desc>一群摇摇晃晃的尸体. 真恶心.</desc>
         </resource>
         <resource initially_hidden="true">
-            <title>Maps:</title>
+            <title>地图:</title>
             <id>map</id>
-            <desc>A cartographer's kit that can be used to survey areas and discover new secrets.</desc>
+            <desc>一种制图工具, 用于勘测和发现新的秘密区域.</desc>
         </resource>
         <resource initially_hidden="true">
-            <title>Finished Maps:</title>
+            <title>完成的地图:</title>
             <id>completedMap</id>
-            <desc>You've mapped out some more of the world. The Explorer's guild would happily trade you for this knowledge.</desc>
+            <desc>你绘制了一些地图. 探索者公会很乐意用它和你交换一些知识.</desc>
         </resource>
         <resource initially_hidden="true">
             <title>肉:</title>
@@ -914,8 +914,8 @@
             <tooltip><![CDATA[
             探索者公会让你学到了许多非常容易错过的东西.<br>
             进度等于所有区域平均进度的平方根.<br>
-            Cannot re-survey completed zones.<br>
-            Requires a map for each action.<br>
+            已完成的区域不能重复勘测.<br>
+            每次勘测需要一张地图.<br>
             当前每次行动给予 <div class='surveySkill'></div> 经验.
             ]]></tooltip>
         </surveyZ0>
@@ -925,8 +925,8 @@
             <tooltip><![CDATA[
             探索者公会让你学到了许多非常容易错过的东西.<br>
             进度等于所有区域平均进度的平方根.<br>
-            Cannot re-survey completed zones.<br>
-            Requires a map for each action.<br>
+            已完成的区域不能重复勘测.<br>
+            每次勘测需要一张地图.<br>
             当前每次行动给予 <div class='surveySkill'></div> 经验.
             ]]></tooltip>
         </surveyZ1>
@@ -936,8 +936,8 @@
             <tooltip><![CDATA[
             探索者公会让你学到了许多非常容易错过的东西.<br>
             进度等于所有区域平均进度的平方根.<br>
-            Cannot re-survey completed zones.<br>
-            Requires a map for each action.<br>
+            已完成的区域不能重复勘测.<br>
+            每次勘测需要一张地图.<br>
             当前每次行动给予 <div class='surveySkill'></div> 经验.
             ]]></tooltip>
         </surveyZ2>
@@ -947,8 +947,8 @@
             <tooltip><![CDATA[
             探索者公会让你学到了许多非常容易错过的东西.<br>
             进度等于所有区域平均进度的平方根.<br>
-            Cannot re-survey completed zones.<br>
-            Requires a map for each action.<br>
+            已完成的区域不能重复勘测.<br>
+            每次勘测需要一张地图.<br>
             当前每次行动给予 <div class='surveySkill'></div> 经验.
             ]]></tooltip>
         </surveyZ3>
@@ -958,8 +958,8 @@
             <tooltip><![CDATA[
             探索者公会让你学到了许多非常容易错过的东西.<br>
             进度等于所有区域平均进度的平方根.<br>
-            Cannot re-survey completed zones.<br>
-            Requires a map for each action.<br>
+            已完成的区域不能重复勘测.<br>
+            每次勘测需要一张地图.<br>
             当前每次行动给予 <div class='surveySkill'></div> 经验.
             ]]></tooltip>
         </surveyZ4>
@@ -969,8 +969,8 @@
             <tooltip><![CDATA[
             探索者公会让你学到了许多非常容易错过的东西.<br>
             进度等于所有区域平均进度的平方根.<br>
-            Cannot re-survey completed zones.<br>
-            Requires a map for each action.<br>
+            已完成的区域不能重复勘测.<br>
+            每次勘测需要一张地图.<br>
             当前每次行动给予 <div class='surveySkill'></div> 经验.
             ]]></tooltip>
         </surveyZ5>
@@ -980,8 +980,8 @@
             <tooltip><![CDATA[
             探索者公会让你学到了许多非常容易错过的东西.<br>
             进度等于所有区域平均进度的平方根.<br>
-            Cannot re-survey completed zones.<br>
-            Requires a map for each action.<br>
+            已完成的区域不能重复勘测.<br>
+            每次勘测需要一张地图.<br>
             当前每次行动给予 <div class='surveySkill'></div> 经验.
             ]]></tooltip>
         </surveyZ6>
@@ -991,8 +991,8 @@
             <tooltip><![CDATA[
             探索者公会让你学到了许多非常容易错过的东西.<br>
             进度等于所有区域平均进度的平方根.<br>
-            Cannot re-survey completed zones.<br>
-            Requires a map for each action.<br>
+            已完成的区域不能重复勘测.<br>
+            每次勘测需要一张地图.<br>
             当前每次行动给予 <div class='surveySkill'></div> 经验.
             ]]></tooltip>
         </surveyZ7>
@@ -1002,8 +1002,8 @@
             <tooltip><![CDATA[
             探索者公会让你学到了许多非常容易错过的东西.<br>
             进度等于所有区域平均进度的平方根.<br>
-            Cannot re-survey completed zones.<br>
-            Requires a map for each action.<br>
+            已完成的区域不能重复勘测.<br>
+            每次勘测需要一张地图.<br>
             当前每次行动给予 <div class='surveySkill'></div> 经验.
             ]]></tooltip>
         </surveyZ8>
@@ -2433,8 +2433,8 @@
             有没有觉得你好像错过了很多东西? 探索者公会知道它们! 学习并借此找到任何东西, 当你经过充分的学习你甚至可以用新的方式跨越区域.<br>
             每个循环只能加入 1 个公会 (包括商业小镇), 且只能尝试一次.<br>
             解锁一个勘测行动, 进度基于全局平均勘测度.<br>
-            If you bring completed maps, they'll trade 2x knowledge with you on areas you haven't surveyed.<br>
-            If you have no maps, they'll give you a few to help you get started.<br>
+            如果你带来了完成的地图, 他们会奖励 2x 你未勘测过的区域知识.<br>
+            如果你没有地图, 他们会给你一些奖励帮助你开始.<br>
             每 25% 世界勘测度将提供一个新的捷径<br>
             当前世界勘测度: <div id='totalSurveyProgress'></div>%.
         ]]></tooltip>
