@@ -4276,26 +4276,26 @@ Action.WizardCollege = new MultipartAction("Wizard College", {
 });
 function getWizCollegeRank(offset) {
     let name = [
-        "Initiate",
-        "Student",
-        "Apprentice",
-        "Disciple",
-        "Spellcaster",
-        "Magician",
-        "Wizard",
-        "Great Wizard",
-        "Grand Wizard",
-        "Archwizard",
-        "Sage",
-        "Great Sage",
-        "Grand Sage",
-        "Archsage",
-        "Magus",
-        "Great Magus",
-        "Grand Magus",
-        "Archmagus",
-        "Member of The Council of the Seven",
-        "Chair of The Council of the Seven"][Math.floor(curWizCollegeSegment / 3 + 0.00001)];
+        "新生",
+        "学生",
+        "学徒",
+        "弟子",
+        "法师",
+        "魔法师",
+        "巫师",
+        "高阶巫师",
+        "大巫师",
+        "大奥师",
+        "贤者",
+        "高阶贤者",
+        "大贤者",
+        "主教",
+        "占星术士",
+        "高阶占星术士",
+        "大占星术士",
+        "奥秘占星术士",
+        "七人议会成员",
+        "七人议会主席"][Math.floor(curWizCollegeSegment / 3 + 0.00001)];
     const segment = (offset === undefined ? 0 : offset - (curWizCollegeSegment % 3)) + curWizCollegeSegment;
     let bonus = precision3(1 + 0.02 * Math.pow(segment, 1.05));
     if (name) {
@@ -4604,26 +4604,26 @@ Action.FightFrostGiants = new MultipartAction("Fight Frost Giants", {
 });
 function getFrostGiantsRank(offset) {
     let name = [
-        "Private",
-        "Corporal",
-        "Specialist",
-        "Sergeant",
-        "Staff Sergeant",
-        "Sergeant First Class",
-        "Master Sergeant",
-        "Sergeant Major",
-        "Warrant Officer",
-        "Chief Warrant Officer",
-        "Second Lieutenant",
-        "First Lieutenant",
-        "Major",
-        "Lieutenant Colonel",
-        "Colonel",
-        "Lieutenant Commander",
-        "Commander",
-        "Captain",
-        "Rear Admiral",
-        "Vice Admiral"][Math.floor(curFightFrostGiantsSegment / 3 + 0.00001)];
+        "列兵",
+        "下士",
+        "正规军",
+        "中士",
+        "上士",
+        "士官",
+        "士长",
+        "士官长",
+        "准尉",
+        "少尉",
+        "中尉",
+        "上尉",
+        "少校",
+        "中校",
+        "上校",
+        "副司令",
+        "司令",
+        "总指挥",
+        "少将",
+        "中将"][Math.floor(curFightFrostGiantsSegment / 3 + 0.00001)];
     const segment = (offset === undefined ? 0 : offset - (curFightFrostGiantsSegment % 3)) + curFightFrostGiantsSegment;
     let bonus = precision3(1 + 0.05 * Math.pow(segment, 1.05));
     if (name) {
@@ -5111,25 +5111,25 @@ Action.FightJungleMonsters = new MultipartAction("Fight Jungle Monsters", {
 });
 function getFightJungleMonstersRank(offset) {
     let name = [
-        "Frog",
-        "Toucan",
-        "Sloth",
-        "Pangolin",
-        "Python",
-        "Tapir",
-        "Okapi",
-        "Bonobo",
-        "Jaguar",
-        "Chimpanzee",
-        "Annaconda",
-        "Lion",
-        "Tiger",
-        "Bear",
-        "Crocodile",
-        "Rhino",
-        "Gorilla",
-        "Hippo",
-        "Elephant"][Math.floor(curFightJungleMonstersSegment / 3 + 0.00001)];
+        "青蛙",
+        "大嘴鸟",
+        "树獭",
+        "穿山甲",
+        "蟒蛇",
+        "貘",
+        "㺢㹢狓",
+        "倭猩猩",
+        "美洲虎",
+        "黑猩猩",
+        "水蟒",
+        "狮子",
+        "老虎",
+        "熊",
+        "鳄鱼",
+        "犀牛",
+        "大猩猩",
+        "河马",
+        "大象"][Math.floor(curFightJungleMonstersSegment / 3 + 0.00001)];
     const segment = (offset === undefined ? 0 : offset - (curFightJungleMonstersSegment % 3)) + curFightJungleMonstersSegment;
     let bonus = precision3(1 + 0.05 * Math.pow(segment, 1.05));
     if (name) {
