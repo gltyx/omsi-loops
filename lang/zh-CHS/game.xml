@@ -750,6 +750,7 @@
             <label>黑暗仪式</label>
             <desc>女巫感谢你对黑暗魔法的贡献. 每级使黑暗魔法行动的黑暗魔法经验 +1% (向下取整) .</desc>
             <desc2><![CDATA[<div id='DRText'></div>
+            ]]></desc2>
         </dark_ritual>
         <imbue_mind>
             <label>精神灌注</label>
