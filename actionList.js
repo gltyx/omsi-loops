@@ -3549,7 +3549,7 @@ Action.HuntTrolls = new MultipartAction("Hunt Trolls", {
     segmentFinished() {
     },
     getPartName() {
-        return "Hunt Troll";
+        return "狩猎巨魔";
     },
     visible() {
         return towns[3].getLevel("Cavern") >= 5;
@@ -3690,7 +3690,7 @@ Action.ImbueMind = new MultipartAction("Imbue Mind", {
         view.adjustGoldCost("ImbueMind", this.goldCost());
     },
     getPartName() {
-        return "Imbue Mind";
+        return "灌注精神";
     },
     visible() {
         return towns[3].getLevel("Illusions") >= 50;
@@ -3747,7 +3747,7 @@ Action.ImbueBody = new MultipartAction("Imbue Body", {
         view.adjustGoldCost("ImbueBody", this.goldCost());
     },
     getPartName() {
-        return "Imbue Body";
+        return "灌注躯体";
     },
     visible() {
         return getBuffLevel("Imbuement") > 1;
@@ -4532,7 +4532,7 @@ Action.GreatFeast = new MultipartAction("Great Feast", {
         view.adjustGoldCost("GreatFeast", this.goldCost());
     },
     getPartName() {
-        return "Host Great Feast";
+        return "举办盛宴";
     },
     visible() {
         return towns[4].getLevel("Tour") >= 80;
