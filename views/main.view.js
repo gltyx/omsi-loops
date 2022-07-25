@@ -243,6 +243,8 @@ function View() {
                 document.getElementById("skillBonusThievery").textContent = intToString(getSkillBonus("Thievery"), 4);
             } else if (skill === "Leadership") {
                 document.getElementById("skillBonusLeadership").textContent = intToString(getSkillBonus("Leadership"), 4);
+            } else if (skill === "Assassin") {
+                document.getElementById("skillBonusAssassin").textContent = intToString(getSkillBonus("Assassin"), 4);
             }
         }
         this.adjustTooltipPosition(container.querySelector("div.showthis"));
@@ -412,6 +414,7 @@ function View() {
             } else {
                 color = (travelNum > 0 || travelNum == -5) ? `linear-gradient(${this.zoneTints[townNum]} 49%, ${this.zoneTints[townNum + travelNum]} 51%)` : this.zoneTints[townNum];
             }
+            const imageName = action.name.startsWith("Assassin") ? "assassin" : camelize(action.name);
             totalDivText +=
                 `<div
                     id='nextActionContainer${i}'
@@ -425,7 +428,7 @@ function View() {
                     draggable='true' data-index='${i}'
                     style='background: ${color}; ${opacity}; ${display};'
                 >
-                    <div><img src='img/${camelize(action.name)}.svg' class='smallIcon imageDragFix'> x 
+                    <div><img src='img/${imageName}.svg' class='smallIcon imageDragFix'> x 
                     <div class='bold'>${actionLoops}</div></div>
                     <div style='float:right; margin-top: 1px; margin-right: 3px;'>
                         ${capButton}
@@ -451,11 +454,12 @@ function View() {
             const action = actions.current[i];
             const actionLoops = action.loops > 99999 ? toSuffix(action.loops) : formatNumber(action.loops);
             const actionLoopsDone = (action.loops - action.loopsLeft) > 99999 ? toSuffix(action.loops - action.loopsLeft) : formatNumber(action.loops - action.loopsLeft);
+            const imageName = action.name.startsWith("Assassin") ? "assassin" : camelize(action.name);
             totalDivText +=
                 `<div class='curActionContainer small' onmouseover='view.mouseoverAction(${i}, true)' onmouseleave='view.mouseoverAction(${i}, false)'>
                     <div class='curActionBar' id='action${i}Bar'></div>
                     <div class='actionSelectedIndicator' id='action${i}Selected'></div>
-                    <img src='img/${camelize(action.name)}.svg' class='smallIcon'>
+                    <img src='img/${imageName}.svg' class='smallIcon'>
                     <div id='action${i}LoopsDone' style='margin-left:3px; border-left: 1px solid #b9b9b9;padding-left: 3px;'>${actionLoopsDone}</div>
                     /<div id='action${i}Loops'>${actionLoops}</div>
                 </div>`;
@@ -764,6 +768,7 @@ function View() {
             if (action.type === "limited") this.createTownInfo(action);
             if (action.type === "progress") this.createActionProgress(action);
             if (action.type === "multipart") this.createMultiPartPBar(action);
+            if (options.highlightNew) this.highlightIncompleteActions();
         }
     };
 
@@ -819,6 +824,7 @@ function View() {
         }
         const isTravel = getTravelNum(action.name) > 0;
         const divClass = isTravel ? "travelContainer showthat" : "actionContainer showthat";
+        const imageName = action.name.startsWith("Assassin") ? "assassin" : camelize(action.name);
         const totalDivText =
             `<div
                 id='container${action.varName}'
@@ -833,7 +839,7 @@ function View() {
             >
                 ${action.label}<br>
                 <div style='position:relative'>
-                    <img src='img/${camelize(action.name)}.svg' class='superLargeIcon' draggable='false'>${extraImage}
+                    <img src='img/${imageName}.svg' class='superLargeIcon' draggable='false'>${extraImage}
                 </div>
                 <div class='showthis' draggable='false'>
                     ${action.tooltip}<span id='goldCost${action.varName}'></span>
@@ -1178,6 +1184,29 @@ function View() {
             DRdesc.innerHTML += DarkRitualDescription[townNum];
         });
         if(getBuffLevel("Ritual") > 200) DRdesc.innerHTML += DarkRitualDescription[9];
+    }
+
+    this.highlightIncompleteActions = function() {
+        let actionDivs = Array.from(document.getElementsByClassName("actionContainer"));
+        actionDivs.forEach(div => {
+            let actionName = div.id.replace("container","");
+            if (!completedActions.includes(actionName))
+                div.classList.add("actionHighlight");
+        });
+    }
+
+    this.removeAllHighlights = function() {
+        let actionDivs = Array.from(document.getElementsByClassName("actionHighlight"));
+        actionDivs.forEach(div => {
+            div.classList.remove("actionHighlight");
+        });
+    }
+
+    this.updateTotals = function() {
+        document.getElementById('totalPlaytime').textContent = `${formatTime(totals.time)}`;
+        document.getElementById('totalEffectiveTime').textContent = `${formatTime(totals.effectiveTime)}`;
+        document.getElementById('totalLoops').textContent = `${formatNumber(totals.loops)}`;
+        document.getElementById('totalActions').textContent = `${formatNumber(totals.actions)}`;
     }
 }
 

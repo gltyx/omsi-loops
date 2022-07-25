@@ -102,9 +102,9 @@ let resources = {
     houses: 0,
     pylons: 0,
     zombie: 0,
-    meat: 0,
     map: 0,
     completedMap: 0,
+    heart: 0,
     power: 0,
     glasses: false,
     supplies: false,
@@ -115,6 +115,7 @@ let resources = {
     key: false,
     stone: false
 };
+let hearts = [];
 const resourcesTemplate = copyObject(resources);
 //Temp variables
 // eslint-disable-next-line prefer-const
@@ -127,7 +128,7 @@ let curLoadout = 0;
 let loadouts;
 let loadoutnames;
 //let loadoutnames = ["1", "2", "3", "4", "5"];
-const skillList = ["Combat", "Magic", "Practical", "Alchemy", "Crafting", "Dark", "Chronomancy", "Pyromancy", "Restoration", "Spatiomancy", "Mercantilism", "Divine", "Commune", "Wunderkind", "Gluttony", "Thievery", "Leadership"];
+const skillList = ["Combat", "Magic", "Practical", "Alchemy", "Crafting", "Dark", "Chronomancy", "Pyromancy", "Restoration", "Spatiomancy", "Mercantilism", "Divine", "Commune", "Wunderkind", "Gluttony", "Thievery", "Leadership", "Assassin"];
 const skills = {};
 const buffList = ["Ritual", "Imbuement", "Imbuement2", "Feast", "Aspirant", "Heroism", "Imbuement3"];
 const dungeonFloors = [6, 9, 20];
@@ -158,6 +159,7 @@ let townShowing = 0;
 // eslint-disable-next-line prefer-const
 let actionStoriesShowing = false;
 let townsUnlocked = [];
+let completedActions = [];
 let statShowing;
 let skillShowing;
 let buffShowing;
@@ -237,6 +239,12 @@ let totalOfflineMs = 0;
 // eslint-disable-next-line prefer-const
 let bonusSpeed = 1;
 const offlineRatio = 1;
+let totals = {
+    time: 0,
+    effectiveTime: 0,
+    loops: 0,
+    actions: 0
+};
 
 let challenge = 0;
 let totalMerchantMana = 7500;
@@ -262,6 +270,7 @@ const options = {
     pauseBeforeRestart: false,
     pauseOnFailedLoop: false,
     pauseOnComplete: false,
+    highlightNew: true,
     statColors: false,
     pingOnPause: false,
     autoMaxTraining: false,
@@ -376,6 +385,11 @@ function load() {
     } else {
         townsUnlocked = toLoad.townsUnlocked === undefined ? [0] : toLoad.townsUnlocked;
     }
+    completedActions = [];
+    if (toLoad.completedActions && toLoad.completedActions.length > 0)
+        toLoad.completedActions.forEach(action => {
+            completedActions.push(action);
+        });
     for (let i = 0; i <= 8; i++) {
         towns[i] = new Town(i);
     }
@@ -492,6 +506,7 @@ function load() {
         options.repeatLastAction = toLoad.repeatLast;
         options.pingOnPause = toLoad.pingOnPause === undefined ? options.pingOnPause : toLoad.pingOnPause;
         options.autoMaxTraining = toLoad.autoMaxTraining === undefined ? options.autoMaxTraining : toLoad.autoMaxTraining;
+        options.highlightNew = toLoad.highlightNew === undefined ? options.highlightNew : toLoad.highlightNew;
         options.hotkeys = toLoad.hotkeys === undefined ? options.hotkeys : toLoad.hotkeys;
         options.updateRate = toLoad.updateRate === undefined ? options.updateRate : toLoad.updateRate;
     } else {
@@ -544,6 +559,14 @@ function load() {
     if (challenge === 1) gameSpeed = 2;
 
     totalOfflineMs = toLoad.totalOfflineMs === undefined ? 0 : toLoad.totalOfflineMs;
+    if (toLoad.totals != undefined) {
+        totals.time = toLoad.totals.time === undefined ? 0 : toLoad.totals.time;
+        totals.effectiveTime = toLoad.totals.effectiveTime === undefined ? 0 : toLoad.totals.effectiveTime;
+        totals.loops = toLoad.totals.loops === undefined ? 0 : toLoad.totals.loops;
+        totals.actions = toLoad.totals.actions === undefined ? 0 : toLoad.totals.actions;
+    }
+    view.updateTotals();
+
     // capped at 1 month of gain
     addOffline(Math.min(Math.floor((new Date() - new Date(toLoad.date)) * offlineRatio), 2678400000));
 
@@ -579,6 +602,7 @@ function save() {
     toSave.dungeons = dungeons;
     toSave.trials = trials;
     toSave.townsUnlocked = townsUnlocked;
+    toSave.completedActions = completedActions;
     toSave.actionTownNum = actionTownNum;
 
     toSave.stats = stats;
@@ -619,6 +643,7 @@ function save() {
     toSave.date = new Date();
     toSave.challenge = challenge;
     toSave.totalOfflineMs = totalOfflineMs;
+    toSave.totals = totals;
 
     window.localStorage[saveName] = JSON.stringify(toSave);
 }

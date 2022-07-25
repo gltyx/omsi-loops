@@ -96,10 +96,12 @@ function getSkillBonus(skill) {
     let change;
     if (skill === "Dark" || skill === "Chronomancy" || skill === "Mercantilism" || skill === "Divine" || skill === "Wunderkind" || skill === "Thievery" || skill === "Leadership") change = "increase";
     else if (skill === "Practical" || skill === "Spatiomancy" || skill === "Commune" || skill === "Gluttony") change = "decrease";
+    else if (skill === "Assassin") change = "custom";
     else console.log("Skill not found:" + skill);
 
     if(change == "increase") return Math.pow(1 + getSkillLevel(skill) / 60, 0.25);
     else if (change == "decrease") return 1 / (1 + getSkillLevel(skill) / 100);
+    else if (change == "custom") return 1 / (1 + getSkillLevel(skill) / 2000);
     else return 0;
 }
 

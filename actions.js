@@ -56,6 +56,7 @@ function Actions() {
                         curAction.manaRemaining = timeNeeded - timer;
                         curAction.goldRemaining = resources.gold;
                         curAction.finish();
+                        totals.actions++;
                         break;
                     }
                     towns[curAction.townNum][curAction.varName] = curProgress;
@@ -78,6 +79,7 @@ function Actions() {
             curAction.lastMana = curAction.rawTicks;
             this.completedTicks += curAction.adjustedTicks;
             curAction.finish();
+            totals.actions++;
             curAction.manaRemaining = timeNeeded - timer;
             
             if (curAction.cost) {
@@ -156,6 +158,7 @@ function Actions() {
             }
         }
         guild = "";
+        hearts = [];
         escapeStarted = false;
         portalUsed = false;
         stoneLoc = 0;

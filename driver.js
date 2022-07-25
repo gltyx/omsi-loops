@@ -134,6 +134,10 @@ function pauseGame(ping) {
 
 function prepareRestart() {
     const curAction = actions.getNextValidAction();
+    actions.next.forEach(action => {
+        let varName = Action[withoutSpaces(action.name)].varName;
+        if (!completedActions.includes(varName)) completedActions.push(varName);
+    });
     if (options.pauseBeforeRestart ||
         (options.pauseOnFailedLoop && 
          (actions.current.filter(action => action.loopsLeft - action.extraLoops > 0).length > 0))) {
@@ -155,6 +159,10 @@ function prepareRestart() {
 }
 
 function restart() {
+    totals.time += timeCounter;
+    totals.effectiveTime += effectiveTime;
+    if (effectiveTime > 0) totals.loops++;
+    view.updateTotals();
     shouldRestart = false;
     timer = 0;
     timeCounter = 0;
@@ -170,6 +178,8 @@ function restart() {
     actions.restart();
     view.updateCurrentActionsDivs();
     view.updateTrials();
+    view.removeAllHighlights();
+    if (options.highlightNew) view.highlightIncompleteActions();
 }
 
 function addActionToList(name, townNum, isTravelAction, insertAtIndex) {
@@ -360,6 +370,7 @@ function capAmount(index, townNum) {
     alreadyExisting = getNumOnList(action.name) + (action.disabled ? action.loops : 0);
     let newLoops;
     if (action.name.startsWith("Survey")) newLoops = 500 - alreadyExisting;
+    if (action.name === "Gather Team") newLoops = 5 + Math.floor(getSkillLevel("Leadership") / 100) - alreadyExisting;
     else newLoops = towns[townNum][varName] - alreadyExisting;
     actions.nextLast = copyObject(actions.next);
     if (action.loops + newLoops < 0) action.loops = 0;

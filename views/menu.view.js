@@ -7,6 +7,7 @@ Views.registerView("menu", {
         html += Views.menu.htmlFAQMenu();
         html += Views.menu.htmlOptionsMenu();
         html += Views.menu.htmlChallengeMenu();
+        html += Views.menu.htmlTotalsMenu();
         return html;
     },
     versions() {
@@ -87,6 +88,9 @@ Views.registerView("menu", {
                 ${Views.menu.htmlThemeMenu()}
                 ${Object.keys(Localization.supportedLang).length > 1 ? Views.menu.htmlLocalizationMenu() : ""}
                 ${_txt("menu>options>adblock_warning")}<br>
+                <input id='highlightNewInput' type='checkbox' onchange='setOption("highlightNew", this.checked)'/>
+                    <label for='highlightNewInput'>${_txt("menu>options>highlight_new")}</label>
+                <br>
                 <input id='statColorsInput' type='checkbox' onchange='setOption("statColors", this.checked)'/>
                     <label for='statColorsInput'>${_txt("menu>options>stat_colors")}</label>
                 <br>
@@ -137,6 +141,16 @@ Views.registerView("menu", {
         </div>`;
         return html;
     },
+    htmlTotalsMenu() {
+        const html = 
+        `<div style='display:inline-block;height:30px;margin-left:10px;' class='showthatH'>
+            ${_txt("menu>totals>meta>title")}
+            <div class='showthisH'>
+                ${this.totals()}
+            </div>
+        </div>`;
+        return html;
+    },
     challenges() {
         let html = 
         `<div>Challenges are special modes that impose special conditions and heavy restrictions.<br> 
@@ -153,6 +167,16 @@ Views.registerView("menu", {
             <div class='showthis' style='color:black;width:230px;margin-left:100px;'>${_txt("menu>challenges>noodle_arms")}</div>
         </div><br>`
         html += `</div>`
+        return html;
+    },
+    totals() {
+        let html =
+        `<div>
+        Effective Time: <div id='totalEffectiveTime'></div><br>
+        Running Time: <div id='totalPlaytime'></div><br>
+        Loops: <div id='totalLoops'></div><br>
+        Actions: <div id='totalActions'></div><br>
+        </div>`;
         return html;
     }
 });

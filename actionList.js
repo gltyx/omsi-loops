@@ -23,6 +23,7 @@ const limitedActions = [
     "Wild Mana",
     "Hunt",
     "Gamble",
+    "Gather Team",
     "Mana Geyser",
     "Mine Soulstones",
     "Take Artifacts",
@@ -90,15 +91,23 @@ function Action(name, extras) {
 // always the same; these are loaded lazily once (and then they become own properties of the
 // specific Action object)
 defineLazyGetter(Action.prototype, "tooltip", function() {
+    if (this.name.startsWith("Assassin")) return _txt(`actions>assassin>tooltip`);
+    if (this.name.startsWith("Survey")) return _txt(`actions>survey>tooltip`);
     return _txt(`actions>${getXMLName(this.name)}>tooltip`);
 });
 defineLazyGetter(Action.prototype, "tooltip2", function() {
+    if (this.name.startsWith("Assassin")) return _txt(`actions>assassin>tooltip2`);
+    if (this.name.startsWith("Survey")) return _txt(`actions>survey>tooltip2`);
     return _txt(`actions>${getXMLName(this.name)}>tooltip2`);
 });
 defineLazyGetter(Action.prototype, "label", function() {
+    if (this.name.startsWith("Assassin")) return _txt(`actions>assassin>label`);
+    if (this.name.startsWith("Survey")) return _txt(`actions>survey>label`);
     return _txt(`actions>${getXMLName(this.name)}>label`);
 });
 defineLazyGetter(Action.prototype, "labelDone", function() {
+    if (this.name.startsWith("Assassin")) return _txt(`actions>assassin>label_done`);
+    if (this.name.startsWith("Survey")) return _txt(`actions>survey>label_done`);
     return _txt(`actions>${getXMLName(this.name)}>label_done`);
 });
 
@@ -126,6 +135,7 @@ MultipartAction.prototype.constructor = MultipartAction;
 // lazily calculate segment names when explicitly requested (to give chance for localization
 // code to be loaded first)
 defineLazyGetter(MultipartAction.prototype, "segmentNames", function() {
+    if (this.name.startsWith("Assassin")) return ["Scout Target", "Devise Plan", "Kill Target", "Destroy Evidence", "Flee Scene"];
     return Array.from(
         _txtsObj(`actions>${getXMLName(this.name)}>segment_names>name`)
     ).map(elt => elt.textContent);
@@ -180,7 +190,7 @@ TrialAction.prototype.currentFloor = function() {
     return Math.floor(towns[this.townNum][`${this.varName}LoopCounter`] / this.segments + 0.0000001);
 }
 TrialAction.prototype.loopCost = function(segment) {
-    return precision3(Math.pow(this.floorScaling, Math.floor((towns[this.townNum][`${this.varName}LoopCounter`] + segment) / this.segments + 0.0000001)) * this.baseScaling);
+    return precision3(Math.pow(this.baseScaling, Math.floor((towns[this.townNum][`${this.varName}LoopCounter`] + segment) / this.segments + 0.0000001)) * this.exponentScaling * getSkillBonus("Assassin"));
 }
 TrialAction.prototype.tickProgress = function(offset) {
     return this.baseProgress() *
@@ -195,6 +205,41 @@ TrialAction.prototype.loopsFinished = function() {
     view.updateTrialInfo(this.trialNum, this.currentFloor());
     this.floorReward();
 }
+
+function AssassinAction(name, extras) {
+    extras.type = "multipart";
+    extras.expMult = 1;
+    extras.stats = {Per: 0.2, Int: 0.1, Dex: 0.3, Luck: 0.2, Spd: 0.2};
+    extras.loopStats = ["Per", "Int", "Dex", "Luck", "Spd"];
+    MultipartAction.call(this, name, extras);
+}
+AssassinAction.prototype = Object.create(MultipartAction.prototype);
+AssassinAction.prototype.constructor = AssassinAction;
+AssassinAction.prototype.manaCost = function() {return 50000;}
+AssassinAction.prototype.allowed = function() {return 1;}
+AssassinAction.prototype.canStart = function() {return towns[this.townNum][`${this.varName}LoopCounter`] === 0;}
+AssassinAction.prototype.loopCost = function(segment) {return 100000000 * (segment * 5 + 1);}
+AssassinAction.prototype.tickProgress = function(offset) {
+    let baseSkill = Math.sqrt(getSkillLevel("Practical")) + getSkillLevel("Thievery") + getSkillLevel("Assassin");
+    let loopStat = (1 + getLevel(this.loopStats[(towns[this.townNum][`${this.varName}LoopCounter`] + offset) % this.loopStats.length]) / 1000);
+    let completions = Math.sqrt(1 + towns[this.townNum]["total"+this.varName] / 100);
+    let reputationPenalty = resources.reputation != 0 ? Math.abs(resources.reputation) : 1;
+    let killStreak = resources.hearts > 0 ? Math.pow(resources.hearts, 2) : 1;
+    return baseSkill * loopStat * completions / reputationPenalty / killStreak;
+}
+AssassinAction.prototype.getPartName = function() {
+    return "Test";
+}
+AssassinAction.prototype.loopsFinished = function() {
+    addResource("heart", 1);
+    hearts.push(this.varName);
+}
+AssassinAction.prototype.finish = function() {
+    let rep = Math.min((this.townNum + 1) * -1000 + getSkillLevel("Assassin"), 0);
+    addResource("reputation", rep);
+}
+AssassinAction.prototype.visible = function() {return getSkillLevel("Assassin") > 0;}
+AssassinAction.prototype.unlocked = function() {return getSkillLevel("Assassin") > 0;}
 
 //====================================================================================================
 //Survery Actions (All Zones)
@@ -283,6 +328,7 @@ function adjustRocks(townNum) {
     town[`totalStonesZ${townNum}`] = baseStones;
     town[`goodStonesZ${townNum}`] = Math.floor(town[`checkedStonesZ${townNum}`] / 1000) - usedStones;
     town[`goodTempStonesZ${townNum}`] = Math.floor(town[`checkedStonesZ${townNum}`] / 1000) - usedStones;
+    if (usedStones === 250) town.checkedStones = 250000;
 }
 function adjustAllRocks() {
     adjustRocks(1);
@@ -329,6 +375,36 @@ Action.HaulZ1 = new Action("HaulZ1", HaulAction(1));
 Action.HaulZ3 = new Action("HaulZ3", HaulAction(3));
 Action.HaulZ5 = new Action("HaulZ5", HaulAction(5));
 Action.HaulZ6 = new Action("HaulZ6", HaulAction(6));
+
+//====================================================================================================
+//Assassination Actions
+//====================================================================================================
+
+Action.AssassinZ0 = new AssassinAction("AssassinZ0", {
+    townNum: 0,
+});
+Action.AssassinZ1 = new AssassinAction("AssassinZ1", {
+    townNum: 1,
+});
+Action.AssassinZ2 = new AssassinAction("AssassinZ2", {
+    townNum: 2,
+});
+Action.AssassinZ3 = new AssassinAction("AssassinZ3", {
+    townNum: 3,
+});
+Action.AssassinZ4 = new AssassinAction("AssassinZ4", {
+    townNum: 4,
+});
+Action.AssassinZ5 = new AssassinAction("AssassinZ5", {
+    townNum: 5,
+});
+Action.AssassinZ6 = new AssassinAction("AssassinZ6", {
+    townNum: 6,
+});
+Action.AssassinZ7 = new AssassinAction("AssassinZ7", {
+    townNum: 7,
+});
+
 
 //====================================================================================================
 //Zone 1 - Beginnersville
@@ -3063,8 +3139,8 @@ Action.HeroesTrial = new TrialAction("Heroes Trial", 0, {
     },
     loopStats: ["Dex", "Str", "Con", "Spd", "Per", "Cha", "Int", "Luck", "Soul"],
     affectedBy: ["Team"],
-    floorScaling: 2,
-    baseScaling: 1e8,
+    baseScaling: 2,
+    exponentScaling: 1e8,
     manaCost() {
         return 100000;
     },
@@ -4968,8 +5044,8 @@ Action.DeadTrial = new TrialAction("Dead Trial", 4, {
     },
     loopStats: ["Cha", "Int", "Luck", "Soul"],
     affectedBy: ["RaiseZombie"],
-    floorScaling: 2, //Difficulty is raised to this exponent each floor
-    baseScaling: 1e9, //Difficulty is multiplied by this number each floor
+    baseScaling: 2, //Difficulty is raised to this exponent each floor
+    exponentScaling: 1e9, //Difficulty is multiplied by this number each floor
     manaCost() {
         return 100000;
     },
@@ -5544,7 +5620,7 @@ Action.PickPockets = new Action("Pick Pockets", {
         return getSkillLevel("Thievery") > 0;
     },
     goldCost() {
-        return Math.floor(1 * getSkillBonus("Thievery"));
+        return Math.floor(2 * getSkillBonus("Thievery"));
     },
     finish() {
         towns[7].finishProgress(this.varName, 30 * getThievesGuildRank().bonus);
@@ -5588,7 +5664,7 @@ Action.RobWarehouse = new Action("Rob Warehouse", {
         return towns[7].getLevel("PickPockets") >= 100;
     },
     goldCost() {
-        return Math.floor(10 * getSkillBonus("Thievery"));
+        return Math.floor(20 * getSkillBonus("Thievery"));
         },
     finish() {
         towns[7].finishProgress(this.varName, 20 * getThievesGuildRank().bonus);
@@ -5632,7 +5708,7 @@ Action.InsuranceFraud = new Action("Insurance Fraud", {
         return towns[7].getLevel("RobWarehouse") >= 100;
     },
     goldCost() {
-        return Math.floor(100 * getSkillBonus("Thievery"));
+        return Math.floor(200 * getSkillBonus("Thievery"));
     },
     finish() {
         towns[7].finishProgress(this.varName, 10 * getThievesGuildRank().bonus);
@@ -5642,6 +5718,40 @@ Action.InsuranceFraud = new Action("Insurance Fraud", {
         addResource("gold", goldGain);
         return goldGain;
     },
+});
+
+Action.GuildAssassin = new Action("Guild Assassin", {
+    type: "normal",
+    expMult: 1,
+    townNum: 7,
+    stats: {
+        Per: 0.1,
+        Cha: 0.3,
+        Dex: 0.4,
+        Luck: 0.2
+    },
+    manaCost() {
+        return 100000;
+    },
+    allowed() {
+        return 1;
+    },
+    canStart() {
+        return guild === "";
+    },
+    visible() {
+        return towns[this.townNum].getLevel("InsuranceFraud") >= 75;
+    },
+    unlocked() {
+        return towns[this.townNum].getLevel("Excursion") >= 100;
+    },
+    finish() {
+        let assassinExp = 0;
+        if (getSkillLevel("Assassin") === 0) assassinExp = 100;
+        if (resources.hearts > 0) assassinExp = 100 * Math.pow(resources.hearts, 2);
+        resources.hearts = 0;
+        guild = "Assassin";
+    }
 });
 
 Action.Invest = new Action("Invest", {
@@ -5802,8 +5912,8 @@ Action.SecretTrial = new TrialAction("Secret Trial", 3, {
     },
     loopStats: ["Dex", "Str", "Con", "Spd", "Per", "Cha", "Int", "Luck", "Soul"],
     affectedBy: ["Team"],
-    floorScaling: 1.25,
-    baseScaling: 1e10,
+    baseScaling: 1.25,
+    exponentScaling: 1e10,
     manaCost() {
         return 100000;
     },
@@ -5979,8 +6089,8 @@ Action.GodsTrial = new TrialAction("Gods Trial", 1, {
     },
     loopStats: ["Dex", "Str", "Con", "Spd", "Per", "Cha", "Int", "Luck", "Soul"],
     affectedBy: ["Team"],
-    floorScaling: 1.3,
-    baseScaling: 1e7,
+    baseScaling: 1.3,
+    exponentScaling: 1e7,
     manaCost() {
         return 50000;
     },
@@ -6025,8 +6135,8 @@ Action.ChallengeGods = new TrialAction("Challenge Gods", 2, {
         Combat: 500,
     },
     loopStats: ["Dex", "Str", "Con", "Spd", "Per", "Cha", "Int", "Luck", "Soul"],
-    floorScaling: 2,
-    baseScaling: 1e16,
+    baseScaling: 2,
+    exponentScaling: 1e16,
     manaCost() {
         return 50000;
     },

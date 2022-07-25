@@ -6,6 +6,17 @@
                 <title>Changelog</title>
                 <version_prefix>Version</version_prefix>
             </meta>
+            <version verNum="2.8"><![CDATA[
+            <b> July 25th, 2022</b>
+            • A new guild has opened in Commerceville - Assassins Guild! Kill targets across the world, collect their hearts (why is it always hearts?), and return them to the guild to learn the ways of the assassin<br>
+            • New Actions: Assassinate: Assassination targets are now available in every zone. Every assassination carries a very heavy reputation penalty (mitigated by assassin skill) and gets harder based on your reputation and number of assassinations completed this loop<br>
+            • New Skill: Assassin - Improves assassination actions and reduces the difficultly scaling in trials<br>
+            • New Menu: Totals - Records play metrics including total time played and loops/actions completed<br>
+            • Balance: Thieves guild actions gold rewards x2<br>
+            • New Option: Highlight New Actions - Places a border around actions that have not yet been completed on this save. Defaults to on, but can be toggled off in options<br>
+            • Added max button to Gather Team<br>
+            • Typo fixes
+            ]]></version>
             <version verNum="2.7"><![CDATA[
             <b> July 20th, 2022</b>
             • Survey Update! Survey is now completed using maps purchased in Beginnersville. Completed maps can be returned to the explorer's guild for extra progress in a random uncompleted area.<br>
@@ -316,6 +327,7 @@
             </discord>
             <adblock_warning>WARNING: For some reason, Adblock Plus can cause massive lag. This game won't ever have ads, so if your game is freezing frequently, please disable it on this page.
             </adblock_warning>
+            <highlight_new>Highlight new actions</highlight_new>
             <stat_colors>Use stat colors on menu (requires save and refresh)</stat_colors>
             <pause_audio_cue>Ping on pause</pause_audio_cue>
             <auto_max_training>Max All Training Actions on Training cap increase</auto_max_training>
@@ -345,6 +357,11 @@
             <mana_drought>The mana merchant in Beginnersville only has 5k mana to sell, and they're charging double the usual price. No other mana merchants exist.</mana_drought>
             <noodle_arms>You have no base Self-Combat ability. All combat is based on followers. Self combat is half of your team member or zombie strength (whichever is higher).</noodle_arms>
         </challenges>
+        <totals>
+            <meta>
+                <title>Totals</title>
+            </meta>
+        </totals>
     </menu>
     <tutorial><![CDATA[
       TUTORIAL:<br>
@@ -452,9 +469,9 @@
             <desc>You've mapped out some more of the world. The Explorer's guild would happily trade you for this knowledge.</desc>
         </resource>
         <resource initially_hidden="true">
-            <title>Meat:</title>
-            <id>meat</id>
-            <desc>Powers of the gods.</desc>
+            <title><![CDATA[<img src="img/heart.svg" class="smallIcon">]]></title>
+            <id>heart</id>
+            <desc>The still-beating heart of your target. The assassin's guild will reward you for this.</desc>
         </resource>
         <!--singular items with img icons rather than counts-->
         <resource initially_hidden="true" no_count="true">
@@ -648,7 +665,7 @@
         </scombat>
         <tcombat>
             <label>Team Combat</label>
-            <desc>Team Combat = Self Combat + (Combat Skill + Restoration skill * 4) * (Team Members / 2) * Adventure Guild Multiplier * Leadership Bonus + Dark Magic Skill * Zombies / 2 * Dark Ritural / 100.</desc>
+            <desc>Team Combat = Self Combat + (Combat Skill + Restoration skill * 4) * (Team Members / 2) * Adventure Guild Multiplier * Leadership Bonus + Dark Magic Skill * Zombies / 2 * Dark Ritual / 100.</desc>
         </tcombat>
         <combat>
             <label>Combat</label>
@@ -760,6 +777,12 @@
             <desc2><![CDATA[Increases the number of followers you can recruit for every 100 levels. Increases your follower's contributions to team combat by (1 + level / 60) ^ 0.25.<br>
             Currently granting <div id='skillBonusLeadership'></div>x increased follower strength.]]></desc2>
         </leadership>
+        <assassin>
+            <label>Assassination</label>
+            <desc>It will keel.</desc>
+            <desc2><![CDATA[Increases progress in assassination actions, reduced the reputation penalty of assassination, and reduces the difficulty scaling of trials by original / (1 + level / 2000).<br>
+            Currently multiplying trial difficulty by <div id='skillBonusAssassin'></div>x.]]></desc2>
+        </assassin>
         <tooltip>
             <level>Level:</level>
             <level_exp>Level Exp:</level_exp>
@@ -931,7 +954,7 @@
             <error>Error:</error>
         </current_action>
         <!--survey-->
-            <surveyZ0>
+        <survey>
             <label>Survey</label>
             <label_done>Surveyed</label_done>
             <tooltip><![CDATA[
@@ -941,95 +964,16 @@
             Requires a map for each action.<br>
             Currently granting <div class='surveySkill'></div> exp per action.
             ]]></tooltip>
-        </surveyZ0>
-        <surveyZ1>
-            <label>Survey</label>
-            <label_done>Surveyed</label_done>
+        </survey>
+        <assassin>
+            <label>Assassinate</label>
+            <label_done>Assassinated</label_done>
             <tooltip><![CDATA[
-            The explorers guild has taught you to find what most would miss.<br>
-            Gives progress equal to the square root of average survey progress across all zones.<br>
-            Cannot re-survey completed zones.<br>
-            Requires a map for each action.<br>
-            Currently granting <div class='surveySkill'></div> exp per action.
+            Kill your mark in this town.<br>
+            Gives progress equal to (Sqrt(Practical) + Thievery + Assassin) * Stat/1000 * Sqrt(Completions/1000) / Abs(reputation) / hearts^2.<br>
+            Rewards a heart.
             ]]></tooltip>
-        </surveyZ1>
-        <surveyZ2>
-            <label>Survey</label>
-            <label_done>Surveyed</label_done>
-            <tooltip><![CDATA[
-            The explorers guild has taught you to find what most would miss.<br>
-            Gives progress equal to the square root of average survey progress across all zones.<br>
-            Cannot re-survey completed zones.<br>
-            Requires a map for each action.<br>
-            Currently granting <div class='surveySkill'></div> exp per action.
-            ]]></tooltip>
-        </surveyZ2>
-        <surveyZ3>
-            <label>Survey</label>
-            <label_done>Surveyed</label_done>
-            <tooltip><![CDATA[
-            The explorers guild has taught you to find what most would miss.<br>
-            Gives progress equal to the square root of average survey progress across all zones.<br>
-            Cannot re-survey completed zones.<br>
-            Requires a map for each action.<br>
-            Currently granting <div class='surveySkill'></div> exp per action.
-            ]]></tooltip>
-        </surveyZ3>
-        <surveyZ4>
-            <label>Survey</label>
-            <label_done>Surveyed</label_done>
-            <tooltip><![CDATA[
-            The explorers guild has taught you to find what most would miss.<br>
-            Gives progress equal to the square root of average survey progress across all zones.<br>
-            Cannot re-survey completed zones.<br>
-            Requires a map for each action.<br>
-            Currently granting <div class='surveySkill'></div> exp per action.
-            ]]></tooltip>
-        </surveyZ4>
-        <surveyZ5>
-            <label>Survey</label>
-            <label_done>Surveyed</label_done>
-            <tooltip><![CDATA[
-            The explorers guild has taught you to find what most would miss.<br>
-            Gives progress equal to the square root of average survey progress across all zones.<br>
-            Cannot re-survey completed zones.<br>
-            Requires a map for each action.<br>
-            Currently granting <div class='surveySkill'></div> exp per action.
-            ]]></tooltip>
-        </surveyZ5>
-        <surveyZ6>
-            <label>Survey</label>
-            <label_done>Surveyed</label_done>
-            <tooltip><![CDATA[
-            The explorers guild has taught you to find what most would miss.<br>
-            Gives progress equal to the square root of average survey progress across all zones.<br>
-            Cannot re-survey completed zones.<br>
-            Requires a map for each action.<br>
-            Currently granting <div class='surveySkill'></div> exp per action.
-            ]]></tooltip>
-        </surveyZ6>
-        <surveyZ7>
-            <label>Survey</label>
-            <label_done>Surveyed</label_done>
-            <tooltip><![CDATA[
-            The explorers guild has taught you to find what most would miss.<br>
-            Gives progress equal to the square root of average survey progress across all zones.<br>
-            Cannot re-survey completed zones.<br>
-            Requires a map for each action.<br>
-            Currently granting <div class='surveySkill'></div> exp per action.
-            ]]></tooltip>
-        </surveyZ7>
-        <surveyZ8>
-            <label>Survey</label>
-            <label_done>Surveyed</label_done>
-            <tooltip><![CDATA[
-            The explorers guild has taught you to find what most would miss.<br>
-            Gives progress equal to the square root of average survey progress across all zones.<br>
-            Cannot re-survey completed zones.<br>
-            Requires a map for each action.<br>
-            Currently granting <div class='surveySkill'></div> exp per action.
-            ]]></tooltip>
-        </surveyZ8>
+        </assassin>
         <!--ruins-->
         <ruinsZ1>
             <label>Ruins</label>
@@ -2500,6 +2444,14 @@
         ]]></tooltip>
         <tooltip2>gold per thieves guild multiplier.</tooltip2>
         </insurance_fraud>
+        <guild_assassin>
+            <label>Assassins Guild</label>
+            <tooltip><![CDATA[
+                Join the assassins guild and learn of their targets across the world. Bring back their hearts to learn more secrets from the guild.<br>
+                Gives Assassin exp equal to 100 * hearts^2.<br>
+                Unlocked at 100% Insurance Fraud.
+            ]]></tooltip>
+        </guild_assassin>
         <invest>
             <label>Invest</label>
             <tooltip><![CDATA[
