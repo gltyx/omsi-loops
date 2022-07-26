@@ -138,13 +138,15 @@ function loopEnd() {
     totals.effectiveTime += effectiveTime;
     if (effectiveTime > 0) totals.loops++;
     view.updateTotals();
-    const loopCompletedActions = actions.current.slice(0, actions.currentPos + 1);
+    const loopCompletedActions = actions.current.slice(0, actions.currentPos-1);
+    if (actions.current[actions.currentPos-1].loopsLeft < actions.current[actions.currentPos-1].loops)
+        loopCompletedActions.push(actions.current[actions.currentPos-1]);
     markActionsComplete(loopCompletedActions);
+    actionStory(loopCompletedActions);
     if (options.highlightNew) {
         view.removeAllHighlights();
         view.highlightIncompleteActions();
     }
-    //unlockActionStory(completedActions);
 }
 
 function prepareRestart() {

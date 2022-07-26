@@ -289,9 +289,9 @@ function markActionsComplete(loopCompletedActions) {
     });
 }
 
-function unlockActionStory(loopCompletedActions) {
+function actionStory(loopCompletedActions) {
     loopCompletedActions.forEach(action => {
-        if (action.storyUnlocks !== undefined) action.storyUnlocks();
+        if (action.story !== undefined) action.story();
     });
 }
 

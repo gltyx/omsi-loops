@@ -11,7 +11,9 @@
             Performance Update!<br>
             With help from Hordex from Discord, we've rewritten most of the explicit update calls to be deferred to the update handler.<br>
             This means that most UI refreshes are now correctly controlled by the "Updates Per Second" setting in the options menu.<br>
-            High level players who are still experiencing lag can significantly improve performance by reducing this number - this will only decrease how often the screen refreshes, not how often the game updates.
+            High level players who are still experiencing lag can significantly improve performance by reducing this number - this will only decrease how often the screen refreshes, not how often the game updates.<br>
+            ---<br>
+            Additionally, we have a number of new global stories for all the zones, action segments, and other updates from MrPitt!
             ]]></version>            
             <version verNum="2.8"><![CDATA[
             <b> July 25th, 2022</b>
