@@ -1245,8 +1245,10 @@ Action.SmallDungeon = new DungeonAction("Small Dungeon", 0, {
     },
     finish() {
         handleSkillExp(this.skills);
+    },
+    story() {
         unlockStory("smallDungeonAttempted");
-        if (towns[0].SDungeonLoopCounter >= 42) unlockStory("clearSDungeon");
+        if (towns[this.townNum][this.varName + "LoopCounter"] >= 42) unlockStory("clearSDungeon");
     },
 });
 function finishDungeon(dungeonNum, floorNum) {
@@ -1394,6 +1396,9 @@ Action.StartJourney = new Action("Start Journey", {
     finish() {
         unlockTown(1);
     },
+    story() {
+        unlockGlobalStory(3);
+    }
 });
 
 Action.HitchRide = new Action("Hitch Ride", {
@@ -1790,7 +1795,7 @@ Action.PracticalMagic = new Action("Practical Magic", {
         handleSkillExp(this.skills);
         view.requestUpdate("adjustManaCost", "Wild Mana");
         view.requestUpdate("adjustManaCost", "Smash Pots");
-        view.adjustGoldCosts();
+        view.requestUpdate("adjustGoldCosts", null);
     },
 });
 
@@ -2282,6 +2287,9 @@ Action.ContinueOn = new Action("Continue On", {
     finish() {
         unlockTown(2);
     },
+    story() {
+        unlockGlobalStory(4);
+    }
 });
 
 //====================================================================================================
@@ -3194,6 +3202,9 @@ Action.StartTrek = new Action("Start Trek", {
     finish() {
         unlockTown(3);
     },
+    story() {
+        unlockGlobalStory(5);
+    }
 });
 
 Action.Underworld = new Action("Underworld", {
@@ -3445,8 +3456,11 @@ Action.LoopingPotion = new Action("Looping Potion", {
     finish() {
         addResource("loopingPotion", true);
         handleSkillExp(this.skills);
-        unlockStory("loopingPotionMade");
     },
+    story() {
+        unlockStory("loopingPotionMade");
+        unlockGlobalStory(6);
+    }
 });
 
 Action.Pyromancy = new Action("Pyromancy", {
@@ -3872,9 +3886,11 @@ Action.FaceJudgement = new Action("Face Judgement", {
         unlockStory("judgementFaced");
         if (resources.reputation >= 50) {
             unlockStory("acceptedIntoValhalla");
+            unlockGlobalStory(7);
             unlockTown(4);
         } else if (resources.reputation <= -50) {
             unlockStory("castIntoShadowRealm");
+            unlockGlobalStory(8);
             unlockTown(5);
         }
     },
@@ -4417,7 +4433,7 @@ Action.Spatiomancy = new Action("Spatiomancy", {
     expMult: 1,
     townNum: 4,
     stats: {
-        Int: 0.7,
+        Int: 0.6,
         Con: 0.2,
         Per: 0.1,
         Spd: 0.1,
@@ -4442,7 +4458,7 @@ Action.Spatiomancy = new Action("Spatiomancy", {
         adjustAll();
         for (const action of totalActionList) {
             if (towns[action.townNum].varNames.indexOf(action.varName) !== -1) {
-                view.RequestUpdate("updateRegular", {name: action.varName, town: action.townNum});
+                view.requestUpdate("updateRegular", {name: action.varName, index: action.townNum});
             }
         }
     },
@@ -5097,6 +5113,9 @@ Action.JourneyForth = new Action("Journey Forth", {
     finish() {
         unlockTown(6);
     },
+    story() {
+        unlockGlobalStory(9);
+    }
 });
 
 //====================================================================================================
@@ -5392,6 +5411,9 @@ Action.OpenPortal = new Action("Open Portal", {
         handleSkillExp(this.skills);
         unlockTown(1);
     },
+    story() {
+        unlockGlobalStory(10);
+    }
 });
 
 //====================================================================================================
@@ -5504,7 +5526,7 @@ function exchangeMap() {
                 if ( unfinishedSurveyZones[i] === rand) 
                     unfinishedSurveyZones.splice(i, 1); 
         }
-        view.RequestUpdate("updateProgressAction", {name: "SurveyZ"+rand, town: towns[rand]});
+        view.requestUpdate("updateProgressAction", {name: "SurveyZ"+rand, town: towns[rand]});
         addResource("completedMap", -1);
     }
 }
@@ -5929,10 +5951,10 @@ Action.SecretTrial = new TrialAction("Secret Trial", 3, {
         //None
     },
     visible() {
-        return storyMax >= 3 && getBuffLevel("Imbuement3") >= 7;
+        return storyMax >= 12 && getBuffLevel("Imbuement3") >= 7;
     },
     unlocked() {
-        return storyMax >= 3 && getBuffLevel("Imbuement3") >= 7;
+        return storyMax >= 12 && getBuffLevel("Imbuement3") >= 7;
     },
     finish() {
     },
@@ -6159,6 +6181,9 @@ Action.ChallengeGods = new TrialAction("Challenge Gods", 2, {
     finish() {
         handleSkillExp(this.skills);
     },
+    story() {
+        unlockGlobalStory(11);
+    }
 });
 
 Action.RestoreTime = new Action("Restore Time", {
@@ -6186,8 +6211,10 @@ Action.RestoreTime = new Action("Restore Time", {
     },
     finish() {
         addResource("reputation", 9999999);
-        unlockGlobalStory(3);
     },
+    story() {
+        unlockGlobalStory(12);
+    }
 });
 
 const actionsWithGoldCost = Object.values(Action).filter(

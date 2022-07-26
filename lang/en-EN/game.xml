@@ -11,7 +11,9 @@
             Performance Update!<br>
             With help from Hordex from Discord, we've rewritten most of the explicit update calls to be deferred to the update handler.<br>
             This means that most UI refreshes are now correctly controlled by the "Updates Per Second" setting in the options menu.<br>
-            High level players who are still experiencing lag can significantly improve performance by reducing this number - this will only decrease how often the screen refreshes, not how often the game updates.
+            High level players who are still experiencing lag can significantly improve performance by reducing this number - this will only decrease how often the screen refreshes, not how often the game updates.<br>
+            ---<br>
+            Additionally, we have a number of new global stories for all the zones, action segments, and other updates from MrPitt!
             ]]></version>            
             <version verNum="2.8"><![CDATA[
             <b> July 25th, 2022</b>
@@ -536,7 +538,7 @@
         <talents_button>Talents</talents_button>
         <story_title>Story</story_title>
         <stories>
-            <story num="0"> <!--Change 0 to Beginnersville-->
+            <story num="0"> <!--Beginning of Game-->
                 You're a simple courier, on a long trip to deliver a high priority package. Just as you entered town,
                 you tripped - breaking your glasses - and the package burst open, spilling a strange liquid on you.
                 Immediately, your meager amount of mana started draining rapidly. Right as your mana became empty, you
@@ -545,14 +547,14 @@
                 until you decided you had to figure out a way to prolong how long these 'loops' were. Mana crystals are
                 often stored in pottery around town, perhaps you'll start there ...
             </story>
-            <story num="1"> <!--Change 1 to First Soulstone-->
+            <story num="1"> <!--First Soulstone-->
                 You reach the end of the dungeon, where a softly glowing orb floats on a pedastal. You've found the
                 dungeon core - for the first level of the dungeon, at least. As you grasp it, the essence dives into
                 you, infusing your very being with the power it holds. It is a small amount of power, but this is a
                 small dungeon. You'll be back to take this power again, knowing with the foreign knowledge implanted
                 that it will stay with you no matter when you are.
             </story>
-            <story num="2"> <!--Change 2 to No Soulstone-->
+            <story num="2"> <!--No Soulstone-->
                 You reach the end of the dungeon again, but for the first time the core isn't glowing. It's always been
                 thought that dungeon cores build based on the mana spent around them, but you're beginning to think the
                 essence of it's previous incarnations drains it somehow. It doesn't always happen, but you'll need to
@@ -565,8 +567,8 @@
 		   Animals are also roaming around and herbs are everywhere in the forest. Later on your journey you notice
 		   there is this old dusty road that and a hermit living on the side of the road, wonder what knowledge the
 		   hermit could offer.
-		</story>
-		<story num="4"> <!--Change 4 to Merchanton-->
+		    </story>
+		    <story num="4"> <!--Merchanton-->
 		  After boring the hermit and witch to get the knowledge they had to offer, you notice a clearing in the forest
 		  and see another long path ahead. As soon as you get near the end of the road you notice a busy city called 
 		  Merchanton. You set off to explore it and see what you can do in this city, after a bit of exploring you find that
@@ -632,6 +634,7 @@
                You both have inspired me more than you can imagine.
                Hope everyone had fun! <3 <br>
                --Lloyd                
+            ]]>
             </story>
         </stories>
         <bonus_seconds>
@@ -2662,7 +2665,7 @@
 		    <name>Breath</name>
                 <name>Focus</name>
 		    <name>Relax</name>
-		<segment_names>
+		</segment_names>
         </imbue_soul>
         <build_tower>
             <label>Build Tower</label>

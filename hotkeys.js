@@ -104,7 +104,7 @@ window.addEventListener("keydown", e => {
 // bind hotkeys
 
 GameKeyboard.bindHotkey("space", () => pauseGame());
-GameKeyboard.bindHotkey("r", () => restart());
+GameKeyboard.bindHotkey("r", () => manualRestart());
 GameKeyboard.bindHotkey("b", () => toggleOffline());
 
 for (let i = 1; i < 6; i++) {

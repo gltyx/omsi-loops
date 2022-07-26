@@ -130,6 +130,7 @@ function View() {
         updateTeamCombat: [],
         adjustManaCost: [],
         adjustGoldCost: [],
+        adjustGoldCosts: [],
         adjustExpGain: [],
     };
 
@@ -931,12 +932,14 @@ function View() {
         document.getElementById(`expMult${action.varName}`).textContent = formatNumber(action.expMult * 100);
     };
 
-    this.adjustGoldCost = function(varName, amount) {
+    this.adjustGoldCost = function(updateInfo) {
+        const varName = updateInfo.varName;
+        const amount = updateInfo.cost;
         document.getElementById(`goldCost${varName}`).textContent = formatNumber(amount);
     };
     this.adjustGoldCosts = function() {
         for (const action of actionsWithGoldCost) {
-            this.adjustGoldCost(action.varName, action.goldCost());
+            this.adjustGoldCost({varName: action.varName, cost: action.goldCost()});
         }
     };
     this.adjustExpGain = function(action) {
@@ -1150,7 +1153,8 @@ function View() {
         } else {
             document.getElementById("storyRight").style.visibility = "visible";
         }
-        for (let i = 0; i < 10; i++) {
+        //Hard coded story count - need to fix this
+        for (let i = 0; i <= 12; i++) {
             const storyDiv = document.getElementById(`story${i}`);
             if (storyDiv) {
                 storyDiv.style.display = "none";

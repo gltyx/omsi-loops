@@ -46,7 +46,7 @@ function Town(index) {
             adjustAll();
             for (const action of totalActionList) {
                 if (towns[action.townNum].varNames.indexOf(action.varName) !== -1) {
-                    view.requestUpdate("updateRegular", {name: varName, index: this.index});
+                    view.requestUpdate("updateRegular", {name: action.varName, index: action.townNum});
                 }
             }
         }
