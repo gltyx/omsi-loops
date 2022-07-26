@@ -134,6 +134,7 @@ function pauseGame(ping) {
 }
 
 function loopEnd() {
+    view.update();
     if (effectiveTime > 0) {
         totals.time += timeCounter;
         totals.effectiveTime += effectiveTime;
