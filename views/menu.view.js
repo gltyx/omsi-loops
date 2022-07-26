@@ -153,17 +153,17 @@ Views.registerView("menu", {
     },
     challenges() {
         let html = 
-        `<div>Challenges are special modes that impose special conditions and heavy restrictions.<br> 
-            They give no rewards ard are just here for fun.<br>
-            It is only recommended to try them after beating the main game.<br>
-            Please export and save your data locally before starting.<br>
-            <b>Beginning a challenge will permanently delete your current save.</b><br>
+        `<div>挑战是增加了严格限制和特殊条件的特殊模式.<br> 
+            它没有奖励只是单纯的好玩.<br>
+            我建议你至少在通关游戏后再考虑尝试它.<br>
+            开始挑战前别忘了导出你的存档.<br>
+            <b>开始挑战会完全清空你的存档.</b><br>
             `;
         html += 
-        `<div class='button showthat control' style='margin-top: 2px;' onclick='beginChallenge(1)'>Mana Drought 
+        `<div class='button showthat control' style='margin-top: 2px;' onclick='beginChallenge(1)'>法力枯竭 
             <div class='showthis' style='color:black;width:230px;margin-left:100px;'>${_txt("menu>challenges>mana_drought")}</div>
         </div><br>
-        <div class='button showthat control' style='margin-top: 2px;' onclick='beginChallenge(2)'>Noodle Arms
+        <div class='button showthat control' style='margin-top: 2px;' onclick='beginChallenge(2)'>肌无力
             <div class='showthis' style='color:black;width:230px;margin-left:100px;'>${_txt("menu>challenges>noodle_arms")}</div>
         </div><br>`
         html += `</div>`
@@ -172,10 +172,10 @@ Views.registerView("menu", {
     totals() {
         let html =
         `<div>
-        Effective Time: <div id='totalEffectiveTime'></div><br>
-        Running Time: <div id='totalPlaytime'></div><br>
-        Loops: <div id='totalLoops'></div><br>
-        Actions: <div id='totalActions'></div><br>
+        实际时间: <div id='totalEffectiveTime'></div><br>
+        游玩时间: <div id='totalPlaytime'></div><br>
+        循环: <div id='totalLoops'></div><br>
+        行动: <div id='totalActions'></div><br>
         </div>`;
         return html;
     }
