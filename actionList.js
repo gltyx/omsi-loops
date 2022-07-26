@@ -2534,7 +2534,7 @@ function getAdvGuildRank(offset) {
             name += ["-", "", "+"][offset % 3];
         }
     } else {
-        name = "Godlike";
+        name = "神级";
         bonus = 10;
     }
     name += `, 倍率 x${bonus}`;
@@ -2754,7 +2754,7 @@ function getCraftGuildRank(offset) {
             name += ["-", "", "+"][offset % 3];
         }
     } else {
-        name = "Godlike";
+        name = "神级";
         bonus = 10;
     }
     name += `, 倍率 x${bonus}`;
@@ -4305,7 +4305,7 @@ function getWizCollegeRank(offset) {
             name += ["-", "", "+"][offset % 3];
         }
     } else {
-        name = "Merlin";
+        name = "梅林";
         bonus = 5;
     }
     name += `, 倍率 x${bonus}`;
@@ -4633,7 +4633,7 @@ function getFrostGiantsRank(offset) {
             name += ["-", "", "+"][offset % 3];
         }
     } else {
-        name = "Admiral";
+        name = "上将";
         bonus = 10;
     }
     name += `, 倍率 x${bonus}`;
@@ -5139,7 +5139,7 @@ function getFightJungleMonstersRank(offset) {
             name += ["-", "", "+"][offset % 3];
         }
     } else {
-        name = "Stampede";
+        name = "兽群";
         bonus = 10;
     }
     name += `, 倍率 x${bonus}`;
@@ -5506,7 +5506,7 @@ function getThievesGuildRank(offset) {
             name += ["-", "", "+"][offset % 3];
         }
     } else {
-        name = "Godlike";
+        name = "神级";
         bonus = 10;
     }
     name += `, 倍率 x${bonus}`;
