@@ -1795,7 +1795,7 @@ Action.PracticalMagic = new Action("Practical Magic", {
         handleSkillExp(this.skills);
         view.requestUpdate("adjustManaCost", "Wild Mana");
         view.requestUpdate("adjustManaCost", "Smash Pots");
-        view.adjustGoldCosts();
+        view.requestUpdate("adjustGoldCosts", null);
     },
 });
 
