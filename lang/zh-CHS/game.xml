@@ -11,7 +11,9 @@
             Performance Update!<br>
             With help from Hordex from Discord, we've rewritten most of the explicit update calls to be deferred to the update handler.<br>
             This means that most UI refreshes are now correctly controlled by the "Updates Per Second" setting in the options menu.<br>
-            High level players who are still experiencing lag can significantly improve performance by reducing this number - this will only decrease how often the screen refreshes, not how often the game updates.
+            High level players who are still experiencing lag can significantly improve performance by reducing this number - this will only decrease how often the screen refreshes, not how often the game updates.<br>
+            ---<br>
+            Additionally, we have a number of new global stories for all the zones, action segments, and other updates from MrPitt!
             ]]></version>            
             <version verNum="2.8"><![CDATA[
             <b> July 25th, 2022</b>
@@ -533,23 +535,23 @@
         <talents_button>天赋</talents_button>
         <story_title>故事</story_title>
         <stories>
-            <story num="0"> <!--Change 0 to Beginnersville-->
+            <story num="0"> <!--Beginning of Game-->
                 您只是一个普通的送货员，踏上了一次长途之旅，运送着一个重要的包裹。进城的时候，您滑了一跤，打碎了眼镜，并且包裹还还摔开了，一股奇怪的液体溅到了您身上。您仅有的微薄法力开始迅速消耗。就在它快要耗尽的时候，您突然发现，自己回到了液体溅到身上的那个瞬间，并且法力就这么回复满了……但法力依旧在消耗，您就这么不停地循环着，世界也随之不停重置。直到最后，您终于下定决心，要延长这种循环的时间。这个镇子常常把法力水晶存放到罐子里，或许可以从那里开始……
             </story>
-            <story num="1"> <!--Change 1 to First Soulstone-->
+            <story num="1"> <!--First Soulstone-->
                 您到达了地牢的终点，一个踏板上，悬浮着一个散发着柔和光芒的球体。那就是地牢核心，不过也只是第一层的核心。您抓住了它，它的精华开始涌入您的身体，它的力量逐渐为您所用。它蕴含的能量虽然不多，但毕竟这个地牢也不大。您一定会再回来的，因为获得这些能量时您同时也获得了外来的知识，知道这些能量将永远与您同在。
             </story>
-            <story num="2"> <!--Change 2 to No Soulstone-->
+            <story num="2"> <!--No Soulstone-->
                 您再次到达了地牢的终点，但您第一次发现，核心并没有发光。人们一向认为核心的能量来自于周遭的法力，但它前世的精华似乎已经将它挥霍一空。它不会一直如此的，您只需要向世界注入更多法力，就可以继续利用它了。您耸了耸肩，接受了循环的另一个奇妙设定。
             </story>
-		<story num="3"> <!--Change 3 to Forest-->
+		    <story num="3"> <!--Forest-->
 		   You have bought the supplies and began your journey, down the road you spot a lush forest. You set up camp
 		   and begin exploring the forest noticing mana crystals sprawling on the ground everywhere in this forest,
 		   animals are also roaming around and herbs are everywhere in the forest. Later on your journey you notice
                there is this old dusty road that and a hermit living on the side of the road, wonder what knowledge the
 		   hermit could offer.
 		</story>
-		<story num="4"> <!--Change 4 to Merchanton-->
+		    <story num="4"> <!--Merchanton-->
 		  After boring the hermit and witch to get the knowledge they had to offer, you notice a clearing in the forest
               and see another long path ahead. As soon as you get near the end of the road you notice a busy city called 
 		  Merchanton, time to explore it and see what you can do in this city. After a bit of exploring, you find that
@@ -558,39 +560,39 @@
 		  need some help clearing it. Another loop and your wasted again, but the leader of the crafting guild comes in and
 		  notices your gear isn't up to par and suggests to join the guild.
 		</story>
-		<story num="5"> <!--Change 5 to Mt. Olympus-->
+		    <story num="5"> <!--Mt. Olympus-->
 		  You have explored all the guild options in Merchenton and have made a few guild friends along the way, Time to grab
 		  Pickaxe and Start the Climb! Reaching Mt. Olympus takes alot of climbing but during the climb you discover these mana
 		  geyser but looks like they can be harvested with a Pickaxe. You discover runes scattered around the mountain, maybe
 		  deciphering them might be useful. About half way up this mountain you discover a massive cavern with room to take a
 		  break climbing and explore it. You met these Friendly Trolls in these caverns however they don't sell snowcones...
 		</story>
-		<story num="6"> <!--Made the Looping Potion--> <!--Change 6 to Looping Potion-->
+		    <story num="6"> <!--Made the Looping Potion-->
 		  You have made the Loop Potion after learning alchemistry and grabbing herbs from the forest, you take a bit to brew the
 		  concoction and after it boils a bit and the herbs soak into a nearby mana geyser you pour it into a bottle. After a glance
 		  you have no doubts that it is the think you spilled back in beginnersville, but you have no idea what to do with it now. 
 		</story>
-		<story num="7"> <!--Good Reputation Story--> <!--Change 7 to Valhalla-->
+		    <story num="7"> <!--Good Reputation to Valhalla-->
 		  You have finally reached the top of Mt. Olympus there is a giant door at the very top, a voice rings out "It is time
 		  to face JUDGEMENT of the GODS, HAHAHAHA. Hope you are prepared for judgement!" After waiting for what feels like hours
 		  the voice rings out "You may PASS!". You enter the wonderful place called Valhalla, you	have a tourist show you around
 		  and even looks like a charity is happening. After exploring you realize also can join charm school or wizard college,
 		  become a citizen, and even fight with the Valkyries.
 		</story>
-		<story num="8"> <!--Bad Reputation Story--> <!--Change 8 to Startington-->
+		    <story num="8"> <!--Bad Reputation Startington-->
 		  The voice rings "You Shall Not PASS!". You feel like you are being lifted and are chucked off Mt. Olymupus and into the
 		  shadow realm. The shadow realm opens up and you hit the floor luckily with only a scratch, after a few hours you finally
 		  can get up and realize that this isn't beginnersville anymore. After closer inspection of the ruins nearby you realize that
 		  place is alot twisted and strange. You notice these strange pylons and seak to destroy them and a few minutes later you look
 		  and finally notice the giant spire in front of you!
 		</story>
-		<story num="9"> <!--Change 9 to Jungle Path-->
+		    <story num="9"> <!--Jungle Path-->
 		  Before you leave Startington you realize you don't have your supplies you got in Beginnersville, but lucky for you Startington
 		  sells another supply set but rumor has it that the shopkeeper is kinda deaf so your haggles won't work on them. You get your 
 		  supplies and you set off down the trail, reminds you of the forest. You walk untill you see a jungle up ahead with ruins all
 		  around, probly best to start exploring them.
 		</story>
-		<story num="10"> <!--Change 10 to Commerceville-->
+		    <story num="10"> <!--Commerceville-->
 		  After you explore the ruins you notice the exit out of here is gonna exit quick might have to beat the loop fast enough. You
 		  just beat the exit just barely and notice that there is another small city, time to pay someone to show you around town! The
 		  guide shows you the explorers guild and explains that they have many perks for joining, nifty! The guide also takes you down
@@ -598,7 +600,7 @@
 		  you around town he explains that they are with the tax collectors and you probly should be going now. Quickly you make it to
 		  the Bank and you notice a hooded figure, might be worth checking what they do.
 		</story>
-		<story num="11"> <!--Change 11 to Valley of Olympus-->
+		    <story num="11"> <!--Valley of Olympus-->
 		  After you take a heafty loan from the bank you can now own Commerceville and leave while you still can, after you walk down the
 		  road you realize you can move the stones from the Jungle and move them to build a great tower. After you build the great tower
 		  you can't reach Valhalla unless you can clear trial of the gods to prove worthy of entering again. After finally clearing the
@@ -606,7 +608,7 @@
 		  to be worth of the throne." After a long battle the last god goes down and you gain the power of all 7 gods, with great power
 		  you can end the time loop now and forever!
 		</story>
-		<story num="12"> <!--Finally--> <!-- Change _ to Ending the Loop-->
+		    <story num="12"> <!--Finally Ending the Loop-->
         <![CDATA[
                You've done it! You've bested the gods themselves and restored time to its rightful flow. You can stop looping at any moment.
                But, then again, you could keep going. There's always time later...

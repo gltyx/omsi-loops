@@ -1152,7 +1152,7 @@ function View() {
         } else {
             document.getElementById("storyRight").style.visibility = "visible";
         }
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0; i <= 12; i++) {
             const storyDiv = document.getElementById(`story${i}`);
             if (storyDiv) {
                 storyDiv.style.display = "none";
