@@ -5951,10 +5951,10 @@ Action.SecretTrial = new TrialAction("Secret Trial", 3, {
         //None
     },
     visible() {
-        return storyMax >= 3 && getBuffLevel("Imbuement3") >= 7;
+        return storyMax >= 12 && getBuffLevel("Imbuement3") >= 7;
     },
     unlocked() {
-        return storyMax >= 3 && getBuffLevel("Imbuement3") >= 7;
+        return storyMax >= 12 && getBuffLevel("Imbuement3") >= 7;
     },
     finish() {
     },
