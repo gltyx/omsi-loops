@@ -210,8 +210,7 @@ const numbers = "zero one two three four five six seven eight nine ten eleven tw
 const tens = "twenty thirty forty fifty sixty seventy eighty ninety".split(" ");
 
 function number2Words(n) {
-    if (n < 1000) return `${n}`;
-    return `${number2Words(~~(n / 1000))} thousand${n % 1000 === 0 ? "" : ` ${number2Words(n % 1000)}`}`;
+    if (n < 10000000) return `${n}`;
 }
 
 function capitalizeFirst(s) {
