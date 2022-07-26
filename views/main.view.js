@@ -130,6 +130,7 @@ function View() {
         updateTeamCombat: [],
         adjustManaCost: [],
         adjustGoldCost: [],
+        adjustGoldCosts: [],
         adjustExpGain: [],
     };
 
@@ -931,12 +932,12 @@ function View() {
         document.getElementById(`expMult${action.varName}`).textContent = formatNumber(action.expMult * 100);
     };
 
-    this.adjustGoldCost = function(varName, amount) {
-        document.getElementById(`goldCost${varName}`).textContent = formatNumber(amount);
+    this.adjustGoldCost = function(action) {
+        document.getElementById(`goldCost${action.varName}`).textContent = formatNumber(action.amount);
     };
     this.adjustGoldCosts = function() {
         for (const action of actionsWithGoldCost) {
-            this.adjustGoldCost(action.varName, action.goldCost());
+            this.adjustGoldCost({varName: action.varName, cost: action.goldCost()});
         }
     };
     this.adjustExpGain = function(action) {
