@@ -334,7 +334,7 @@
             </discord>
             <adblock_warning>警告: 由于一些原因, Adblock Plus可能导致严重卡顿. 这个游戏并没有广告, 所以如果你的游戏经常卡死, 请把它关掉.
             </adblock_warning>
-            <highlight_new>Highlight new actions</highlight_new>
+            <highlight_new>新行动高亮</highlight_new>
             <stat_colors>改变能力颜色 (保存后刷新生效)</stat_colors>
             <auto_max_training>最大化所有训练行动</auto_max_training>
             <hotkeys>快捷键</hotkeys>
