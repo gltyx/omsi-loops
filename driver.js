@@ -134,18 +134,20 @@ function pauseGame(ping) {
 }
 
 function loopEnd() {
-    totals.time += timeCounter;
-    totals.effectiveTime += effectiveTime;
-    if (effectiveTime > 0) totals.loops++;
-    view.updateTotals();
-    const loopCompletedActions = actions.current.slice(0, actions.currentPos-1);
-    if (actions.current[actions.currentPos-1].loopsLeft < actions.current[actions.currentPos-1].loops)
-        loopCompletedActions.push(actions.current[actions.currentPos-1]);
-    markActionsComplete(loopCompletedActions);
-    actionStory(loopCompletedActions);
-    if (options.highlightNew) {
-        view.removeAllHighlights();
-        view.highlightIncompleteActions();
+    if (effectiveTime > 0) {
+        totals.time += timeCounter;
+        totals.effectiveTime += effectiveTime;
+        totals.loops++;
+        view.updateTotals();
+        const loopCompletedActions = actions.current.slice(0, actions.currentPos-1);
+        if (actions.current[actions.currentPos-1].loopsLeft < actions.current[actions.currentPos-1].loops)
+            loopCompletedActions.push(actions.current[actions.currentPos-1]);
+        markActionsComplete(loopCompletedActions);
+        actionStory(loopCompletedActions);
+        if (options.highlightNew) {
+            view.removeAllHighlights();
+            view.highlightIncompleteActions();
+        }
     }
 }
 
