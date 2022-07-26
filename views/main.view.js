@@ -130,6 +130,7 @@ function View() {
         updateTeamCombat: [],
         adjustManaCost: [],
         adjustGoldCost: [],
+        adjustGoldCosts: [],
         adjustExpGain: [],
     };
 
