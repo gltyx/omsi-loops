@@ -4442,7 +4442,7 @@ Action.Spatiomancy = new Action("Spatiomancy", {
         adjustAll();
         for (const action of totalActionList) {
             if (towns[action.townNum].varNames.indexOf(action.varName) !== -1) {
-                view.requestUpdate("updateRegular", {name: action.varName, town: action.townNum});
+                view.requestUpdate("updateRegular", {name: action.varName, index: action.townNum});
             }
         }
     },
