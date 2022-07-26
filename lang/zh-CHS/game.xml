@@ -8,23 +8,23 @@
             </meta>
             <version verNum="2.9"><![CDATA[
             <b> July 25th, 2022</b>
-            Performance Update!<br>
-            With help from Hordex from Discord, we've rewritten most of the explicit update calls to be deferred to the update handler.<br>
-            This means that most UI refreshes are now correctly controlled by the "Updates Per Second" setting in the options menu.<br>
-            High level players who are still experiencing lag can significantly improve performance by reducing this number - this will only decrease how often the screen refreshes, not how often the game updates.<br>
+            性能更新!<br>
+            感谢 Hordex 在 Discord 的帮助, 我们重新整理了关于显示更新的代码使它更顺滑.<br>
+            这意味着选项中的 "每秒更新次数" 将正确的对所有显示生效.<br>
+            后期玩家如果觉得卡顿可以降低这个数字 - 这个只会影响显示的更新速度, 并不会导致游戏变慢.<br>
             ---<br>
-            Additionally, we have a number of new global stories for all the zones, action segments, and other updates from MrPitt!
+            额外的, 在 MrPitt 的帮助下我们在所有区域都添加了新的故事, 行动阶段, 和其他更新!
             ]]></version>            
             <version verNum="2.8"><![CDATA[
             <b> July 25th, 2022</b>
-            • A new guild has opened in Commerceville - Assassins Guild! Kill targets across the world, collect their hearts (why is it always hearts?), and return them to the guild to learn the ways of the assassin<br>
-            • New Actions: Assassinate: Assassination targets are now available in every zone. Every assassination carries a very heavy reputation penalty (mitigated by assassin skill) and gets harder based on your reputation and number of assassinations completed this loop<br>
-            • New Skill: Assassin - Improves assassination actions and reduces the difficultly scaling in trials<br>
-            • New Menu: Totals - Records play metrics including total time played and loops/actions completed<br>
-            • Balance: Thieves guild actions gold rewards x2<br>
-            • New Option: Highlight New Actions - Places a border around actions that have not yet been completed on this save. Defaults to on, but can be toggled off in options<br>
-            • Added max button to Gather Team<br>
-            • Typo fixes
+            • 商业村庄增加了一个新的公会 - 刺客公会! 在世界中刺杀目标, 收集心脏 (为什么都是心脏?), 带回刺客公会以换取刺客相关知识<br>
+            • 新行动: 刺杀: 现在每个区域都有刺杀行动. 每次刺杀都会严重降低声望 (通过刺客技能缓解) 并且根据你的声望和本次循环完成的刺杀次数越来越难<br>
+            • 新技能: 刺杀 - 增强刺杀行动并降低试炼难度膨胀<br>
+            • 新菜单: 统计 - 记录各种游戏指标比如时间和循环/行动完成次数<br>
+            • 平衡: 盗贼公会金块 x2<br>
+            • 新选项: 新行动高亮 - 在你本次存档中尚未完成过的行动周围放置边框. 默认开启, 可以在设置中关闭它<br>
+            • 寻找队友添加一个最大按钮<br>
+            • 错字修复
             ]]></version>
             <version verNum="2.7"><![CDATA[
             <b> July 20th, 2022</b>
@@ -477,7 +477,7 @@
         <resource initially_hidden="true">
             <title><![CDATA[<img src="img/heart.svg" class="smallIcon">]]></title>
             <id>heart</id>
-            <desc>The still-beating heart of your target. The assassin's guild will reward you for this.</desc>
+            <desc>从目标处获得的仍在跳动的心脏. 交给刺客公会可以获得奖励.</desc>
         </resource>
         <!--singular items with img icons rather than counts-->
         <resource initially_hidden="true" no_count="true">
@@ -834,10 +834,10 @@
             当前给予 <div id='skillBonusLeadership'></div>x 队友属性.]]></desc2>
         </leadership>
         <assassin>
-            <label>Assassination</label>
-            <desc>It will keel.</desc>
-            <desc2><![CDATA[Increases progress in assassination actions, reduced the reputation penalty of assassination, and reduces the difficulty scaling of trials by original / (1 + level / 2000).<br>
-            Currently multiplying trial difficulty by <div id='skillBonusAssassin'></div>x.]]></desc2>
+            <label>刺杀</label>
+            <desc>一切都将倾覆.</desc>
+            <desc2><![CDATA[增加刺杀行动的进度, 降低刺杀行动的声望损失, 还可以降低试炼的难度膨胀 初始 / (1 + 等级 / 2000).<br>
+            当前试炼难度乘以 <div id='skillBonusAssassin'></div>x.]]></desc2>
         </assassin>
         <tooltip>
             <level>等级:</level>
@@ -1021,12 +1021,12 @@
             ]]></tooltip>
         </survey>
         <assassin>
-            <label>Assassinate</label>
-            <label_done>Assassinated</label_done>
+            <label>刺杀</label>
+            <label_done>已刺杀</label_done>
             <tooltip><![CDATA[
-            Kill your mark in this town.<br>
-            Gives progress equal to (Sqrt(Practical) + Thievery + Assassin) * Stat/1000 * Sqrt(Completions/1000) / Abs(reputation) / hearts^2.<br>
-            Rewards a heart.
+            消灭镇子里的目标.<br>
+            每点法力给予 (开方(实用魔法) + 盗窃 + 刺杀) * 主能力/1000 * 开方(完成次数/1000) / 绝对值(声望) / 心脏^2 进度点.<br>
+            奖励一个心脏.
             ]]></tooltip>
         </assassin>
         <!--ruins-->
@@ -2509,11 +2509,11 @@
         <tooltip2>金块.</tooltip2>
         </insurance_fraud>
         <guild_assassin>
-            <label>Assassins Guild</label>
+            <label>刺客公会</label>
             <tooltip><![CDATA[
-                Join the assassins guild and learn of their targets across the world. Bring back their hearts to learn more secrets from the guild.<br>
-                Gives Assassin exp equal to 100 * hearts^2.<br>
-                Unlocked at 100% Insurance Fraud.
+                加入刺客公会并了解它在世界中的目标. 带回他们的心脏以换取更多隐秘知识.<br>
+                奖励刺杀经验 100 * 心脏^2.<br>
+                解锁于 100% 见识.
             ]]></tooltip>
         </guild_assassin>
         <invest>
