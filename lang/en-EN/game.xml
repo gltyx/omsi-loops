@@ -624,6 +624,7 @@
 		  you can end the time loop now and forever!
 		</story>
 		<story num="12"> <!--Finally--> <!-- Change _ to Ending the Loop-->
+        <![CDATA[
                You've done it! You've bested the gods themselves and restored time to its rightful flow. You can stop looping at any moment.
                But, then again, you could keep going. There's always time later...
                Thanks for playing my fan mod of Idle Loops! 
@@ -631,7 +632,7 @@
                You both have inspired me more than you can imagine.
                Hope everyone had fun! <3 <br>
                --Lloyd                
-            </story>
+            ]]></story>
         </stories>
         <bonus_seconds>
             <title>Bonus Seconds</title>
@@ -2597,7 +2598,7 @@
 		    <name>Breath</name>
                 <name>Focus</name>
 		    <name>Relax</name>
-		<segment_names>
+		</segment_names>
         </imbue_soul>
         <build_tower>
             <label>Build Tower</label>
