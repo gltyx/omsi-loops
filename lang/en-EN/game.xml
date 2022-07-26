@@ -536,7 +536,7 @@
         <talents_button>Talents</talents_button>
         <story_title>Story</story_title>
         <stories>
-            <story num="0">
+            <story num="0"> <!--Change 0 to Beginnersville-->
                 You're a simple courier, on a long trip to deliver a high priority package. Just as you entered town,
                 you tripped - breaking your glasses - and the package burst open, spilling a strange liquid on you.
                 Immediately, your meager amount of mana started draining rapidly. Right as your mana became empty, you
@@ -545,29 +545,92 @@
                 until you decided you had to figure out a way to prolong how long these 'loops' were. Mana crystals are
                 often stored in pottery around town, perhaps you'll start there ...
             </story>
-            <story num="1">
+            <story num="1"> <!--Change 1 to First Soulstone-->
                 You reach the end of the dungeon, where a softly glowing orb floats on a pedastal. You've found the
                 dungeon core - for the first level of the dungeon, at least. As you grasp it, the essence dives into
                 you, infusing your very being with the power it holds. It is a small amount of power, but this is a
                 small dungeon. You'll be back to take this power again, knowing with the foreign knowledge implanted
                 that it will stay with you no matter when you are.
             </story>
-            <story num="2">
+            <story num="2"> <!--Change 2 to No Soulstone-->
                 You reach the end of the dungeon again, but for the first time the core isn't glowing. It's always been
                 thought that dungeon cores build based on the mana spent around them, but you're beginning to think the
                 essence of it's previous incarnations drains it somehow. It doesn't always happen, but you'll need to
                 put more mana into the world to take the core's benefits out of it. You shrug, accepting yet another
                 oddity of the loops.
             </story>
-            <story num="3"><![CDATA[
-            You've done it! You've bested the gods themselves and restored time to its rightful flow. You can stop looping at any moment.
-                But, then again, you could keep going. There's always time later...<br><br>
-                Thanks for playing my fan mod of Idle Loops! 
-                Big shout-out to the wonderful Stop_Sign for creating this amazing game and Omsi for all the Omsi version.
-                You both have inspired me more than you can imagine.
-                Hope everyone had fun! <3 <br>
-                --Lloyd
-            ]]>                
+		<story num="3"> <!--Change 3 to Forest-->
+		   You have bought the supplies and began your journey, down the road you spot a lush forest. You set up camp
+		   and begin exploring the forest noticing mana crystals sprawling on the ground everywhere in this forest,
+		   animals are also roaming around and herbs are everywhere in the forest. Later on your journey you notice
+               there is this old dusty road that and a hermit living on the side of the road, wonder what knowledge the
+		   hermit could offer.
+		</story>
+		<story num="4"> <!--Change 4 to Merchanton-->
+		  After boring the hermit and witch to get the knowledge they had to offer, you notice a clearing in the forest
+              and see another long path ahead. As soon as you get near the end of the road you notice a busy city called 
+		  Merchanton, time to explore it and see what you can do in this city. After a bit of exploring, you find that
+		  there is a casino and a bar right around the corner. After getting some cash and getting wasted in a past loop
+		  you met the leader of the adventure guild, they explain that there is a large dungeon in this city and you might
+		  need some help clearing it. Another loop and your wasted again, but the leader of the crafting guild comes in and
+		  notices your gear isn't up to par and suggests to join the guild.
+		</story>
+		<story num="5"> <!--Change 5 to Mt. Olympus-->
+		  You have explored all the guild options in Merchenton and have made a few guild friends along the way, Time to grab
+		  Pickaxe and Start the Climb! Reaching Mt. Olympus takes alot of climbing but during the climb you discover these mana
+		  geyser but looks like they can be harvested with a Pickaxe. You discover runes scattered around the mountain, maybe
+		  deciphering them might be useful. About half way up this mountain you discover a massive cavern with room to take a
+		  break climbing and explore it. You met these Friendly Trolls in these caverns however they don't sell snowcones...
+		</story>
+		<story num="6"> <!--Made the Looping Potion--> <!--Change 6 to Looping Potion-->
+		  You have made the Loop Potion after learning alchemistry and grabbing herbs from the forest, you take a bit to brew the
+		  concoction and after it boils a bit and the herbs soak into a nearby mana geyser you pour it into a bottle. After a glance
+		  you have no doubts that it is the think you spilled back in beginnersville, but you have no idea what to do with it now. 
+		</story>
+		<story num="7"> <!--Good Reputation Story--> <!--Change 7 to Valhalla-->
+		  You have finally reached the top of Mt. Olympus there is a giant door at the very top, a voice rings out "It is time
+		  to face JUDGEMENT of the GODS, HAHAHAHA. Hope you are prepared for judgement!" After waiting for what feels like hours
+		  the voice rings out "You may PASS!". You enter the wonderful place called Valhalla, you	have a tourist show you around
+		  and even looks like a charity is happening. After exploring you realize also can join charm school or wizard college,
+		  become a citizen, and even fight with the Valkyries.
+		</story>
+		<story num="8"> <!--Bad Reputation Story--> <!--Change 8 to Startington-->
+		  The voice rings "You Shall Not PASS!". You feel like you are being lifted and are chucked off Mt. Olymupus and into the
+		  shadow realm. The shadow realm opens up and you hit the floor luckily with only a scratch, after a few hours you finally
+		  can get up and realize that this isn't beginnersville anymore. After closer inspection of the ruins nearby you realize that
+		  place is alot twisted and strange. You notice these strange pylons and seak to destroy them and a few minutes later you look
+		  and finally notice the giant spire in front of you!
+		</story>
+		<story num="9"> <!--Change 9 to Jungle Path-->
+		  Before you leave Startington you realize you don't have your supplies you got in Beginnersville, but lucky for you Startington
+		  sells another supply set but rumor has it that the shopkeeper is kinda deaf so your haggles won't work on them. You get your 
+		  supplies and you set off down the trail, reminds you of the forest. You walk untill you see a jungle up ahead with ruins all
+		  around, probly best to start exploring them.
+		</story>
+		<story num="10"> <!--Change 10 to Commerceville-->
+		  After you explore the ruins you notice the exit out of here is gonna exit quick might have to beat the loop fast enough. You
+		  just beat the exit just barely and notice that there is another small city, time to pay someone to show you around town! The
+		  guide shows you the explorers guild and explains that they have many perks for joining, nifty! The guide also takes you down
+		  a alley way and shows you that you can join the Thieves Guild to make a little bit of cash. After the guide is done showing
+		  you around town he explains that they are with the tax collectors and you probly should be going now. Quickly you make it to
+		  the Bank and you notice a hooded figure, might be worth checking what they do.
+		</story>
+		<story num="11"> <!--Change 11 to Valley of Olympus-->
+		  After you take a heafty loan from the bank you can now own Commerceville and leave while you still can, after you walk down the
+		  road you realize you can move the stones from the Jungle and move them to build a great tower. After you build the great tower
+		  you can't reach Valhalla unless you can clear trial of the gods to prove worthy of entering again. After finally clearing the
+		  trial of the gods, the voice speaks "The 7 gods of this land protect this world, if you want to enter Valhalla you can defeat us
+		  to be worth of the throne." After a long battle the last god goes down and you gain the power of all 7 gods, with great power
+		  you can end the time loop now and forever!
+		</story>
+		<story num="12"> <!--Finally--> <!-- Change _ to Ending the Loop-->
+               You've done it! You've bested the gods themselves and restored time to its rightful flow. You can stop looping at any moment.
+               But, then again, you could keep going. There's always time later...
+               Thanks for playing my fan mod of Idle Loops! 
+               Big shout-out to the wonderful Stop_Sign for creating this amazing game and Omsi for all the Omsi version.
+               You both have inspired me more than you can imagine.
+               Hope everyone had fun! <3 <br>
+               --Lloyd                
             </story>
         </stories>
         <bonus_seconds>
@@ -1243,7 +1306,7 @@
             <story_1><![CDATA[<b>Patient healed:</b>⮀ You're allowed in to see the patients and begin healing. It's excellent practice and everyone you heal, be it from broken bones to small scrapes is extraordinarily thankful for your help.]]></story_1>
             <story_2><![CDATA[<b>10 Patients healed in a loop:</b>⮀ Your reputation is absolutely sterling, you've basically cleared out the entire healing home and the nurses and healers are more than thankful for your help.]]></story_2>
             <story_3><![CDATA[<b>Failed Action:</b>⮀ You're turned away at the door, the small healers home stating that they can't trust you to not poison the people inside or make the situation worse.]]></story_3>
-            <segment_names>
+		 <segment_names>
                 <name>Diagnose</name>
                 <name>Treat</name>
                 <name>Inform</name>
@@ -2082,9 +2145,10 @@
 			Tidy up the place.<br>Progress is based on Practical Magic Skill and total completions.<br>Gives 5 gold and 1 reputation per mess cleaned.<br>Unlocked at 30% of houses canvassed.
 		]]></tooltip>
 			<segment_names>
-                <name>Temp1</name>
-                <name>Temp2</name>
-                <name>Temp3</name>
+                <name>Move Boxes</name>
+                <name>Sweep The Floor</name>
+                <name>Fix Decorations</name>
+		    <name>Help Build</name>
             </segment_names>
             <!--TODO: give this action story-->
 		</tidy_up>
@@ -2318,6 +2382,12 @@
             Progress is based on (Dark Magic Skill * Zombies / 2)<br>
             Rewards 1 Zombie per floor completion.
         ]]></tooltip>
+            <segment_names>
+                <name>Persuade the Dead</name>
+                <name>Train the Dead</name>
+                <name>Avoid the Spikes</name>
+                <name>Transform the Dead</name>
+            </segment_names>
         </dead_trial>
         <journey_forth>
             <label>Journey Forth</label>
@@ -2497,6 +2567,17 @@
             You're really going to try it, huh? Well, good luck!<br>
             Rewards +1 Bragging Rights.
         ]]></tooltip>
+ 		<segment_names>
+                <name>Fight Hydra</name>
+                <name>Fight Cthulhu</name>
+                <name>Fight Ice Titan</name>
+                <name>Fight Godzilla</name>
+                <name>Fight Red Dragonborn</name>
+                <name>Fight Star Leviathans</name>
+                <name>Fight Bleeding Behemoths</name>
+                <name>Fight Lich King</name>
+                <name>Fight The Entity</name>
+            </segment_names>
         </secret_trial>
         <leave_city>
             <label>Leave City</label>
@@ -2512,6 +2593,11 @@
             Requires 500 Imbue Mind and Body.<br>
             Increases the exp multiplier of training actions by 100% and raises all action speeds by 50% per level.
         ]]></tooltip>
+		<segment_names>
+		    <name>Breath</name>
+                <name>Focus</name>
+		    <name>Relax</name>
+		<segment_names>
         </imbue_soul>
         <build_tower>
             <label>Build Tower</label>
@@ -2531,7 +2617,15 @@
             The gods have filled the 100 floors of the tower you built with monsters to stop you from returning to Valhalla. Rude. 
         ]]></tooltip>
             <segment_names>
-
+		    <name>Fight Fire Dragon</name>
+                <name>Fight Chimera</name>
+		    <name>Fight Sirens</name>
+		    <name>Fight Zombies</name>
+                <name>Fight Minotaur</name>
+		    <name>Fight Golems</name>
+		    <name>Fight Gnomes</name>
+                <name>Fight Cyclops</name>
+		    <name>Fight Centaurs</name>
             </segment_names>
         </gods_trial>
         <challenge_gods>
@@ -2543,6 +2637,17 @@
             This is it. The final showdown. If you can defeat the seven gods, you can finally end all this looping nonsense for good.<br>
             Requires all 100 floors of Trial of the gods completed this loop.
         ]]></tooltip>
+		<segment_names>
+                <name>Fight Athena</name>
+                <name>Fight Ares</name>
+		    <name>Fight Demeter</name>
+		    <name>Dodge Poison Darts</name>
+                <name>Fight Poseidon</name>
+		    <name>Fight Artemis</name>
+		    <name>Fight Apollo</name>
+                <name>Avoid Lighting Bolt</name>
+		    <name>Fight Zeus</name>
+            </segment_names>
         </challenge_gods>
         <restore_time>
             <label>Restore Time</label>
