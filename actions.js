@@ -50,12 +50,13 @@ function Actions() {
                     partUpdateRequired = true;
                     if (curAction.canStart && !curAction.canStart()) {
                         this.completedTicks += curAction.ticks;
-                        view.updateTotalTicks();
+                        view.requestUpdate("updateTotalTicks", null);
                         curAction.loopsLeft = 0;
                         curAction.ticks = 0;
                         curAction.manaRemaining = timeNeeded - timer;
                         curAction.goldRemaining = resources.gold;
                         curAction.finish();
+                        totals.actions++;
                         break;
                     }
                     towns[curAction.townNum][curAction.varName] = curProgress;
@@ -78,6 +79,7 @@ function Actions() {
             curAction.lastMana = curAction.rawTicks;
             this.completedTicks += curAction.adjustedTicks;
             curAction.finish();
+            totals.actions++;
             curAction.manaRemaining = timeNeeded - timer;
             
             if (curAction.cost) {
@@ -86,7 +88,7 @@ function Actions() {
             curAction.goldRemaining = resources.gold;
 
             this.adjustTicksNeeded();
-            view.updateCurrentActionLoops(this.currentPos);
+            view.requestUpdate("updateCurrentActionLoops", this.currentPos);
         }
         view.requestUpdate("updateCurrentActionBar", this.currentPos);
         if (curAction.loopsLeft === 0) {
@@ -109,12 +111,12 @@ function Actions() {
         if (curAction.allowed && getNumOnCurList(curAction.name) > curAction.allowed()) {
             curAction.ticks = 0;
             curAction.timeSpent = 0;
-            view.updateCurrentActionBar(this.currentPos);
+            view.requestUpdate("updateCurrentActionBar", this.currentPos);
             return undefined;
         }
         while ((curAction.canStart && !curAction.canStart() && curAction.townNum === curTown) || curAction.townNum !== curTown) {
             curAction.errorMessage = this.getErrorMessage(curAction);
-            view.updateCurrentActionBar(this.currentPos);
+            view.requestUpdate("updateCurrentActionBar", this.currentPos);
             this.currentPos++;
             if (this.currentPos >= this.current.length) {
                 curAction = undefined;
@@ -140,7 +142,7 @@ function Actions() {
         this.completedTicks = 0;
         curTown = 0;
         towns[0].suppliesCost = 300;
-        view.updateResource("supplies");
+        view.requestUpdate("updateResource","supplies");
         curAdvGuildSegment = 0;
         curCraftGuildSegment = 0;
 		curWizCollegeSegment = 0;
@@ -156,6 +158,7 @@ function Actions() {
             }
         }
         guild = "";
+        hearts = [];
         escapeStarted = false;
         portalUsed = false;
         stoneLoc = 0;
@@ -205,7 +208,7 @@ function Actions() {
         view.requestUpdate("updateMultiPartActions");
         view.requestUpdate("updateNextActions");
         view.requestUpdate("updateTime");
-        view.updateActionTooltips();
+        view.requestUpdate("updateActionTooltips");
     };
 
     this.adjustTicksNeeded = function() {
@@ -219,7 +222,7 @@ function Actions() {
             remainingTicks += action.loopsLeft * action.adjustedTicks;
         }
         this.totalNeeded = this.completedTicks + remainingTicks;
-        view.updateTotalTicks();
+        view.requestUpdate("updateTotalTicks", null);
     };
 
 
@@ -277,6 +280,19 @@ function addExpFromAction(action) {
             addExp(stat, expToAdd);
         }
     }
+}
+
+function markActionsComplete(loopCompletedActions) {
+    loopCompletedActions.forEach(action => {
+        let varName = Action[withoutSpaces(action.name)].varName;
+        if (!completedActions.includes(varName)) completedActions.push(varName);
+    });
+}
+
+function unlockActionStory(loopCompletedActions) {
+    loopCompletedActions.forEach(action => {
+        if (action.storyUnlocks !== undefined) action.storyUnlocks();
+    });
 }
 
 function getNumOnList(actionName) {

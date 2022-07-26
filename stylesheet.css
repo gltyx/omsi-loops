@@ -437,14 +437,19 @@ input[type="number"] {
 .actionContainer {
     cursor:pointer;
     position: relative;
-    width:102px;
+    width:96px;
     height:50px;
     vertical-align:top;
     margin:0 2px;
     font-size: 13px;
+    border: 3px solid transparent;
 }
 .actionContainer:hover, .travelContainer:hover {
     background-color: #bef8ff;
+}
+.actionHighlight {
+    border: 3px solid #7caf74;
+    border-radius: 10px;
 }
 
 .storyContainer {
@@ -802,6 +807,12 @@ input[type="number"] {
     background: #c0e4c7;
     margin: -0.5px -0.5px;
     border: 1px solid black;
+}
+
+.t-cubic .actionHighlight {
+    border: 1px solid black;
+    border-radius: 0px;
+    background: #7caf74;
 }
 
 .t-cubic .travelContainer {

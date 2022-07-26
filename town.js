@@ -23,7 +23,7 @@ function Town(index) {
             const varName = this.varNames[i];
             this[`goodTemp${varName}`] = this[`good${varName}`];
             this[`lootFrom${varName}`] = 0;
-            view.updateRegular(varName, this.index);
+            view.updateRegular({name: varName, index: this.index});
         }
     };
 
@@ -42,15 +42,15 @@ function Town(index) {
         }
         const level = this.getLevel(varName);
         if (level !== prevLevel) {
-            view.updateLockedHidden();
+            view.requestUpdate("updateLockedHidden", null);
             adjustAll();
             for (const action of totalActionList) {
                 if (towns[action.townNum].varNames.indexOf(action.varName) !== -1) {
-                    view.updateRegular(action.varName, action.townNum);
+                    view.requestUpdate("updateRegular", {name: action.varName, index: this.index});
                 }
             }
         }
-        view.updateProgressAction(varName, towns[curTown]);
+        view.requestUpdate("updateProgressAction", {name: varName, town: towns[curTown]});
     };
 
     this.getPrcToNext = function(varName) {
@@ -85,7 +85,7 @@ function Town(index) {
             this[`goodTemp${varName}`]--;
             this[`lootFrom${varName}`] += rewardFunc();
         }
-        view.updateRegular(varName, this.index);
+        view.requestUpdate("updateRegular", {name: varName, index: this.index});
     };
 
     this.createVars = function(varName) {

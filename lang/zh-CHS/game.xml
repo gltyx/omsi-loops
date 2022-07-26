@@ -6,6 +6,24 @@
                 <title>更新日志</title>
                 <version_prefix>版本</version_prefix>
             </meta>
+            <version verNum="2.9"><![CDATA[
+            <b> July 25th, 2022</b>
+            Performance Update!<br>
+            With help from Hordex from Discord, we've rewritten most of the explicit update calls to be deferred to the update handler.<br>
+            This means that most UI refreshes are now correctly controlled by the "Updates Per Second" setting in the options menu.<br>
+            High level players who are still experiencing lag can significantly improve performance by reducing this number - this will only decrease how often the screen refreshes, not how often the game updates.
+            ]]></version>            
+            <version verNum="2.8"><![CDATA[
+            <b> July 25th, 2022</b>
+            • A new guild has opened in Commerceville - Assassins Guild! Kill targets across the world, collect their hearts (why is it always hearts?), and return them to the guild to learn the ways of the assassin<br>
+            • New Actions: Assassinate: Assassination targets are now available in every zone. Every assassination carries a very heavy reputation penalty (mitigated by assassin skill) and gets harder based on your reputation and number of assassinations completed this loop<br>
+            • New Skill: Assassin - Improves assassination actions and reduces the difficultly scaling in trials<br>
+            • New Menu: Totals - Records play metrics including total time played and loops/actions completed<br>
+            • Balance: Thieves guild actions gold rewards x2<br>
+            • New Option: Highlight New Actions - Places a border around actions that have not yet been completed on this save. Defaults to on, but can be toggled off in options<br>
+            • Added max button to Gather Team<br>
+            • Typo fixes
+            ]]></version>
             <version verNum="2.7"><![CDATA[
             <b> July 20th, 2022</b>
             • 勘测更新! 现在勘测需要在新手村购买地图. 完成地图会使任意未完成的区域获得进展.<br>
@@ -314,6 +332,7 @@
             </discord>
             <adblock_warning>警告: 由于一些原因, Adblock Plus可能导致严重卡顿. 这个游戏并没有广告, 所以如果你的游戏经常卡死, 请把它关掉.
             </adblock_warning>
+            <highlight_new>Highlight new actions</highlight_new>
             <stat_colors>改变能力颜色 (保存后刷新生效)</stat_colors>
             <auto_max_training>最大化所有训练行动</auto_max_training>
             <hotkeys>快捷键</hotkeys>
@@ -333,7 +352,7 @@
                 Shift+←/A: 显示行动选项<br>
                 Shift+Z: 撤销对行动列表的上一次更改
         ]]></hotkeys_tooltip>
-            <update_rate>每秒更新次数:</update_rate>
+            <update_rate>每秒视觉更新次数:</update_rate>
         </options>
         <challenges>
             <meta>
@@ -342,6 +361,11 @@
             <mana_drought>新手村的法力商人只出售 5k 法力, 并且价格翻倍. 没有其他法力商人.</mana_drought>
             <noodle_arms>你没有个人战斗力. 所有战斗力都得依靠队友. 个人战斗力等于你队友和僵尸中更高的那个的一半.</noodle_arms>
         </challenges>
+        <totals>
+            <meta>
+                <title>总计</title>
+            </meta>
+        </totals>
     </menu>
     <tutorial><![CDATA[
       教程:<br>
@@ -449,9 +473,9 @@
             <desc>你绘制了一些地图. 探索者公会很乐意用它和你交换一些知识.</desc>
         </resource>
         <resource initially_hidden="true">
-            <title>肉:</title>
-            <id>meat</id>
-            <desc>神的力量.</desc>
+            <title><![CDATA[<img src="img/heart.svg" class="smallIcon">]]></title>
+            <id>heart</id>
+            <desc>The still-beating heart of your target. The assassin's guild will reward you for this.</desc>
         </resource>
         <!--singular items with img icons rather than counts-->
         <resource initially_hidden="true" no_count="true">
@@ -509,20 +533,89 @@
         <talents_button>天赋</talents_button>
         <story_title>故事</story_title>
         <stories>
-            <story num="0">
+            <story num="0"> <!--Change 0 to Beginnersville-->
                 您只是一个普通的送货员，踏上了一次长途之旅，运送着一个重要的包裹。进城的时候，您滑了一跤，打碎了眼镜，并且包裹还还摔开了，一股奇怪的液体溅到了您身上。您仅有的微薄法力开始迅速消耗。就在它快要耗尽的时候，您突然发现，自己回到了液体溅到身上的那个瞬间，并且法力就这么回复满了……但法力依旧在消耗，您就这么不停地循环着，世界也随之不停重置。直到最后，您终于下定决心，要延长这种循环的时间。这个镇子常常把法力水晶存放到罐子里，或许可以从那里开始……
             </story>
-            <story num="1">
+            <story num="1"> <!--Change 1 to First Soulstone-->
                 您到达了地牢的终点，一个踏板上，悬浮着一个散发着柔和光芒的球体。那就是地牢核心，不过也只是第一层的核心。您抓住了它，它的精华开始涌入您的身体，它的力量逐渐为您所用。它蕴含的能量虽然不多，但毕竟这个地牢也不大。您一定会再回来的，因为获得这些能量时您同时也获得了外来的知识，知道这些能量将永远与您同在。
             </story>
-            <story num="2">
+            <story num="2"> <!--Change 2 to No Soulstone-->
                 您再次到达了地牢的终点，但您第一次发现，核心并没有发光。人们一向认为核心的能量来自于周遭的法力，但它前世的精华似乎已经将它挥霍一空。它不会一直如此的，您只需要向世界注入更多法力，就可以继续利用它了。您耸了耸肩，接受了循环的另一个奇妙设定。
             </story>
-            <story num="3"><![CDATA[
-            您终于……做到了！众神就此陨落，时间也回复了正常。您随时都可以停止这个循环了。但如果您想要的话，您当然还可以继续玩下去……<br><br>感谢您游玩我的循环放置粉丝mod！感谢Stop_Sign制作了这么有意思的游戏，也感谢Omsi天才般的改版。二位带给我的启发已经超乎想象。希望各位玩的开心！<3 <br>
-                -- 作者 Lloyd
-            ]]>                
-            </story>
+		<story num="3"> <!--Change 3 to Forest-->
+		   You have bought the supplies and began your journey, down the road you spot a lush forest. You set up camp
+		   and begin exploring the forest noticing mana crystals sprawling on the ground everywhere in this forest,
+		   animals are also roaming around and herbs are everywhere in the forest. Later on your journey you notice
+               there is this old dusty road that and a hermit living on the side of the road, wonder what knowledge the
+		   hermit could offer.
+		</story>
+		<story num="4"> <!--Change 4 to Merchanton-->
+		  After boring the hermit and witch to get the knowledge they had to offer, you notice a clearing in the forest
+              and see another long path ahead. As soon as you get near the end of the road you notice a busy city called 
+		  Merchanton, time to explore it and see what you can do in this city. After a bit of exploring, you find that
+		  there is a casino and a bar right around the corner. After getting some cash and getting wasted in a past loop
+		  you met the leader of the adventure guild, they explain that there is a large dungeon in this city and you might
+		  need some help clearing it. Another loop and your wasted again, but the leader of the crafting guild comes in and
+		  notices your gear isn't up to par and suggests to join the guild.
+		</story>
+		<story num="5"> <!--Change 5 to Mt. Olympus-->
+		  You have explored all the guild options in Merchenton and have made a few guild friends along the way, Time to grab
+		  Pickaxe and Start the Climb! Reaching Mt. Olympus takes alot of climbing but during the climb you discover these mana
+		  geyser but looks like they can be harvested with a Pickaxe. You discover runes scattered around the mountain, maybe
+		  deciphering them might be useful. About half way up this mountain you discover a massive cavern with room to take a
+		  break climbing and explore it. You met these Friendly Trolls in these caverns however they don't sell snowcones...
+		</story>
+		<story num="6"> <!--Made the Looping Potion--> <!--Change 6 to Looping Potion-->
+		  You have made the Loop Potion after learning alchemistry and grabbing herbs from the forest, you take a bit to brew the
+		  concoction and after it boils a bit and the herbs soak into a nearby mana geyser you pour it into a bottle. After a glance
+		  you have no doubts that it is the think you spilled back in beginnersville, but you have no idea what to do with it now. 
+		</story>
+		<story num="7"> <!--Good Reputation Story--> <!--Change 7 to Valhalla-->
+		  You have finally reached the top of Mt. Olympus there is a giant door at the very top, a voice rings out "It is time
+		  to face JUDGEMENT of the GODS, HAHAHAHA. Hope you are prepared for judgement!" After waiting for what feels like hours
+		  the voice rings out "You may PASS!". You enter the wonderful place called Valhalla, you	have a tourist show you around
+		  and even looks like a charity is happening. After exploring you realize also can join charm school or wizard college,
+		  become a citizen, and even fight with the Valkyries.
+		</story>
+		<story num="8"> <!--Bad Reputation Story--> <!--Change 8 to Startington-->
+		  The voice rings "You Shall Not PASS!". You feel like you are being lifted and are chucked off Mt. Olymupus and into the
+		  shadow realm. The shadow realm opens up and you hit the floor luckily with only a scratch, after a few hours you finally
+		  can get up and realize that this isn't beginnersville anymore. After closer inspection of the ruins nearby you realize that
+		  place is alot twisted and strange. You notice these strange pylons and seak to destroy them and a few minutes later you look
+		  and finally notice the giant spire in front of you!
+		</story>
+		<story num="9"> <!--Change 9 to Jungle Path-->
+		  Before you leave Startington you realize you don't have your supplies you got in Beginnersville, but lucky for you Startington
+		  sells another supply set but rumor has it that the shopkeeper is kinda deaf so your haggles won't work on them. You get your 
+		  supplies and you set off down the trail, reminds you of the forest. You walk untill you see a jungle up ahead with ruins all
+		  around, probly best to start exploring them.
+		</story>
+		<story num="10"> <!--Change 10 to Commerceville-->
+		  After you explore the ruins you notice the exit out of here is gonna exit quick might have to beat the loop fast enough. You
+		  just beat the exit just barely and notice that there is another small city, time to pay someone to show you around town! The
+		  guide shows you the explorers guild and explains that they have many perks for joining, nifty! The guide also takes you down
+		  a alley way and shows you that you can join the Thieves Guild to make a little bit of cash. After the guide is done showing
+		  you around town he explains that they are with the tax collectors and you probly should be going now. Quickly you make it to
+		  the Bank and you notice a hooded figure, might be worth checking what they do.
+		</story>
+		<story num="11"> <!--Change 11 to Valley of Olympus-->
+		  After you take a heafty loan from the bank you can now own Commerceville and leave while you still can, after you walk down the
+		  road you realize you can move the stones from the Jungle and move them to build a great tower. After you build the great tower
+		  you can't reach Valhalla unless you can clear trial of the gods to prove worthy of entering again. After finally clearing the
+		  trial of the gods, the voice speaks "The 7 gods of this land protect this world, if you want to enter Valhalla you can defeat us
+		  to be worth of the throne." After a long battle the last god goes down and you gain the power of all 7 gods, with great power
+		  you can end the time loop now and forever!
+		</story>
+		<story num="12"> <!--Finally--> <!-- Change _ to Ending the Loop-->
+        <![CDATA[
+               You've done it! You've bested the gods themselves and restored time to its rightful flow. You can stop looping at any moment.
+               But, then again, you could keep going. There's always time later...
+               Thanks for playing my fan mod of Idle Loops! 
+               Big shout-out to the wonderful Stop_Sign for creating this amazing game and Omsi for all the Omsi version.
+               You both have inspired me more than you can imagine.
+               Hope everyone had fun! <3 <br>
+               --Lloyd                
+            ]]></story>
         </stories>
         <bonus_seconds>
             <title>奖励时间</title>
@@ -738,6 +831,12 @@
             <desc2><![CDATA[每 100 级增加一个队友上限. 队友的属性提高 (1 + 等级 / 60) ^ 0.25.<br>
             当前给予 <div id='skillBonusLeadership'></div>x 队友属性.]]></desc2>
         </leadership>
+        <assassin>
+            <label>Assassination</label>
+            <desc>It will keel.</desc>
+            <desc2><![CDATA[Increases progress in assassination actions, reduced the reputation penalty of assassination, and reduces the difficulty scaling of trials by original / (1 + level / 2000).<br>
+            Currently multiplying trial difficulty by <div id='skillBonusAssassin'></div>x.]]></desc2>
+        </assassin>
         <tooltip>
             <level>等级:</level>
             <level_exp>等级经验:</level_exp>
@@ -908,7 +1007,7 @@
             <error>错误:</error>
         </current_action>
         <!--survey-->
-            <surveyZ0>
+        <survey>
             <label>勘测</label>
             <label_done>已勘测</label_done>
             <tooltip><![CDATA[
@@ -918,95 +1017,16 @@
             每次勘测需要一张地图.<br>
             当前每次行动给予 <div class='surveySkill'></div> 经验.
             ]]></tooltip>
-        </surveyZ0>
-        <surveyZ1>
-            <label>勘测</label>
-            <label_done>已勘测</label_done>
+        </survey>
+        <assassin>
+            <label>Assassinate</label>
+            <label_done>Assassinated</label_done>
             <tooltip><![CDATA[
-            探索者公会让你学到了许多非常容易错过的东西.<br>
-            进度等于所有区域平均进度的平方根.<br>
-            已完成的区域不能重复勘测.<br>
-            每次勘测需要一张地图.<br>
-            当前每次行动给予 <div class='surveySkill'></div> 经验.
+            Kill your mark in this town.<br>
+            Gives progress equal to (Sqrt(Practical) + Thievery + Assassin) * Stat/1000 * Sqrt(Completions/1000) / Abs(reputation) / hearts^2.<br>
+            Rewards a heart.
             ]]></tooltip>
-        </surveyZ1>
-        <surveyZ2>
-            <label>勘测</label>
-            <label_done>已勘测</label_done>
-            <tooltip><![CDATA[
-            探索者公会让你学到了许多非常容易错过的东西.<br>
-            进度等于所有区域平均进度的平方根.<br>
-            已完成的区域不能重复勘测.<br>
-            每次勘测需要一张地图.<br>
-            当前每次行动给予 <div class='surveySkill'></div> 经验.
-            ]]></tooltip>
-        </surveyZ2>
-        <surveyZ3>
-            <label>勘测</label>
-            <label_done>已勘测</label_done>
-            <tooltip><![CDATA[
-            探索者公会让你学到了许多非常容易错过的东西.<br>
-            进度等于所有区域平均进度的平方根.<br>
-            已完成的区域不能重复勘测.<br>
-            每次勘测需要一张地图.<br>
-            当前每次行动给予 <div class='surveySkill'></div> 经验.
-            ]]></tooltip>
-        </surveyZ3>
-        <surveyZ4>
-            <label>勘测</label>
-            <label_done>已勘测</label_done>
-            <tooltip><![CDATA[
-            探索者公会让你学到了许多非常容易错过的东西.<br>
-            进度等于所有区域平均进度的平方根.<br>
-            已完成的区域不能重复勘测.<br>
-            每次勘测需要一张地图.<br>
-            当前每次行动给予 <div class='surveySkill'></div> 经验.
-            ]]></tooltip>
-        </surveyZ4>
-        <surveyZ5>
-            <label>勘测</label>
-            <label_done>已勘测</label_done>
-            <tooltip><![CDATA[
-            探索者公会让你学到了许多非常容易错过的东西.<br>
-            进度等于所有区域平均进度的平方根.<br>
-            已完成的区域不能重复勘测.<br>
-            每次勘测需要一张地图.<br>
-            当前每次行动给予 <div class='surveySkill'></div> 经验.
-            ]]></tooltip>
-        </surveyZ5>
-        <surveyZ6>
-            <label>勘测</label>
-            <label_done>已勘测</label_done>
-            <tooltip><![CDATA[
-            探索者公会让你学到了许多非常容易错过的东西.<br>
-            进度等于所有区域平均进度的平方根.<br>
-            已完成的区域不能重复勘测.<br>
-            每次勘测需要一张地图.<br>
-            当前每次行动给予 <div class='surveySkill'></div> 经验.
-            ]]></tooltip>
-        </surveyZ6>
-        <surveyZ7>
-            <label>勘测</label>
-            <label_done>已勘测</label_done>
-            <tooltip><![CDATA[
-            探索者公会让你学到了许多非常容易错过的东西.<br>
-            进度等于所有区域平均进度的平方根.<br>
-            已完成的区域不能重复勘测.<br>
-            每次勘测需要一张地图.<br>
-            当前每次行动给予 <div class='surveySkill'></div> 经验.
-            ]]></tooltip>
-        </surveyZ7>
-        <surveyZ8>
-            <label>勘测</label>
-            <label_done>已勘测</label_done>
-            <tooltip><![CDATA[
-            探索者公会让你学到了许多非常容易错过的东西.<br>
-            进度等于所有区域平均进度的平方根.<br>
-            已完成的区域不能重复勘测.<br>
-            每次勘测需要一张地图.<br>
-            当前每次行动给予 <div class='surveySkill'></div> 经验.
-            ]]></tooltip>
-        </surveyZ8>
+        </assassin>
         <!--ruins-->
         <ruinsZ1>
             <label>遗迹</label>
@@ -2110,9 +2130,10 @@
 			打扫干净.<br>进度取决于实用魔法和完成次数.<br>每个杂乱度奖励 5 金块和 1 声望.<br>解锁于 30% 游说过的屋子.
 		]]></tooltip>
 			<segment_names>
-                <name>Temp1</name>
-                <name>Temp2</name>
-                <name>Temp3</name>
+                <name>Move Boxes</name>
+                <name>Sweep The Floor</name>
+                <name>Fix Decorations</name>
+		    <name>Help Build</name>
             </segment_names>
             <!--TODO: give this action story-->
 		</tidy_up>
@@ -2185,7 +2206,7 @@
             <!--TODO: give this action story-->
         </spatiomancy>
         <seek_citizenship>
-            <label>寻求公民身份</label>
+            <label>公民身份</label>
 			<label_done>入籍考试进度</label_done>
             <tooltip><![CDATA[
             现在, 你只是个游客.  如果你想真正加入他们的行列, 你得学习并通过瓦尔哈拉的历史与文化测试.<br>解锁于 80% 游览路线探索度.
@@ -2347,6 +2368,12 @@
             进度基于 (黑暗魔法 * 僵尸 / 2)<br>
             每层奖励 1 僵尸.
         ]]></tooltip>
+            <segment_names>
+                <name>Persuade the Dead</name>
+                <name>Train the Dead</name>
+                <name>Avoid the Spikes</name>
+                <name>Transform the Dead</name>
+            </segment_names>
         </dead_trial>
         <journey_forth>
             <label>前进的旅程</label>
@@ -2479,6 +2506,14 @@
         ]]></tooltip>
         <tooltip2>金块.</tooltip2>
         </insurance_fraud>
+        <guild_assassin>
+            <label>Assassins Guild</label>
+            <tooltip><![CDATA[
+                Join the assassins guild and learn of their targets across the world. Bring back their hearts to learn more secrets from the guild.<br>
+                Gives Assassin exp equal to 100 * hearts^2.<br>
+                Unlocked at 100% Insurance Fraud.
+            ]]></tooltip>
+        </guild_assassin>
         <invest>
             <label>投资</label>
             <tooltip><![CDATA[
@@ -2517,6 +2552,17 @@
             你真的打算挑战它, 嗯? 好吧, 祝你好运!<br>
             奖励 +1 吹牛权.
         ]]></tooltip>
+ 		<segment_names>
+                <name>Fight Hydra</name>
+                <name>Fight Cthulhu</name>
+                <name>Fight Ice Titan</name>
+                <name>Fight Godzilla</name>
+                <name>Fight Red Dragonborn</name>
+                <name>Fight Star Leviathans</name>
+                <name>Fight Bleeding Behemoths</name>
+                <name>Fight Lich King</name>
+                <name>Fight The Entity</name>
+            </segment_names>
         </secret_trial>
         <leave_city>
             <label>离开城镇</label>
@@ -2532,6 +2578,11 @@
             需要 500 精神和躯体灌注.<br>
             每级增加所有训练的经验倍率 100% 并增加所有行动速度 50% .
         ]]></tooltip>
+		<segment_names>
+		    <name>Breath</name>
+                <name>Focus</name>
+		    <name>Relax</name>
+		</segment_names>
         </imbue_soul>
         <build_tower>
             <label>建造塔</label>
@@ -2551,7 +2602,15 @@
             众神在 100 层的塔里塞满了怪物以阻止你前往瓦尔哈拉. 真粗鲁. 
         ]]></tooltip>
             <segment_names>
-
+		    <name>Fight Fire Dragon</name>
+                <name>Fight Chimera</name>
+		    <name>Fight Sirens</name>
+		    <name>Fight Zombies</name>
+                <name>Fight Minotaur</name>
+		    <name>Fight Golems</name>
+		    <name>Fight Gnomes</name>
+                <name>Fight Cyclops</name>
+		    <name>Fight Centaurs</name>
             </segment_names>
         </gods_trial>
         <challenge_gods>
@@ -2563,6 +2622,17 @@
             是时候了. 最后的决战. 如果你能杀死所有七个神, 你就可以结束这狗屎的循环了.<br>
             需要在一次循环内完成所有神的试炼 100 层.
         ]]></tooltip>
+		<segment_names>
+                <name>Fight Athena</name>
+                <name>Fight Ares</name>
+		    <name>Fight Demeter</name>
+		    <name>Dodge Poison Darts</name>
+                <name>Fight Poseidon</name>
+		    <name>Fight Artemis</name>
+		    <name>Fight Apollo</name>
+                <name>Avoid Lighting Bolt</name>
+		    <name>Fight Zeus</name>
+            </segment_names>
         </challenge_gods>
         <restore_time>
             <label>恢复时间</label>

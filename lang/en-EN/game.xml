@@ -6,6 +6,24 @@
                 <title>Changelog</title>
                 <version_prefix>Version</version_prefix>
             </meta>
+            <version verNum="2.9"><![CDATA[
+            <b> July 25th, 2022</b>
+            Performance Update!<br>
+            With help from Hordex from Discord, we've rewritten most of the explicit update calls to be deferred to the update handler.<br>
+            This means that most UI refreshes are now correctly controlled by the "Updates Per Second" setting in the options menu.<br>
+            High level players who are still experiencing lag can significantly improve performance by reducing this number - this will only decrease how often the screen refreshes, not how often the game updates.
+            ]]></version>            
+            <version verNum="2.8"><![CDATA[
+            <b> July 25th, 2022</b>
+            • A new guild has opened in Commerceville - Assassins Guild! Kill targets across the world, collect their hearts (why is it always hearts?), and return them to the guild to learn the ways of the assassin<br>
+            • New Actions: Assassinate: Assassination targets are now available in every zone. Every assassination carries a very heavy reputation penalty (mitigated by assassin skill) and gets harder based on your reputation and number of assassinations completed this loop<br>
+            • New Skill: Assassin - Improves assassination actions and reduces the difficultly scaling in trials<br>
+            • New Menu: Totals - Records play metrics including total time played and loops/actions completed<br>
+            • Balance: Thieves guild actions gold rewards x2<br>
+            • New Option: Highlight New Actions - Places a border around actions that have not yet been completed on this save. Defaults to on, but can be toggled off in options<br>
+            • Added max button to Gather Team<br>
+            • Typo fixes
+            ]]></version>
             <version verNum="2.7"><![CDATA[
             <b> July 20th, 2022</b>
             • Survey Update! Survey is now completed using maps purchased in Beginnersville. Completed maps can be returned to the explorer's guild for extra progress in a random uncompleted area.<br>
@@ -316,6 +334,7 @@
             </discord>
             <adblock_warning>WARNING: For some reason, Adblock Plus can cause massive lag. This game won't ever have ads, so if your game is freezing frequently, please disable it on this page.
             </adblock_warning>
+            <highlight_new>Highlight new actions</highlight_new>
             <stat_colors>Use stat colors on menu (requires save and refresh)</stat_colors>
             <pause_audio_cue>Ping on pause</pause_audio_cue>
             <auto_max_training>Max All Training Actions on Training cap increase</auto_max_training>
@@ -336,7 +355,7 @@
                 Shift+Left/A: Show action options<br>
                 Shift+Z: Undo most recent change to action list
         ]]></hotkeys_tooltip>
-            <update_rate>Updates per second:</update_rate>
+            <update_rate>Visual updates per second:</update_rate>
         </options>
         <challenges>
             <meta>
@@ -345,6 +364,11 @@
             <mana_drought>The mana merchant in Beginnersville only has 5k mana to sell, and they're charging double the usual price. No other mana merchants exist.</mana_drought>
             <noodle_arms>You have no base Self-Combat ability. All combat is based on followers. Self combat is half of your team member or zombie strength (whichever is higher).</noodle_arms>
         </challenges>
+        <totals>
+            <meta>
+                <title>Totals</title>
+            </meta>
+        </totals>
     </menu>
     <tutorial><![CDATA[
       TUTORIAL:<br>
@@ -452,9 +476,9 @@
             <desc>You've mapped out some more of the world. The Explorer's guild would happily trade you for this knowledge.</desc>
         </resource>
         <resource initially_hidden="true">
-            <title>Meat:</title>
-            <id>meat</id>
-            <desc>Powers of the gods.</desc>
+            <title><![CDATA[<img src="img/heart.svg" class="smallIcon">]]></title>
+            <id>heart</id>
+            <desc>The still-beating heart of your target. The assassin's guild will reward you for this.</desc>
         </resource>
         <!--singular items with img icons rather than counts-->
         <resource initially_hidden="true" no_count="true">
@@ -512,7 +536,7 @@
         <talents_button>Talents</talents_button>
         <story_title>Story</story_title>
         <stories>
-            <story num="0">
+            <story num="0"> <!--Change 0 to Beginnersville-->
                 You're a simple courier, on a long trip to deliver a high priority package. Just as you entered town,
                 you tripped - breaking your glasses - and the package burst open, spilling a strange liquid on you.
                 Immediately, your meager amount of mana started draining rapidly. Right as your mana became empty, you
@@ -521,30 +545,94 @@
                 until you decided you had to figure out a way to prolong how long these 'loops' were. Mana crystals are
                 often stored in pottery around town, perhaps you'll start there ...
             </story>
-            <story num="1">
+            <story num="1"> <!--Change 1 to First Soulstone-->
                 You reach the end of the dungeon, where a softly glowing orb floats on a pedastal. You've found the
                 dungeon core - for the first level of the dungeon, at least. As you grasp it, the essence dives into
                 you, infusing your very being with the power it holds. It is a small amount of power, but this is a
                 small dungeon. You'll be back to take this power again, knowing with the foreign knowledge implanted
                 that it will stay with you no matter when you are.
             </story>
-            <story num="2">
+            <story num="2"> <!--Change 2 to No Soulstone-->
                 You reach the end of the dungeon again, but for the first time the core isn't glowing. It's always been
                 thought that dungeon cores build based on the mana spent around them, but you're beginning to think the
                 essence of it's previous incarnations drains it somehow. It doesn't always happen, but you'll need to
                 put more mana into the world to take the core's benefits out of it. You shrug, accepting yet another
                 oddity of the loops.
             </story>
-            <story num="3"><![CDATA[
-            You've done it! You've bested the gods themselves and restored time to its rightful flow. You can stop looping at any moment.
-                But, then again, you could keep going. There's always time later...<br><br>
-                Thanks for playing my fan mod of Idle Loops! 
-                Big shout-out to the wonderful Stop_Sign for creating this amazing game and Omsi for all the Omsi version.
-                You both have inspired me more than you can imagine.
-                Hope everyone had fun! <3 <br>
-                --Lloyd
-            ]]>                
-            </story>
+		<story num="3"> <!--Change 3 to Forest-->
+		   You have bought the supplies and began your journey, down the road you spot a lush forest. You set up camp
+		   and begin exploring the forest noticing mana crystals sprawling on the ground everywhere in this forest,
+		   animals are also roaming around and herbs are everywhere in the forest. Later on your journey you notice
+               there is this old dusty road that and a hermit living on the side of the road, wonder what knowledge the
+		   hermit could offer.
+		</story>
+		<story num="4"> <!--Change 4 to Merchanton-->
+		  After boring the hermit and witch to get the knowledge they had to offer, you notice a clearing in the forest
+              and see another long path ahead. As soon as you get near the end of the road you notice a busy city called 
+		  Merchanton, time to explore it and see what you can do in this city. After a bit of exploring, you find that
+		  there is a casino and a bar right around the corner. After getting some cash and getting wasted in a past loop
+		  you met the leader of the adventure guild, they explain that there is a large dungeon in this city and you might
+		  need some help clearing it. Another loop and your wasted again, but the leader of the crafting guild comes in and
+		  notices your gear isn't up to par and suggests to join the guild.
+		</story>
+		<story num="5"> <!--Change 5 to Mt. Olympus-->
+		  You have explored all the guild options in Merchenton and have made a few guild friends along the way, Time to grab
+		  Pickaxe and Start the Climb! Reaching Mt. Olympus takes alot of climbing but during the climb you discover these mana
+		  geyser but looks like they can be harvested with a Pickaxe. You discover runes scattered around the mountain, maybe
+		  deciphering them might be useful. About half way up this mountain you discover a massive cavern with room to take a
+		  break climbing and explore it. You met these Friendly Trolls in these caverns however they don't sell snowcones...
+		</story>
+		<story num="6"> <!--Made the Looping Potion--> <!--Change 6 to Looping Potion-->
+		  You have made the Loop Potion after learning alchemistry and grabbing herbs from the forest, you take a bit to brew the
+		  concoction and after it boils a bit and the herbs soak into a nearby mana geyser you pour it into a bottle. After a glance
+		  you have no doubts that it is the think you spilled back in beginnersville, but you have no idea what to do with it now. 
+		</story>
+		<story num="7"> <!--Good Reputation Story--> <!--Change 7 to Valhalla-->
+		  You have finally reached the top of Mt. Olympus there is a giant door at the very top, a voice rings out "It is time
+		  to face JUDGEMENT of the GODS, HAHAHAHA. Hope you are prepared for judgement!" After waiting for what feels like hours
+		  the voice rings out "You may PASS!". You enter the wonderful place called Valhalla, you	have a tourist show you around
+		  and even looks like a charity is happening. After exploring you realize also can join charm school or wizard college,
+		  become a citizen, and even fight with the Valkyries.
+		</story>
+		<story num="8"> <!--Bad Reputation Story--> <!--Change 8 to Startington-->
+		  The voice rings "You Shall Not PASS!". You feel like you are being lifted and are chucked off Mt. Olymupus and into the
+		  shadow realm. The shadow realm opens up and you hit the floor luckily with only a scratch, after a few hours you finally
+		  can get up and realize that this isn't beginnersville anymore. After closer inspection of the ruins nearby you realize that
+		  place is alot twisted and strange. You notice these strange pylons and seak to destroy them and a few minutes later you look
+		  and finally notice the giant spire in front of you!
+		</story>
+		<story num="9"> <!--Change 9 to Jungle Path-->
+		  Before you leave Startington you realize you don't have your supplies you got in Beginnersville, but lucky for you Startington
+		  sells another supply set but rumor has it that the shopkeeper is kinda deaf so your haggles won't work on them. You get your 
+		  supplies and you set off down the trail, reminds you of the forest. You walk untill you see a jungle up ahead with ruins all
+		  around, probly best to start exploring them.
+		</story>
+		<story num="10"> <!--Change 10 to Commerceville-->
+		  After you explore the ruins you notice the exit out of here is gonna exit quick might have to beat the loop fast enough. You
+		  just beat the exit just barely and notice that there is another small city, time to pay someone to show you around town! The
+		  guide shows you the explorers guild and explains that they have many perks for joining, nifty! The guide also takes you down
+		  a alley way and shows you that you can join the Thieves Guild to make a little bit of cash. After the guide is done showing
+		  you around town he explains that they are with the tax collectors and you probly should be going now. Quickly you make it to
+		  the Bank and you notice a hooded figure, might be worth checking what they do.
+		</story>
+		<story num="11"> <!--Change 11 to Valley of Olympus-->
+		  After you take a heafty loan from the bank you can now own Commerceville and leave while you still can, after you walk down the
+		  road you realize you can move the stones from the Jungle and move them to build a great tower. After you build the great tower
+		  you can't reach Valhalla unless you can clear trial of the gods to prove worthy of entering again. After finally clearing the
+		  trial of the gods, the voice speaks "The 7 gods of this land protect this world, if you want to enter Valhalla you can defeat us
+		  to be worth of the throne." After a long battle the last god goes down and you gain the power of all 7 gods, with great power
+		  you can end the time loop now and forever!
+		</story>
+		<story num="12"> <!--Finally--> <!-- Change _ to Ending the Loop-->
+        <![CDATA[
+               You've done it! You've bested the gods themselves and restored time to its rightful flow. You can stop looping at any moment.
+               But, then again, you could keep going. There's always time later...
+               Thanks for playing my fan mod of Idle Loops! 
+               Big shout-out to the wonderful Stop_Sign for creating this amazing game and Omsi for all the Omsi version.
+               You both have inspired me more than you can imagine.
+               Hope everyone had fun! <3 <br>
+               --Lloyd                
+            ]]></story>
         </stories>
         <bonus_seconds>
             <title>Bonus Seconds</title>
@@ -648,7 +736,7 @@
         </scombat>
         <tcombat>
             <label>Team Combat</label>
-            <desc>Team Combat = Self Combat + (Combat Skill + Restoration skill * 4) * (Team Members / 2) * Adventure Guild Multiplier * Leadership Bonus + Dark Magic Skill * Zombies / 2 * Dark Ritural / 100.</desc>
+            <desc>Team Combat = Self Combat + (Combat Skill + Restoration skill * 4) * (Team Members / 2) * Adventure Guild Multiplier * Leadership Bonus + Dark Magic Skill * Zombies / 2 * Dark Ritual / 100.</desc>
         </tcombat>
         <combat>
             <label>Combat</label>
@@ -760,6 +848,12 @@
             <desc2><![CDATA[Increases the number of followers you can recruit for every 100 levels. Increases your follower's contributions to team combat by (1 + level / 60) ^ 0.25.<br>
             Currently granting <div id='skillBonusLeadership'></div>x increased follower strength.]]></desc2>
         </leadership>
+        <assassin>
+            <label>Assassination</label>
+            <desc>It will keel.</desc>
+            <desc2><![CDATA[Increases progress in assassination actions, reduced the reputation penalty of assassination, and reduces the difficulty scaling of trials by original / (1 + level / 2000).<br>
+            Currently multiplying trial difficulty by <div id='skillBonusAssassin'></div>x.]]></desc2>
+        </assassin>
         <tooltip>
             <level>Level:</level>
             <level_exp>Level Exp:</level_exp>
@@ -931,7 +1025,7 @@
             <error>Error:</error>
         </current_action>
         <!--survey-->
-            <surveyZ0>
+        <survey>
             <label>Survey</label>
             <label_done>Surveyed</label_done>
             <tooltip><![CDATA[
@@ -941,95 +1035,16 @@
             Requires a map for each action.<br>
             Currently granting <div class='surveySkill'></div> exp per action.
             ]]></tooltip>
-        </surveyZ0>
-        <surveyZ1>
-            <label>Survey</label>
-            <label_done>Surveyed</label_done>
+        </survey>
+        <assassin>
+            <label>Assassinate</label>
+            <label_done>Assassinated</label_done>
             <tooltip><![CDATA[
-            The explorers guild has taught you to find what most would miss.<br>
-            Gives progress equal to the square root of average survey progress across all zones.<br>
-            Cannot re-survey completed zones.<br>
-            Requires a map for each action.<br>
-            Currently granting <div class='surveySkill'></div> exp per action.
+            Kill your mark in this town.<br>
+            Gives progress equal to (Sqrt(Practical) + Thievery + Assassin) * Stat/1000 * Sqrt(Completions/1000) / Abs(reputation) / hearts^2.<br>
+            Rewards a heart.
             ]]></tooltip>
-        </surveyZ1>
-        <surveyZ2>
-            <label>Survey</label>
-            <label_done>Surveyed</label_done>
-            <tooltip><![CDATA[
-            The explorers guild has taught you to find what most would miss.<br>
-            Gives progress equal to the square root of average survey progress across all zones.<br>
-            Cannot re-survey completed zones.<br>
-            Requires a map for each action.<br>
-            Currently granting <div class='surveySkill'></div> exp per action.
-            ]]></tooltip>
-        </surveyZ2>
-        <surveyZ3>
-            <label>Survey</label>
-            <label_done>Surveyed</label_done>
-            <tooltip><![CDATA[
-            The explorers guild has taught you to find what most would miss.<br>
-            Gives progress equal to the square root of average survey progress across all zones.<br>
-            Cannot re-survey completed zones.<br>
-            Requires a map for each action.<br>
-            Currently granting <div class='surveySkill'></div> exp per action.
-            ]]></tooltip>
-        </surveyZ3>
-        <surveyZ4>
-            <label>Survey</label>
-            <label_done>Surveyed</label_done>
-            <tooltip><![CDATA[
-            The explorers guild has taught you to find what most would miss.<br>
-            Gives progress equal to the square root of average survey progress across all zones.<br>
-            Cannot re-survey completed zones.<br>
-            Requires a map for each action.<br>
-            Currently granting <div class='surveySkill'></div> exp per action.
-            ]]></tooltip>
-        </surveyZ4>
-        <surveyZ5>
-            <label>Survey</label>
-            <label_done>Surveyed</label_done>
-            <tooltip><![CDATA[
-            The explorers guild has taught you to find what most would miss.<br>
-            Gives progress equal to the square root of average survey progress across all zones.<br>
-            Cannot re-survey completed zones.<br>
-            Requires a map for each action.<br>
-            Currently granting <div class='surveySkill'></div> exp per action.
-            ]]></tooltip>
-        </surveyZ5>
-        <surveyZ6>
-            <label>Survey</label>
-            <label_done>Surveyed</label_done>
-            <tooltip><![CDATA[
-            The explorers guild has taught you to find what most would miss.<br>
-            Gives progress equal to the square root of average survey progress across all zones.<br>
-            Cannot re-survey completed zones.<br>
-            Requires a map for each action.<br>
-            Currently granting <div class='surveySkill'></div> exp per action.
-            ]]></tooltip>
-        </surveyZ6>
-        <surveyZ7>
-            <label>Survey</label>
-            <label_done>Surveyed</label_done>
-            <tooltip><![CDATA[
-            The explorers guild has taught you to find what most would miss.<br>
-            Gives progress equal to the square root of average survey progress across all zones.<br>
-            Cannot re-survey completed zones.<br>
-            Requires a map for each action.<br>
-            Currently granting <div class='surveySkill'></div> exp per action.
-            ]]></tooltip>
-        </surveyZ7>
-        <surveyZ8>
-            <label>Survey</label>
-            <label_done>Surveyed</label_done>
-            <tooltip><![CDATA[
-            The explorers guild has taught you to find what most would miss.<br>
-            Gives progress equal to the square root of average survey progress across all zones.<br>
-            Cannot re-survey completed zones.<br>
-            Requires a map for each action.<br>
-            Currently granting <div class='surveySkill'></div> exp per action.
-            ]]></tooltip>
-        </surveyZ8>
+        </assassin>
         <!--ruins-->
         <ruinsZ1>
             <label>Ruins</label>
@@ -1292,7 +1307,7 @@
             <story_1><![CDATA[<b>Patient healed:</b>⮀ You're allowed in to see the patients and begin healing. It's excellent practice and everyone you heal, be it from broken bones to small scrapes is extraordinarily thankful for your help.]]></story_1>
             <story_2><![CDATA[<b>10 Patients healed in a loop:</b>⮀ Your reputation is absolutely sterling, you've basically cleared out the entire healing home and the nurses and healers are more than thankful for your help.]]></story_2>
             <story_3><![CDATA[<b>Failed Action:</b>⮀ You're turned away at the door, the small healers home stating that they can't trust you to not poison the people inside or make the situation worse.]]></story_3>
-            <segment_names>
+		 <segment_names>
                 <name>Diagnose</name>
                 <name>Treat</name>
                 <name>Inform</name>
@@ -1985,7 +2000,7 @@
 			<story_8><![CDATA[<b>100% Cavern Explored:</b>⮀ As you go down the last tunnel, you wonder what's causing all this heat. Maybe there's a giant lava pool just beneath your feet, heating the entire mountain. You reach the final dead-end, and the only thing your heat-baked mind can think of is that it doesn't look like you'll be getting an answer.]]></story_8>
         </explore_cavern>
         <mine_soulstones>
-            <label>Mine Soulstones</label>
+            <label>Mine Soulstone</label>
             <label_done>Shiny Spots Checked</label_done>
             <info_text1>Spots with soulstones left</info_text1>
             <info_text2>Spots with soulstones total</info_text2>
@@ -2113,7 +2128,7 @@
             <!--TODO: give this action story-->
         </donate>
         <accept_donations>
-            <label>Collect Donations</label>
+            <label>Collect Donation</label>
             <label_done>Donations Accepted</label_done>
             <info_text1>Meaningful donations left</info_text1>
             <info_text2>Meaningful donations total</info_text2>
@@ -2131,9 +2146,10 @@
 			Tidy up the place.<br>Progress is based on Practical Magic Skill and total completions.<br>Gives 5 gold and 1 reputation per mess cleaned.<br>Unlocked at 30% of houses canvassed.
 		]]></tooltip>
 			<segment_names>
-                <name>Temp1</name>
-                <name>Temp2</name>
-                <name>Temp3</name>
+                <name>Move Boxes</name>
+                <name>Sweep The Floor</name>
+                <name>Fix Decorations</name>
+		    <name>Help Build</name>
             </segment_names>
             <!--TODO: give this action story-->
 		</tidy_up>
@@ -2206,7 +2222,7 @@
             <!--TODO: give this action story-->
         </spatiomancy>
         <seek_citizenship>
-            <label>Seek Citizenship</label>
+            <label>Citizenship</label>
 			<label_done>Citizenship Exam Studied</label_done>
             <tooltip><![CDATA[
             Right now, you're just visiting.  If you want to be accepted into their ranks for real, you'll need to study and pass a rigorous exam on Valhallan history and culture.<br>Unlocked at 80% of city toured.
@@ -2367,6 +2383,12 @@
             Progress is based on (Dark Magic Skill * Zombies / 2)<br>
             Rewards 1 Zombie per floor completion.
         ]]></tooltip>
+            <segment_names>
+                <name>Persuade the Dead</name>
+                <name>Train the Dead</name>
+                <name>Avoid the Spikes</name>
+                <name>Transform the Dead</name>
+            </segment_names>
         </dead_trial>
         <journey_forth>
             <label>Journey Forth</label>
@@ -2393,7 +2415,7 @@
         ]]></tooltip>
         </explore_jungle>
         <rescue_survivors>
-            <label>Rescue Survivors</label>
+            <label>Rescue Survivor</label>
             <label_done>Saved</label_done>
             <label_part>Survivor</label_part>
             <tooltip><![CDATA[
@@ -2500,6 +2522,14 @@
         ]]></tooltip>
         <tooltip2>gold per thieves guild multiplier.</tooltip2>
         </insurance_fraud>
+        <guild_assassin>
+            <label>Assassins Guild</label>
+            <tooltip><![CDATA[
+                Join the assassins guild and learn of their targets across the world. Bring back their hearts to learn more secrets from the guild.<br>
+                Gives Assassin exp equal to 100 * hearts^2.<br>
+                Unlocked at 100% Insurance Fraud.
+            ]]></tooltip>
+        </guild_assassin>
         <invest>
             <label>Invest</label>
             <tooltip><![CDATA[
@@ -2538,6 +2568,17 @@
             You're really going to try it, huh? Well, good luck!<br>
             Rewards +1 Bragging Rights.
         ]]></tooltip>
+ 		<segment_names>
+                <name>Fight Hydra</name>
+                <name>Fight Cthulhu</name>
+                <name>Fight Ice Titan</name>
+                <name>Fight Godzilla</name>
+                <name>Fight Red Dragonborn</name>
+                <name>Fight Star Leviathans</name>
+                <name>Fight Bleeding Behemoths</name>
+                <name>Fight Lich King</name>
+                <name>Fight The Entity</name>
+            </segment_names>
         </secret_trial>
         <leave_city>
             <label>Leave City</label>
@@ -2553,6 +2594,11 @@
             Requires 500 Imbue Mind and Body.<br>
             Increases the exp multiplier of training actions by 100% and raises all action speeds by 50% per level.
         ]]></tooltip>
+		<segment_names>
+		    <name>Breath</name>
+                <name>Focus</name>
+		    <name>Relax</name>
+		</segment_names>
         </imbue_soul>
         <build_tower>
             <label>Build Tower</label>
@@ -2572,7 +2618,15 @@
             The gods have filled the 100 floors of the tower you built with monsters to stop you from returning to Valhalla. Rude. 
         ]]></tooltip>
             <segment_names>
-
+		    <name>Fight Fire Dragon</name>
+                <name>Fight Chimera</name>
+		    <name>Fight Sirens</name>
+		    <name>Fight Zombies</name>
+                <name>Fight Minotaur</name>
+		    <name>Fight Golems</name>
+		    <name>Fight Gnomes</name>
+                <name>Fight Cyclops</name>
+		    <name>Fight Centaurs</name>
             </segment_names>
         </gods_trial>
         <challenge_gods>
@@ -2584,6 +2638,17 @@
             This is it. The final showdown. If you can defeat the seven gods, you can finally end all this looping nonsense for good.<br>
             Requires all 100 floors of Trial of the gods completed this loop.
         ]]></tooltip>
+		<segment_names>
+                <name>Fight Athena</name>
+                <name>Fight Ares</name>
+		    <name>Fight Demeter</name>
+		    <name>Dodge Poison Darts</name>
+                <name>Fight Poseidon</name>
+		    <name>Fight Artemis</name>
+		    <name>Fight Apollo</name>
+                <name>Avoid Lighting Bolt</name>
+		    <name>Fight Zeus</name>
+            </segment_names>
         </challenge_gods>
         <restore_time>
             <label>Restore Time</label>

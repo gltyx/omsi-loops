@@ -15,7 +15,7 @@ Views.registerView("timeControls", {
     // todo: add talent tree
         const html =
         `<div id='pausePlay' onclick='pauseGame()'' class='button control'>${_txt("time_controls>pause_button")}</div>
-        <div onclick='restart()' class='button showthatO control'>${_txt("time_controls>restart_button")}
+        <div onclick='manualRestart()' class='button showthatO control'>${_txt("time_controls>restart_button")}
             <div class='showthis' style='color:black;width:230px;'>${_txt("time_controls>restart_text")}</div>
         </div>
         <div class='button showthatO control' onclick='toggleOffline()'>${_txt("time_controls>bonus_seconds>title")}
