@@ -60,7 +60,7 @@ function getXMLName(name) {
     return name.toLowerCase().replace(/ /gu, "_");
 }
 
-const townNames = ["Beginnersville", "Forest Path", "Merchanton", "Mt. Olympus", "Valhalla", "Startington", "Jungle Path", "Commerceville", "Valley of Olympus"];
+const townNames = ["新手村", "森林小径", "商业小镇", "奥林匹斯山", "瓦尔哈拉", "初始小镇", "丛林小路", "商业村庄", "奥林匹斯山谷"];
 
 
 // there are 4 types of actions
