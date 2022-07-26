@@ -536,7 +536,7 @@
         <talents_button>Talents</talents_button>
         <story_title>Story</story_title>
         <stories>
-            <story num="0"> <!--Change 0 to Beginnersville-->
+            <story num="0"> <!--Beginning of Game-->
                 You're a simple courier, on a long trip to deliver a high priority package. Just as you entered town,
                 you tripped - breaking your glasses - and the package burst open, spilling a strange liquid on you.
                 Immediately, your meager amount of mana started draining rapidly. Right as your mana became empty, you
@@ -545,28 +545,28 @@
                 until you decided you had to figure out a way to prolong how long these 'loops' were. Mana crystals are
                 often stored in pottery around town, perhaps you'll start there ...
             </story>
-            <story num="1"> <!--Change 1 to First Soulstone-->
+            <story num="1"> <!--First Soulstone-->
                 You reach the end of the dungeon, where a softly glowing orb floats on a pedastal. You've found the
                 dungeon core - for the first level of the dungeon, at least. As you grasp it, the essence dives into
                 you, infusing your very being with the power it holds. It is a small amount of power, but this is a
                 small dungeon. You'll be back to take this power again, knowing with the foreign knowledge implanted
                 that it will stay with you no matter when you are.
             </story>
-            <story num="2"> <!--Change 2 to No Soulstone-->
+            <story num="2"> <!--No Soulstone-->
                 You reach the end of the dungeon again, but for the first time the core isn't glowing. It's always been
                 thought that dungeon cores build based on the mana spent around them, but you're beginning to think the
                 essence of it's previous incarnations drains it somehow. It doesn't always happen, but you'll need to
                 put more mana into the world to take the core's benefits out of it. You shrug, accepting yet another
                 oddity of the loops.
             </story>
-		<story num="3"> <!--Change 3 to Forest-->
+		    <story num="3"> <!--Forest-->
 		   You have bought the supplies and began your journey, down the road you spot a lush forest. You set up camp
 		   and begin exploring the forest noticing mana crystals sprawling on the ground everywhere in this forest,
 		   animals are also roaming around and herbs are everywhere in the forest. Later on your journey you notice
                there is this old dusty road that and a hermit living on the side of the road, wonder what knowledge the
 		   hermit could offer.
-		</story>
-		<story num="4"> <!--Change 4 to Merchanton-->
+		    </story>
+		    <story num="4"> <!--Merchanton-->
 		  After boring the hermit and witch to get the knowledge they had to offer, you notice a clearing in the forest
               and see another long path ahead. As soon as you get near the end of the road you notice a busy city called 
 		  Merchanton, time to explore it and see what you can do in this city. After a bit of exploring, you find that
@@ -574,57 +574,57 @@
 		  you met the leader of the adventure guild, they explain that there is a large dungeon in this city and you might
 		  need some help clearing it. Another loop and your wasted again, but the leader of the crafting guild comes in and
 		  notices your gear isn't up to par and suggests to join the guild.
-		</story>
-		<story num="5"> <!--Change 5 to Mt. Olympus-->
+		    </story>
+		    <story num="5"> <!--Mt. Olympus-->
 		  You have explored all the guild options in Merchenton and have made a few guild friends along the way, Time to grab
 		  Pickaxe and Start the Climb! Reaching Mt. Olympus takes alot of climbing but during the climb you discover these mana
 		  geyser but looks like they can be harvested with a Pickaxe. You discover runes scattered around the mountain, maybe
 		  deciphering them might be useful. About half way up this mountain you discover a massive cavern with room to take a
 		  break climbing and explore it. You met these Friendly Trolls in these caverns however they don't sell snowcones...
-		</story>
-		<story num="6"> <!--Made the Looping Potion--> <!--Change 6 to Looping Potion-->
+		    </story>
+		    <story num="6"> <!--Made the Looping Potion-->
 		  You have made the Loop Potion after learning alchemistry and grabbing herbs from the forest, you take a bit to brew the
 		  concoction and after it boils a bit and the herbs soak into a nearby mana geyser you pour it into a bottle. After a glance
 		  you have no doubts that it is the think you spilled back in beginnersville, but you have no idea what to do with it now. 
-		</story>
-		<story num="7"> <!--Good Reputation Story--> <!--Change 7 to Valhalla-->
+		    </story>
+		    <story num="7"> <!--Good Reputation to Valhalla-->
 		  You have finally reached the top of Mt. Olympus there is a giant door at the very top, a voice rings out "It is time
 		  to face JUDGEMENT of the GODS, HAHAHAHA. Hope you are prepared for judgement!" After waiting for what feels like hours
 		  the voice rings out "You may PASS!". You enter the wonderful place called Valhalla, you	have a tourist show you around
 		  and even looks like a charity is happening. After exploring you realize also can join charm school or wizard college,
 		  become a citizen, and even fight with the Valkyries.
-		</story>
-		<story num="8"> <!--Bad Reputation Story--> <!--Change 8 to Startington-->
+		    </story>
+		    <story num="8"> <!--Bad Reputation Startington-->
 		  The voice rings "You Shall Not PASS!". You feel like you are being lifted and are chucked off Mt. Olymupus and into the
 		  shadow realm. The shadow realm opens up and you hit the floor luckily with only a scratch, after a few hours you finally
 		  can get up and realize that this isn't beginnersville anymore. After closer inspection of the ruins nearby you realize that
 		  place is alot twisted and strange. You notice these strange pylons and seak to destroy them and a few minutes later you look
 		  and finally notice the giant spire in front of you!
-		</story>
-		<story num="9"> <!--Change 9 to Jungle Path-->
+		    </story>
+		    <story num="9"> <!--Jungle Path-->
 		  Before you leave Startington you realize you don't have your supplies you got in Beginnersville, but lucky for you Startington
 		  sells another supply set but rumor has it that the shopkeeper is kinda deaf so your haggles won't work on them. You get your 
 		  supplies and you set off down the trail, reminds you of the forest. You walk untill you see a jungle up ahead with ruins all
 		  around, probly best to start exploring them.
-		</story>
-		<story num="10"> <!--Change 10 to Commerceville-->
+		    </story>
+		    <story num="10"> <!--Commerceville-->
 		  After you explore the ruins you notice the exit out of here is gonna exit quick might have to beat the loop fast enough. You
 		  just beat the exit just barely and notice that there is another small city, time to pay someone to show you around town! The
 		  guide shows you the explorers guild and explains that they have many perks for joining, nifty! The guide also takes you down
 		  a alley way and shows you that you can join the Thieves Guild to make a little bit of cash. After the guide is done showing
 		  you around town he explains that they are with the tax collectors and you probly should be going now. Quickly you make it to
 		  the Bank and you notice a hooded figure, might be worth checking what they do.
-		</story>
-		<story num="11"> <!--Change 11 to Valley of Olympus-->
+		    </story>
+		    <story num="11"> <!--Valley of Olympus-->
 		  After you take a heafty loan from the bank you can now own Commerceville and leave while you still can, after you walk down the
 		  road you realize you can move the stones from the Jungle and move them to build a great tower. After you build the great tower
 		  you can't reach Valhalla unless you can clear trial of the gods to prove worthy of entering again. After finally clearing the
 		  trial of the gods, the voice speaks "The 7 gods of this land protect this world, if you want to enter Valhalla you can defeat us
 		  to be worth of the throne." After a long battle the last god goes down and you gain the power of all 7 gods, with great power
 		  you can end the time loop now and forever!
-		</story>
-		<story num="12"> <!--Finally--> <!-- Change _ to Ending the Loop-->
-        <![CDATA[
+		    </story>
+		    <story num="12"> <!--Finally Ending the Loop-->
+            <![CDATA[
                You've done it! You've bested the gods themselves and restored time to its rightful flow. You can stop looping at any moment.
                But, then again, you could keep going. There's always time later...
                Thanks for playing my fan mod of Idle Loops! 
@@ -632,7 +632,8 @@
                You both have inspired me more than you can imagine.
                Hope everyone had fun! <3 <br>
                --Lloyd                
-            ]]></story>
+            ]]>
+            </story>
         </stories>
         <bonus_seconds>
             <title>Bonus Seconds</title>
