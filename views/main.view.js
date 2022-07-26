@@ -931,12 +931,14 @@ function View() {
         document.getElementById(`expMult${action.varName}`).textContent = formatNumber(action.expMult * 100);
     };
 
-    this.adjustGoldCost = function(varName, amount) {
+    this.adjustGoldCost = function(updateInfo) {
+        const varName = updateInfo.varName;
+        const amount = updateInfo.cost;
         document.getElementById(`goldCost${varName}`).textContent = formatNumber(amount);
     };
     this.adjustGoldCosts = function() {
         for (const action of actionsWithGoldCost) {
-            this.adjustGoldCost(action.varName, action.goldCost());
+            this.adjustGoldCost({varName: action.varName, cost: action.goldCost()});
         }
     };
     this.adjustExpGain = function(action) {
