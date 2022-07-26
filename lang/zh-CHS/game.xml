@@ -968,7 +968,7 @@
           已包含能力对速度的影响.<br>
           每个行动完成后更新.<br>
           每轮结束时更新.<br>
-          Effective time: <div id='effectiveTime'>0</div>]]></mana_used_explanation>
+          实际时间: <div id='effectiveTime'>0</div>]]></mana_used_explanation>
             <amount>数量</amount>
             <current_list_active>保持当前已激活列表</current_list_active>
             <repeat_last_action>重复列表最后一个行动</repeat_last_action>
