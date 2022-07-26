@@ -399,6 +399,7 @@ function load() {
         toLoad.completedActions.forEach(action => {
             completedActions.push(action);
         });
+    completedActions.push("FoundGlasses");
     for (let i = 0; i <= 8; i++) {
         towns[i] = new Town(i);
     }
