@@ -4417,7 +4417,7 @@ Action.Spatiomancy = new Action("Spatiomancy", {
     expMult: 1,
     townNum: 4,
     stats: {
-        Int: 0.7,
+        Int: 0.6,
         Con: 0.2,
         Per: 0.1,
         Spd: 0.1,
