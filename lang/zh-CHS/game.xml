@@ -2163,7 +2163,7 @@
 		</enchant_armor>
         <wizard_college>
             <label>巫师学院</label>
-            <label_done>Spontaneously Combusted From Wonder</label_done>
+            <label_done>阳光奇迹</label_done>
             <tooltip><![CDATA[
             巫师学院是全世界最好的学院, 幸运的是你获得了入学的机会. 尽管, 这将花费你一大笔学费.<br>完成测试以获得一个等级!<br>一次循环只能进行 1 次巫师学院行动.<br>消耗 500 金块和 10 支持度.<br>每点法力给予 (所有的魔法等级) * (1 + 主能力 / 100) * 开方(1 + 完成次数 / 1000) * (初始法力消耗 / 实际法力消耗) 进度点.<br>解锁于 60% 游览路线探索度.
         ]]></tooltip>
