@@ -213,11 +213,8 @@ function Actions() {
 
     this.adjustTicksNeeded = function() {
         let remainingTicks = 0;
-        for (let i = 0; i < this.current.length; i++) {
+        for (let i = this.currentPos; i < this.current.length; i++) {
             const action = this.current[i];
-            if (i < this.currentPos) {
-                continue;
-            }
             setAdjustedTicks(action);
             remainingTicks += action.loopsLeft * action.adjustedTicks;
         }
@@ -249,11 +246,8 @@ function Actions() {
 
 function setAdjustedTicks(action) {
     let newCost = 0;
-    for (let i = 0; i < statList.length; i++) {
-        const statName = statList[i];
-        if (action.stats[statName]) {
-            newCost += action.stats[statName] / (1 + getLevel(statName) / 100);
-        }
+    for (const actionStatName in action.stats){
+        newCost += action.stats[actionStatName] / (1 + getLevel(actionStatName) / 100);
     }
     action.rawTicks = action.manaCost() * newCost - 0.000001;
     action.adjustedTicks = Math.ceil(action.rawTicks);
@@ -269,16 +263,14 @@ function calcTalentMult(talent) {
 
 function addExpFromAction(action) {
     const adjustedExp = action.expMult * (action.manaCost() / action.adjustedTicks);
-    for (const stat of statList) {
-        if (action.stats[stat]) {
-            const expToAdd = action.stats[stat] * adjustedExp * getTotalBonusXP(stat);
-            const statExp = `statExp${stat}`;
-            if (!action[statExp]) {
-                action[statExp] = 0;
-            }
-            action[statExp] += expToAdd;
-            addExp(stat, expToAdd);
+    for (const stat in action.stats) {
+        const expToAdd = action.stats[stat] * adjustedExp * getTotalBonusXP(stat);
+        const statExp = `statExp${stat}`;
+        if (!action[statExp]) {
+            action[statExp] = 0;
         }
+        action[statExp] += expToAdd;
+        addExp(stat, expToAdd);
     }
 }
 
