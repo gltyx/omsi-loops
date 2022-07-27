@@ -616,6 +616,13 @@ Action.FoundGlasses = new Action("Found Glasses", {
     type: "normal",
     expMult: 0,
     townNum: 0,
+    storyReqs(storyNum) {
+        switch (storyNum) {
+            case 1:
+                return getExploreProgress() >=100;
+        }
+        return false;
+    },
     stats: {
     },
     affectedBy: ["SurveyZ1"],
@@ -6198,7 +6205,7 @@ Action.RestoreTime = new Action("Restore Time", {
         return 1;
     },
     manaCost() {
-        return 7777777777;
+        return 7777777;
     },
     canStart() {
         return resources.power >= 8;
