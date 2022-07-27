@@ -35,6 +35,16 @@ function formatNumber(num) {
 }
 
 function formatTime(seconds) {
+    if (seconds > 300) {
+        var time = "";
+        if (seconds >= 86400)
+            time += (seconds/60/60/24).toFixed(0) + "d, ";
+        if (seconds >= 3600) 
+            time += (seconds/60/60%24).toFixed(0) + "h, ";
+        time += (seconds/60%60).toFixed(0) + "m, ";
+        time += (seconds%60).toFixed(0) + "s";
+        return time;
+    }
     if (Number.isInteger(seconds)) {
         return (formatNumber(seconds) + _txt("time_controls>seconds")).replace(/\B(?=(\d{3})+(?!\d))/gu, ",");
     }

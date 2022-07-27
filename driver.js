@@ -606,7 +606,7 @@ function addOffline(num) {
         if (totalOfflineMs < 0) {
             totalOfflineMs = 0;
         }
-        document.getElementById("bonusSeconds").textContent = intToString(totalOfflineMs / 1000, 2);
+        document.getElementById("bonusSeconds").textContent = formatTime(totalOfflineMs / 1000);
     }
 }
 

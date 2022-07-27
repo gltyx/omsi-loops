@@ -532,6 +532,7 @@
         <pause_on_complete>Pause on progress complete</pause_on_complete>
         <restart_button>Restart</restart_button>
         <restart_text>Resets the loop. Not a hard reset.</restart_text>
+        <days>d</days>
         <hours>h</hours>
         <minutes>m</minutes>
         <seconds>s</seconds>
@@ -1050,7 +1051,7 @@
             <label_done>Assassinated</label_done>
             <tooltip><![CDATA[
             Kill your mark in this town.<br>
-            Gives progress equal to (Sqrt(Practical) + Thievery + Assassin) * Stat/1000 * Sqrt(Completions/1000) / Abs(reputation) / hearts^2.<br>
+            Gives progress equal to (Sqrt(Practical) + Thievery + Assassin) * Stat/1000 * Sqrt(Completions/100) / Abs(reputation) / hearts^2.<br>
             Rewards a heart.
             ]]></tooltip>
 		<story_1><![CDATA[<b>1 Assassinated in Beginnersville:</b>⮀ You killed one of the town's people quickly and quietly, got the heart and moved on...]]></story_1>
