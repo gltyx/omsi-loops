@@ -116,8 +116,10 @@ function View() {
     this.requests = {
         updateStat: [],
         updateSkill: [],
+        updateSkills: [],
         updateBuff: [],
         updateTrialInfo: [],
+        updateTrials: [],
         updateRegular: [],
         updateProgressAction: [],
         updateMultiPartSegments: [],
@@ -125,11 +127,14 @@ function View() {
         updateMultiPartActions: [],
         updateNextActions: [],
         updateTime: [],
+        updateTotals: [],
         updateCurrentActionBar: [],
+        updateCurrentActionsDivs: [],
         updateTotalTicks: [],
         updateCurrentActionLoops: [],
         updateSoulstones: [],
         updateResource: [],
+        updateResources: [],
         updateActionTooltips: [],
         updateLockedHidden: [],
         createTravelMenu: [],
@@ -138,6 +143,8 @@ function View() {
         adjustGoldCost: [],
         adjustGoldCosts: [],
         adjustExpGain: [],
+        removeAllHighlights: [],
+        highlightIncompleteActions: []
     };
 
     // requesting an update will call that update on the next view.update tick (based off player set UPS)

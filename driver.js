@@ -113,16 +113,18 @@ function recalcInterval(fps) {
 
 function stopGame() {
     stop = true;
-    view.updateTime();
-    view.updateCurrentActionBar(actions.currentPos);
+    view.requestUpdate("updateTime", null);
+    view.requestUpdate("updateCurrentActionBar", actions.currentPos);
+    view.update();
     document.title = "*PAUSED* Idle Loops";
     document.getElementById("pausePlay").textContent = _txt("time_controls>play_button");
 }
 
 function pauseGame(ping) {
     stop = !stop;
-    view.updateTime();
-    view.updateCurrentActionBar(actions.currentPos);
+    view.requestUpdate("updateTime", null);
+    view.requestUpdate("updateCurrentActionBar", actions.currentPos);
+    view.update();
     document.title = stop ? "*PAUSED* Idle Loops" : "Idle Loops";
     document.getElementById("pausePlay").textContent = _txt(`time_controls>${stop ? "play_button" : "pause_button"}`);
     if (!stop && (shouldRestart || timer >= timeNeeded)) {
@@ -134,20 +136,19 @@ function pauseGame(ping) {
 }
 
 function loopEnd() {
-    view.update();
     if (effectiveTime > 0) {
         totals.time += timeCounter;
         totals.effectiveTime += effectiveTime;
         totals.loops++;
-        view.updateTotals();
+        view.requestUpdate("updateTotals", null);
         const loopCompletedActions = actions.current.slice(0, actions.currentPos);
         if (actions.current[actions.currentPos] !== undefined && actions.current[actions.currentPos].loopsLeft < actions.current[actions.currentPos].loops)
             loopCompletedActions.push(actions.current[actions.currentPos]);
         markActionsComplete(loopCompletedActions);
         actionStory(loopCompletedActions);
         if (options.highlightNew) {
-            view.removeAllHighlights();
-            view.highlightIncompleteActions();
+            view.requestUpdate("removeAllHighlights", null);
+            view.requestUpdate("highlightIncompleteActions", null);
         }
     }
 }
@@ -166,7 +167,7 @@ function prepareRestart() {
             view.requestUpdate("updateTotalTicks", null);
         }
         for (let i = 0; i < actions.current.length; i++) {
-            view.updateCurrentActionBar(i);
+            view.requestUpdate("updateCurrentActionBar", i);
         }
         stopGame();
     } else {
@@ -186,15 +187,16 @@ function restart() {
     for (let i = 0; i < towns.length; i++) {
         towns[i].restart();
     }
-    view.updateSkills();
+    view.requestUpdate("updateSkills");
     actions.restart();
-    view.updateCurrentActionsDivs();
-    view.updateTrials();
+    view.requestUpdate("updateCurrentActionsDivs");
+    view.requestUpdate("updateTrials", null);
 }
 
 function manualRestart() {
     loopEnd();
     restart();
+    view.update();
 }
 
 
@@ -225,8 +227,8 @@ function addActionToList(name, townNum, isTravelAction, insertAtIndex) {
             }
         }
     }
-    view.updateNextActions();
-    view.updateLockedHidden();
+    view.requestUpdate("updateNextActions", null);
+    view.requestUpdate("updateLockedHidden", null);
 }
 
 // mana and resources
@@ -251,7 +253,7 @@ function resetResource(resource) {
 function resetResources() {
     resources = copyObject(resourcesTemplate);
     if(getExploreProgress() >= 100) addResource("glasses", true);
-    view.updateResources();
+    view.requestUpdate("updateResources", null);
 }
 
 function changeActionAmount(amount, num) {
@@ -374,7 +376,7 @@ function adjustAll() {
     adjustInsurance();
     adjustAllRocks();
     adjustTrainingExpMult();
-    view.adjustManaCost("Continue On");
+    view.requestUpdate("adjustManaCost", "Continue On");
 }
 
 function capAmount(index, townNum) {
@@ -582,7 +584,7 @@ function disableAction(index) {
         action.disabled = true;
     }
     view.updateNextActions();
-    view.updateLockedHidden();
+    view.requestUpdate("updateLockedHidden", null);
 }
 function removeAction(index) {
     actions.nextLast = copyObject(actions.next);
@@ -592,7 +594,7 @@ function removeAction(index) {
     }
     actions.next.splice(index, 1);
     view.updateNextActions();
-    view.updateLockedHidden();
+    view.requestUpdate("updateLockedHidden", null);
 }
 
 function addOffline(num) {
@@ -617,5 +619,5 @@ function toggleOffline() {
         bonusSpeed = 1;
         document.getElementById("isBonusOn").textContent = _txt("time_controls>bonus_seconds>state>off");
     }
-    view.updateTime();
+    view.requestUpdate("updateTime", null);
 }

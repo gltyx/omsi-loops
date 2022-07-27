@@ -186,7 +186,7 @@ function restartStats() {
     for (let i = 0; i < statList.length; i++) {
         if(getSkillLevel("Wunderkind") > 0) stats[statList[i]].exp = getExpOfLevel(getBuffLevel("Imbuement2") * 2);
         else stats[statList[i]].exp = getExpOfLevel(getBuffLevel("Imbuement2"));
-        view.updateStat(statList[i]);
+        view.requestUpdate("updateStat", statList[i]);
     }
 }
 
