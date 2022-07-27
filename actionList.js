@@ -5589,7 +5589,7 @@ function exchangeMap() {
         if (town.getLevel("Survey") < 100) unfinishedSurveyZones.push(index);
     });
     while (resources.completedMap > 0 && unfinishedSurveyZones.length > 0) {
-        let rand = Math.floor(Math.random() * unfinishedSurveyZones.length);
+        let rand = unfinishedSurveyZones[Math.floor(Math.random() * unfinishedSurveyZones.length)];
         let name = "expSurveyZ"+rand;
         towns[rand][name] += getExploreSkill() * 2;
         if (towns[rand][name] >= 505000) {
