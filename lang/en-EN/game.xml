@@ -627,6 +627,7 @@
 		  with great power you can end the time loop now and forever!
 		</story>
 		<story num="12"> <!--Finally--> <!-- Change 12 to Ending the Loop-->
+            <![CDATA[
                You've done it! You've bested the gods themselves and restored time to its rightful flow. You can stop looping at any moment.
                But, then again, you could keep going. There's always time later...
                Thanks for playing my fan mod of Idle Loops! 
