@@ -336,6 +336,7 @@
             </adblock_warning>
             <highlight_new>新行动高亮</highlight_new>
             <stat_colors>改变能力颜色 (保存后刷新生效)</stat_colors>
+            <pause_audio_cue>暂停提示音</pause_audio_cue>
             <auto_max_training>最大化所有训练行动</auto_max_training>
             <hotkeys>快捷键</hotkeys>
             <hotkeys_tooltip><![CDATA[
