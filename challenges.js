@@ -16,11 +16,13 @@ function loadChallenge() {
 
             Action.BuyManaZ3.visible = function() {return false;}
             Action.BuyManaZ5.visible = function() {return false;}
+            break;
         case 2:
             getSelfCombat = function() {
                 if (challenge === 2) return Math.max(getZombieStrength(), getTeamStrength()) / 2;
                 else return (getSkillLevel("Combat") + getSkillLevel("Pyromancy") * 5) * getArmorLevel() * (1 + getBuffLevel("Feast") * .05);
             }
+            break;
         case 3:
             restart = function() {
                 shouldRestart = false;
@@ -39,5 +41,6 @@ function loadChallenge() {
                 view.requestUpdate("updateCurrentActionsDivs");
                 view.requestUpdate("updateTrials", null);
             }
+            break;
     }
 }
