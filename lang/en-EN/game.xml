@@ -1039,11 +1039,11 @@
             Requires a map for each action.<br>
             Currently granting <div class='surveySkill'></div> exp per action.
             ]]></tooltip>
-		<story_1><![CDATA[<b>20% World Survey:</b>⮀ You decide it is time to discover the world, the journey is long but so worth.]]</story_1>
-		<story_2><![CDATA[<b>40% World Survey:</b>⮀ Crazy how discovering the world over again is shedding a new light on the world, new items you never seen have just been out of place.]]</story_2>
-		<story_3><![CDATA[<b>60% World Survey:</b>⮀ Nobody is stopping you from exploring more and more, it feels nice. At least the view is spectacular!]]</story_3>
-		<story_4><![CDATA[<b>80% World Survey:</b>⮀ You are almost done with your trip and you have enjoyed every second of it. You wish the explorer's guild has found more locations to visit, but they couldn't find anything new.]]</story_4>
-		<story_5><![CDATA[<b>100% World Survey:</b>⮀ You have discovered the whole world over again, at least there is a fox to say swiper, no swiping to.]]</story_5>
+		<story_1><![CDATA[<b>20% World Survey:</b>⮀ You decide it is time to discover the world, the journey is long but so worth.]]></story_1>
+		<story_2><![CDATA[<b>40% World Survey:</b>⮀ Crazy how discovering the world over again is shedding a new light on the world, new items you never seen have just been out of place.]]></story_2>
+		<story_3><![CDATA[<b>60% World Survey:</b>⮀ Nobody is stopping you from exploring more and more, it feels nice. At least the view is spectacular!]]></story_3>
+		<story_4><![CDATA[<b>80% World Survey:</b>⮀ You are almost done with your trip and you have enjoyed every second of it. You wish the explorer's guild has found more locations to visit, but they couldn't find anything new.]]></story_4>
+		<story_5><![CDATA[<b>100% World Survey:</b>⮀ You have discovered the whole world over again, at least there is a fox to say swiper, no swiping to.]]></story_5>
         </survey>
         <assassin>
             <label>Assassinate</label>
@@ -1053,14 +1053,14 @@
             Gives progress equal to (Sqrt(Practical) + Thievery + Assassin) * Stat/1000 * Sqrt(Completions/1000) / Abs(reputation) / hearts^2.<br>
             Rewards a heart.
             ]]></tooltip>
-		<story_1><![CDATA[<b>1 Assassinated in Beginnersville:</b>⮀ You killed one of the town's people quickly and quietly, got the heart and moved on...]]</story_1>
-		<story_2><![CDATA[<b>1 Assassinated in Forest Path:</b>⮀ How was there more people in the forest besides the hermit and the witch? who knows, all that matters is you killed someone and left with the heart.]]</story_2>
-		<story_3><![CDATA[<b>1 Assassinated in Merchanton:</b>⮀ You walked into the casino, looked around to check for cameras and killed someone in the storage room. You got the heart and left quickly before being spotted.]]</story_3>
-		<story_4><![CDATA[<b>1 Assassinated in Mt. Olympus:</b>⮀ You climbed the Mountain and killed one of the yeti's for their heart, what they get for not selling snowcones.]]</story_4>
-		<story_5><![CDATA[<b>1 Assassinated in Valhalla:</b>⮀ Gods are looking all around but someone not paying tax on your property comes first, you kill them and grab the heart and quickly leave.]]</story_5>
-		<story_6><![CDATA[<b>1 Assassinated in Startington:</b>⮀ Everyone here is almost close to being dead so should be quick and easy. You get the heart so quick and moved on.]]</story_6>
-		<story_7><![CDATA[<b>1 Assassinated in Jungle Path:</b>⮀ Survivers are lost so you can use that to your advantage, 1 quick kill later and you can move on. Don't forget the heart!]]</story_7>
-		<story_8><![CDATA[<b>1 Assassinated in Commerenceville:</b>⮀ Last task on the list and there are a ton of corrupted people here, plus the assassnation guild is here to collect all the hearts you gotten.]]</story_8>
+		<story_1><![CDATA[<b>1 Assassinated in Beginnersville:</b>⮀ You killed one of the town's people quickly and quietly, got the heart and moved on...]]></story_1>
+		<story_2><![CDATA[<b>1 Assassinated in Forest Path:</b>⮀ How was there more people in the forest besides the hermit and the witch? who knows, all that matters is you killed someone and left with the heart.]]></story_2>
+		<story_3><![CDATA[<b>1 Assassinated in Merchanton:</b>⮀ You walked into the casino, looked around to check for cameras and killed someone in the storage room. You got the heart and left quickly before being spotted.]]></story_3>
+		<story_4><![CDATA[<b>1 Assassinated in Mt. Olympus:</b>⮀ You climbed the Mountain and killed one of the yeti's for their heart, what they get for not selling snowcones.]]></story_4>
+		<story_5><![CDATA[<b>1 Assassinated in Valhalla:</b>⮀ Gods are looking all around but someone not paying tax on your property comes first, you kill them and grab the heart and quickly leave.]]></story_5>
+		<story_6><![CDATA[<b>1 Assassinated in Startington:</b>⮀ Everyone here is almost close to being dead so should be quick and easy. You get the heart so quick and moved on.]]></story_6>
+		<story_7><![CDATA[<b>1 Assassinated in Jungle Path:</b>⮀ Survivers are lost so you can use that to your advantage, 1 quick kill later and you can move on. Don't forget the heart!]]></story_7>
+		<story_8><![CDATA[<b>1 Assassinated in Commerenceville:</b>⮀ Last task on the list and there are a ton of corrupted people here, plus the assassnation guild is here to collect all the hearts you gotten.]]></story_8>
         </assassin>
         <!--ruins-->
         <ruinsZ1>
@@ -1069,9 +1069,9 @@
             <tooltip><![CDATA[
             As you've explored, you've found a number of old ruins scattered around. It's probably worth your time to explore them.
             ]]></tooltip>
-		<story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Forest and notice some weird looking rocks, wonder what they do.]]</story_1>
-		<story_2><![CDATA[<b>50% delved:</b>⮀ After further investgating you realize that the rocks are needed for a tower somewhere....]]</story_2>
-		<story_3><![CDATA[<b>100% delved:</b>⮀ You have discover everything in these ruins, and notice that only these temporal stones exist here.]]</story_3>
+		<story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Forest and notice some weird looking rocks, wonder what they do.]]></story_1>
+		<story_2><![CDATA[<b>50% delved:</b>⮀ After further investgating you realize that the rocks are needed for a tower somewhere....]]></story_2>
+		<story_3><![CDATA[<b>100% delved:</b>⮀ You have discover everything in these ruins, and notice that only these temporal stones exist here.]]></story_3>
         </ruinsZ1>
         <ruinsZ3>
             <label>Ruins</label>
@@ -1079,9 +1079,9 @@
             <tooltip><![CDATA[
             As you've explored, you've found a number of old ruins scattered around. It's probably worth your time to explore them.
             ]]></tooltip>
-		<story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Mt. Olympus and notice some weird looking rocks, wonder what they do.]]</story_1>
-		<story_2><![CDATA[<b>50% delved:</b>⮀ After further investgating you realize that the rocks are needed for a tower somewhere....]]</story_2>
-		<story_3><![CDATA[<b>100% delved:</b>⮀ You have discover everything in these ruins, and notice that only these temporal stones exist here.]]</story_3>
+		<story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Mt. Olympus and notice some weird looking rocks, wonder what they do.]]></story_1>
+		<story_2><![CDATA[<b>50% delved:</b>⮀ After further investgating you realize that the rocks are needed for a tower somewhere....]]></story_2>
+		<story_3><![CDATA[<b>100% delved:</b>⮀ You have discover everything in these ruins, and notice that only these temporal stones exist here.]]></story_3>
         </ruinsZ3>
         <ruinsZ5>
             <label>Ruins</label>
@@ -1089,9 +1089,9 @@
             <tooltip><![CDATA[
             As you've explored, you've found a number of old ruins scattered around. It's probably worth your time to explore them.
             ]]></tooltip>
-		<story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Startington and notice some weird looking rocks, wonder what they do.]]</story_1>
-		<story_2><![CDATA[<b>50% delved:</b>⮀ After further investgating you realize that the rocks are needed for a tower somewhere....]]</story_2>
-		<story_3><![CDATA[<b>100% delved:</b>⮀ You have discover everything in these ruins, and notice that only these temporal stones exist here.]]</story_3>
+		<story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Startington and notice some weird looking rocks, wonder what they do.]]></story_1>
+		<story_2><![CDATA[<b>50% delved:</b>⮀ After further investgating you realize that the rocks are needed for a tower somewhere....]]></story_2>
+		<story_3><![CDATA[<b>100% delved:</b>⮀ You have discover everything in these ruins, and notice that only these temporal stones exist here.]]></story_3>
         </ruinsZ5>
         <ruinsZ6>
             <label>Ruins</label>
@@ -1099,9 +1099,9 @@
             <tooltip><![CDATA[
             As you've explored, you've found a number of old ruins scattered around. It's probably worth your time to explore them.
             ]]></tooltip>
-		<story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Jungle Path and notice some weird looking rocks, wonder what they do.]]</story_1>
-		<story_2><![CDATA[<b>50% delved:</b>⮀ After further investgating you realize that the rocks are needed for a tower somewhere....]]</story_2>
-		<story_3><![CDATA[<b>100% delved:</b>⮀ You have discover everything in these ruins, and notice that only these temporal stones exist here.]]</story_3>
+		<story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Jungle Path and notice some weird looking rocks, wonder what they do.]]></story_1>
+		<story_2><![CDATA[<b>50% delved:</b>⮀ After further investgating you realize that the rocks are needed for a tower somewhere....]]></story_2>
+		<story_3><![CDATA[<b>100% delved:</b>⮀ You have discover everything in these ruins, and notice that only these temporal stones exist here.]]></story_3>
         </ruinsZ6>
         <haulZ1>
             <label>Haul</label>
@@ -1114,8 +1114,8 @@
             You're sure you can use them for something. They're too heavy to move more than one at a time though.<br>
             One in every thousand Stones is temporal.
         ]]></tooltip>
-		<story_1><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ Slowly you pick up the stones one by one and move them to Valley of Olympus. Make sure to use your legs when lifting! ]]</story_1>
-		<story_2><![CDATA[<b>Moved 250 Temporal Stones:</b>⮀ Finally all the stones have been moved from the Forest Path to Valley of Olympus.]]</story_2>
+		<story_1><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ Slowly you pick up the stones one by one and move them to Valley of Olympus. Make sure to use your legs when lifting! ]]></story_1>
+		<story_2><![CDATA[<b>Moved 250 Temporal Stones:</b>⮀ Finally all the stones have been moved from the Forest Path to Valley of Olympus.]]></story_2>
         </haulZ1>
         <haulZ3>
             <label>Haul</label>
@@ -1128,8 +1128,8 @@
             You're sure you can use them for something. They're too heavy to move more than one at a time though.<br>
             One in every thousand Stones is temporal.
         ]]></tooltip>
-		<story_1><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ Slowly you pick up the stones one by one and move them to Valley of Olympus. Make sure to use your legs when lifting! ]]</story_1>
-		<story_2><![CDATA[<b>Moved 250 Temporal Stones:</b>⮀ Finally all the stones have been moved from the Startington to Valley of Olympus.]]</story_2>
+		<story_1><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ Slowly you pick up the stones one by one and move them to Valley of Olympus. Make sure to use your legs when lifting! ]]></story_1>
+		<story_2><![CDATA[<b>Moved 250 Temporal Stones:</b>⮀ Finally all the stones have been moved from the Startington to Valley of Olympus.]]></story_2>
         </haulZ3>
         <haulZ5>
             <label>Haul</label>
@@ -1142,8 +1142,8 @@
             You're sure you can use them for something. They're too heavy to move more than one at a time though.<br>
             One in every thousand Stones is temporal.
         ]]></tooltip>
-		<story_1><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ Slowly you pick up the stones one by one and move them to Valley of Olympus. Make sure to use your legs when lifting! ]]</story_1>
-		<story_2><![CDATA[<b>Moved 250 Temporal Stones:</b>⮀ Finally all the stones have been moved from the Jungle Path to Valley of Olympus.]]</story_2>
+		<story_1><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ Slowly you pick up the stones one by one and move them to Valley of Olympus. Make sure to use your legs when lifting! ]]></story_1>
+		<story_2><![CDATA[<b>Moved 250 Temporal Stones:</b>⮀ Finally all the stones have been moved from the Jungle Path to Valley of Olympus.]]></story_2>
         </haulZ5>
         <haulZ6>
             <label>Haul</label>
@@ -1156,8 +1156,8 @@
             You're sure you can use them for something. They're too heavy to move more than one at a time though.<br>
             One in every thousand Stones is temporal.
         ]]></tooltip>
-		<story_1><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ Slowly you pick up the stones one by one and move them to Valley of Olympus. Make sure to use your legs when lifting! ]]</story_1>
-		<story_2><![CDATA[<b>Moved 250 Temporal Stones:</b>⮀ Finally all the stones have been moved from the Mt. Olympus to Valley of Olympus.]]</story_2>
+		<story_1><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ Slowly you pick up the stones one by one and move them to Valley of Olympus. Make sure to use your legs when lifting! ]]></story_1>
+		<story_2><![CDATA[<b>Moved 250 Temporal Stones:</b>⮀ Finally all the stones have been moved from the Mt. Olympus to Valley of Olympus.]]></story_2>
         </haulZ6>
         <!--town 1-->
         <map>
@@ -1220,9 +1220,9 @@
             <label>Found Glasses</label>
             <tooltip><![CDATA[
             You could have sworn you had a spare pair of glasses somewhere. Now you've explored to the ends of the world. Every nook or cranny has revealed to you their secrets. And you've found them - in the last place anyone would ever think to look. On top of your head.<br>
-            You now start all loops with glasses.
-		<story_1><![CDATA[<b>Found Glasses:</b>⮀ Wait did you have your glasses above your head and you still bought another one? Glad you had high enough chrisma skill to pull that off.]]></story_1>
-        ]]></tooltip>
+            You now start all loops with glasses.]]>
+            </tooltip>
+            <story_1><![CDATA[<b>Found Glasses:</b>⮀ Wait did you have your glasses above your head and you still bought another one? Glad you had high enough chrisma skill to pull that off.]]></story_1>
         </found_glasses>
         <buy_mana_z1>
             <label>Buy Mana</label>
@@ -1267,7 +1267,7 @@
             <story_2><![CDATA[<b>100 Strength talent:</b>⮀ Your body adapts faster and faster to the strains you put upon it. You know exactly how far to push it and can tell almost instinctively when to stop.]]></story_2>
             <story_3><![CDATA[<b>1,000 Strength talent:</b>⮀ Your body seems to build itself up faster and faster each time you break it down. You can practically feel your mana purr in satisfaction as it rebuilds your body to be stronger and stronger.]]></story_3>
 		<story_4><![CDATA[<b>10,000 Strength talent:</b>⮀ It's over 9000! You are so strong that you can flick open pots and can defeat monsters with ease. Your can still push farther beyond your limits and go plus ultra!]]></story_4>
-		<story_5><![CDATA[<b>100,000 Strength talents:</b>⮀ At this point gods are starting to fear you, you have so much strength that anything you touch breaks instantly!]]></story_4>
+		<story_5><![CDATA[<b>100,000 Strength talents:</b>⮀ At this point gods are starting to fear you, you have so much strength that anything you touch breaks instantly!]]></story_5>
         </train_strength>
         <short_quest>
             <label>Short Quest</label>
@@ -2501,7 +2501,7 @@
             Costs 10 herbs and a blood.<br>
             Gives Gluttony exp equal to (Rescued Survivors * 5).
         ]]></tooltip>
-		<<!--story action for You finish preparing the buffet but have nobody to share it with. You spot somebody sprinting through the area saying something about being too fast and offer to share the buffet with them. To your surprise they fanatically refuse the free meal, exclaiming they may never taste food-->>
+		<!--story action for You finish preparing the buffet but have nobody to share it with. You spot somebody sprinting through the area saying something about being too fast and offer to share the buffet with them. To your surprise they fanatically refuse the free meal, exclaiming they may never taste food-->>
         </prepare_buffet>
         <totem>
             <label>Totem</label>
