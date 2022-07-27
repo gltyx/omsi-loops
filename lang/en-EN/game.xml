@@ -1042,7 +1042,7 @@
 		<story_2><![CDATA[<b>40% World Survey:</b>⮀ Crazy how discovering the world over again is shedding a new light on the world, new items you never seen have just been out of place.]]</story_2>
 		<story_3><![CDATA[<b>60% World Survey:</b>⮀ Nobody is stopping you from exploring more and more, it feels nice. At least the view is spectacular!]]</story_3>
 		<story_4><![CDATA[<b>80% World Survey:</b>⮀ You are almost done with your trip and you have enjoyed every second of it. You wish the explorer's guild has found more locations to visit, but they couldn't find anything new.]]</story_4>
-		<story_5><![CDATA[<b>100% World Survey:</b>⮀ You have discovered the whole world over again, at least there is a fox to say swiper, no swiping to.]]</story_5>
+		<story_5><![CDATA[<b>100% World Survey:</b>⮀ your last exploration had the strangest encounter of them all. just as you finished surveying the area, a fox appeared out of nowhere and swiped your remaining maps!]]</story_5>
         </survey>
         <assassin>
             <label>Assassinate</label>
@@ -1069,8 +1069,8 @@
             As you've explored, you've found a number of old ruins scattered around. It's probably worth your time to explore them.
             ]]></tooltip>
 		<story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Forest and notice some weird looking rocks, wonder what they do.]]</story_1>
-		<story_2><![CDATA[<b>50% delved:</b>⮀ After further investgating you realize that the rocks are needed for a tower somewhere....]]</story_2>
-		<story_3><![CDATA[<b>100% delved:</b>⮀ You have discover everything in these ruins, and notice that only these temporal stones exist here.]]</story_3>
+		<story_2><![CDATA[<b>50% delved:</b>⮀ After investgating these weird looking rocks you notice they are cubical and are heavy, looks like they are dusty from the time they have been sitting here.]]</story_2>
+		<story_3><![CDATA[<b>100% delved:</b>⮀ You have discover everything in these ruins, and notice that there are so many cubical stones lying everywhere like a massive battle happend.]]</story_3>
         </ruinsZ1>
         <ruinsZ3>
             <label>Ruins</label>
@@ -1080,7 +1080,7 @@
             ]]></tooltip>
 		<story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Mt. Olympus and notice some weird looking rocks, wonder what they do.]]</story_1>
 		<story_2><![CDATA[<b>50% delved:</b>⮀ After further investgating you realize that the rocks are needed for a tower somewhere....]]</story_2>
-		<story_3><![CDATA[<b>100% delved:</b>⮀ You have discover everything in these ruins, and notice that only these temporal stones exist here.]]</story_3>
+		<story_3><![CDATA[<b>100% delved:</b>⮀ contuine the battle of the valkeries story]]</story_3>
         </ruinsZ3>
         <ruinsZ5>
             <label>Ruins</label>
@@ -1113,8 +1113,9 @@
             You're sure you can use them for something. They're too heavy to move more than one at a time though.<br>
             One in every thousand Stones is temporal.
         ]]></tooltip>
-		<story_1><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ Slowly you pick up the stones one by one and move them to Valley of Olympus. Make sure to use your legs when lifting! ]]</story_1>
-		<story_2><![CDATA[<b>Moved 250 Temporal Stones:</b>⮀ Finally all the stones have been moved from the Forest Path to Valley of Olympus.]]</story_2>
+		<story_1><![CDATA[<b>First Temporal Stone Found:</b>⮀ After digging thru the cubical stones, you notice a light blue light glowing with a swirl pattern on the sides of the rock and they are slightly easier to pick up but still weigh a ton.]]</story_1>
+		<story_2><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ Slowly you pick up the stones one by one and move them to Valley of Olympus. Make sure to use your legs when lifting! ]]</story_2>
+		<story_3><![CDATA[<b>Moved 250 Temporal Stones:</b>⮀ Finally all the stones have been moved from the Forest Path to Valley of Olympus.]]</story_3>
         </haulZ1>
         <haulZ3>
             <label>Haul</label>
@@ -1164,7 +1165,7 @@
             <tooltip><![CDATA[The explorer's guild has taught you how to use cartographer's kits to map where you're going. This will let you keep track of things better and find all sorts of new secrets.<br>
             There's a shop here in Beginnersville that will sell them for just ]]></tooltip>
             <tooltip2>gold each.</tooltip2>
-		<story_1><![CDATA[<b>Bought a Map:</b>⮀ You buy the map and realize that the whole world was flat, but on the bright side you can explore extra areas in other locations!]]></story_1>
+		<story_1><![CDATA[<b>Bought a Map:</b>⮀ "You buy the map and upon seeing the map, you exclaim that the earth appears to be flat, and someone at the guild says "that's because it's a flat drawing!"; but on the bright side you can explore extra areas in other locations!"]]></story_1>
         </map>
         <wander>
             <label>Wander</label>
@@ -1189,7 +1190,7 @@
             mana.<br>Every 10 pots have mana.
         ]]></tooltip2>
             <story_1><![CDATA[<b>50 Pots with mana:</b>⮀ You've smashed every single pot in this village, and have figured out all the pots that contain any trace of mana. Having to break them all physically was time consuming, and your skills at absorbing the mana weren't the best. There must be more efficient ways of doing it.]]></story_1>
-		<story_2><![CDATA[<b>75 Pots with mana:</b>⮀ ]You found and smashed every pot there was in this village which you thought was impossible, welp more mana for you and your future loops]]></story_2>
+		<story_2><![CDATA[<b>75 Pots with mana:</b>⮀ You found and smashed every pot there was in this village which you thought was impossible, well more mana for you and your future loops]]></story_2>
         </smash_pots>
         <pick_locks>
             <label>Pick Locks</label>
@@ -1206,7 +1207,7 @@
             <story_1><![CDATA[<b>House checked:</b>⮀ You manage to pick a lock that was in disrepair and opened the door, only to walk into the home's inhabitant. Good thing the loop ended not soon after. You're gonna have to figure out which houses are worth hitting. Some money wouldn't go astray.]]></story_1>
             <story_2><![CDATA[<b>50 Houses known:</b>⮀ You really should look at hitting those locked houses around, who knows what goodies you'll manage to scrounge up.]]></story_2>
             <story_3><![CDATA[<b>10 Houses with loot:</b>⮀ You've figured out which houses are uninhabited and have enough gold for it to be worth your time. As they say, time is mana!]]></story_3>
-		<story_4><![CDATA[<b>25 Houses with loot in a loop:</b>⮀ You really are the Master Locksmith? In and out you went without a single floorboard creaking, if only you had this skill in real life!]]></story_4>
+		<story_4><![CDATA[<b>25 Houses with loot in a loop:</b>⮀ You really are the Master Locksmith? In and out you went without a single floorboard creaking, not even waking up a single mouse!]]></story_4>
         </pick_locks>
         <buy_glasses>
             <label>Buy Glasses</label>
@@ -1231,7 +1232,7 @@
             <tooltip2><![CDATA[
             mana. Buys all the mana you can.<br>Unlocked at 20% Explored.
         ]]></tooltip2>
-            <story_1><![CDATA[<b>Bought Mana:</b>⮀ Looks like there is a stand that is a man selling mana potions, might need it to contuine the loop! Wait that was odd there was a stand out in the middle of the day selling the one thing you need, weird.]]></story_1>
+            <story_1><![CDATA[<b>Bought Mana:</b>⮀ Looks like there is a stand that is a man selling mana potions, might need it to continue the loop! Wait that was odd there was a stand out in the middle of the day selling the one thing you need, weird.]]></story_1>
         </buy_mana_z1>
         <buy_mana_challenge>
             <label>Buy Mana</label>
@@ -1265,8 +1266,8 @@
             <story_1><![CDATA[<b>Strength trained:</b>⮀ You lift the oak barrel filled with water, holding it while you squat again and again. The barrel rests upon your back as you do push up after push up. It's a trusty companion in your quest to regain your muscle.]]></story_1>
             <story_2><![CDATA[<b>100 Strength talent:</b>⮀ Your body adapts faster and faster to the strains you put upon it. You know exactly how far to push it and can tell almost instinctively when to stop.]]></story_2>
             <story_3><![CDATA[<b>1,000 Strength talent:</b>⮀ Your body seems to build itself up faster and faster each time you break it down. You can practically feel your mana purr in satisfaction as it rebuilds your body to be stronger and stronger.]]></story_3>
-		<story_4><![CDATA[<b>10,000 Strength talent:</b>⮀ It's over 9000! You are so strong that you can flick open pots and can defeat monsters with ease. Your can still push farther beyond your limits and go plus ultra!]]></story_4>
-		<story_5><![CDATA[<b>100,000 Strength talents:</b>⮀ At this point gods are starting to fear you, you have so much strength that anything you touch breaks instantly!]]></story_4>
+	  <story_4><![CDATA[<b>10,000 Strength talent:</b>⮀ You are so strong that you can flick open pots and can defeat monsters with ease. Your can still push farther beyond your limits and train like no other!]]></story_4>
+	  <story_5><![CDATA[<b>100,000 Strength talents:</b>⮀ At this point you feel like you could challenge a god, It would be the battle of the ages! And your body is still capable...]]></story_4>
         </train_strength>
         <short_quest>
             <label>Short Quest</label>
@@ -1282,7 +1283,7 @@
         ]]></tooltip2>
             <story_1><![CDATA[<b>Short Quest finished:</b>⮀ You help an elderly woman get her cat down from atop her house, she rewards you handsomely for your efforts.]]></story_1>
             <story_2><![CDATA[<b>20 Short Quests with loot in a loop:</b>⮀ You’ve helped everyone who’s been willing to take you on, and the gold from your work jingles beautifully in your pockets. The satisfaction of a job well done fills you with pride.]]></story_2>
-		<story_3><![CDATA[<b>50 Short Quests with loot in a loop:</b>⮀ You have done every small tasks the town had to do, now the town repects you even more than before!]]></story_3>
+	  <story_3><![CDATA[<b>50 Short Quests with loot in a loop:</b>⮀ You have done every small tasks the town had to do, now the town repects you even more than before!]]></story_3>
         </short_quest>
         <investigate>
             <label>Investigate</label>
@@ -1353,8 +1354,8 @@
         ]]></tooltip>
             <story_1><![CDATA[<b>Patient healed:</b>⮀ You're allowed in to see the patients and begin healing. It's excellent practice and everyone you heal, be it from broken bones to small scrapes is extraordinarily thankful for your help.]]></story_1>
             <story_2><![CDATA[<b>10 Patients healed in a loop:</b>⮀ Your reputation is absolutely sterling, you've basically cleared out the entire healing home and the nurses and healers are more than thankful for your help.]]></story_2>
-		<story_3><![CDATA[<b>30 Patients healed in a loop:</b>⮀ You heal so many patients that they can't begin to thank you enough, the nurses suggest you should own this stablishment to help people all over the world.]]></story_3>
-		<story_4><![CDATA[<b>50 Patinets healed in a loop:</b>⮀ You become the doctor, after many loops you can help so many patients that the number is thru the roof. The nurses have been having a well deserver break since you can cure people so fast.]]></story_4>
+		<story_3><![CDATA[<b>100 Patients healed in a loop:</b>⮀ You heal so many patients that they can't begin to thank you enough, the nurses suggest you should own this stablishment to help people all over the world.]]></story_3>
+		<story_4><![CDATA[<b>1,000 Patinets healed in a loop:</b>⮀ You become the doctor, after many loops you can help so many patients that the number is thru the roof. The nurses have been having a well deserver break since you can cure people so fast.]]></story_4>
             <story_5><![CDATA[<b>Failed Action:</b>⮀ You're turned away at the door, the small healers home stating that they can't trust you to not poison the people inside or make the situation worse.]]></story_5>
 		<story_6><![CDATA[<b>50 Restoration:</b>⮀ You realize this skill could help the patients and makes your job slightly easier. Healing is a art and a skill that you don't regret having.]]></story_6>
 		 <segment_names>
@@ -1654,8 +1655,8 @@
             <story_1><![CDATA[<b>Dexterity trained:</b>⮀ You find rocks spaced intermittently in an open clearing. Your best guess is that they were set up as a training field for some mercenary group that had passed by. Either way, it's fun to bounce from one rock to another parrying invisible enemies and fighting the air.]]></story_1>
 	     <story_2><![CDATA[<b>100 Dexterity Talent:</b>⮀ You parry and fight invisable monsters for alot longer than you thought you were gonna but you are now quick to dodge and evade!]]></story_2>
 	     <story_3><![CDATA[<b>1,000 Dexterity Talent:</b>⮀ You have so much dexterity that you can be nimble and so light that you can bounce everywhere, bounce man???]]></story_3>
-	     <story_4><![CDATA[<b>10,000 Dexterity Talent:</b>⮀ ]]></story_4>
-	     <story_5><![CDATA[<b>100,000 Dexterity Talent:</b>⮀ ]]></story_5>
+	     <story_4><![CDATA[<b>10,000 Dexterity Talent:</b>⮀ At this point you are so quick that you can dodge even thunderbolts! Shocking.]]></story_4>
+	     <story_5><![CDATA[<b>100,000 Dexterity Talent:</b>⮀ Dexterity is a joke at this point, you have so much yet you still crave more skill to dodge everything even gods.]]></story_5>
         </train_dexterity>
         <train_speed>
             <label>Train Speed</label>
@@ -1663,6 +1664,10 @@
             A forest run is fantastic. You feel like you're learning a lot as you push your limits.<br>Has 4x exp/talent gain, and can only be done <div id='trainingLimitSpd'></div> times per reset.<br>Unlocked at 80% Forest Explored.
         ]]></tooltip>
             <story_1><![CDATA[<b>Speed trained:</b>⮀ Sprinting through the forest is an exhilarating experience. The vines whip past your head, the roots beneath your feet. The leaves whip past your face and the breeze blows hard enough against your ears that you hear nothing but. You feel at one with the forest as you chase a finch around, up and down and even under trees at times. Through dilapidated trunks and wooden labyrinths.]]></story_1>
+	     <story_2><![CDATA[<b>100 Speed Talent:</b>⮀ You can feel the speed now, you can start running down all these roads and shortcuts with ease. You wonder how fast you can get from Beginnersville to the Forest Path.]]></story_2>
+	     <story_3><![CDATA[<b>1,000 Speed Talent:</b>⮀ With each loop your sore feet magically go away, makes your speed training effecient. Getting closer to reaching a top speed of a car, glad there is no police in this world.]]></story_3>
+	     <story_4><![CDATA[<b>10,000 Speed Talent:</b>⮀ You have set the world record for fastest man alive, you can race to Valhalla in a blink of a second. Wonder if you could beat the flash if they existed in this world.]]></story_4>
+	     <story_5><![CDATA[<b>100,000 Speed Talent:</b>⮀ Nobody can tell how fast you are going, you have past the speed of light. To normal town's people you look like you are teleporting right in front of them.]]></story_5>
         </train_speed>
         <follow_flowers>
             <label>Follow Flowers</label>
@@ -1684,6 +1689,10 @@
             Far along the flower trail, there seems to be a large variety of birds flying about. Perhaps you could take up a new hobby.<br>Requires glasses.<br>Has 4x exp/talent gain, and can only be done <div id='trainingLimitPer'></div> times per reset.<br>Unlocked at 80% Flower Trail Followed.
         ]]></tooltip>
             <story_1><![CDATA[<b>Birds watched:</b>⮀ You spot a colorful bird and attempt to follow it with your eyes, you fail. You try again and again until you can reliable pick out fast moving birds and animals with pinpoint precision. It's also strangely relaxing to watch birds congregate together, listening to the bird-call and watching them interact. Its fast, frenetic and savage at times, but that's nature.]]></story_1>
+	     <story_2><![CDATA[<b>100 Perception Talent:</b>⮀ You are so skilled at perception that finding resources and investigations are way easier to do, could be a good crime scene investigator at this point.]]></story_2>
+	     <story_3><![CDATA[<b>1,000 Perception Talent:</b>⮀ You have so much perception that you still need to wear glasses at this point, but the shop recommends a better prescription at least.]]></story_3>
+	     <story_4><![CDATA[<b>10,000 Perception Talent:</b>⮀ You can spot things from a mile away with these new glasses, even helps see the crackes in the dungeon walls, nifty!]]></story_4>
+	     <story_5><![CDATA[<b>100,000 Perception Talent:</b>⮀ It is amazing how clear the world is to you. You can even see the a dark tall tower of some sort in the distance.]]></story_5>
         </bird_watching>
         <clear_thicket>
             <label>Clear Thicket</label>
@@ -1722,6 +1731,8 @@
             <story_1><![CDATA[<b>1 Dark magic:</b>⮀ You ask the witch for more information on dark magic and then during the conversation slowly reveal your interest in the subject and float the offer that you would be willing to trade if she would teach you the beginning steps. She smirks deviously and agrees to the deal.]]></story_1>
             <story_2><![CDATA[<b>25 Dark magic:</b>⮀ The witch demands more and more of you and you slowly figure out ways of broaching the subject with her that doesn't startle her enough that she stops talking to you or just flat out shuts you down. The magic she begins to teach is brutal, ominous and forceful. You do not work with or help, you take and dominate.]]></story_2>
             <story_3><![CDATA[<b>50 Dark magic:</b>⮀ The dark magic she teaches seems to veer more to the side of ritualistic sacrifice and communion with the dark gods, she tells you when you ask that its because she can't really teach you too much more unless you have a darker being backing you as her mana isn't inherent but a gift from the darker divine powers. She teaches you of a ritual that you can use to summon the dark gods and strike a bargain. She warns that you'll need souls as payment.]]></story_3>
+	     <story_4><![CDATA[<b>300 Dark magic:</b>⮀ The Trisha teaches you about a way to create a rift of some sort, She explains you need to level another skill to be able to create it but it should be of use to you on your loops.]]></story_4>
+	     <story_5><![CDATA[<b>1,000 Dark magic:</b>⮀ You know so much dark magic that Trisha is very interested in what you will do with that in the future, only time will tell.]]></story_5>
         </dark_magic>
         <dark_ritual>
             <label>Dark Ritual</label>
@@ -1739,6 +1750,8 @@
             </segment_names>
             <story_1><![CDATA[<b>3rd ritual segment reached:</b>⮀ Knowing what the ritual was and how large a space you would need, you were mildly surprised to find a clearing large enough in the forest. Well, the clearing itself wasn't really large enough on its own. It was a dense cluster of clearings that you've taken mana from that you could easily clear out to make a ritual space. Preparing the altar is surprisingly tame, all said and done. Stone and wood comprise most of the altar and the rest you brought with you when you made this plan. In the end the altar you build is only small, a communion point instead of a summoning. Holding a heart from nearby deer, you pierce it and begin to chant ritualistic words of power. The clearing grows dark and the forest quietens, nary a sound is heard apart from the drip drip drip of the blood from the pierced heart in your hand. The blood you've spilled on the altar begins to blacken and swirl without outside force and eventually forms into a small face, disgusting to look at but enough to communicate through.]]></story_1>
             <story_2><![CDATA[<b>Ritual completed:</b>⮀ You commune with the dark gods long past the point that the blood has faded. The deal is struck thusly: time itself will move faster for you only in select areas, and you will pay a cost in souls. The dark god you commune with seems almost surprised as you immediately offer up some of the soulstones that you have.]]></story_2>
+	     <story_3><![CDATA[<b>100 Ritual completed:</b>⮀ At this point the dark gods are very pleased with your daily offerings of soul stones, you have noticed the time goind alot faster than you expected. You wave goodbye to the dark gods and plan to come back again soon.]]></story_3>
+	     <story_4><![CDATA[<b>666 Ritual completed:</b>⮀ The dark gods are impressed with all the soulstones you have given them and explain that they have tried to speed up the world faster but it might cause time to collapse. You thank the dark gods for all they have given!]]></story_4>
         </dark_ritual>
         <continue_on>
             <label>Continue On</label>
@@ -1812,6 +1825,7 @@
 			<story_1><![CDATA[<b>Potion sold:</b>⮀ You're part of the attention-grabbing vista now, trying to get people to listen to you long enough to convince them your potions are worth the money. It's surprisingly hard work, but you got a man to give you a small sum of gold for one of your potions.]]></story_1>
 			<story_2><![CDATA[<b>20 Potions sold in a loop:</b>⮀ All the good herbs of the forest, brewed into potions and sold to the people of Merchanton. It took you a while, but the weight in your coin pouch tells you it was worth the effort.]]></story_2>
 			<story_3><![CDATA[<b>Potion sold for 100 gold:</b>⮀ As you hawk your wares, you catch the eye of a passing noblewoman. She's apparently dabbled in alchemy herself, and knows a quality potion when she sees one. After a couple rounds of negotiation she buys the potion for a tidy sum, and you realize your alchemical skills have gotten good enough for you to start marketing to richer clientele.]]></story_3>
+			<story_4><![CDATA[<b>Potion sold for 1000 gold:</b>⮀ The quality of this potion is out of this world, you set up a stall for this potion and everyone wants this potion. The bid lasts for 3 hours but you finally sell it for alot more than you was expecting!]]></story_4>
         </sell_potions>
         <adventure_guild>
             <label>Adventure Guild</label>
@@ -1940,6 +1954,10 @@
             There's a library! You always loved reading.<br>Discover new worlds and perspectives, get ideas from fiction characters, and empathize with the desire to be stronger.<br>Requires glasses.<br>Has 4x exp/talent gain, and can only be done <div id='trainingLimitInt'></div> times per reset.<br>Unlocked at 50% city explored.
         ]]></tooltip>
 			<story_1><![CDATA[<b>Books read:</b>⮀ They do have it! You must have read this book a hundred times when you were a kid, and it's been a long time since you've found another copy. That's not all the library has to offer, far from it, but right now you're happy to settle down with your favourite book for an afternoon of reading.]]></story_1>
+			<story_2><![CDATA[<b>100 Intelligence Talent:</b>⮀ Reading history books and solving math problems is the best when there is a libary right in merchanton, learning PEMDAS is still confusing.]]></story_2>
+			<story_3><![CDATA[<b>1,000 Intelligence Talent:</b>⮀ You are smart enought to understand how to read books in language you don't know. It's hard, but at least you're learning those languages slowly.]]></story_3>
+			<story_4><![CDATA[<b>10,000 Intelligence Talent:</b>⮀ You've read every single book in the library. You know the organization better than the librarians.]]></story_4>
+			<story_5><![CDATA[<b>100,000 Intelligence Talent:</b>⮀ You comeback to this libary to create a book about the world of Idle Loops and expand on it's creation you explore it more and more.]]></story_5>
         </read_books>
         <buy_pickaxe>
             <label>Buy Pickaxe</label>
@@ -1967,6 +1985,10 @@
                 <name>Fight Dark Amalgamation</name>
                 <name>Cleanse Floor</name>
             </segment_names>
+			<story_1><![CDATA[<b>Floor 1 Completed:</b>⮀ You notice a big door with a tall tower, You defeated the first floor but looking up above you look like you are not even close to clearing this any time soon.]]></story_1>
+			<story_2><![CDATA[<b>Floor 50 Completed:</b>⮀ Enemies are getting tougher as you climb up but this is a trial made for hero's, you even wonder if there is reward for beating it.]]></story_2>
+			<story_3><![CDATA[<b>Floor 250 Completed:</b>⮀ After climbing so many floors, you wonder when the end might be but so far you have seen so many traps and enemies that this better be worth it.]]></story_3>
+			<story_4><![CDATA[<b>Floor 1000 Completed:</b>⮀ You completed it??? That is a huge accomplishment and has has earned you bragging rights and the right to be called a hero finally!]]></story_4>
         </heroes_trial>
         <start_trek>
             <label>Start Trek</label>
@@ -1982,6 +2004,7 @@
             Travels to Commerceville.<br>Costs
         ]]></tooltip>
         <tooltip2>gold.</tooltip2>
+			<story_1><![CDATA[<b>Traveled thru the Underworld:</b>⮀ You enter this little alley way and notice a door, you open the door and notice there is a ferry man. The man is named Charon and says "I don't take people that haven't died." You hold a bag of 500 gold and shake it to get Charon's attention and Charon says "You may board.", you chat about how he hasn't used magic to make the boat go faster and he just stays silent the whole trip. Eventually the boat comes to a stop and Charon signels for you to get off, you get off and realize you didn't get dropped off in the underworld. What a Scam!]]></story_1>
         </underworld>
         <!--town 4-->
         <climb_mountain>
@@ -2009,6 +2032,7 @@
         ]]></tooltip>
 			<story_1><![CDATA[<b>Geyser revealed:</b>⮀ As your pickaxe digs into the ground, it suddenly shoots right out of your hands by an explosive pressure from beneath. You glance at where it fell and resolve to retrieve it later, and then turn your attention to the absolutely massive amount of mana bursting forth from the ground, doing your best to absorb as much as you can.]]></story_1>
 			<story_2><![CDATA[<b>10 Geysers revealed:</b>⮀ Having canvassed the entire mountain, you know where all the pent up mana is hiding, and where to strike to get access to it. You wonder what was causing so much mana to build up inside a mountain, but decide it doesn't really matter as long as you can get at it undisturbed.]]></story_2>
+			<story_3><![CDATA[<b>15 Geysers revealed:</b>⮀ You found even more geysers in the cavern, weird how you never seen them. exploring the world again has it's perks]]></story_3>
         </mana_geyser>
         <decipher_runes>
             <label>Decipher Runes</label>
@@ -2033,6 +2057,7 @@
 			<story_1><![CDATA[<b>1 Chronomancy:</b>⮀ Chronomancy is unlike any other magic you've practiced, and unbelievably finnicky. The mana has to be held perfectly still, as if time is at a standstill, and the slightest mistake will cause the entire spell to destabilize. It's hard work, but you finally get the hang of it and you feel yourself speed up by the barest fraction.]]></story_1>
 			<story_2><![CDATA[<b>50 Chronomancy:</b>⮀ The effect is more pronounced now, and you find that your reflexes are keeping up with your increased speed. Unfortunately, though, the mana drain of the loops appears to have kept up as well, so even though you're getting the same amount of work done in less time you can't seem to get more work done in a loop.]]></story_2>
 			<story_3><![CDATA[<b>100 Chronomancy:</b>⮀ You know that speeding up time isn't the only thing time magic can do, but it seems that for a human like you anything fancier is impossible without additional assistance. The runes recommend a group ritual but you're the only chronomancer you know, so instead you start learning what Tachytus has to say about chronomantic potions.]]></story_3>
+			<story_4><![CDATA[<b>1,000 Chronomancy:</b>⮀ How fast can the world be speedup before you break reality? Who knows, you just want the world to speed up faster and faster than ever before.]]></story_4>
         </chronomancy>
         <looping_potion>
             <label>Looping Potion</label>
@@ -2049,6 +2074,7 @@
 			<story_1><![CDATA[<b>1 Pyromancy:</b>⮀ Pyromancy is more normal than chronomancy, but it makes up for it by being extra dangerous. Fire, you quickly learn, will consume you just as happily as your foes. Your control has to be ironclad at all times or you might lose a hand in the time it takes to draw a breath.]]></story_1>
 			<story_2><![CDATA[<b>50 Pyromancy:</b>⮀ Without the loops to restore you to normal you'd probably be dead five times over by now, but the rewards you've gained are impressive indeed. Turning that lethality on monsters is a sight to behold, and it's much more versatile than melee combat. Fights often end before they even have a chance to get close.]]></story_2>
 			<story_3><![CDATA[<b>100 Pyromancy:</b>⮀ You feel like an unstoppable wildfire, burning enemies to a crisp in an instant. You haven't had an… accident in a long time, and controlling the flames is becoming second-nature. Fire isn't the solution to every problem, but here and now you feel like it just might be.]]></story_3>
+			<story_4><![CDATA[<b>1,000 Pyromancy:</b>⮀ You have so much skill with pyrotechnics that you can fire bend at will now, any flame source can be used at any time and place you want.]]></story_4>
         </pyromancy>
         <explore_cavern>
             <label>Explore Cavern</label>
@@ -2077,6 +2103,7 @@
 			<story_1><![CDATA[<b>Shiny spot checked:</b>⮀ You chip away at the wall until the sparkling object that caught your eye falls free. To your disappointment, what comes out of the wall is just some shiny rock. You doubt it'd even be worth much at market.]]></story_1>
 			<story_2><![CDATA[<b>Soulstone mined:</b>⮀ This time you're sure it's a soulstone, and as you pry it out of the wall you feel a rush of vindication. It glows an earthy brown with a slight blue tint, in contrast to the colors you found in the dungeon.]]></story_2>
 			<story_3><![CDATA[<b>30 Soulstones mined:</b>⮀ As you found all the soulstones hiding in Mt. Olympus' cavern walls, you quickly realized that unlike the soulstones found in dungeons, these soulstones appear in every loop. You wonder what the cause of that might be, but whatever the reason it's pretty convenient.]]></story_3>
+			<story_4><![CDATA[<b>75 Soulstones mined:</b>⮀ These soulstones show up after every loop but you know where every spot is located and can mine them with ease!]]></story_4>
         </mine_soulstones>
         <hunt_trolls>
             <label>Hunt Trolls</label>
@@ -2093,6 +2120,7 @@
             </segment_names>
 			<story_1><![CDATA[<b>Troll slain:</b>⮀ It was an exciting fight, the nimble human against the powerful troll. Its hide was magically tough and one solid hit could break you in half, but despite that you eventually prevailed. It groans an unintelligible question as it dies, perhaps asking why you wanted it dead, and you can't help but feel a little bad.]]></story_1>
 			<story_2><![CDATA[<b>10 Trolls slain in a loop:</b>⮀ You've stopped getting looks of confusion. They know that something out there is hunting them, and when you bring one down it knows what is happening. Now you're getting hateful glares instead, and they die calling you something in their language. You doubt it's flattering.]]></story_2>
+			<story_3><![CDATA[<b>20 Trolls slain in a loop:</b>⮀ The Group of Trolls start attacking in pain and agony, they where friendly once but now they know your face and are determined to kill you. Wonder if they sold stones cones if they wouldn't of had to die.]]></story_3>
         </hunt_trolls>
         <check_walls>
             <label>Check Walls</label>
@@ -2120,6 +2148,7 @@
         ]]></tooltip>
 			<story_1><![CDATA[<b>Artifact taken:</b>⮀ You pick up an ornate necklace from the stone statue it was displayed on. It's made out of precious materials with incredible craftsmanship. If there's anything magical about it you can't figure it out, but there's really no reason to not take a priceless historical artifact with you.]]></story_1>
 			<story_2><![CDATA[<b>20 Artifacts taken:</b>⮀ Your collection is an unfocused assortment of unrelated artifacts found from all over the mountain, the only quality they all share being impeccable detail and craftsmanship. It seems like you're only picking clean what hasn't been lost to other people over time, but what you found will fetch a pretty penny nonetheless.]]></story_2>
+			<story_3><![CDATA[<b>50 Artifacts taken in a loop:</b>⮀ You know how to spot the artifacts with the most value; some are old antiques and some are old gems, If only this was another idle game....]]></story_3>
         </take_artifacts>
         <imbue_mind>
             <label>Imbue Mind</label>
@@ -2137,6 +2166,8 @@
             </segment_names>
 			<story_1><![CDATA[<b>Third phase reached:</b>⮀ The soulstones are all arranged, glowing a bright uniform white. You sit in the center and close your eyes as the ritual begins. You can sense the soulstones all around you, bathed in light, and you mentally reach out and start pulling them closer.]]></story_1>
 			<story_2><![CDATA[<b>Imbuement complete:</b>⮀ It's overwhelming. You're thinking faster than you remember ever thinking before, your mind flashing from scene to scene as fragments of knowledge float by on the sidelines. Slowing down would be fatal, you have no choice but to trust the strength of your mind. Finally, it ends, and you open your eyes. The soulstones are nowhere to be found and the lake is just clear water now.]]></story_2>
+			<story_3><![CDATA[<b>250 Imbuement completed:</b>⮀ You mind is clocked into overdrive, the amount of processing you can do is insane. You brain has extended your limits ten fold!]]></story_3>
+			<story_4><![CDATA[<b>500 Imbuement completed:</b>⮀ With the final imbuement done, you have unlocked the full powers of your brain. The lake is all dried up after so many imbuements and you don't think it will allow you to keep going anymore.]]></story_4>
         </imbue_mind>
         <imbue_body>
             <label>Imbue Body</label>
@@ -2152,6 +2183,10 @@
                 <name>Focus essence</name>
                 <name>Absorb Knowledge</name>
             </segment_names>
+			<story_1><![CDATA[<b>Third phase reached:</b>⮀ The soulstones are all arranged, glowing a bright uniform white. You sit in the center and close your eyes as the ritual begins. You can sense the soulstones all around you, bathed in light, and you mentally reach out and start pulling them closer.]]></story_1>
+			<story_2><![CDATA[<b>Imbuement complete:</b>⮀ You do jumping jacks and feel the blood pumping thru your body and you have no choice but to trust the strength of your body. Finally, it ends, and you feel exhaused. The soulstones are nowhere to be found and the lake is just clear water now.]]></story_2>
+			<story_3><![CDATA[<b>250 Imbuement completed:</b>⮀ Time to do pushups and push your body into overdrive, you can do 200 push ups in 20 seconds which is insane. ]]></story_3>
+			<story_4><![CDATA[<b>500 Imbuement completed:</b>⮀ ]]></story_4>
         </imbue_body>
         <face_judgement>
             <label>Face Judgement</label>
