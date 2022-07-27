@@ -413,6 +413,13 @@ Action.Map = new Action("Map", {
     type: "normal",
     expMult: 1,
     townNum: 0,
+    storyReqs(storyNum) {
+        switch (storyNum) {
+            case 1:
+                return getExploreProgress() > 1;
+        }
+        return false;
+    },
     stats: {
         Cha: 0.8,
         Luck: 0.1,
@@ -499,6 +506,8 @@ Action.SmashPots = new Action("Smash Pots", {
         switch (storyNum) {
             case 1:
                 return towns[0][`good${this.varName}`] >= 50;
+            case 2:
+                return towns[0][`good${this.varName}`] >= 75;
         }
         return false;
     },
@@ -542,6 +551,8 @@ Action.PickLocks = new Action("Pick Locks", {
                 return towns[0][`checked${this.varName}`] >= 50;
             case 3:
                 return towns[0][`good${this.varName}`] >= 10;
+            case 4:
+                return towns[0][`good${this.varName}`] >= 25;
         }
         return false;
     },
@@ -608,6 +619,8 @@ Action.BuyGlasses = new Action("Buy Glasses", {
     },
     finish() {
         addResource("glasses", true);
+    },
+    story(completed) {
         unlockStory("glassesBought");
     }
 });
@@ -649,6 +662,13 @@ Action.BuyManaZ1 = new Action("Buy Mana Z1", {
     type: "normal",
     expMult: 1,
     townNum: 0,
+    storyReqs(storyNum) {
+        switch (storyNum) {
+            case 1:
+                return towns[0].getLevel("Met") > 0;
+        }
+        return false;
+    },
     stats: {
         Cha: 0.7,
         Int: 0.2,
@@ -763,6 +783,10 @@ Action.TrainStrength = new Action("Train Strength", {
                 return getTalent("Str") >= 100;
             case 3:
                 return getTalent("Str") >= 1000;
+            case 4:
+                return getTalent("Str") >= 10000;
+            case 5:
+                return getTalent("Str") >= 100000;
         }
         return false;
     },
@@ -783,8 +807,11 @@ Action.TrainStrength = new Action("Train Strength", {
         return towns[0].getLevel("Met") >= 5;
     },
     finish() {
-        unlockStory("strengthTrained");
+
     },
+    story(completed) {
+        unlockStory("strengthTrained");
+    }
 });
 
 Action.ShortQuest = new Action("Short Quest", {
@@ -799,6 +826,8 @@ Action.ShortQuest = new Action("Short Quest", {
             case 2:
                 // 20 small quests in a loop
                 return storyReqs.maxSQuestsInALoop;
+            case 3:
+                return towns[0][`checked${this.varName}`] >= 250;
         }
         return false;
     },
@@ -829,8 +858,10 @@ Action.ShortQuest = new Action("Short Quest", {
             addResource("gold", goldGain);
             return goldGain;
         });
-        if (towns[0][`good${this.varName}`] >= 20 && towns[0][`goodTemp${this.varName}`] <= towns[0][`good${this.varName}`] - 20) unlockStory("maxSQuestsInALoop");
     },
+    story(completed) {
+        if (towns[0][`good${this.varName}`] >= 20 && towns[0][`goodTemp${this.varName}`] <= towns[0][`good${this.varName}`] - 20) unlockStory("maxSQuestsInALoop");
+    }
 });
 
 Action.Investigate = new Action("Investigate", {
@@ -890,6 +921,8 @@ Action.LongQuest = new Action("Long Quest", {
             case 2:
                 // 10 long quests in a loop
                 return storyReqs.maxLQuestsInALoop;
+            case 3:
+                return towns[0][`checked${this.varName}`] >= 125;
         }
         return false;
     },
@@ -919,8 +952,10 @@ Action.LongQuest = new Action("Long Quest", {
             addResource("gold", goldGain);
             return goldGain;
         });
-        if (towns[0][`good${this.varName}`] >= 10 && towns[0][`goodTemp${this.varName}`] <= towns[0][`good${this.varName}`] - 10) unlockStory("maxLQuestsInALoop");
     },
+    story(completed) {
+        if (towns[0][`good${this.varName}`] >= 10 && towns[0][`goodTemp${this.varName}`] <= towns[0][`good${this.varName}`] - 10) unlockStory("maxLQuestsInALoop");
+    } 
 });
 
 Action.ThrowParty = new Action("Throw Party", {
@@ -931,6 +966,8 @@ Action.ThrowParty = new Action("Throw Party", {
         switch (storyNum) {
             case 1:
                 return storyReqs.partyThrown;
+            case 2:
+                return storyReqs.partyThrown2;
         }
         return false;
     },
@@ -948,15 +985,18 @@ Action.ThrowParty = new Action("Throw Party", {
         addResource("reputation", -2);
     },
     visible() {
-        return towns[0].getLevel("Secrets") >= 20;
+        return towns[this.townNum].getLevel("Secrets") >= 20;
     },
     unlocked() {
-        return towns[0].getLevel("Secrets") >= 30;
+        return towns[this.townNum].getLevel("Secrets") >= 30;
     },
     finish() {
         towns[0].finishProgress("Met", 3200);
-        unlockStory("partyThrown");
     },
+    story(completed) {
+        unlockStory("partyThrown");
+        if (completed >= 10) unlockStory("partyThrown2");
+    }
 });
 
 Action.WarriorLessons = new Action("Warrior Lessons", {
@@ -973,6 +1013,8 @@ Action.WarriorLessons = new Action("Warrior Lessons", {
                 return getSkillLevel("Combat") >= 200;
             case 4:
                 return getSkillLevel("Combat") >= 250;
+            case 5:
+                return getSkillLevel("Combat") >= 1000;
         }
         return false;
     },
@@ -1064,8 +1106,14 @@ Action.HealTheSick = new MultipartAction("Heal The Sick", {
                 // 10 patients healed in a loop
                 return storyReqs.heal10PatientsInALoop;
             case 3:
+                return towns[0].totalHeal >= 100;
+            case 4:
+                return towns[0].totalHeal >= 1000;
+            case 5:
                 // fail reputation req
                 return storyReqs.failedHeal;
+            case 6:
+                return getSkillLevel("Restoration") >= 50;
         }
         return false;
     },
@@ -1105,8 +1153,10 @@ Action.HealTheSick = new MultipartAction("Heal The Sick", {
     },
     finish() {
         handleSkillExp(this.skills);
-        if (towns[0].HealLoopCounter / 3 + 1 >= 10) unlockStory("heal10PatientsInALoop");
     },
+    story(completed) {
+        if (towns[0].HealLoopCounter / 3 + 1 >= 10) unlockStory("heal10PatientsInALoop");
+    }
 });
 
 Action.FightMonsters = new MultipartAction("Fight Monsters", {
@@ -1253,7 +1303,7 @@ Action.SmallDungeon = new DungeonAction("Small Dungeon", 0, {
     finish() {
         handleSkillExp(this.skills);
     },
-    story() {
+    story(completed) {
         unlockStory("smallDungeonAttempted");
         if (towns[this.townNum][this.varName + "LoopCounter"] >= 42) unlockStory("clearSDungeon");
     },
@@ -1314,9 +1364,11 @@ Action.BuySupplies = new Action("Buy Supplies", {
     },
     finish() {
         addResource("supplies", true);
-        if (towns[0].suppliesCost === 300) unlockStory("suppliesBoughtWithoutHaggling");
-        unlockStory("suppliesBought");
     },
+    story(completed) {
+        unlockStory("suppliesBought");
+        if (towns[0].suppliesCost === 300) unlockStory("suppliesBoughtWithoutHaggling");
+    }
 });
 
 Action.Haggle = new Action("Haggle", {
@@ -1355,15 +1407,17 @@ Action.Haggle = new Action("Haggle", {
         return (getSkillLevel("Combat") + getSkillLevel("Magic")) >= 35;
     },
     finish() {
-        if (towns[0].suppliesCost === 20) unlockStory("haggle15TimesInALoop");
-        else if (towns[0].suppliesCost === 0) unlockStory("haggle16TimesInALoop");
         towns[0].suppliesCost -= 20;
         if (towns[0].suppliesCost < 0) {
             towns[0].suppliesCost = 0;
         }
         view.requestUpdate("updateResource", "supplies");
-        unlockStory("haggle");
     },
+    story(completed) {
+        if (towns[0].suppliesCost === 20) unlockStory("haggle15TimesInALoop");
+        else if (towns[0].suppliesCost === 0) unlockStory("haggle16TimesInALoop");
+        unlockStory("haggle");
+    }
 });
 
 Action.StartJourney = new Action("Start Journey", {
@@ -1403,7 +1457,7 @@ Action.StartJourney = new Action("Start Journey", {
     finish() {
         unlockTown(1);
     },
-    story() {
+    story(completed) {
         unlockGlobalStory(3);
     }
 });
@@ -1415,7 +1469,7 @@ Action.HitchRide = new Action("Hitch Ride", {
     storyReqs(storyNum) {
         switch (storyNum) {
             case 1:
-                return townsUnlocked.includes(1);
+                return getExploreProgress() >= 25;
         }
         return false;
     },
@@ -1446,6 +1500,13 @@ Action.OpenRift = new Action("Open Rift", {
     type: "normal",
     expMult: 1,
     townNum: 0,
+    storyReqs(storyNum) {
+        switch (storyNum) {
+            case 1:
+                return towns[5].getLevel("Meander") >= 1;
+        }
+        return false;
+    },
     stats: {
         Int: 0.2,
         Luck: 0.1,
@@ -2294,7 +2355,7 @@ Action.ContinueOn = new Action("Continue On", {
     finish() {
         unlockTown(2);
     },
-    story() {
+    story(completed) {
         unlockGlobalStory(4);
     }
 });
@@ -3209,7 +3270,7 @@ Action.StartTrek = new Action("Start Trek", {
     finish() {
         unlockTown(3);
     },
-    story() {
+    story(completed) {
         unlockGlobalStory(5);
     }
 });
@@ -3464,7 +3525,7 @@ Action.LoopingPotion = new Action("Looping Potion", {
         addResource("loopingPotion", true);
         handleSkillExp(this.skills);
     },
-    story() {
+    story(completed) {
         unlockStory("loopingPotionMade");
         unlockGlobalStory(6);
     }
@@ -5120,7 +5181,7 @@ Action.JourneyForth = new Action("Journey Forth", {
     finish() {
         unlockTown(6);
     },
-    story() {
+    story(completed) {
         unlockGlobalStory(9);
     }
 });
@@ -5418,7 +5479,7 @@ Action.OpenPortal = new Action("Open Portal", {
         handleSkillExp(this.skills);
         unlockTown(1);
     },
-    story() {
+    story(completed) {
         unlockGlobalStory(10);
     }
 });
@@ -6188,7 +6249,7 @@ Action.ChallengeGods = new TrialAction("Challenge Gods", 2, {
     finish() {
         handleSkillExp(this.skills);
     },
-    story() {
+    story(completed) {
         unlockGlobalStory(11);
     }
 });
@@ -6219,7 +6280,7 @@ Action.RestoreTime = new Action("Restore Time", {
     finish() {
         addResource("reputation", 9999999);
     },
-    story() {
+    story(completed) {
         unlockGlobalStory(12);
     }
 });

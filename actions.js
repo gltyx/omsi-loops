@@ -283,7 +283,8 @@ function markActionsComplete(loopCompletedActions) {
 
 function actionStory(loopCompletedActions) {
     loopCompletedActions.forEach(action => {
-        if (action.story !== undefined) action.story();
+        let completed = action.loops - action.loopsLeft;
+        if (action.story !== undefined) action.story(completed);
     });
 }
 

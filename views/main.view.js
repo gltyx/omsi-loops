@@ -30,10 +30,16 @@ function View() {
         this.updateLoadoutNames();
         this.updateResources();
         this.updateTrials();
-        setInterval(() => {
-            view.updateStories();
-            view.updateLockedHidden();
-        }, 2000);
+        if (storyMax >= 12)
+            setInterval(() => {
+                view.updateStories();
+                view.updateLockedHidden();
+            }, 20000);
+        else
+            setInterval(() => {
+                view.updateStories();
+                view.updateLockedHidden();
+            }, 2000);
         adjustAll();
         this.updateActionTooltips();
     };

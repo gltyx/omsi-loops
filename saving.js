@@ -189,6 +189,7 @@ const storyReqs = {
     haggle16TimesInALoop: false,
     glassesBought: false,
     partyThrown: false,
+    partyThrown2: false,
     strengthTrained: false,
     suppliesBought: false,
     suppliesBoughtWithoutHaggling: false,
