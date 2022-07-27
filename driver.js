@@ -47,6 +47,7 @@ function tick() {
     curTime = newTime;
     if (stop) {
         addOffline(gameTicksLeft * offlineRatio);
+        view.update();
         gameTicksLeft = 0;
         return;
     }
@@ -606,7 +607,7 @@ function addOffline(num) {
         if (totalOfflineMs < 0) {
             totalOfflineMs = 0;
         }
-        document.getElementById("bonusSeconds").textContent = formatTime(totalOfflineMs / 1000);
+        view.requestUpdate("updateOffline", null);
     }
 }
 
