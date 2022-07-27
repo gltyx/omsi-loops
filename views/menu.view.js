@@ -168,6 +168,9 @@ Views.registerView("menu", {
         </div><br>
         <div class='button showthat control' style='margin-top: 2px;' onclick='beginChallenge(2)'>Noodle Arms
             <div class='showthis' style='color:black;width:230px;margin-left:100px;'>${_txt("menu>challenges>noodle_arms")}</div>
+        </div><br>
+        <div class='button showthat control' style='margin-top: 2px;' onclick='beginChallenge(3)'>Mana Burn
+            <div class='showthis' style='color:black;width:230px;margin-left:100px;'>${_txt("menu>challenges>mana_burn")}</div>
         </div><br>`
         html += `</div>`
         return html;

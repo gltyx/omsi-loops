@@ -36,14 +36,18 @@ function formatNumber(num) {
 
 function formatTime(seconds) {
     if (seconds > 300) {
-        var time = "";
-        if (seconds >= 86400)
-            time += (seconds/60/60/24).toFixed(0) + "d, ";
-        if (seconds >= 3600) 
-            time += (seconds/60/60%24).toFixed(0) + "h, ";
-        time += (seconds/60%60).toFixed(0) + "m, ";
-        time += (seconds%60).toFixed(0) + "s";
-        return time;
+        let second = Math.floor(seconds%60);
+        let minute = Math.floor(seconds/60%60);
+        let hour = Math.floor(seconds/60/60%24);
+        let day = Math.floor(seconds/60/60/24);
+        
+        let timeString = "";
+        if(day > 0) timeString += (day + "d ");
+        if(day > 0 || hour > 0) timeString += (hour + "h ");
+        if(day > 0 || hour > 0 || minute > 0) timeString += (minute + "m ");
+        timeString += (second + "s");
+        
+        return timeString;
     }
     if (Number.isInteger(seconds)) {
         return (formatNumber(seconds) + _txt("time_controls>seconds")).replace(/\B(?=(\d{3})+(?!\d))/gu, ",");
