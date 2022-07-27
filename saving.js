@@ -422,6 +422,8 @@ function load() {
             if (action.name === "Sell Gold") {
                 action.name = "Buy Mana";
             }
+            if (action.name === "Buy Mana Challenge")
+                action.name = "Buy Mana Z1";
             if (action.name === "Tournament") {
                 action.name = "Buy Pickaxe";
             }
