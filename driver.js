@@ -134,14 +134,15 @@ function pauseGame(ping) {
 }
 
 function loopEnd() {
+    view.update();
     if (effectiveTime > 0) {
         totals.time += timeCounter;
         totals.effectiveTime += effectiveTime;
         totals.loops++;
         view.updateTotals();
-        const loopCompletedActions = actions.current.slice(0, actions.currentPos-1);
-        if (actions.current[actions.currentPos-1].loopsLeft < actions.current[actions.currentPos-1].loops)
-            loopCompletedActions.push(actions.current[actions.currentPos-1]);
+        const loopCompletedActions = actions.current.slice(0, actions.currentPos);
+        if (actions.current[actions.currentPos] !== undefined && actions.current[actions.currentPos].loopsLeft < actions.current[actions.currentPos].loops)
+            loopCompletedActions.push(actions.current[actions.currentPos]);
         markActionsComplete(loopCompletedActions);
         actionStory(loopCompletedActions);
         if (options.highlightNew) {
