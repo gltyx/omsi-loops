@@ -48,7 +48,7 @@ function tick() {
     curTime = newTime;
 
     // save even when paused
-    if (curTime - lastSave > 30 * 1000 /*30s*/) {
+    if (curTime - lastSave > options.autosaveRate * 1000) {
         lastSave = curTime;
         save();
     }
