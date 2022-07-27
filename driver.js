@@ -227,8 +227,8 @@ function addActionToList(name, townNum, isTravelAction, insertAtIndex) {
             }
         }
     }
-    view.requestUpdate("updateNextActions", null);
-    view.requestUpdate("updateLockedHidden", null);
+    view.updateNextActions();
+    view.updateLockedHidden();
 }
 
 // mana and resources
