@@ -270,6 +270,7 @@ function SurveyAction(townNum) {
             addResource("map", -1);
             addResource("completedMap", 1);
             towns[this.townNum].finishProgress(this.varName, getExploreSkill());
+            view.requestUpdate("updateActionTooltips", null);
         }
     }
     obj.townNum = townNum;
@@ -5523,16 +5524,19 @@ function adjustPockets() {
     let town = towns[7];
     let base = town.getLevel("Excursion");
     town.totalPockets = Math.floor(base * getSkillMod("Spatiomancy", 1100, 1300, .5) + base * getSurveyBonus(town));
+    view.requestUpdate("updateActionTooltips", null);
 }
 function adjustWarehouses() {
     let town = towns[7];
     let base = town.getLevel("Excursion") / 2.5;
     town.totalWarehouses = Math.floor(base * getSkillMod("Spatiomancy", 1200, 1400, .5) + base * getSurveyBonus(town));
+    view.requestUpdate("updateActionTooltips", null);
 }
 function adjustInsurance() {
     let town = towns[7];
     let base = town.getLevel("Excursion") / 10;
     town.totalInsurance = Math.floor(base * getSkillMod("Spatiomancy", 1300, 1500, .5) + base * getSurveyBonus(town));
+    view.requestUpdate("updateActionTooltips", null);
 }
 
 Action.ExplorersGuild = new Action("Explorers Guild", {
@@ -5878,6 +5882,7 @@ Action.Invest = new Action("Invest", {
         goldInvested += resources.gold;
         if (goldInvested > 999999999999) goldInvested = 999999999999;
         resetResource("gold");
+        view.requestUpdate("updateActionTooltips", null);
     },
 });
 
