@@ -358,6 +358,7 @@
                 Shift+Z: Undo most recent change to action list
         ]]></hotkeys_tooltip>
             <update_rate>Visual updates per second:</update_rate>
+            <autosave_rate>Autosave rate (seconds):</autosave_rate>
         </options>
         <challenges>
             <meta>

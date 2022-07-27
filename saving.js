@@ -285,7 +285,8 @@ const options = {
     pingOnPause: false,
     autoMaxTraining: false,
     hotkeys: true,
-    updateRate: 50
+    updateRate: 50,
+    autosaveRate: 30,
 };
 
 function setOption(option, value) {
@@ -295,6 +296,7 @@ function setOption(option, value) {
 
 function loadOption(option, value) {
     if (option === "updateRate") document.getElementById(`${option}Input`).value = value;
+    if (option === "autosaveRate") document.getElementById(`${option}Input`).value = value;
     else document.getElementById(`${option}Input`).checked = value;
 }
 

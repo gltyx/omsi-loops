@@ -10,6 +10,7 @@ let refund = false;
 let radarUpdateTime = 0;
 let timeCounter = 0;
 let effectiveTime = 0;
+let lastSave = Date.now();
 
 function getSpeedMult(zone = curTown) {
     let speedMult = 1;
@@ -45,6 +46,13 @@ function tick() {
     if (document.getElementById("radarStats").checked) radarUpdateTime += newTime - curTime;
     const delta = newTime - curTime;
     curTime = newTime;
+
+    // save even when paused
+    if (curTime - lastSave > options.autosaveRate * 1000) {
+        lastSave = curTime;
+        save();
+    }
+
     if (stop) {
         addOffline(gameTicksLeft * offlineRatio);
         view.update();
@@ -77,10 +85,6 @@ function tick() {
         if (shouldRestart || timer >= timeNeeded) {
             loopEnd();
             prepareRestart();
-        }
-
-        if (timer % (300 * gameSpeed) === 0) {
-            save();
         }
         gameTicksLeft -= ((1000 / baseManaPerSecond) / getActualGameSpeed());
     }
