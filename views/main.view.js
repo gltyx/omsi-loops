@@ -30,10 +30,16 @@ function View() {
         this.updateLoadoutNames();
         this.updateResources();
         this.updateTrials();
-        setInterval(() => {
-            view.updateStories();
-            view.updateLockedHidden();
-        }, 2000);
+        if (storyMax >= 12)
+            setInterval(() => {
+                view.updateStories();
+                view.updateLockedHidden();
+            }, 20000);
+        else
+            setInterval(() => {
+                view.updateStories();
+                view.updateLockedHidden();
+            }, 2000);
         adjustAll();
         this.updateActionTooltips();
     };
@@ -130,6 +136,7 @@ function View() {
         updateTeamCombat: [],
         adjustManaCost: [],
         adjustGoldCost: [],
+        adjustGoldCosts: [],
         adjustExpGain: [],
     };
 
@@ -314,7 +321,6 @@ function View() {
     };
     this.updateResources = function() {
         for (const resource in resources) this.updateResource(resource);
-        this.updateActionTooltips();
     };
     this.updateActionTooltips = function() {
         document.getElementById("goldInvested").textContent = intToStringRound(goldInvested);
@@ -1152,6 +1158,7 @@ function View() {
         } else {
             document.getElementById("storyRight").style.visibility = "visible";
         }
+        //Hard coded story count - need to fix this
         for (let i = 0; i <= 12; i++) {
             const storyDiv = document.getElementById(`story${i}`);
             if (storyDiv) {

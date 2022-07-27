@@ -57,7 +57,16 @@ function cheatSoulstone(stat, targetSS)
         for (const stat in stats)
             stats[stat].soulstone = targetSS;
     else stats[stat].soulstone = targetSS;
-    view.requestUpdate("updateSoulstones", null);
+    view.updateSoulstones();
+}
+
+function cheatSkill(skill, targetSkillLevel)
+{
+    if (skill === "all" || skill === "All")
+        for (const skill in skills)
+            skill[skill].exp = getExpOfLevel(targetSkillLevel);
+    else skills[skill].exp = getExpOfLevel(targetSkillLevel);
+    view.updateSkills();
 }
 
 
@@ -180,6 +189,7 @@ const storyReqs = {
     haggle16TimesInALoop: false,
     glassesBought: false,
     partyThrown: false,
+    partyThrown2: false,
     strengthTrained: false,
     suppliesBought: false,
     suppliesBoughtWithoutHaggling: false,
@@ -390,6 +400,7 @@ function load() {
         toLoad.completedActions.forEach(action => {
             completedActions.push(action);
         });
+    completedActions.push("FoundGlasses");
     for (let i = 0; i <= 8; i++) {
         towns[i] = new Town(i);
     }
