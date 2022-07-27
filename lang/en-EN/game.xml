@@ -1585,10 +1585,10 @@
             It's peaceful here. Loud, but peaceful.<br>Has 4x exp/talent gain, and can only be done <div id='trainingLimitSoul'></div> times per reset.<br>Unlocked at 70% Forest Explored.
         ]]></tooltip>
             <story_1><![CDATA[<b>Sat by waterfall:</b>⮀ You find a waterfall flowing from a higher point in a mountain down the side oddly scenic and decide stop to stare for awhile, simply to observe the natural beauty of the sight. As you watched, the force of the water managed to dislodge a small pebble from the top of the waterfall and send it careening down. You watch oddly mesmerized at it bounces along the path, constantly being immersed and spat out by the water. You don't know when you sat down and began meditating, only that you woke from your deep realization hours later.]]></story_1>
-	     <story_1><![CDATA[<b>100 Soul Talent:</b>⮀ You find more at piece with yourself and your body, which makes you a different person all together.]]></story_1>
-	     <story_1><![CDATA[<b>1,000 Soul Talent:</b>⮀ You are learning how to improve yourself past the point anyone has attempted. You can feel your blood going thru your whole body, feels weird.]]></story_1>
-	     <story_1><![CDATA[<b>10,000 Soul Talent:</b>⮀ You have so much soul that the king of soul acknowledges you, having so much soul means your body can be controlled in every part of your body at will.]]></story_1>
-	     <story_1><![CDATA[<b>100,000 Soul Talent:</b>⮀ At this point there is so much soul that you have reached heaven levels, you have trancended and you should feel good about that!]]></story_1>
+	     <story_2><![CDATA[<b>100 Soul Talent:</b>⮀ You find more at piece with yourself and your body, which makes you a different person all together.]]></story_2>
+	     <story_3><![CDATA[<b>1,000 Soul Talent:</b>⮀ You are learning how to improve yourself past the point anyone has attempted. You can feel your blood going thru your whole body, feels weird.]]></story_3>
+	     <story_4><![CDATA[<b>10,000 Soul Talent:</b>⮀ You have so much soul that the king of soul acknowledges you, having so much soul means your body can be controlled in every part of your body at will.]]></story_4>
+	     <story_5><![CDATA[<b>100,000 Soul Talent:</b>⮀ At this point there is so much soul that you have reached heaven levels, you have trancended and you should feel good about that!]]></story_5>
         </sit_by_waterfall>
         <old_shortcut>
             <label>Old Shortcut</label>
