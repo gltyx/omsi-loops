@@ -169,7 +169,7 @@ Views.registerView("menu", {
         <div class='button showthat control' style='margin-top: 2px;' onclick='beginChallenge(2)'>肌无力
             <div class='showthis' style='color:black;width:230px;margin-left:100px;'>${_txt("menu>challenges>noodle_arms")}</div>
         </div><br>
-        <div class='button showthat control' style='margin-top: 2px;' onclick='beginChallenge(3)'>Mana Burn
+        <div class='button showthat control' style='margin-top: 2px;' onclick='beginChallenge(3)'>法力燃烧
             <div class='showthis' style='color:black;width:230px;margin-left:100px;'>${_txt("menu>challenges>mana_burn")}</div>
         </div><br>`
         html += `</div>`
