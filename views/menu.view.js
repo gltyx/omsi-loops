@@ -108,6 +108,9 @@ Views.registerView("menu", {
                 ${_txt("menu>options>update_rate")}
                 <input id='updateRateInput' type='number' value='50' min='1' style='width: 50px;transform: translateY(-2px);' oninput='setOption("updateRate", parseInt(this.value))' />
                 <br>
+                ${_txt("menu>options>autosave_rate")}
+                <input id='autosaveRateInput' type='number' value='30' min='1' style='width: 50px;transform: translateY(-2px);' oninput='setOption("autosaveRate", parseInt(this.value))' />
+                <br>
             </div>
         </div>`;
         return html;
@@ -165,6 +168,9 @@ Views.registerView("menu", {
         </div><br>
         <div class='button showthat control' style='margin-top: 2px;' onclick='beginChallenge(2)'>Noodle Arms
             <div class='showthis' style='color:black;width:230px;margin-left:100px;'>${_txt("menu>challenges>noodle_arms")}</div>
+        </div><br>
+        <div class='button showthat control' style='margin-top: 2px;' onclick='beginChallenge(3)'>Mana Burn
+            <div class='showthis' style='color:black;width:230px;margin-left:100px;'>${_txt("menu>challenges>mana_burn")}</div>
         </div><br>`
         html += `</div>`
         return html;

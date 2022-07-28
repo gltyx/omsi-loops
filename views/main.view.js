@@ -30,10 +30,16 @@ function View() {
         this.updateLoadoutNames();
         this.updateResources();
         this.updateTrials();
-        setInterval(() => {
-            view.updateStories();
-            view.updateLockedHidden();
-        }, 2000);
+        if (storyMax >= 12)
+            setInterval(() => {
+                view.updateStories();
+                view.updateLockedHidden();
+            }, 20000);
+        else
+            setInterval(() => {
+                view.updateStories();
+                view.updateLockedHidden();
+            }, 2000);
         adjustAll();
         this.updateActionTooltips();
     };
@@ -110,8 +116,10 @@ function View() {
     this.requests = {
         updateStat: [],
         updateSkill: [],
+        updateSkills: [],
         updateBuff: [],
         updateTrialInfo: [],
+        updateTrials: [],
         updateRegular: [],
         updateProgressAction: [],
         updateMultiPartSegments: [],
@@ -119,11 +127,15 @@ function View() {
         updateMultiPartActions: [],
         updateNextActions: [],
         updateTime: [],
+        updateOffline: [],
+        updateTotals: [],
         updateCurrentActionBar: [],
+        updateCurrentActionsDivs: [],
         updateTotalTicks: [],
         updateCurrentActionLoops: [],
         updateSoulstones: [],
         updateResource: [],
+        updateResources: [],
         updateActionTooltips: [],
         updateLockedHidden: [],
         createTravelMenu: [],
@@ -132,6 +144,8 @@ function View() {
         adjustGoldCost: [],
         adjustGoldCosts: [],
         adjustExpGain: [],
+        removeAllHighlights: [],
+        highlightIncompleteActions: []
     };
 
     // requesting an update will call that update on the next view.update tick (based off player set UPS)
@@ -301,6 +315,9 @@ function View() {
         document.getElementById("timeBar").style.width = `${100 - timer / timeNeeded * 100}%`;
         document.getElementById("timer").textContent = `${intToString((timeNeeded - timer), 1)} | ${formatTime((timeNeeded - timer) / 50 / getActualGameSpeed())}`;
     };
+    this.updateOffline = function() {
+        document.getElementById("bonusSeconds").textContent = formatTime(totalOfflineMs / 1000);
+    }
     this.updateTotalTicks = function() {
         document.getElementById("totalTicks").textContent = `${formatNumber(actions.completedTicks)} | ${formatTime(timeCounter)}`;
         document.getElementById("effectiveTime").textContent = `${formatTime(effectiveTime)}`;
@@ -315,7 +332,6 @@ function View() {
     };
     this.updateResources = function() {
         for (const resource in resources) this.updateResource(resource);
-        this.updateActionTooltips();
     };
     this.updateActionTooltips = function() {
         document.getElementById("goldInvested").textContent = intToStringRound(goldInvested);

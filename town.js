@@ -23,7 +23,7 @@ function Town(index) {
             const varName = this.varNames[i];
             this[`goodTemp${varName}`] = this[`good${varName}`];
             this[`lootFrom${varName}`] = 0;
-            view.updateRegular({name: varName, index: this.index});
+            view.requestUpdate("updateRegular",{name: varName, index: this.index});
         }
     };
 

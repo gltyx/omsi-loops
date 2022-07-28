@@ -358,6 +358,7 @@
                 Shift+Z: Undo most recent change to action list
         ]]></hotkeys_tooltip>
             <update_rate>Visual updates per second:</update_rate>
+            <autosave_rate>Autosave rate (seconds):</autosave_rate>
         </options>
         <challenges>
             <meta>
@@ -365,6 +366,7 @@
             </meta>
             <mana_drought>The mana merchant in Beginnersville only has 5k mana to sell, and they're charging double the usual price. No other mana merchants exist.</mana_drought>
             <noodle_arms>You have no base Self-Combat ability. All combat is based on followers. Self combat is half of your team member or zombie strength (whichever is higher).</noodle_arms>
+            <mana_burn>You have a day's worth of mana that persists through loops, but once that runs out, you'll be stuck in time. How far can you make it?</mana_burn>
         </challenges>
         <totals>
             <meta>
@@ -532,6 +534,7 @@
         <pause_on_complete>Pause on progress complete</pause_on_complete>
         <restart_button>Restart</restart_button>
         <restart_text>Resets the loop. Not a hard reset.</restart_text>
+        <days>d</days>
         <hours>h</hours>
         <minutes>m</minutes>
         <seconds>s</seconds>
@@ -627,6 +630,7 @@
 		  with great power you can end the time loop now and forever!
 		</story>
 		<story num="12"> <!--Finally--> <!-- Change 12 to Ending the Loop-->
+            <![CDATA[
                You've done it! You've bested the gods themselves and restored time to its rightful flow. You can stop looping at any moment.
                But, then again, you could keep going. There's always time later...
                Thanks for playing my fan mod of Idle Loops! 
@@ -1049,17 +1053,17 @@
             <label_done>Assassinated</label_done>
             <tooltip><![CDATA[
             Kill your mark in this town.<br>
-            Gives progress equal to (Sqrt(Practical) + Thievery + Assassin) * Stat/1000 * Sqrt(Completions/1000) / Abs(reputation) / hearts^2.<br>
+            Gives progress equal to (Sqrt(Practical) + Thievery + Assassin) * Stat/1000 * Sqrt(Completions/100) / Abs(reputation) / hearts^2.<br>
             Rewards a heart.
             ]]></tooltip>
-		<story_1><![CDATA[<b>1 Assassinated in Beginnersville:</b>⮀ You killed one of the town's people quickly and quietly, got the heart and moved on...]]</story_1>
-		<story_2><![CDATA[<b>1 Assassinated in Forest Path:</b>⮀ How was there more people in the forest besides the hermit and the witch? who knows, all that matters is you killed someone and left with the heart.]]</story_2>
-		<story_3><![CDATA[<b>1 Assassinated in Merchanton:</b>⮀ You walked into the casino, looked around to check for cameras and killed someone in the storage room. You got the heart and left quickly before being spotted.]]</story_3>
-		<story_4><![CDATA[<b>1 Assassinated in Mt. Olympus:</b>⮀ You climbed the Mountain and killed one of the yeti's for their heart, what they get for not selling snowcones.]]</story_4>
-		<story_5><![CDATA[<b>1 Assassinated in Valhalla:</b>⮀ Gods are looking all around but someone not paying tax on your property comes first, you kill them and grab the heart and quickly leave.]]</story_5>
-		<story_6><![CDATA[<b>1 Assassinated in Startington:</b>⮀ Everyone here is almost close to being dead so should be quick and easy. You get the heart so quick and moved on.]]</story_6>
-		<story_7><![CDATA[<b>1 Assassinated in Jungle Path:</b>⮀ Survivers are lost so you can use that to your advantage, 1 quick kill later and you can move on. Don't forget the heart!]]</story_7>
-		<story_8><![CDATA[<b>1 Assassinated in Commerenceville:</b>⮀ Last task on the list and there are a ton of corrupted people here, plus the assassnation guild is here to collect all the hearts you gotten.]]</story_8>
+		<story_1><![CDATA[<b>1 Assassinated in Beginnersville:</b>⮀ You killed one of the town's people quickly and quietly, got the heart and moved on...]]></story_1>
+		<story_2><![CDATA[<b>1 Assassinated in Forest Path:</b>⮀ How was there more people in the forest besides the hermit and the witch? who knows, all that matters is you killed someone and left with the heart.]]></story_2>
+		<story_3><![CDATA[<b>1 Assassinated in Merchanton:</b>⮀ You walked into the casino, looked around to check for cameras and killed someone in the storage room. You got the heart and left quickly before being spotted.]]></story_3>
+		<story_4><![CDATA[<b>1 Assassinated in Mt. Olympus:</b>⮀ You climbed the Mountain and killed one of the yeti's for their heart, what they get for not selling snowcones.]]></story_4>
+		<story_5><![CDATA[<b>1 Assassinated in Valhalla:</b>⮀ Gods are looking all around but someone not paying tax on your property comes first, you kill them and grab the heart and quickly leave.]]></story_5>
+		<story_6><![CDATA[<b>1 Assassinated in Startington:</b>⮀ Everyone here is almost close to being dead so should be quick and easy. You get the heart so quick and moved on.]]></story_6>
+		<story_7><![CDATA[<b>1 Assassinated in Jungle Path:</b>⮀ Survivers are lost so you can use that to your advantage, 1 quick kill later and you can move on. Don't forget the heart!]]></story_7>
+		<story_8><![CDATA[<b>1 Assassinated in Commerenceville:</b>⮀ Last task on the list and there are a ton of corrupted people here, plus the assassnation guild is here to collect all the hearts you gotten.]]></story_8>
         </assassin>
         <!--ruins-->
         <ruinsZ1>
@@ -1128,6 +1132,7 @@
             You're sure you can use them for something. They're too heavy to move more than one at a time though.<br>
             One in every thousand Stones is temporal.
         ]]></tooltip>
+
 		<story_1><![CDATA[<b>First Temporal Stone Found:</b>⮀ After digging thru the cubical stones, you notice a light blue light glowing with a swirl pattern on the sides of the rock and they are slightly easier to pick up but still weigh a ton.]]</story_1>
 		<story_2><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ Slowly you pick up the stones one by one and move them to Valley of Olympus. Make sure to use your legs when lifting! ]]</story_2>
 		<story_3><![CDATA[<b>Moved 250 Temporal Stones:</b>⮀ Finally all the stones have been moved from the Startington to Valley of Olympus.]]</story_3>
@@ -1269,8 +1274,8 @@
             <story_1><![CDATA[<b>Strength trained:</b>⮀ You lift the oak barrel filled with water, holding it while you squat again and again. The barrel rests upon your back as you do push up after push up. It's a trusty companion in your quest to regain your muscle.]]></story_1>
             <story_2><![CDATA[<b>100 Strength talent:</b>⮀ Your body adapts faster and faster to the strains you put upon it. You know exactly how far to push it and can tell almost instinctively when to stop.]]></story_2>
             <story_3><![CDATA[<b>1,000 Strength talent:</b>⮀ Your body seems to build itself up faster and faster each time you break it down. You can practically feel your mana purr in satisfaction as it rebuilds your body to be stronger and stronger.]]></story_3>
-	  <story_4><![CDATA[<b>10,000 Strength talent:</b>⮀ You are so strong that you can flick open pots and can defeat monsters with ease. Your can still push farther beyond your limits and train like no other!]]></story_4>
-	  <story_5><![CDATA[<b>100,000 Strength talents:</b>⮀ At this point you feel like you could challenge a god, It would be the battle of the ages! And your body is still capable...]]></story_4>
+	          <story_4><![CDATA[<b>10,000 Strength talent:</b>⮀ You are so strong that you can flick open pots and can defeat monsters with ease. Your can still push farther beyond your limits and train like no other!]]></story_4>
+	          <story_5><![CDATA[<b>100,000 Strength talents:</b>⮀ At this point you feel like you could challenge a god, It would be the battle of the ages! And your body is still capable...]]></story_4>
         </train_strength>
         <short_quest>
             <label>Short Quest</label>
@@ -1357,8 +1362,8 @@
         ]]></tooltip>
             <story_1><![CDATA[<b>Patient healed:</b>⮀ You're allowed in to see the patients and begin healing. It's excellent practice and everyone you heal, be it from broken bones to small scrapes is extraordinarily thankful for your help.]]></story_1>
             <story_2><![CDATA[<b>10 Patients healed in a loop:</b>⮀ Your reputation is absolutely sterling, you've basically cleared out the entire healing home and the nurses and healers are more than thankful for your help.]]></story_2>
-		<story_3><![CDATA[<b>100 Patients healed in a loop:</b>⮀ You heal so many patients that they can't begin to thank you enough, the nurses suggest you should own this stablishment to help people all over the world.]]></story_3>
-		<story_4><![CDATA[<b>1,000 Patinets healed in a loop:</b>⮀ You become the doctor, after many loops you can help so many patients that the number is thru the roof. The nurses have been having a well deserver break since you can cure people so fast.]]></story_4>
+	        	<story_3><![CDATA[<b>100 Patients healed:</b>⮀ You heal so many patients that they can't begin to thank you enough, the nurses suggest you should own this stablishment to help people all over the world.]]></story_3>
+	        	<story_4><![CDATA[<b>1000 Patinets healed:</b>⮀ You become the doctor, after many loops you can help so many patients that the number is through the roof. The nurses have been having a well deserver break since you can cure people so fast.]]></story_4>
             <story_5><![CDATA[<b>Failed Action:</b>⮀ You're turned away at the door, the small healers home stating that they can't trust you to not poison the people inside or make the situation worse.]]></story_5>
 		<story_6><![CDATA[<b>50 Restoration:</b>⮀ You realize this skill could help the patients and makes your job slightly easier. Healing is a art and a skill that you don't regret having.]]></story_6>
 		 <segment_names>
@@ -1588,10 +1593,10 @@
             It's peaceful here. Loud, but peaceful.<br>Has 4x exp/talent gain, and can only be done <div id='trainingLimitSoul'></div> times per reset.<br>Unlocked at 70% Forest Explored.
         ]]></tooltip>
             <story_1><![CDATA[<b>Sat by waterfall:</b>⮀ You find a waterfall flowing from a higher point in a mountain down the side oddly scenic and decide stop to stare for awhile, simply to observe the natural beauty of the sight. As you watched, the force of the water managed to dislodge a small pebble from the top of the waterfall and send it careening down. You watch oddly mesmerized at it bounces along the path, constantly being immersed and spat out by the water. You don't know when you sat down and began meditating, only that you woke from your deep realization hours later.]]></story_1>
-	     <story_1><![CDATA[<b>100 Soul Talent:</b>⮀ You find more at piece with yourself and your body, which makes you a different person all together.]]></story_1>
-	     <story_1><![CDATA[<b>1,000 Soul Talent:</b>⮀ You are learning how to improve yourself past the point anyone has attempted. You can feel your blood going thru your whole body, feels weird.]]></story_1>
-	     <story_1><![CDATA[<b>10,000 Soul Talent:</b>⮀ You have so much soul that the king of soul acknowledges you, having so much soul means your body can be controlled in every part of your body at will.]]></story_1>
-	     <story_1><![CDATA[<b>100,000 Soul Talent:</b>⮀ At this point there is so much soul that you have reached heaven levels, you have trancended and you should feel good about that!]]></story_1>
+	     <story_2><![CDATA[<b>100 Soul Talent:</b>⮀ You find more at piece with yourself and your body, which makes you a different person all together.]]></story_2>
+	     <story_3><![CDATA[<b>1,000 Soul Talent:</b>⮀ You are learning how to improve yourself past the point anyone has attempted. You can feel your blood going thru your whole body, feels weird.]]></story_3>
+	     <story_4><![CDATA[<b>10,000 Soul Talent:</b>⮀ You have so much soul that the king of soul acknowledges you, having so much soul means your body can be controlled in every part of your body at will.]]></story_4>
+	     <story_5><![CDATA[<b>100,000 Soul Talent:</b>⮀ At this point there is so much soul that you have reached heaven levels, you have trancended and you should feel good about that!]]></story_5>
         </sit_by_waterfall>
         <old_shortcut>
             <label>Old Shortcut</label>
@@ -2176,7 +2181,7 @@
             <label>Imbue Body</label>
             <label_done>Completed</label_done>
             <tooltip><![CDATA[
-            With your new knowledge, you believe you can also use the lake to renforce your body across time. Each imbuement will increase starting stats by 1.<br>Gives (magic skill) * (1 + main stat / 100) * (original mana cost / actual mana cost) progress points per mana.<br>Can only have 1 Imbue Body action.<br>Level is limited by imbue mind rank.<br>Sacrifices (imbuements+1) levels of talent. Currently sacrificing 
+            With your new knowledge, you believe you can also use the lake to reinforce your body across time. Each imbuement will increase starting stats by 1.<br>Gives (magic skill) * (1 + main stat / 100) * (original mana cost / actual mana cost) progress points per mana.<br>Can only have 1 Imbue Body action.<br>Level is limited by imbue mind rank.<br>Sacrifices (imbuements+1) levels of talent. Currently sacrificing 
         ]]></tooltip>
             <tooltip2><![CDATA[
              levels of talent from each stat.
@@ -2539,7 +2544,7 @@
             Costs 10 herbs and a blood.<br>
             Gives Gluttony exp equal to (Rescued Survivors * 5).
         ]]></tooltip>
-		<<!--story action for You finish preparing the buffet but have nobody to share it with. You spot somebody sprinting through the area saying something about being too fast and offer to share the buffet with them. To your surprise they fanatically refuse the free meal, exclaiming they may never taste food-->>
+		<!--story action for You finish preparing the buffet but have nobody to share it with. You spot somebody sprinting through the area saying something about being too fast and offer to share the buffet with them. To your surprise they fanatically refuse the free meal, exclaiming they may never taste food-->>
         </prepare_buffet>
         <totem>
             <label>Totem</label>
