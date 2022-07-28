@@ -551,7 +551,7 @@
                 often stored in pottery around town, perhaps you'll start there ...
             </story>
             <story num="1"> <!--First Soulstone-->
-                You reach the end of the dungeon, where a softly glowing orb floats on a pedastal. You've found the
+                You reach the end of the dungeon, where a softly glowing orb floats on a pedestal. You've found the
                 dungeon core - for the first level of the dungeon, at least. As you grasp it, the essence dives into
                 you, infusing your very being with the power it holds. It is a small amount of power, but this is a
                 small dungeon. You'll be back to take this power again, knowing with the foreign knowledge implanted
@@ -565,11 +565,12 @@
                 oddity of the loops.
             </story>
 			<story num="3"> <!--Change 3 to Forest-->
-				You have bought the supplies and began your journey, down the road you spot a lush forest. As you set up camp
-				you begin exploring the forest noticing mana crystals sprawling on the ground everywhere in this forest.
-				Animals are also roaming around and herbs are everywhere in the forest. Later on your journey you notice
-				there is this old dusty road that and a hermit living on the side of the road, wonder what knowledge the
-				hermit could offer.
+				After spending most of a loop preparing, you're finally ready to leave Beginnersville. In a way, you're
+				going to miss this town, and the thought of leaving almost brings a tear to your eye - until you realize
+				you'll just be back next loop. Grumbling, you set off, hiking into the forest, but by the time you're
+				ready to make camp, you're in a good mood again. The forest is beautiful, teeming with life, and looks
+				to have boundless places to explore. Best of all, on your way here, you passed several locations that
+				are absolutely saturated with mana - you think you'll check those out first.
 		    </story>
 		    <story num="4"> <!--Merchanton-->
 				After boring the hermit and witch to get the knowledge they had to offer, you notice a clearing in the forest
@@ -1235,7 +1236,7 @@
             <tooltip2><![CDATA[
             mana. Buys all the mana you can.<br>Unlocked at 20% Explored.
         ]]></tooltip2>
-            <story_1><![CDATA[<b>Bought Mana:</b>⮀ Looks like there is a stand that is a man selling mana potions, might need it to contuine the loop! Wait that was odd there was a stand out in the middle of the day selling the one thing you need, weird.]]></story_1>
+            <story_1><![CDATA[<b>Bought Mana:</b>⮀ A mana salesman?! For most people, this would only be a convenience, but given your current situation, this might be the most valuable thing you ever could have found.]]></story_1>
         </buy_mana_z1>
         <buy_mana_challenge>
             <label>Buy Mana</label>
@@ -1245,8 +1246,8 @@
             <tooltip2><![CDATA[
             mana. Buys all the mana you can.<br>The merchant only has 7500 mana to sell, though.<br>Unlocked at 20% Explored.
         ]]></tooltip2>
-            <story_1><![CDATA[<b>Bought Mana:</b>⮀ You walk up to the stand and the man says "Times are hard my friend, Mana drought has hit the world hard so my friends are all out of stock. Only have 7500 mana to give and that is it."]]></story_1>
-		<story_2><![CDATA[<b>7500 Mana Bought:</b>⮀ The man says "Welp, I'm all out of stock for this loop but I wish you the best on your journey friend." 3 seconds later he vanishes, no where to be seen.]]></story_2>
+            <story_1><![CDATA[<b>Bought Mana:</b>⮀ You walk up to the mana stand ready to throw your money at the man behind the counter, but before you can get a word out, he interrupts you, saying "I'm sure you understand my reasonable prices, yes? Times are hard during this drought - my colleagues are all out of stock, and I only have 7500 mana until I am as well." His prices are ridiculous, but you pay them with gritted teeth, having no other option.]]></story_1>
+			<story_2><![CDATA[<b>7500 Mana Bought:</b>⮀ You buy everything the man has for sale, and he immediately says "I have no more stock today, goodbye." He then proceeds to slam the stall window on you. As he disappears, you spot a shadow of fear cross his face. He must have to deal with a lot of angry would-be customers these days.]]></story_2>
         </buy_mana_challenge>
         <meet_people>
             <label>Meet People</label>
@@ -1354,18 +1355,18 @@
             <label_part>Patient</label_part>
             <tooltip><![CDATA[
             You won't be able to heal them all, but they'll be thankful for doing what you can.<br>Healing is always 3 parts, each with a main stat - Diagnose (Per), Treat (Int), Inform (Cha).<br>Gives (magic skill) * (restoration skill / 50) * (1 + main stat / 100) * sqrt(1 + times completed / 100) * (original mana cost / actual mana cost) progress points per mana.<br>Requires a reputation of 1 or above.<br>Unlocked at 12 Magic skill.<br>Gives 3 reputation upon patient completion.
-        ]]></tooltip>
-            <story_1><![CDATA[<b>Patient healed:</b>⮀ You're allowed in to see the patients and begin healing. It's excellent practice and everyone you heal, be it from broken bones to small scrapes is extraordinarily thankful for your help.]]></story_1>
-            <story_2><![CDATA[<b>10 Patients healed in a loop:</b>⮀ Your reputation is absolutely sterling, you've basically cleared out the entire healing home and the nurses and healers are more than thankful for your help.]]></story_2>
-		<story_3><![CDATA[<b>100 Patients healed:</b>⮀ You heal so many patients that they can't begin to thank you enough, the nurses suggest you should own this stablishment to help people all over the world.]]></story_3>
-		<story_4><![CDATA[<b>1000 Patinets healed:</b>⮀ You become the doctor, after many loops you can help so many patients that the number is through the roof. The nurses have been having a well deserver break since you can cure people so fast.]]></story_4>
-            <story_5><![CDATA[<b>Failed Action:</b>⮀ You're turned away at the door, the small healers home stating that they can't trust you to not poison the people inside or make the situation worse.]]></story_5>
-		<story_6><![CDATA[<b>50 Restoration:</b>⮀ You realize this skill could help the patients and makes your job slightly easier. Healing is a art and a skill that you don't regret having.]]></story_6>
-		 <segment_names>
-                <name>Diagnose</name>
-                <name>Treat</name>
-                <name>Inform</name>
-            </segment_names>
+			]]></tooltip>
+			<story_1><![CDATA[<b>Patient healed:</b>⮀ You're allowed in to see the patients and begin healing. It's excellent practice and everyone you heal, be it from broken bones to small scrapes is extraordinarily thankful for your help.]]></story_1>
+			<story_2><![CDATA[<b>10 Patients healed in a loop:</b>⮀ Your reputation is absolutely sterling, you've basically cleared out the entire healing home and the nurses and healers are more than thankful for your help.]]></story_2>
+			<story_3><![CDATA[<b>100 Patients healed:</b>⮀ You've healed this guy so many times you barely even have to think about it anymore. The ones after him are harder, though; you're not actually a doctor so a lot of this is trial and error.]]></story_3>
+			<story_4><![CDATA[<b>1000 Patients healed:</b>⮀ You never went to medical school, but you've healed so many people that you're pretty much an expert now. Nothing can stop you, nothing can stump you, nothing can even slow you down! ...Except when they bring in a patient you haven't seen before. When that happens, it usually takes you a while to figure out what their problem is.]]></story_4>
+			<story_5><![CDATA[<b>Failed Action:</b>⮀ You're turned away at the door, the small healers home stating that they can't trust you to not poison the people inside or make the situation worse.]]></story_5>
+			<story_6><![CDATA[<b>50 Restoration:</b>⮀ As good as you were at healing already, you think you've gotten good enough at restoration magic that it can help you heal people even faster! Healing really is a fulfilling job, especially now that you're actually competent at it - maybe you'll keep doing it once you're out of the loops.]]></story_6>
+			<segment_names>
+				<name>Diagnose</name>
+				<name>Treat</name>
+				<name>Inform</name>
+			</segment_names>
         </heal_the_sick>
         <fight_monsters>
             <label>Fight Monsters</label>
