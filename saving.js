@@ -285,7 +285,8 @@ const options = {
     pingOnPause: false,
     autoMaxTraining: false,
     hotkeys: true,
-    updateRate: 50
+    updateRate: 50,
+    autosaveRate: 30,
 };
 
 function setOption(option, value) {
@@ -295,6 +296,7 @@ function setOption(option, value) {
 
 function loadOption(option, value) {
     if (option === "updateRate") document.getElementById(`${option}Input`).value = value;
+    if (option === "autosaveRate") document.getElementById(`${option}Input`).value = value;
     else document.getElementById(`${option}Input`).checked = value;
 }
 
@@ -304,6 +306,11 @@ function closeTutorial() {
 
 function clearSave() {
     window.localStorage[saveName] = "";
+    if (challenge != 0) location.reload();
+    dungeons = [[], [], []];
+    trials = [[], [], [], [], []];
+    actions.current = [];
+    actions.next = [];
 }
 
 function loadDefaults() {
@@ -415,6 +422,8 @@ function load() {
             if (action.name === "Sell Gold") {
                 action.name = "Buy Mana";
             }
+            if (action.name === "Buy Mana Challenge")
+                action.name = "Buy Mana Z1";
             if (action.name === "Tournament") {
                 action.name = "Buy Pickaxe";
             }
@@ -546,6 +555,8 @@ function load() {
         }
     }
     
+    challenge = toLoad.challenge === undefined ? challenge : toLoad.challenge;
+    loadChallenge();
     view.initalize();
 
     for (const town of towns) {
@@ -566,9 +577,6 @@ function load() {
     storyShowing = toLoad.storyShowing === undefined ? 0 : toLoad.storyShowing;
     storyMax = toLoad.storyMax === undefined ? 0 : toLoad.storyMax;
 
-    challenge = toLoad.challenge === undefined ? 0 : toLoad.challenge;
-    if (challenge === 1) gameSpeed = 2;
-
     totalOfflineMs = toLoad.totalOfflineMs === undefined ? 0 : toLoad.totalOfflineMs;
     if (toLoad.totals != undefined) {
         totals.time = toLoad.totals.time === undefined ? 0 : toLoad.totals.time;
@@ -576,6 +584,7 @@ function load() {
         totals.loops = toLoad.totals.loops === undefined ? 0 : toLoad.totals.loops;
         totals.actions = toLoad.totals.actions === undefined ? 0 : toLoad.totals.actions;
     }
+    else totals = {time: 0, effectiveTime: 0, loops: 0, actions: 0};
     view.updateTotals();
 
     // capped at 1 month of gain
@@ -721,10 +730,8 @@ function importCurrentList() {
 function beginChallenge(challengeNum) {
     if (confirm("Beginning a new challenge will delete your current save. Are you sure you have an export saved to your computer?")) {
         clearSave();
-        actions.next = [];
-        actions.current = [];
-        load();
         challenge = challengeNum;
+        load();
         totalOfflineMs = 1000000;
         pauseGame();
         restart();

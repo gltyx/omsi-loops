@@ -356,6 +356,7 @@
                 Shift+Z: 撤销对行动列表的上一次更改
         ]]></hotkeys_tooltip>
             <update_rate>每秒视觉更新次数:</update_rate>
+            <autosave_rate>Autosave rate (seconds):</autosave_rate>
         </options>
         <challenges>
             <meta>
@@ -363,6 +364,7 @@
             </meta>
             <mana_drought>新手村的法力商人只出售 5k 法力, 并且价格翻倍. 没有其他法力商人.</mana_drought>
             <noodle_arms>你没有个人战斗力. 所有战斗力都得依靠队友. 个人战斗力等于你队友和僵尸中更高的那个的一半.</noodle_arms>
+            <mana_burn>You have a day's worth of mana that persists through loops, but once that runs out, you'll be stuck in time. How far can you make it?</mana_burn>
         </challenges>
         <totals>
             <meta>
@@ -530,6 +532,7 @@
         <pause_on_complete>进度完成时暂停</pause_on_complete>
         <restart_button>重置</restart_button>
         <restart_text>重置循环. 并不是硬重置.</restart_text>
+        <days>天</days>
         <hours>时</hours>
         <minutes>分</minutes>
         <seconds>秒</seconds>
@@ -1032,7 +1035,7 @@
             <label_done>已刺杀</label_done>
             <tooltip><![CDATA[
             消灭镇子里的目标.<br>
-            每点法力给予 (开方(实用魔法) + 盗窃 + 刺杀) * 主能力/1000 * 开方(完成次数/1000) / 绝对值(声望) / 心脏^2 进度点.<br>
+            每点法力给予 (开方(实用魔法) + 盗窃 + 刺杀) * 主能力/1000 * 开方(完成次数/100) / 绝对值(声望) / 心脏^2 进度点.<br>
             奖励一个心脏.
             ]]></tooltip>
 		<story_1><![CDATA[<b>1 Assassinated in Beginnersville:</b>⮀ You killed one of the town's people quickly and quietly, got the heart and moved on...]]></story_1>
