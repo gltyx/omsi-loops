@@ -178,9 +178,9 @@ function TrialAction(name, trialNum, extras) {
 TrialAction.prototype = Object.create(MultipartAction.prototype);
 TrialAction.prototype.constructor = TrialAction;
 TrialAction.prototype.completedTooltip = function() {
-    return this.name + ` Highest Floor: <div id='trial${this.trialNum}HighestFloor'>0</div><br>
-    Current Floor: <div id='trial${this.trialNum}CurFloor'>0</div> - Completed <div id='trial${this.trialNum}CurFloorCompleted'>x</div> times<br>
-    Last Floor: <div id='trial${this.trialNum}LastFloor'>N/A</div> - Completed <div id='trial${this.trialNum}LastFloorCompleted'>N/A</div> times<br>`;
+    return this.name + ` 最高楼层: <div id='trial${this.trialNum}HighestFloor'>0</div><br>
+    当前楼层: <div id='trial${this.trialNum}CurFloor'>0</div> - 已完成 <div id='trial${this.trialNum}CurFloorCompleted'>x</div> 次<br>
+    上次楼层: <div id='trial${this.trialNum}LastFloor'>N/A</div> - 已完成 <div id='trial${this.trialNum}LastFloorCompleted'>N/A</div> 次<br>`;
 }
 TrialAction.prototype.getPartName = function() {
     const floor = Math.floor((towns[this.townNum][`${this.varName}LoopCounter`] + 0.0001) / this.segments + 1);
@@ -3158,7 +3158,7 @@ Action.BuyPickaxe = new Action("Buy Pickaxe", {
     },
 });
 
-Action.HeroesTrial = new TrialAction("Heroes Trial", 0, {
+Action.HeroesTrial = new TrialAction("英雄试炼", 0, {
     type: "multipart",
     expMult: 0.2,
     townNum: 2,
@@ -5081,7 +5081,7 @@ Action.PurchaseSupplies = new Action("Purchase Supplies", {
     },
 });
 
-Action.DeadTrial = new TrialAction("Dead Trial", 4, {
+Action.DeadTrial = new TrialAction("死亡试炼", 4, {
     type: "multipart",
     expMult: 0.25,
     townNum: 5,
@@ -5958,7 +5958,7 @@ Action.PurchaseKey = new Action("Purchase Key", {
     },
 });
 
-Action.SecretTrial = new TrialAction("Secret Trial", 3, {
+Action.SecretTrial = new TrialAction("秘密试炼", 3, {
     type: "multipart",
     expMult: 0,
     townNum: 7,
@@ -6130,7 +6130,7 @@ Action.BuildTower = new Action("Build Tower", {
     },
 });
 
-Action.GodsTrial = new TrialAction("Gods Trial", 1, {
+Action.GodsTrial = new TrialAction("神之试炼", 1, {
     type: "multipart",
     expMult: 0.2,
     townNum: 8,
