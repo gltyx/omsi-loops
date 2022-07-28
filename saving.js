@@ -631,7 +631,7 @@ function load(inChallenge) {
         save();
 
         window.localStorage[defaultSaveName] = "";
-        load();
+        location.reload();
     }
 
     if(getExploreProgress() >= 100) addResource("glasses", true);
