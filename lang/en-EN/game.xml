@@ -1038,7 +1038,7 @@
             Requires a map for each action.<br>
             Currently granting <div class='surveySkill'></div> exp per action.
             ]]></tooltip>
-		<story_1><![CDATA[<b>20% World Survey:</b>⮀ You decide it is time to discover the world, the journey is long but so worth.]]</story_1>
+		<story_1><![CDATA[<b>20% World Survey:</b>⮀ You decide it is time to discover the world. One of the explorers decided to come on the journey around the world their name is Dora, the journey is long but so worth.]]</story_1>
 		<story_2><![CDATA[<b>40% World Survey:</b>⮀ Crazy how discovering the world over again is shedding a new light on the world, new items you never seen have just been out of place.]]</story_2>
 		<story_3><![CDATA[<b>60% World Survey:</b>⮀ Nobody is stopping you from exploring more and more, it feels nice. At least the view is spectacular!]]</story_3>
 		<story_4><![CDATA[<b>80% World Survey:</b>⮀ You are almost done with your trip and you have enjoyed every second of it. You wish the explorer's guild has found more locations to visit, but they couldn't find anything new.]]</story_4>
@@ -1078,9 +1078,9 @@
             <tooltip><![CDATA[
             As you've explored, you've found a number of old ruins scattered around. It's probably worth your time to explore them.
             ]]></tooltip>
-		<story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Mt. Olympus and notice some weird looking rocks, wonder what they do.]]</story_1>
-		<story_2><![CDATA[<b>50% delved:</b>⮀ After further investgating you realize that the rocks are needed for a tower somewhere....]]</story_2>
-		<story_3><![CDATA[<b>100% delved:</b>⮀ contuine the battle of the valkeries story]]</story_3>
+		<story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Mt. Olympus and notice the same cubical rocks, wonder what they do.]]</story_1>
+		<story_2><![CDATA[<b>50% delved:</b>⮀ There is a stone with some writing, with your high intellegent you might be able to read this strange language.]]</story_2>
+		<story_3><![CDATA[<b>100% delved:</b>⮀ After looking around the ruins it looks like there is a weapon rusted of some sort that looks like one of the Valkeries used, wonder what really happened.]]</story_3>
         </ruinsZ3>
         <ruinsZ5>
             <label>Ruins</label>
@@ -1088,9 +1088,9 @@
             <tooltip><![CDATA[
             As you've explored, you've found a number of old ruins scattered around. It's probably worth your time to explore them.
             ]]></tooltip>
-		<story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Startington and notice some weird looking rocks, wonder what they do.]]</story_1>
-		<story_2><![CDATA[<b>50% delved:</b>⮀ After further investgating you realize that the rocks are needed for a tower somewhere....]]</story_2>
-		<story_3><![CDATA[<b>100% delved:</b>⮀ You have discover everything in these ruins, and notice that only these temporal stones exist here.]]</story_3>
+		<story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Startington and and notice the same dusty cubical rocks, wonder what they do.]]</story_1>
+		<story_2><![CDATA[<b>50% delved:</b>⮀ After deciphering the text on this stone block, You can see some of the text since the rest has corroded over time. ]]</story_2>
+		<story_3><![CDATA[<b>100% delved:</b>⮀ The text explains that the Valkeries started a war that lasted for a month, after a month of fighting they finally declared peace. Who did they fight against???]]</story_3>
         </ruinsZ5>
         <ruinsZ6>
             <label>Ruins</label>
@@ -1098,9 +1098,9 @@
             <tooltip><![CDATA[
             As you've explored, you've found a number of old ruins scattered around. It's probably worth your time to explore them.
             ]]></tooltip>
-		<story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Jungle Path and notice some weird looking rocks, wonder what they do.]]</story_1>
-		<story_2><![CDATA[<b>50% delved:</b>⮀ After further investgating you realize that the rocks are needed for a tower somewhere....]]</story_2>
-		<story_3><![CDATA[<b>100% delved:</b>⮀ You have discover everything in these ruins, and notice that only these temporal stones exist here.]]</story_3>
+		<story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Jungle Path and and notice the same dusty and heavy cubical rocks, wonder what they do.]]</story_1>
+		<story_2><![CDATA[<b>50% delved:</b>⮀ You notice a god weapon on the floor in the middle of this ruins, almost like they left this here on purpose.]]</story_2>
+		<story_3><![CDATA[<b>100% delved:</b>⮀ Looking at the weapon has a small text that says, war has ended and this weapon is layed to rest. Did the gods fight the Valkeries???]]</story_3>
         </ruinsZ6>
         <haulZ1>
             <label>Haul</label>
@@ -1128,8 +1128,9 @@
             You're sure you can use them for something. They're too heavy to move more than one at a time though.<br>
             One in every thousand Stones is temporal.
         ]]></tooltip>
-		<story_1><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ Slowly you pick up the stones one by one and move them to Valley of Olympus. Make sure to use your legs when lifting! ]]</story_1>
-		<story_2><![CDATA[<b>Moved 250 Temporal Stones:</b>⮀ Finally all the stones have been moved from the Startington to Valley of Olympus.]]</story_2>
+		<story_1><![CDATA[<b>First Temporal Stone Found:</b>⮀ After digging thru the cubical stones, you notice a light blue light glowing with a swirl pattern on the sides of the rock and they are slightly easier to pick up but still weigh a ton.]]</story_1>
+		<story_2><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ Slowly you pick up the stones one by one and move them to Valley of Olympus. Make sure to use your legs when lifting! ]]</story_2>
+		<story_3><![CDATA[<b>Moved 250 Temporal Stones:</b>⮀ Finally all the stones have been moved from the Startington to Valley of Olympus.]]</story_3>
         </haulZ3>
         <haulZ5>
             <label>Haul</label>
@@ -1142,8 +1143,9 @@
             You're sure you can use them for something. They're too heavy to move more than one at a time though.<br>
             One in every thousand Stones is temporal.
         ]]></tooltip>
-		<story_1><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ Slowly you pick up the stones one by one and move them to Valley of Olympus. Make sure to use your legs when lifting! ]]</story_1>
-		<story_2><![CDATA[<b>Moved 250 Temporal Stones:</b>⮀ Finally all the stones have been moved from the Jungle Path to Valley of Olympus.]]</story_2>
+		<story_1><![CDATA[<b>First Temporal Stone Found:</b>⮀ After digging thru the cubical stones, you notice a light blue light glowing with a swirl pattern on the sides of the rock and they are slightly easier to pick up but still weigh a ton.]]</story_1>
+		<story_2><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ Slowly you pick up the stones one by one and move them to Valley of Olympus. Make sure to use your legs when lifting! ]]</story_2>
+		<story_3><![CDATA[<b>Moved 250 Temporal Stones:</b>⮀ Finally all the stones have been moved from the Jungle Path to Valley of Olympus.]]</story_3>
         </haulZ5>
         <haulZ6>
             <label>Haul</label>
@@ -1156,8 +1158,9 @@
             You're sure you can use them for something. They're too heavy to move more than one at a time though.<br>
             One in every thousand Stones is temporal.
         ]]></tooltip>
-		<story_1><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ Slowly you pick up the stones one by one and move them to Valley of Olympus. Make sure to use your legs when lifting! ]]</story_1>
-		<story_2><![CDATA[<b>Moved 250 Temporal Stones:</b>⮀ Finally all the stones have been moved from the Mt. Olympus to Valley of Olympus.]]</story_2>
+		<story_1><![CDATA[<b>First Temporal Stone Found:</b>⮀ After digging thru the cubical stones, you notice a light blue light glowing with a swirl pattern on the sides of the rock and they are slightly easier to pick up but still weigh a ton.]]</story_1>
+		<story_2><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ Slowly you pick up the stones one by one and move them to Valley of Olympus. Make sure to use your legs when lifting! ]]</story_2>
+		<story_3><![CDATA[<b>Moved 250 Temporal Stones:</b>⮀ Finally all the stones have been moved from the Mt. Olympus to Valley of Olympus.]]</story_3>
         </haulZ6>
         <!--town 1-->
         <map>
@@ -1221,7 +1224,7 @@
             <tooltip><![CDATA[
             You could have sworn you had a spare pair of glasses somewhere. Now you've explored to the ends of the world. Every nook or cranny has revealed to you their secrets. And you've found them - in the last place anyone would ever think to look. On top of your head.<br>
             You now start all loops with glasses.
-		<story_1><![CDATA[<b>Found Glasses:</b>⮀ Wait did you have your glasses above your head and you still bought another one? Glad you had high enough chrisma skill to pull that off.]]></story_1>
+		<story_1><![CDATA[<b>Found Glasses:</b>⮀ Wait did you have your glasses above your head and you still bought another one??? Glad you had high enough chrisma skill to pull that off.]]></story_1>
         ]]></tooltip>
         </found_glasses>
         <buy_mana_z1>
@@ -1731,7 +1734,7 @@
             <story_1><![CDATA[<b>1 Dark magic:</b>⮀ You ask the witch for more information on dark magic and then during the conversation slowly reveal your interest in the subject and float the offer that you would be willing to trade if she would teach you the beginning steps. She smirks deviously and agrees to the deal.]]></story_1>
             <story_2><![CDATA[<b>25 Dark magic:</b>⮀ The witch demands more and more of you and you slowly figure out ways of broaching the subject with her that doesn't startle her enough that she stops talking to you or just flat out shuts you down. The magic she begins to teach is brutal, ominous and forceful. You do not work with or help, you take and dominate.]]></story_2>
             <story_3><![CDATA[<b>50 Dark magic:</b>⮀ The dark magic she teaches seems to veer more to the side of ritualistic sacrifice and communion with the dark gods, she tells you when you ask that its because she can't really teach you too much more unless you have a darker being backing you as her mana isn't inherent but a gift from the darker divine powers. She teaches you of a ritual that you can use to summon the dark gods and strike a bargain. She warns that you'll need souls as payment.]]></story_3>
-	     <story_4><![CDATA[<b>300 Dark magic:</b>⮀ The Trisha teaches you about a way to create a rift of some sort, She explains you need to level another skill to be able to create it but it should be of use to you on your loops.]]></story_4>
+	     <story_4><![CDATA[<b>300 Dark magic:</b>⮀ The Trisha teaches you about a way to create a rift of some sort, She explains you need to level another skill to be able to create it but it should be of use to you on your loops.]]></story_4><!--Lock this untill you get this to startington-->
 	     <story_5><![CDATA[<b>1,000 Dark magic:</b>⮀ You know so much dark magic that Trisha is very interested in what you will do with that in the future, only time will tell.]]></story_5>
         </dark_magic>
         <dark_ritual>
@@ -1986,9 +1989,9 @@
                 <name>Cleanse Floor</name>
             </segment_names>
 			<story_1><![CDATA[<b>Floor 1 Completed:</b>⮀ You notice a big door with a tall tower, You defeated the first floor but looking up above you look like you are not even close to clearing this any time soon.]]></story_1>
-			<story_2><![CDATA[<b>Floor 50 Completed:</b>⮀ Enemies are getting tougher as you climb up but this is a trial made for hero's, you even wonder if there is reward for beating it.]]></story_2>
-			<story_3><![CDATA[<b>Floor 250 Completed:</b>⮀ After climbing so many floors, you wonder when the end might be but so far you have seen so many traps and enemies that this better be worth it.]]></story_3>
-			<story_4><![CDATA[<b>Floor 1000 Completed:</b>⮀ You completed it??? That is a huge accomplishment and has has earned you bragging rights and the right to be called a hero finally!]]></story_4>
+			<story_2><![CDATA[<b>Floor 10 Completed:</b>⮀ Enemies are getting tougher as you climb up but this is a trial made for hero's, you even wonder if there is reward for beating it.]]></story_2>
+			<story_3><![CDATA[<b>Floor 25 Completed:</b>⮀ After climbing so many floors, you wonder when the end might be but so far you have seen so many traps and enemies that this better be worth it.]]></story_3>
+			<story_4><![CDATA[<b>Floor 50 Completed:</b>⮀ You completed it??? That is a huge accomplishment and has has earned you bragging rights and the right to be called a hero finally!]]></story_4>
         </heroes_trial>
         <start_trek>
             <label>Start Trek</label>
@@ -2032,7 +2035,7 @@
         ]]></tooltip>
 			<story_1><![CDATA[<b>Geyser revealed:</b>⮀ As your pickaxe digs into the ground, it suddenly shoots right out of your hands by an explosive pressure from beneath. You glance at where it fell and resolve to retrieve it later, and then turn your attention to the absolutely massive amount of mana bursting forth from the ground, doing your best to absorb as much as you can.]]></story_1>
 			<story_2><![CDATA[<b>10 Geysers revealed:</b>⮀ Having canvassed the entire mountain, you know where all the pent up mana is hiding, and where to strike to get access to it. You wonder what was causing so much mana to build up inside a mountain, but decide it doesn't really matter as long as you can get at it undisturbed.]]></story_2>
-			<story_3><![CDATA[<b>15 Geysers revealed:</b>⮀ You found even more geysers in the cavern, weird how you never seen them. exploring the world again has it's perks]]></story_3>
+			<story_3><![CDATA[<b>15 Geysers revealed:</b>⮀ You found even more geysers in the cavern, weird how you never seen them. Exploring the world again has it's perks!]]></story_3>
         </mana_geyser>
         <decipher_runes>
             <label>Decipher Runes</label>
@@ -2148,7 +2151,7 @@
         ]]></tooltip>
 			<story_1><![CDATA[<b>Artifact taken:</b>⮀ You pick up an ornate necklace from the stone statue it was displayed on. It's made out of precious materials with incredible craftsmanship. If there's anything magical about it you can't figure it out, but there's really no reason to not take a priceless historical artifact with you.]]></story_1>
 			<story_2><![CDATA[<b>20 Artifacts taken:</b>⮀ Your collection is an unfocused assortment of unrelated artifacts found from all over the mountain, the only quality they all share being impeccable detail and craftsmanship. It seems like you're only picking clean what hasn't been lost to other people over time, but what you found will fetch a pretty penny nonetheless.]]></story_2>
-			<story_3><![CDATA[<b>50 Artifacts taken in a loop:</b>⮀ You know how to spot the artifacts with the most value; some are old antiques and some are old gems, If only this was another idle game....]]></story_3>
+			<story_3><![CDATA[<b>50 Artifacts taken in a loop:</b>⮀ You know how to spot the artifacts with the most value; some are old antiques and some are old gems, hopefully you can make a fortune with them.]]></story_3>
         </take_artifacts>
         <imbue_mind>
             <label>Imbue Mind</label>
@@ -2185,8 +2188,8 @@
             </segment_names>
 			<story_1><![CDATA[<b>Third phase reached:</b>⮀ The soulstones are all arranged, glowing a bright uniform white. You sit in the center and close your eyes as the ritual begins. You can sense the soulstones all around you, bathed in light, and you mentally reach out and start pulling them closer.]]></story_1>
 			<story_2><![CDATA[<b>Imbuement complete:</b>⮀ You do jumping jacks and feel the blood pumping thru your body and you have no choice but to trust the strength of your body. Finally, it ends, and you feel exhaused. The soulstones are nowhere to be found and the lake is just clear water now.]]></story_2>
-			<story_3><![CDATA[<b>250 Imbuement completed:</b>⮀ Time to do pushups and push your body into overdrive, you can do 200 push ups in 20 seconds which is insane. ]]></story_3>
-			<story_4><![CDATA[<b>500 Imbuement completed:</b>⮀ ]]></story_4>
+			<story_3><![CDATA[<b>250 Imbuement completed:</b>⮀ Time to do pushups and push your body into overdrive, you can do 200 push ups in 20 seconds which is insane. Your out of breath but you feel way better and way stronger.]]></story_3>
+			<story_4><![CDATA[<b>500 Imbuement completed:</b>⮀ You enter the cave for the last time, You can pump your blood faster than any normal being which can help you grow pyschically! The lake dries up once again and you understand that you are done here.]]></story_4>
         </imbue_body>
         <face_judgement>
             <label>Face Judgement</label>
@@ -2203,6 +2206,7 @@
             Travels to Valhalla, bypassing Face Judgement and Reputation requirements.<br>
             Requires 1000 herbs.
             ]]></tooltip>
+			<story_1><![CDATA[<b>Guru:</b>⮀ The explorer's guild recommend you talked to Guru, he explains that there is a path that nobody uses anymore but I need the herbs to get you to Valhalla. He makes a potion of teleportation and you drink the potion, tastes like fruit punch. Guru explains that you need to think of the place you want to go. After thinking of the holy land of Valhalla you arrive in Valhalla.]]></story_1>
         </guru>
         <!--town 5-->
         <guided_tour>
