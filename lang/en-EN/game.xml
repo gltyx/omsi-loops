@@ -364,6 +364,7 @@
             <meta>
                 <title>Challenges</title>
             </meta>
+            <standard_game>The original experience, as the game was meant to be played.</standard_game>
             <mana_drought>The mana merchant in Beginnersville only has 5k mana to sell, and they're charging double the usual price. No other mana merchants exist.</mana_drought>
             <noodle_arms>You have no base Self-Combat ability. All combat is based on followers. Self combat is half of your team member or zombie strength (whichever is higher).</noodle_arms>
             <mana_burn>You have a day's worth of mana that persists through loops, but once that runs out, you'll be stuck in time. How far can you make it?</mana_burn>
