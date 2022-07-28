@@ -364,6 +364,9 @@ function load(inChallenge) {
         return;
     }
 
+    if (challengeSave.challengeMode !== 0)
+        saveName = challengeSaveName;
+
     for (const property in toLoad.stats) {
         if (toLoad.stats.hasOwnProperty(property)) {
             stats[property].talent =  toLoad.stats[property].talent > 0 ? toLoad.stats[property].talent : 0;
@@ -629,8 +632,6 @@ function load(inChallenge) {
 
         saveName = challengeSaveName;
         save();
-
-        window.localStorage[defaultSaveName] = "";
         location.reload();
     }
 
