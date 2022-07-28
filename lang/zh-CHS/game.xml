@@ -356,7 +356,7 @@
                 Shift+Z: 撤销对行动列表的上一次更改
         ]]></hotkeys_tooltip>
             <update_rate>每秒视觉更新次数:</update_rate>
-            <autosave_rate>Autosave rate (seconds):</autosave_rate>
+            <autosave_rate>自动保存频率 (秒):</autosave_rate>
         </options>
         <challenges>
             <meta>
@@ -364,7 +364,7 @@
             </meta>
             <mana_drought>新手村的法力商人只出售 5k 法力, 并且价格翻倍. 没有其他法力商人.</mana_drought>
             <noodle_arms>你没有个人战斗力. 所有战斗力都得依靠队友. 个人战斗力等于你队友和僵尸中更高的那个的一半.</noodle_arms>
-            <mana_burn>You have a day's worth of mana that persists through loops, but once that runs out, you'll be stuck in time. How far can you make it?</mana_burn>
+            <mana_burn>你有能跑一整天的法力, 但一旦法力耗尽, 你就会立即停止. 你能走多远?</mana_burn>
         </challenges>
         <totals>
             <meta>
