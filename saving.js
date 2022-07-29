@@ -71,7 +71,9 @@ function cheatSkill(skill, targetSkillLevel)
 
 
 let mainTickLoop;
-const saveName = "idleLoops1";
+const defaultSaveName = "idleLoops1";
+const challengeSaveName = "idleLoopsChallenge";
+let saveName = defaultSaveName;
 
 // this is to hide the cheat button if you aren't supposed to cheat
 if (window.location.href.includes("http://127.0.0.2:8080")) document.getElementById("cheat").style.display = "inline-block";
@@ -256,7 +258,11 @@ let totals = {
     actions: 0
 };
 
-let challenge = 0;
+let challengeSave = {
+    challengeMode: 0,
+    inChallenge: false
+};
+
 let totalMerchantMana = 7500;
 
 // eslint-disable-next-line prefer-const
@@ -305,12 +311,9 @@ function closeTutorial() {
 }
 
 function clearSave() {
-    window.localStorage[saveName] = "";
-    if (challenge != 0) location.reload();
-    dungeons = [[], [], []];
-    trials = [[], [], [], [], []];
-    actions.current = [];
-    actions.next = [];
+    window.localStorage[defaultSaveName] = "";
+    window.localStorage[challengeSaveName] = "";
+    location.reload();
 }
 
 function loadDefaults() {
@@ -330,7 +333,7 @@ function saveUISettings() {
     else localStorage.setItem("actionListHeight", document.getElementById("expandableList").style.height);
 }
 
-function load() {
+function load(inChallenge) {
     loadDefaults();
     loadUISettings();
 
@@ -343,6 +346,26 @@ function load() {
         closeTutorial();
         toLoad = JSON.parse(window.localStorage[saveName]);
     }
+
+    console.log("Loading game from: " + saveName + " inChallenge: " + inChallenge);
+
+    if(toLoad.challengeSave !== undefined)
+    for (let challengeProgress in toLoad.challengeSave)
+        challengeSave[challengeProgress] = toLoad.challengeSave[challengeProgress];
+    if (inChallenge !== undefined) challengeSave.inChallenge = inChallenge;
+
+    console.log("Challenge Mode: " + challengeSave.challengeMode + " In Challenge: " + challengeSave.inChallenge);
+
+
+    if (saveName === defaultSaveName && challengeSave.inChallenge === true) {
+        console.log("Switching to challenge save");
+        saveName = challengeSaveName;
+        load(true);
+        return;
+    }
+
+    if (challengeSave.challengeMode !== 0)
+        saveName = challengeSaveName;
 
     for (const property in toLoad.stats) {
         if (toLoad.stats.hasOwnProperty(property)) {
@@ -491,6 +514,7 @@ function load() {
             toLoad.dungeons.push([]);
         }
     }*/
+    dungeons = [[], [], []];
     const level = { ssChance: 1, completed: 0 };
     let floors = 0;
     if(toLoad.dungeons === undefined) toLoad.dungeons = copyArray(dungeons);
@@ -506,6 +530,7 @@ function load() {
         }
     }
 
+    trials = [[], [], [], [], []];
     const trialLevel = {completed: 0};
     if(toLoad.trials === undefined) toLoad.trials = copyArray(trials);
     for (let i = 0; i < trials.length; i++) {
@@ -554,8 +579,7 @@ function load() {
             }
         }
     }
-    
-    challenge = toLoad.challenge === undefined ? challenge : toLoad.challenge;
+
     loadChallenge();
     view.initalize();
 
@@ -599,6 +623,16 @@ function load() {
         dungeons[0][4].completed = Math.floor(total / 32);
         dungeons[0][5].completed = Math.floor(total / 64);
         towns[0].totalSDungeon = dungeons[0][0].completed + dungeons[0][1].completed + dungeons[0][2].completed + dungeons[0][3].completed + dungeons[0][4].completed + dungeons[0][5].completed;
+    }
+
+    //Handle players on previous challenge system
+    if(toLoad.challenge !== undefined && toLoad.challenge !== 0) {
+        challengeSave.challengeMode = toLoad.challenge;
+        challengeSave.inChallenge = true;
+
+        saveName = challengeSaveName;
+        save();
+        location.reload();
     }
 
     if(getExploreProgress() >= 100) addResource("glasses", true);
@@ -661,9 +695,12 @@ function save() {
     toSave.buffCaps = buffCaps;
 
     toSave.date = new Date();
-    toSave.challenge = challenge;
     toSave.totalOfflineMs = totalOfflineMs;
     toSave.totals = totals;
+    
+    toSave.challengeSave = challengeSave;
+    for (const challengeProgress in challengeSave)
+        toSave.challengeSave[challengeProgress] = challengeSave[challengeProgress];
 
     window.localStorage[saveName] = JSON.stringify(toSave);
 }
@@ -680,6 +717,7 @@ function importSave() {
     const saveData = document.getElementById("exportImport").value;
     if (saveData === "") {
         if (confirm("Importing nothing will delete your save. Are you sure you want to delete your save?")) {
+            challengeSave = {};
             clearSave();
         } else {
             return;
@@ -728,14 +766,44 @@ function importCurrentList() {
 }
 
 function beginChallenge(challengeNum) {
-    if (confirm("Beginning a new challenge will delete your current save. Are you sure you have an export saved to your computer?")) {
-        clearSave();
-        challenge = challengeNum;
-        load();
-        totalOfflineMs = 1000000;
+    console.log("Beginning Challenge");
+    if (window.localStorage[challengeSaveName] && window.localStorage[challengeSaveName] !== "") {
+        if (confirm("Beginning a new challenge will delete your current challenge save. Are you sure you want to begin?"))
+            window.localStorage[challengeSaveName] = "";
+        else
+            return false;
+    }
+    if (challengeSave.challengeMode === 0) {
+        challengeSave.inChallenge = true;
+        save();
+        console.log ("Saving to: " + saveName); 
+    }
+    challengeSave.challengeMode = challengeNum;
+    saveName = challengeSaveName;
+    load(true);
+    totalOfflineMs = 1000000;
+    save();
+    pauseGame();
+    restart();
+}
+
+function exitChallenge() {
+    if (challengeSave.challengeMode !== 0) {
+        saveName = defaultSaveName;
+        load(false);
+        save();
+        location.reload();
+    }
+}
+
+function resumeChallenge() {
+    if (challengeSave.challengeMode === 0 && window.localStorage[challengeSaveName] && window.localStorage[challengeSaveName] !== "") {
+        challengeSave.inChallenge = true;
+        save();
+        saveName = challengeSaveName;
+        load(true);
+        save();
         pauseGame();
         restart();
-    } else {
-        return;
     }
 }
