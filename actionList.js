@@ -3158,7 +3158,7 @@ Action.BuyPickaxe = new Action("Buy Pickaxe", {
     },
 });
 
-Action.HeroesTrial = new TrialAction("英雄试炼", 0, {
+Action.HeroesTrial = new TrialAction("Heroes Trial", 0, {
     type: "multipart",
     expMult: 0.2,
     townNum: 2,
@@ -5081,7 +5081,7 @@ Action.PurchaseSupplies = new Action("Purchase Supplies", {
     },
 });
 
-Action.DeadTrial = new TrialAction("死亡试炼", 4, {
+Action.DeadTrial = new TrialAction("Dead Trial", 4, {
     type: "multipart",
     expMult: 0.25,
     townNum: 5,
@@ -5958,7 +5958,7 @@ Action.PurchaseKey = new Action("Purchase Key", {
     },
 });
 
-Action.SecretTrial = new TrialAction("秘密试炼", 3, {
+Action.SecretTrial = new TrialAction("Secret Trial", 3, {
     type: "multipart",
     expMult: 0,
     townNum: 7,
@@ -6130,7 +6130,7 @@ Action.BuildTower = new Action("Build Tower", {
     },
 });
 
-Action.GodsTrial = new TrialAction("神之试炼", 1, {
+Action.GodsTrial = new TrialAction("Gods Trial", 1, {
     type: "multipart",
     expMult: 0.2,
     townNum: 8,
