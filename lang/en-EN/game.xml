@@ -573,16 +573,17 @@
 				are absolutely saturated with mana - you think you'll check those out first.
 		    </story>
 		    <story num="4"> <!--Merchanton-->
-				After boring the hermit and witch to get the knowledge they had to offer, you notice a clearing in the forest
-				and see another long path ahead. As soon as you get near the end of the road you notice a busy city called 
-				Merchanton. You set off to explore it and see what you can do in this city, after a bit of exploring you find that
-				there is a casino and a bar right around the corner. After getting some cash and getting wasted in a past loop
-				you met the leader of the adventure guild, they explain that there is a large dungeon in this city and you might
-				need some help clearing it. After another loop and your wasted again, but the leader of the crafting guild comes
-				in and notices your gear isn't up to par and suggests to join the guild.
+				It's always nice, after doing the same dull tasks as always, when you reach the forest and get to do
+				something new. Whether you're exploring, hunting, learning something or just sitting by the waterfall,
+				the forest always makes a great backdrop. However, as pleasant as it's been here, it's time to move on,
+				at least for now. It would be a long trip, but luckily, after all your exploring, you know some shortcuts,
+				and before long, Merchanton emerges out of the trees. There's a lot to do here! Maybe one of the guilds
+				can help you with your looping problem! Or maybe there's a book in the library that can lead you to a
+				solution! Or maybe... or maybe... that all sounds like a lot of work, and you have been going through a
+				lot lately. Maybe before any of that, you should find a bar and get a drink.
 			</story>
 			<story num="5"> <!--Change 5 to Mt. Olympus-->
-				You have explored the guild options in Merchenton and have maybe made a few guild friends along the way, Time to grab
+				You have explored the guild options in Merchanton and have maybe made a few guild friends along the way, Time to grab
 				pickaxe and start the climb! Reaching Mt. Olympus takes alot of climbing but during the climb you discover these mana
 				geyser but looks like they can be harvested with a pickaxe. You discover runes scattered around the mountain, maybe
 				deciphering them might be useful and about half way up this mountain you discover a massive cavern with room to take a
@@ -1247,7 +1248,7 @@
             mana. Buys all the mana you can.<br>The merchant only has 7500 mana to sell, though.<br>Unlocked at 20% Explored.
         ]]></tooltip2>
             <story_1><![CDATA[<b>Bought Mana:</b>⮀ You walk up to the mana stand ready to throw your money at the man behind the counter, but before you can get a word out, he interrupts you, saying "I'm sure you understand my reasonable prices, yes? Times are hard during this drought - my colleagues are all out of stock, and I only have 7500 mana until I am as well." His prices are ridiculous, but you pay them with gritted teeth, having no other option.]]></story_1>
-			<story_2><![CDATA[<b>7500 Mana Bought:</b>⮀ You buy everything the man has for sale, and he immediately says "I have no more stock today, goodbye." He then proceeds to slam the stall window on you. As he disappears, you spot a shadow of fear cross his face. He must have to deal with a lot of angry would-be customers these days.]]></story_2>
+			<story_2><![CDATA[<b>7500 Mana Bought:</b>⮀ After you buy everything the man has for sale, he immediately states that he's out of stock and proceeds to slam the stall window on you. As he disappears, you spot a shadow of fear cross his face. He must have to deal with a lot of angry would-be customers these days.]]></story_2>
         </buy_mana_challenge>
         <meet_people>
             <label>Meet People</label>
@@ -1636,7 +1637,7 @@
             <tooltip><![CDATA[
             You can listen to him yammer while making light healing and remedy potions.<br>You're starting to think the potion that caused you to loop time was a complex one.<br>You provide the ingredients; costs 10 herbs.<br>Gives alchemy and magic skill.<br>Unlocked with both 40% Hermit Knowledge and 60 Magic.
         ]]></tooltip>
-            <story_1><![CDATA[<b>Alchemy learned:</b>⮀ You ask the hermit about potion's and are regaled of tales from his time as an apprentice, the mistakes he made and how one time, he managed to douse his masters beard with potion that would wildly change the color of it every minute, for a full year his master had to deal with a beard that was either glowing white like pure fallen snow or was more fit to be in the sky after rain. You take notes as the hermit speaks.]]></story_1>
+            <story_1><![CDATA[<b>Alchemy learned:</b>⮀ You ask the hermit about potions and are regaled of tales from his time as an apprentice, the mistakes he made and how one time, he managed to douse his masters beard with potion that would wildly change the color of it every minute, for a full year his master had to deal with a beard that was either glowing white like pure fallen snow or was more fit to be in the sky after rain. You take notes as the hermit speaks.]]></story_1>
             <story_2><![CDATA[<b>25 Alchemy:</b>⮀ You sit by the fire inside the hermits clearing, fire dancing merrily away as he feeds magical herbs to the fire while throwing precise amounts into the large pot boiling above it. The stories he tells of his youth and learning alchemy under his master make you howl with laughter and provoke deep thoughtful silences.]]></story_2>
             <story_3><![CDATA[<b>100 Alchemy:</b>⮀ As you learn more and more about alchemy, the potion that caused you to start looping begins to seem more and more hideously complex. Something as simple as your reputation can effect the outcome of a potion. It's more of an art than a science, or anything even easily conveyed really.]]></story_3>
 	     <story_4><![CDATA[<b>500 Alchemy:</b>⮀ Alchemy helps more and more with the potion trader that you now can get tons of gold from him in the next town, you wonder how much it will take to bankrupt them.]]></story_4>
