@@ -362,6 +362,7 @@
             <meta>
                 <title>挑战</title>
             </meta>
+            <standard_game>The original experience, as the game was meant to be played.</standard_game>
             <mana_drought>新手村的法力商人只出售 5k 法力, 并且价格翻倍. 没有其他法力商人.</mana_drought>
             <noodle_arms>你没有个人战斗力. 所有战斗力都得依靠队友. 个人战斗力等于你队友和僵尸中更高的那个的一半.</noodle_arms>
             <mana_burn>你有能跑一整天的法力, 但一旦法力耗尽, 你就会立即停止. 你能走多远?</mana_burn>

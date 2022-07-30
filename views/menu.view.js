@@ -162,6 +162,11 @@ Views.registerView("menu", {
             开始挑战前别忘了导出你的存档.<br>
             <b>开始挑战会完全清空你的存档.</b><br>
             `;
+        if (challengeSave.challengeMode !== 0 || 1===1)
+            html += `<div class='button showthat control' style='margin-top: 2px;' onclick='exitChallenge()'>Exit Challenge 
+                </div>
+                <div class='button showthat control' style='margin-top: 2px;' onclick='resumeChallenge()'>Resume Challenge 
+                </div><br>`;
         html += 
         `<div class='button showthat control' style='margin-top: 2px;' onclick='beginChallenge(1)'>法力枯竭 
             <div class='showthis' style='color:black;width:230px;margin-left:100px;'>${_txt("menu>challenges>mana_drought")}</div>
