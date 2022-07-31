@@ -1629,8 +1629,8 @@
             Such simple uses to help out with everyday tasks. Genius, really. It's like pulling teeth getting this knowledge from the Hermit though.<br>Unlocked with both 20% Hermit Knowledge and 50 Magic.
         ]]></tooltip>
             <story_1><![CDATA[<b>1 Practical magic:</b>⮀ You pester the hermit about magic and how to use it to make things easier on yourself. It's surprisingly handy to be able to move things around without havin to be there, rather than smashing pots you can instead lift them or knock them off edges. Why open a lock when you can unlock a latch with Mage Hand, why walk over to the wardrobe if you can just fling it open and ransack it? Magic, but practical. You're a little astonished that not everyone does this.]]></story_1>
-	     <story_2><![CDATA[<b>100 Practical magic:</b>⮀ Doing every tasks are so easy you can take a nap and do them, if only you could have this for the real world.]]></story_2>
-	     <story_3><![CDATA[<b>1,000 Practical magic:</b>⮀ You get so much mana and gold that doing this was so worth it, your loops have been enhanced ten fold!]]></story_3>
+			<story_2><![CDATA[<b>100 Practical magic:</b>⮀ Slowly, slowly, you're starting to become competent at the Hermit's special brand of magic - and it's really convenient. Just the other loop, he taught you a trick to find the value of a pile of coins with a small gesture and a single word!]]></story_2>
+			<story_3><![CDATA[<b>400 Practical magic:</b>⮀ You barely have to pay attention to your magic anymore. Doors open before you reach them, blood and grime vanishes at a thought, and anything you reach for jumps straight into your hands. Life has never been so easy.]]></story_3>
         </practical_magic>
         <learn_alchemy>
             <label>Learn Alchemy</label>
