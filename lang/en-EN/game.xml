@@ -1324,7 +1324,7 @@
             Take a break and socialize.<br>Gives people met progress equivalent to 16 Meet People actions.<br>Costs 2 reputation.<br>Unlocked at 30% Investigated.
         ]]></tooltip>
             <story_1><![CDATA[<b>Party thrown:</b>⮀ You announce that its your birthday and you want to throw a party. You commandeer the village square and the people necessary to make it happen. You don't have the gold but people aren't quite able to say no. You promise you'll pay it off with the money from this current job.]]></story_1>
-		<story_2><![CDATA[<b>10 Party thrown in a loop:</b>⮀ You throw a giant celebration for the whole town, had a whole parade and everything. The town's people celebrated for hours and you know they will forget everything next loop.]]></story_2>
+			<story_2><![CDATA[<b>10 Party thrown in a loop:</b>⮀ You throw a massive celebration that lasts the entire day. The whole town is invited, and since you're offering free food, most of them even show up! There are multiple parades as well as a dunk tank, the latter of which doesn't come cheap, but you don't care. You told them you'll pay it off "later", and since you just healed practically half the town, they didn't really have any grounds to refuse you.]]></story_2>
         </throw_party>
         <warrior_lessons>
             <label>Warrior Lessons</label>
