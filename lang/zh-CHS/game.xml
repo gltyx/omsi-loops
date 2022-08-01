@@ -1003,11 +1003,11 @@
             每次勘测需要一张地图.<br>
             当前每次行动给予 <div class='surveySkill'></div> 经验.
             ]]></tooltip>
-		<story_1><![CDATA[<b>20% World Survey:</b>⮀ You decide it is time to discover the world, the journey is long but so worth.]]></story_1>
-		<story_2><![CDATA[<b>40% World Survey:</b>⮀ Crazy how discovering the world over again is shedding a new light on the world, new items you never seen have just been out of place.]]></story_2>
-		<story_3><![CDATA[<b>60% World Survey:</b>⮀ Nobody is stopping you from exploring more and more, it feels nice. At least the view is spectacular!]]></story_3>
-		<story_4><![CDATA[<b>80% World Survey:</b>⮀ You are almost done with your trip and you have enjoyed every second of it. You wish the explorer's guild has found more locations to visit, but they couldn't find anything new.]]></story_4>
-		<story_5><![CDATA[<b>100% World Survey:</b>⮀ You have discovered the whole world over again, at least there is a fox to say swiper, no swiping to.]]></story_5>
+		<story_1><![CDATA[<b>20% 勘测:</b>⮀ 你决定了, 是时候仔细探索世界了, 你虽然走了很远但是遗漏了很多东西.]]></story_1>
+		<story_2><![CDATA[<b>40% 勘测:</b>⮀ 疯狂掘地三尺地重新探索似乎带来了新的曙光, 有些你之前没见过的东西出现了.]]></story_2>
+		<story_3><![CDATA[<b>60% 勘测:</b>⮀ 没有人能阻止你不断探索, 感觉真棒. 至少景色相当壮观!]]></story_3>
+		<story_4><![CDATA[<b>80% 勘测:</b>⮀ 你的探索就快结束了, 你享受着每一秒. 你希望探险者公会有更多的地方供你探索, 但他们并不能找到更多.]]></story_4>
+		<story_5><![CDATA[<b>100% 勘测:</b>⮀ 你重新探索了整个世界, 甚至找到了个会说 "捣蛋鬼别捣蛋" 的狐狸.]]></story_5>
         </survey>
         <assassin>
             <label>刺杀</label>
@@ -1017,14 +1017,14 @@
             每点法力给予 (开方(实用魔法) + 盗窃 + 刺杀) * 主能力/1000 * 开方(完成次数/100) / 绝对值(声望) / 心脏^2 进度点.<br>
             奖励一个心脏.
             ]]></tooltip>
-		<story_1><![CDATA[<b>1 Assassinated in Beginnersville:</b>⮀ You killed one of the town's people quickly and quietly, got the heart and moved on...]]></story_1>
-		<story_2><![CDATA[<b>1 Assassinated in Forest Path:</b>⮀ How was there more people in the forest besides the hermit and the witch? who knows, all that matters is you killed someone and left with the heart.]]></story_2>
-		<story_3><![CDATA[<b>1 Assassinated in Merchanton:</b>⮀ You walked into the casino, looked around to check for cameras and killed someone in the storage room. You got the heart and left quickly before being spotted.]]></story_3>
-		<story_4><![CDATA[<b>1 Assassinated in Mt. Olympus:</b>⮀ You climbed the Mountain and killed one of the yeti's for their heart, what they get for not selling snowcones.]]></story_4>
-		<story_5><![CDATA[<b>1 Assassinated in Valhalla:</b>⮀ Gods are looking all around but someone not paying tax on your property comes first, you kill them and grab the heart and quickly leave.]]></story_5>
-		<story_6><![CDATA[<b>1 Assassinated in Startington:</b>⮀ Everyone here is almost close to being dead so should be quick and easy. You get the heart so quick and moved on.]]></story_6>
-		<story_7><![CDATA[<b>1 Assassinated in Jungle Path:</b>⮀ Survivers are lost so you can use that to your advantage, 1 quick kill later and you can move on. Don't forget the heart!]]></story_7>
-		<story_8><![CDATA[<b>1 Assassinated in Commerenceville:</b>⮀ Last task on the list and there are a ton of corrupted people here, plus the assassnation guild is here to collect all the hearts you gotten.]]></story_8>
+		<story_1><![CDATA[<b>新手村 1 刺杀:</b>⮀ 你隐蔽而迅速的击杀了村子里的一个人, 取走了心脏离开了...]]></story_1>
+		<story_2><![CDATA[<b>森林小径 1 刺杀:</b>⮀ 为什么森林里有女巫和隐士以外的人? 谁知道呢, 重要的是你杀了个人然后带着心脏离开了.]]></story_2>
+		<story_3><![CDATA[<b>商业小镇 1 刺杀:</b>⮀ 你走进赌场, 小心避开摄像头然后在储藏室杀了人. 你取走心脏并在被发现前迅速离开了.]]></story_3>
+		<story_4><![CDATA[<b>奥林匹斯山 1 刺杀:</b>⮀ 你爬上山杀死了一个雪人并取走了心脏, 他们除了扔雪球以外还有什么用?]]></story_4>
+		<story_5><![CDATA[<b>瓦尔哈拉 1 刺杀:</b>⮀ 神在巡视但有个不愿意交租的人进入了你的视野, 你取走了他的心脏并迅速离开了.]]></story_5>
+		<story_6><![CDATA[<b>初始城镇 1 刺杀:</b>⮀ 这里的人似乎都快死了所以你得快点. 你迅速取走了心脏继续前进.]]></story_6>
+		<story_7><![CDATA[<b>丛林小路 1 刺杀:</b>⮀ 幸存者迷路了, 你可以利用这一点, 只要杀 1 个就行. 别忘了心脏!]]></story_7>
+		<story_8><![CDATA[<b>商业村庄 1 刺杀:</b>⮀ 名单末尾是一大堆腐败的贪官, 你可以顺手把它们交给这里的刺客公会.]]></story_8>
         </assassin>
         <!--ruins-->
         <ruinsZ1>
@@ -1033,9 +1033,9 @@
             <tooltip><![CDATA[
             在你探索时, 你发现周围有许多古遗迹. 也许这值得你花些时间探索一下.
             ]]></tooltip>
-		<story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Forest and notice some weird looking rocks, wonder what they do.]]></story_1>
-		<story_2><![CDATA[<b>50% delved:</b>⮀ After further investgating you realize that the rocks are needed for a tower somewhere....]]></story_2>
-		<story_3><![CDATA[<b>100% delved:</b>⮀ You have discover everything in these ruins, and notice that only these temporal stones exist here.]]></story_3>
+		<story_1><![CDATA[<b>10% 翻找:</b>⮀ 你决定探索森林小径的遗迹并注意到了一些奇怪的石头, 它们能干什么?]]></story_1>
+		<story_2><![CDATA[<b>50% 翻找:</b>⮀ 在后面的调查中你发现这些石头也许可以用来建造一座高塔....]]></story_2>
+		<story_3><![CDATA[<b>100% 翻找:</b>⮀ 你找遍了这个遗迹, 这里只有这么多时间石头了.]]></story_3>
         </ruinsZ1>
         <ruinsZ3>
             <label>遗迹</label>
@@ -1043,9 +1043,9 @@
             <tooltip><![CDATA[
             在你探索时, 你发现周围有许多古遗迹. 也许这值得你花些时间探索一下.
             ]]></tooltip>
-		<story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Mt. Olympus and notice some weird looking rocks, wonder what they do.]]></story_1>
-		<story_2><![CDATA[<b>50% delved:</b>⮀ After further investgating you realize that the rocks are needed for a tower somewhere....]]></story_2>
-		<story_3><![CDATA[<b>100% delved:</b>⮀ You have discover everything in these ruins, and notice that only these temporal stones exist here.]]></story_3>
+		<story_1><![CDATA[<b>10% 翻找:</b>⮀ 你决定探索奥林匹斯山的遗迹并注意到了一些奇怪的石头, 它们能干什么?]]></story_1>
+		<story_2><![CDATA[<b>50% 翻找:</b>⮀ 在后面的调查中你发现这些石头也许可以用来建造一座高塔....]]></story_2>
+		<story_3><![CDATA[<b>100% 翻找:</b>⮀ 你找遍了这个遗迹, 这里只有这么多时间石头了.]]></story_3>
         </ruinsZ3>
         <ruinsZ5>
             <label>遗迹</label>
@@ -1053,9 +1053,9 @@
             <tooltip><![CDATA[
             在你探索时, 你发现周围有许多古遗迹. 也许这值得你花些时间探索一下.
             ]]></tooltip>
-		<story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Startington and notice some weird looking rocks, wonder what they do.]]></story_1>
-		<story_2><![CDATA[<b>50% delved:</b>⮀ After further investgating you realize that the rocks are needed for a tower somewhere....]]></story_2>
-		<story_3><![CDATA[<b>100% delved:</b>⮀ You have discover everything in these ruins, and notice that only these temporal stones exist here.]]></story_3>
+		<story_1><![CDATA[<b>10% 翻找:</b>⮀ 你决定探索初始小镇的遗迹并注意到了一些奇怪的石头, 它们能干什么?]]></story_1>
+		<story_2><![CDATA[<b>50% 翻找:</b>⮀ 在后面的调查中你发现这些石头也许可以用来建造一座高塔....]]></story_2>
+		<story_3><![CDATA[<b>100% 翻找:</b>⮀ 你找遍了这个遗迹, 这里只有这么多时间石头了.]]></story_3>
         </ruinsZ5>
         <ruinsZ6>
             <label>遗迹</label>
@@ -1063,9 +1063,9 @@
             <tooltip><![CDATA[
             在你探索时, 你发现周围有许多古遗迹. 也许这值得你花些时间探索一下.
             ]]></tooltip>
-		<story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Jungle Path and notice some weird looking rocks, wonder what they do.]]></story_1>
-		<story_2><![CDATA[<b>50% delved:</b>⮀ After further investgating you realize that the rocks are needed for a tower somewhere....]]></story_2>
-		<story_3><![CDATA[<b>100% delved:</b>⮀ You have discover everything in these ruins, and notice that only these temporal stones exist here.]]></story_3>
+		<story_1><![CDATA[<b>10% 翻找:</b>⮀ 你决定探索丛林小路的遗迹并注意到了一些奇怪的石头, 它们能干什么?]]></story_1>
+		<story_2><![CDATA[<b>50% 翻找:</b>⮀ 在后面的调查中你发现这些石头也许可以用来建造一座高塔....]]></story_2>
+		<story_3><![CDATA[<b>100% 翻找:</b>⮀ 你找遍了这个遗迹, 这里只有这么多时间石头了.]]></story_3>
         </ruinsZ6>
         <haulZ1>
             <label>拖动</label>
@@ -1078,8 +1078,8 @@
             你确信你可以用它们做些什么. 它们太重了以至于你每次循环只能拖动一块.<br>
             每一千块石头里有一块时间石头.
         ]]></tooltip>
-		<story_1><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ Slowly you pick up the stones one by one and move them to Valley of Olympus. Make sure to use your legs when lifting! ]]></story_1>
-		<story_2><![CDATA[<b>Moved 250 Temporal Stones:</b>⮀ Finally all the stones have been moved from the Forest Path to Valley of Olympus.]]></story_2>
+		<story_1><![CDATA[<b>移动 100 时间石头:</b>⮀ 你慢慢地一个一个地把石头拖到奥林匹斯山谷. 在搬运的时候别忘了用上腿! ]]></story_1>
+		<story_2><![CDATA[<b>移动 250 时间石头:</b>⮀ 你终于把所有森林小径的石头搬到奥林匹斯山谷了.]]></story_2>
         </haulZ1>
         <haulZ3>
             <label>拖动</label>
@@ -1092,8 +1092,8 @@
             你确信你可以用它们做些什么. 它们太重了以至于你每次循环只能拖动一块.<br>
             每一千块石头里有一块时间石头.
         ]]></tooltip>
-		<story_1><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ Slowly you pick up the stones one by one and move them to Valley of Olympus. Make sure to use your legs when lifting! ]]></story_1>
-		<story_2><![CDATA[<b>Moved 250 Temporal Stones:</b>⮀ Finally all the stones have been moved from the Startington to Valley of Olympus.]]></story_2>
+		<story_1><![CDATA[<b>移动 100 时间石头:</b>⮀ 你慢慢地一个一个地把石头拖到奥林匹斯山谷. 在搬运的时候别忘了用上腿! ]]></story_1>
+		<story_2><![CDATA[<b>移动 250 时间石头:</b>⮀ 你终于把所有初始城镇的石头搬到奥林匹斯山谷了.]]></story_2>
         </haulZ3>
         <haulZ5>
             <label>拖动</label>
@@ -1106,8 +1106,8 @@
             你确信你可以用它们做些什么. 它们太重了以至于你每次循环只能拖动一块.<br>
             每一千块石头里有一块时间石头.
         ]]></tooltip>
-		<story_1><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ Slowly you pick up the stones one by one and move them to Valley of Olympus. Make sure to use your legs when lifting! ]]></story_1>
-		<story_2><![CDATA[<b>Moved 250 Temporal Stones:</b>⮀ Finally all the stones have been moved from the Jungle Path to Valley of Olympus.]]></story_2>
+		<story_1><![CDATA[<b>移动 100 时间石头:</b>⮀ 你慢慢地一个一个地把石头拖到奥林匹斯山谷. 在搬运的时候别忘了用上腿! ]]></story_1>
+		<story_2><![CDATA[<b>移动 250 时间石头:</b>⮀ 你终于把所有丛林小路的石头搬到奥林匹斯山谷了.]]></story_2>
         </haulZ5>
         <haulZ6>
             <label>拖动</label>
@@ -1120,8 +1120,8 @@
             你确信你可以用它们做些什么. 它们太重了以至于你每次循环只能拖动一块.<br>
             每一千块石头里有一块时间石头.
         ]]></tooltip>
-		<story_1><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ Slowly you pick up the stones one by one and move them to Valley of Olympus. Make sure to use your legs when lifting! ]]></story_1>
-		<story_2><![CDATA[<b>Moved 250 Temporal Stones:</b>⮀ Finally all the stones have been moved from the Mt. Olympus to Valley of Olympus.]]></story_2>
+		<story_1><![CDATA[<b>移动 100 时间石头:</b>⮀ 你慢慢地一个一个地把石头拖到奥林匹斯山谷. 在搬运的时候别忘了用上腿! ]]></story_1>
+		<story_2><![CDATA[<b>移动 250 时间石头:</b>⮀ 你终于把所有奥林匹斯山的石头搬到奥林匹斯山谷了.]]></story_2>
         </haulZ6>
         <!--town 1-->
         <map>
@@ -1129,7 +1129,7 @@
             <tooltip><![CDATA[探险者公会教会了你如何绘制地图. 这能让你更好的勘测并发现秘密.<br>
             新手村有个商店会售卖空地图, 每张只要 ]]></tooltip>
             <tooltip2>金块.</tooltip2>
-		<story_1><![CDATA[<b>Bought a Map:</b>⮀ You buy the map and realize that the whole world was flat, but on the bright side you can explore extra areas in other locations!]]></story_1>
+		<story_1><![CDATA[<b>带来一张地图:</b>⮀ 你买了一张地图并发现这个世界真的很小, 但好消息是你可以借此找到没去过的区域!]]></story_1>
         </map>
         <wander>
             <label>漫步</label>
@@ -1154,7 +1154,7 @@
             法力.<br>每 10 个罐子有一个有法力.
         ]]></tooltip2>
             <story_1><![CDATA[<b>50个有法力的罐子：</b>⮀ 您打破过村庄里的每个罐子，也找到了所有有法力的罐子。但亲力亲为实在太浪费时间，而且您吸收法力的技艺也不够完美。您需要寻找更有效率的方法。]]></story_1>
-		<story_2><![CDATA[<b>75 Pots with mana:</b>⮀ ]You found and smashed every pot there was in this village which you thought was impossible, welp more mana for you and your future loops]]></story_2>
+		<story_2><![CDATA[<b>75 有法力的罐子:</b>⮀ ]你找到并打碎了所有你认为不可能有罐子的地方的罐子, 为你未来的循环提供更多法力]]></story_2>
         </smash_pots>
         <pick_locks>
             <label>开锁</label>
@@ -1186,7 +1186,7 @@
             你发誓你肯定在什么地方准备了一副备用眼镜. 你几乎翻遍了世界的所有角落. 每个角落的秘密都被你挖掘出来. 你终于找到了它 - 在一个任何人都想不到的地方. 你的头上.<br>
             你现在总是戴着眼镜开始循环.]]>
             </tooltip>
-            <story_1><![CDATA[<b>Found Glasses:</b>⮀ Wait did you have your glasses above your head and you still bought another one? Glad you had high enough chrisma skill to pull that off.]]></story_1>
+            <story_1><![CDATA[<b>找到眼镜:</b>⮀ 等等你是不是头上顶着个眼镜又买了一副眼镜? 很高兴你的感知足够高能发现它.]]></story_1>
         </found_glasses>
         <buy_mana_z1>
             <label>购买法力</label>
@@ -1196,7 +1196,7 @@
             <tooltip2><![CDATA[
             法力. 尽可能的花掉所有金块购买.<br>解锁于 20% 探索度.
         ]]></tooltip2>
-            <story_1><![CDATA[<b>Bought Mana:</b>⮀ Looks like there is a stand that is a man selling mana potions, might need it to contuine the loop! Wait that was odd there was a stand out in the middle of the day selling the one thing you need, weird.]]></story_1>
+            <story_1><![CDATA[<b>购买法力:</b>⮀ 这里似乎是一个出售法力药水的商店, 你也许需要它来继续循环! 可是大白天路中间刚好有个商人刚好在卖你刚好非常需要的商品, 真的很奇怪.]]></story_1>
         </buy_mana_z1>
         <buy_mana_challenge>
             <label>购买法力</label>
@@ -1206,8 +1206,8 @@
             <tooltip2><![CDATA[
             法力. 尽可能的花掉所有金块购买.<br>法力商人只有 7500 法力卖, 尽管如此.<br>解锁于 20% 探索度.
         ]]></tooltip2>
-            <story_1><![CDATA[<b>Bought Mana:</b>⮀ You walk up to the stand and the man says "Times are hard my friend, Mana drought has hit the world hard so my friends are all out of stock. Only have 7500 mana to give and that is it."]]></story_1>
-		<story_2><![CDATA[<b>7500 Mana Bought:</b>⮀ The man says "Welp, I'm all out of stock for this loop but I wish you the best on your journey friend." 3 seconds later he vanishes, no where to be seen.]]></story_2>
+            <story_1><![CDATA[<b>购买法力:</b>⮀ 你走向商店, 商人对你说 "时运不济我的朋友, 法力枯竭严重影响了产量所以我们也没货了. 只有 7500 法力, 这就是全部了."]]></story_1>
+		<story_2><![CDATA[<b>7500 法力购买:</b>⮀ 商人说 "好吧, 这个循环我已经没货了, 祝你旅途愉快." 3 秒后他消失了, 你找不到他了.]]></story_2>
         </buy_mana_challenge>
         <meet_people>
             <label>结识朋友</label>
@@ -1230,8 +1230,8 @@
             <story_1><![CDATA[<b>力量训练:</b>⮀ 你举起装满水的木桶, 并不断地蹲起. 然后把它放在你的背上进行俯卧撑. 它肯定能让你锻炼肌肉.]]></story_1>
             <story_2><![CDATA[<b>100 力量天赋:</b>⮀ 你身体逐渐适应了训练的压力. 你已经可以准确的判断桶该举到哪, 然后本能的停止.]]></story_2>
             <story_3><![CDATA[<b>1,000 力量天赋:</b>⮀ 你的力量训练越来越快了. 你似乎可以听到你的法力在发出满足的呻吟, 你的身体越来越强壮.]]></story_3>
-		<story_4><![CDATA[<b>10,000 Strength talent:</b>⮀ It's over 9000! You are so strong that you can flick open pots and can defeat monsters with ease. Your can still push farther beyond your limits and go plus ultra!]]></story_4>
-		<story_5><![CDATA[<b>100,000 Strength talents:</b>⮀ At this point gods are starting to fear you, you have so much strength that anything you touch breaks instantly!]]></story_5>
+		<story_4><![CDATA[<b>10,000 力量天赋:</b>⮀ 超过 9000 啦! 你是如此强壮以至于可以一脚踢爆罐子或轻松击败怪物. 你还可以继续超越自己的极限!]]></story_4>
+		<story_5><![CDATA[<b>100,000 力量天赋:</b>⮀ 就力量来说已经超过神了, 你力气太大了以至于摸什么都会坏!]]></story_5>
         </train_strength>
         <short_quest>
             <label>短任务</label>
@@ -1247,7 +1247,7 @@
         ]]></tooltip2>
             <story_1><![CDATA[<b>短任务完成:</b>⮀ 你帮助一个老太太把猫从房子上弄下来, 她非常慷慨的给予了你奖励.]]></story_1>
             <story_2><![CDATA[<b>20 有奖励的短任务:</b>⮀ 你帮助了所有需要帮助的人, 并且这些任务的奖励让你钱包鼓鼓的. 完成工作的满足感让你感到自豪.]]></story_2>
-		<story_3><![CDATA[<b>50 Short Quests with loot in a loop:</b>⮀ You have done every small tasks the town had to do, now the town repects you even more than before!]]></story_3>
+		<story_3><![CDATA[<b>50 有奖励的短任务:</b>⮀ 你做完了整个村子里所有该做的小事, 现在整座小镇都在你心里了!]]></story_3>
         </short_quest>
         <investigate>
             <label>调查</label>
@@ -1275,7 +1275,7 @@
         ]]></tooltip2>
             <story_1><![CDATA[<b>完成长任务:</b>⮀ 你清理了地窖里的老鼠; 至少有六十只讨厌的老鼠. 奖励相当慷慨, 你的声望也有了小小的提升.]]></story_1>
             <story_2><![CDATA[<b>10 有奖励的长任务完成:</b>⮀ 你清理了地窖, 帮助别人盖房子, 采集染料用的花, 在面包店打工, 扔垃圾, 还帮女裁缝给丈夫做好了礼物. 你乐于助人的声望广为传播. 大家至少都愿意听你说话.]]></story_2>
-		<story_3><![CDATA[<b>25 Long Quests with loot in a loop:</b>⮀ The town has nothing left for you to do at this point and suggest that maybe you might find more work somewhere else. They appericate everything you did.]]></story_3>
+		<story_3><![CDATA[<b>25 有奖励的长任务完成:</b>⮀ 村子已经没什么能做的了, 他们建议你找个工作. 他们感谢你做的一切.]]></story_3>
         </long_quest>
         <throw_party>
             <label>参加派对</label>
@@ -1283,7 +1283,7 @@
             休息一下去参加社交活动.<br>以结识朋友的 16 倍的效果推进已结识朋友进度.<br>消耗 2 声望.<br>解锁于 30% 已调查.
         ]]></tooltip>
             <story_1><![CDATA[<b>参加派对:</b>⮀ 你宣称今天是你的生日并开了个派对. 你征用了村庄的广场并招募了必须的人. 你虽然没付钱但人们也不好拒绝. 你保证之后会付钱的.]]></story_1>
-		<story_2><![CDATA[<b>10 Party thrown in a loop:</b>⮀ You throw a giant celebration for the whole town, had a whole parade and everything. The town's people celebrated for hours and you know they will forget everything next loop.]]></story_2>
+		<story_2><![CDATA[<b>单次循环 10 次参加派对:</b>⮀ 你举办了一场空前绝后的派对, 有完整的游行庆祝以及其他一切. 村子里的人为你庆祝了数小时, 尽管你知道下次循环他们都不会记得你.]]></story_2>
         </throw_party>
         <warrior_lessons>
             <label>战士课程</label>
@@ -1294,7 +1294,7 @@
             <story_2><![CDATA[<b>100 战斗技能:</b>⮀ 你开始尝试找机会击败铁, 但她还是设法取得了胜利, 事后她明显非常疲惫.]]></story_2>
             <story_3><![CDATA[<b>200 战斗技能:</b>⮀ 你把铁逼到了绝境, 铁的战斗方式逐渐变得凶狠.]]></story_3>
             <story_4><![CDATA[<b>250 战斗技能:</b>⮀ 你终于成功击败了铁, 你的战斗训练总算有了回报. 你感到非常自豪, 直到她拿起巨剑要求再来一场.]]></story_4>
-		<story_5><![CDATA[<b>1,000 Combat:</b>⮀ You decide to honor the rematch and fight with Iron once more, the duel lasts for 2 weeks and you both end up in a draw. She is suprised how far you have come with your training, she tells you that when she was a kid she had to pick up a weapon to help protect the town. She states that monsters would enter town and attack so training was the only way to become who she is today.]]></story_5>
+		<story_5><![CDATA[<b>1,000 战斗技能:</b>⮀ 你决定再次和铁决斗, 战斗持续了两周并最终打平. 她很惊讶你的训练成果, 她说她小的时候曾经拿起武器保卫村子. 她担心怪物会卷土重来所以从未懈怠.]]></story_5>
         </warrior_lessons>
         <mage_lessons>
             <label>魔法课程</label>
@@ -1318,10 +1318,10 @@
         ]]></tooltip>
             <story_1><![CDATA[<b>已治愈病人:</b>⮀ 你被允许去看看病人并尝试治疗. 这是很好的机会, 对你和对病人都是. 无论是骨折还是小擦伤, 病人都会非常感谢你.]]></story_1>
             <story_2><![CDATA[<b>单次循环治愈病人 10 次:</b>⮀ 你声名远播, 你几乎清空了整个医院, 护士和治疗师都非常感谢你.]]></story_2>
-		<story_3><![CDATA[<b>100 Patients healed:</b>⮀ You heal so many patients that they can't begin to thank you enough, the nurses suggest you should own this stablishment to help people all over the world.]]></story_3>
-		<story_4><![CDATA[<b>1000 Patinets healed:</b>⮀ You become the doctor, after many loops you can help so many patients that the number is through the roof. The nurses have been having a well deserver break since you can cure people so fast.]]></story_4>
-            <story_5><![CDATA[<b>Failed Action:</b>⮀ You're turned away at the door, the small healers home stating that they can't trust you to not poison the people inside or make the situation worse.]]></story_5>
-		<story_6><![CDATA[<b>50 Restoration:</b>⮀ You realize this skill could help the patients and makes your job slightly easier. Healing is a art and a skill that you don't regret having.]]></story_6>
+		<story_3><![CDATA[<b>100 病人治愈:</b>⮀ 你治愈了许多病人, 护士建议你来运营这个医院来帮助全世界的人.]]></story_3>
+		<story_4><![CDATA[<b>1000 病人治愈:</b>⮀ 你已经是个医生了, 在多次循环后治愈病人的数量达到了一个惊人的数字. 你治愈的速度太快以至于护士都插不上手.]]></story_4>
+            <story_5><![CDATA[<b>行动失败:</b>⮀ 你被禁止进入, 治疗师们认为你很可能会把病人弄伤或者下毒.]]></story_5>
+		<story_6><![CDATA[<b>50 恢复魔法:</b>⮀ 你意识到恢复魔法可以帮助你治愈病人. 治疗是一种艺术, 一种学了就不会后悔的技能.]]></story_6>
             <segment_names>
                 <name>诊断</name>
                 <name>处理</name>
@@ -1476,14 +1476,14 @@
             探索者公会与各种各样的大篷车签订了旅行合同. 他们教会了你获取通行证的秘密手势. 而且这辆车正好还有一些逸散的法力可以在旅途中吸收!<br/>
             前往商业小镇.
         ]]></tooltip>
-		 <story_1><![CDATA[<b>Hitched a Ride:</b>⮀ The Explores guild wagon is waiting on the edge of town, you give them the signel and they give you a lift. The wagon driver says "Welcome aboard fellow guild member, we are headed to merchanton to get a few drinks. Wouldn't mind giving you a lift." The wagon members are singing all the way to merchanton and the wagon driver says "We have arrived in Merchanton! I wish you the best of luck on your journey!" You thank the driver and depart from the wagon.]]></story_1>
+		 <story_1><![CDATA[<b>搭便车:</b>⮀ 探索者公会的马车就在村子的边上停着, 你向他们打暗号就能上车. 马夫说 "欢迎上车公会同胞, 我们打算去商业小镇喝一杯. 不介意捎你一程." 在去往商业小镇的路上马夫一直唱着歌, 到了之后他说 "我们到商业小镇了! 祝你旅途顺利!" 你感谢了马夫然后下了车.]]></story_1>
         </hitch_ride>
         <open_rift>
             <label>打开裂缝</label>
             <tooltip><![CDATA[
             利用你渊博的黑暗知识, 你可以打开一条通往初始小镇的裂缝.<br>不幸的是, 它看上去并不能让你带着补给通过.<br>解锁于 300 黑暗魔法和 100 空间魔法.
         ]]></tooltip>
-            <story_1><![CDATA[<b>Opening the Rift:</b>⮀ After speaking with the Witch she gives you a spell to open a rift of some sort. You use your magic and a small rift opens in front of you, luckily you arn't getting thrown into it this time. You take a step in the rift and you have entered Startington!]]></story_1>
+            <story_1><![CDATA[<b>打开裂缝:</b>⮀ 你利用女巫那里学来的知识张开了一道裂缝. 利用你深厚的魔法知识, 你似乎总算可以穿过它了. 你踏入了裂缝然后你就到了初始城镇!]]></story_1>
         </open_rift>
         <!--town 2-->
         <explore_forest>
