@@ -250,7 +250,7 @@ function setAdjustedTicks(action) {
         newCost += action.stats[actionStatName] / (1 + getLevel(actionStatName) / 100);
     }
     action.rawTicks = action.manaCost() * newCost - 0.000001;
-    action.adjustedTicks = Math.ceil(action.rawTicks);
+    action.adjustedTicks = Math.max(1, Math.ceil(action.rawTicks));
 }
 
 function calcSoulstoneMult(soulstones) {
