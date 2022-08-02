@@ -356,7 +356,7 @@ function unlockTown(townNum) {
         townsUnlocked.sort();
         // refresh current
         view.showTown(townNum);
-        view.requestUpdate("createTravelMenu",null);
+        view.requestUpdate("updateTravelMenu",null);
     }
     let cNum = challengeSave.challengeMode;
     if (cNum !== 0) {

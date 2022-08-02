@@ -552,7 +552,7 @@
                 often stored in pottery around town, perhaps you'll start there ...
             </story>
             <story num="1"> <!--First Soulstone-->
-                You reach the end of the dungeon, where a softly glowing orb floats on a pedastal. You've found the
+                You reach the end of the dungeon, where a softly glowing orb floats on a pedestal. You've found the
                 dungeon core - for the first level of the dungeon, at least. As you grasp it, the essence dives into
                 you, infusing your very being with the power it holds. It is a small amount of power, but this is a
                 small dungeon. You'll be back to take this power again, knowing with the foreign knowledge implanted
@@ -565,81 +565,83 @@
                 put more mana into the world to take the core's benefits out of it. You shrug, accepting yet another
                 oddity of the loops.
             </story>
-		<story num="3"> <!--Change 3 to Forest-->
-		   You have bought the supplies and began your journey, down the road you spot a lush forest. As you set up camp
-		   you begin exploring the forest noticing mana crystals sprawling on the ground everywhere in this forest.
-		   Animals are also roaming around and herbs are everywhere in the forest. Later on your journey you notice
-		   there is this old dusty road that and a hermit living on the side of the road, wonder what knowledge the
-		   hermit could offer.
+			<story num="3"> <!--Change 3 to Forest-->
+				After spending most of a loop preparing, you're finally ready to leave Beginnersville. In a way, you're
+				going to miss this town, and the thought of leaving almost brings a tear to your eye - until you realize
+				you'll just be back next loop. Grumbling, you set off, hiking into the forest, but by the time you're
+				ready to make camp, you're in a good mood again. The forest is beautiful, teeming with life, and looks
+				to have boundless places to explore. Best of all, on your way here, you passed several locations that
+				are absolutely saturated with mana - you think you'll check those out first.
 		    </story>
 		    <story num="4"> <!--Merchanton-->
-		  After boring the hermit and witch to get the knowledge they had to offer, you notice a clearing in the forest
-		  and see another long path ahead. As soon as you get near the end of the road you notice a busy city called 
-		  Merchanton. You set off to explore it and see what you can do in this city, after a bit of exploring you find that
-		  there is a casino and a bar right around the corner. After getting some cash and getting wasted in a past loop
-		  you met the leader of the adventure guild, they explain that there is a large dungeon in this city and you might
-		  need some help clearing it. After another loop and your wasted again, but the leader of the crafting guild comes
-		  in and notices your gear isn't up to par and suggests to join the guild.
-		</story>
-		<story num="5"> <!--Change 5 to Mt. Olympus-->
-		  You have explored the guild options in Merchenton and have maybe made a few guild friends along the way, Time to grab
-		  pickaxe and start the climb! Reaching Mt. Olympus takes alot of climbing but during the climb you discover these mana
-		  geyser but looks like they can be harvested with a pickaxe. You discover runes scattered around the mountain, maybe
-		  deciphering them might be useful and about half way up this mountain you discover a massive cavern with room to take a
-		  break climbing and explore it, You met these Friendly Trolls in these caverns however they don't sell snowcones...
-		</story>
-		<story num="6"> <!--Good Reputation Story--> <!--Change 6 to Valhalla-->
-		  You have finally reached the top of Mt. Olympus there is a giant door at the very top, a voice rings out "It is time
-		  to face JUDGEMENT of the GODS, HAHAHAHA. Hope you are prepared for judgement!" After waiting for what feels like hours
-		  the voice rings out "You may PASS!". You enter the wonderful place called Valhalla, you	 have a tourist show you around
-		  and even looks like a charity is happening. After exploring you realize also can join charm school or wizard college,
-		  become a citizen, and even fight with the Valkyries. Home of the gods couldn't be any better.
-		</story>
-		<story num="7"> <!--Bad Reputation Story--> <!--Change 7 to Startington-->
-		  The voice rings "You Shall Not PASS!". You feel like you are being lifted and are chucked off Mt. Olymupus and into the
-		  shadow realm. The shadow realm opens up and you hit the floor luckily with only a scratch, after a few hours you finally
-		  can get up and realize that this isn't beginnersville anymore. After closer inspection of the ruins nearby you realize these
-		  ruins is alot more twisted and strange that you thought they were gonna be. You notice these strange pylons and seak to destroy
-		  them and a few minutes later you look and finally notice the giant spire in front of you!
-		</story>
-		<story num="8"> <!--Change 8 to Jungle Path-->
-		  Before you leave Startington you realize you don't have the supplies you got in Beginnersville, but lucky for you Startington
-		  sells another supply set but rumor has it that the shopkeeper is kinda deaf so your haggles won't work on them. You get your 
-		  supplies and you set off down the trail, reminds you of the forest. You walk untill you see a jungle up ahead with ruins all
-		  around, probly best to start exploring them.
-		</story>
-		<story num="9"> <!--Made the Looping Potion--> <!--Change 9 to Looping Potion-->
-		  You have made the Loop Potion after learning alchemistry and grabbing herbs from the forest, you take a bit to brew the
-		  concoction and after it boils a bit and the herbs soak into a nearby mana geyser then you pour it into a bottle. After
-		  a glance you have no doubts that it is the think you spilled back in beginnersville, but you have no idea what to do 
-		  with it now.
-		</story>
-		<story num="10"> <!--Change 10 to Commerceville-->
-		  After you explore the ruins you notice the exit out of here is gonna be blocked of soon might have to beat the loop fast enough.
-		  You just beat the exit just barely and notice that there is another small city, time to pay someone to show you around town! The
-		  guide shows you the explorers guild and explains that they have many perks for joining, nifty! The guide also takes you down
-		  a alley way and shows you that you can join the Thieves Guild to make a little bit of cash. After the guide is done showing
-		  you around town he explains that they are with the tax collectors and you probly should be going now, quickly you make it to
-		  the Bank and you notice a hooded figure might be worth checking what they do.
-		</story>
-		<story num="11"> <!--Change 11 to Valley of Olympus-->
-		  After you take a heafty loan from the bank you can now own Commerceville and leave while you still can, after you walk down the
-		  road you realize you can move the stones from the Jungle and move them to build a great tower. After you build the great tower
-		  you realize you can't reach Valhalla unless you can clear trial of the gods to prove worthy of entering again. After finally 
-		  clearing the trial of the gods, the voice speaks "The 7 gods of this land protect this world, if you want to enter Valhalla 
-		  you can defeat us to be worth of the throne." After a long battle the last god goes down and you gain the power of all 7 gods,
-		  with great power you can end the time loop now and forever!
-		</story>
-		<story num="12"> <!--Finally--> <!-- Change 12 to Ending the Loop-->
-            <![CDATA[
-               You've done it! You've bested the gods themselves and restored time to its rightful flow. You can stop looping at any moment.
-               But, then again, you could keep going. There's always time later...
-               Thanks for playing my fan mod of Idle Loops! 
-               Big shout-out to the wonderful Stop_Sign for creating this amazing game and Omsi for all the Omsi version.
-               You both have inspired me more than you can imagine.
-               Hope everyone had fun! <3 <br>
-               --Lloyd                
-            ]]>
+				It's always nice, after doing the same dull tasks as always, when you reach the forest and get to do
+				something new. Whether you're exploring, hunting, learning something or just sitting by the waterfall,
+				the forest always makes a great backdrop. However, as pleasant as it's been here, it's time to move on,
+				at least for now. It would be a long trip, but luckily, after all your exploring, you know some shortcuts,
+				and before long, Merchanton emerges out of the trees. There's a lot to do here! Maybe one of the guilds
+				can help you with your looping problem! Or maybe there's a book in the library that can lead you to a
+				solution! Or maybe... or maybe... that all sounds like a lot of work, and you have been going through a
+				lot lately. Maybe before any of that, you should find a bar and get a drink.
+			</story>
+			<story num="5"> <!--Change 5 to Mt. Olympus-->
+				You have explored the guild options in Merchanton and have maybe made a few guild friends along the way, Time to grab
+				pickaxe and start the climb! Reaching Mt. Olympus takes alot of climbing but during the climb you discover these mana
+				geyser but looks like they can be harvested with a pickaxe. You discover runes scattered around the mountain, maybe
+				deciphering them might be useful and about half way up this mountain you discover a massive cavern with room to take a
+				break climbing and explore it, You met these Friendly Trolls in these caverns however they don't sell snowcones...
+			</story>
+			<story num="6"> <!--Good Reputation Story--> <!--Change 6 to Valhalla-->
+				You have finally reached the top of Mt. Olympus there is a giant door at the very top, a voice rings out "It is time
+				to face JUDGEMENT of the GODS, HAHAHAHA. Hope you are prepared for judgement!" After waiting for what feels like hours
+				the voice rings out "You may PASS!". You enter the wonderful place called Valhalla, you	 have a tourist show you around
+				and even looks like a charity is happening. After exploring you realize also can join charm school or wizard college,
+				become a citizen, and even fight with the Valkyries. Home of the gods couldn't be any better.
+			</story>
+			<story num="7"> <!--Bad Reputation Story--> <!--Change 7 to Startington-->
+				The voice rings "You Shall Not PASS!". You feel like you are being lifted and are chucked off Mt. Olymupus and into the
+				shadow realm. The shadow realm opens up and you hit the floor luckily with only a scratch, after a few hours you finally
+				can get up and realize that this isn't beginnersville anymore. After closer inspection of the ruins nearby you realize these
+				ruins is alot more twisted and strange that you thought they were gonna be. You notice these strange pylons and seak to destroy
+				them and a few minutes later you look and finally notice the giant spire in front of you!
+			</story>
+			<story num="8"> <!--Change 8 to Jungle Path-->
+				Before you leave Startington you realize you don't have the supplies you got in Beginnersville, but lucky for you Startington
+				sells another supply set but rumor has it that the shopkeeper is kinda deaf so your haggles won't work on them. You get your 
+				supplies and you set off down the trail, reminds you of the forest. You walk untill you see a jungle up ahead with ruins all
+				around, probly best to start exploring them.
+			</story>
+			<story num="9"> <!--Made the Looping Potion--> <!--Change 9 to Looping Potion-->
+				You have made the Loop Potion after learning alchemistry and grabbing herbs from the forest, you take a bit to brew the
+				concoction and after it boils a bit and the herbs soak into a nearby mana geyser then you pour it into a bottle. After
+				a glance you have no doubts that it is the think you spilled back in beginnersville, but you have no idea what to do 
+				with it now.
+			</story>
+			<story num="10"> <!--Change 10 to Commerceville-->
+				After you explore the ruins you notice the exit out of here is gonna be blocked of soon might have to beat the loop fast enough.
+				You just beat the exit just barely and notice that there is another small city, time to pay someone to show you around town! The
+				guide shows you the explorers guild and explains that they have many perks for joining, nifty! The guide also takes you down
+				a alley way and shows you that you can join the Thieves Guild to make a little bit of cash. After the guide is done showing
+				you around town he explains that they are with the tax collectors and you probly should be going now, quickly you make it to
+				the Bank and you notice a hooded figure might be worth checking what they do.
+			</story>
+			<story num="11"> <!--Change 11 to Valley of Olympus-->
+				After you take a heafty loan from the bank you can now own Commerceville and leave while you still can, after you walk down the
+				road you realize you can move the stones from the Jungle and move them to build a great tower. After you build the great tower
+				you realize you can't reach Valhalla unless you can clear trial of the gods to prove worthy of entering again. After finally 
+				clearing the trial of the gods, the voice speaks "The 7 gods of this land protect this world, if you want to enter Valhalla 
+				you can defeat us to be worth of the throne." After a long battle the last god goes down and you gain the power of all 7 gods,
+				with great power you can end the time loop now and forever!
+			</story>
+			<story num="12"> <!--Finally--> <!-- Change 12 to Ending the Loop-->
+				<![CDATA[
+				   You've done it! You've bested the gods themselves and restored time to its rightful flow. You can stop looping at any moment.
+				   But, then again, you could keep going. There's always time later...
+				   Thanks for playing my fan mod of Idle Loops! 
+				   Big shout-out to the wonderful Stop_Sign for creating this amazing game and Omsi for all the Omsi version.
+				   You both have inspired me more than you can imagine.
+				   Hope everyone had fun! <3 <br>
+				   --Lloyd                
+				]]>
             </story>
         </stories>
         <bonus_seconds>
@@ -1236,7 +1238,7 @@
             <tooltip2><![CDATA[
             mana. Buys all the mana you can.<br>Unlocked at 20% Explored.
         ]]></tooltip2>
-            <story_1><![CDATA[<b>Bought Mana:</b>⮀ Looks like there is a stand that is a man selling mana potions, might need it to contuine the loop! Wait that was odd there was a stand out in the middle of the day selling the one thing you need, weird.]]></story_1>
+            <story_1><![CDATA[<b>Bought Mana:</b>⮀ A mana salesman?! For most people, this would only be a convenience, but given your current situation, this might be the most valuable thing you ever could have found.]]></story_1>
         </buy_mana_z1>
         <buy_mana_challenge>
             <label>Buy Mana</label>
@@ -1246,8 +1248,8 @@
             <tooltip2><![CDATA[
             mana. Buys all the mana you can.<br>The merchant only has 7500 mana to sell, though.<br>Unlocked at 20% Explored.
         ]]></tooltip2>
-            <story_1><![CDATA[<b>Bought Mana:</b>⮀ You walk up to the stand and the man says "Times are hard my friend, Mana drought has hit the world hard so my friends are all out of stock. Only have 7500 mana to give and that is it."]]></story_1>
-		<story_2><![CDATA[<b>7500 Mana Bought:</b>⮀ The man says "Welp, I'm all out of stock for this loop but I wish you the best on your journey friend." 3 seconds later he vanishes, no where to be seen.]]></story_2>
+            <story_1><![CDATA[<b>Bought Mana:</b>⮀ You walk up to the mana stand ready to throw your money at the man behind the counter, but before you can get a word out, he interrupts you, saying "I'm sure you understand my reasonable prices, yes? Times are hard during this drought - my colleagues are all out of stock, and I only have 7500 mana until I am as well." His prices are ridiculous, but you pay them with gritted teeth, having no other option.]]></story_1>
+			<story_2><![CDATA[<b>7500 Mana Bought:</b>⮀ After you buy everything the man has for sale, he immediately states that he's out of stock and proceeds to slam the stall window on you. As he disappears, you spot a shadow of fear cross his face. He must have to deal with a lot of angry would-be customers these days.]]></story_2>
         </buy_mana_challenge>
         <meet_people>
             <label>Meet People</label>
@@ -1323,7 +1325,7 @@
             Take a break and socialize.<br>Gives people met progress equivalent to 16 Meet People actions.<br>Costs 2 reputation.<br>Unlocked at 30% Investigated.
         ]]></tooltip>
             <story_1><![CDATA[<b>Party thrown:</b>⮀ You announce that its your birthday and you want to throw a party. You commandeer the village square and the people necessary to make it happen. You don't have the gold but people aren't quite able to say no. You promise you'll pay it off with the money from this current job.]]></story_1>
-		<story_2><![CDATA[<b>10 Party thrown in a loop:</b>⮀ You throw a giant celebration for the whole town, had a whole parade and everything. The town's people celebrated for hours and you know they will forget everything next loop.]]></story_2>
+			<story_2><![CDATA[<b>10 Party thrown in a loop:</b>⮀ You throw a massive celebration that lasts the entire day. The whole town is invited, and since you're offering free food, most of them even show up! There are multiple parades as well as a dunk tank, the latter of which doesn't come cheap, but you don't care. You told them you'll pay it off "later", and since you just healed practically half the town, they didn't really have any grounds to refuse you.]]></story_2>
         </throw_party>
         <warrior_lessons>
             <label>Warrior Lessons</label>
@@ -1355,18 +1357,18 @@
             <label_part>Patient</label_part>
             <tooltip><![CDATA[
             You won't be able to heal them all, but they'll be thankful for doing what you can.<br>Healing is always 3 parts, each with a main stat - Diagnose (Per), Treat (Int), Inform (Cha).<br>Gives (magic skill) * (restoration skill / 50) * (1 + main stat / 100) * sqrt(1 + times completed / 100) * (original mana cost / actual mana cost) progress points per mana.<br>Requires a reputation of 1 or above.<br>Unlocked at 12 Magic skill.<br>Gives 3 reputation upon patient completion.
-        ]]></tooltip>
-            <story_1><![CDATA[<b>Patient healed:</b>⮀ You're allowed in to see the patients and begin healing. It's excellent practice and everyone you heal, be it from broken bones to small scrapes is extraordinarily thankful for your help.]]></story_1>
-            <story_2><![CDATA[<b>10 Patients healed in a loop:</b>⮀ Your reputation is absolutely sterling, you've basically cleared out the entire healing home and the nurses and healers are more than thankful for your help.]]></story_2>
-		<story_3><![CDATA[<b>100 Patients healed:</b>⮀ You heal so many patients that they can't begin to thank you enough, the nurses suggest you should own this stablishment to help people all over the world.]]></story_3>
-		<story_4><![CDATA[<b>1000 Patinets healed:</b>⮀ You become the doctor, after many loops you can help so many patients that the number is through the roof. The nurses have been having a well deserver break since you can cure people so fast.]]></story_4>
-            <story_5><![CDATA[<b>Failed Action:</b>⮀ You're turned away at the door, the small healers home stating that they can't trust you to not poison the people inside or make the situation worse.]]></story_5>
-		<story_6><![CDATA[<b>50 Restoration:</b>⮀ You realize this skill could help the patients and makes your job slightly easier. Healing is a art and a skill that you don't regret having.]]></story_6>
-		 <segment_names>
-                <name>Diagnose</name>
-                <name>Treat</name>
-                <name>Inform</name>
-            </segment_names>
+			]]></tooltip>
+			<story_1><![CDATA[<b>Patient healed:</b>⮀ You're allowed in to see the patients and begin healing. It's excellent practice and everyone you heal, be it from broken bones to small scrapes is extraordinarily thankful for your help.]]></story_1>
+			<story_2><![CDATA[<b>10 Patients healed in a loop:</b>⮀ Your reputation is absolutely sterling, you've basically cleared out the entire healing home and the nurses and healers are more than thankful for your help.]]></story_2>
+			<story_3><![CDATA[<b>100 Patients healed:</b>⮀ You've healed this guy so many times you barely even have to think about it anymore. The ones after him are harder, though; you're not actually a doctor so a lot of this is trial and error.]]></story_3>
+			<story_4><![CDATA[<b>1000 Patients healed:</b>⮀ You never went to medical school, but you've healed so many people that you're pretty much an expert now. Nothing can stop you, nothing can stump you, nothing can even slow you down! ...Except when they bring in a patient you haven't seen before. When that happens, it usually takes you a while to figure out what their problem is.]]></story_4>
+			<story_5><![CDATA[<b>Failed Action:</b>⮀ You're turned away at the door, the small healers home stating that they can't trust you to not poison the people inside or make the situation worse.]]></story_5>
+			<story_6><![CDATA[<b>50 Restoration:</b>⮀ As good as you were at healing already, you think you've gotten good enough at restoration magic that it can help you heal people even faster! Healing really is a fulfilling job, especially now that you're actually competent at it - maybe you'll keep doing it once you're out of the loops.]]></story_6>
+			<segment_names>
+				<name>Diagnose</name>
+				<name>Treat</name>
+				<name>Inform</name>
+			</segment_names>
         </heal_the_sick>
         <fight_monsters>
             <label>Fight Monsters</label>
@@ -1628,15 +1630,15 @@
             Such simple uses to help out with everyday tasks. Genius, really. It's like pulling teeth getting this knowledge from the Hermit though.<br>Unlocked with both 20% Hermit Knowledge and 50 Magic.
         ]]></tooltip>
             <story_1><![CDATA[<b>1 Practical magic:</b>⮀ You pester the hermit about magic and how to use it to make things easier on yourself. It's surprisingly handy to be able to move things around without havin to be there, rather than smashing pots you can instead lift them or knock them off edges. Why open a lock when you can unlock a latch with Mage Hand, why walk over to the wardrobe if you can just fling it open and ransack it? Magic, but practical. You're a little astonished that not everyone does this.]]></story_1>
-	     <story_2><![CDATA[<b>100 Practical magic:</b>⮀ Doing every tasks are so easy you can take a nap and do them, if only you could have this for the real world.]]></story_2>
-	     <story_3><![CDATA[<b>1,000 Practical magic:</b>⮀ You get so much mana and gold that doing this was so worth it, your loops have been enhanced ten fold!]]></story_3>
+			<story_2><![CDATA[<b>100 Practical magic:</b>⮀ Slowly, slowly, you're starting to become competent at the Hermit's special brand of magic - and it's really convenient. Just the other loop, he taught you a trick to find the value of a pile of coins with a small gesture and a single word!]]></story_2>
+			<story_3><![CDATA[<b>400 Practical magic:</b>⮀ You barely have to pay attention to your magic anymore. Doors open before you reach them, blood and grime vanishes at a thought, and anything you reach for jumps straight into your hands. Life has never been so easy.]]></story_3>
         </practical_magic>
         <learn_alchemy>
             <label>Learn Alchemy</label>
             <tooltip><![CDATA[
             You can listen to him yammer while making light healing and remedy potions.<br>You're starting to think the potion that caused you to loop time was a complex one.<br>You provide the ingredients; costs 10 herbs.<br>Gives alchemy and magic skill.<br>Unlocked with both 40% Hermit Knowledge and 60 Magic.
         ]]></tooltip>
-            <story_1><![CDATA[<b>Alchemy learned:</b>⮀ You ask the hermit about potion's and are regaled of tales from his time as an apprentice, the mistakes he made and how one time, he managed to douse his masters beard with potion that would wildly change the color of it every minute, for a full year his master had to deal with a beard that was either glowing white like pure fallen snow or was more fit to be in the sky after rain. You take notes as the hermit speaks.]]></story_1>
+            <story_1><![CDATA[<b>Alchemy learned:</b>⮀ You ask the hermit about potions and are regaled of tales from his time as an apprentice, the mistakes he made and how one time, he managed to douse his masters beard with potion that would wildly change the color of it every minute, for a full year his master had to deal with a beard that was either glowing white like pure fallen snow or was more fit to be in the sky after rain. You take notes as the hermit speaks.]]></story_1>
             <story_2><![CDATA[<b>25 Alchemy:</b>⮀ You sit by the fire inside the hermits clearing, fire dancing merrily away as he feeds magical herbs to the fire while throwing precise amounts into the large pot boiling above it. The stories he tells of his youth and learning alchemy under his master make you howl with laughter and provoke deep thoughtful silences.]]></story_2>
             <story_3><![CDATA[<b>100 Alchemy:</b>⮀ As you learn more and more about alchemy, the potion that caused you to start looping begins to seem more and more hideously complex. Something as simple as your reputation can effect the outcome of a potion. It's more of an art than a science, or anything even easily conveyed really.]]></story_3>
 	     <story_4><![CDATA[<b>500 Alchemy:</b>⮀ Alchemy helps more and more with the potion trader that you now can get tons of gold from him in the next town, you wonder how much it will take to bankrupt them.]]></story_4>
