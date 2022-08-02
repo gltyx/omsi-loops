@@ -791,7 +791,7 @@
             601-800 每级使好骗的人增加 0.5% .<br>
             701-900 每级使可采集的灵魂石增加 0.5% .<br>
             801-1000 每级使可获取的古董增加 0.5% .<br>
-            901-1100 每级使需要捐款的人增加 0.5% .<br>
+            901-1100 每级使捐款的人增加 0.5% .<br>
             1001-1200 每级使可以找到电缆塔的建筑增加 0.5% .<br>
             1101-1300 每级使能捡到的钱包增加 0.5% .<br>
             1201-1400 每级使可抢劫的仓库增加 0.5% .<br>
@@ -1196,7 +1196,7 @@
             <story_1><![CDATA[<b>已造访房子：</b>⮀ 您设法撬开了一把老旧的锁，进入了房子，但却碰到了房主。幸好这次循环马上就要结束了。您需要弄清楚哪些房子值得费力气潜入。钱财是不会自己长脚跑路的。]]></story_1>
             <story_2><![CDATA[<b>已知晓50间房子：</b>⮀ 您真应该仔细检查那些锁着的房子，里面肯定有什么好东西。]]></story_2>
             <story_3><![CDATA[<b>已找到10间有财物的房子：</b>⮀ 您找到了所有可以不受人干扰获取财物的房子。有言道，时间就是法力！]]></story_3>
-            <story_4><![CDATA[<b>25 Houses with loot in a loop:</b>⮀ You really are the Master Locksmith? In and out you went without a single floorboard creaking, if only you had this skill in real life!]]></story_4>
+            <story_4><![CDATA[<b>已找到25间有财物的房子:</b>⮀ You really are the Master Locksmith? In and out you went without a single floorboard creaking, if only you had this skill in real life!]]></story_4>
         </pick_locks>
         <buy_glasses>
             <label>购买眼镜</label>
@@ -1221,7 +1221,7 @@
             <tooltip2><![CDATA[
             法力. 尽可能的花掉所有金块购买.<br>解锁于 20% 探索度.
         ]]></tooltip2>
-            <story_1><![CDATA[<b>Bought Mana:</b>⮀ A mana salesman?! For most people, this would only be a convenience, but given your current situation, this might be the most valuable thing you ever could have found.]]></story_1>
+            <story_1><![CDATA[<b>购买法力:</b>⮀ 法力商人?! 对大多数人来说, 这可能只是比较方便, 但对你目前来说, 这也许是你最重要的东西.]]></story_1>
         </buy_mana_z1>
         <buy_mana_challenge>
             <label>购买法力</label>
@@ -1231,8 +1231,8 @@
             <tooltip2><![CDATA[
             法力. 尽可能的花掉所有金块购买.<br>法力商人只有 7500 法力卖, 尽管如此.<br>解锁于 20% 探索度.
         ]]></tooltip2>
-            <story_1><![CDATA[<b>Bought Mana:</b>⮀ You walk up to the mana stand ready to throw your money at the man behind the counter, but before you can get a word out, he interrupts you, saying "I'm sure you understand my reasonable prices, yes? Times are hard during this drought - my colleagues are all out of stock, and I only have 7500 mana until I am as well." His prices are ridiculous, but you pay them with gritted teeth, having no other option.]]></story_1>
-			<story_2><![CDATA[<b>7500 Mana Bought:</b>⮀ After you buy everything the man has for sale, he immediately states that he's out of stock and proceeds to slam the stall window on you. As he disappears, you spot a shadow of fear cross his face. He must have to deal with a lot of angry would-be customers these days.]]></story_2>
+            <story_1><![CDATA[<b>购买法力:</b>⮀ 你走向柜台准备交钱, 但在你开口之前, 他打断了你, 他说 "我相信你会理解我的价格的, 对吧? 因为法力枯竭我们日子很难过 - 我的同事都没货了, 我也只有 7500 法力." 他的价格有点离谱, 但你还是咬牙买下来了, 你没得选.]]></story_1>
+			<story_2><![CDATA[<b>7500 法力购买:</b>⮀ 当你把柜台上的所有法力都买走, 他立刻告诉你他没货了并砰地一声关上了柜台窗口. 他从视野里消失前, 你注意到他脸上带着恐惧. 这几天他恐怕要面对不少愤怒的客人了.]]></story_2>
         </buy_mana_challenge>
         <meet_people>
             <label>结识朋友</label>
@@ -1308,7 +1308,7 @@
             休息一下去参加社交活动.<br>以结识朋友的 16 倍的效果推进已结识朋友进度.<br>消耗 2 声望.<br>解锁于 30% 已调查.
         ]]></tooltip>
             <story_1><![CDATA[<b>参加派对:</b>⮀ 你宣称今天是你的生日并开了个派对. 你征用了村庄的广场并招募了必须的人. 你虽然没付钱但人们也不好拒绝. 你保证之后会付钱的.]]></story_1>
-			<story_2><![CDATA[<b>10 Party thrown in a loop:</b>⮀ You throw a massive celebration that lasts the entire day. The whole town is invited, and since you're offering free food, most of them even show up! There are multiple parades as well as a dunk tank, the latter of which doesn't come cheap, but you don't care. You told them you'll pay it off "later", and since you just healed practically half the town, they didn't really have any grounds to refuse you.]]></story_2>
+			<story_2><![CDATA[<b>单次循环 10 次参加派对:</b>⮀ 你举办了一个持续一整天的盛大活动. 整座村子都被邀请了, 你免费提供食物, 所以大部分人都来了! 有许多游行队伍甚至还有啤酒车, 后者可不便宜, 但你并不在意. 你说你会在 "之后" 付钱的, 鉴于你治好了几乎半个村子的病人, 他们也没有立场拒绝你.]]></story_2>
         </throw_party>
         <warrior_lessons>
             <label>战士课程</label>
@@ -1341,12 +1341,12 @@
             <tooltip><![CDATA[
             你肯定不可能全部治好, 但他们会感谢你尽力救治.<br>一共有 3 治疗阶段, 每个阶段都有对应的能力 - 诊断 (感知), 处理 (智力), 通知 (魅力).<br>每点法力给予 (魔法技能) * (恢复魔法 / 50) * (1 + 主能力 / 100) * 开方(1 + 完成次数 / 100) * (初始法力消耗 / 实际法力消耗) 进度点.<br>需要至少 1 声望.<br>解锁于 12 魔法技能.<br>每个治愈的病人可以让你获得 3 声望.
         ]]></tooltip>
-			<story_1><![CDATA[<b>Patient healed:</b>⮀ You're allowed in to see the patients and begin healing. It's excellent practice and everyone you heal, be it from broken bones to small scrapes is extraordinarily thankful for your help.]]></story_1>
-			<story_2><![CDATA[<b>10 Patients healed in a loop:</b>⮀ Your reputation is absolutely sterling, you've basically cleared out the entire healing home and the nurses and healers are more than thankful for your help.]]></story_2>
-			<story_3><![CDATA[<b>100 Patients healed:</b>⮀ You've healed this guy so many times you barely even have to think about it anymore. The ones after him are harder, though; you're not actually a doctor so a lot of this is trial and error.]]></story_3>
-			<story_4><![CDATA[<b>1000 Patients healed:</b>⮀ You never went to medical school, but you've healed so many people that you're pretty much an expert now. Nothing can stop you, nothing can stump you, nothing can even slow you down! ...Except when they bring in a patient you haven't seen before. When that happens, it usually takes you a while to figure out what their problem is.]]></story_4>
-			<story_5><![CDATA[<b>Failed Action:</b>⮀ You're turned away at the door, the small healers home stating that they can't trust you to not poison the people inside or make the situation worse.]]></story_5>
-			<story_6><![CDATA[<b>50 Restoration:</b>⮀ As good as you were at healing already, you think you've gotten good enough at restoration magic that it can help you heal people even faster! Healing really is a fulfilling job, especially now that you're actually competent at it - maybe you'll keep doing it once you're out of the loops.]]></story_6>
+			<story_1><![CDATA[<b>病人治愈:</b>⮀ 你被允许进入观看并上手治疗. 这对你的练习和你治愈的病人都是好事, 无论是骨折还是擦伤他们都会非常感谢你.]]></story_1>
+			<story_2><![CDATA[<b>单次循环 10 病人治愈:</b>⮀ 你声名远播, 你几乎清空了小治疗站所以治疗师和护士都非常感谢你.]]></story_2>
+			<story_3><![CDATA[<b>100 病人治愈:</b>⮀ 你治疗这个家伙已经很多次了以至于你甚至不需要思考就能开始治疗. 不过下一个病人会比他难一些; 你并不是一个正式的医生所以大量的治疗仍然是个挑战.]]></story_3>
+			<story_4><![CDATA[<b>1000 病人治愈:</b>⮀ 你没去过医学院进修, 但你治愈了那么多个病人, 你已经是专家了. 没有人能停下你, 没有困难能阻挡你, 没有什么能减缓你的脚步! ...除了他们带一个你没见过的患者来让你治疗. 当它发生, 你可能会需要好一会才能找到问题所在.]]></story_4>
+			<story_5><![CDATA[<b>失败的行动:</b>⮀ 你被赶出了大门, 小治疗师认为无法信任你, 担心你会下毒或使病人伤势加重.]]></story_5>
+			<story_6><![CDATA[<b>50 恢复魔法:</b>⮀ 你的治疗能力已经足够好, 你觉得你的恢复魔法已经可以让你的治疗速度加快了! 治疗真是一项令人满足的工作, 尤其是你现在实至名归 - 也许结束循环后你会考虑开一家诊所.]]></story_6>
             <segment_names>
                 <name>诊断</name>
                 <name>处理</name>
@@ -1539,9 +1539,9 @@
             法力.<br>每 10 个法力源有一个有法力的法力源.
         ]]></tooltip2>
             <story_1><![CDATA[<b>有法力的法力源:</b>⮀ 它就在那里, 就在路边不远的地方默默的囤积着大量的法力等人获取, 唯一的难题在于周围遍布植物, 想过去得花些力气.]]></story_1>
-	     <story_2><![CDATA[<b>50 Sources checked for mana in a loop:</b>⮀ After exploring the forest 100%, you know the path to get all the mana sources, mana mania!]]></story_2>
-	     <story_3><![CDATA[<b>100 Sources checked for mana in a loop:</b>⮀ After exploring the thicket 100%, you know the path of the forest and the thicket to get tons of mana, insane!]]></story_3>
-	     <story_4><![CDATA[<b>150 Sources checked for mana in a loop:</b>⮀ In the nooks of the forest there is a secret path that you never even noticed, you probly wanted to see the hermit so much. There is 50 more mana sources with your name on it, god speed.]]></story_4>
+	     <story_2><![CDATA[<b>一次循环 50 有法力的法力源:</b>⮀ 在 100% 探索森林后, 你找到了森林里所有能找到法力源的道路, 法力狂热!]]></story_2>
+	     <story_3><![CDATA[<b>一次循环 100 有法力的法力源:</b>⮀ 在 100% 探索灌木丛后, 你找到了森林和灌木丛所有小路并取得了成吨的法力, 太疯狂了!]]></story_3>
+	     <story_4><![CDATA[<b>一次循环 150 有法力的法力源:</b>⮀ 在森林的角落里有一条你未曾注意的秘密小路, 甚至比隐士那条路更隐秘. 这里的 50 个法力源都写着你的名字, 搞快点.]]></story_4>
         </wild_mana>
         <gather_herbs>
             <label>采集草药</label>
@@ -1553,7 +1553,7 @@
             不妨把所有看起来有用的植物都挖出来.<br>每 10 个植物里有一个有用.<br>解锁于 10% 森林探索度.
         ]]></tooltip>
             <story_1><![CDATA[<b>有用的植物:</b>⮀ 你随便找了几棵植物, 它们大部分都没什么用, 只是单纯的在呼吸法力, 但有一些是真正的魔法植物. 外貌区别很小, 但用途区别巨大.]]></story_1>
-	     <story_2><![CDATA[<b>500 Plants checked in a loop:</b>⮀ Every plant you can see has been picked up in the forest, they have many uses for them! ]]></story_2>
+	     <story_2><![CDATA[<b>单次循环 500 有用的植物:</b>⮀ 你把整个森林所有植物都拔起来了, 它们有很多用途! ]]></story_2>
         </gather_herbs>
         <hunt>
             <label>打猎</label>
@@ -1564,9 +1564,9 @@
             <tooltip><![CDATA[
             感谢大自然的馈赠.<br>每 10 个动物有一个有优质皮.<br>解锁于 40% 森林探索度.
         ]]></tooltip>
-            <story_1><![CDATA[<b>Animal checked for hide:</b>⮀ You manage to track down a relatively harmless animal, but in the time it took you to bring the critter down you had ruined its pelt beyond all use. You needed practice.]]></story_1>
-            <story_2><![CDATA[<b>10 Animals with hide:</b>⮀ You ghost through the forest, targeting packs that you know graze or are moving through locations easily reached and ambushed. You're starting to get good at this tracking thing, but you suppose you only really have to do it once.]]></story_2>
-            <story_3><![CDATA[<b>20 Animals with hide:</b>⮀ A deer languishes by the water, lapping gently at the water seemingly unaware of your presence. It remains unaware of your presence as you slowly edge closer, the deer remains unaware of your presence until it is unaware of everything forevermore. You ghost through the forest on silent feet, swift as the wind and as deadly as a viper, your body swaying as you slip between blind spots and perception to reach your targets. The animals feel nothing as they die, you've had much practice. You offer a silent thanks as their pelts will be of value to you.]]></story_3>
+            <story_1><![CDATA[<b>可剥皮的动物:</b>⮀ 你设法找到了一群无害的动物, 但当你猎杀它们的时候你把皮弄坏了. 你需要多点练习.]]></story_1>
+            <story_2><![CDATA[<b>10 可剥皮的动物:</b>⮀ 你如鬼魂一般穿过森林, 快速的抵达了适合放置陷阱或是伏击的地点. 你已经可以非常熟练的捕猎动物了, 你确信你可以一击得手.]]></story_2>
+            <story_3><![CDATA[<b>20 可剥皮的动物:</b>⮀ 一只鹿在河边喝水, 它并没有发现你的到来. 即使你慢慢靠近它也没有察觉, 直到它被猎杀它也不知道你是谁. 你无声又迅速地穿过森林, 迅捷如风致命如蛇, 你会下意识地从猎物的视野盲区靠近然后一击毙命. 动物死亡时毫无察觉, 你已经非常老道了. 你默默的感谢它们因为这皮革真的很有用.]]></story_3>
         </hunt>
         <sit_by_waterfall>
             <label>瀑布下静坐</label>
