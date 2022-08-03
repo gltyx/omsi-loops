@@ -6123,10 +6123,10 @@ Action.BuildTower = new Action("Build Tower", {
     },
     finish() {
         stonesUsed[stoneLoc]++;
-        //towns[stoneLoc]["checkedStonesZ" + stoneLoc] -= 1000;
         towns[this.townNum].finishProgress(this.varName, 505);
         addResource("stone", false);
         if (towns[this.townNum].getLevel(this.varName) >= 100) stonesUsed = {1:250, 3:250, 5:250, 6:250};
+        adjustRocks(stoneLoc);
     },
 });
 
