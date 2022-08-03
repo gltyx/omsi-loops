@@ -1573,11 +1573,11 @@
             <tooltip><![CDATA[
             完美的地方. 瀑布轰鸣, 但非常和平.<br>获得 4x 能力/天赋经验, 每次循环只能完成 <div id='trainingLimitSoul'></div> 次.<br>解锁于 70% 森林探索度.
         ]]></tooltip>
-            <story_1><![CDATA[<b>Sat by waterfall:</b>⮀ You find a waterfall flowing from a higher point in a mountain down the side oddly scenic and decide stop to stare for awhile, simply to observe the natural beauty of the sight. As you watched, the force of the water managed to dislodge a small pebble from the top of the waterfall and send it careening down. You watch oddly mesmerized at it bounces along the path, constantly being immersed and spat out by the water. You don't know when you sat down and began meditating, only that you woke from your deep realization hours later.]]></story_1>
-	     <story_2><![CDATA[<b>100 Soul Talent:</b>⮀ You find more at piece with yourself and your body, which makes you a different person all together.]]></story_2>
-	     <story_3><![CDATA[<b>1,000 Soul Talent:</b>⮀ You are learning how to improve yourself past the point anyone has attempted. You can feel your blood going thru your whole body, feels weird.]]></story_3>
-	     <story_4><![CDATA[<b>10,000 Soul Talent:</b>⮀ You have so much soul that the king of soul acknowledges you, having so much soul means your body can be controlled in every part of your body at will.]]></story_4>
-	     <story_5><![CDATA[<b>100,000 Soul Talent:</b>⮀ At this point there is so much soul that you have reached heaven levels, you have trancended and you should feel good about that!]]></story_5>
+            <story_1><![CDATA[<b>瀑布下静坐:</b>⮀ 你发现了一个从高山上下落的瀑布奇景, 你决定停下来休息一会, 只是单纯的想感受一下大自然的美丽. 当你注视着瀑布, 瀑布将一块鹅卵石高高卷起然后从山上抛下. 你看着鹅卵石在空中划出奇特的轨迹, 随后在水中不断弹跳. 不知何时你坐下开始冥想, 当你清醒时你发现已经过去了数小时.]]></story_1>
+	     <story_2><![CDATA[<b>100 灵魂天赋:</b>⮀ 你和你的身体越来越契合, 几乎使你焕然一新.]]></story_2>
+	     <story_3><![CDATA[<b>1,000 灵魂天赋:</b>⮀ 你正在试图超越一般人. 你可以感觉到血液在身体里流动, 有点恶心.]]></story_3>
+	     <story_4><![CDATA[<b>10,000 灵魂天赋:</b>⮀ 你的灵魂多到灵魂之王都得点点头, 拥有这么多灵魂意味着你可以随意控制身体任何一个部位.]]></story_4>
+	     <story_5><![CDATA[<b>100,000 灵魂天赋:</b>⮀ 你的灵魂已经达到了天堂的级别, 你已经超脱了, 你感觉很好!]]></story_5>
         </sit_by_waterfall>
         <old_shortcut>
             <label>古老的捷径</label>
@@ -1585,13 +1585,13 @@
             <tooltip><![CDATA[
             很久没人踏上这条小路了.<br>可以找到更多的草药.<br>这个老人很难交流, 也许可以找点他感兴趣的东西. 每 1% 捷径探索度可以使 与隐士交谈 产生额外 1% 隐士知识.<br>解锁于 20% 森林探索度.
         ]]></tooltip>
-            <story_1><![CDATA[<b>1% Shortcut explored:</b>⮀ You continued on with your trip and discovered a small and worn path leading off the main thoroughfare. You wondered what it was and decided to explore.]]></story_1>
-            <story_2><![CDATA[<b>10% Shortcut explored:</b>⮀ You're mildly surprised to discover a seemingly sprawling network of interconnected paths that seem to get almost everywhere within the forest.]]></story_2>
-            <story_3><![CDATA[<b>20% Shortcut explored:</b>⮀ You stumble across a small clearing in the forest, racks of drying herbs and bubbling cauldrons litter the clearing. As soon as you step in, a hermit leaps from his hut yelling at you.]]></story_3>
-            <story_4><![CDATA[<b>40% Shortcut explored:</b>⮀ You continue to explore the shortcuts, you're able to recognize where you are in the sprawling network with a glance. You're able to move freely around the forest.]]></story_4>
-            <story_5><![CDATA[<b>60% Shortcut explored:</b>⮀ You've discovered another set of hidden shortcuts on the gloomy side of the forest, and set about exploring them, they seem less looked after than those on the other side, but are still serviceable.]]></story_5>
-            <story_6><![CDATA[<b>80% Shortcut explored:</b>⮀ These old shortcuts are incredible, they almost seem to tell a story of when this forest was more habitable. You wonder why they were forgotten.]]></story_6>
-            <story_7><![CDATA[<b>100% Shortcut explored:</b>⮀ You dust your hands and smile contently, you've done it. You've traveled every single path to completion. You could start at a completely random point and find your way out. That old hermit seems to like these paths.]]></story_7>
+            <story_1><![CDATA[<b>1% 捷径探索度:</b>⮀ 你继续你的旅途并在离大陆不远的地方找到了一条隐蔽而狭窄的小路. 你很好奇于是你开始探索它.]]></story_1>
+            <story_2><![CDATA[<b>10% 捷径探索度:</b>⮀ 你惊讶地发现这条路似乎四通八达, 可以通向森林的各处.]]></story_2>
+            <story_3><![CDATA[<b>20% 捷径探索度:</b>⮀ 你偶然发现一块小空地, 地上堆着干草药和一个冒着泡的大锅. 当你踏入其中, 旁边的小屋突然冲出一个隐士大叫着驱赶你.]]></story_3>
+            <story_4><![CDATA[<b>40% 捷径探索度:</b>⮀ 你继续探索捷径, 你现在可以一眼就判断出你在这个网络的什么位置. 你可以借此自由地穿行在森林里.]]></story_4>
+            <story_5><![CDATA[<b>60% 捷径探索度:</b>⮀ 你发现了黑暗那一侧的捷径, 并继续探索它们, 看上去这边的捷径比明亮那一面更加荒凉, 但还是可以辨识的.]]></story_5>
+            <story_6><![CDATA[<b>80% 捷径探索度:</b>⮀ 这些古老的捷径真是难以置信, 它似乎意味着森林曾经相当繁荣. 你很奇怪为什么它们会被荒废.]]></story_6>
+            <story_7><![CDATA[<b>100% 捷径探索度:</b>⮀ 你拍拍手露出满足的微笑, 你成功了. 你走遍了每一条岔路. 你可以从任意一个入口进来然后迅速找到目的地的方向. 那位隐士似乎也很喜欢这些捷径.]]></story_7>
         </old_shortcut>
         <talk_to_hermit>
             <label>与隐士交谈</label>
