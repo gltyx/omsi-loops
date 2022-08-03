@@ -240,6 +240,13 @@ AssassinAction.prototype.finish = function() {
 }
 AssassinAction.prototype.visible = function() {return getSkillLevel("Assassin") > 0;}
 AssassinAction.prototype.unlocked = function() {return getSkillLevel("Assassin") > 0;}
+AssassinAction.prototype.storyReqs = function(storyNum) {
+    switch (storyNum) {
+        case 1:
+            return towns[this.townNum][`totalAssassinZ${this.townNum}`] >= 1;
+    }
+    return false;
+}
 
 //====================================================================================================
 //Survery Actions (All Zones)
@@ -274,7 +281,7 @@ function SurveyAction(townNum) {
         }
     }
     obj.townNum = townNum;
-    return obj; 
+    return obj;
 }
 
 Action.SurveyZ0 = new Action("SurveyZ0", SurveyAction(0));
@@ -314,7 +321,7 @@ function RuinsAction(townNum) {
         }
     }
     obj.townNum = townNum;
-    return obj; 
+    return obj;
 }
 
 Action.RuinsZ1 = new Action("RuinsZ1", RuinsAction(1));
@@ -369,7 +376,7 @@ function HaulAction(townNum) {
         }
     }
     obj.townNum = townNum;
-    return obj; 
+    return obj;
 }
 
 Action.HaulZ1 = new Action("HaulZ1", HaulAction(1));
@@ -445,7 +452,7 @@ Action.Map = new Action("Map", {
         addResource("gold", -this.goldCost());
         addResource("map", 1);
     },
-}); 
+});
 
 Action.Wander = new Action("Wander", {
     type: "progress",
@@ -923,7 +930,7 @@ Action.LongQuest = new Action("Long Quest", {
     },
     story(completed) {
         if (towns[0][`good${this.varName}`] >= 10 && towns[0][`goodTemp${this.varName}`] <= towns[0][`good${this.varName}`] - 10) unlockStory("maxLQuestsInALoop");
-    } 
+    }
 });
 
 Action.ThrowParty = new Action("Throw Party", {
@@ -2270,7 +2277,7 @@ Action.DarkRitual = new MultipartAction("Dark Ritual", {
 
 function checkSoulstoneSac(amount) {
     let sum = 0;
-    for (const stat in stats) 
+    for (const stat in stats)
         sum += stats[stat].soulstone;
     return sum >= amount ? true : false;
 }
@@ -3863,7 +3870,7 @@ Action.ImbueBody = new MultipartAction("Imbue Body", {
     loopsFinished() {
         for (const stat in stats) {
             let targetTalentLevel = getTalent(stat) - getBuffLevel("Imbuement2") - 1;
-            stats[stat].talent = getExpOfLevel(targetTalentLevel); 
+            stats[stat].talent = getExpOfLevel(targetTalentLevel);
         }
         view.updateStats();
         addBuffAmt("Imbuement2", 1);
@@ -4303,7 +4310,7 @@ Action.Oracle = new Action("Oracle", {
         return towns[4].getLevel("Tour") >= 40;
     },
     finish() {
-		
+
     },
 });
 
@@ -4371,8 +4378,8 @@ Action.WizardCollege = new MultipartAction("Wizard College", {
     tickProgress(offset) {
         return (
             getSkillLevel("Magic") + getSkillLevel("Practical") + getSkillLevel("Dark") +
-            getSkillLevel("Chronomancy") + getSkillLevel("Pyromancy") + getSkillLevel("Restoration") + getSkillLevel("Spatiomancy")) * 
-            (1 + getLevel(this.loopStats[(towns[4][`${this.varName}LoopCounter`] + offset) % this.loopStats.length]) / 100) * 
+            getSkillLevel("Chronomancy") + getSkillLevel("Pyromancy") + getSkillLevel("Restoration") + getSkillLevel("Spatiomancy")) *
+            (1 + getLevel(this.loopStats[(towns[4][`${this.varName}LoopCounter`] + offset) % this.loopStats.length]) / 100) *
             Math.sqrt(1 + towns[4][`total${this.varName}`] / 1000);
     },
     loopsFinished() {
@@ -4382,7 +4389,7 @@ Action.WizardCollege = new MultipartAction("Wizard College", {
         curWizCollegeSegment++;
         view.requestUpdate("adjustManaCost", "Restoration");
         view.requestUpdate("adjustManaCost", "Spatiomancy");
-    }, 
+    },
     getPartName() {
         return `${getWizCollegeRank().name}`;
     },
@@ -4701,8 +4708,8 @@ Action.FightFrostGiants = new MultipartAction("Fight Frost Giants", {
         return precision3(Math.pow(1.3, towns[4][`${this.varName}LoopCounter`] + segment)) * 1e7; // Temp
     },
     tickProgress(offset) {
-        return (getSelfCombat() * 
-            (1 + getLevel(this.loopStats[(towns[4][`${this.varName}LoopCounter`] + offset) % this.loopStats.length]) / 100) * 
+        return (getSelfCombat() *
+            (1 + getLevel(this.loopStats[(towns[4][`${this.varName}LoopCounter`] + offset) % this.loopStats.length]) / 100) *
             Math.sqrt(1 + towns[4][`total${this.varName}`] / 1000));
     },
     loopsFinished() {
@@ -4711,7 +4718,7 @@ Action.FightFrostGiants = new MultipartAction("Fight Frost Giants", {
     segmentFinished() {
         curFightFrostGiantsSegment++;
         // Additional thing?
-    }, 
+    },
     getPartName() {
         return `${getFrostGiantsRank().name}`;
     },
@@ -5208,8 +5215,8 @@ Action.FightJungleMonsters = new MultipartAction("Fight Jungle Monsters", {
         return precision3(Math.pow(1.3, towns[6][`${this.varName}LoopCounter`] + segment)) * 1e8; // Temp
     },
     tickProgress(offset) {
-        return (getSelfCombat() * 
-            (1 + getLevel(this.loopStats[(towns[6][`${this.varName}LoopCounter`] + offset) % this.loopStats.length]) / 100) * 
+        return (getSelfCombat() *
+            (1 + getLevel(this.loopStats[(towns[6][`${this.varName}LoopCounter`] + offset) % this.loopStats.length]) / 100) *
             Math.sqrt(1 + towns[6][`total${this.varName}`] / 1000));
     },
     loopsFinished() {
@@ -5221,7 +5228,7 @@ Action.FightJungleMonsters = new MultipartAction("Fight Jungle Monsters", {
         curFightJungleMonstersSegment++;
         addResource("blood", 1);
         // Additional thing?
-    }, 
+    },
     getPartName() {
         return `${getFightJungleMonstersRank().name}`;
     },
@@ -5562,8 +5569,8 @@ function exchangeMap() {
         if (towns[rand][name] >= 505000) {
             towns[rand][name] = 505000;
             for(var i = 0; i < unfinishedSurveyZones.length; i++)
-                if ( unfinishedSurveyZones[i] === rand) 
-                    unfinishedSurveyZones.splice(i, 1); 
+                if ( unfinishedSurveyZones[i] === rand)
+                    unfinishedSurveyZones.splice(i, 1);
         }
         view.requestUpdate("updateProgressAction", {name: "SurveyZ"+rand, town: towns[rand]});
         addResource("completedMap", -1);

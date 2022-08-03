@@ -14,7 +14,7 @@
             High level players who are still experiencing lag can significantly improve performance by reducing this number - this will only decrease how often the screen refreshes, not how often the game updates.<br>
             ---<br>
             Additionally, we have a number of new global stories for all the zones, action segments, and other updates from MrPitt!
-            ]]></version>            
+            ]]></version>
             <version verNum="2.8"><![CDATA[
             <b> July 25th, 2022</b>
             • A new guild has opened in Commerceville - Assassins Guild! Kill targets across the world, collect their hearts (why is it always hearts?), and return them to the guild to learn the ways of the assassin<br>
@@ -62,7 +62,7 @@
             <version verNum="2.2"><![CDATA[
             <b> July 19th, 2022</b>
             • New Skill: Leadership - Increases your max follower count by 1 for every 100 levels and increases their contribution to team combat<br>
-            • New Action (Commerceville): Motivational Seminar - Get advice from the head of a totally-not-an-MLM to learn how to be a better leader<br> 
+            • New Action (Commerceville): Motivational Seminar - Get advice from the head of a totally-not-an-MLM to learn how to be a better leader<br>
             • Balance: Zombie Strength is now increased by Dark Ritual / 100(min 1x, up to 6.66x increase)<br>
             • Balance: Fight Jungle Monsters now rewards blood instead of hides. Prepare Buffet is now made of blood instead of hide. Still gross.<br>
             Note - We'll have to see how these changes land. It may end up being that now Team Combat is too strong compared to self combat. Also, trials will almost certainly need rebalancing.<br>
@@ -207,13 +207,13 @@
             • New Action (Startington): Mana Well - Gives mana based on how quickly in the loop it is completed (adjusted for bonus second use)<br>
             • New Actions (Jungle Path): Explore Jungle & Fight Jungle Monsters - Generic exploration/progress action where exp is based on fight monsters completion<br>
             • New Actions (Jungle Path): Rescue Survivors & Prepare Buffet - Uses Resto skill, then herbs and hide to give Gluttony exp<br>
-            • New Action (Jungle Path): Escape - Unlocks next zone, but requires being completed within 60 seconds of starting the loop (adjusted for bonus second use) 
+            • New Action (Jungle Path): Escape - Unlocks next zone, but requires being completed within 60 seconds of starting the loop (adjusted for bonus second use)
             • New Actions (Commerceville): Thieves Guild - Functions similar to crafting guild, but with a focus on gold income<br>
             • New Actions (Commerceville): Invest & Collect interest. Grants a small percentage of lifetime investments<br>
             • New Actions (Commerceville): Purchase Key & Leave City - Progress to next zone for cost of 1M gold<br>
             • New Actions (Valley Of Olympus): Imbue Soul & Challenge Gods - (Incomplete) Planned end of game<br>
             • Dark Ritual now works in all zones and provides a very minor speed increase up to max level. Need to find a way to hide description for locked zones<br>
-            • Decreased mana cost of open rift from 100k -> 50k<br> 
+            • Decreased mana cost of open rift from 100k -> 50k<br>
             • Minor fix to how Spatiomancy effects herbs
             ]]></version>
             <version verNum=".97"><![CDATA[
@@ -605,14 +605,14 @@
 			</story>
 			<story num="8"> <!--Change 8 to Jungle Path-->
 				Before you leave Startington you realize you don't have the supplies you got in Beginnersville, but lucky for you Startington
-				sells another supply set but rumor has it that the shopkeeper is kinda deaf so your haggles won't work on them. You get your 
+				sells another supply set but rumor has it that the shopkeeper is kinda deaf so your haggles won't work on them. You get your
 				supplies and you set off down the trail, reminds you of the forest. You walk untill you see a jungle up ahead with ruins all
 				around, probly best to start exploring them.
 			</story>
 			<story num="9"> <!--Made the Looping Potion--> <!--Change 9 to Looping Potion-->
 				You have made the Loop Potion after learning alchemistry and grabbing herbs from the forest, you take a bit to brew the
 				concoction and after it boils a bit and the herbs soak into a nearby mana geyser then you pour it into a bottle. After
-				a glance you have no doubts that it is the think you spilled back in beginnersville, but you have no idea what to do 
+				a glance you have no doubts that it is the think you spilled back in beginnersville, but you have no idea what to do
 				with it now.
 			</story>
 			<story num="10"> <!--Change 10 to Commerceville-->
@@ -626,8 +626,8 @@
 			<story num="11"> <!--Change 11 to Valley of Olympus-->
 				After you take a heafty loan from the bank you can now own Commerceville and leave while you still can, after you walk down the
 				road you realize you can move the stones from the Jungle and move them to build a great tower. After you build the great tower
-				you realize you can't reach Valhalla unless you can clear trial of the gods to prove worthy of entering again. After finally 
-				clearing the trial of the gods, the voice speaks "The 7 gods of this land protect this world, if you want to enter Valhalla 
+				you realize you can't reach Valhalla unless you can clear trial of the gods to prove worthy of entering again. After finally
+				clearing the trial of the gods, the voice speaks "The 7 gods of this land protect this world, if you want to enter Valhalla
 				you can defeat us to be worth of the throne." After a long battle the last god goes down and you gain the power of all 7 gods,
 				with great power you can end the time loop now and forever!
 			</story>
@@ -635,11 +635,11 @@
 				<![CDATA[
 				   You've done it! You've bested the gods themselves and restored time to its rightful flow. You can stop looping at any moment.
 				   But, then again, you could keep going. There's always time later...
-				   Thanks for playing my fan mod of Idle Loops! 
+				   Thanks for playing my fan mod of Idle Loops!
 				   Big shout-out to the wonderful Stop_Sign for creating this amazing game and Omsi for all the Omsi version.
 				   You both have inspired me more than you can imagine.
 				   Hope everyone had fun! <3 <br>
-				   --Lloyd                
+				   --Lloyd
 				]]>
             </story>
         </stories>
@@ -1058,15 +1058,31 @@
             Gives progress equal to (Sqrt(Practical) + Thievery + Assassin) * Stat/1000 * Sqrt(Completions/100) / Abs(reputation) / hearts^2.<br>
             Rewards a heart.
             ]]></tooltip>
-		<story_1><![CDATA[<b>1 Assassinated in Beginnersville:</b>⮀ You killed one of the town's people quickly and quietly, got the heart and moved on...]]></story_1>
-		<story_2><![CDATA[<b>1 Assassinated in Forest Path:</b>⮀ How was there more people in the forest besides the hermit and the witch? who knows, all that matters is you killed someone and left with the heart.]]></story_2>
-		<story_3><![CDATA[<b>1 Assassinated in Merchanton:</b>⮀ You walked into the casino, looked around to check for cameras and killed someone in the storage room. You got the heart and left quickly before being spotted.]]></story_3>
-		<story_4><![CDATA[<b>1 Assassinated in Mt. Olympus:</b>⮀ You climbed the Mountain and killed one of the yeti's for their heart, what they get for not selling snowcones.]]></story_4>
-		<story_5><![CDATA[<b>1 Assassinated in Valhalla:</b>⮀ Gods are looking all around but someone not paying tax on your property comes first, you kill them and grab the heart and quickly leave.]]></story_5>
-		<story_6><![CDATA[<b>1 Assassinated in Startington:</b>⮀ Everyone here is almost close to being dead so should be quick and easy. You get the heart so quick and moved on.]]></story_6>
-		<story_7><![CDATA[<b>1 Assassinated in Jungle Path:</b>⮀ Survivers are lost so you can use that to your advantage, 1 quick kill later and you can move on. Don't forget the heart!]]></story_7>
-		<story_8><![CDATA[<b>1 Assassinated in Commerenceville:</b>⮀ Last task on the list and there are a ton of corrupted people here, plus the assassnation guild is here to collect all the hearts you gotten.]]></story_8>
         </assassin>
+        <assassinz0>
+		    <story_1><![CDATA[<b>1 Assassinated in Beginnersville:</b>⮀ You killed one of the town's people quickly and quietly, got the heart and moved on...]]></story_1>
+        </assassinz0>
+        <assassinz1>
+            <story_1><![CDATA[<b>1 Assassinated in Forest Path:</b>⮀ How was there more people in the forest besides the hermit and the witch? who knows, all that matters is you killed someone and left with the heart.]]></story_1>
+        </assassinz1>
+        <assassinz2>
+            <story_1><![CDATA[<b>1 Assassinated in Merchanton:</b>⮀ You walked into the casino, looked around to check for cameras and killed someone in the storage room. You got the heart and left quickly before being spotted.]]></story_1>
+        </assassinz2>
+        <assassinz3>
+            <story_1><![CDATA[<b>1 Assassinated in Mt. Olympus:</b>⮀ You climbed the Mountain and killed one of the yeti's for their heart, what they get for not selling snowcones.]]></story_1>
+        </assassinz3>
+        <assassinz4>
+            <story_1><![CDATA[<b>1 Assassinated in Valhalla:</b>⮀ Gods are looking all around but someone not paying tax on your property comes first, you kill them and grab the heart and quickly leave.]]></story_1>
+        </assassinz4>
+        <assassinz5>
+            <story_1><![CDATA[<b>1 Assassinated in Startington:</b>⮀ Everyone here is almost close to being dead so should be quick and easy. You get the heart so quick and moved on.]]></story_1>
+        </assassinz5>
+        <assassinz6>
+            <story_1><![CDATA[<b>1 Assassinated in Jungle Path:</b>⮀ Survivers are lost so you can use that to your advantage, 1 quick kill later and you can move on. Don't forget the heart!]]></story_1>
+        </assassinz6>
+        <assassinz7>
+            <story_1><![CDATA[<b>1 Assassinated in Commerenceville:</b>⮀ Last task on the list and there are a ton of corrupted people here, plus the assassnation guild is here to collect all the hearts you gotten.]]></story_1>
+        </assassinz7>
         <!--ruins-->
         <ruinsZ1>
             <label>Ruins</label>
@@ -1189,7 +1205,7 @@
             <info_text2>Pots with mana total</info_text2>
             <info_text3>Pots to check for mana</info_text3>
             <tooltip><![CDATA[
-            They're just sitting there, unbroken, full of potential.<br>Pots with mana in them have 
+            They're just sitting there, unbroken, full of potential.<br>Pots with mana in them have
         ]]></tooltip>
             <tooltip2><![CDATA[
             mana.<br>Every 10 pots have mana.
@@ -1204,7 +1220,7 @@
             <info_text2>Houses with valuables total</info_text2>
             <info_text3>Houses to check for valuables</info_text3>
             <tooltip><![CDATA[
-            Don't worry; they won't remember.<br>Houses with valuables in them have 
+            Don't worry; they won't remember.<br>Houses with valuables in them have
         ]]></tooltip>
             <tooltip2><![CDATA[
             gold.<br>Every 10 houses have gold.<br>Unlocked at 20% Explored.
@@ -1232,7 +1248,7 @@
         <buy_mana_z1>
             <label>Buy Mana</label>
             <tooltip><![CDATA[
-            1 gold = 
+            1 gold =
         ]]></tooltip>
             <tooltip2><![CDATA[
             mana. Buys all the mana you can.<br>Unlocked at 20% Explored.
@@ -1242,7 +1258,7 @@
         <buy_mana_challenge>
             <label>Buy Mana</label>
             <tooltip><![CDATA[
-            1 gold = 
+            1 gold =
         ]]></tooltip>
             <tooltip2><![CDATA[
             mana. Buys all the mana you can.<br>The merchant only has 7500 mana to sell, though.<br>Unlocked at 20% Explored.
@@ -1281,7 +1297,7 @@
             <info_text2>Quests with loot total</info_text2>
             <info_text3>Quests to finish</info_text3>
             <tooltip><![CDATA[
-            Be a hero! ...If the reward is good and it doesn't take too long.<br>Short Quests with loot give 
+            Be a hero! ...If the reward is good and it doesn't take too long.<br>Short Quests with loot give
         ]]></tooltip>
             <tooltip2><![CDATA[
             gold as a reward.<br>Every 5 Short Quests have loot.<br>Unlocked at 5% People Met.
@@ -1309,7 +1325,7 @@
             <info_text2>Quests with loot total</info_text2>
             <info_text3>Quests to finish</info_text3>
             <tooltip><![CDATA[
-            Be a more impressive hero! ...As long as someone is watching.<br>Long Quests with loot give 
+            Be a more impressive hero! ...As long as someone is watching.<br>Long Quests with loot give
         ]]></tooltip>
             <tooltip2><![CDATA[
             gold and 1 reputation as a reward.<br>Every 5 Long Quests have loot.<br>Unlocked at 10% Investigated.
@@ -1549,7 +1565,7 @@
             <info_text2>Sources with mana total</info_text2>
             <info_text3>Sources to check for mana</info_text3>
             <tooltip><![CDATA[
-            They're out of sight of most travellers, but you have time to find and harvest them.<br>Every good mana spot has 
+            They're out of sight of most travellers, but you have time to find and harvest them.<br>Every good mana spot has
         ]]></tooltip>
             <tooltip2><![CDATA[
             mana.<br>Every 10 mana spots have good mana.
@@ -1733,7 +1749,7 @@
             <label>Dark Ritual</label>
             <label_done>Completed</label_done>
             <tooltip><![CDATA[
-            Sacrifice an increasing amount of soulstones to the dark gods, granting a permanent speed 10% boost to all actions in Beginnersville.<br>Gives (dark magic skill) * (1 + witch knowledge / 100) * (1 + main stat / 100) * (original mana cost / actual mana cost) progress points per mana.<br>Requires a reputation of -5 or below.<br>Can only have 1 Dark Ritual action.<br>Unlocked with both 50% Witch Knowledge and 50 Dark Magic.<br>Sacrifices (50 * (rituals completed+1)) soulstones. Currently sacrificing 
+            Sacrifice an increasing amount of soulstones to the dark gods, granting a permanent speed 10% boost to all actions in Beginnersville.<br>Gives (dark magic skill) * (1 + witch knowledge / 100) * (1 + main stat / 100) * (original mana cost / actual mana cost) progress points per mana.<br>Requires a reputation of -5 or below.<br>Can only have 1 Dark Ritual action.<br>Unlocked with both 50% Witch Knowledge and 50 Dark Magic.<br>Sacrifices (50 * (rituals completed+1)) soulstones. Currently sacrificing
         ]]></tooltip>
             <tooltip2><![CDATA[
              soulstones.
@@ -1803,7 +1819,7 @@
         <buy_mana_z3>
             <label>Buy Mana</label>
             <tooltip><![CDATA[
-            1 gold = 
+            1 gold =
         ]]></tooltip>
             <tooltip2><![CDATA[
             mana. Buys all the mana you can.
@@ -1960,7 +1976,7 @@
             <label_complete>Completed</label_complete>
             <label_part>Heroes Trial</label_part>
             <tooltip><![CDATA[
-            Gather your party to take on the trial of heroes! 
+            Gather your party to take on the trial of heroes!
         ]]></tooltip>
             <segment_names>
                 <name>Locate Entrance</name>
@@ -2131,7 +2147,7 @@
             <label>Imbue Mind</label>
             <label_done>Completed</label_done>
             <tooltip><![CDATA[
-            Deep behind one of the many illusory walls, you've found a small glowing lake full of some sort of liquid. Your soulstones seem to glow when they get close to it. You appear to be able to use them as a link to your mind, but the process requires a very large amount of mana and will destroy them once it's complete. Each imbuement will increase the training limit by 1.<br>Gives (magic skill) * (1 + main stat / 100) * (original mana cost / actual mana cost) progress points per mana.<br>Can only have 1 Imbue Mind action.<br>Unlocked with both 70% Illusory Walls Discovered and 300 Magic.<br>Sacrifices (20 * (imbuements+1)) soulstones. Currently sacrificing 
+            Deep behind one of the many illusory walls, you've found a small glowing lake full of some sort of liquid. Your soulstones seem to glow when they get close to it. You appear to be able to use them as a link to your mind, but the process requires a very large amount of mana and will destroy them once it's complete. Each imbuement will increase the training limit by 1.<br>Gives (magic skill) * (1 + main stat / 100) * (original mana cost / actual mana cost) progress points per mana.<br>Can only have 1 Imbue Mind action.<br>Unlocked with both 70% Illusory Walls Discovered and 300 Magic.<br>Sacrifices (20 * (imbuements+1)) soulstones. Currently sacrificing
         ]]></tooltip>
             <tooltip2><![CDATA[
              soulstones.
@@ -2148,7 +2164,7 @@
             <label>Imbue Body</label>
             <label_done>Completed</label_done>
             <tooltip><![CDATA[
-            With your new knowledge, you believe you can also use the lake to reinforce your body across time. Each imbuement will increase starting stats by 1.<br>Gives (magic skill) * (1 + main stat / 100) * (original mana cost / actual mana cost) progress points per mana.<br>Can only have 1 Imbue Body action.<br>Level is limited by imbue mind rank.<br>Sacrifices (imbuements+1) levels of talent. Currently sacrificing 
+            With your new knowledge, you believe you can also use the lake to reinforce your body across time. Each imbuement will increase starting stats by 1.<br>Gives (magic skill) * (1 + main stat / 100) * (original mana cost / actual mana cost) progress points per mana.<br>Can only have 1 Imbue Body action.<br>Level is limited by imbue mind rank.<br>Sacrifices (imbuements+1) levels of talent. Currently sacrificing
         ]]></tooltip>
             <tooltip2><![CDATA[
              levels of talent from each stat.
@@ -2228,7 +2244,7 @@
 		<buy_mana_z5>
             <label>Buy Mana</label>
             <tooltip><![CDATA[
-            1 gold = 
+            1 gold =
         ]]></tooltip>
             <tooltip2><![CDATA[
             mana. Buys all the mana you can.
@@ -2350,7 +2366,7 @@
             <tooltip><![CDATA[
             You realize now that you've forgotten the joy of food, after having gone for so "long" without needing to eat anything. It's about time for a feast of grand proportions. Unfortunately, all the catering services here only accepts payments in soulstones.<br>
             Permanently increases self and team combat.<br>
-            Gives (practical magic skill) * (1 + main stat / 100) * (original mana cost / actual mana cost) progress points per mana.<br>Can only have 1 Great Feast action.<br>Requires 100 reputation.<br>Sacrifices (5,000 * (feasts+1)) soulstones. Currently sacrificing 
+            Gives (practical magic skill) * (1 + main stat / 100) * (original mana cost / actual mana cost) progress points per mana.<br>Can only have 1 Great Feast action.<br>Requires 100 reputation.<br>Sacrifices (5,000 * (feasts+1)) soulstones. Currently sacrificing
         ]]></tooltip>
             <tooltip2><![CDATA[
              soulstones.<br>Unlocked at 100% of city toured.
@@ -2539,7 +2555,7 @@
             <tooltip><![CDATA[
             Pay a local street urchin to show you around town. As a tourist, it feels like you're getting ripped off.<br>
             Cost is reduced by 80% with local guild membership.<br>
-            Currently costs 
+            Currently costs
             ]]></tooltip>
             <tooltip2>gold.</tooltip2>
         </excursion>
@@ -2688,7 +2704,7 @@
             <label_complete>100 Floors Completed</label_complete>
             <label_part>Gods Trial</label_part>
             <tooltip><![CDATA[
-            The gods have filled the 100 floors of the tower you built with monsters to stop you from returning to Valhalla. Rude. 
+            The gods have filled the 100 floors of the tower you built with monsters to stop you from returning to Valhalla. Rude.
         ]]></tooltip>
             <segment_names>
 		    <name>Fight Fire Dragon</name>
