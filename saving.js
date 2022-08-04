@@ -627,9 +627,11 @@ function load(inChallenge) {
 
     //Handle players on previous challenge system
     if(toLoad.challenge !== undefined && toLoad.challenge !== 0) {
-        challengeSave.challengeMode = toLoad.challenge;
+        challengeSave.challengeMode = 0;
         challengeSave.inChallenge = true;
+        save();
 
+        challengeSave.challengeMode = toLoad.challenge;
         saveName = challengeSaveName;
         save();
         location.reload();
