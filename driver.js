@@ -356,8 +356,13 @@ function unlockTown(townNum) {
         townsUnlocked.sort();
         // refresh current
         view.showTown(townNum);
+        view.requestUpdate("updateTravelMenu",null);
     }
-    view.requestUpdate("createTravelMenu",null);
+    let cNum = challengeSave.challengeMode;
+    if (cNum !== 0) {
+        if(challengeSave["c"+cNum]<townNum) challengeSave["c"+cNum] = townNum;
+        else if(challengeSave["c"+cNum] === undefined) challengeSave["c"+cNum] = townNum;
+    }
     curTown = townNum;
 }
 

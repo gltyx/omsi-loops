@@ -1,5 +1,5 @@
 function loadChallenge() {
-    switch (challenge) {
+    switch (challengeSave.challengeMode) {
         case 1:
             gameSpeed = 2;
 
@@ -19,8 +19,10 @@ function loadChallenge() {
             break;
         case 2:
             getSelfCombat = function() {
-                if (challenge === 2) return Math.max(getZombieStrength(), getTeamStrength()) / 2;
-                else return (getSkillLevel("Combat") + getSkillLevel("Pyromancy") * 5) * getArmorLevel() * (1 + getBuffLevel("Feast") * .05);
+                return Math.max(getZombieStrength(), getTeamStrength()) / 2;
+            }
+            getTeamCombat = function() {
+                return getZombieStrength() + getTeamStrength();
             }
             break;
         case 3:

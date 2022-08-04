@@ -5073,7 +5073,7 @@ Action.TheSpire = new DungeonAction("The Spire", 2, {
     loopStats: ["Per", "Int", "Con", "Spd", "Dex", "Per", "Int", "Str", "Soul"],
     affectedBy: ["Team"],
     manaCost() {
-        return 100000 * Math.pow(0.9,resources.pylons);
+        return 100000;
     },
     canStart() {
         const curFloor = Math.floor((towns[this.townNum].TheSpireLoopCounter) / this.segments + 0.0000001);
@@ -5084,7 +5084,7 @@ Action.TheSpire = new DungeonAction("The Spire", 2, {
     },
     tickProgress(offset) {
         const floor = Math.floor((towns[this.townNum].TheSpireLoopCounter) / this.segments + 0.0000001);
-        return getTeamCombat() *
+        return getTeamCombat() * (1 + 0.1 * resources.pylons) *
         (1 + getLevel(this.loopStats[(towns[this.townNum].TheSpireLoopCounter + offset) % this.loopStats.length]) / 100) *
         Math.sqrt(1 + dungeons[this.dungeonNum][floor].completed / 200);
     },
@@ -6179,10 +6179,10 @@ Action.BuildTower = new Action("Build Tower", {
     },
     finish() {
         stonesUsed[stoneLoc]++;
-        //towns[stoneLoc]["checkedStonesZ" + stoneLoc] -= 1000;
         towns[this.townNum].finishProgress(this.varName, 505);
         addResource("stone", false);
         if (towns[this.townNum].getLevel(this.varName) >= 100) stonesUsed = {1:250, 3:250, 5:250, 6:250};
+        adjustRocks(stoneLoc);
     },
 });
 
