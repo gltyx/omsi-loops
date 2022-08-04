@@ -799,10 +799,11 @@ Action.ShortQuest = new Action("Short Quest", {
             case 1:
                 return towns[0][`checked${this.varName}`] >= 1;
             case 2:
-                // 20 small quests in a loop
+                // 20 short quests in a loop
                 return storyReqs.maxSQuestsInALoop;
             case 3:
-                return towns[0][`checked${this.varName}`] >= 250;
+                // 50 short quests in a loop
+                return storyReqs.realMaxSQuestsInALoop;
         }
         return false;
     },
@@ -836,6 +837,7 @@ Action.ShortQuest = new Action("Short Quest", {
     },
     story(completed) {
         if (towns[0][`good${this.varName}`] >= 20 && towns[0][`goodTemp${this.varName}`] <= towns[0][`good${this.varName}`] - 20) unlockStory("maxSQuestsInALoop");
+        if (towns[0][`good${this.varName}`] >= 50 && towns[0][`goodTemp${this.varName}`] <= towns[0][`good${this.varName}`] - 50) unlockStory("realMaxSQuestsInALoop");
     }
 });
 
@@ -897,7 +899,8 @@ Action.LongQuest = new Action("Long Quest", {
                 // 10 long quests in a loop
                 return storyReqs.maxLQuestsInALoop;
             case 3:
-                return towns[0][`checked${this.varName}`] >= 125;
+                // 25 long quests in a loop
+                return storyReqs.realMaxLQuestsInALoop;
         }
         return false;
     },
@@ -930,6 +933,7 @@ Action.LongQuest = new Action("Long Quest", {
     },
     story(completed) {
         if (towns[0][`good${this.varName}`] >= 10 && towns[0][`goodTemp${this.varName}`] <= towns[0][`good${this.varName}`] - 10) unlockStory("maxLQuestsInALoop");
+        if (towns[0][`good${this.varName}`] >= 25 && towns[0][`goodTemp${this.varName}`] <= towns[0][`good${this.varName}`] - 25) unlockStory("realMaxLQuestsInALoop");
     }
 });
 
@@ -2195,6 +2199,8 @@ Action.DarkMagic = new Action("Dark Magic", {
                 return getSkillLevel("Dark") >= 25;
             case 3:
                 return getSkillLevel("Dark") >= 50;
+            case 4:
+                return getSkillLevel("Dark") >= 300;
         }
         return false;
     },
@@ -2240,6 +2246,12 @@ Action.DarkRitual = new MultipartAction("Dark Ritual", {
                 return storyReqs.darkRitualThirdSegmentReached;
             case 2:
                 return getBuffLevel("Ritual") >= 1;
+            case 3:
+                return getBuffLevel("Ritual") >= 50;
+            case 4:
+                return getBuffLevel("Ritual") >= 300;
+            case 5:
+                return getBuffLevel("Ritual") >= 666;
         }
         return false;
     },
@@ -3992,6 +4004,29 @@ Action.GuidedTour = new Action("Guided Tour", {
     expMult: 1,
     townNum: 4,
     varName: "Tour",
+    storyReqs(storyNum) {
+        switch (storyNum) {
+            case 1:
+                return towns[4].getLevel(this.varName) >= 1;
+            case 2:
+                return towns[4].getLevel(this.varName) >= 10;
+            case 3:
+                return towns[4].getLevel(this.varName) >= 20;
+            case 4:
+                return towns[4].getLevel(this.varName) >= 30;
+            case 5:
+                return towns[4].getLevel(this.varName) >= 40;
+            case 6:
+                return towns[4].getLevel(this.varName) >= 60;
+            case 7:
+                return towns[4].getLevel(this.varName) >= 80;
+            case 8:
+                return towns[4].getLevel(this.varName) >= 90;
+            case 9:
+                return towns[4].getLevel(this.varName) >= 100;
+        }
+        return false;
+    },
     stats: {
         Per: 0.3,
         Con: 0.2,
