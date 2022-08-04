@@ -1691,6 +1691,14 @@ Action.SitByWaterfall = new Action("Sit By Waterfall", {
         switch (storyNum) {
             case 1:
                 return storyReqs.satByWaterfall;
+            case 2:
+                return getTalent("Soul") >= 100;
+            case 3:
+                return getTalent("Soul") >= 1000;
+            case 4:
+                return getTalent("Soul") >= 10000;
+            case 5:
+                return getTalent("Soul") >= 100000;
         }
         return false;
     },
@@ -1814,6 +1822,10 @@ Action.PracticalMagic = new Action("Practical Magic", {
         switch (storyNum) {
             case 1:
                 return getSkillLevel("Practical") >= 1;
+            case 2:
+                return getSkillLevel("Practical") >= 100;
+            case 3:
+                return getSkillLevel("Practical") >= 400;
         }
         return false;
     },
@@ -1853,7 +1865,9 @@ Action.LearnAlchemy = new Action("Learn Alchemy", {
             case 2:
                 return getSkillLevel("Alchemy") >= 25;
             case 3:
-                return getSkillLevel("Alchemy") >= 50;
+                return getSkillLevel("Alchemy") >= 100;
+            case 4:
+                return getSkillLevel("Alchemy") >= 500;
         }
         return false;
     },

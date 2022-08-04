@@ -1571,9 +1571,9 @@
             mana.<br>Every 10 mana spots have good mana.
         ]]></tooltip2>
             <story_1><![CDATA[<b>Source checked for mana:</b>⮀ It's just sitting there, stray slightly from the beaten path and you find an abundance of mana just waiting for someone to take it, the only catch being you need to extract it from the plants surrounding it and they've proven slightly unwilling to part with it.]]></story_1>
-	     <story_2><![CDATA[<b>50 Sources checked for mana in a loop:</b>⮀ After exploring the forest 100%, you know the path to get all the mana sources, mana mania!]]></story_2>
-	     <story_3><![CDATA[<b>100 Sources checked for mana in a loop:</b>⮀ After exploring the thicket 100%, you know the path of the forest and the thicket to get tons of mana, insane!]]></story_3>
-	     <story_4><![CDATA[<b>150 Sources checked for mana in a loop:</b>⮀ In the nooks of the forest there is a secret path that you never even noticed, you probly wanted to see the hermit so much. There is 50 more mana sources with your name on it, god speed.]]></story_4>
+<!--	     <story_2><![CDATA[<b>50 Sources checked for mana in a loop:</b>⮀ After exploring the forest 100%, you know the path to get all the mana sources, mana mania!]]></story_2>-->
+<!--	     <story_3><![CDATA[<b>100 Sources checked for mana in a loop:</b>⮀ After exploring the thicket 100%, you know the path of the forest and the thicket to get tons of mana, insane!]]></story_3>-->
+<!--	     <story_4><![CDATA[<b>150 Sources checked for mana in a loop:</b>⮀ In the nooks of the forest there is a secret path that you never even noticed, you probly wanted to see the hermit so much. There is 50 more mana sources with your name on it, god speed.]]></story_4>-->
         </wild_mana>
         <gather_herbs>
             <label>Gather Herbs</label>
@@ -1585,7 +1585,7 @@
             Might as well dig up anything useful you find.<br>Every 10 funny plants are herbs.<br>Unlocked at 10% Forest Explored.
         ]]></tooltip>
             <story_1><![CDATA[<b>Plant checked for use:</b>⮀ You pull up random plants across the forest that emanate mana only to find that in most cases, they're simply plants that have started gathering mana, but in some cases they're actually magical plants. Small distinction, but a significant one.]]></story_1>
-	     <story_2><![CDATA[<b>500 Plants checked in a loop:</b>⮀ Every plant you can see has been picked up in the forest, they have many uses for them! ]]></story_2>
+<!--	     <story_2><![CDATA[<b>500 Plants checked in a loop:</b>⮀ Every plant you can see has been picked up in the forest, they have many uses for them! ]]></story_2>-->
         </gather_herbs>
         <hunt>
             <label>Hunt</label>
@@ -1664,9 +1664,9 @@
             Bubbles and Flasks. Potions and Magic.<br>Requires a reputation of 5 or above, or he won't let you near his stuff.<br>Creates a potion from 10 herbs to sell at the next town.<br>Gives alchemy and magic skill.<br>Unlocked with 10 Alchemy.
         ]]></tooltip>
             <story_1><![CDATA[<b>Potion brewed:</b>⮀ The old man happily lets you use his apparatus to brew your own potions after much haranguing about your technique and the fact that you're not buying ingredients off him, he leaves you to it. His workstations are old, well used and obviously well looked after. The only fault you can lay at their feet is that the measuring system used is older than dirt. Fits you suppose.]]></story_1>
-	     <story_2><![CDATA[<b>50 Potions brewed in a loop:</b>⮀ All made perfectly and are high grade quality, the hermit is impressed with the collection you have made. Time to hit the next town and sell them!]]></story_2>
-            <story_3><![CDATA[<b>Action failed with low reputation:</b>⮀ The hermit refuses to allow you near his workstations and potion brewing equipment no matter how much you ask and offer to pay. He tells you that you don't have a good enough karma for him to even be willing to risk you using his workstations and potion benches.]]></story_3>
-            <story_4><![CDATA[<b>Action failed with negative reputation:</b>⮀ The hermit shoos you away from his clearing when you even make a mention of using his potion supplies, something about not wanting you to taint his equipment with your karma.]]></story_4>
+<!--	     <story_2><![CDATA[<b>50 Potions brewed in a loop:</b>⮀ All made perfectly and are high grade quality, the hermit is impressed with the collection you have made. Time to hit the next town and sell them!]]></story_2>-->
+            <story_2><![CDATA[<b>Action failed with low reputation:</b>⮀ The hermit refuses to allow you near his workstations and potion brewing equipment no matter how much you ask and offer to pay. He tells you that you don't have a good enough karma for him to even be willing to risk you using his workstations and potion benches.]]></story_2>
+            <story_3><![CDATA[<b>Action failed with negative reputation:</b>⮀ The hermit shoos you away from his clearing when you even make a mention of using his potion supplies, something about not wanting you to taint his equipment with your karma.]]></story_3>
         </brew_potions>
         <train_dexterity>
             <label>Train Dexterity</label>
@@ -1674,10 +1674,8 @@
             There's a nice array of rocks to hop between. It's a lot of fun.<br>Has 4x exp/talent gain, and can only be done <div id='trainingLimitDex'></div> times per reset.<br>Unlocked at 60% Forest Explored.
         ]]></tooltip>
             <story_1><![CDATA[<b>Dexterity trained:</b>⮀ You find rocks spaced intermittently in an open clearing. Your best guess is that they were set up as a training field for some mercenary group that had passed by. Either way, it's fun to bounce from one rock to another parrying invisible enemies and fighting the air.]]></story_1>
-	     <story_2><![CDATA[<b>100 Dexterity Talent:</b>⮀ You parry and fight invisable monsters for alot longer than you thought you were gonna but you are now quick to dodge and evade!]]></story_2>
-	     <story_3><![CDATA[<b>1,000 Dexterity Talent:</b>⮀ You have so much dexterity that you can be nimble and so light that you can bounce everywhere, bounce man???]]></story_3>
-	     <story_4><![CDATA[<b>10,000 Dexterity Talent:</b>⮀ ]]></story_4>
-	     <story_5><![CDATA[<b>100,000 Dexterity Talent:</b>⮀ ]]></story_5>
+<!--	     <story_2><![CDATA[<b>100 Dexterity Talent:</b>⮀ You parry and fight invisable monsters for alot longer than you thought you were gonna but you are now quick to dodge and evade!]]></story_2>-->
+<!--	     <story_3><![CDATA[<b>1,000 Dexterity Talent:</b>⮀ You have so much dexterity that you can be nimble and so light that you can bounce everywhere, bounce man???]]></story_3>-->
         </train_dexterity>
         <train_speed>
             <label>Train Speed</label>
