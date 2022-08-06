@@ -4034,6 +4034,7 @@ Action.GuidedTour = new Action("Guided Tour", {
         Int: 0.1,
         Luck: 0.1
     },
+	affectedBy: ["Buy Glasses"],
     canStart() {
         return resources.gold >= 10;
     },
