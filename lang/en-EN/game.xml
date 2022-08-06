@@ -14,7 +14,7 @@
             High level players who are still experiencing lag can significantly improve performance by reducing this number - this will only decrease how often the screen refreshes, not how often the game updates.<br>
             ---<br>
             Additionally, we have a number of new global stories for all the zones, action segments, and other updates from MrPitt!
-            ]]></version>            
+            ]]></version>
             <version verNum="2.8"><![CDATA[
             <b> July 25th, 2022</b>
             • A new guild has opened in Commerceville - Assassins Guild! Kill targets across the world, collect their hearts (why is it always hearts?), and return them to the guild to learn the ways of the assassin<br>
@@ -62,7 +62,7 @@
             <version verNum="2.2"><![CDATA[
             <b> July 19th, 2022</b>
             • New Skill: Leadership - Increases your max follower count by 1 for every 100 levels and increases their contribution to team combat<br>
-            • New Action (Commerceville): Motivational Seminar - Get advice from the head of a totally-not-an-MLM to learn how to be a better leader<br> 
+            • New Action (Commerceville): Motivational Seminar - Get advice from the head of a totally-not-an-MLM to learn how to be a better leader<br>
             • Balance: Zombie Strength is now increased by Dark Ritual / 100(min 1x, up to 6.66x increase)<br>
             • Balance: Fight Jungle Monsters now rewards blood instead of hides. Prepare Buffet is now made of blood instead of hide. Still gross.<br>
             Note - We'll have to see how these changes land. It may end up being that now Team Combat is too strong compared to self combat. Also, trials will almost certainly need rebalancing.<br>
@@ -207,13 +207,13 @@
             • New Action (Startington): Mana Well - Gives mana based on how quickly in the loop it is completed (adjusted for bonus second use)<br>
             • New Actions (Jungle Path): Explore Jungle & Fight Jungle Monsters - Generic exploration/progress action where exp is based on fight monsters completion<br>
             • New Actions (Jungle Path): Rescue Survivors & Prepare Buffet - Uses Resto skill, then herbs and hide to give Gluttony exp<br>
-            • New Action (Jungle Path): Escape - Unlocks next zone, but requires being completed within 60 seconds of starting the loop (adjusted for bonus second use) 
+            • New Action (Jungle Path): Escape - Unlocks next zone, but requires being completed within 60 seconds of starting the loop (adjusted for bonus second use)
             • New Actions (Commerceville): Thieves Guild - Functions similar to crafting guild, but with a focus on gold income<br>
             • New Actions (Commerceville): Invest & Collect interest. Grants a small percentage of lifetime investments<br>
             • New Actions (Commerceville): Purchase Key & Leave City - Progress to next zone for cost of 1M gold<br>
             • New Actions (Valley Of Olympus): Imbue Soul & Challenge Gods - (Incomplete) Planned end of game<br>
             • Dark Ritual now works in all zones and provides a very minor speed increase up to max level. Need to find a way to hide description for locked zones<br>
-            • Decreased mana cost of open rift from 100k -> 50k<br> 
+            • Decreased mana cost of open rift from 100k -> 50k<br>
             • Minor fix to how Spatiomancy effects herbs
             ]]></version>
             <version verNum=".97"><![CDATA[
@@ -606,14 +606,14 @@
 			</story>
 			<story num="8"> <!--Change 8 to Jungle Path-->
 				Before you leave Startington you realize you don't have the supplies you got in Beginnersville, but lucky for you Startington
-				sells another supply set but rumor has it that the shopkeeper is kinda deaf so your haggles won't work on them. You get your 
+				sells another supply set but rumor has it that the shopkeeper is kinda deaf so your haggles won't work on them. You get your
 				supplies and you set off down the trail, reminds you of the forest. You walk untill you see a jungle up ahead with ruins all
 				around, probly best to start exploring them.
 			</story>
 			<story num="9"> <!--Made the Looping Potion--> <!--Change 9 to Looping Potion-->
 				You have made the Loop Potion after learning alchemistry and grabbing herbs from the forest, you take a bit to brew the
 				concoction and after it boils a bit and the herbs soak into a nearby mana geyser then you pour it into a bottle. After
-				a glance you have no doubts that it is the think you spilled back in beginnersville, but you have no idea what to do 
+				a glance you have no doubts that it is the think you spilled back in beginnersville, but you have no idea what to do
 				with it now.
 			</story>
 			<story num="10"> <!--Change 10 to Commerceville-->
@@ -627,8 +627,8 @@
 			<story num="11"> <!--Change 11 to Valley of Olympus-->
 				After you take a heafty loan from the bank you can now own Commerceville and leave while you still can, after you walk down the
 				road you realize you can move the stones from the Jungle and move them to build a great tower. After you build the great tower
-				you realize you can't reach Valhalla unless you can clear trial of the gods to prove worthy of entering again. After finally 
-				clearing the trial of the gods, the voice speaks "The 7 gods of this land protect this world, if you want to enter Valhalla 
+				you realize you can't reach Valhalla unless you can clear trial of the gods to prove worthy of entering again. After finally
+				clearing the trial of the gods, the voice speaks "The 7 gods of this land protect this world, if you want to enter Valhalla
 				you can defeat us to be worth of the throne." After a long battle the last god goes down and you gain the power of all 7 gods,
 				with great power you can end the time loop now and forever!
 			</story>
@@ -636,11 +636,11 @@
 				<![CDATA[
 				   You've done it! You've bested the gods themselves and restored time to its rightful flow. You can stop looping at any moment.
 				   But, then again, you could keep going. There's always time later...
-				   Thanks for playing my fan mod of Idle Loops! 
+				   Thanks for playing my fan mod of Idle Loops!
 				   Big shout-out to the wonderful Stop_Sign for creating this amazing game and Omsi for all the Omsi version.
 				   You both have inspired me more than you can imagine.
 				   Hope everyone had fun! <3 <br>
-				   --Lloyd                
+				   --Lloyd
 				]]>
             </story>
         </stories>
@@ -1059,15 +1059,31 @@
             Gives progress equal to (Sqrt(Practical) + Thievery + Assassin) * Stat/1000 * Sqrt(Completions/100) / Abs(reputation) / hearts^2.<br>
             Rewards a heart.
             ]]></tooltip>
-		<story_1><![CDATA[<b>1 Assassinated in Beginnersville:</b>⮀ You killed one of the town's people quickly and quietly, got the heart and moved on...]]></story_1>
-		<story_2><![CDATA[<b>1 Assassinated in Forest Path:</b>⮀ How was there more people in the forest besides the hermit and the witch? who knows, all that matters is you killed someone and left with the heart.]]></story_2>
-		<story_3><![CDATA[<b>1 Assassinated in Merchanton:</b>⮀ You walked into the casino, looked around to check for cameras and killed someone in the storage room. You got the heart and left quickly before being spotted.]]></story_3>
-		<story_4><![CDATA[<b>1 Assassinated in Mt. Olympus:</b>⮀ You climbed the Mountain and killed one of the yeti's for their heart, what they get for not selling snowcones.]]></story_4>
-		<story_5><![CDATA[<b>1 Assassinated in Valhalla:</b>⮀ Gods are looking all around but someone not paying tax on your property comes first, you kill them and grab the heart and quickly leave.]]></story_5>
-		<story_6><![CDATA[<b>1 Assassinated in Startington:</b>⮀ Everyone here is almost close to being dead so should be quick and easy. You get the heart so quick and moved on.]]></story_6>
-		<story_7><![CDATA[<b>1 Assassinated in Jungle Path:</b>⮀ Survivers are lost so you can use that to your advantage, 1 quick kill later and you can move on. Don't forget the heart!]]></story_7>
-		<story_8><![CDATA[<b>1 Assassinated in Commerenceville:</b>⮀ Last task on the list and there are a ton of corrupted people here, plus the assassnation guild is here to collect all the hearts you gotten.]]></story_8>
         </assassin>
+        <assassinz0>
+		    <story_1><![CDATA[<b>1 Assassinated in Beginnersville:</b>⮀ His name was Ethan, you met him on your fifteenth loop. Always seemed to be getting into some sort of trouble. You ambush him as he strolls down an alley and carve out his heart before he knows what happened. He'll be fine next loop, you tell yourself.]]></story_1>
+        </assassinz0>
+        <assassinz1>
+            <story_1><![CDATA[<b>1 Assassinated in Forest Path:</b>⮀ How was there more people in the forest besides the hermit and the witch? who knows, all that matters is you killed someone and left with the heart.]]></story_1>
+        </assassinz1>
+        <assassinz2>
+            <story_1><![CDATA[<b>1 Assassinated in Merchanton:</b>⮀ You walked into the casino, looked around to check for cameras and killed someone in the storage room. You got the heart and left quickly before being spotted.]]></story_1>
+        </assassinz2>
+        <assassinz3>
+            <story_1><![CDATA[<b>1 Assassinated in Mt. Olympus:</b>⮀ You climbed the Mountain and killed one of the yeti's for their heart, what they get for not selling snowcones.]]></story_1>
+        </assassinz3>
+        <assassinz4>
+            <story_1><![CDATA[<b>1 Assassinated in Valhalla:</b>⮀ Gods are looking all around but someone not paying tax on your property comes first, you kill them and grab the heart and quickly leave.]]></story_1>
+        </assassinz4>
+        <assassinz5>
+            <story_1><![CDATA[<b>1 Assassinated in Startington:</b>⮀ Everyone here is almost close to being dead so should be quick and easy. You get the heart so quick and moved on.]]></story_1>
+        </assassinz5>
+        <assassinz6>
+            <story_1><![CDATA[<b>1 Assassinated in Jungle Path:</b>⮀ Survivers are lost so you can use that to your advantage, 1 quick kill later and you can move on. Don't forget the heart!]]></story_1>
+        </assassinz6>
+        <assassinz7>
+            <story_1><![CDATA[<b>1 Assassinated in Commerenceville:</b>⮀ Last task on the list and there are a ton of corrupted people here, plus the assassnation guild is here to collect all the hearts you gotten.]]></story_1>
+        </assassinz7>
         <!--ruins-->
         <ruinsZ1>
             <label>Ruins</label>
@@ -1179,7 +1195,7 @@
             <tooltip>Explore the town, look for hidden areas and treasures.</tooltip>
             <story_1><![CDATA[<b>20% Explored:</b>⮀ You know the general layout of the small village now, you don't get lost walking from one side to another!]]></story_1>
             <story_2><![CDATA[<b>40% Explored:</b>⮀ You're starting to really know your way around, you can almost figure your way around without following a set path!]]></story_2>
-            <story_3><![CDATA[<b>60% Explored:</b>⮀ You've tread all the main roads and you avail yourself to the unkempt side paths and well worn paths. If you let yourself into some houses, well, no one needs to know, do they?]]></story_3>
+            <story_3><![CDATA[<b>60% Explored:</b>⮀ You've tread all the main roads and you avail yourself to the unkempt side paths and well worn paths. If you let yourself into some houses along the way, well, no one needs to know, do they?]]></story_3>
             <story_4><![CDATA[<b>80% Explored:</b>⮀ You've decided to explore the houses now that you've trod every single feasible path in this small village. Man, the stuff people keep around.]]></story_4>
             <story_5><![CDATA[<b>100% Explored:</b>⮀ You've been everywhere, there is absolutely nowhere in this town you haven't been. You've been in every cellar, under every bed, and in every closet. You've pried all the floorboards, and just in general, been into everything. Except the houses with locks, those dastardly locks.]]></story_5>
         </wander>
@@ -1190,13 +1206,13 @@
             <info_text2>Pots with mana total</info_text2>
             <info_text3>Pots to check for mana</info_text3>
             <tooltip><![CDATA[
-            They're just sitting there, unbroken, full of potential.<br>Pots with mana in them have 
+            They're just sitting there, unbroken, full of potential.<br>Pots with mana in them have
         ]]></tooltip>
             <tooltip2><![CDATA[
             mana.<br>Every 10 pots have mana.
         ]]></tooltip2>
             <story_1><![CDATA[<b>50 Pots with mana:</b>⮀ You've smashed every single pot in this village, and have figured out all the pots that contain any trace of mana. Having to break them all physically was time consuming, and your skills at absorbing the mana weren't the best. There must be more efficient ways of doing it.]]></story_1>
-		<story_2><![CDATA[<b>75 Pots with mana:</b>⮀ ]You found and smashed every pot there was in this village which you thought was impossible, welp more mana for you and your future loops]]></story_2>
+		    <story_2><![CDATA[<b>75 Pots with mana:</b>⮀ Is the pot over here, or is it over there? Space can be such a fickle thing sometimes. Maybe it's both! There, now there's another pot to loot.]]></story_2>
         </smash_pots>
         <pick_locks>
             <label>Pick Locks</label>
@@ -1205,7 +1221,7 @@
             <info_text2>Houses with valuables total</info_text2>
             <info_text3>Houses to check for valuables</info_text3>
             <tooltip><![CDATA[
-            Don't worry; they won't remember.<br>Houses with valuables in them have 
+            Don't worry; they won't remember.<br>Houses with valuables in them have
         ]]></tooltip>
             <tooltip2><![CDATA[
             gold.<br>Every 10 houses have gold.<br>Unlocked at 20% Explored.
@@ -1213,7 +1229,7 @@
             <story_1><![CDATA[<b>House checked:</b>⮀ You manage to pick a lock that was in disrepair and opened the door, only to walk into the home's inhabitant. Good thing the loop ended not soon after. You're gonna have to figure out which houses are worth hitting. Some money wouldn't go astray.]]></story_1>
             <story_2><![CDATA[<b>50 Houses known:</b>⮀ You really should look at hitting those locked houses around, who knows what goodies you'll manage to scrounge up.]]></story_2>
             <story_3><![CDATA[<b>10 Houses with loot:</b>⮀ You've figured out which houses are uninhabited and have enough gold for it to be worth your time. As they say, time is mana!]]></story_3>
-		<story_4><![CDATA[<b>25 Houses with loot in a loop:</b>⮀ You really are the Master Locksmith? In and out you went without a single floorboard creaking, if only you had this skill in real life!]]></story_4>
+		    <story_4><![CDATA[<b>25 Houses with loot in a loop:</b>⮀ Some would say that entering a house from the back door instead of the front doesn't change what you find inside. Some people aren't masters of spatiomancy.]]></story_4>
         </pick_locks>
         <buy_glasses>
             <label>Buy Glasses</label>
@@ -1233,7 +1249,7 @@
         <buy_mana_z1>
             <label>Buy Mana</label>
             <tooltip><![CDATA[
-            1 gold = 
+            1 gold =
         ]]></tooltip>
             <tooltip2><![CDATA[
             mana. Buys all the mana you can.<br>Unlocked at 20% Explored.
@@ -1243,12 +1259,12 @@
         <buy_mana_challenge>
             <label>Buy Mana</label>
             <tooltip><![CDATA[
-            1 gold = 
+            1 gold =
         ]]></tooltip>
             <tooltip2><![CDATA[
             mana. Buys all the mana you can.<br>The merchant only has 7500 mana to sell, though.<br>Unlocked at 20% Explored.
         ]]></tooltip2>
-            <story_1><![CDATA[<b>Bought Mana:</b>⮀ You walk up to the mana stand ready to throw your money at the man behind the counter, but before you can get a word out, he interrupts you, saying "I'm sure you understand my reasonable prices, yes? Times are hard during this drought - my colleagues are all out of stock, and I only have 7500 mana until I am as well." His prices are ridiculous, but you pay them with gritted teeth, having no other option.]]></story_1>
+            <story_1><![CDATA[<b>Bought Mana:</b>⮀ You walk up to the mana stand ready to throw your money at the man behind the counter, but before you can get a word out, he interrupts you, saying "I'm sure you understand my reasonable prices, yes? Times are hard during this drought - my colleagues are all out of stock, and my own supplies are down to just 7500 mana." His prices are ridiculous, but you pay them with gritted teeth, having no other option.]]></story_1>
 			<story_2><![CDATA[<b>7500 Mana Bought:</b>⮀ After you buy everything the man has for sale, he immediately states that he's out of stock and proceeds to slam the stall window on you. As he disappears, you spot a shadow of fear cross his face. He must have to deal with a lot of angry would-be customers these days.]]></story_2>
         </buy_mana_challenge>
         <meet_people>
@@ -1272,8 +1288,8 @@
             <story_1><![CDATA[<b>Strength trained:</b>⮀ You lift the oak barrel filled with water, holding it while you squat again and again. The barrel rests upon your back as you do push up after push up. It's a trusty companion in your quest to regain your muscle.]]></story_1>
             <story_2><![CDATA[<b>100 Strength talent:</b>⮀ Your body adapts faster and faster to the strains you put upon it. You know exactly how far to push it and can tell almost instinctively when to stop.]]></story_2>
             <story_3><![CDATA[<b>1,000 Strength talent:</b>⮀ Your body seems to build itself up faster and faster each time you break it down. You can practically feel your mana purr in satisfaction as it rebuilds your body to be stronger and stronger.]]></story_3>
-		<story_4><![CDATA[<b>10,000 Strength talent:</b>⮀ It's over 9000! You are so strong that you can flick open pots and can defeat monsters with ease. Your can still push farther beyond your limits and go plus ultra!]]></story_4>
-		<story_5><![CDATA[<b>100,000 Strength talents:</b>⮀ At this point gods are starting to fear you, you have so much strength that anything you touch breaks instantly!]]></story_5>
+		    <story_4><![CDATA[<b>10,000 Strength talent:</b>⮀ You have gotten so strong, you can destroy a pot with a well-aimed flick of the fingers, and crush monsters in your grip. Yet you feel like you can still push even further beyond those limits, and train like no other!]]></story_4>
+		    <story_5><![CDATA[<b>100,000 Strength talents:</b>⮀ One by one you run out of measurable limits to your strength. Armor shatters before your fist and stone yields like wet clay to your fingers. You yearn to push your limits even more. Maybe if you sought out a god for an arm-wrestling match?]]></story_5>
         </train_strength>
         <short_quest>
             <label>Short Quest</label>
@@ -1282,14 +1298,14 @@
             <info_text2>Quests with loot total</info_text2>
             <info_text3>Quests to finish</info_text3>
             <tooltip><![CDATA[
-            Be a hero! ...If the reward is good and it doesn't take too long.<br>Short Quests with loot give 
+            Be a hero! ...If the reward is good and it doesn't take too long.<br>Short Quests with loot give
         ]]></tooltip>
             <tooltip2><![CDATA[
             gold as a reward.<br>Every 5 Short Quests have loot.<br>Unlocked at 5% People Met.
         ]]></tooltip2>
             <story_1><![CDATA[<b>Short Quest finished:</b>⮀ You help an elderly woman get her cat down from atop her house, she rewards you handsomely for your efforts.]]></story_1>
             <story_2><![CDATA[<b>20 Short Quests with loot in a loop:</b>⮀ You’ve helped everyone who’s been willing to take you on, and the gold from your work jingles beautifully in your pockets. The satisfaction of a job well done fills you with pride.]]></story_2>
-		<story_3><![CDATA[<b>50 Short Quests with loot in a loop:</b>⮀ You have done every small tasks the town had to do, now the town repects you even more than before!]]></story_3>
+		    <story_3><![CDATA[<b>50 Short Quests with loot in a loop:</b>⮀ You've gotten so familiar with residents daily routines and needs that you can finish chores for them before they ever think to ask for help. The only problem is how much it unnerves people to see somebody just a bit too helpful...]]></story_3>
         </short_quest>
         <investigate>
             <label>Investigate</label>
@@ -1310,14 +1326,14 @@
             <info_text2>Quests with loot total</info_text2>
             <info_text3>Quests to finish</info_text3>
             <tooltip><![CDATA[
-            Be a more impressive hero! ...As long as someone is watching.<br>Long Quests with loot give 
+            Be a more impressive hero! ...As long as someone is watching.<br>Long Quests with loot give
         ]]></tooltip>
             <tooltip2><![CDATA[
             gold and 1 reputation as a reward.<br>Every 5 Long Quests have loot.<br>Unlocked at 10% Investigated.
         ]]></tooltip2>
             <story_1><![CDATA[<b>Long Quest finished:</b>⮀ You cleared out a cellar of rats; there were at least sixty of the blighters. You were rewarded handsomely, and you got a small reputation boost to boot.]]></story_1>
             <story_2><![CDATA[<b>10 Long Quests with loot in a loop:</b>⮀ You’ve cleared out cellars, helped build a house, collected flowers for dyes, worked in the bakery, taken out trash, and helped a seamstress finish a gift for her husband. Your reputation is spreading as the helpful courier. Everyone is at the very least willing to listen to you.]]></story_2>
-		<story_3><![CDATA[<b>25 Long Quests with loot in a loop:</b>⮀ The town has nothing left for you to do at this point and suggest that maybe you might find more work somewhere else. They appericate everything you did.]]></story_3>
+		    <story_3><![CDATA[<b>25 Long Quests with loot in a loop:</b>⮀ The town has nothing left for you to do at this point and suggest that maybe you might find more work somewhere else. They appreciate everything you did, and many of the townsfolk are eager to put in a good word for you.]]></story_3>
         </long_quest>
         <throw_party>
             <label>Throw Party</label>
@@ -1325,18 +1341,18 @@
             Take a break and socialize.<br>Gives people met progress equivalent to 16 Meet People actions.<br>Costs 2 reputation.<br>Unlocked at 30% Investigated.
         ]]></tooltip>
             <story_1><![CDATA[<b>Party thrown:</b>⮀ You announce that its your birthday and you want to throw a party. You commandeer the village square and the people necessary to make it happen. You don't have the gold but people aren't quite able to say no. You promise you'll pay it off with the money from this current job.]]></story_1>
-			<story_2><![CDATA[<b>10 Party thrown in a loop:</b>⮀ You throw a massive celebration that lasts the entire day. The whole town is invited, and since you're offering free food, most of them even show up! There are multiple parades as well as a dunk tank, the latter of which doesn't come cheap, but you don't care. You told them you'll pay it off "later", and since you just healed practically half the town, they didn't really have any grounds to refuse you.]]></story_2>
+			<story_2><![CDATA[<b>10 Party thrown in a loop:</b>⮀ You throw a massive celebration that lasts the entire day. The whole town is invited, and since you're offering free food, most of them even show up! There are multiple parades as well as a dunk tank, the latter of which doesn't come cheap, but you don't care. You told them you'll pay it off "later",  and since you've done such a massive amount for the town today, they didn't have much grounds to refuse you.]]></story_2>
         </throw_party>
         <warrior_lessons>
             <label>Warrior Lessons</label>
             <tooltip><![CDATA[
             Learning to fight is probably important; you have a long journey ahead of you.<br>Requires a reputation of 2 or above.<br>Unlocked at 20% Investigated.
         ]]></tooltip>
-            <story_1><![CDATA[<b>1 Combat:</b>⮀ You manage to track down the warrior that was staying in town, and are greeted by a small woman holding a sword almost as tall as her. She introduces herself as "Iron" and smiles politely, doesn't stop her from thoroughly trouncing you.]]></story_1>
-            <story_2><![CDATA[<b>100 Combat:</b>⮀ You manage to give Iron a run for her money, but she still manages to eek out a victory, she's noticeably worn out afterwards.]]></story_2>
-            <story_3><![CDATA[<b>200 Combat:</b>⮀ You push Iron to the brink of defeat and then she starts fighting dirty.]]></story_3>
-            <story_4><![CDATA[<b>250 Combat:</b>⮀ You manage to finally defeat Iron, all your experience fighting her finally pays off. You feel really proud of yourself, right up until she smacks your head with her sword and demands a rematch.]]></story_4>
-		<story_5><![CDATA[<b>1,000 Combat:</b>⮀ You decide to honor the rematch and fight with Iron once more, the duel lasts for 2 weeks and you both end up in a draw. She is suprised how far you have come with your training, she tells you that when she was a kid she had to pick up a weapon to help protect the town. She states that monsters would enter town and attack so training was the only way to become who she is today.]]></story_5>
+            <story_1><![CDATA[<b>1 Combat:</b>⮀ You manage to track down the warrior that was staying in town, and are greeted by a small woman holding a sword almost as tall as her. She introduces herself as "Iron" and smiles politely.  Her pleasant demeanour doesn't stop her from thoroughly trouncing you.]]></story_1>
+            <story_2><![CDATA[<b>100 Combat:</b>⮀ You manage to give Iron a run for her money, but she still manages to eek out a victory. She is, however, noticeably worn out afterwards.]]></story_2>
+            <story_3><![CDATA[<b>200 Combat:</b>⮀ You push Iron to the brink of defeat, and then she starts fighting dirty.]]></story_3>
+            <story_4><![CDATA[<b>250 Combat:</b>⮀ All your experience fighting Iron finally pays off when you manage to defeat her! You feel really proud of yourself, right up until she smacks your head with the flat of her sword and demands a rematch.]]></story_4>
+		    <story_5><![CDATA[<b>1,000 Combat:</b>⮀ You decide to honor the rematch and fight with Iron once more, the duel lasts for 2 weeks and you both end up in a draw. She is suprised how far you have come with your training, she tells you that when she was a kid she had to pick up a weapon to help protect the town. She states that monsters would enter town and attack so training was the only way to become who she is today.]]></story_5>
         </warrior_lessons>
         <mage_lessons>
             <label>Mage Lessons</label>
@@ -1360,7 +1376,7 @@
 			]]></tooltip>
 			<story_1><![CDATA[<b>Patient healed:</b>⮀ You're allowed in to see the patients and begin healing. It's excellent practice and everyone you heal, be it from broken bones to small scrapes is extraordinarily thankful for your help.]]></story_1>
 			<story_2><![CDATA[<b>10 Patients healed in a loop:</b>⮀ Your reputation is absolutely sterling, you've basically cleared out the entire healing home and the nurses and healers are more than thankful for your help.]]></story_2>
-			<story_3><![CDATA[<b>100 Patients healed:</b>⮀ You've healed this guy so many times you barely even have to think about it anymore. The ones after him are harder, though; you're not actually a doctor so a lot of this is trial and error.]]></story_3>
+			<story_3><![CDATA[<b>100 Patients healed:</b>⮀ You've healed some of these townsfolk so many times, you don't actually need to speak to them or examine them to find out what's wrong. You go through the same steps anyways, because good bedside manners are an integral part of earning respect as a healer.]]></story_3>
 			<story_4><![CDATA[<b>1000 Patients healed:</b>⮀ You never went to medical school, but you've healed so many people that you're pretty much an expert now. Nothing can stop you, nothing can stump you, nothing can even slow you down! ...Except when they bring in a patient you haven't seen before. When that happens, it usually takes you a while to figure out what their problem is.]]></story_4>
 			<story_5><![CDATA[<b>Failed Action:</b>⮀ You're turned away at the door, the small healers home stating that they can't trust you to not poison the people inside or make the situation worse.]]></story_5>
 			<story_6><![CDATA[<b>50 Restoration:</b>⮀ As good as you were at healing already, you think you've gotten good enough at restoration magic that it can help you heal people even faster! Healing really is a fulfilling job, especially now that you're actually competent at it - maybe you'll keep doing it once you're out of the loops.]]></story_6>
@@ -1453,12 +1469,12 @@
                 <segment_modifier>A bunch of</segment_modifier>
             </segment_modifiers>
             <story_1><![CDATA[<b>Monster killed:</b>⮀ It's all so new, the way they respond and attack, you're not ashamed to admit that you almost got brained by a deer. Either way, their hides and rendered components will sell well.]]></story_1>
-            <story_2><![CDATA[<b>100 Monsters killed:</b>⮀ You've fought enough that you're really starting to figure out how they'll respond to most things.]]></story_2>
-            <story_3><![CDATA[<b>500 Monsters killed:</b>⮀ You've pretty much figured out their patterns now, how they respond to what you do.]]></story_3>
-            <story_4><![CDATA[<b>1,000 Monsters killed:</b>⮀ You know exactly what they're going to do, pretty much nothing surprises you anymore.]]></story_4>
-            <story_5><![CDATA[<b>5,000 Monsters killed:</b>⮀ You're able to effectively plan ambushes and set traps to kill them without even being there anymore.]]></story_5>
-            <story_6><![CDATA[<b>10,000 Monsters killed:</b>⮀ You don't struggle or need to worry about anything they throw at you anymore, you know everything.]]></story_6>
-            <story_7><![CDATA[<b>20,000 Monsters killed:</b>⮀ This is a joke, the only reason you're still doing this is the gold it rakes in. You need it.]]></story_7>
+            <story_2><![CDATA[<b>100 Monsters killed:</b>⮀ You thought it would take longer to learn, but these monsters are pretty straightforward. Pay attention to their body language and they'll all but announce their next attack.]]></story_2>
+            <story_3><![CDATA[<b>500 Monsters killed:</b>⮀ Duck, sidestep, stab, and another monster goes down. You wipe some sweat off your brow and let the adrenaline fade. They always fall for that trick.]]></story_3>
+            <story_4><![CDATA[<b>1,000 Monsters killed:</b>⮀ Three monsters charge you at once. You lunge at the last second, scoring a blow against one while letting the other two crash into each other. By the time they're ready for a second attack, you'll be done with your current foe.]]></story_4>
+            <story_5><![CDATA[<b>5,000 Monsters killed:</b>⮀ If a herd's too big to fight, you pick off a few of them from ambush while the rest aren't looking. Let a few more fall into carefully-placed traps and then you take to the field yourself and finish the rest off.]]></story_5>
+            <story_6><![CDATA[<b>10,000 Monsters killed:</b>⮀ You only move the barest amount necessary to avoid getting hit. At this point you know all their movements like the back of your hand, and there's always a gap in their attack pattern. You're glad they're too dumb to coordinate with each other.]]></story_6>
+            <story_7><![CDATA[<b>20,000 Monsters killed:</b>⮀ The most efficient way to dodge, and the most efficient way to kill. You don't need ambushes anymore, you can wade into battle against any number of monsters and kill them all one after another, always inches away from death but never making a single misstep.]]></story_7>
         </fight_monsters>
         <small_dungeon>
             <label>Small Dungeon</label>
@@ -1510,7 +1526,7 @@
             <tooltip><![CDATA[
             Follow the trail to end up at the next town. You need to keep moving until you can learn how to shut these loops off.<br>Costs 1 supplies. Finish once to unlock Forest Path's actions, then finish this in order to use Forest Path's actions.<br>Unlocked at a combined Combat and Magic skill of 35.
         ]]></tooltip>
-            <story_1><![CDATA[<b>Traveled to the second zone:</b>⮀ You leave town, heading towards the forest that stood between the village and Merchanton. You had exhausted every option in Beginnersville and there was nothing here that would stop the loops, it was time to look for other areas and solutions.]]></story_1>
+            <story_1><![CDATA[<b>Traveled to the second zone:</b>⮀ You leave town, heading towards the forest that stood between the village and Merchanton. You've exhausted every option in Beginnersville, and there's nothing here that will stop the loops. It's time to look for solutions elsewhere.]]></story_1>
         </start_journey>
         <hitch_ride>
             <label>Hitch Ride</label>
@@ -1550,15 +1566,15 @@
             <info_text2>Sources with mana total</info_text2>
             <info_text3>Sources to check for mana</info_text3>
             <tooltip><![CDATA[
-            They're out of sight of most travellers, but you have time to find and harvest them.<br>Every good mana spot has 
+            They're out of sight of most travellers, but you have time to find and harvest them.<br>Every good mana spot has
         ]]></tooltip>
             <tooltip2><![CDATA[
             mana.<br>Every 10 mana spots have good mana.
         ]]></tooltip2>
             <story_1><![CDATA[<b>Source checked for mana:</b>⮀ It's just sitting there, stray slightly from the beaten path and you find an abundance of mana just waiting for someone to take it, the only catch being you need to extract it from the plants surrounding it and they've proven slightly unwilling to part with it.]]></story_1>
-	     <story_2><![CDATA[<b>50 Sources checked for mana in a loop:</b>⮀ After exploring the forest 100%, you know the path to get all the mana sources, mana mania!]]></story_2>
-	     <story_3><![CDATA[<b>100 Sources checked for mana in a loop:</b>⮀ After exploring the thicket 100%, you know the path of the forest and the thicket to get tons of mana, insane!]]></story_3>
-	     <story_4><![CDATA[<b>150 Sources checked for mana in a loop:</b>⮀ In the nooks of the forest there is a secret path that you never even noticed, you probly wanted to see the hermit so much. There is 50 more mana sources with your name on it, god speed.]]></story_4>
+<!--	     <story_2><![CDATA[<b>50 Sources checked for mana in a loop:</b>⮀ After exploring the forest 100%, you know the path to get all the mana sources, mana mania!]]></story_2>-->
+<!--	     <story_3><![CDATA[<b>100 Sources checked for mana in a loop:</b>⮀ After exploring the thicket 100%, you know the path of the forest and the thicket to get tons of mana, insane!]]></story_3>-->
+<!--	     <story_4><![CDATA[<b>150 Sources checked for mana in a loop:</b>⮀ In the nooks of the forest there is a secret path that you never even noticed, you probly wanted to see the hermit so much. There is 50 more mana sources with your name on it, god speed.]]></story_4>-->
         </wild_mana>
         <gather_herbs>
             <label>Gather Herbs</label>
@@ -1570,7 +1586,7 @@
             Might as well dig up anything useful you find.<br>Every 10 funny plants are herbs.<br>Unlocked at 10% Forest Explored.
         ]]></tooltip>
             <story_1><![CDATA[<b>Plant checked for use:</b>⮀ You pull up random plants across the forest that emanate mana only to find that in most cases, they're simply plants that have started gathering mana, but in some cases they're actually magical plants. Small distinction, but a significant one.]]></story_1>
-	     <story_2><![CDATA[<b>500 Plants checked in a loop:</b>⮀ Every plant you can see has been picked up in the forest, they have many uses for them! ]]></story_2>
+<!--	     <story_2><![CDATA[<b>500 Plants checked in a loop:</b>⮀ Every plant you can see has been picked up in the forest, they have many uses for them! ]]></story_2>-->
         </gather_herbs>
         <hunt>
             <label>Hunt</label>
@@ -1641,7 +1657,7 @@
             <story_1><![CDATA[<b>Alchemy learned:</b>⮀ You ask the hermit about potions and are regaled of tales from his time as an apprentice, the mistakes he made and how one time, he managed to douse his masters beard with potion that would wildly change the color of it every minute, for a full year his master had to deal with a beard that was either glowing white like pure fallen snow or was more fit to be in the sky after rain. You take notes as the hermit speaks.]]></story_1>
             <story_2><![CDATA[<b>25 Alchemy:</b>⮀ You sit by the fire inside the hermits clearing, fire dancing merrily away as he feeds magical herbs to the fire while throwing precise amounts into the large pot boiling above it. The stories he tells of his youth and learning alchemy under his master make you howl with laughter and provoke deep thoughtful silences.]]></story_2>
             <story_3><![CDATA[<b>100 Alchemy:</b>⮀ As you learn more and more about alchemy, the potion that caused you to start looping begins to seem more and more hideously complex. Something as simple as your reputation can effect the outcome of a potion. It's more of an art than a science, or anything even easily conveyed really.]]></story_3>
-	     <story_4><![CDATA[<b>500 Alchemy:</b>⮀ Alchemy helps more and more with the potion trader that you now can get tons of gold from him in the next town, you wonder how much it will take to bankrupt them.]]></story_4>
+	        <story_4><![CDATA[<b>500 Alchemy:</b>⮀ Alchemy helps more and more with the potion trader that you now can get tons of gold from him in the next town, you wonder how much it will take to bankrupt them.]]></story_4>
         </learn_alchemy>
         <brew_potions>
             <label>Brew Potions</label>
@@ -1649,9 +1665,9 @@
             Bubbles and Flasks. Potions and Magic.<br>Requires a reputation of 5 or above, or he won't let you near his stuff.<br>Creates a potion from 10 herbs to sell at the next town.<br>Gives alchemy and magic skill.<br>Unlocked with 10 Alchemy.
         ]]></tooltip>
             <story_1><![CDATA[<b>Potion brewed:</b>⮀ The old man happily lets you use his apparatus to brew your own potions after much haranguing about your technique and the fact that you're not buying ingredients off him, he leaves you to it. His workstations are old, well used and obviously well looked after. The only fault you can lay at their feet is that the measuring system used is older than dirt. Fits you suppose.]]></story_1>
-	     <story_2><![CDATA[<b>50 Potions brewed in a loop:</b>⮀ All made perfectly and are high grade quality, the hermit is impressed with the collection you have made. Time to hit the next town and sell them!]]></story_2>
-            <story_3><![CDATA[<b>Action failed with low reputation:</b>⮀ The hermit refuses to allow you near his workstations and potion brewing equipment no matter how much you ask and offer to pay. He tells you that you don't have a good enough karma for him to even be willing to risk you using his workstations and potion benches.]]></story_3>
-            <story_4><![CDATA[<b>Action failed with negative reputation:</b>⮀ The hermit shoos you away from his clearing when you even make a mention of using his potion supplies, something about not wanting you to taint his equipment with your karma.]]></story_4>
+<!--	     <story_2><![CDATA[<b>50 Potions brewed in a loop:</b>⮀ All made perfectly and are high grade quality, the hermit is impressed with the collection you have made. Time to hit the next town and sell them!]]></story_2>-->
+            <story_2><![CDATA[<b>Action failed with low reputation:</b>⮀ The hermit refuses to allow you near his workstations and potion brewing equipment no matter how much you ask and offer to pay. He tells you that you don't have a good enough karma for him to even be willing to risk you using his workstations and potion benches.]]></story_2>
+            <story_3><![CDATA[<b>Action failed with negative reputation:</b>⮀ The hermit shoos you away from his clearing when you even make a mention of using his potion supplies, something about not wanting you to taint his equipment with your karma.]]></story_3>
         </brew_potions>
         <train_dexterity>
             <label>Train Dexterity</label>
@@ -1659,10 +1675,8 @@
             There's a nice array of rocks to hop between. It's a lot of fun.<br>Has 4x exp/talent gain, and can only be done <div id='trainingLimitDex'></div> times per reset.<br>Unlocked at 60% Forest Explored.
         ]]></tooltip>
             <story_1><![CDATA[<b>Dexterity trained:</b>⮀ You find rocks spaced intermittently in an open clearing. Your best guess is that they were set up as a training field for some mercenary group that had passed by. Either way, it's fun to bounce from one rock to another parrying invisible enemies and fighting the air.]]></story_1>
-	     <story_2><![CDATA[<b>100 Dexterity Talent:</b>⮀ You parry and fight invisable monsters for alot longer than you thought you were gonna but you are now quick to dodge and evade!]]></story_2>
-	     <story_3><![CDATA[<b>1,000 Dexterity Talent:</b>⮀ You have so much dexterity that you can be nimble and so light that you can bounce everywhere, bounce man???]]></story_3>
-	     <story_4><![CDATA[<b>10,000 Dexterity Talent:</b>⮀ ]]></story_4>
-	     <story_5><![CDATA[<b>100,000 Dexterity Talent:</b>⮀ ]]></story_5>
+<!--	     <story_2><![CDATA[<b>100 Dexterity Talent:</b>⮀ You parry and fight invisable monsters for alot longer than you thought you were gonna but you are now quick to dodge and evade!]]></story_2>-->
+<!--	     <story_3><![CDATA[<b>1,000 Dexterity Talent:</b>⮀ You have so much dexterity that you can be nimble and so light that you can bounce everywhere, bounce man???]]></story_3>-->
         </train_dexterity>
         <train_speed>
             <label>Train Speed</label>
@@ -1729,12 +1743,13 @@
             <story_1><![CDATA[<b>1 Dark magic:</b>⮀ You ask the witch for more information on dark magic and then during the conversation slowly reveal your interest in the subject and float the offer that you would be willing to trade if she would teach you the beginning steps. She smirks deviously and agrees to the deal.]]></story_1>
             <story_2><![CDATA[<b>25 Dark magic:</b>⮀ The witch demands more and more of you and you slowly figure out ways of broaching the subject with her that doesn't startle her enough that she stops talking to you or just flat out shuts you down. The magic she begins to teach is brutal, ominous and forceful. You do not work with or help, you take and dominate.]]></story_2>
             <story_3><![CDATA[<b>50 Dark magic:</b>⮀ The dark magic she teaches seems to veer more to the side of ritualistic sacrifice and communion with the dark gods, she tells you when you ask that its because she can't really teach you too much more unless you have a darker being backing you as her mana isn't inherent but a gift from the darker divine powers. She teaches you of a ritual that you can use to summon the dark gods and strike a bargain. She warns that you'll need souls as payment.]]></story_3>
+            <story_4><![CDATA[<b>300 Dark magic:</b>⮀ As you become more skilled at dark magic, the number of applications for it continues to grow. Now you're learning to damage fundamental aspects of the universe, although you can only do it in places where the fabric of the universe is already weak. Also, doing anything useful with the damage is much harder - you might have to bring in another field of magic for that.]]></story_4>
         </dark_magic>
         <dark_ritual>
             <label>Dark Ritual</label>
             <label_done>Completed</label_done>
             <tooltip><![CDATA[
-            Sacrifice an increasing amount of soulstones to the dark gods, granting a permanent speed 10% boost to all actions in Beginnersville.<br>Gives (dark magic skill) * (1 + witch knowledge / 100) * (1 + main stat / 100) * (original mana cost / actual mana cost) progress points per mana.<br>Requires a reputation of -5 or below.<br>Can only have 1 Dark Ritual action.<br>Unlocked with both 50% Witch Knowledge and 50 Dark Magic.<br>Sacrifices (50 * (rituals completed+1)) soulstones. Currently sacrificing 
+            Sacrifice an increasing amount of soulstones to the dark gods, granting a permanent speed 10% boost to all actions in Beginnersville.<br>Gives (dark magic skill) * (1 + witch knowledge / 100) * (1 + main stat / 100) * (original mana cost / actual mana cost) progress points per mana.<br>Requires a reputation of -5 or below.<br>Can only have 1 Dark Ritual action.<br>Unlocked with both 50% Witch Knowledge and 50 Dark Magic.<br>Sacrifices (50 * (rituals completed+1)) soulstones. Currently sacrificing
         ]]></tooltip>
             <tooltip2><![CDATA[
              soulstones.
@@ -1746,6 +1761,10 @@
             </segment_names>
             <story_1><![CDATA[<b>3rd ritual segment reached:</b>⮀ Knowing what the ritual was and how large a space you would need, you were mildly surprised to find a clearing large enough in the forest. Well, the clearing itself wasn't really large enough on its own. It was a dense cluster of clearings that you've taken mana from that you could easily clear out to make a ritual space. Preparing the altar is surprisingly tame, all said and done. Stone and wood comprise most of the altar and the rest you brought with you when you made this plan. In the end the altar you build is only small, a communion point instead of a summoning. Holding a heart from nearby deer, you pierce it and begin to chant ritualistic words of power. The clearing grows dark and the forest quietens, nary a sound is heard apart from the drip drip drip of the blood from the pierced heart in your hand. The blood you've spilled on the altar begins to blacken and swirl without outside force and eventually forms into a small face, disgusting to look at but enough to communicate through.]]></story_1>
             <story_2><![CDATA[<b>Ritual completed:</b>⮀ You commune with the dark gods long past the point that the blood has faded. The deal is struck thusly: time itself will move faster for you only in select areas, and you will pay a cost in souls. The dark god you commune with seems almost surprised as you immediately offer up some of the soulstones that you have.]]></story_2>
+            <story_3><![CDATA[<b>50 Rituals completed:</b>⮀ The more rituals you perform, the more extravagant setups the dark gods demand, and the less they reward you with. Towers of soulstones swirl away into dust as you get up and stretch. You'd think they'd be pleased to have a repeat customer.]]></story_3>
+            <story_4><![CDATA[<b>300 Rituals completed:</b>⮀ The dark gods have been less and less willing to deal with you as of late, no matter how many soulstones you offer. Is their power stretching near its limits, or have you become so powerful that they're starting to see you as a threat? You're not sure.]]></story_4>
+            <story_5><![CDATA[<b>666 Rituals completed:</b>⮀ The face emerges from the blood, but this time its expression is grim. It explains to you how, although your offering will be accepted this time, there can be no more deals made after today. No matter how much you poke or prod, it refuses to elaborate, and when it finally sinks back into the now-dry pool, you're just as baffled by the dark gods' motives as you were this morning.]]></story_5>
+
         </dark_ritual>
         <continue_on>
             <label>Continue On</label>
@@ -1804,7 +1823,7 @@
         <buy_mana_z3>
             <label>Buy Mana</label>
             <tooltip><![CDATA[
-            1 gold = 
+            1 gold =
         ]]></tooltip>
             <tooltip2><![CDATA[
             mana. Buys all the mana you can.
@@ -1961,7 +1980,7 @@
             <label_complete>Completed</label_complete>
             <label_part>Heroes Trial</label_part>
             <tooltip><![CDATA[
-            Gather your party to take on the trial of heroes! 
+            Gather your party to take on the trial of heroes!
         ]]></tooltip>
             <segment_names>
                 <name>Locate Entrance</name>
@@ -2132,7 +2151,7 @@
             <label>Imbue Mind</label>
             <label_done>Completed</label_done>
             <tooltip><![CDATA[
-            Deep behind one of the many illusory walls, you've found a small glowing lake full of some sort of liquid. Your soulstones seem to glow when they get close to it. You appear to be able to use them as a link to your mind, but the process requires a very large amount of mana and will destroy them once it's complete. Each imbuement will increase the training limit by 1.<br>Gives (magic skill) * (1 + main stat / 100) * (original mana cost / actual mana cost) progress points per mana.<br>Can only have 1 Imbue Mind action.<br>Unlocked with both 70% Illusory Walls Discovered and 300 Magic.<br>Sacrifices (20 * (imbuements+1)) soulstones. Currently sacrificing 
+            Deep behind one of the many illusory walls, you've found a small glowing lake full of some sort of liquid. Your soulstones seem to glow when they get close to it. You appear to be able to use them as a link to your mind, but the process requires a very large amount of mana and will destroy them once it's complete. Each imbuement will increase the training limit by 1.<br>Gives (magic skill) * (1 + main stat / 100) * (original mana cost / actual mana cost) progress points per mana.<br>Can only have 1 Imbue Mind action.<br>Unlocked with both 70% Illusory Walls Discovered and 300 Magic.<br>Sacrifices (20 * (imbuements+1)) soulstones. Currently sacrificing
         ]]></tooltip>
             <tooltip2><![CDATA[
              soulstones.
@@ -2149,7 +2168,7 @@
             <label>Imbue Body</label>
             <label_done>Completed</label_done>
             <tooltip><![CDATA[
-            With your new knowledge, you believe you can also use the lake to reinforce your body across time. Each imbuement will increase starting stats by 1.<br>Gives (magic skill) * (1 + main stat / 100) * (original mana cost / actual mana cost) progress points per mana.<br>Can only have 1 Imbue Body action.<br>Level is limited by imbue mind rank.<br>Sacrifices (imbuements+1) levels of talent. Currently sacrificing 
+            With your new knowledge, you believe you can also use the lake to reinforce your body across time. Each imbuement will increase starting stats by 1.<br>Gives (magic skill) * (1 + main stat / 100) * (original mana cost / actual mana cost) progress points per mana.<br>Can only have 1 Imbue Body action.<br>Level is limited by imbue mind rank.<br>Sacrifices (imbuements+1) levels of talent. Currently sacrificing
         ]]></tooltip>
             <tooltip2><![CDATA[
              levels of talent from each stat.
@@ -2183,7 +2202,15 @@
             <tooltip><![CDATA[
             The city doesn't take too kindly to visitors snooping around, so you'll have to take all their tours to scope it out instead.<br>Costs 10 gold.<br>2x progress with glasses.
         ]]></tooltip>
-            <!--TODO: give this action story-->
+            <story_1><![CDATA[<b>1% Tour Routes Followed:</b>⮀ Your gold is still good money here, you note as you join a small gaggle of people following the tour guide around Valhalla. It's a lovely place full of lovely people, and the air smells fresh and clean beyond even the untamed countrysides you're used to.]]></story_1>
+            <story_2><![CDATA[<b>10% Tour Routes Followed:</b>⮀ You're taken past some residential areas, each house immaculate, and you see someone going door to door collecting charitable donations. With how nice everything is here, you're not sure what cause they could be supporting.]]></story_2>
+            <story_3><![CDATA[<b>20% Tour Routes Followed:</b>⮀ Valhalla's Museum of Heroes! You recognize a bunch of this stuff from the myths on Mt. Olympus.  Everyone oohs and ahhs at the exact same time, as if following an invisible script. You try not to stand out too much.]]></story_3>
+            <story_4><![CDATA[<b>30% Tour Routes Followed:</b>⮀ Proper decorum extends even to the markets, it seems. Every merchant takes lessons at rhetoric schools and haggling takes the form of a calm and steady debate. Compared to the lively racket of Merchanton, it's almost eerily quiet.]]></story_4>
+            <story_5><![CDATA[<b>40% Tour Routes Followed:</b>⮀ You almost miss the fact that you're now touring Valhalla's magical district. The tour guide explains that even these buildings are not exempt from the Valhalla Beautification Code that "ensures every building is in harmony with our fair city".]]></story_5>
+            <story_6><![CDATA[<b>60% Tour Routes Followed:</b>⮀ You finally encounter a place with a distinct style when your tour reaches the Wizard College. Spires rising high into the sky, detailed etchings on every wall, people in flowing robes flying from place to place. You want to stay and observe it some more but the tour guide rushes you along with a sour look on her face. Is there some kind of story here?]]></story_6>
+            <story_7><![CDATA[<b>80% Tour Routes Followed:</b>⮀ The tour guide is much happier to show off the city hall, an utterly mundane building where bureaucrats scurry to and fro. The only tell that this is the domain of the gods is how everyone looks like a supermodel and there's never a speck of disorder no matter where you look.]]></story_7>
+            <story_8><![CDATA[<b>90% Tour Routes Followed:</b>⮀ From a distance, you're allowed to view the grand mansions of the upper class. You see a god riding by on a great winged horse that rises into the sky. You're enraptured by its majesty.]]></story_8>
+            <story_9><![CDATA[<b>100% Tour Routes Followed:</b>⮀ The tour comes to a close and you think of what you saw. Valhalla is a vision of perfection, everything in its place without the slightest deviation. Living here would either be idyllic bliss or oppressive torture, and you're not entirely sure which.]]></story_9>
         </guided_tour>
         <canvass>
             <label>Canvass</label>
@@ -2229,7 +2256,7 @@
 		<buy_mana_z5>
             <label>Buy Mana</label>
             <tooltip><![CDATA[
-            1 gold = 
+            1 gold =
         ]]></tooltip>
             <tooltip2><![CDATA[
             mana. Buys all the mana you can.
@@ -2351,7 +2378,7 @@
             <tooltip><![CDATA[
             You realize now that you've forgotten the joy of food, after having gone for so "long" without needing to eat anything. It's about time for a feast of grand proportions. Unfortunately, all the catering services here only accepts payments in soulstones.<br>
             Permanently increases self and team combat.<br>
-            Gives (practical magic skill) * (1 + main stat / 100) * (original mana cost / actual mana cost) progress points per mana.<br>Can only have 1 Great Feast action.<br>Requires 100 reputation.<br>Sacrifices (5,000 * (feasts+1)) soulstones. Currently sacrificing 
+            Gives (practical magic skill) * (1 + main stat / 100) * (original mana cost / actual mana cost) progress points per mana.<br>Can only have 1 Great Feast action.<br>Requires 100 reputation.<br>Sacrifices (5,000 * (feasts+1)) soulstones. Currently sacrificing
         ]]></tooltip>
             <tooltip2><![CDATA[
              soulstones.<br>Unlocked at 100% of city toured.
@@ -2540,7 +2567,7 @@
             <tooltip><![CDATA[
             Pay a local street urchin to show you around town. As a tourist, it feels like you're getting ripped off.<br>
             Cost is reduced by 80% with local guild membership.<br>
-            Currently costs 
+            Currently costs
             ]]></tooltip>
             <tooltip2>gold.</tooltip2>
         </excursion>
@@ -2689,7 +2716,7 @@
             <label_complete>100 Floors Completed</label_complete>
             <label_part>Gods Trial</label_part>
             <tooltip><![CDATA[
-            The gods have filled the 100 floors of the tower you built with monsters to stop you from returning to Valhalla. Rude. 
+            The gods have filled the 100 floors of the tower you built with monsters to stop you from returning to Valhalla. Rude.
         ]]></tooltip>
             <segment_names>
 		    <name>Fight Fire Dragon</name>

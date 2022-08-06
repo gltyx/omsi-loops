@@ -42,7 +42,7 @@ function cheatProgress()
     stonesUsed = {1:250, 3:250, 5:250, 6:250};
 }
 
-function cheatTalent(stat, targetTalentLevel) 
+function cheatTalent(stat, targetTalentLevel)
 {
     if (stat === "all" || stat === "All")
         for (const stat in stats)
@@ -182,7 +182,9 @@ let storyShowing = 0;
 let storyMax = 0;
 const storyReqs = {
     maxSQuestsInALoop: false,
+    realMaxSQuestsInALoop: false,
     maxLQuestsInALoop: false,
+    realMaxLQuestsInALoop: false,
     heal10PatientsInALoop: false,
     failedHeal: false,
     clearSDungeon: false,
