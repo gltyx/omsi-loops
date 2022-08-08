@@ -142,8 +142,7 @@ function getTeamStrength() {
 }
 
 function getTeamCombat() {
-    if (challenge === 2) return getZombieStrength() + getTeamStrength();
-    else return getSelfCombat() + getZombieStrength() + getTeamStrength();
+    return getSelfCombat() + getZombieStrength() + getTeamStrength();
 }
 
 function getPrcToNextSkillLevel(skill) {

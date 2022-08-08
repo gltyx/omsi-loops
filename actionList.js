@@ -240,6 +240,13 @@ AssassinAction.prototype.finish = function() {
 }
 AssassinAction.prototype.visible = function() {return getSkillLevel("Assassin") > 0;}
 AssassinAction.prototype.unlocked = function() {return getSkillLevel("Assassin") > 0;}
+AssassinAction.prototype.storyReqs = function(storyNum) {
+    switch (storyNum) {
+        case 1:
+            return towns[this.townNum][`totalAssassinZ${this.townNum}`] >= 1;
+    }
+    return false;
+}
 
 //====================================================================================================
 //Survery Actions (All Zones)
@@ -274,7 +281,7 @@ function SurveyAction(townNum) {
         }
     }
     obj.townNum = townNum;
-    return obj; 
+    return obj;
 }
 
 Action.SurveyZ0 = new Action("SurveyZ0", SurveyAction(0));
@@ -314,7 +321,7 @@ function RuinsAction(townNum) {
         }
     }
     obj.townNum = townNum;
-    return obj; 
+    return obj;
 }
 
 Action.RuinsZ1 = new Action("RuinsZ1", RuinsAction(1));
@@ -369,7 +376,7 @@ function HaulAction(townNum) {
         }
     }
     obj.townNum = townNum;
-    return obj; 
+    return obj;
 }
 
 Action.HaulZ1 = new Action("HaulZ1", HaulAction(1));
@@ -445,7 +452,7 @@ Action.Map = new Action("Map", {
         addResource("gold", -this.goldCost());
         addResource("map", 1);
     },
-}); 
+});
 
 Action.Wander = new Action("Wander", {
     type: "progress",
@@ -792,10 +799,11 @@ Action.ShortQuest = new Action("Short Quest", {
             case 1:
                 return towns[0][`checked${this.varName}`] >= 1;
             case 2:
-                // 20 small quests in a loop
+                // 20 short quests in a loop
                 return storyReqs.maxSQuestsInALoop;
             case 3:
-                return towns[0][`checked${this.varName}`] >= 250;
+                // 50 short quests in a loop
+                return storyReqs.realMaxSQuestsInALoop;
         }
         return false;
     },
@@ -829,6 +837,7 @@ Action.ShortQuest = new Action("Short Quest", {
     },
     story(completed) {
         if (towns[0][`good${this.varName}`] >= 20 && towns[0][`goodTemp${this.varName}`] <= towns[0][`good${this.varName}`] - 20) unlockStory("maxSQuestsInALoop");
+        if (towns[0][`good${this.varName}`] >= 50 && towns[0][`goodTemp${this.varName}`] <= towns[0][`good${this.varName}`] - 50) unlockStory("realMaxSQuestsInALoop");
     }
 });
 
@@ -890,7 +899,8 @@ Action.LongQuest = new Action("Long Quest", {
                 // 10 long quests in a loop
                 return storyReqs.maxLQuestsInALoop;
             case 3:
-                return towns[0][`checked${this.varName}`] >= 125;
+                // 25 long quests in a loop
+                return storyReqs.realMaxLQuestsInALoop;
         }
         return false;
     },
@@ -923,7 +933,8 @@ Action.LongQuest = new Action("Long Quest", {
     },
     story(completed) {
         if (towns[0][`good${this.varName}`] >= 10 && towns[0][`goodTemp${this.varName}`] <= towns[0][`good${this.varName}`] - 10) unlockStory("maxLQuestsInALoop");
-    } 
+        if (towns[0][`good${this.varName}`] >= 25 && towns[0][`goodTemp${this.varName}`] <= towns[0][`good${this.varName}`] - 25) unlockStory("realMaxLQuestsInALoop");
+    }
 });
 
 Action.ThrowParty = new Action("Throw Party", {
@@ -1684,6 +1695,14 @@ Action.SitByWaterfall = new Action("Sit By Waterfall", {
         switch (storyNum) {
             case 1:
                 return storyReqs.satByWaterfall;
+            case 2:
+                return getTalent("Soul") >= 100;
+            case 3:
+                return getTalent("Soul") >= 1000;
+            case 4:
+                return getTalent("Soul") >= 10000;
+            case 5:
+                return getTalent("Soul") >= 100000;
         }
         return false;
     },
@@ -1807,6 +1826,10 @@ Action.PracticalMagic = new Action("Practical Magic", {
         switch (storyNum) {
             case 1:
                 return getSkillLevel("Practical") >= 1;
+            case 2:
+                return getSkillLevel("Practical") >= 100;
+            case 3:
+                return getSkillLevel("Practical") >= 400;
         }
         return false;
     },
@@ -1846,7 +1869,9 @@ Action.LearnAlchemy = new Action("Learn Alchemy", {
             case 2:
                 return getSkillLevel("Alchemy") >= 25;
             case 3:
-                return getSkillLevel("Alchemy") >= 50;
+                return getSkillLevel("Alchemy") >= 100;
+            case 4:
+                return getSkillLevel("Alchemy") >= 500;
         }
         return false;
     },
@@ -2174,6 +2199,8 @@ Action.DarkMagic = new Action("Dark Magic", {
                 return getSkillLevel("Dark") >= 25;
             case 3:
                 return getSkillLevel("Dark") >= 50;
+            case 4:
+                return getSkillLevel("Dark") >= 300;
         }
         return false;
     },
@@ -2219,6 +2246,12 @@ Action.DarkRitual = new MultipartAction("Dark Ritual", {
                 return storyReqs.darkRitualThirdSegmentReached;
             case 2:
                 return getBuffLevel("Ritual") >= 1;
+            case 3:
+                return getBuffLevel("Ritual") >= 50;
+            case 4:
+                return getBuffLevel("Ritual") >= 300;
+            case 5:
+                return getBuffLevel("Ritual") >= 666;
         }
         return false;
     },
@@ -2270,7 +2303,7 @@ Action.DarkRitual = new MultipartAction("Dark Ritual", {
 
 function checkSoulstoneSac(amount) {
     let sum = 0;
-    for (const stat in stats) 
+    for (const stat in stats)
         sum += stats[stat].soulstone;
     return sum >= amount ? true : false;
 }
@@ -3863,7 +3896,7 @@ Action.ImbueBody = new MultipartAction("Imbue Body", {
     loopsFinished() {
         for (const stat in stats) {
             let targetTalentLevel = getTalent(stat) - getBuffLevel("Imbuement2") - 1;
-            stats[stat].talent = getExpOfLevel(targetTalentLevel); 
+            stats[stat].talent = getExpOfLevel(targetTalentLevel);
         }
         view.updateStats();
         addBuffAmt("Imbuement2", 1);
@@ -3971,6 +4004,29 @@ Action.GuidedTour = new Action("Guided Tour", {
     expMult: 1,
     townNum: 4,
     varName: "Tour",
+    storyReqs(storyNum) {
+        switch (storyNum) {
+            case 1:
+                return towns[4].getLevel(this.varName) >= 1;
+            case 2:
+                return towns[4].getLevel(this.varName) >= 10;
+            case 3:
+                return towns[4].getLevel(this.varName) >= 20;
+            case 4:
+                return towns[4].getLevel(this.varName) >= 30;
+            case 5:
+                return towns[4].getLevel(this.varName) >= 40;
+            case 6:
+                return towns[4].getLevel(this.varName) >= 60;
+            case 7:
+                return towns[4].getLevel(this.varName) >= 80;
+            case 8:
+                return towns[4].getLevel(this.varName) >= 90;
+            case 9:
+                return towns[4].getLevel(this.varName) >= 100;
+        }
+        return false;
+    },
     stats: {
         Per: 0.3,
         Con: 0.2,
@@ -3978,6 +4034,7 @@ Action.GuidedTour = new Action("Guided Tour", {
         Int: 0.1,
         Luck: 0.1
     },
+	affectedBy: ["Buy Glasses"],
     canStart() {
         return resources.gold >= 10;
     },
@@ -4303,7 +4360,7 @@ Action.Oracle = new Action("Oracle", {
         return towns[4].getLevel("Tour") >= 40;
     },
     finish() {
-		
+
     },
 });
 
@@ -4371,8 +4428,8 @@ Action.WizardCollege = new MultipartAction("Wizard College", {
     tickProgress(offset) {
         return (
             getSkillLevel("Magic") + getSkillLevel("Practical") + getSkillLevel("Dark") +
-            getSkillLevel("Chronomancy") + getSkillLevel("Pyromancy") + getSkillLevel("Restoration") + getSkillLevel("Spatiomancy")) * 
-            (1 + getLevel(this.loopStats[(towns[4][`${this.varName}LoopCounter`] + offset) % this.loopStats.length]) / 100) * 
+            getSkillLevel("Chronomancy") + getSkillLevel("Pyromancy") + getSkillLevel("Restoration") + getSkillLevel("Spatiomancy")) *
+            (1 + getLevel(this.loopStats[(towns[4][`${this.varName}LoopCounter`] + offset) % this.loopStats.length]) / 100) *
             Math.sqrt(1 + towns[4][`total${this.varName}`] / 1000);
     },
     loopsFinished() {
@@ -4382,7 +4439,7 @@ Action.WizardCollege = new MultipartAction("Wizard College", {
         curWizCollegeSegment++;
         view.requestUpdate("adjustManaCost", "Restoration");
         view.requestUpdate("adjustManaCost", "Spatiomancy");
-    }, 
+    },
     getPartName() {
         return `${getWizCollegeRank().name}`;
     },
@@ -4701,8 +4758,8 @@ Action.FightFrostGiants = new MultipartAction("Fight Frost Giants", {
         return precision3(Math.pow(1.3, towns[4][`${this.varName}LoopCounter`] + segment)) * 1e7; // Temp
     },
     tickProgress(offset) {
-        return (getSelfCombat() * 
-            (1 + getLevel(this.loopStats[(towns[4][`${this.varName}LoopCounter`] + offset) % this.loopStats.length]) / 100) * 
+        return (getSelfCombat() *
+            (1 + getLevel(this.loopStats[(towns[4][`${this.varName}LoopCounter`] + offset) % this.loopStats.length]) / 100) *
             Math.sqrt(1 + towns[4][`total${this.varName}`] / 1000));
     },
     loopsFinished() {
@@ -4711,7 +4768,7 @@ Action.FightFrostGiants = new MultipartAction("Fight Frost Giants", {
     segmentFinished() {
         curFightFrostGiantsSegment++;
         // Additional thing?
-    }, 
+    },
     getPartName() {
         return `${getFrostGiantsRank().name}`;
     },
@@ -5017,7 +5074,7 @@ Action.TheSpire = new DungeonAction("The Spire", 2, {
     loopStats: ["Per", "Int", "Con", "Spd", "Dex", "Per", "Int", "Str", "Soul"],
     affectedBy: ["Team"],
     manaCost() {
-        return 100000 * Math.pow(0.9,resources.pylons);
+        return 100000;
     },
     canStart() {
         const curFloor = Math.floor((towns[this.townNum].TheSpireLoopCounter) / this.segments + 0.0000001);
@@ -5028,7 +5085,7 @@ Action.TheSpire = new DungeonAction("The Spire", 2, {
     },
     tickProgress(offset) {
         const floor = Math.floor((towns[this.townNum].TheSpireLoopCounter) / this.segments + 0.0000001);
-        return getTeamCombat() *
+        return getTeamCombat() * (1 + 0.1 * resources.pylons) *
         (1 + getLevel(this.loopStats[(towns[this.townNum].TheSpireLoopCounter + offset) % this.loopStats.length]) / 100) *
         Math.sqrt(1 + dungeons[this.dungeonNum][floor].completed / 200);
     },
@@ -5208,8 +5265,8 @@ Action.FightJungleMonsters = new MultipartAction("Fight Jungle Monsters", {
         return precision3(Math.pow(1.3, towns[6][`${this.varName}LoopCounter`] + segment)) * 1e8; // Temp
     },
     tickProgress(offset) {
-        return (getSelfCombat() * 
-            (1 + getLevel(this.loopStats[(towns[6][`${this.varName}LoopCounter`] + offset) % this.loopStats.length]) / 100) * 
+        return (getSelfCombat() *
+            (1 + getLevel(this.loopStats[(towns[6][`${this.varName}LoopCounter`] + offset) % this.loopStats.length]) / 100) *
             Math.sqrt(1 + towns[6][`total${this.varName}`] / 1000));
     },
     loopsFinished() {
@@ -5221,7 +5278,7 @@ Action.FightJungleMonsters = new MultipartAction("Fight Jungle Monsters", {
         curFightJungleMonstersSegment++;
         addResource("blood", 1);
         // Additional thing?
-    }, 
+    },
     getPartName() {
         return `${getFightJungleMonstersRank().name}`;
     },
@@ -5562,8 +5619,8 @@ function exchangeMap() {
         if (towns[rand][name] >= 505000) {
             towns[rand][name] = 505000;
             for(var i = 0; i < unfinishedSurveyZones.length; i++)
-                if ( unfinishedSurveyZones[i] === rand) 
-                    unfinishedSurveyZones.splice(i, 1); 
+                if ( unfinishedSurveyZones[i] === rand)
+                    unfinishedSurveyZones.splice(i, 1);
         }
         view.requestUpdate("updateProgressAction", {name: "SurveyZ"+rand, town: towns[rand]});
         addResource("completedMap", -1);
@@ -6123,10 +6180,10 @@ Action.BuildTower = new Action("Build Tower", {
     },
     finish() {
         stonesUsed[stoneLoc]++;
-        //towns[stoneLoc]["checkedStonesZ" + stoneLoc] -= 1000;
         towns[this.townNum].finishProgress(this.varName, 505);
         addResource("stone", false);
         if (towns[this.townNum].getLevel(this.varName) >= 100) stonesUsed = {1:250, 3:250, 5:250, 6:250};
+        adjustRocks(stoneLoc);
     },
 });
 
