@@ -550,43 +550,30 @@
                 您再次到达了地牢的终点，但您第一次发现，核心并没有发光。人们一向认为核心的能量来自于周遭的法力，但它前世的精华似乎已经将它挥霍一空。它不会一直如此的，您只需要向世界注入更多法力，就可以继续利用它了。您耸了耸肩，接受了循环的另一个奇妙设定。
             </story>
 			<story num="3"> <!--Change 3 to Forest-->
-				After spending most of a loop preparing, you're finally ready to leave Beginnersville. In a way, you're
-				going to miss this town, and the thought of leaving almost brings a tear to your eye - until you realize
-				you'll just be back next loop. Grumbling, you set off, hiking into the forest, but by the time you're
-				ready to make camp, you're in a good mood again. The forest is beautiful, teeming with life, and looks
-				to have boundless places to explore. Best of all, on your way here, you passed several locations that
-				are absolutely saturated with mana - you think you'll check those out first.
+				在完成你能做的绝大多数行动后, 你决定离开新手村. 离开的路上, 你有些舍不得这个村子, 甚至眼眶有些湿润 - 直到你想起
+				你下次循环又会从这里开始. 你发着牢骚出发了, 徒步走进森林, 但当你开始搭帐篷时你又开心起来了. 森林很漂亮, 充满
+				生命的气息, 看上去无边无际静待探索. 最棒的是, 在来的路上你发现了几处充斥着法力的地点 - 你想先去看看.
 		</story>
 		    <story num="4"> <!--Merchanton-->
-				It's always nice, after doing the same dull tasks as always, when you reach the forest and get to do
-				something new. Whether you're exploring, hunting, learning something or just sitting by the waterfall,
-				the forest always makes a great backdrop. However, as pleasant as it's been here, it's time to move on,
-				at least for now. It would be a long trip, but luckily, after all your exploring, you know some shortcuts,
-				and before long, Merchanton emerges out of the trees. There's a lot to do here! Maybe one of the guilds
-				can help you with your looping problem! Or maybe there's a book in the library that can lead you to a
-				solution! Or maybe... or maybe... that all sounds like a lot of work, and you have been going through a
-				lot lately. Maybe before any of that, you should find a bar and get a drink.
+				在做完重复而乏味的任务之后, 来到森林探索新事物的感觉真是太棒了. 无论是探索, 狩猎, 学习还是仅仅在瀑布旁冥想都能
+				看到不同的新景色. 但无论这里有多好, 是时候前进了, 至少现在该前进了. 这将是一个漫长的旅途, 但幸运的是, 经过你的
+				探索, 你知道一些捷径, 没过多久, 商业小镇就在树丛间若隐若现. 这里有很多事要做! 也许哪个公会能帮你解决这个循环问题!
+				或者也许图书馆能找到解决方法! 也许... 听上去有很多事要做, 不过你最近也做了不少事了. 但在那之前, 你得找个酒吧喝一杯.
 			</story>
 			<story num="5"> <!--Change 5 to Mt. Olympus-->
-				You have explored the guild options in Merchanton and have maybe made a few guild friends along the way, Time to grab
-				pickaxe and start the climb! Reaching Mt. Olympus takes alot of climbing but during the climb you discover these mana
-				geyser but looks like they can be harvested with a pickaxe. You discover runes scattered around the mountain, maybe
-				deciphering them might be useful and about half way up this mountain you discover a massive cavern with room to take a
-				break climbing and explore it, You met these Friendly Trolls in these caverns however they don't sell snowcones...
+				你已经探索过了商业小镇公会的所有选项并交到了一些公会朋友, 是时候拿起镐子开始爬山了! 攀爬奥林匹斯山的过程中你看到了一些法力泉, 
+				看上去它们需要用镐子才能采集. 你还发现了不少奇怪的符文, 也许尝试解读它们对你很有帮助. 在半山腰你还发现了一个可以休息的洞穴, 
+				里面有一些友善的巨魔不过它们不会卖雪球...
 			</story>
 			<story num="6"> <!--Good Reputation Story--> <!--Change 6 to Valhalla-->
-				You have finally reached the top of Mt. Olympus there is a giant door at the very top, a voice rings out "It is time
-				to face JUDGEMENT of the GODS, HAHAHAHA. Hope you are prepared for judgement!" After waiting for what feels like hours
-				the voice rings out "You may PASS!". You enter the wonderful place called Valhalla, you	 have a tourist show you around
-				and even looks like a charity is happening. After exploring you realize also can join charm school or wizard college,
-				become a citizen, and even fight with the Valkyries. Home of the gods couldn't be any better.
+				你最终抵达了山顶并看到山顶上矗立着一扇巨大的门, 同时一个声音响起 "是时候面对神的审判了, 希望你已经准备好了!" 等待了大约数小时后
+				那个声音说 "你通过了!". 你进入了一个相当美好的地方, 他们说这里叫瓦尔哈拉, 你需要找一个导游带你游览, 你注意到他们似乎在进行慈善活动.
+				在探索之后你发现你还可以参加礼仪学校或考入巫师学院, 甚至入籍, 然后与瓦尔基里一同战斗. 神的住所大概也就这样了吧. 
 			</story>
 			<story num="7"> <!--Bad Reputation Story--> <!--Change 7 to Startington-->
-				The voice rings "You Shall Not PASS!". You feel like you are being lifted and are chucked off Mt. Olymupus and into the
-				shadow realm. The shadow realm opens up and you hit the floor luckily with only a scratch, after a few hours you finally
-				can get up and realize that this isn't beginnersville anymore. After closer inspection of the ruins nearby you realize these
-				ruins is alot more twisted and strange that you thought they were gonna be. You notice these strange pylons and seak to destroy
-				them and a few minutes later you look and finally notice the giant spire in front of you!
+				那个声音说 "你不能通过!". 你感觉你被高高抛起然后扔下了奥林匹斯山并坠入阴影界. 幸运的是你在阴影界的落地点是干净的地板, 而你仅仅留下了几道划痕, 
+				在数小时后你总算缓过来, 站起来观察后发现这里并不是新手村. 在仔细观察这些废墟后你发现这些废墟相当奇怪而且扭曲. 你注意到了不少奇怪的电缆塔, 
+				顺着电缆塔你还发现了一座巨大的尖塔矗立在中心!
 			</story>
 			<story num="8"> <!--Change 8 to Jungle Path-->
 				Before you leave Startington you realize you don't have the supplies you got in Beginnersville, but lucky for you Startington
