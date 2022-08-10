@@ -1393,8 +1393,8 @@ Action.Haggle = new Action("Haggle", {
         view.requestUpdate("updateResource", "supplies");
     },
     story(completed) {
-        if (towns[0].suppliesCost === 20) unlockStory("haggle15TimesInALoop");
-        else if (towns[0].suppliesCost === 0) unlockStory("haggle16TimesInALoop");
+        if (towns[0].suppliesCost === 0) unlockStory("haggle15TimesInALoop");
+        else if (completed >= 16) unlockStory("haggle16TimesInALoop");
         unlockStory("haggle");
     }
 });
