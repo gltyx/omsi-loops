@@ -30,6 +30,7 @@ const limitedActions = [
     "Accept Donations",
     "Mana Well",
     "Destroy Pylons"
+    "Haul"
 ];
 const trainingActions = [
     "Train Speed",
@@ -1393,8 +1394,8 @@ Action.Haggle = new Action("Haggle", {
         view.requestUpdate("updateResource", "supplies");
     },
     story(completed) {
-        if (towns[0].suppliesCost === 0) unlockStory("haggle15TimesInALoop");
-        else if (completed >= 16) unlockStory("haggle16TimesInALoop");
+        if (completed >= 15) unlockStory("haggle15TimesInALoop");
+        if (completed >= 16) unlockStory("haggle16TimesInALoop");
         unlockStory("haggle");
     }
 });
@@ -3906,7 +3907,7 @@ Action.ImbueBody = new MultipartAction("Imbue Body", {
         return "Imbue Body";
     },
     visible() {
-        return getBuffLevel("Imbuement") > 1;
+        return getBuffLevel("Imbuement") >= 1
     },
     unlocked() {
         return getBuffLevel("Imbuement") > getBuffLevel("Imbuement2");

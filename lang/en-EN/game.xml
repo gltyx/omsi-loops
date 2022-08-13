@@ -817,7 +817,7 @@
 		<mercantilism>
 			<label>Mercantilism</label>
 			<desc>Smooth talk your way to better rates with the mana merchants.</desc>
-			<desc2><![CDATA[Multiply the mana gain from Buy Mana by (1 + level / 60) ^ 0.25.<br>
+			<desc2><![CDATA[Multiply the mana gain from Buy Mana by (1 + level / 60) ^ 0.25 (rounds down).<br>
             Currently granting <div id='skillBonusMercantilism'></div>x mana gains.]]></desc2>
 		</mercantilism>
         <divine>
@@ -1055,7 +1055,7 @@
             <label>Assassinate</label>
             <label_done>Assassinated</label_done>
             <tooltip><![CDATA[
-            Kill your mark in this town.<br>
+            Discreetly kill your mark in this town. The more well-known you are, for either good or evil, the harder pulling this off will be...<br>
             Gives progress equal to (Sqrt(Practical) + Thievery + Assassin) * Stat/1000 * Sqrt(Completions/100) / Abs(reputation) / hearts^2.<br>
             Rewards a heart.
             ]]></tooltip>
@@ -1377,7 +1377,7 @@
             <label_done>Healed</label_done>
             <label_part>Patient</label_part>
             <tooltip><![CDATA[
-            You won't be able to heal them all, but they'll be thankful for doing what you can.<br>Healing is always 3 parts, each with a main stat - Diagnose (Per), Treat (Int), Inform (Cha).<br>Gives (magic skill) * (restoration skill / 50) * (1 + main stat / 100) * sqrt(1 + times completed / 100) * (original mana cost / actual mana cost) progress points per mana.<br>Requires a reputation of 1 or above.<br>Unlocked at 12 Magic skill.<br>Gives 3 reputation upon patient completion.
+            You won't be able to heal them all, but they'll be thankful for doing what you can.<br>Healing is always 3 parts, each with a main stat - Diagnose (Per), Treat (Int), Inform (Cha).<br>Gives (magic skill) * max(restoration skill/50, 1) * (1 + main stat / 100) * sqrt(1 + times completed / 100) * (original mana cost / actual mana cost) progress points per mana.<br>Requires a reputation of 1 or above.<br>Unlocked at 12 Magic skill.<br>Gives 3 reputation upon patient completion.
 			]]></tooltip>
 			<story_1><![CDATA[<b>Patient healed:</b>⮀ You're allowed in to see the patients and begin healing. It's excellent practice and everyone you heal, be it from broken bones to small scrapes is extraordinarily thankful for your help.]]></story_1>
 			<story_2><![CDATA[<b>10 Patients healed in a loop:</b>⮀ Your reputation is absolutely sterling, you've basically cleared out the entire healing home and the nurses and healers are more than thankful for your help.]]></story_2>
@@ -2217,7 +2217,7 @@
         <face_judgement>
             <label>Face Judgement</label>
             <tooltip><![CDATA[
-            Face the judgement of the gods. If your reputation is 50 or above, you'll be accepted into their good graces and granted passage to Valhalla. If your reputation is -50 or below, you'll be cast into the shadow realm and thrown back to the beginning of your journey.<br>Unlocked at 100% Mountain Explored.
+            Face the judgement of the gods. If your reputation is 50 or above, you'll be accepted into their good graces and granted passage to Valhalla. If your reputation is -50 or below, you'll be cast into the shadow realm.<br>Unlocked at 100% Mountain Explored.
         ]]></tooltip>
 			<story_1><![CDATA[<b>Judgement Faced:</b>⮀ Their civilization may have fallen, but their gods are still very real, and the weight of their attention nearly drives you to your knees. Seeking to justify your presence, you begin to speak. Of your life, of your goal, and of your moral fibre. They are not impressed, you can tell, but they seem willing to lend you a hand. Before your eyes the world shifts and warps, and when it snaps back into focus you appear to be somewhere else entirely.]]></story_1>
 			<story_2><![CDATA[<b>Accepted by the Gods:</b>⮀ At the end of your story, a crack of lightning strikes behind the altar and leaves behind a cheerful man. Between the perfect bodily form and the power radiating from him, there's no doubt you're meeting a god in the flesh. He extends his hand, an offer of invitation, and you happily reach out and take it.]]></story_2>
@@ -2279,7 +2279,7 @@
             <label_done>Tidied</label_done>
             <label_part>Mess</label_part>
 			<tooltip><![CDATA[
-			Tidy up the place.<br>Progress is based on Practical Magic Skill and total completions.<br>Gives 5 gold and 1 reputation per mess cleaned.<br>Unlocked at 30% of houses canvassed.
+			Tidy up the place.<br>Gives (Practical Magic) * (1 + main stat / 100) * sqrt(1 + times completed / 100) * (original mana cost / actual mana cost) progress points per mana.<br>Gives 5 gold and 1 reputation per mess cleaned.<br>Unlocked at 30% of houses canvassed.
 		]]></tooltip>
 			<segment_names>
                 <name>Move Boxes</name>
@@ -2462,7 +2462,7 @@
             <info_text2>Buildings with pylons total</info_text2>
             <info_text3>Buildings to check for pylons</info_text3>
             <tooltip><![CDATA[
-            There are strange pylons humming with energy in the abandoned buildings of this town. You're not sure why, but you feel compelled to break them.<br>Reduces the mana cost of The Spire by 10% for each pylon destroyed.
+            There are strange pylons humming with energy in the abandoned buildings of this town. You're not sure why, but you feel compelled to break them.<br> Every 100 abandon buildings have 1 breakable plyon.<br> Reduces the mana cost of The Spire by 10% for each pylon destroyed.
         ]]></tooltip>
         </destroy_pylons>
         <raise_zombie>
