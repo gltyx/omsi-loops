@@ -2191,8 +2191,8 @@
                 <name>Absorb Knowledge</name>
             </segment_names>
 			<story_1><![CDATA[<b>Third phase reached:</b>⮀ The soulstones are all arranged, glowing a bright uniform white. You sit in the center and close your eyes as the ritual begins. You can sense the soulstones all around you, bathed in light, and you mentally reach out and start pulling them closer.]]></story_1>
-<!--			<story_2><![CDATA[<b>Imbuement complete:</b>⮀ It's overwhelming. You're thinking faster than you remember ever thinking before, your mind flashing from scene to scene as fragments of knowledge float by on the sidelines. Slowing down would be fatal, you have no choice but to trust the strength of your mind. Finally, it ends, and you open your eyes. The soulstones are nowhere to be found and the lake is just clear water now.]]></story_2>
-			<story_3><![CDATA[<b>250 Imbuement completed:</b>⮀ You mind is clocked into overdrive, the amount of processing you can do is insane. You brain has extended your limits ten fold!]]></story_3>
+			<story_2><![CDATA[<b>Imbuement complete:</b>⮀ It's overwhelming. You're thinking faster than you remember ever thinking before, your mind flashing from scene to scene as fragments of knowledge float by on the sidelines. Slowing down would be fatal, you have no choice but to trust the strength of your mind. Finally, it ends, and you open your eyes. The soulstones are nowhere to be found and the lake is just clear water now.]]></story_2>
+<!--			<story_3><![CDATA[<b>250 Imbuement completed:</b>⮀ You mind is clocked into overdrive, the amount of processing you can do is insane. You brain has extended your limits ten fold!]]></story_3>
 			<story_4><![CDATA[<b>500 Imbuement completed:</b>⮀ With the final imbuement done, you have unlocked the full powers of your brain. The lake is all dried up after so many imbuements and you don't think it will allow you to keep going anymore.]]></story_4>-->
         </imbue_mind>
         <imbue_body>
