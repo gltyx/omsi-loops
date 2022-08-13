@@ -1689,10 +1689,10 @@
             A forest run is fantastic. You feel like you're learning a lot as you push your limits.<br>Has 4x exp/talent gain, and can only be done <div id='trainingLimitSpd'></div> times per reset.<br>Unlocked at 80% Forest Explored.
         ]]></tooltip>
             <story_1><![CDATA[<b>Speed trained:</b>⮀ Sprinting through the forest is an exhilarating experience. The vines whip past your head, the roots beneath your feet. The leaves whip past your face and the breeze blows hard enough against your ears that you hear nothing but. You feel at one with the forest as you chase a finch around, up and down and even under trees at times. Through dilapidated trunks and wooden labyrinths.]]></story_1>
-	     <story_2><![CDATA[<b>100 Speed Talent:</b>⮀ You can feel the speed now, you can start running down all these roads and shortcuts with ease. You wonder how fast you can get from Beginnersville to the Forest Path.]]></story_2>
+<!--	     <story_2><![CDATA[<b>100 Speed Talent:</b>⮀ You can feel the speed now, you can start running down all these roads and shortcuts with ease. You wonder how fast you can get from Beginnersville to the Forest Path.]]></story_2>
 	     <story_3><![CDATA[<b>1,000 Speed Talent:</b>⮀ With each loop your sore feet magically go away, makes your speed training effecient. Getting closer to reaching a top speed of a car, glad there is no police in this world.]]></story_3>
 	     <story_4><![CDATA[<b>10,000 Speed Talent:</b>⮀ You have set the world record for fastest man alive, you can race to Valhalla in a blink of a second. Wonder if you could beat the flash if they existed in this world.]]></story_4>
-	     <story_5><![CDATA[<b>100,000 Speed Talent:</b>⮀ Nobody can tell how fast you are going, you have past the speed of light. To normal town's people you look like you are teleporting right in front of them.]]></story_5>
+	     <story_5><![CDATA[<b>100,000 Speed Talent:</b>⮀ Nobody can tell how fast you are going, you have past the speed of light. To normal town's people you look like you are teleporting right in front of them.]]></story_5>-->
         </train_speed>
         <follow_flowers>
             <label>Follow Flowers</label>
@@ -1714,10 +1714,10 @@
             Far along the flower trail, there seems to be a large variety of birds flying about. Perhaps you could take up a new hobby.<br>Requires glasses.<br>Has 4x exp/talent gain, and can only be done <div id='trainingLimitPer'></div> times per reset.<br>Unlocked at 80% Flower Trail Followed.
         ]]></tooltip>
             <story_1><![CDATA[<b>Birds watched:</b>⮀ You spot a colorful bird and attempt to follow it with your eyes, you fail. You try again and again until you can reliable pick out fast moving birds and animals with pinpoint precision. It's also strangely relaxing to watch birds congregate together, listening to the bird-call and watching them interact. Its fast, frenetic and savage at times, but that's nature.]]></story_1>
-	     <story_2><![CDATA[<b>100 Perception Talent:</b>⮀ You are so skilled at perception that finding resources and investigations are way easier to do, could be a good crime scene investigator at this point.]]></story_2>
+	  <!--   <story_2><![CDATA[<b>100 Perception Talent:</b>⮀ You are so skilled at perception that finding resources and investigations are way easier to do, could be a good crime scene investigator at this point.]]></story_2>
 	     <story_3><![CDATA[<b>1,000 Perception Talent:</b>⮀ You have so much perception that you still need to wear glasses at this point, but the shop recommends a better prescription at least.]]></story_3>
 	     <story_4><![CDATA[<b>10,000 Perception Talent:</b>⮀ You can spot things from a mile away with these new glasses, even helps see the crackes in the dungeon walls, nifty!]]></story_4>
-	     <story_5><![CDATA[<b>100,000 Perception Talent:</b>⮀ It is amazing how clear the world is to you. You can even see the a dark tall tower of some sort in the distance.]]></story_5>
+	     <story_5><![CDATA[<b>100,000 Perception Talent:</b>⮀ It is amazing how clear the world is to you. You can even see the a dark tall tower of some sort in the distance.]]></story_5>-->
         </bird_watching>
         <clear_thicket>
             <label>Clear Thicket</label>
