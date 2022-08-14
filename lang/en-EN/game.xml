@@ -1998,7 +1998,7 @@
             <label_complete>Completed</label_complete>
             <label_part>Heroes Trial</label_part>
             <tooltip><![CDATA[
-            Gather your party to take on the trial of heroes!
+            Gather your party to take on the trial of heroes! More Team Combat can help clear floors faster. 
         ]]></tooltip>
             <segment_names>
                 <name>Locate Entrance</name>
@@ -2702,7 +2702,7 @@
             <label_part>Floor</label_part>
             <label_complete>Did you cheat?</label_complete>
             <tooltip><![CDATA[
-            You're really going to try it, huh? Well, good luck!<br>
+            You're really going to try it, huh? Well, good luck! More Team Combat can help clear floors faster.<br> 
             Rewards +1 Bragging Rights.
         ]]></tooltip>
  		<segment_names>
@@ -2752,7 +2752,7 @@
             <label_complete>100 Floors Completed</label_complete>
             <label_part>Gods Trial</label_part>
             <tooltip><![CDATA[
-            The gods have filled the 100 floors of the tower you built with monsters to stop you from returning to Valhalla. Rude.
+            The gods have filled the 100 floors of the tower you built with monsters to stop you from returning to Valhalla. Rude. More Team Combat can help clear floors faster.
         ]]></tooltip>
             <segment_names>
 		    <name>Fight Fire Dragon</name>
