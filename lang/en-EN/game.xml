@@ -2506,7 +2506,7 @@
         <purchase_supplies>
         <label>Buy Supplies</label>
             <tooltip><![CDATA[
-            Prepare to move on.<br>Costs 500 gold.<br>This merchant doesn't seem to be willing to haggle with you though.<br>You only need one set of supplies.<br>Unlocked at a combined Combat and Magic skill of 35.
+            Prepare to move on.<br>Costs 500 gold.<br>This merchant doesn't seem to be willing to haggle with you though.<br>You only need one set of supplies.<br>
         ]]></tooltip>
         </purchase_supplies>
         <dead_trial>
