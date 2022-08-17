@@ -30,7 +30,6 @@ const limitedActions = [
     "Accept Donations",
     "Mana Well",
     "Destroy Pylons"
-    "Haul"
 ];
 const trainingActions = [
     "Train Speed",
