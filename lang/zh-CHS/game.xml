@@ -17,7 +17,7 @@
             ]]></version>            
             <version verNum="2.8"><![CDATA[
             <b> July 25th, 2022</b>
-            • 商业村庄增加了一个新的公会 - 刺客公会! 在世界中刺杀目标, 收集心脏 (为什么都是心脏?), 带回刺客公会以换取刺客相关知识<br>
+            • 商业都市增加了一个新的公会 - 刺客公会! 在世界中刺杀目标, 收集心脏 (为什么都是心脏?), 带回刺客公会以换取刺客相关知识<br>
             • 新行动: 刺杀: 现在每个区域都有刺杀行动. 每次刺杀都会严重降低声望 (通过刺客技能缓解) 并且根据你的声望和本次循环完成的刺杀次数越来越难<br>
             • 新技能: 刺杀 - 增强刺杀行动并降低试炼难度膨胀<br>
             • 新菜单: 统计 - 记录各种游戏指标比如时间和循环/行动完成次数<br>
@@ -62,7 +62,7 @@
             <version verNum="2.2"><![CDATA[
             <b> July 19th, 2022</b>
             • 新技能: 领导力 - 每 100 级增加你的队友上限 1 并增加他们对团队战斗力的效果<br>
-            • 新行动 (商业村庄): 演讲培训 - 从一个 绝-对-不-是 传销人的老板那里学习经验成为更好的领导者<br> 
+            • 新行动 (商业都市): 演讲培训 - 从一个 绝-对-不-是 传销人的老板那里学习经验成为更好的领导者<br> 
             • 平衡: 僵尸强度现在是黑暗仪式 / 100(最少 1x, 最高 6.66x )<br>
             • 平衡: 击败丛林生物现在奖励血而不是皮革. 自助餐现在需要血而不是皮革. 还是很恶心.<br>
             提示 - 我们还需要观察这么改效果如何. 也许会导致团队战斗力比个人战斗力强太多. 另外, 试炼可能全都需要重新平衡.<br>
@@ -163,7 +163,7 @@
             ]]></version>
             <version verNum="1.1"><![CDATA[
             <b> July 11th, 2022</b>
-            • 新公会: 探索者 - 经过社区投票, 探索者在商业村庄开设了商店!<br>
+            • 新公会: 探索者 - 经过社区投票, 探索者在商业都市开设了商店!<br>
             • 在所有区域解锁了一个新的 "勘测" 行动 - 勘测的进度会增加有限资源的上限 (% * 0.5)<br>
             • 全局的勘测进度还为区域移动提供了更便捷的捷径<br>
             • Bug修复: 法力井可能流失到负值, 导致反而从玩家身上吸取法力<br>
@@ -185,8 +185,8 @@
             ]]></version>
             <version verNum=".99"><![CDATA[
             <b> July 7th, 2022</b>
-            • 新行动 (商业村庄): 短途旅行 - 一个解锁其他行动的探索行动<br>
-            • 新行动 (商业村庄): 偷钱包, 抢劫仓库, 保险欺诈 - 金块奖励基于盗贼公会倍率和偷窃技能<br>
+            • 新行动 (商业都市): 短途旅行 - 一个解锁其他行动的探索行动<br>
+            • 新行动 (商业都市): 偷钱包, 抢劫仓库, 保险欺诈 - 金块奖励基于盗贼公会倍率和偷窃技能<br>
             • 完成偷窃技能制作 - 增加开锁, 赌博, 和盗贼公会行动的金块奖励<br>
             • 为灌注灵魂增加一个临时的效果 - 每次完成增加 50% 行动速度. 未来可能会改变<br>
             • 增加了一个不会受到奖励时间影响的时间统计. 实际经过时间可以把鼠标悬停在 "已消耗法力" 上查看<br>
@@ -200,7 +200,7 @@
             ]]></version>
             <version verNum=".98"><![CDATA[
             <b> July 6th, 2022</b>
-            • 新区域 - 丛林小路, 商业村庄, 和奥林匹斯山谷. 主要的里程碑已经添加, 还有一些其他内容
+            • 新区域 - 丛林小路, 商业都市, 和奥林匹斯山谷. 主要的里程碑已经添加, 还有一些其他内容
             • 新加成: 灌注躯体 - 献祭天赋等级以提高初始能力等级.<br>
             • 新技能: 暴食 - 降低盛宴的灵魂石消耗.<br>
             • 新技能: 偷窃 - 增加一些行动的金块获取<br>
@@ -208,9 +208,9 @@
             • 新行动 (丛林小路): 探索丛林和与丛林搏斗 - 对应的探索/进度行动都会受到生物击杀进度影响<br>
             • 新行动 (丛林小路): 拯救幸存者和准备自助餐 - 通过恢复技能, 消耗草药和皮革来获取暴食经验<br>
             • 新行动 (丛林小路): 逃脱 - 杰索下一区域, 但必须在本次循环 60 秒内完成 (也计算奖励秒数) 
-            • 新行动 (商业村庄): 盗贼公会 - 结构类似制造公会, 但金块收入很高<br>
-            • 新行动 (商业村庄): 投资和收取利息. 进行一些终身投资<br>
-            • 新行动 (商业村庄): 获取钥匙和离开村庄 - 消耗 1M 金块来离开村庄<br>
+            • 新行动 (商业都市): 盗贼公会 - 结构类似制造公会, 但金块收入很高<br>
+            • 新行动 (商业都市): 投资和收取利息. 进行一些终身投资<br>
+            • 新行动 (商业都市): 获取钥匙和离开村庄 - 消耗 1M 金块来离开村庄<br>
             • 新行动 (奥林匹斯山谷): 灌注灵魂和挑战神 - (未完成) 预计游戏终点<br>
             • 黑暗仪式现在对所有区域都有一个微小的加成. 也许需要找一个不显示未解锁区域描述的方法<br>
             • 打开裂缝的消耗 100k -> 50k<br> 
@@ -541,7 +541,7 @@
         <story_title>故事</story_title>
         <stories>
             <story num="0"> <!--Beginning of Game-->
-                您只是一个普通的送货员，踏上了一次长途之旅，运送着一个重要的包裹。进城的时候，您滑了一跤，打碎了眼镜，并且包裹还还摔开了，一股奇怪的液体溅到了您身上。您仅有的微薄法力开始迅速消耗。就在它快要耗尽的时候，您突然发现，自己回到了液体溅到身上的那个瞬间，并且法力就这么回复满了……但法力依旧在消耗，您就这么不停地循环着，世界也随之不停重置。直到最后，您终于下定决心，要延长这种循环的时间。这个镇子常常把法力水晶存放到罐子里，或许可以从那里开始……
+                您只是一个普通的送货员，踏上了一次长途之旅，运送着一个重要的包裹。进城的时候，您滑了一跤，打碎了眼镜，并且包裹还摔开了，一股奇怪的液体溅到了您身上。您仅有的微薄法力开始迅速消耗。就在它快要耗尽的时候，您突然发现，自己回到了液体溅到身上的那个瞬间，并且法力就这么回复满了……但法力依旧在消耗，您就这么不停地循环着，世界也随之不停重置。直到最后，您终于下定决心，要延长这种循环的时间。这个镇子常常把法力水晶存放到罐子里，或许可以从那里开始……
             </story>
             <story num="1"> <!--First Soulstone-->
                 您到达了地牢的终点，一个踏板上，悬浮着一个散发着柔和光芒的球体。那就是地牢核心，不过也只是第一层的核心。您抓住了它，它的精华开始涌入您的身体，它的力量逐渐为您所用。它蕴含的能量虽然不多，但毕竟这个地牢也不大。您一定会再回来的，因为获得这些能量时您同时也获得了外来的知识，知道这些能量将永远与您同在。
@@ -559,7 +559,7 @@
 				您已经充分探索了商业小镇的公会，也结识了一些大概可以算朋友的人，该拿起镐开始攀爬了！看起来需要攀爬很久才能到达奥林匹斯山，但路上，您发现了一些法力喷泉，似乎可以用镐来采集。山的四处还散落着符文，破译后可能会有用。半山腰处，您还发现一个巨大的洞穴，您想着休息一下进去看看，然后遇到了一些友善的巨魔，可惜它们并不卖刨冰……
 			</story>
 			<story num="6"> <!--Good Reputation Story--> <!--Change 6 to Valhalla-->
-				终于，您到达了奥林匹斯山之巅，那儿有一座巨门，一个声音高叫着“面对众神的审判吧，哈哈哈哈。希望你准备好了！”等待良久，然后那个声音再次响起“你可以通过了！”您就此进入了瓦尔哈拉，一名游客带着您参观，甚至似乎还有一场慈善活动在举办。探索完毕，您总结了一下，您可以进入礼仪学校，或者是巫师学院，也可以考虑成为公民，甚至与女武神们并肩作战。众神之家真是太好了。
+				终于，您到达了奥林匹斯山之巅，那儿有一座巨门，一个声音高叫着“面对众神的审判吧，哈哈哈哈。希望你准备好了！”等待良久，然后那个声音再次响起“你可以通过了！”您就此进入了瓦尔哈拉，一名向导带着您参观，甚至似乎还有一场慈善活动在举办。探索完毕，您总结了一下，您可以进入礼仪学校，或者是巫师学院，也可以考虑成为公民，甚至与女武神们并肩作战。众神之家真是太好了。
 			</story>
 			<story num="7"> <!--Bad Reputation Story--> <!--Change 7 to Startington-->
 				一个声音高叫着“你不可以通过！”您觉得自己被举起，扔出了奥林匹斯山，掉入了阴影界。阴影界打开了，您摔在地上，但还好只擦破了点皮，几小时后，您终于站了起来，意识到，这并不是新手村了。仔细检查附近的废墟后，您发现它们比想象中还要扭曲和怪异。电缆塔引起了您的注意，您决定摧毁它们。一阵子后，您发现您站在一个巨大的尖塔面前！
@@ -568,32 +568,17 @@
 				离开初始小镇前，您发现自己并没有新手村的补给，还好初始小镇有出售另一套补给，但据说店主听力不好，所以没法讨价还价。获得补给后，您沿路前行，这让您想起了那片森林。前行片刻后，前方出现了一片充满废墟的丛林，该探索它们了。
 			</story>
 			<story num="9"> <!--Made the Looping Potion--> <!--Change 9 to Looping Potion-->
-				学习炼金术并采集药草后，您终于藉此制作出了循环药剂。您花了些时间调和药剂，并将药草浸入法力喷泉中，然后再将它混合入了一个瓶子内。一眼望去，您发现这就是之前在新手村溅到您身上的药剂，但您对怎么使用它却没了主意。
+				学习炼金术并采集药草后，您终于藉此制作出了循环药剂。您花了些时间调和药剂，并将药草浸入法力喷泉中，然后再将它们混合入了一个瓶子内。一眼望去，您发现这就是之前在新手村溅到您身上的药剂，但您对怎么使用它却没了主意。
 			</story>
 			<story num="10"> <!--Change 10 to Commerceville-->
-				After you explore the ruins you notice the exit out of here is gonna be blocked of soon might have to beat the loop fast enough.
-				You just beat the exit just barely and notice that there is another small city, time to pay someone to show you around town! The
-				guide shows you the explorers guild and explains that they have many perks for joining, nifty! The guide also takes you down
-				a alley way and shows you that you can join the Thieves Guild to make a little bit of cash. After the guide is done showing
-				you around town he explains that they are with the tax collectors and you probly should be going now, quickly you make it to
-				the Bank and you notice a hooded figure might be worth checking what they do.
+				探索完废墟后，您发现这里的出口马上就要封锁，看来循环中得抓紧时间。勉强通过出口以后，您发现前方又出现了一座小城，该找个向导来了！他带您去了探险家公会，并解释说加入后可以获得很多好处，真棒！他还带您走进一条小巷，表示您可以加入盗贼公会来赚点外快。向导带您游历了这个小城，然后表示税吏将至，您该离开了。您迅速前往银行，并注意到一个戴兜帽的身影，或许该看看他们是做什么的。
 			</story>
 			<story num="11"> <!--Change 11 to Valley of Olympus-->
-				After you take a heafty loan from the bank you can now own Commerceville and leave while you still can, after you walk down the
-				road you realize you can move the stones from the Jungle and move them to build a great tower. After you build the great tower
-				you realize you can't reach Valhalla unless you can clear trial of the gods to prove worthy of entering again. After finally 
-				clearing the trial of the gods, the voice speaks "The 7 gods of this land protect this world, if you want to enter Valhalla 
-				you can defeat us to be worth of the throne." After a long battle the last god goes down and you gain the power of all 7 gods,
-				with great power you can end the time loop now and forever!
+				在银行贷了一笔巨款后，商业都市已是您的囊中之物，该走了。前进过程中，您想起来，可以将丛林中的石头移到一起，建造一座大尖塔。建造完毕以后，您发现自己必须再次通过众神的试炼，以证明自己有资格进入瓦尔哈拉。完成试炼后，响起了一个声音“这片土地上有7位神明保护着它，如果想要进入，您必须证明自己有王者的能力。”长久的战斗终于划上了句号，最后的神明倒下了，您获得了所有7位神明的力量，终于可以永远结束时间循环了！
 			</story>
 			<story num="12"> <!--Finally--> <!-- Change 12 to Ending the Loop-->
 				<![CDATA[
-				   You've done it! You've bested the gods themselves and restored time to its rightful flow. You can stop looping at any moment.
-				   But, then again, you could keep going. There's always time later...
-				   Thanks for playing my fan mod of Idle Loops! 
-				   Big shout-out to the wonderful Stop_Sign for creating this amazing game and Omsi for all the Omsi version.
-				   You both have inspired me more than you can imagine.
-				   Hope everyone had fun! <3 <br>
+				   您终于成功了！您击败了众神，使时间恢复了正常的流动。您可以随时停止循环了。但您也可以继续循环，只要您想要这么做。循环终有时……感谢您游玩我的放置循环模组！也感谢Stop_Sign制作了及其优秀的原版游戏，还有Omsi制作了Omsi版。您二位给我的启发或许超过了二位的想象罢。最后，希望所有玩家都玩的开心！(比心)<br>
 				   --Lloyd                
 				]]>
             </story>
@@ -906,7 +891,7 @@
             <desc>一个扭曲的丛林，似乎要把你吸到深处.</desc>
         </town6>
         <town7>
-            <name>商业村庄</name>
+            <name>商业都市</name>
             <desc>这里每个人都想赚钱.</desc>
         </town7>
         <town8>
@@ -1958,7 +1943,7 @@
             <label>地下世界</label>
             <tooltip><![CDATA[
             你从探索者公会那里学到的知识让你打开了一个新的大门. 在右边的铰链上涂一点金, 谁知道你该在哪里停止.<br>
-            前往商业村庄.<br>消耗
+            前往商业都市.<br>消耗
         ]]></tooltip>
         <tooltip2>金块.</tooltip2>
         </underworld>
@@ -2150,10 +2135,10 @@
         </guru>
         <!--town 5-->
         <guided_tour>
-            <label>跟随导游</label>
+            <label>跟随向导</label>
             <label_done>游览路线探索度</label_done>
             <tooltip><![CDATA[
-            这座城市并不欢迎四处乱逛的游客, 所以你必须找个导游带领你探索.<br>消耗 10 金块.<br>持有眼镜时进度 2x .
+            这座城市并不欢迎四处乱逛的游客, 所以你必须找个向导带领你探索.<br>消耗 10 金块.<br>持有眼镜时进度 2x .
         ]]></tooltip>
             <story_1><![CDATA[<b>1% Tour Routes Followed:</b>⮀ Your gold is still good money here, you note as you join a small gaggle of people following the tour guide around Valhalla. It's a lovely place full of lovely people, and the air smells fresh and clean beyond even the untamed countrysides you're used to.]]></story_1>
             <story_2><![CDATA[<b>10% Tour Routes Followed:</b>⮀ You're taken past some residential areas, each house immaculate, and you see someone going door to door collecting charitable donations. With how nice everything is here, you're not sure what cause they could be supporting.]]></story_2>
