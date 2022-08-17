@@ -819,7 +819,7 @@
 		<mercantilism>
 			<label>Mercantilism</label>
 			<desc>Smooth talk your way to better rates with the mana merchants.</desc>
-			<desc2><![CDATA[Multiply the mana gain from Buy Mana by (1 + level / 60) ^ 0.25.<br>
+			<desc2><![CDATA[Multiply the mana gain from Buy Mana by (1 + level / 60) ^ 0.25 (rounds down).<br>
             Currently granting <div id='skillBonusMercantilism'></div>x mana gains.]]></desc2>
 		</mercantilism>
         <divine>
@@ -1047,17 +1047,17 @@
             Requires a map for each action.<br>
             Currently granting <div class='surveySkill'></div> exp per action.
             ]]></tooltip>
-		<story_1><![CDATA[<b>20% World Survey:</b>⮀ You decide it is time to discover the world, the journey is long but so worth.]]></story_1>
+		<story_1><![CDATA[<b>20% World Survey:</b>⮀ You decide it is time to discover the world. One of the explorers decided to come on the journey around the world their name is Dora, the journey is long but so worth.]]></story_1>
 		<story_2><![CDATA[<b>40% World Survey:</b>⮀ Crazy how discovering the world over again is shedding a new light on the world, new items you never seen have just been out of place.]]></story_2>
 		<story_3><![CDATA[<b>60% World Survey:</b>⮀ Nobody is stopping you from exploring more and more, it feels nice. At least the view is spectacular!]]></story_3>
 		<story_4><![CDATA[<b>80% World Survey:</b>⮀ You are almost done with your trip and you have enjoyed every second of it. You wish the explorer's guild has found more locations to visit, but they couldn't find anything new.]]></story_4>
-		<story_5><![CDATA[<b>100% World Survey:</b>⮀ You have discovered the whole world over again, at least there is a fox to say swiper, no swiping to.]]></story_5>
+		<story_5><![CDATA[<b>100% World Survey:</b>⮀ your last exploration had the strangest encounter of them all. just as you finished surveying the area, a fox appeared out of nowhere and swiped your remaining maps!]]></story_5>
         </survey>
         <assassin>
             <label>Assassinate</label>
             <label_done>Assassinated</label_done>
             <tooltip><![CDATA[
-            Kill your mark in this town.<br>
+            Discreetly kill your mark in this town. The more well-known you are, for either good or evil, the harder pulling this off will be...<br>
             Gives progress equal to (Sqrt(Practical) + Thievery + Assassin) * Stat/1000 * Sqrt(Completions/100) / Abs(reputation) / hearts^2.<br>
             Rewards a heart.
             ]]></tooltip>
@@ -1085,7 +1085,6 @@
         </assassinz6>
         <assassinz7>
             <story_1><![CDATA[<b>Target Assassinated:</b>⮀ Last task on the list and there are a ton of corrupted people here, plus the assassination guild is here to collect all the hearts you gotten.]]></story_1>
-
         </assassinz7>
         <!--ruins-->
         <ruinsZ1>
@@ -1094,9 +1093,9 @@
             <tooltip><![CDATA[
             As you've explored, you've found a number of old ruins scattered around. It's probably worth your time to explore them.
             ]]></tooltip>
-		<story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Forest and notice some weird looking rocks, wonder what they do.]]></story_1>
-		<story_2><![CDATA[<b>50% delved:</b>⮀ After further investigating you realize that the rocks are needed for a tower somewhere....]]></story_2>
-		<story_3><![CDATA[<b>100% delved:</b>⮀ You have discover everything in these ruins, and notice that only these temporal stones exist here.]]></story_3>
+            <story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Forest and notice some weird looking rocks, wonder what they do.]]></story_1>
+            <story_2><![CDATA[<b>50% delved:</b>⮀ After investigating these weird looking rocks you notice they are cubical and are heavy, looks like they are dusty from the time they have been sitting here.]]></story_2>
+            <story_3><![CDATA[<b>100% delved:</b>⮀ You have discovered everything in these ruins, and notice that there are so many cubical stones lying everywhere like a massive battle happend.]]></story_3>
         </ruinsZ1>
         <ruinsZ3>
             <label>Ruins</label>
@@ -1104,9 +1103,9 @@
             <tooltip><![CDATA[
             As you've explored, you've found a number of old ruins scattered around. It's probably worth your time to explore them.
             ]]></tooltip>
-		<story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Mt. Olympus and notice some weird looking rocks, wonder what they do.]]></story_1>
-		<story_2><![CDATA[<b>50% delved:</b>⮀ After further investigating you realize that the rocks are needed for a tower somewhere....]]></story_2>
-		<story_3><![CDATA[<b>100% delved:</b>⮀ You have discover everything in these ruins, and notice that only these temporal stones exist here.]]></story_3>
+            <story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Mt. Olympus and notice the same cubical rocks, wonder what they do.]]></story_1>
+            <story_2><![CDATA[<b>50% delved:</b>⮀ There is a stone with some writing, with your high intelligence you might be able to read this strange language.]]></story_2>
+            <story_3><![CDATA[<b>100% delved:</b>⮀ After looking around the ruins it looks like there is a weapon rusted of some sort that looks like one of the Valkeries used, wonder what really happened.]]></story_3>
         </ruinsZ3>
         <ruinsZ5>
             <label>Ruins</label>
@@ -1114,9 +1113,9 @@
             <tooltip><![CDATA[
             As you've explored, you've found a number of old ruins scattered around. It's probably worth your time to explore them.
             ]]></tooltip>
-		<story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Startington and notice some weird looking rocks, wonder what they do.]]></story_1>
-		<story_2><![CDATA[<b>50% delved:</b>⮀ After further investigating you realize that the rocks are needed for a tower somewhere....]]></story_2>
-		<story_3><![CDATA[<b>100% delved:</b>⮀ You have discover everything in these ruins, and notice that only these temporal stones exist here.]]></story_3>
+            <story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Startington and and notice the same dusty cubical rocks, wonder what they do.]]></story_1>
+            <story_2><![CDATA[<b>50% delved:</b>⮀ After deciphering the text on this stone block, You can see some of the text since the rest has corroded over time. ]]></story_2>
+            <story_3><![CDATA[<b>100% delved:</b>⮀ The text explains that the Valkeries started a war that lasted for a month, after a month of fighting they finally declared peace. Who did they fight against???]]></story_3>
         </ruinsZ5>
         <ruinsZ6>
             <label>Ruins</label>
@@ -1124,9 +1123,9 @@
             <tooltip><![CDATA[
             As you've explored, you've found a number of old ruins scattered around. It's probably worth your time to explore them.
             ]]></tooltip>
-		<story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Jungle Path and notice some weird looking rocks, wonder what they do.]]></story_1>
-		<story_2><![CDATA[<b>50% delved:</b>⮀ After further investigating you realize that the rocks are needed for a tower somewhere....]]></story_2>
-		<story_3><![CDATA[<b>100% delved:</b>⮀ You have discover everything in these ruins, and notice that only these temporal stones exist here.]]></story_3>
+            <story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Jungle Path and and notice the same dusty and heavy cubical rocks, wonder what they do.]]></story_1>
+            <story_2><![CDATA[<b>50% delved:</b>⮀ You notice a god weapon on the floor in the middle of this ruins, almost like they left this here on purpose.]]></story_2>
+            <story_3><![CDATA[<b>100% delved:</b>⮀ Looking at the weapon has a small text that says, war has ended and this weapon is layed to rest. Did the gods fight the Valkeries???]]></story_3>
         </ruinsZ6>
         <haulZ1>
             <label>Haul</label>
@@ -1139,8 +1138,9 @@
             You're sure you can use them for something. They're too heavy to move more than one at a time though.<br>
             One in every thousand Stones is temporal.
         ]]></tooltip>
-		<story_1><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ Slowly you pick up the stones one by one and move them to Valley of Olympus. Make sure to use your legs when lifting! ]]></story_1>
-		<story_2><![CDATA[<b>Moved 250 Temporal Stones:</b>⮀ Finally all the stones have been moved from the Forest Path to Valley of Olympus.]]></story_2>
+		<story_1><![CDATA[<b>First Temporal Stone Found:</b>⮀ After digging thru the cubical stones, you notice a light blue light glowing with a swirl pattern on the sides of the rock and they are slightly easier to pick up but still weigh a ton.]]></story_1>
+		<story_2><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ Slowly you pick up the stones one by one and move them to Valley of Olympus. Make sure to use your legs when lifting!]]></story_2>
+		<story_3><![CDATA[<b>Moved 250 Temporal Stones:</b>⮀ Finally all the stones have been moved from the Forest Path to Valley of Olympus.]]></story_3>
         </haulZ1>
         <haulZ3>
             <label>Haul</label>
@@ -1153,8 +1153,10 @@
             You're sure you can use them for something. They're too heavy to move more than one at a time though.<br>
             One in every thousand Stones is temporal.
         ]]></tooltip>
-		<story_1><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ Slowly you pick up the stones one by one and move them to Valley of Olympus. Make sure to use your legs when lifting! ]]></story_1>
-		<story_2><![CDATA[<b>Moved 250 Temporal Stones:</b>⮀ Finally all the stones have been moved from the Startington to Valley of Olympus.]]></story_2>
+
+		<story_1><![CDATA[<b>First Temporal Stone Found:</b>⮀ After digging thru the cubical stones, you notice a light blue light glowing with a swirl pattern on the sides of the rock and they are slightly easier to pick up but still weigh a ton.]]></story_1>
+		<story_2><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ Slowly you pick up the stones one by one and move them to Valley of Olympus. Make sure to use your legs when lifting! ]]></story_2>
+		<story_3><![CDATA[<b>Moved 250 Temporal Stones:</b>⮀ Finally all the stones have been moved from the Startington to Valley of Olympus.]]></story_3>
         </haulZ3>
         <haulZ5>
             <label>Haul</label>
@@ -1167,8 +1169,9 @@
             You're sure you can use them for something. They're too heavy to move more than one at a time though.<br>
             One in every thousand Stones is temporal.
         ]]></tooltip>
-		<story_1><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ Slowly you pick up the stones one by one and move them to Valley of Olympus. Make sure to use your legs when lifting! ]]></story_1>
-		<story_2><![CDATA[<b>Moved 250 Temporal Stones:</b>⮀ Finally all the stones have been moved from the Jungle Path to Valley of Olympus.]]></story_2>
+		<story_1><![CDATA[<b>First Temporal Stone Found:</b>⮀ After digging thru the cubical stones, you notice a light blue light glowing with a swirl pattern on the sides of the rock and they are slightly easier to pick up but still weigh a ton.]]></story_1>
+		<story_2><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ Slowly you pick up the stones one by one and move them to Valley of Olympus. Make sure to use your legs when lifting! ]]></story_2>
+		<story_3><![CDATA[<b>Moved 250 Temporal Stones:</b>⮀ Finally all the stones have been moved from the Jungle Path to Valley of Olympus.]]></story_3>
         </haulZ5>
         <haulZ6>
             <label>Haul</label>
@@ -1181,8 +1184,9 @@
             You're sure you can use them for something. They're too heavy to move more than one at a time though.<br>
             One in every thousand Stones is temporal.
         ]]></tooltip>
-		<story_1><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ Slowly you pick up the stones one by one and move them to Valley of Olympus. Make sure to use your legs when lifting! ]]></story_1>
-		<story_2><![CDATA[<b>Moved 250 Temporal Stones:</b>⮀ Finally all the stones have been moved from the Mt. Olympus to Valley of Olympus.]]></story_2>
+		<story_1><![CDATA[<b>First Temporal Stone Found:</b>⮀ After digging thru the cubical stones, you notice a light blue light glowing with a swirl pattern on the sides of the rock and they are slightly easier to pick up but still weigh a ton.]]></story_1>
+		<story_2><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ Slowly you pick up the stones one by one and move them to Valley of Olympus. Make sure to use your legs when lifting! ]]></story_2>
+		<story_3><![CDATA[<b>Moved 250 Temporal Stones:</b>⮀ Finally all the stones have been moved from the Mt. Olympus to Valley of Olympus.]]></story_3>
         </haulZ6>
         <!--town 1-->
         <map>
@@ -1376,7 +1380,7 @@
             <label_done>Healed</label_done>
             <label_part>Patient</label_part>
             <tooltip><![CDATA[
-            You won't be able to heal them all, but they'll be thankful for doing what you can.<br>Healing is always 3 parts, each with a main stat - Diagnose (Per), Treat (Int), Inform (Cha).<br>Gives (magic skill) * (restoration skill / 50) * (1 + main stat / 100) * sqrt(1 + times completed / 100) * (original mana cost / actual mana cost) progress points per mana.<br>Requires a reputation of 1 or above.<br>Unlocked at 12 Magic skill.<br>Gives 3 reputation upon patient completion.
+            You won't be able to heal them all, but they'll be thankful for doing what you can.<br>Healing is always 3 parts, each with a main stat - Diagnose (Per), Treat (Int), Inform (Cha).<br>Gives (magic skill) * max(restoration skill/50, 1) * (1 + main stat / 100) * sqrt(1 + times completed / 100) * (original mana cost / actual mana cost) progress points per mana.<br>Requires a reputation of 1 or above.<br>Unlocked at 12 Magic skill.<br>Gives 3 reputation upon patient completion.
 			]]></tooltip>
 			<story_1><![CDATA[<b>Patient healed:</b>⮀ You're allowed in to see the patients and begin healing. It's excellent practice and everyone you heal, be it from broken bones to small scrapes is extraordinarily thankful for your help.]]></story_1>
 			<story_2><![CDATA[<b>10 Patients healed in a loop:</b>⮀ Your reputation is absolutely sterling, you've basically cleared out the entire healing home and the nurses and healers are more than thankful for your help.]]></story_2>
@@ -1686,6 +1690,10 @@
             A forest run is fantastic. You feel like you're learning a lot as you push your limits.<br>Has 4x exp/talent gain, and can only be done <div id='trainingLimitSpd'></div> times per reset.<br>Unlocked at 80% Forest Explored.
         ]]></tooltip>
             <story_1><![CDATA[<b>Speed trained:</b>⮀ Sprinting through the forest is an exhilarating experience. The vines whip past your head, the roots beneath your feet. The leaves whip past your face and the breeze blows hard enough against your ears that you hear nothing but. You feel at one with the forest as you chase a finch around, up and down and even under trees at times. Through dilapidated trunks and wooden labyrinths.]]></story_1>
+<!--	     <story_2><![CDATA[<b>100 Speed Talent:</b>⮀ You can feel the speed now, you can start running down all these roads and shortcuts with ease. You wonder how fast you can get from Beginnersville to the Forest Path.]]></story_2>
+	     <story_3><![CDATA[<b>1,000 Speed Talent:</b>⮀ With each loop your sore feet magically go away, makes your speed training effecient. Getting closer to reaching a top speed of a car, glad there is no police in this world.]]></story_3>
+	     <story_4><![CDATA[<b>10,000 Speed Talent:</b>⮀ You have set the world record for fastest man alive, you can race to Valhalla in a blink of a second. Wonder if you could beat the flash if they existed in this world.]]></story_4>
+	     <story_5><![CDATA[<b>100,000 Speed Talent:</b>⮀ Nobody can tell how fast you are going, you have past the speed of light. To normal town's people you look like you are teleporting right in front of them.]]></story_5>-->
         </train_speed>
         <follow_flowers>
             <label>Follow Flowers</label>
@@ -1707,6 +1715,10 @@
             Far along the flower trail, there seems to be a large variety of birds flying about. Perhaps you could take up a new hobby.<br>Requires glasses.<br>Has 4x exp/talent gain, and can only be done <div id='trainingLimitPer'></div> times per reset.<br>Unlocked at 80% Flower Trail Followed.
         ]]></tooltip>
             <story_1><![CDATA[<b>Birds watched:</b>⮀ You spot a colorful bird and attempt to follow it with your eyes, you fail. You try again and again until you can reliable pick out fast moving birds and animals with pinpoint precision. It's also strangely relaxing to watch birds congregate together, listening to the bird-call and watching them interact. Its fast, frenetic and savage at times, but that's nature.]]></story_1>
+	  <!--   <story_2><![CDATA[<b>100 Perception Talent:</b>⮀ You are so skilled at perception that finding resources and investigations are way easier to do, could be a good crime scene investigator at this point.]]></story_2>
+	     <story_3><![CDATA[<b>1,000 Perception Talent:</b>⮀ You have so much perception that you still need to wear glasses at this point, but the shop recommends a better prescription at least.]]></story_3>
+	     <story_4><![CDATA[<b>10,000 Perception Talent:</b>⮀ You can spot things from a mile away with these new glasses, even helps see the crackes in the dungeon walls, nifty!]]></story_4>
+	     <story_5><![CDATA[<b>100,000 Perception Talent:</b>⮀ It is amazing how clear the world is to you. You can even see the a dark tall tower of some sort in the distance.]]></story_5>-->
         </bird_watching>
         <clear_thicket>
             <label>Clear Thicket</label>
@@ -1840,6 +1852,7 @@
 			<story_1><![CDATA[<b>Potion sold:</b>⮀ You're part of the attention-grabbing vista now, trying to get people to listen to you long enough to convince them your potions are worth the money. It's surprisingly hard work, but you got a man to give you a small sum of gold for one of your potions.]]></story_1>
 			<story_2><![CDATA[<b>20 Potions sold in a loop:</b>⮀ All the good herbs of the forest, brewed into potions and sold to the people of Merchanton. It took you a while, but the weight in your coin pouch tells you it was worth the effort.]]></story_2>
 			<story_3><![CDATA[<b>Potion sold for 100 gold:</b>⮀ As you hawk your wares, you catch the eye of a passing noblewoman. She's apparently dabbled in alchemy herself, and knows a quality potion when she sees one. After a couple rounds of negotiation she buys the potion for a tidy sum, and you realize your alchemical skills have gotten good enough for you to start marketing to richer clientele.]]></story_3>
+<!--			<story_4><![CDATA[<b>Potion sold for 1000 gold:</b>⮀ The quality of this potion is out of this world, you set up a stall for this potion and everyone wants this potion. The bid lasts for 3 hours but you finally sell it for alot more than you was expecting!]]></story_4>-->
         </sell_potions>
         <adventure_guild>
             <label>Adventure Guild</label>
@@ -1968,6 +1981,10 @@
             There's a library! You always loved reading.<br>Discover new worlds and perspectives, get ideas from fiction characters, and empathize with the desire to be stronger.<br>Requires glasses.<br>Has 4x exp/talent gain, and can only be done <div id='trainingLimitInt'></div> times per reset.<br>Unlocked at 50% city explored.
         ]]></tooltip>
 			<story_1><![CDATA[<b>Books read:</b>⮀ They do have it! You must have read this book a hundred times when you were a kid, and it's been a long time since you've found another copy. That's not all the library has to offer, far from it, but right now you're happy to settle down with your favourite book for an afternoon of reading.]]></story_1>
+<!--			<story_2><![CDATA[<b>100 Intelligence Talent:</b>⮀ Reading history books and solving math problems is the best when there is a libary right in merchanton, learning PEMDAS is still confusing.]]></story_2>
+			<story_3><![CDATA[<b>1,000 Intelligence Talent:</b>⮀ You are smart enought to understand how to read books in language you don't know. It's hard, but at least you're learning those languages slowly.]]></story_3>
+			<story_4><![CDATA[<b>10,000 Intelligence Talent:</b>⮀ You've read every single book in the library. You know the organization better than the librarians.]]></story_4>
+			<story_5><![CDATA[<b>100,000 Intelligence Talent:</b>⮀ You comeback to this libary to create a book about the world of Idle Loops and expand on it's creation you explore it more and more.]]></story_5>-->
         </read_books>
         <buy_pickaxe>
             <label>Buy Pickaxe</label>
@@ -1982,7 +1999,7 @@
             <label_complete>Completed</label_complete>
             <label_part>Heroes Trial</label_part>
             <tooltip><![CDATA[
-            Gather your party to take on the trial of heroes!
+            Gather your party to take on the trial of heroes! More Team Combat can help clear floors faster. 
         ]]></tooltip>
             <segment_names>
                 <name>Locate Entrance</name>
@@ -1995,6 +2012,10 @@
                 <name>Fight Dark Amalgamation</name>
                 <name>Cleanse Floor</name>
             </segment_names>
+<!--			<story_1><![CDATA[<b>Floor 1 Completed:</b>⮀ You notice a big door with a tall tower, You defeated the first floor but looking up above you look like you are not even close to clearing this any time soon.]]></story_1>
+			<story_2><![CDATA[<b>Floor 10 Completed:</b>⮀ Enemies are getting tougher as you climb up but this is a trial made for hero's, you even wonder if there is reward for beating it.]]></story_2>
+			<story_3><![CDATA[<b>Floor 25 Completed:</b>⮀ After climbing so many floors, you wonder when the end might be but so far you have seen so many traps and enemies that this better be worth it.]]></story_3>
+			<story_4><![CDATA[<b>Floor 50 Completed:</b>⮀ You completed it??? That is a huge accomplishment and has has earned you bragging rights and the right to be called a hero finally!]]></story_4>-->
         </heroes_trial>
         <start_trek>
             <label>Start Trek</label>
@@ -2010,6 +2031,7 @@
             Travels to Commerceville.<br>Costs
         ]]></tooltip>
         <tooltip2>gold.</tooltip2>
+<!--			<story_1><![CDATA[<b>Traveled thru the Underworld:</b>⮀ You enter this little alley way and notice a door, you open the door and notice there is a ferry man. The man is named Charon and says "I don't take people that haven't died." You hold a bag of 500 gold and shake it to get Charon's attention and Charon says "You may board.", you chat about how he hasn't used magic to make the boat go faster and he just stays silent the whole trip. Eventually the boat comes to a stop and Charon signels for you to get off, you get off and realize you didn't get dropped off in the underworld. What a Scam!]]></story_1>-->
         </underworld>
         <!--town 4-->
         <climb_mountain>
@@ -2037,6 +2059,7 @@
         ]]></tooltip>
 			<story_1><![CDATA[<b>Geyser revealed:</b>⮀ As your pickaxe digs into the ground, it suddenly shoots right out of your hands by an explosive pressure from beneath. You glance at where it fell and resolve to retrieve it later, and then turn your attention to the absolutely massive amount of mana bursting forth from the ground, doing your best to absorb as much as you can.]]></story_1>
 			<story_2><![CDATA[<b>10 Geysers revealed:</b>⮀ Having canvassed the entire mountain, you know where all the pent up mana is hiding, and where to strike to get access to it. You wonder what was causing so much mana to build up inside a mountain, but decide it doesn't really matter as long as you can get at it undisturbed.]]></story_2>
+<!--			<story_3><![CDATA[<b>15 Geysers revealed:</b>⮀ You found even more geysers in the cavern, weird how you never seen them. Exploring the world again has it's perks!]]></story_3>-->
         </mana_geyser>
         <decipher_runes>
             <label>Decipher Runes</label>
@@ -2061,6 +2084,7 @@
 			<story_1><![CDATA[<b>1 Chronomancy:</b>⮀ Chronomancy is unlike any other magic you've practiced, and unbelievably finicky. The mana has to be held perfectly still, as if time is at a standstill, and the slightest mistake will cause the entire spell to destabilize. It's hard work, but you finally get the hang of it and you feel yourself speed up by the barest fraction.]]></story_1>
 			<story_2><![CDATA[<b>50 Chronomancy:</b>⮀ The effect is more pronounced now, and you find that your reflexes are keeping up with your increased speed. Unfortunately, though, the mana drain of the loops appears to have kept up as well, so even though you're getting the same amount of work done in less time you can't seem to get more work done in a loop.]]></story_2>
 			<story_3><![CDATA[<b>100 Chronomancy:</b>⮀ You know that speeding up time isn't the only thing time magic can do, but it seems that for a human like you anything fancier is impossible without additional assistance. The runes recommend a group ritual but you're the only chronomancer you know, so instead you start learning what Tachytus has to say about chronomantic potions.]]></story_3>
+<!--			<story_4><![CDATA[<b>1,000 Chronomancy:</b>⮀ How fast can the world be speedup before you break reality? Who knows, you just want the world to speed up faster and faster than ever before.]]></story_4>-->
         </chronomancy>
         <looping_potion>
             <label>Looping Potion</label>
@@ -2077,6 +2101,7 @@
 			<story_1><![CDATA[<b>1 Pyromancy:</b>⮀ Pyromancy is more normal than chronomancy, but it makes up for it by being extra dangerous. Fire, you quickly learn, will consume you just as happily as your foes. Your control has to be ironclad at all times or you might lose a hand in the time it takes to draw a breath.]]></story_1>
 			<story_2><![CDATA[<b>50 Pyromancy:</b>⮀ Without the loops to restore you to normal you'd probably be dead five times over by now, but the rewards you've gained are impressive indeed. Turning that lethality on monsters is a sight to behold, and it's much more versatile than melee combat. Fights often end before they even have a chance to get close.]]></story_2>
 			<story_3><![CDATA[<b>100 Pyromancy:</b>⮀ You feel like an unstoppable wildfire, burning enemies to a crisp in an instant. You haven't had an… accident in a long time, and controlling the flames is becoming second-nature. Fire isn't the solution to every problem, but here and now you feel like it just might be.]]></story_3>
+<!--			<story_4><![CDATA[<b>1,000 Pyromancy:</b>⮀ You have so much skill with pyrotechnics that you can fire bend at will now, any flame source can be used at any time and place you want.]]></story_4>-->
         </pyromancy>
         <explore_cavern>
             <label>Explore Cavern</label>
@@ -2105,6 +2130,7 @@
 			<story_1><![CDATA[<b>Shiny spot checked:</b>⮀ You chip away at the wall until the sparkling object that caught your eye falls free. To your disappointment, what comes out of the wall is just some shiny rock. You doubt it'd even be worth much at market.]]></story_1>
 			<story_2><![CDATA[<b>Soulstone mined:</b>⮀ This time you're sure it's a soulstone, and as you pry it out of the wall you feel a rush of vindication. It glows an earthy brown with a slight blue tint, in contrast to the colors you found in the dungeon.]]></story_2>
 			<story_3><![CDATA[<b>30 Soulstones mined:</b>⮀ As you found all the soulstones hiding in Mt. Olympus' cavern walls, you quickly realized that unlike the soulstones found in dungeons, these soulstones appear in every loop. You wonder what the cause of that might be, but whatever the reason it's pretty convenient.]]></story_3>
+<!--			<story_4><![CDATA[<b>75 Soulstones mined:</b>⮀ These soulstones show up after every loop but you know where every spot is located and can mine them with ease!]]></story_4>-->
         </mine_soulstones>
         <hunt_trolls>
             <label>Hunt Trolls</label>
@@ -2149,6 +2175,7 @@
         ]]></tooltip>
 			<story_1><![CDATA[<b>Artifact taken:</b>⮀ You pick up an ornate necklace from the stone statue it was displayed on. It's made out of precious materials with incredible craftsmanship. If there's anything magical about it you can't figure it out, but there's really no reason to not take a priceless historical artifact with you.]]></story_1>
 			<story_2><![CDATA[<b>20 Artifacts taken:</b>⮀ Your collection is an unfocused assortment of unrelated artifacts found from all over the mountain, the only quality they all share being impeccable detail and craftsmanship. It seems like you're only picking clean what hasn't been lost to other people over time, but what you found will fetch a pretty penny nonetheless.]]></story_2>
+<!--			<story_3><![CDATA[<b>50 Artifacts taken in a loop:</b>⮀ You know how to spot the artifacts with the most value; some are old antiques and some are old gems, hopefully you can make a fortune with them.]]></story_3>-->
         </take_artifacts>
         <imbue_mind>
             <label>Imbue Mind</label>
@@ -2166,6 +2193,8 @@
             </segment_names>
 			<story_1><![CDATA[<b>Third phase reached:</b>⮀ The soulstones are all arranged, glowing a bright uniform white. You sit in the center and close your eyes as the ritual begins. You can sense the soulstones all around you, bathed in light, and you mentally reach out and start pulling them closer.]]></story_1>
 			<story_2><![CDATA[<b>Imbuement complete:</b>⮀ It's overwhelming. You're thinking faster than you remember ever thinking before, your mind flashing from scene to scene as fragments of knowledge float by on the sidelines. Slowing down would be fatal, you have no choice but to trust the strength of your mind. Finally, it ends, and you open your eyes. The soulstones are nowhere to be found and the lake is just clear water now.]]></story_2>
+<!--			<story_3><![CDATA[<b>250 Imbuement completed:</b>⮀ You mind is clocked into overdrive, the amount of processing you can do is insane. You brain has extended your limits ten fold!]]></story_3>
+			<story_4><![CDATA[<b>500 Imbuement completed:</b>⮀ With the final imbuement done, you have unlocked the full powers of your brain. The lake is all dried up after so many imbuements and you don't think it will allow you to keep going anymore.]]></story_4>-->
         </imbue_mind>
         <imbue_body>
             <label>Imbue Body</label>
@@ -2181,11 +2210,15 @@
                 <name>Focus essence</name>
                 <name>Absorb Knowledge</name>
             </segment_names>
+<!--			<story_1><![CDATA[<b>Third phase reached:</b>⮀ The soulstones are all arranged, glowing a bright uniform white. You sit in the center and close your eyes as the ritual begins. You can sense the soulstones all around you, bathed in light, and you mentally reach out and start pulling them closer.]]></story_1>
+			<story_2><![CDATA[<b>Imbuement complete:</b>⮀ You do jumping jacks and feel the blood pumping thru your body and you have no choice but to trust the strength of your body. Finally, it ends, and you feel exhaused. The soulstones are nowhere to be found and the lake is just clear water now.]]></story_2>
+			<story_3><![CDATA[<b>250 Imbuement completed:</b>⮀ Time to do pushups and push your body into overdrive, you can do 200 push ups in 20 seconds which is insane. Your out of breath but you feel way better and way stronger.]]></story_3>
+			<story_4><![CDATA[<b>500 Imbuement completed:</b>⮀ You enter the cave for the last time, You can pump your blood faster than any normal being which can help you grow pyschically! The lake dries up once again and you understand that you are done here.]]></story_4>-->
         </imbue_body>
         <face_judgement>
             <label>Face Judgement</label>
             <tooltip><![CDATA[
-            Face the judgement of the gods. If your reputation is 50 or above, you'll be accepted into their good graces and granted passage to Valhalla. If your reputation is -50 or below, you'll be cast into the shadow realm and thrown back to the beginning of your journey.<br>Unlocked at 100% Mountain Explored.
+            Face the judgement of the gods. If your reputation is 50 or above, you'll be accepted into their good graces and granted passage to Valhalla. If your reputation is -50 or below, you'll be cast into the shadow realm.<br>Unlocked at 100% Mountain Explored.
         ]]></tooltip>
 			<story_1><![CDATA[<b>Judgement Faced:</b>⮀ Their civilization may have fallen, but their gods are still very real, and the weight of their attention nearly drives you to your knees. Seeking to justify your presence, you begin to speak. Of your life, of your goal, and of your moral fibre. They are not impressed, you can tell, but they seem willing to lend you a hand. Before your eyes the world shifts and warps, and when it snaps back into focus you appear to be somewhere else entirely.]]></story_1>
 			<story_2><![CDATA[<b>Accepted by the Gods:</b>⮀ At the end of your story, a crack of lightning strikes behind the altar and leaves behind a cheerful man. Between the perfect bodily form and the power radiating from him, there's no doubt you're meeting a god in the flesh. He extends his hand, an offer of invitation, and you happily reach out and take it.]]></story_2>
@@ -2197,6 +2230,7 @@
             Travels to Valhalla, bypassing Face Judgement and Reputation requirements.<br>
             Requires 1000 herbs.
             ]]></tooltip>
+<!--			<story_1><![CDATA[<b>Guru:</b>⮀ The explorer's guild recommend you talked to Guru, he explains that there is a path that nobody uses anymore but I need the herbs to get you to Valhalla. He makes a potion of teleportation and you drink the potion, tastes like fruit punch. Guru explains that you need to think of the place you want to go. After thinking of the holy land of Valhalla you arrive in Valhalla.]]></story_1>-->
         </guru>
         <!--town 5-->
         <guided_tour>
@@ -2251,7 +2285,7 @@
             <label_done>Tidied</label_done>
             <label_part>Mess</label_part>
 			<tooltip><![CDATA[
-			Tidy up the place.<br>Progress is based on Practical Magic Skill and total completions.<br>Gives 5 gold and 1 reputation per mess cleaned.<br>Unlocked at 30% of houses canvassed.
+			Tidy up the place.<br>Gives (Practical Magic) * (1 + main stat / 100) * sqrt(1 + times completed / 100) * (original mana cost / actual mana cost) progress points per mana.<br>Gives 5 gold and 1 reputation per mess cleaned.<br>Unlocked at 30% of houses canvassed.
 		]]></tooltip>
 			<segment_names>
                 <name>Move Boxes</name>
@@ -2434,7 +2468,7 @@
             <info_text2>Buildings with pylons total</info_text2>
             <info_text3>Buildings to check for pylons</info_text3>
             <tooltip><![CDATA[
-            There are strange pylons humming with energy in the abandoned buildings of this town. You're not sure why, but you feel compelled to break them.<br>Reduces the mana cost of The Spire by 10% for each pylon destroyed.
+            There are strange pylons humming with energy in the abandoned buildings of this town. You're not sure why, but you feel compelled to break them.<br> Every 100 abandon buildings have 1 breakable plyon.<br> Reduces the mana cost of The Spire by 10% for each pylon destroyed.
         ]]></tooltip>
         </destroy_pylons>
         <raise_zombie>
@@ -2478,7 +2512,7 @@
         <purchase_supplies>
         <label>Buy Supplies</label>
             <tooltip><![CDATA[
-            Prepare to move on.<br>Costs 500 gold.<br>This merchant doesn't seem to be willing to haggle with you though.<br>You only need one set of supplies.<br>Unlocked at a combined Combat and Magic skill of 35.
+            Prepare to move on.<br>Costs 500 gold.<br>This merchant doesn't seem to be willing to haggle with you though.<br>You only need one set of supplies.<br>
         ]]></tooltip>
         </purchase_supplies>
         <dead_trial>
@@ -2674,7 +2708,7 @@
             <label_part>Floor</label_part>
             <label_complete>Did you cheat?</label_complete>
             <tooltip><![CDATA[
-            You're really going to try it, huh? Well, good luck!<br>
+            You're really going to try it, huh? Well, good luck! More Team Combat can help clear floors faster.<br> 
             Rewards +1 Bragging Rights.
         ]]></tooltip>
  		<segment_names>
@@ -2724,7 +2758,7 @@
             <label_complete>100 Floors Completed</label_complete>
             <label_part>Gods Trial</label_part>
             <tooltip><![CDATA[
-            The gods have filled the 100 floors of the tower you built with monsters to stop you from returning to Valhalla. Rude.
+            The gods have filled the 100 floors of the tower you built with monsters to stop you from returning to Valhalla. Rude. More Team Combat can help clear floors faster.
         ]]></tooltip>
             <segment_names>
 		    <name>Fight Fire Dragon</name>

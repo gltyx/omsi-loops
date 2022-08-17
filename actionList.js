@@ -257,7 +257,7 @@ function SurveyAction(townNum) {
         expMult: 1,
         stats: {
             Per: 0.4,
-            Spd: 0.3,
+            Spd: 0.2,
             Con: 0.2,
             Luck: 0.2
         },
@@ -301,7 +301,7 @@ function RuinsAction(townNum) {
         townNum: 1,
         stats: {
             Per: 0.4,
-            Spd: 0.3,
+            Spd: 0.2,
             Con: 0.2,
             Luck: 0.2
         },
@@ -1388,8 +1388,8 @@ Action.Haggle = new Action("Haggle", {
         view.requestUpdate("updateResource", "supplies");
     },
     story(completed) {
-        if (towns[0].suppliesCost === 20) unlockStory("haggle15TimesInALoop");
-        else if (towns[0].suppliesCost === 0) unlockStory("haggle16TimesInALoop");
+        if (completed >= 15) unlockStory("haggle15TimesInALoop");
+        if (completed >= 16) unlockStory("haggle16TimesInALoop");
         unlockStory("haggle");
     }
 });
@@ -1448,7 +1448,8 @@ Action.HitchRide = new Action("Hitch Ride", {
         return false;
     },
     stats: {
-        Cha: 1,
+        Cha: 0.5,
+		Per: 0.5
     },
     allowed() {
         return 1;
@@ -3278,7 +3279,8 @@ Action.Underworld = new Action("Underworld", {
     expMult: 1,
     townNum: 2,
     stats: {
-        Cha: 1,
+        Cha: 0.5,
+		Per: 0.5
     },
     allowed() {
         return 1;
@@ -3906,7 +3908,7 @@ Action.ImbueBody = new MultipartAction("Imbue Body", {
         return "Imbue Body";
     },
     visible() {
-        return getBuffLevel("Imbuement") > 1;
+        return getBuffLevel("Imbuement") >= 1
     },
     unlocked() {
         return getBuffLevel("Imbuement") > getBuffLevel("Imbuement2");
@@ -4034,6 +4036,7 @@ Action.GuidedTour = new Action("Guided Tour", {
         Int: 0.1,
         Luck: 0.1
     },
+	affectedBy: ["Buy Glasses"],
     canStart() {
         return resources.gold >= 10;
     },
@@ -4680,7 +4683,7 @@ Action.Pegasus = new Action("Pegasus", {
         Soul: 0.3,
         Cha: 0.2,
         Luck: 0.2,
-        Int: 0.2
+        Int: 0.3
     },
     allowed() {
         return 1;
@@ -5271,7 +5274,7 @@ Action.FightJungleMonsters = new MultipartAction("Fight Jungle Monsters", {
     townNum: 6,
     varName: "FightJungleMonsters",
     stats: {
-        Str: 0.2,
+        Str: 0.3,
         Dex: 0.3,
         Per: 0.4,
     },
@@ -5592,7 +5595,7 @@ Action.ExplorersGuild = new Action("Explorers Guild", {
     expMult: 1,
     townNum: 7,
     stats: {
-        Per: 0.4,
+        Per: 0.3,
         Cha: 0.3,
         Int: 0.2,
         Luck: 0.2
@@ -6185,7 +6188,7 @@ Action.BuildTower = new Action("Build Tower", {
     stats: {
         Dex: 0.1,
         Str: 0.3,
-        Con: 0.4,
+        Con: 0.3,
         Per: 0.2,
         Spd: 0.1
     },

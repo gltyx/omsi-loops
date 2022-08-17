@@ -343,6 +343,9 @@ function load(inChallenge) {
 
     loadouts = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []];
     loadoutnames = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], []];
+    // loadoutnames[-1] is what displays in the loadout renaming box when no loadout is selected
+    // It isn't technically part of the array, just a property on it, so it doesn't count towards loadoutnames.length
+    loadoutnames[-1] = "";
 
     let toLoad = {};
     // has a save file
