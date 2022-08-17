@@ -2391,7 +2391,8 @@
             <tooltip><![CDATA[
             Search the town for wells that still have any mana left. They seem to be rapidly draining.<br>
             Full wells have 5000 mana, but lose 10 mana for every second that has passed in the loop.<br>
-            Every 100 wells still has mana.
+            Every 100 wells still has mana.<br>
+			Unlocked at 2% Explored.
         ]]></tooltip>
         </mana_well>
         <destroy_pylons>
@@ -2401,7 +2402,10 @@
             <info_text2>Buildings with pylons total</info_text2>
             <info_text3>Buildings to check for pylons</info_text3>
             <tooltip><![CDATA[
-            There are strange pylons humming with energy in the abandoned buildings of this town. You're not sure why, but you feel compelled to break them.<br>Reduces the mana cost of The Spire by 10% for each pylon destroyed.
+            There are strange pylons humming with energy in the abandoned buildings of this town. You're not sure why, but you feel compelled to break them.<br>
+			Every 100 abandon buildings have 1 breakable plyon.<br>
+			Reduces the mana cost of The Spire by 10% for each pylon destroyed.<br>
+			Unlocked at 5% Explored.
         ]]></tooltip>
         </destroy_pylons>
         <raise_zombie>
