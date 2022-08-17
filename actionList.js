@@ -159,8 +159,8 @@ DungeonAction.prototype.completedTooltip = function() {
     if (this.dungeonNum < 3) {
         for (let i = 0; i < dungeons[this.dungeonNum].length; i++) {
             ssDivContainer += `Floor ${i + 1} |
-                                <div class='bold'>${_txt(`actions>${getXMLName(this.name)}>chance_label`)} </div> <div id='soulstoneChance${this.dungeonNum}_${i}'></div>% - 
-                                <div class='bold'>${_txt(`actions>${getXMLName(this.name)}>last_stat_label`)} </div> <div id='soulstonePrevious${this.dungeonNum}_${i}'>NA</div> - 
+                                <div class='bold'>${_txt(`actions>${getXMLName(this.name)}>chance_label`)} </div> <div id='soulstoneChance${this.dungeonNum}_${i}'></div>% -
+                                <div class='bold'>${_txt(`actions>${getXMLName(this.name)}>last_stat_label`)} </div> <div id='soulstonePrevious${this.dungeonNum}_${i}'>NA</div> -
                                 <div class='bold'>${_txt(`actions>${getXMLName(this.name)}>label_done`)}</div> <div id='soulstoneCompleted${this.dungeonNum}_${i}'></div><br>`;
         }
     }
@@ -600,6 +600,8 @@ Action.BuyGlasses = new Action("Buy Glasses", {
         switch (storyNum) {
             case 1:
                 return storyReqs.glassesBought;
+            case 2:
+                return getExploreProgress() >= 100;
         }
         return false;
     },
@@ -637,13 +639,6 @@ Action.FoundGlasses = new Action("Found Glasses", {
     type: "normal",
     expMult: 0,
     townNum: 0,
-    storyReqs(storyNum) {
-        switch (storyNum) {
-            case 1:
-                return getExploreProgress() >=100;
-        }
-        return false;
-    },
     stats: {
     },
     affectedBy: ["SurveyZ1"],
@@ -1586,6 +1581,8 @@ Action.WildMana = new Action("Wild Mana", {
         switch (storyNum) {
             case 1:
                 return towns[1][`checked${this.varName}`] >= 1;
+            case 2:
+                return towns[1][`good${this.varName}`] >= 100;
         }
         return false;
     },
@@ -3673,7 +3670,9 @@ Action.HuntTrolls = new MultipartAction("Hunt Trolls", {
             case 1:
                 return towns[3].totalHuntTrolls >= 1;
             case 2:
-                return storyReqs.slay10TrollsInALoop;
+                return storyReqs.slay6TrollsInALoop;
+            case 3:
+                return storyReqs.slay20TrollsInALoop;
         }
         return false;
     },
@@ -3700,7 +3699,8 @@ Action.HuntTrolls = new MultipartAction("Hunt Trolls", {
     loopsFinished() {
         handleSkillExp(this.skills);
         addResource("blood", 1);
-        if (resources.blood >= 10) unlockStory("slay10TrollsInALoop");
+        if (resources.blood >= 6) unlockStory("slay6TrollsInALoop");
+        if (resources.blood >= 20) unlockStory("slay20TrollsInALoop");
     },
     segmentFinished() {
     },
@@ -4059,6 +4059,23 @@ Action.Canvass = new Action("Canvass", {
     expMult: 1,
     townNum: 4,
     varName: "Canvassed",
+    storyReqs(storyNum) {
+        switch (storyNum) {
+            case 1:
+                return towns[4].getLevel(this.varName) >= 5;
+            case 2:
+                return towns[4].getLevel(this.varName) >= 15;
+            case 3:
+                return towns[4].getLevel(this.varName) >= 30;
+            case 4:
+                return towns[4].getLevel(this.varName) >= 50;
+            case 5:
+                return towns[4].getLevel(this.varName) >= 75;
+            case 6:
+                return towns[4].getLevel(this.varName) >= 100;
+        }
+        return false;
+    },
     stats: {
         Con: 0.1,
         Cha: 0.5,
@@ -4083,6 +4100,13 @@ Action.Donate = new Action("Donate", {
     type: "normal",
     expMult: 1,
     townNum: 4,
+    storyReqs(storyNum) {
+        switch (storyNum) {
+            case 1:
+                return storyReqs.donatedToCharity;
+        }
+        return false;
+    },
     stats: {
         Per: 0.2,
         Cha: 0.2,
@@ -4104,6 +4128,7 @@ Action.Donate = new Action("Donate", {
     finish() {
         addResource("gold", -20);
         addResource("reputation", 1);
+        unlockStory("donatedToCharity");
     },
 });
 

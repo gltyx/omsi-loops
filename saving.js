@@ -240,12 +240,14 @@ const storyReqs = {
     booksRead: false,
     pickaxeBought: false,
     loopingPotionMade: false,
-    slay10TrollsInALoop: false,
+    slay6TrollsInALoop: false,
+    slay20TrollsInALoop: false,
     imbueMindThirdSegmentReached: false,
     judgementFaced: false,
     acceptedIntoValhalla: false,
     castIntoShadowRealm: false,
-    fellFromGrace: false
+    fellFromGrace: false,
+    donatedToCharity: false,
 };
 
 const curDate = new Date();
@@ -780,7 +782,7 @@ function beginChallenge(challengeNum) {
     if (challengeSave.challengeMode === 0) {
         challengeSave.inChallenge = true;
         save();
-        console.log ("Saving to: " + saveName); 
+        console.log ("Saving to: " + saveName);
     }
     challengeSave.challengeMode = challengeNum;
     saveName = challengeSaveName;
