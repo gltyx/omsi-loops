@@ -744,6 +744,23 @@ function importSave() {
     restart();
 }
 
+function saveFilename() {
+    // TODO: return version programatically
+    return `Idle Loops Lloyd v2.9 - Loop ${totals.loops}.txt`
+}
+
+function exportSaveFile() {
+    save();
+    const savestring = `ILSV01${LZString.compressToBase64(window.localStorage[saveName])}`;
+    const a = document.createElement('a');
+    a.setAttribute('href', 'data:text/plain;charset=utf-8,' + savestring);
+    a.setAttribute('download', saveFilename());
+    a.setAttribute('id', 'downloadSave');
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+}
+
 function exportCurrentList() {
     let toReturn = "";
     for (const action of actions.next) {
