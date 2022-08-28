@@ -24,6 +24,7 @@
               <import_hover_special>survolez-moi ;)</import_hover_special>
               <import_hover_special_tooltip><![CDATA[In the console, use decode("pasted savefile"), edit, then encode('pasted savefile'), then import it<br>This is mainly for fixing broken savefiles - don't be a cheater.]]></import_hover_special_tooltip>
       <exportfile_button>Export File</exportfile_button>
+      <importfile_button>Import File</importfile_button>
     </save>
     <faq>
       <meta>

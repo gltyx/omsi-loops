@@ -54,6 +54,8 @@ Views.registerView("menu", {
                 ${_txt("menu>save>export_comment")}<br>
                 ${_txt("menu>save>import_comment")}<br>
                 <div class='button' style='margin-top: 5px; margin-right: 2px;' onclick='exportSaveFile()'>${_txt("menu>save>exportfile_button")}</div>
+                <div class='button' style='margin-top: 1px;' onclick='openSaveFile()'>${_txt("menu>save>importfile_button")}</div>
+                <input id="SaveFileInput" type='file' style="visibility:hidden;" onchange="importSaveFile(event)" />
                 <br>
             </div>
         </div>`;

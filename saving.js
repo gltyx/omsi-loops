@@ -722,6 +722,10 @@ function exportSave() {
 
 function importSave() {
     const saveData = document.getElementById("exportImport").value;
+    processSave(saveData);
+}
+
+function processSave(saveData) {
     if (saveData === "") {
         if (confirm("Importing nothing will delete your save. Are you sure you want to delete your save?")) {
             challengeSave = {};
@@ -744,21 +748,36 @@ function importSave() {
     restart();
 }
 
-function saveFilename() {
+function saveFileName() {
     // TODO: return version programatically
     return `Idle Loops Lloyd v2.9 - Loop ${totals.loops}.txt`
 }
 
 function exportSaveFile() {
     save();
-    const savestring = `ILSV01${LZString.compressToBase64(window.localStorage[saveName])}`;
+    const saveData = `ILSV01${LZString.compressToBase64(window.localStorage[saveName])}`;
     const a = document.createElement('a');
-    a.setAttribute('href', 'data:text/plain;charset=utf-8,' + savestring);
-    a.setAttribute('download', saveFilename());
+    a.setAttribute('href', 'data:text/plain;charset=utf-8,' + saveData);
+    a.setAttribute('download', saveFileName());
     a.setAttribute('id', 'downloadSave');
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
+}
+
+function openSaveFile() {
+    document.getElementById('SaveFileInput').click();
+}
+
+function importSaveFile(e) {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = function (e) {
+        const saveData = e.target.result;
+        processSave(saveData);
+    }
+    reader.readAsText(file)
 }
 
 function exportCurrentList() {
