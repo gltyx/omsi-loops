@@ -749,8 +749,9 @@ function processSave(saveData) {
 }
 
 function saveFileName() {
-    // TODO: return version programatically
-    return `Idle Loops Lloyd v2.9 - Loop ${totals.loops}.txt`
+    const gameName = document.title.replace('*PAUSED* ','')
+    const version = document.querySelector('#changelog').childNodes[1].firstChild.textContent.trim()
+    return `${gameName} ${version} - Loop ${totals.loops}.txt`
 }
 
 function exportSaveFile() {
