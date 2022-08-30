@@ -161,7 +161,7 @@ function loopEnd() {
 function prepareRestart() {
     const curAction = actions.getNextValidAction();
     if (options.pauseBeforeRestart ||
-        (options.pauseOnFailedLoop && 
+        (options.pauseOnFailedLoop &&
          (actions.current.filter(action => action.loopsLeft - action.extraLoops > 0).length > 0))) {
         if (options.pingOnPause) {
             beep(250);
@@ -394,7 +394,7 @@ function capAmount(index, townNum) {
     const varName = `good${translateClassNames(action.name).varName}`;
     let alreadyExisting;
     //if (action.name.startsWith("Survey")) alreadyExisting = getOtherSurveysOnList("") + (action.disabled ? action.loops : 0);
-    //else 
+    //else
     alreadyExisting = getNumOnList(action.name) + (action.disabled ? action.loops : 0);
     let newLoops;
     if (action.name.startsWith("Survey")) newLoops = 500 - alreadyExisting;
@@ -481,6 +481,7 @@ function showNotification(name) {
 }
 
 function hideNotification(name) {
+    unreadActionStories = unreadActionStories.filter(toRead => toRead !== name);
     document.getElementById(`${name}Notification`).style.display = "none";
 }
 

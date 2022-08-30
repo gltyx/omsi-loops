@@ -180,6 +180,7 @@ let actionTownNum;
 let trainingLimits = 10;
 let storyShowing = 0;
 let storyMax = 0;
+let unreadActionStories;
 const storyReqs = {
     maxSQuestsInALoop: false,
     realMaxSQuestsInALoop: false,
@@ -607,6 +608,13 @@ function load(inChallenge) {
     }
     storyShowing = toLoad.storyShowing === undefined ? 0 : toLoad.storyShowing;
     storyMax = toLoad.storyMax === undefined ? 0 : toLoad.storyMax;
+    if (toLoad.unreadActionStories === undefined) unreadActionStories = [];
+    else {
+        unreadActionStories = toLoad.unreadActionStories;
+        for (const name of unreadActionStories) {
+            showNotification(name);
+        }
+    }
 
     totalOfflineMs = toLoad.totalOfflineMs === undefined ? 0 : toLoad.totalOfflineMs;
     if (toLoad.totals != undefined) {
@@ -701,6 +709,7 @@ function save() {
     toSave.storyShowing = storyShowing;
     toSave.storyMax = storyMax;
     toSave.storyReqs = storyReqs;
+    toSave.unreadActionStories = unreadActionStories;
     toSave.buffCaps = buffCaps;
 
     toSave.date = new Date();
