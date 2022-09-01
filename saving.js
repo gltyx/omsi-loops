@@ -180,6 +180,7 @@ let actionTownNum;
 let trainingLimits = 10;
 let storyShowing = 0;
 let storyMax = 0;
+let unreadActionStories;
 const storyReqs = {
     maxSQuestsInALoop: false,
     realMaxSQuestsInALoop: false,
@@ -240,12 +241,14 @@ const storyReqs = {
     booksRead: false,
     pickaxeBought: false,
     loopingPotionMade: false,
-    slay10TrollsInALoop: false,
+    slay6TrollsInALoop: false,
+    slay20TrollsInALoop: false,
     imbueMindThirdSegmentReached: false,
     judgementFaced: false,
     acceptedIntoValhalla: false,
     castIntoShadowRealm: false,
-    fellFromGrace: false
+    fellFromGrace: false,
+    donatedToCharity: false,
 };
 
 const curDate = new Date();
@@ -605,6 +608,13 @@ function load(inChallenge) {
     }
     storyShowing = toLoad.storyShowing === undefined ? 0 : toLoad.storyShowing;
     storyMax = toLoad.storyMax === undefined ? 0 : toLoad.storyMax;
+    if (toLoad.unreadActionStories === undefined) unreadActionStories = [];
+    else {
+        unreadActionStories = toLoad.unreadActionStories;
+        for (const name of unreadActionStories) {
+            showNotification(name);
+        }
+    }
 
     totalOfflineMs = toLoad.totalOfflineMs === undefined ? 0 : toLoad.totalOfflineMs;
     if (toLoad.totals != undefined) {
@@ -699,6 +709,7 @@ function save() {
     toSave.storyShowing = storyShowing;
     toSave.storyMax = storyMax;
     toSave.storyReqs = storyReqs;
+    toSave.unreadActionStories = unreadActionStories;
     toSave.buffCaps = buffCaps;
 
     toSave.date = new Date();

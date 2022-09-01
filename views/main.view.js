@@ -698,7 +698,10 @@ function View() {
                     }
                     if (document.getElementById(divName).children[2].innerHTML !== storyTooltipText) {
                         document.getElementById(divName).children[2].innerHTML = storyTooltipText;
-                        if (!init) showNotification(divName);
+                        if (!init) {
+                            showNotification(divName);
+                            if (!unreadActionStories.includes(name)) unreadActionStories.push(name);
+                        }
                         if (storiesUnlocked === storyAmt) {
                             document.getElementById(divName).classList.add("storyContainerCompleted");
                         } else {
