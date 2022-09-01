@@ -700,7 +700,7 @@ function View() {
                         document.getElementById(divName).children[2].innerHTML = storyTooltipText;
                         if (!init) {
                             showNotification(divName);
-                            if (!unreadActionStories.includes(name)) unreadActionStories.push(name);
+                            if (!unreadActionStories.includes(divName)) unreadActionStories.push(divName);
                         }
                         if (storiesUnlocked === storyAmt) {
                             document.getElementById(divName).classList.add("storyContainerCompleted");
