@@ -180,6 +180,7 @@ let actionTownNum;
 let trainingLimits = 10;
 let storyShowing = 0;
 let storyMax = 0;
+let unreadActionStories;
 const storyReqs = {
     maxSQuestsInALoop: false,
     realMaxSQuestsInALoop: false,
@@ -240,12 +241,14 @@ const storyReqs = {
     booksRead: false,
     pickaxeBought: false,
     loopingPotionMade: false,
-    slay10TrollsInALoop: false,
+    slay6TrollsInALoop: false,
+    slay20TrollsInALoop: false,
     imbueMindThirdSegmentReached: false,
     judgementFaced: false,
     acceptedIntoValhalla: false,
     castIntoShadowRealm: false,
-    fellFromGrace: false
+    fellFromGrace: false,
+    donatedToCharity: false,
 };
 
 const curDate = new Date();
@@ -605,6 +608,13 @@ function load(inChallenge) {
     }
     storyShowing = toLoad.storyShowing === undefined ? 0 : toLoad.storyShowing;
     storyMax = toLoad.storyMax === undefined ? 0 : toLoad.storyMax;
+    if (toLoad.unreadActionStories === undefined) unreadActionStories = [];
+    else {
+        unreadActionStories = toLoad.unreadActionStories;
+        for (const name of unreadActionStories) {
+            showNotification(name);
+        }
+    }
 
     totalOfflineMs = toLoad.totalOfflineMs === undefined ? 0 : toLoad.totalOfflineMs;
     if (toLoad.totals != undefined) {
@@ -699,6 +709,7 @@ function save() {
     toSave.storyShowing = storyShowing;
     toSave.storyMax = storyMax;
     toSave.storyReqs = storyReqs;
+    toSave.unreadActionStories = unreadActionStories;
     toSave.buffCaps = buffCaps;
 
     toSave.date = new Date();
@@ -722,6 +733,10 @@ function exportSave() {
 
 function importSave() {
     const saveData = document.getElementById("exportImport").value;
+    processSave(saveData);
+}
+
+function processSave(saveData) {
     if (saveData === "") {
         if (confirm("Importing nothing will delete your save. Are you sure you want to delete your save?")) {
             challengeSave = {};
@@ -742,6 +757,39 @@ function importSave() {
     load();
     pauseGame();
     restart();
+}
+
+function saveFileName() {
+    const gameName = document.title.replace('*PAUSED* ','')
+    const version = document.querySelector('#changelog').childNodes[1].firstChild.textContent.trim()
+    return `${gameName} ${version} - Loop ${totals.loops}.txt`
+}
+
+function exportSaveFile() {
+    save();
+    const saveData = `ILSV01${LZString.compressToBase64(window.localStorage[saveName])}`;
+    const a = document.createElement('a');
+    a.setAttribute('href', 'data:text/plain;charset=utf-8,' + saveData);
+    a.setAttribute('download', saveFileName());
+    a.setAttribute('id', 'downloadSave');
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+}
+
+function openSaveFile() {
+    document.getElementById('SaveFileInput').click();
+}
+
+function importSaveFile(e) {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = function (e) {
+        const saveData = e.target.result;
+        processSave(saveData);
+    }
+    reader.readAsText(file)
 }
 
 function exportCurrentList() {

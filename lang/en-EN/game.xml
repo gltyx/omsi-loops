@@ -50,12 +50,12 @@
             • New Option: Players can now enable a setting to have the game automatically pause when a progress action reaches 100% so they can accrue bonus seconds rather than waste time on a loop making little progress<br>
             • Tooltip Updates: Many thanks to MakroCZ from the discord for tireless work on a fix for tooltip placement<br>
             • Tooltip Updates: Kallious from the discord has helped clarify a number of unlock conditions and tided up the tidy up action in Valhalla<br>
-            • Bugfix: Imbue Soul could be started at max buff rank, reseting all progress for no reward<br>
+            • Bugfix: Imbue Soul could be started at max buff rank, resetting all progress for no reward<br>
             ]]></version>
             <version verNum="2.3"><![CDATA[
             <b> July 19th, 2022</b>
             • Bugfix: With thanks to Kallious from the Discord, we've finally fixed the bug sometimes making soulstones go negative on DR/IM/GF<br>
-            • Bugfix: Added additonal error checks to loading save files to autofix some of the common error states<br>
+            • Bugfix: Added additional error checks to loading save files to autofix some of the common error states<br>
             • Bugfix: Trial of dead was not using updated zombie strength formula<br>
             • Bugfix: Imbue Soul was not updating training tooltips until next restart
             ]]></version>
@@ -72,7 +72,7 @@
             <version verNum="2.1"><![CDATA[
             <b> July 18th, 2022</b>
             • Balance: Imbue soul now adds +100% exp mult to training actions per level<br>
-            • Balance: Reducted Alchemy Skill requirement of Looping potion from 500 to 200<br>
+            • Balance: Reduced Alchemy Skill requirement of Looping potion from 500 to 200<br>
             • Balance: Jungle Escape now only needs to be started within 60s, not completed within 60s<br>
             • Bugfix: Excursion was requiring the player to have more gold than the cost rather than more or equal<br>
             • Bugfix: Troll's blood still said it did nothing<br>
@@ -98,7 +98,7 @@
             ]]></version>
             <version verNum="1.8"><![CDATA[
             <b> July 14th, 2022</b>
-            • New Trial: Trial of the Dead (Startington) - Basely soley off your Zombie contributions to team combat, completing floors rewards even more zombies<br>
+            • New Trial: Trial of the Dead (Startington) - Based solely off your Zombie contributions to team combat, completing floors rewards even more zombies<br>
             • Bugfix: Swapped the Clear List and Manage Loadout buttons so the loadout popup would be less likely to get in the way when editing action amounts<br>
             • Bugfix: Added survey icon to new actions added by survey so they are easier to notice<br>
             • Bugfix: Haul wasn't being properly capped per zone, allowing stones to become negative
@@ -152,7 +152,7 @@
             <version verNum="1.2"><![CDATA[
             <b> July 12th, 2022</b>
             • Change: Constructed additional warehouses so numbers would be prettier with all increases<br>
-            • Bugfix: Player was falling asleep on the wagon, missing the merchantville stop, and ending up on the mountain<br>
+            • Bugfix: Player was falling asleep on the wagon, missing the Merchanton stop, and ending up on the mountain<br>
             • Bugfix: Imbue soul wasn't resetting buffs<br>
             • Bugfix: Excursion costs weren't modified by explorers guild<br>
             • Bugfix: Key wasn't being reset correctly<br>
@@ -164,7 +164,7 @@
             <version verNum="1.1"><![CDATA[
             <b> July 11th, 2022</b>
             • New Guild: Explorers - Voted by the community, the explorers guild has opened shop in Commerceville!<br>
-            • Unlocks a new "Survey" action in all zones - Survey progress minorly increases the number of limited resources (% * 0.5)<br>
+            • Unlocks a new "Survey" action in all zones - Survey progress mildly increases the number of limited resources (% * 0.5)<br>
             • Overall Survey progress also unlocks shortcuts for new ways to move between zones<br>
             • Bugfix: Mana well costs could become negative, subtracting mana from the player<br>
             • Bugfix: Excursion didn't check if you had enough gold to start<br>
@@ -248,7 +248,7 @@
             • Added Valhalla zone with numerous new actions - reachable with Face Judgement<br>
             • Added Adeptsville zone and The Spire dungeon - reachable with Face Judgement<br>
             • New Skill: Restoration - Improves team combat and effectiveness of Heal the Sick<br>
-            • New Skill: Spatiomancy - Reduces mana gyser costs and increases possible rewards from zone 1 and 3 actions<br>
+            • New Skill: Spatiomancy - Reduces mana geyser costs and increases possible rewards from zone 1 and 3 actions<br>
             • New Skill: Mercantilism - Increases gold received from Buy Mana actions<br>
             • New Buff: Great Feast - Increases self combat score<br>
             • More new actions than you can shake a stick at!<br>
@@ -276,6 +276,8 @@
             <import_hover_special>hover me</import_hover_special>
             <import_hover_special_tooltip>
                 <![CDATA[In the console, use decode("pasted savefile"), edit, then encode('pasted savefile'), then import it<br>This is mainly for fixing broken savefiles - don't be a cheater.]]></import_hover_special_tooltip>
+            <exportfile_button>Export File</exportfile_button>
+            <importfile_button>Import File</importfile_button>
         </save>
         <faq>
             <meta>
@@ -298,7 +300,7 @@
             <q_a>
                 <q>What should my first goal be?</q>
                 <a>Start with wandering until you have ways of getting mana back. Then try to find how to get some
-                    warrior lessions to give yourself a permanent boost, and then try fighting monsters!
+                    warrior lessons to give yourself a permanent boost, and then try fighting monsters!
                 </a>
             </q_a>
             <q_a>
@@ -348,8 +350,8 @@
                 1-5: Select loadout 1-5<br>
                 Shift+1-5: Select and load loadout 1-5<br>
                 +/-: Increase/decrease action list size<br>
-                Shift+S: Save current list to selected loudout<br>
-                Shift+L: Load selected loudout<br>
+                Shift+S: Save current list to selected loadout<br>
+                Shift+L: Load selected loadout<br>
                 Shift+C: Clear current list<br>
                 Right/D: Show next zone<br>
                 Left/A: Show previous zone<br>
@@ -383,7 +385,7 @@
       Complete the town, go to the next one.<br><br>
       Hey there, it looks like you're starting the game on omsi6.github.io.<br>
       Before you start, you should know that this is a fanmade modification<br>
-      for the original game, located <a href="http://stopsign.github.io/idleLoops/">here</a>. You can import your save from the<br>
+      for the original game, located <a href="https://stopsign.github.io/idleLoops/">here</a>. You can import your save from the<br>
       original, but if you import it back to the original, you'll lose any progress in features specific to this version.<br><br>
       Thanks for playing, and have fun!<br><br>
       ]]></tutorial>
@@ -438,7 +440,7 @@
         <resource initially_hidden="true">
             <title>Blood:</title>
             <id>blood</id>
-            <desc>Regailed for it's regenerative properties.</desc>
+            <desc>Regaled for it's regenerative properties.</desc>
         </resource>
         <resource initially_hidden="true">
             <title>Artifacts:</title>
@@ -566,12 +568,12 @@
                 oddity of the loops.
             </story>
 			<story num="3"> <!--Change 3 to Forest-->
-				After spending most of a loop preparing, you're finally ready to leave Beginnersville. In a way, you're
-				going to miss this town, and the thought of leaving almost brings a tear to your eye - until you realize
-				you'll just be back next loop. Grumbling, you set off, hiking into the forest, but by the time you're
-				ready to make camp, you're in a good mood again. The forest is beautiful, teeming with life, and looks
-				to have boundless places to explore. Best of all, on your way here, you passed several locations that
-				are absolutely saturated with mana - you think you'll check those out first.
+                After spending most of a loop preparing, you're finally ready to leave Beginnersville. In a way, you're
+                going to miss this town, and the thought of leaving almost brings a tear to your eye - until you realize
+                you'll just be back next loop. You grumble as you set off into the forest, but by the time you're ready
+                to make camp, you're in a good mood again. The forest is beautiful, teeming with life, and looks to have
+                boundless places to explore. Best of all, on your way here, you passed several locations that are
+                absolutely saturated with mana - you think you'll check those out first.
 		    </story>
 		    <story num="4"> <!--Merchanton-->
 				It's always nice, after doing the same dull tasks as always, when you reach the forest and get to do
@@ -585,30 +587,32 @@
 			</story>
 			<story num="5"> <!--Change 5 to Mt. Olympus-->
 				You have explored the guild options in Merchanton and have maybe made a few guild friends along the way, Time to grab
-				pickaxe and start the climb! Reaching Mt. Olympus takes alot of climbing but during the climb you discover these mana
+				pickaxe and start the climb! Reaching Mt. Olympus takes a lot of climbing but during the climb you discover these mana
 				geyser but looks like they can be harvested with a pickaxe. You discover runes scattered around the mountain, maybe
 				deciphering them might be useful and about half way up this mountain you discover a massive cavern with room to take a
-				break climbing and explore it, You met these Friendly Trolls in these caverns however they don't sell snowcones...
+				break climbing and explore it, You met these Friendly Trolls in these caverns however they don't sell snow cones...
 			</story>
 			<story num="6"> <!--Good Reputation Story--> <!--Change 6 to Valhalla-->
-				You have finally reached the top of Mt. Olympus there is a giant door at the very top, a voice rings out "It is time
-				to face JUDGEMENT of the GODS, HAHAHAHA. Hope you are prepared for judgement!" After waiting for what feels like hours
-				the voice rings out "You may PASS!". You enter the wonderful place called Valhalla, you	 have a tourist show you around
-				and even looks like a charity is happening. After exploring you realize also can join charm school or wizard college,
-				become a citizen, and even fight with the Valkyries. Home of the gods couldn't be any better.
+                You expected to be whisked away to a land of opulence and wonder beyond your wildest dreams. Instead,
+                you sat in a cramped room filling out paperwork for three hours before being dropped off outside what
+                appears to be an ordinary town, with manicured lawns and meandering sidewalks leading to tidy parks and
+                decorations. It's not ordinary though, if you stare at the grass you notice it's just a bit too green,
+                the sky just a bit too blue. The literal deity taking a seven foot tall dog on a walk doesn't help
+                either. A god passing by asks if you want to contribute to a local charity, and you see another god
+                offering tours of 'Valhalla, the greatest city above the world!'
 			</story>
 			<story num="7"> <!--Bad Reputation Story--> <!--Change 7 to Startington-->
-				The voice rings "You Shall Not PASS!". You feel like you are being lifted and are chucked off Mt. Olymupus and into the
+				The voice rings "You Shall Not PASS!". You feel like you are being lifted and are chucked off Mt. Olympus and into the
 				shadow realm. The shadow realm opens up and you hit the floor luckily with only a scratch, after a few hours you finally
 				can get up and realize that this isn't beginnersville anymore. After closer inspection of the ruins nearby you realize these
-				ruins is alot more twisted and strange that you thought they were gonna be. You notice these strange pylons and seak to destroy
+				ruins is a lot more twisted and strange that you thought they were gonna be. You notice these strange pylons and seek to destroy
 				them and a few minutes later you look and finally notice the giant spire in front of you!
 			</story>
 			<story num="8"> <!--Change 8 to Jungle Path-->
 				Before you leave Startington you realize you don't have the supplies you got in Beginnersville, but lucky for you Startington
 				sells another supply set but rumor has it that the shopkeeper is kinda deaf so your haggles won't work on them. You get your
-				supplies and you set off down the trail, reminds you of the forest. You walk untill you see a jungle up ahead with ruins all
-				around, probly best to start exploring them.
+				supplies and you set off down the trail, reminds you of the forest. You walk until you see a jungle up ahead with ruins all
+				around, probably best to start exploring them.
 			</story>
 			<story num="9"> <!--Made the Looping Potion--> <!--Change 9 to Looping Potion-->
 				You have made the Loop Potion after learning alchemistry and grabbing herbs from the forest, you take a bit to brew the
@@ -621,11 +625,11 @@
 				You just beat the exit just barely and notice that there is another small city, time to pay someone to show you around town! The
 				guide shows you the explorers guild and explains that they have many perks for joining, nifty! The guide also takes you down
 				a alley way and shows you that you can join the Thieves Guild to make a little bit of cash. After the guide is done showing
-				you around town he explains that they are with the tax collectors and you probly should be going now, quickly you make it to
+				you around town he explains that they are with the tax collectors and you probably should be going now, quickly you make it to
 				the Bank and you notice a hooded figure might be worth checking what they do.
 			</story>
 			<story num="11"> <!--Change 11 to Valley of Olympus-->
-				After you take a heafty loan from the bank you can now own Commerceville and leave while you still can, after you walk down the
+				After you take a hefty loan from the bank you can now own Commerceville and leave while you still can, after you walk down the
 				road you realize you can move the stones from the Jungle and move them to build a great tower. After you build the great tower
 				you realize you can't reach Valhalla unless you can clear trial of the gods to prove worthy of entering again. After finally
 				clearing the trial of the gods, the voice speaks "The 7 gods of this land protect this world, if you want to enter Valhalla
@@ -786,7 +790,7 @@
         </chronomancy>
         <pyromancy>
             <label>Pyromancy</label>
-            <desc>Fireball, Firebolt, Fire Shield, Burning Rays, just a veritable assortment of flaming fun!</desc>
+            <desc>Fireball, Fire Bolt, Fire Shield, Burning Rays, just a veritable assortment of flaming fun!</desc>
             <desc2><![CDATA[Increases self combat with 5x the efficiency of the combat skill.]]></desc2>
         </pyromancy>
         <restoration>
@@ -946,7 +950,7 @@
         </town4>
         <town5>
             <name>Startington</name>
-            <desc>A once familiar place, now crawling with shadows and ominous feelings of wasted sick days. There stands a large pillar of gloomy purple light in the center of it all, eminating from a spire surrounded by black clouds. It's emitting 10 weak beams of purple light to various points around the town, and appears to be casting all the shadows. Maybe you should check those spots out.</desc>
+            <desc>A once familiar place, now crawling with shadows and ominous feelings of wasted sick days. There stands a large pillar of gloomy purple light in the center of it all, emanating from a spire surrounded by black clouds. It's emitting 10 weak beams of purple light to various points around the town, and appears to be casting all the shadows. Maybe you should check those spots out.</desc>
         </town5>
         <town6>
             <name>Jungle Path</name>
@@ -958,7 +962,7 @@
         </town7>
         <town8>
             <name>Valley of Olympus</name>
-            <desc>A mountain shaped hole in the groud.</desc>
+            <desc>A mountain shaped hole in the ground.</desc>
         </town8>
     </towns>
     <talents>
@@ -1058,31 +1062,31 @@
             Discreetly kill your mark in this town. The more well-known you are, for either good or evil, the harder pulling this off will be...<br>
             Gives progress equal to (Sqrt(Practical) + Thievery + Assassin) * Stat/1000 * Sqrt(Completions/100) / Abs(reputation) / hearts^2.<br>
             Rewards a heart.
-			]]></tooltip>
-		</assassin>
-		<assassinz0>
-		    <story_1><![CDATA[<b>1 Assassinated in Beginnersville:</b>⮀ His name was Ethan, you met him on your fifteenth loop. Always seemed to be getting into some sort of trouble. You ambush him as he strolls down an alley and carve out his heart before he knows what happened. He'll be fine next loop, you tell yourself.]]></story_1>
+            ]]></tooltip>
+        </assassin>
+        <assassinz0>
+		    <story_1><![CDATA[<b>Target Assassinated:</b>⮀ His name was Ethan, you met him on your fifteenth loop. Always seemed to be getting into some sort of trouble. You ambush him as he strolls down an alley and carve out his heart before he knows what happened. He'll be fine next loop, you tell yourself.]]></story_1>
         </assassinz0>
         <assassinz1>
-            <story_1><![CDATA[<b>1 Assassinated in Forest Path:</b>⮀ How was there more people in the forest besides the hermit and the witch? who knows, all that matters is you killed someone and left with the heart.]]></story_1>
+            <story_1><![CDATA[<b>Target Assassinated:</b>⮀ A big man dressed in muddy leathers, he's crouching in the bushes with his bow, just as he usually is. They told you his name is Gustav, but you had to take their word for it; you've seen him multiple times but have never actually spoken to him, and after this, you never plan to. You watch him take down a bear with a single arrow to its head, but before he can rise to harvest his prey, one of your arrows is in his head and you're making your way over to begin harvesting his heart.]]></story_1>
         </assassinz1>
         <assassinz2>
-            <story_1><![CDATA[<b>1 Assassinated in Merchanton:</b>⮀ You walked into the casino, looked around to check for cameras and killed someone in the storage room. You got the heart and left quickly before being spotted.]]></story_1>
+            <story_1><![CDATA[<b>Target Assassinated:</b>⮀ You walked into the casino, looked around to check for cameras and killed someone in the storage room. You got the heart and left quickly before being spotted.]]></story_1>
         </assassinz2>
         <assassinz3>
-            <story_1><![CDATA[<b>1 Assassinated in Mt. Olympus:</b>⮀ You climbed the Mountain and killed one of the yeti's for their heart, what they get for not selling snowcones.]]></story_1>
+            <story_1><![CDATA[<b>Target Assassinated:</b>⮀ You climbed the Mountain and killed one of the yeti's for their heart, what they get for not selling snow cones.]]></story_1>
         </assassinz3>
         <assassinz4>
-            <story_1><![CDATA[<b>1 Assassinated in Valhalla:</b>⮀ Gods are looking all around but someone not paying tax on your property comes first, you kill them and grab the heart and quickly leave.]]></story_1>
+            <story_1><![CDATA[<b>Target Assassinated:</b>⮀ Gods are looking all around but someone not paying tax on your property comes first, you kill them and grab the heart and quickly leave.]]></story_1>
         </assassinz4>
         <assassinz5>
-            <story_1><![CDATA[<b>1 Assassinated in Startington:</b>⮀ Everyone here is almost close to being dead so should be quick and easy. You get the heart so quick and moved on.]]></story_1>
+            <story_1><![CDATA[<b>Target Assassinated:</b>⮀ Everyone here is almost close to being dead so should be quick and easy. You get the heart so quick and moved on.]]></story_1>
         </assassinz5>
         <assassinz6>
-            <story_1><![CDATA[<b>1 Assassinated in Jungle Path:</b>⮀ Survivers are lost so you can use that to your advantage, 1 quick kill later and you can move on. Don't forget the heart!]]></story_1>
+            <story_1><![CDATA[<b>Target Assassinated:</b>⮀ Survivors are lost so you can use that to your advantage, 1 quick kill later and you can move on. Don't forget the heart!]]></story_1>
         </assassinz6>
         <assassinz7>
-            <story_1><![CDATA[<b>1 Assassinated in Commerenceville:</b>⮀ Last task on the list and there are a ton of corrupted people here, plus the assassnation guild is here to collect all the hearts you gotten.]]></story_1>
+            <story_1><![CDATA[<b>Target Assassinated:</b>⮀ Last task on the list and there are a ton of corrupted people here, plus the assassination guild is here to collect all the hearts you gotten.]]></story_1>
         </assassinz7>
         <!--ruins-->
         <ruinsZ1>
@@ -1091,9 +1095,9 @@
             <tooltip><![CDATA[
             As you've explored, you've found a number of old ruins scattered around. It's probably worth your time to explore them.
             ]]></tooltip>
-		<story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Forest and notice some weird looking rocks, wonder what they do.]]></story_1>
-		<story_2><![CDATA[<b>50% delved:</b>⮀ After investgating these weird looking rocks you notice they are cubical and are heavy, looks like they are dusty from the time they have been sitting here.]]></story_2>
-		<story_3><![CDATA[<b>100% delved:</b>⮀ You have discover everything in these ruins, and notice that there are so many cubical stones lying everywhere like a massive battle happend.]]></story_3>
+            <story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Forest and notice some weird looking rocks, wonder what they do.]]></story_1>
+            <story_2><![CDATA[<b>50% delved:</b>⮀ After investigating these weird looking rocks you notice they are cubical and are heavy, looks like they are dusty from the time they have been sitting here.]]></story_2>
+            <story_3><![CDATA[<b>100% delved:</b>⮀ You have discovered everything in these ruins, and notice that there are so many cubical stones lying everywhere like a massive battle happend.]]></story_3>
         </ruinsZ1>
         <ruinsZ3>
             <label>Ruins</label>
@@ -1101,9 +1105,9 @@
             <tooltip><![CDATA[
             As you've explored, you've found a number of old ruins scattered around. It's probably worth your time to explore them.
             ]]></tooltip>
-		<story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Mt. Olympus and notice the same cubical rocks, wonder what they do.]]></story_1>
-		<story_2><![CDATA[<b>50% delved:</b>⮀ There is a stone with some writing, with your high intellegent you might be able to read this strange language.]]></story_2>
-		<story_3><![CDATA[<b>100% delved:</b>⮀ After looking around the ruins it looks like there is a weapon rusted of some sort that looks like one of the Valkeries used, wonder what really happened.]]></story_3>
+            <story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Mt. Olympus and notice the same cubical rocks, wonder what they do.]]></story_1>
+            <story_2><![CDATA[<b>50% delved:</b>⮀ There is a stone with some writing, with your high intelligence you might be able to read this strange language.]]></story_2>
+            <story_3><![CDATA[<b>100% delved:</b>⮀ After looking around the ruins it looks like there is a weapon rusted of some sort that looks like one of the Valkeries used, wonder what really happened.]]></story_3>
         </ruinsZ3>
         <ruinsZ5>
             <label>Ruins</label>
@@ -1111,9 +1115,9 @@
             <tooltip><![CDATA[
             As you've explored, you've found a number of old ruins scattered around. It's probably worth your time to explore them.
             ]]></tooltip>
-		<story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Startington and and notice the same dusty cubical rocks, wonder what they do.]]></story_1>
-		<story_2><![CDATA[<b>50% delved:</b>⮀ After deciphering the text on this stone block, You can see some of the text since the rest has corroded over time. ]]></story_2>
-		<story_3><![CDATA[<b>100% delved:</b>⮀ The text explains that the Valkeries started a war that lasted for a month, after a month of fighting they finally declared peace. Who did they fight against???]]></story_3>
+            <story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Startington and and notice the same dusty cubical rocks, wonder what they do.]]></story_1>
+            <story_2><![CDATA[<b>50% delved:</b>⮀ After deciphering the text on this stone block, You can see some of the text since the rest has corroded over time. ]]></story_2>
+            <story_3><![CDATA[<b>100% delved:</b>⮀ The text explains that the Valkeries started a war that lasted for a month, after a month of fighting they finally declared peace. Who did they fight against???]]></story_3>
         </ruinsZ5>
         <ruinsZ6>
             <label>Ruins</label>
@@ -1121,9 +1125,9 @@
             <tooltip><![CDATA[
             As you've explored, you've found a number of old ruins scattered around. It's probably worth your time to explore them.
             ]]></tooltip>
-		<story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Jungle Path and and notice the same dusty and heavy cubical rocks, wonder what they do.]]></story_1>
-		<story_2><![CDATA[<b>50% delved:</b>⮀ You notice a god weapon on the floor in the middle of this ruins, almost like they left this here on purpose.]]></story_2>
-		<story_3><![CDATA[<b>100% delved:</b>⮀ Looking at the weapon has a small text that says, war has ended and this weapon is layed to rest. Did the gods fight the Valkeries???]]></story_3>
+            <story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Jungle Path and and notice the same dusty and heavy cubical rocks, wonder what they do.]]></story_1>
+            <story_2><![CDATA[<b>50% delved:</b>⮀ You notice a god weapon on the floor in the middle of this ruins, almost like they left this here on purpose.]]></story_2>
+            <story_3><![CDATA[<b>100% delved:</b>⮀ Looking at the weapon has a small text that says, war has ended and this weapon is layed to rest. Did the gods fight the Valkeries???]]></story_3>
         </ruinsZ6>
         <haulZ1>
             <label>Haul</label>
@@ -1192,7 +1196,7 @@
             <tooltip><![CDATA[The explorer's guild has taught you how to use cartographer's kits to map where you're going. This will let you keep track of things better and find all sorts of new secrets.<br>
             There's a shop here in Beginnersville that will sell them for just ]]></tooltip>
             <tooltip2>gold each.</tooltip2>
-		<story_1><![CDATA[<b>Bought a Map:</b>⮀ "You buy the map and upon seeing the map, you exclaim that the earth appears to be flat, and someone at the guild says "that's because it's a flat drawing!"; but on the bright side you can explore extra areas in other locations!"]]></story_1>
+		<story_1><![CDATA[<b>Bought a Map:</b>⮀ The map you purchase isn't exactly sparse; the roads are inked in precisely and all the major buildings are labeled. However, there's still a lot of work to do - many of the minor buildings are unlabeled, foliage is marked only as vague scribblings, and you distinctly recall several alleys that are missing on it. And this map is only for one small section of town; charting out the entirety of this place is going to take a lot of time... and a lot of ink. You wait until the attendant is occupied, then grab a set of scribing tools on your way out.]]></story_1>
         </map>
         <wander>
             <label>Wander</label>
@@ -1217,7 +1221,7 @@
             mana.<br>Every 10 pots have mana.
         ]]></tooltip2>
             <story_1><![CDATA[<b>50 Pots with mana:</b>⮀ You've smashed every single pot in this village, and have figured out all the pots that contain any trace of mana. Having to break them all physically was time consuming, and your skills at absorbing the mana weren't the best. There must be more efficient ways of doing it.]]></story_1>
-		    <story_2><![CDATA[<b>75 Pots with mana:</b>⮀ Is the pot over here, or is it over there? Space can be such a fickle thing sometimes. Maybe it's both! There, now there's another pot to loot.]]></story_2>
+		    <story_2><![CDATA[<b>75 Pots with mana:</b>⮀ There are a lot more pots around this town than you originally thought, many of them in the weirdest of places. Down drains, inside vents... there's one on the roof of this house and another inside the wood foundation of the house next door. You're not sure how many of them are hidden and how many are just lost, but you are sure you never would have found them if you hadn't spent so long combing every inch of this place.]]></story_2>
         </smash_pots>
         <pick_locks>
             <label>Pick Locks</label>
@@ -1242,14 +1246,15 @@
             That's not fair. There was time now. There was all the time I needed.<br>Now you have to get new glasses again for 10 gold!<br>Causes Wander to be 4x as effective for the rest of the loop.<br>Affects any action with the glasses icon<br>Can only have 1 Buy Glasses action.<br>Unlocked at 20% explored.
         ]]></tooltip>
             <story_1><![CDATA[<b>Glasses bought:</b>⮀ The world snaps into sharp focus as you put them on and you gawk a little as details that had slipped your eyes previously stood out in sharp contrast. You're a little gobsmacked at how much of a difference they make.]]></story_1>
+            <!-- Stories for Found Glasses won't show up because the action is always disabled, so we put its story here instead -->
+            <story_2><![CDATA[<b>Glasses found:</b>⮀ You still can't believe that merchant sold you a pair of glasses without commenting on the pair on your head. How inconsiderate.]]></story_2>
         </buy_glasses>
         <found_glasses>
             <label>Found Glasses</label>
             <tooltip><![CDATA[
             You could have sworn you had a spare pair of glasses somewhere. Now you've explored to the ends of the world. Every nook or cranny has revealed to you their secrets. And you've found them - in the last place anyone would ever think to look. On top of your head.<br>
-            You now start all loops with glasses.
-		]]></tooltip>
-		<story_1><![CDATA[<b>Found Glasses:</b>⮀ Wait did you have your glasses above your head and you still bought another one??? Glad you had high enough chrisma skill to pull that off.]]></story_1>
+            You now start all loops with glasses.]]>
+            </tooltip>
         </found_glasses>
         <buy_mana_z1>
             <label>Buy Mana</label>
@@ -1278,9 +1283,9 @@
             <tooltip><![CDATA[
             They won't let you get away with a simple chat.<br>Unlocked at 22% Explored.
         ]]></tooltip>
-            <story_1><![CDATA[<b>1% People Met:</b>⮀ You stand there, a little stumped at the situation you’ve gotten yourself into, when a young lass asks you about your day so far.]]></story_1>
+            <story_1><![CDATA[<b>1% People Met:</b>⮀ You stand there, a little stumped at the situation you've gotten yourself into, when a young lass asks you about your day so far.]]></story_1>
             <story_2><![CDATA[<b>20% People Met:</b>⮀ The people here are generally nice enough, if a bit brusque at times. Some people have small tasks that they're happy to pay for.]]></story_2>
-            <story_3><![CDATA[<b>40% People Met:</b>⮀ There are a surprising amount of people in the village. You didn’t catch that when you were looking around.]]></story_3>
+            <story_3><![CDATA[<b>40% People Met:</b>⮀ There are a surprising amount of people in the village. You didn't catch that when you were looking around.]]></story_3>
             <story_4><![CDATA[<b>60% People Met:</b>⮀ It almost seems that most people have something they want done, the real problem is figuring out whats worth your time.]]></story_4>
             <story_5><![CDATA[<b>80% People Met:</b>⮀ Having met such a large portion of the people in this village, you almost feel guilty about stealing from them. Almost.]]></story_5>
             <story_6><![CDATA[<b>100% People Met:</b>⮀ You've spoken to everyone. Every child, adult, teen, animal and plant in this village. Everyone, and everything.]]></story_6>
@@ -1309,7 +1314,7 @@
             gold as a reward.<br>Every 5 Short Quests have loot.<br>Unlocked at 5% People Met.
         ]]></tooltip2>
             <story_1><![CDATA[<b>Short Quest finished:</b>⮀ You help an elderly woman get her cat down from atop her house, she rewards you handsomely for your efforts.]]></story_1>
-            <story_2><![CDATA[<b>20 Short Quests with loot in a loop:</b>⮀ You’ve helped everyone who’s been willing to take you on, and the gold from your work jingles beautifully in your pockets. The satisfaction of a job well done fills you with pride.]]></story_2>
+            <story_2><![CDATA[<b>20 Short Quests with loot in a loop:</b>⮀ You've helped everyone who's been willing to take you on, and the gold from your work jingles beautifully in your pockets. The satisfaction of a job well done fills you with pride.]]></story_2>
 		    <story_3><![CDATA[<b>50 Short Quests with loot in a loop:</b>⮀ You've gotten so familiar with residents daily routines and needs that you can finish chores for them before they ever think to ask for help. The only problem is how much it unnerves people to see somebody just a bit too helpful...]]></story_3>
         </short_quest>
         <investigate>
@@ -1337,7 +1342,7 @@
             gold and 1 reputation as a reward.<br>Every 5 Long Quests have loot.<br>Unlocked at 10% Investigated.
         ]]></tooltip2>
             <story_1><![CDATA[<b>Long Quest finished:</b>⮀ You cleared out a cellar of rats; there were at least sixty of the blighters. You were rewarded handsomely, and you got a small reputation boost to boot.]]></story_1>
-            <story_2><![CDATA[<b>10 Long Quests with loot in a loop:</b>⮀ You’ve cleared out cellars, helped build a house, collected flowers for dyes, worked in the bakery, taken out trash, and helped a seamstress finish a gift for her husband. Your reputation is spreading as the helpful courier. Everyone is at the very least willing to listen to you.]]></story_2>
+            <story_2><![CDATA[<b>10 Long Quests with loot in a loop:</b>⮀ You've cleared out cellars, helped build a house, collected flowers for dyes, worked in the bakery, taken out trash, and helped a seamstress finish a gift for her husband. Your reputation is spreading as the helpful courier. Everyone is at the very least willing to listen to you.]]></story_2>
 		    <story_3><![CDATA[<b>25 Long Quests with loot in a loop:</b>⮀ The town has nothing left for you to do at this point and suggest that maybe you might find more work somewhere else. They appreciate everything you did, and many of the townsfolk are eager to put in a good word for you.]]></story_3>
         </long_quest>
         <throw_party>
@@ -1357,7 +1362,7 @@
             <story_2><![CDATA[<b>100 Combat:</b>⮀ You manage to give Iron a run for her money, but she still manages to eek out a victory. She is, however, noticeably worn out afterwards.]]></story_2>
             <story_3><![CDATA[<b>200 Combat:</b>⮀ You push Iron to the brink of defeat, and then she starts fighting dirty.]]></story_3>
             <story_4><![CDATA[<b>250 Combat:</b>⮀ All your experience fighting Iron finally pays off when you manage to defeat her! You feel really proud of yourself, right up until she smacks your head with the flat of her sword and demands a rematch.]]></story_4>
-		    <story_5><![CDATA[<b>1,000 Combat:</b>⮀ You decide to honor the rematch and fight with Iron once more, the duel lasts for 2 weeks and you both end up in a draw. She is suprised how far you have come with your training, she tells you that when she was a kid she had to pick up a weapon to help protect the town. She states that monsters would enter town and attack so training was the only way to become who she is today.]]></story_5>
+		    <story_5><![CDATA[<b>1,000 Combat:</b>⮀ You decide to honor the rematch and fight with Iron once more, the duel lasts for 2 weeks and you both end up in a draw. She is surprised how far you have come with your training, she tells you that when she was a kid she had to pick up a weapon to help protect the town. She states that monsters would enter town and attack so training was the only way to become who she is today.]]></story_5>
         </warrior_lessons>
         <mage_lessons>
             <label>Mage Lessons</label>
@@ -1368,7 +1373,7 @@
             <story_2><![CDATA[<b>100 Magic:</b>⮀ Warrick compliments you on your ability to wield mana, and is happy to share some more dangerous cantrips with your promise to not use it for ill. He refuses to teach you about alchemy.]]></story_2>
             <story_3><![CDATA[<b>200 Magic:</b>⮀ Warrick is suspicious about your proficiency with mana for someone he's just run into in the wild, but is still more than willing to humor you. If he throws appraising glances at you every now and then, you pay them no mind.]]></story_3>
             <story_4><![CDATA[<b>250 Magic:</b>⮀ You and Warrick duel, your lessons from that point on are finding an out of the way location and duking it out with magic. Warrick seems appreciative about the exertion.]]></story_4>
-            <story_5><![CDATA[<b>10 Alchemy:</b>⮀ You offer to help him with his alchemy work and he immdiately seems to develop a soft spot for you, talking about herbs and their effects when combined with eachother and how they build together to create mystical potions. The man's passionate, that's for sure.]]></story_5>
+            <story_5><![CDATA[<b>10 Alchemy:</b>⮀ You offer to help him with his alchemy work and he immediately seems to develop a soft spot for you, talking about herbs and their effects when combined with each other and how they build together to create mystical potions. The man's passionate, that's for sure.]]></story_5>
             <story_6><![CDATA[<b>50 Alchemy:</b>⮀ You offer Warrick some alchemy techniques that he's never heard of in exchange for some more magic techniques and lessons. He agrees readily.]]></story_6>
             <story_7><![CDATA[<b>100 Alchemy:</b>⮀ You offer to teach Warrick about alchemy if he teaches you about the branches of magic you have little grounding in. The man himself is a genius and has much to teach. He gives it his all, tempted by the secrets of Alchemy.]]></story_7>
         </mage_lessons>
@@ -1444,10 +1449,10 @@
                 <name>Gelatinous Cubes that are constantly growing in size</name>
                 <name>Fairies with blindingly bright dresses</name>
                 <name>Orcs with multiple weapons</name>
-                <name>Beholders with mouthes on every eye</name>
+                <name>Beholders with mouths on every eye</name>
                 <name>Spectres that are actually scary</name>
                 <name>Mimics without an obvious tell</name>
-                <name>Shambling Mounds that can locomote quickly</name>
+                <name>Shambling Mounds that can move quickly</name>
                 <name>Corrupted Mushroomfolk that taste bad</name>
                 <name>Giant Owls that can swim</name>
                 <name>Blood Trolls that don't like your hairstyle</name>
@@ -1536,17 +1541,17 @@
         <hitch_ride>
             <label>Hitch Ride</label>
             <tooltip><![CDATA[
-            The explorers guild has a contract with various caravaans for transport around the world. They have taught you the secret handsigns to gain passage. And this one just happens to have some spare mana to share on the journey!<br>
+            The explorers guild has a contract with various caravans for transport around the world. They have taught you the secret handsigns to gain passage. And this one just happens to have some spare mana to share on the journey!<br>
             Travels to Merchanton.
         ]]></tooltip>
-		 <story_1><![CDATA[<b>Hitched a Ride:</b>⮀ The Explores guild wagon is waiting on the edge of town, you give them the signel and they give you a lift. The wagon driver says "Welcome aboard fellow guild member, we are headed to merchanton to get a few drinks. Wouldn't mind giving you a lift." The wagon members are singing all the way to merchanton and the wagon driver says "We have arrived in Merchanton! I wish you the best of luck on your journey!" You thank the driver and depart from the wagon.]]></story_1>
+		 <story_1><![CDATA[<b>Hitched a Ride:</b>⮀ You step up to the caravan rolling by, give the necessary handsigns, and are directed to a small wagon near the back of the line. As you climb in and see your fellow explorers, you can't help but grin - they may not recognize you, but you recognize several of them. Drinks are eagerly shared, numerous bad jokes are made, and the trip passes in the blink of an eye. When the caravan reaches Merchanton, you're singing so loudly you miss the call to get off, and you end up having to walk the half mile the wagon traveled before you noticed the retreating city in the back window.]]></story_1>
         </hitch_ride>
         <open_rift>
             <label>Open Rift</label>
             <tooltip><![CDATA[
             Using your vast knowledge of the dark arts, you can open a rift into the shadow realm to send you straight to Startington.<br>Unfortunately, it doesn't seem like you can fit any supplies through the rift.<br>Unlocked at 300 Dark Magic and 100 Spatiomancy.
         ]]></tooltip>
-            <story_1><![CDATA[<b>Opening the Rift:</b>⮀ After speaking with the Witch she gives you a spell to open a rift of some sort. You use your magic and a small rift opens in front of you, luckily you arn't getting thrown into it this time. You take a step in the rift and you have entered Startington!]]></story_1>
+            <story_1><![CDATA[<b>Opening the Rift:</b>⮀ Angering the gods just to reach the shadow realm is so much work, and makes you feel a bit bad inside. Thinking back to the lessons from the Witch, you conjure a great deal of destructive and chaotic energy to create a gap between worlds. After a strenuous hour of mentally and physically taxing work, you've done it! A small rift has torn through reality, just big enough to fit yourself through. You eagerly step through, excited by accomplishing such a feat, and find yourself in Startington.]]></story_1>
         </open_rift>
         <!--town 2-->
         <explore_forest>
@@ -1576,10 +1581,8 @@
             <tooltip2><![CDATA[
             mana.<br>Every 10 mana spots have good mana.
         ]]></tooltip2>
-            <story_1><![CDATA[<b>Source checked for mana:</b>⮀ It's just sitting there, stray slightly from the beaten path and you find an abundance of mana just waiting for someone to take it, the only catch being you need to extract it from the plants surrounding it and they've proven slightly unwilling to part with it.]]></story_1>
-<!--	     <story_2><![CDATA[<b>50 Sources checked for mana in a loop:</b>⮀ After exploring the forest 100%, you know the path to get all the mana sources, mana mania!]]></story_2>-->
-<!--	     <story_3><![CDATA[<b>100 Sources checked for mana in a loop:</b>⮀ After exploring the thicket 100%, you know the path of the forest and the thicket to get tons of mana, insane!]]></story_3>-->
-<!--	     <story_4><![CDATA[<b>150 Sources checked for mana in a loop:</b>⮀ In the nooks of the forest there is a secret path that you never even noticed, you probly wanted to see the hermit so much. There is 50 more mana sources with your name on it, god speed.]]></story_4>-->
+            <story_1><![CDATA[<b>Source checked for mana:</b>⮀ It's just sitting there; you stray only slightly from the beaten path and you find an abundance of mana just waiting for someone to take it. The only catch is that you need to extract it from the plants surrounding it, and they've proven slightly unwilling to part with it.]]></story_1>
+            <story_2><![CDATA[<b>100 Sources with mana:</b>⮀ The forest is teeming with clusters of mana, invariably choked by plants feeding off of the ever-useful energy. You're not exactly sure what's producing it all, but it's part of the natural rhythm of the forest. You're almost inclined to leave it be, but if you want to escape the loops you need the mana more than the plants do.]]></story_2>
         </wild_mana>
         <gather_herbs>
             <label>Gather Herbs</label>
@@ -1591,7 +1594,7 @@
             Might as well dig up anything useful you find.<br>Every 10 funny plants are herbs.<br>Unlocked at 10% Forest Explored.
         ]]></tooltip>
             <story_1><![CDATA[<b>Plant checked for use:</b>⮀ You pull up random plants across the forest that emanate mana only to find that in most cases, they're simply plants that have started gathering mana, but in some cases they're actually magical plants. Small distinction, but a significant one.]]></story_1>
-<!--	     <story_2><![CDATA[<b>500 Plants checked in a loop:</b>⮀ Every plant you can see has been picked up in the forest, they have many uses for them! ]]></story_2>-->
+<!--	     <story_2><![CDATA[<b>500 Plants with use:</b>⮀ Every plant you can see has been picked up in the forest, they have many uses for them! ]]></story_2>-->
         </gather_herbs>
         <hunt>
             <label>Hunt</label>
@@ -1611,11 +1614,11 @@
             <tooltip><![CDATA[
             It's peaceful here. Loud, but peaceful.<br>Has 4x exp/talent gain, and can only be done <div id='trainingLimitSoul'></div> times per reset.<br>Unlocked at 70% Forest Explored.
         ]]></tooltip>
-            <story_1><![CDATA[<b>Sat by waterfall:</b>⮀ You find a waterfall flowing from a higher point in a mountain down the side oddly scenic and decide stop to stare for awhile, simply to observe the natural beauty of the sight. As you watched, the force of the water managed to dislodge a small pebble from the top of the waterfall and send it careening down. You watch oddly mesmerized at it bounces along the path, constantly being immersed and spat out by the water. You don't know when you sat down and began meditating, only that you woke from your deep realization hours later.]]></story_1>
-	     <story_2><![CDATA[<b>100 Soul Talent:</b>⮀ You find more at piece with yourself and your body, which makes you a different person all together.]]></story_2>
-	     <story_3><![CDATA[<b>1,000 Soul Talent:</b>⮀ You are learning how to improve yourself past the point anyone has attempted. You can feel your blood going thru your whole body, feels weird.]]></story_3>
-	     <story_4><![CDATA[<b>10,000 Soul Talent:</b>⮀ You have so much soul that the king of soul acknowledges you, having so much soul means your body can be controlled in every part of your body at will.]]></story_4>
-	     <story_5><![CDATA[<b>100,000 Soul Talent:</b>⮀ At this point there is so much soul that you have reached heaven levels, you have trancended and you should feel good about that!]]></story_5>
+            <story_1><![CDATA[<b>Sat by waterfall:</b>⮀ You find a quiet waterfall flowing down a steep cliff and stop to stare for awhile, simply to observe the natural beauty of the sight. As you watch, the force of the water manages to dislodge a small pebble from the top of the waterfall and send it careening down. You're oddly mesmerized as it bounces along the path, constantly being immersed and spat out again by the water. You don't know when you sat down and began meditating, only that you woke from your deep realization hours later.]]></story_1>
+	     <story_2><![CDATA[<b>100 Soul Talent:</b>⮀ Sometimes you get stressed, or scared, or lonely. You don't know how long it'll be until you escape the loops - you don't even know if you ever will escape the loops! It's pretty overwhelming, and the constant repetition of the same tasks over and over doesn't help. It's a relief to take some time to yourself; to relax, meditate, and just breathe.]]></story_2>
+	     <story_3><![CDATA[<b>1,000 Soul Talent:</b>⮀ You still get anxious sometimes, but you're getting better at relaxing at a moment's notice. A few minutes break, a couple of deep breaths, and you're fired up and ready to go again. It's still nice to sit by the waterfall sometimes, though.]]></story_3>
+	     <story_4><![CDATA[<b>10,000 Soul Talent:</b>⮀ You don't have to take breaks anymore to relax. Whenever you feel that anxiety bubbling up within you, you can effortlessly push it away by taking a single deep breath. In... and out.]]></story_4>
+	     <story_5><![CDATA[<b>100,000 Soul Talent:</b>⮀ Sometimes, things are hard, but it's okay. Everything will work out in the end, and you're at peace.]]></story_5>
         </sit_by_waterfall>
         <old_shortcut>
             <label>Old Shortcut</label>
@@ -1650,7 +1653,7 @@
             <tooltip><![CDATA[
             Such simple uses to help out with everyday tasks. Genius, really. It's like pulling teeth getting this knowledge from the Hermit though.<br>Unlocked with both 20% Hermit Knowledge and 50 Magic.
         ]]></tooltip>
-            <story_1><![CDATA[<b>1 Practical magic:</b>⮀ You pester the hermit about magic and how to use it to make things easier on yourself. It's surprisingly handy to be able to move things around without havin to be there, rather than smashing pots you can instead lift them or knock them off edges. Why open a lock when you can unlock a latch with Mage Hand, why walk over to the wardrobe if you can just fling it open and ransack it? Magic, but practical. You're a little astonished that not everyone does this.]]></story_1>
+            <story_1><![CDATA[<b>1 Practical magic:</b>⮀ You pester the hermit about magic and how to use it to make things easier on yourself. It's surprisingly handy to be able to move things around without having to be there, rather than smashing pots you can instead lift them or knock them off edges. Why open a lock when you can unlock a latch with Mage Hand, why walk over to the wardrobe if you can just fling it open and ransack it? Magic, but practical. You're a little astonished that not everyone does this.]]></story_1>
 			<story_2><![CDATA[<b>100 Practical magic:</b>⮀ Slowly, slowly, you're starting to become competent at the Hermit's special brand of magic - and it's really convenient. Just the other loop, he taught you a trick to find the value of a pile of coins with a small gesture and a single word!]]></story_2>
 			<story_3><![CDATA[<b>400 Practical magic:</b>⮀ You barely have to pay attention to your magic anymore. Doors open before you reach them, blood and grime vanishes at a thought, and anything you reach for jumps straight into your hands. Life has never been so easy.]]></story_3>
         </practical_magic>
@@ -1680,7 +1683,7 @@
             There's a nice array of rocks to hop between. It's a lot of fun.<br>Has 4x exp/talent gain, and can only be done <div id='trainingLimitDex'></div> times per reset.<br>Unlocked at 60% Forest Explored.
         ]]></tooltip>
             <story_1><![CDATA[<b>Dexterity trained:</b>⮀ You find rocks spaced intermittently in an open clearing. Your best guess is that they were set up as a training field for some mercenary group that had passed by. Either way, it's fun to bounce from one rock to another parrying invisible enemies and fighting the air.]]></story_1>
-<!--	     <story_2><![CDATA[<b>100 Dexterity Talent:</b>⮀ You parry and fight invisable monsters for alot longer than you thought you were gonna but you are now quick to dodge and evade!]]></story_2>-->
+<!--	     <story_2><![CDATA[<b>100 Dexterity Talent:</b>⮀ You parry and fight invisible monsters for a lot longer than you thought you were gonna but you are now quick to dodge and evade!]]></story_2>-->
 <!--	     <story_3><![CDATA[<b>1,000 Dexterity Talent:</b>⮀ You have so much dexterity that you can be nimble and so light that you can bounce everywhere, bounce man???]]></story_3>-->
         </train_dexterity>
         <train_speed>
@@ -1746,7 +1749,7 @@
             <story_5><![CDATA[<b>50% Witch knowledge learned:</b>⮀ You had apparently impressed her enough this time that she took you to a clearing she had found, and explained to you a ritual that would give you a boost, permanently through any circumstances by calling upon the dark gods. The catch she explained, with ill concealed glee, was that you would need souls to sacrifice if you wanted to do this ritual.]]></story_5>
             <story_6><![CDATA[<b>60% Witch knowledge learned:</b>⮀ As you learn more and more about the witch and her varied names, one thing starts to become glaringly obvious. The Witch and The Hermit know one another. If her irritable grumbling about the old fool and his idiotic desires were anything to go by. You get the feeling that their relationship is complex.]]></story_6>
             <story_7><![CDATA[<b>80% Witch knowledge learned:</b>⮀ The witch is struck with a strange sense of melancholy one loop and you have no idea why, but the witch is strangely open with information and you manage to pry out more of the relationship between her and the Hermit. They were lovers once, and to your surprise, she used to be the one whom nature adores. She shuts up quickly after letting that slip. You're all the more determined to pry it out of her though.]]></story_7>
-            <story_8><![CDATA[<b>100% Witch knowledge learned:</b>⮀ Somehow she seems to sense something about you this loop, and she tells you her name, and its the name she gives for every loop after. Trisha. You manage to pry most of her relationship with the hermit from her. They were lovers once, this you knew, but what you didn't was that she was of nobility and he a common vagabond. She fell for him and him for her, it was a love for the ages she tells you while drunk from the wine you brought along with you. He wanted to run away with her and she agreed, too love struck to question why. He was running from deals he had made and bargains he had forsaken, his glib tounge landing him in trouble of the otherworldly nature. Trisha seems frustrated with her youth's naivety as she tells you how she was made a scapegoat for his failings and forfeits in his deals and bargains. How she was essentially sold to the dark gods as his forfeit. When you ask what she did in return, all Trisha does is smile with dark satisfaction, the fire flaring briefly.]]></story_8>
+            <story_8><![CDATA[<b>100% Witch knowledge learned:</b>⮀ Somehow she seems to sense something about you this loop, and she tells you her name, and its the name she gives for every loop after. Trisha. You manage to pry most of her relationship with the hermit from her. They were lovers once, this you knew, but what you didn't was that she was of nobility and he a common vagabond. She fell for him and him for her, it was a love for the ages she tells you while drunk from the wine you brought along with you. He wanted to run away with her and she agreed, too love struck to question why. He was running from deals he had made and bargains he had forsaken, his glib tongue landing him in trouble of the otherworldly nature. Trisha seems frustrated with her youth's naivety as she tells you how she was made a scapegoat for his failings and forfeits in his deals and bargains. How she was essentially sold to the dark gods as his forfeit. When you ask what she did in return, all Trisha does is smile with dark satisfaction, the fire flaring briefly.]]></story_8>
         </talk_to_witch>
         <dark_magic>
             <label>Dark Magic</label>
@@ -1756,7 +1759,7 @@
             <story_1><![CDATA[<b>1 Dark magic:</b>⮀ You ask the witch for more information on dark magic and then during the conversation slowly reveal your interest in the subject and float the offer that you would be willing to trade if she would teach you the beginning steps. She smirks deviously and agrees to the deal.]]></story_1>
             <story_2><![CDATA[<b>25 Dark magic:</b>⮀ The witch demands more and more of you and you slowly figure out ways of broaching the subject with her that doesn't startle her enough that she stops talking to you or just flat out shuts you down. The magic she begins to teach is brutal, ominous and forceful. You do not work with or help, you take and dominate.]]></story_2>
             <story_3><![CDATA[<b>50 Dark magic:</b>⮀ The dark magic she teaches seems to veer more to the side of ritualistic sacrifice and communion with the dark gods, she tells you when you ask that its because she can't really teach you too much more unless you have a darker being backing you as her mana isn't inherent but a gift from the darker divine powers. She teaches you of a ritual that you can use to summon the dark gods and strike a bargain. She warns that you'll need souls as payment.]]></story_3>
-            <story_4><![CDATA[<b>300 Dark magic:</b>⮀ As you become more skilled at dark magic, the number of applications for it continues to grow. Now you're learning to damage fundamental aspects of the universe, although you can only do it in places where the fabric of the universe is already weak. Also, doing anything useful with the damage is much harder - you might have to bring in another field of magic for that.]]></story_4>
+            <story_4><![CDATA[<b>300 Dark magic:</b>⮀ As you become more skilled at dark magic, the number of applications for it continues to grow; now you're learning to connect to the shadow realm, a world parallel to this one full of dark energy. Unfortunately, whenever you try to access it, all you find is chaos. Trisha tells you that there are stable locations in the shadow realm, but to reach them you have to already know where they are, and to create a stable connection you'll need to know more spatial magic than she can teach you. You don't find that very helpful.]]></story_4>
         </dark_magic>
         <dark_ritual>
             <label>Dark Ritual</label>
@@ -1917,7 +1920,7 @@
 			<story_2><![CDATA[<b>E Rank achieved:</b>⮀ You've proven yourself handy with wood, and they grant you a higher rank. A particularly harsh examiner says your work is shoddy and crude, but you seem to be above the errand boys now.]]></story_2>
 			<story_3><![CDATA[<b>D Rank achieved:</b>⮀ You hone your skills at all parts of a construction job, and the breadth seems to count in your favour. This is about the level, you're told, where people often settle into modestly-paying stable careers.]]></story_3>
 			<story_4><![CDATA[<b>C Rank achieved:</b>⮀ B-rank craftswoman Wilfrey says a house you built wouldn't be out of place in most parts of town. She shares with you a tip: to make it into B-rank, you have to know more than construction. If building houses is all you can do, well, a C-rank income still isn't anything to scoff at.]]></story_4>
-			<story_5><![CDATA[<b>B Rank achieved:</b>⮀ Taking Wilfrey's advice you branch out into working with cloth, glass, and metal. The new skills are finnicky and exhausting to get right, but you eventually impress the examiners enough to claim B-rank. You also take a moment to appreciate the first sword you've forged yourself. Shame it'll vanish at the end of the loop.]]></story_5>
+			<story_5><![CDATA[<b>B Rank achieved:</b>⮀ Taking Wilfrey's advice you branch out into working with cloth, glass, and metal. The new skills are finicky and exhausting to get right, but you eventually impress the examiners enough to claim B-rank. You also take a moment to appreciate the first sword you've forged yourself. Shame it'll vanish at the end of the loop.]]></story_5>
 			<story_6><![CDATA[<b>A Rank achieved:</b>⮀ You're finally forcing the old grandmasters to take notice of you, but you're not sure that's a good thing. They seem to be invested in tearing the talented upstart down, and even though your skills impress everyone else in the guild the grandmasters only scoff and point out every flaw they find.]]></story_6>
 			<story_7><![CDATA[<b>S Rank achieved:</b>⮀ Slowly, you remove mistakes from your work and learn to find even the most subtle of defects. When you and the old grandmasters butt heads they have less to throw at you and you fire back with flaws in their own work.]]></story_7>
 			<story_8><![CDATA[<b>U Rank achieved:</b>⮀ It's official: you're unmatched here in Merchanton. Try as they might, the grandmasters can't find any mistakes in the things you make, and as you begin an exhaustive list of their own imperfections they grudgingly agree that you are superior, though you don't miss the way they talk about you behind your back.]]></story_8>
@@ -1939,7 +1942,7 @@
             You decided that knowing more about construction would help. You use your Crafting Guild license to hit the books.<br>Goes faster with a higher guild multiplier.<br>Gives 10-20 exp to Crafting for 0-100%<br>Requires Crafting Guild.<br>Unlocked at 40% Rumors heard.
         ]]></tooltip>
 			<story_1><![CDATA[<b>1% Apprenticeship:</b>⮀ Meck seems determined to ignore you as he goes about his work, only remembering that you exist when he needs you to fetch something. It's not pleasant, but you're happy he accepted in the first place.]]></story_1>
-			<story_2><![CDATA[<b>10% Apprenticeship:</b>⮀ Despite Meck's best efforts, he can't stop you from watching him work. You have to admit, for all his sour attitude he's got a steady hand and a keen mind. You could learn a lot from him if he didn’t keep sending you away to fetch pointless things.]]></story_2>
+			<story_2><![CDATA[<b>10% Apprenticeship:</b>⮀ Despite Meck's best efforts, he can't stop you from watching him work. You have to admit, for all his sour attitude he's got a steady hand and a keen mind. You could learn a lot from him if he didn't keep sending you away to fetch pointless things.]]></story_2>
 			<story_3><![CDATA[<b>20% Apprenticeship:</b>⮀ After repeated badgering, you got Meck to explain his methods a little. You only get one nugget of knowledge at a time, but sooner or later it'll start adding up.]]></story_3>
 			<story_4><![CDATA[<b>40% Apprenticeship:</b>⮀ Bit by bit you're gaining skills, and you're itching to try them out. Unfortunately, Meck forbids you touching his tools, and the last time you tried to use one he slapped it out of your hand and berated you for five minutes straight.]]></story_4>
 			<story_5><![CDATA[<b>60% Apprenticeship:</b>⮀ You can follow along with most of what Meck says and have learned how to string him along into a longer lecture where you can pry some more advanced ideas out of him. Even better, once you start showing that you know what he's doing he eases up on the more frivolous fetch requests.]]></story_5>
@@ -2041,7 +2044,7 @@
         ]]></tooltip>
 			<story_1><![CDATA[<b>1% Mountain Explored:</b>⮀ You stand at the foot of the mountain and look up at the peak. It's so far away, so high up. You take a minute to just stare in awe before looking for a good route up.]]></story_1>
 			<story_2><![CDATA[<b>10% Mountain Explored:</b>⮀ As you climb up the foothills you see old abandoned campsites and think of the rumours you've heard. You're obviously not the first person to try to scale the mountain, but you wonder how the other expeditions ended.]]></story_2>
-			<story_3><![CDATA[<b>20% Mountain Explored:</b>⮀ On the mountain proper, you start seeing odd symbols carved into stones here and there. It looks like the stories of an old civilization living here were true after all, not that it changes much.]]></story_3>
+			<story_3><![CDATA[<b>20% Mountain Explored:</b>⮀ On the mountain proper, you start seeing odd symbols carved into stones here and there. It looks like the stories of an old civilization living here were true after all.]]></story_3>
 			<story_4><![CDATA[<b>40% Mountain Explored:</b>⮀ Hidden away in the side of the mountain, you find a tunnel that seems to go deep under the mountain. There's more of those odd symbols near the entrance, perhaps a warning not to go in?]]></story_4>
 			<story_5><![CDATA[<b>60% Mountain Explored:</b>⮀ The higher you climb the more remains of the ancient civilization you see. Even here at the outskirts you're finding bits of worked stone half-buried in the rocks. Time, it seems, has not been kind to their city.]]></story_5>
 			<story_6><![CDATA[<b>80% Mountain Explored:</b>⮀ You're in the heart of the ruined city now, and there's no hiding what once was anymore. Houses, roads, a once-lovely fountain, it's all in ruins but you can picture what their city must have looked like in its prime.]]></story_6>
@@ -2080,7 +2083,7 @@
             <tooltip><![CDATA[
             Controlling time seems like it would be a great idea, and thankfully for you, the runes around here contain lots of information on the art of Chronomancy.<br>Unlocked with both 30% Runic Symbols Deciphered and 150 Magic.
         ]]></tooltip>
-			<story_1><![CDATA[<b>1 Chronomancy:</b>⮀ Chronomancy is unlike any other magic you've practiced, and unbelievably finnicky. The mana has to be held perfectly still, as if time is at a standstill, and the slightest mistake will cause the entire spell to destabilize. It's hard work, but you finally get the hang of it and you feel yourself speed up by the barest fraction.]]></story_1>
+			<story_1><![CDATA[<b>1 Chronomancy:</b>⮀ Chronomancy is unlike any other magic you've practiced, and unbelievably finicky. The mana has to be held perfectly still, as if time is at a standstill, and the slightest mistake will cause the entire spell to destabilize. It's hard work, but you finally get the hang of it and you feel yourself speed up by the barest fraction.]]></story_1>
 			<story_2><![CDATA[<b>50 Chronomancy:</b>⮀ The effect is more pronounced now, and you find that your reflexes are keeping up with your increased speed. Unfortunately, though, the mana drain of the loops appears to have kept up as well, so even though you're getting the same amount of work done in less time you can't seem to get more work done in a loop.]]></story_2>
 			<story_3><![CDATA[<b>100 Chronomancy:</b>⮀ You know that speeding up time isn't the only thing time magic can do, but it seems that for a human like you anything fancier is impossible without additional assistance. The runes recommend a group ritual but you're the only chronomancer you know, so instead you start learning what Tachytus has to say about chronomantic potions.]]></story_3>
 <!--			<story_4><![CDATA[<b>1,000 Chronomancy:</b>⮀ How fast can the world be speedup before you break reality? Who knows, you just want the world to speed up faster and faster than ever before.]]></story_4>-->
@@ -2095,7 +2098,7 @@
         <pyromancy>
             <label>Pyromancy</label>
             <tooltip><![CDATA[
-            Conjure the power of feverishly forceful and furiously firey flickering flames to aid you in combat. And yeah, the runes contain some stuff about this too. <br>Unlocked with both 60% Runic Symbols Deciphered and 200 Magic.
+            Conjure the power of feverishly forceful and furiously fiery flickering flames to aid you in combat. And yeah, the runes contain some stuff about this too. <br>Unlocked with both 60% Runic Symbols Deciphered and 200 Magic.
         ]]></tooltip>
 			<story_1><![CDATA[<b>1 Pyromancy:</b>⮀ Pyromancy is more normal than chronomancy, but it makes up for it by being extra dangerous. Fire, you quickly learn, will consume you just as happily as your foes. Your control has to be ironclad at all times or you might lose a hand in the time it takes to draw a breath.]]></story_1>
 			<story_2><![CDATA[<b>50 Pyromancy:</b>⮀ Without the loops to restore you to normal you'd probably be dead five times over by now, but the rewards you've gained are impressive indeed. Turning that lethality on monsters is a sight to behold, and it's much more versatile than melee combat. Fights often end before they even have a chance to get close.]]></story_2>
@@ -2145,8 +2148,8 @@
                 <name>Drain the Troll's Blood</name>
             </segment_names>
 			<story_1><![CDATA[<b>Troll slain:</b>⮀ It was an exciting fight, the nimble human against the powerful troll. Its hide was magically tough and one solid hit could break you in half, but despite that you eventually prevailed. It groans an unintelligible question as it dies, perhaps asking why you wanted it dead, and you can't help but feel a little bad.]]></story_1>
-			<story_2><![CDATA[<b>10 Trolls slain in a loop:</b>⮀ You've stopped getting looks of confusion. They know that something out there is hunting them, and when you bring one down it knows what is happening. Now you're getting hateful glares instead, and they die calling you something in their language. You doubt it's flattering.]]></story_2>
-<!--			<story_3><![CDATA[<b>20 Trolls slain in a loop:</b>⮀ The Group of Trolls start attacking in pain and agony, they where friendly once but now they know your face and are determined to kill you. Wonder if they sold stones cones if they wouldn't of had to die.]]></story_3> -->
+			<story_2><![CDATA[<b>6 Trolls slain in a loop:</b>⮀ You've stopped getting looks of confusion. They know that something out there is hunting them, and when you bring one down it knows what is happening. Now you're getting hateful glares instead, and they die calling you something in their language. You doubt it's flattering.]]></story_2>
+            <story_3><![CDATA[<b>20 Trolls slain in a loop:</b>⮀ By now many trolls attempt to flee when they see you. This one didn't, instead standing in your way and refusing to take a single step backwards. It was an easy kill. On the other side of its corpse you find a small cavern with a tent and the smoldering remains of a campfire. You spot footprints in the ground, some large and some small. It's a fresh trail, the hunt is on.]]></story_3>
         </hunt_trolls>
         <check_walls>
             <label>Check Walls</label>
@@ -2205,7 +2208,7 @@
              levels of talent from each stat.
         ]]></tooltip2>
             <segment_names>
-                <name>Submerge youself</name>
+                <name>Submerge yourself</name>
                 <name>Focus essence</name>
                 <name>Absorb Knowledge</name>
             </segment_names>
@@ -2254,14 +2257,19 @@
             <tooltip><![CDATA[
             The city has a local charity that's looking for volunteers to canvass around for potential benefactors. Maybe if you know the information of some of said people, it could be helpful.<br>Unlocked at 10% of city toured.
         ]]></tooltip>
-            <!--TODO: give this action story-->
+            <story_1><![CDATA[<b>5% Houses Canvassed:</b>⮀ You follow one of the donation-seeking gods around a bit. He's apparently gathering money for the "Valhalla Garden Beautification Fund", which provides homeowners with flower seeds approved for garden use. A surprising amount of residents are willing to contribute a few gold. If a cause like this can draw in money, then perhaps...]]></story_1>
+            <story_2><![CDATA[<b>15% Houses Canvassed:</b>⮀ Valhalla's an odd mixture of extremely ordinary and extremely extraordinary. Right now you're talking to a god who controls the raging ocean currents, rivulets of water coiling around his button-up T-shirt. As you're chatting, he suddenly grins and tells you that a ship of mortals just fell beneath the waves, somewhere out there.]]></story_2>
+            <story_3><![CDATA[<b>30% Houses Canvassed:</b>⮀ You weren't sure that any part of Valhalla could be messy, but it looks like the gods still love their lavish and raucous feasts. There's a divine amount of mess across this whole city block, and a dozen gods diligently cleaning it all up. You're told the Valhalla Feast Group Fund will pay anyone willing to help out.]]></story_3>
+            <story_4><![CDATA[<b>50% Houses Canvassed:</b>⮀ Hair like lightning, scars on his face where the venomous wolf clawed at him, this is undoubtedly the same god you saw recorded on the slopes of Mt. Olympus. He's mowing his lawn and you see a watering can off to the side for the flowerbed. You ask about the story but he's profoundly uninterested in talking his past, and politely tells you he'd like to get back to his mowing.]]></story_4>
+            <story_5><![CDATA[<b>75% Houses Canvassed:</b>⮀ You may have made a mistake, a busybody from city hall is very suspicious of your made-up charity. You try to dodge the question but she isn't having any of it, and as you argue you see dozens of snakes start to slither out of her house. You decide to make yourself scarce.]]></story_5>
+            <story_6><![CDATA[<b>100% Houses Canvassed:</b>⮀ In an odd house that you're pretty sure breaks several Valhalla regulations, dressed in a simple tunic nobody else would be caught dead in, you meet Valhalla's version of a nonconformist. It turns out, he gets away with it because he's the only god in city hall who can balance the budget, and everything would fall apart without him. That only grants him a little bit of leniency, but he'll take what he can get.]]></story_6>
         </canvass>
         <donate>
             <label>Donate</label>
             <tooltip><![CDATA[
             You can donate to the charity yourself if you'd like.<br>Costs 20 gold.<br>Gives 1 reputation.<br>Unlocked at 5% of houses canvassed.
         ]]></tooltip>
-            <!--TODO: give this action story-->
+            <story_1><![CDATA[<b>Donated to charity:</b>⮀ It hurts to part ways with the money, and you're not sure why Valhalla needs an entire charity to 'fund inspections of exotic pet manicure facilities' in the first place, but the people here seem to consider it a worthwhile cause and that means you can look good by supporting it.]]></story_1>
         </donate>
         <accept_donations>
             <label>Collect Donation</label>

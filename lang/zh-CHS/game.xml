@@ -276,6 +276,8 @@
             <import_hover_special>悬停查看</import_hover_special>
             <import_hover_special_tooltip>
                 <![CDATA[In the console, use decode("pasted savefile"), edit, then encode('pasted savefile'), then import it<br>This is mainly for fixing broken savefiles - don't be a cheater.]]></import_hover_special_tooltip>
+            <exportfile_button>Export File</exportfile_button>
+            <importfile_button>Import File</importfile_button>
         </save>
         <faq>
             <meta>
@@ -381,7 +383,7 @@
       完成小镇, 然后进入下一个区域.<br><br>
       那边那个家伙, 你现在正在 omsi6.github.io 玩游戏.<br>
       在开始之前, 你应该知道这只是一个粉丝做的改版<br>
-      想玩原版游戏, 地址是 <a href="http://stopsign.github.io/idleLoops/"></a>. 原版的存档可以直接导入到<br>
+      想玩原版游戏, 地址是 <a href="https://stopsign.github.io/idleLoops/"></a>. 原版的存档可以直接导入到<br>
       这边, 但你如果把这边的存档导入到原版, 你将会失去所有这个版本新增加的内容.<br><br>
       感谢游玩, 祝你玩得开心!<br><br>
       ]]></tutorial>
@@ -559,7 +561,13 @@
 				您已经充分探索了商业小镇的公会，也结识了一些大概可以算朋友的人，该拿起镐开始攀爬了！看起来需要攀爬很久才能到达奥林匹斯山，但路上，您发现了一些法力喷泉，似乎可以用镐来采集。山的四处还散落着符文，破译后可能会有用。半山腰处，您还发现一个巨大的洞穴，您想着休息一下进去看看，然后遇到了一些友善的巨魔，可惜它们并不卖刨冰……
 			</story>
 			<story num="6"> <!--Good Reputation Story--> <!--Change 6 to Valhalla-->
-				终于，您到达了奥林匹斯山之巅，那儿有一座巨门，一个声音高叫着“面对众神的审判吧，哈哈哈哈。希望你准备好了！”等待良久，然后那个声音再次响起“你可以通过了！”您就此进入了瓦尔哈拉，一名向导带着您参观，甚至似乎还有一场慈善活动在举办。探索完毕，您总结了一下，您可以进入礼仪学校，或者是巫师学院，也可以考虑成为公民，甚至与女武神们并肩作战。众神之家真是太好了。
+                You expected to be whisked away to a land of opulence and wonder beyond your wildest dreams. Instead,
+                you sat in a cramped room filling out paperwork for three hours before being dropped off outside what
+                appears to be an ordinary town, with manicured lawns and meandering sidewalks leading to tidy parks and
+                decorations. It's not ordinary though, if you stare at the grass you notice it's just a bit too green,
+                the sky just a bit too blue. The literal deity taking a seven foot tall dog on a walk doesn't help
+                either. A god passing by asks if you want to contribute to a local charity, and you see another god
+                offering tours of 'Valhalla, the greatest city above the world!'
 			</story>
 			<story num="7"> <!--Bad Reputation Story--> <!--Change 7 to Startington-->
 				一个声音高叫着“你不可以通过！”您觉得自己被举起，扔出了奥林匹斯山，掉入了阴影界。阴影界打开了，您摔在地上，但还好只擦破了点皮，几小时后，您终于站了起来，意识到，这并不是新手村了。仔细检查附近的废墟后，您发现它们比想象中还要扭曲和怪异。电缆塔引起了您的注意，您决定摧毁它们。一阵子后，您发现您站在一个巨大的尖塔面前！
@@ -999,28 +1007,27 @@
 			]]></tooltip>
 		</assassin>
 		<assassinz0>
-		    <story_1><![CDATA[<b>1 Assassinated in Beginnersville:</b>⮀ His name was Ethan, you met him on your fifteenth loop. Always seemed to be getting into some sort of trouble. You ambush him as he strolls down an alley and carve out his heart before he knows what happened. He'll be fine next loop, you tell yourself.]]></story_1>
+		    <story_1><![CDATA[<b>Target Assassinated:</b>⮀ His name was Ethan, you met him on your fifteenth loop. Always seemed to be getting into some sort of trouble. You ambush him as he strolls down an alley and carve out his heart before he knows what happened. He'll be fine next loop, you tell yourself.]]></story_1>
         </assassinz0>
         <assassinz1>
-            <story_1><![CDATA[<b>1 Assassinated in Forest Path:</b>⮀ How was there more people in the forest besides the hermit and the witch? who knows, all that matters is you killed someone and left with the heart.]]></story_1>
+            <story_1><![CDATA[<b>Target Assassinated:</b>⮀ A big man dressed in muddy leathers, he's crouching in the bushes with his bow, just as he usually is. They told you his name is Gustav, but you had to take their word for it; you've seen him multiple times but have never actually spoken to him, and after this, you never plan to. You watch him take down a bear with a single arrow to its head, but before he can rise to harvest his prey, one of your arrows is in his head and you're making your way over to begin harvesting his heart.]]></story_1>
         </assassinz1>
         <assassinz2>
-            <story_1><![CDATA[<b>1 Assassinated in Merchanton:</b>⮀ You walked into the casino, looked around to check for cameras and killed someone in the storage room. You got the heart and left quickly before being spotted.]]></story_1>
-        </assassinz2>
+            <story_1><![CDATA[<b>Target Assassinated:</b>⮀ You walked into the casino, looked around to check for cameras and killed someone in the storage room. You got the heart and left quickly before being spotted.]]></story_1>
         <assassinz3>
-            <story_1><![CDATA[<b>1 Assassinated in Mt. Olympus:</b>⮀ You climbed the Mountain and killed one of the yeti's for their heart, what they get for not selling snowcones.]]></story_1>
+            <story_1><![CDATA[<b>Target Assassinated:</b>⮀ You climbed the Mountain and killed one of the yeti's for their heart, what they get for not selling snow cones.]]></story_1>
         </assassinz3>
         <assassinz4>
-            <story_1><![CDATA[<b>1 Assassinated in Valhalla:</b>⮀ Gods are looking all around but someone not paying tax on your property comes first, you kill them and grab the heart and quickly leave.]]></story_1>
+            <story_1><![CDATA[<b>Target Assassinated:</b>⮀ Gods are looking all around but someone not paying tax on your property comes first, you kill them and grab the heart and quickly leave.]]></story_1>
         </assassinz4>
         <assassinz5>
-            <story_1><![CDATA[<b>1 Assassinated in Startington:</b>⮀ Everyone here is almost close to being dead so should be quick and easy. You get the heart so quick and moved on.]]></story_1>
+            <story_1><![CDATA[<b>Target Assassinated:</b>⮀ Everyone here is almost close to being dead so should be quick and easy. You get the heart so quick and moved on.]]></story_1>
         </assassinz5>
         <assassinz6>
-            <story_1><![CDATA[<b>1 Assassinated in Jungle Path:</b>⮀ Survivers are lost so you can use that to your advantage, 1 quick kill later and you can move on. Don't forget the heart!]]></story_1>
+            <story_1><![CDATA[<b>Target Assassinated:</b>⮀ Survivors are lost so you can use that to your advantage, 1 quick kill later and you can move on. Don't forget the heart!]]></story_1>
         </assassinz6>
         <assassinz7>
-            <story_1><![CDATA[<b>1 Assassinated in Commerenceville:</b>⮀ Last task on the list and there are a ton of corrupted people here, plus the assassnation guild is here to collect all the hearts you gotten.]]></story_1>
+            <story_1><![CDATA[<b>Target Assassinated:</b>⮀ Last task on the list and there are a ton of corrupted people here, plus the assassination guild is here to collect all the hearts you gotten.]]></story_1>
         </assassinz7>
         <!--ruins-->
         <ruinsZ1>
@@ -1029,9 +1036,9 @@
             <tooltip><![CDATA[
             在你探索时, 你发现周围有许多古遗迹. 也许这值得你花些时间探索一下.
             ]]></tooltip>
-		<story_1><![CDATA[<b>10% 翻找:</b>⮀ 你决定探索森林小径的遗迹并注意到了一些奇怪的石头, 它们能干什么?]]></story_1>
-		<story_2><![CDATA[<b>50% delved:</b>⮀ After investgating these weird looking rocks you notice they are cubical and are heavy, looks like they are dusty from the time they have been sitting here.]]></story_2>
-		<story_3><![CDATA[<b>100% delved:</b>⮀ You have discover everything in these ruins, and notice that there are so many cubical stones lying everywhere like a massive battle happend.]]></story_3>
+            <story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Forest and notice some weird looking rocks, wonder what they do.]]></story_1>
+            <story_2><![CDATA[<b>50% delved:</b>⮀ After investigating these weird looking rocks you notice they are cubical and are heavy, looks like they are dusty from the time they have been sitting here.]]></story_2>
+            <story_3><![CDATA[<b>100% delved:</b>⮀ You have discovered everything in these ruins, and notice that there are so many cubical stones lying everywhere like a massive battle happend.]]></story_3>
         </ruinsZ1>
         <ruinsZ3>
             <label>遗迹</label>
@@ -1039,9 +1046,9 @@
             <tooltip><![CDATA[
             在你探索时, 你发现周围有许多古遗迹. 也许这值得你花些时间探索一下.
             ]]></tooltip>
-		<story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Mt. Olympus and notice the same cubical rocks, wonder what they do.]]></story_1>
-		<story_2><![CDATA[<b>50% delved:</b>⮀ There is a stone with some writing, with your high intellegent you might be able to read this strange language.]]></story_2>
-		<story_3><![CDATA[<b>100% delved:</b>⮀ After looking around the ruins it looks like there is a weapon rusted of some sort that looks like one of the Valkeries used, wonder what really happened.]]></story_3>
+            <story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Mt. Olympus and notice the same cubical rocks, wonder what they do.]]></story_1>
+            <story_2><![CDATA[<b>50% delved:</b>⮀ There is a stone with some writing, with your high intelligence you might be able to read this strange language.]]></story_2>
+            <story_3><![CDATA[<b>100% delved:</b>⮀ After looking around the ruins it looks like there is a weapon rusted of some sort that looks like one of the Valkeries used, wonder what really happened.]]></story_3>
         </ruinsZ3>
         <ruinsZ5>
             <label>遗迹</label>
@@ -1049,9 +1056,9 @@
             <tooltip><![CDATA[
             在你探索时, 你发现周围有许多古遗迹. 也许这值得你花些时间探索一下.
             ]]></tooltip>
-		<story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Startington and and notice the same dusty cubical rocks, wonder what they do.]]></story_1>
-		<story_2><![CDATA[<b>50% delved:</b>⮀ After deciphering the text on this stone block, You can see some of the text since the rest has corroded over time. ]]></story_2>
-		<story_3><![CDATA[<b>100% delved:</b>⮀ The text explains that the Valkeries started a war that lasted for a month, after a month of fighting they finally declared peace. Who did they fight against???]]></story_3>
+            <story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Startington and and notice the same dusty cubical rocks, wonder what they do.]]></story_1>
+            <story_2><![CDATA[<b>50% delved:</b>⮀ After deciphering the text on this stone block, You can see some of the text since the rest has corroded over time. ]]></story_2>
+            <story_3><![CDATA[<b>100% delved:</b>⮀ The text explains that the Valkeries started a war that lasted for a month, after a month of fighting they finally declared peace. Who did they fight against???]]></story_3>
         </ruinsZ5>
         <ruinsZ6>
             <label>遗迹</label>
@@ -1129,7 +1136,7 @@
             <tooltip><![CDATA[探险者公会教会了你如何绘制地图. 这能让你更好的勘测并发现秘密.<br>
             新手村有个商店会售卖空地图, 每张只要 ]]></tooltip>
             <tooltip2>金块.</tooltip2>
-		<story_1><![CDATA[<b>Bought a Map:</b>⮀ "You buy the map and upon seeing the map, you exclaim that the earth appears to be flat, and someone at the guild says "that's because it's a flat drawing!"; but on the bright side you can explore extra areas in other locations!"]]></story_1>
+		<story_1><![CDATA[<b>Bought a Map:</b>⮀ The map you purchase isn't exactly sparse; the roads are inked in precisely and all the major buildings are labeled. However, there's still a lot of work to do - many of the minor buildings are unlabeled, foliage is marked only as vague scribblings, and you distinctly recall several alleys that are missing on it. And this map is only for one small section of town; charting out the entirety of this place is going to take a lot of time... and a lot of ink. You wait until the attendant is occupied, then grab a set of scribing tools on your way out.]]></story_1>
         </map>
         <wander>
             <label>漫步</label>
@@ -1154,7 +1161,7 @@
             法力.<br>每 10 个罐子有一个有法力.
         ]]></tooltip2>
             <story_1><![CDATA[<b>50个有法力的罐子：</b>⮀ 您打破过村庄里的每个罐子，也找到了所有有法力的罐子。但亲力亲为实在太浪费时间，而且您吸收法力的技艺也不够完美。您需要寻找更有效率的方法。]]></story_1>
-		    <story_2><![CDATA[<b>75 Pots with mana:</b>⮀ Is the pot over here, or is it over there? Space can be such a fickle thing sometimes. Maybe it's both! There, now there's another pot to loot.]]></story_2>
+		    <story_2><![CDATA[<b>75 Pots with mana:</b>⮀ There are a lot more pots around this town than you originally thought, many of them in the weirdest of places. Down drains, inside vents... there's one on the roof of this house and another inside the wood foundation of the house next door. You're not sure how many of them are hidden and how many are just lost, but you are sure you never would have found them if you hadn't spent so long combing every inch of this place.]]></story_2>
         </smash_pots>
         <pick_locks>
             <label>开锁</label>
@@ -1179,6 +1186,8 @@
             这不公平. 是时候了. 我总是需要它.<br>现在你需要花费 10 金块来买一副新眼镜!<br>在本次循环的剩余时间使漫步效果 4x .<br>对所有带有眼镜标记的行动生效<br>你只能进行 1 次购买眼镜行动.<br>解锁于 20% 探索度.
         ]]></tooltip>
             <story_1><![CDATA[<b>已购买眼镜:</b>⮀ 当你戴上它时整个世界瞬间变得清晰起来, 与之前的世界形成了鲜明的对比. 你甚至有点惊讶于这个变化.]]></story_1>
+            <!-- Stories for Found Glasses won't show up because the action is always disabled, so we put its story here instead -->
+            <story_2><![CDATA[<b>Glasses found:</b>⮀ You still can't believe that merchant sold you a pair of glasses without commenting on the pair on your head. How inconsiderate.]]></story_2>
         </buy_glasses>
         <found_glasses>
             <label>找到眼镜</label>
@@ -1186,7 +1195,6 @@
             你发誓你肯定在什么地方准备了一副备用眼镜. 你几乎翻遍了世界的所有角落. 每个角落的秘密都被你挖掘出来. 你终于找到了它 - 在一个任何人都想不到的地方. 你的头上.<br>
             你现在总是戴着眼镜开始循环.
         ]]></tooltip>
-		<story_1><![CDATA[<b>Found Glasses:</b>⮀ Wait did you have your glasses above your head and you still bought another one??? Glad you had high enough chrisma skill to pull that off.]]></story_1>
         </found_glasses>
         <buy_mana_z1>
             <label>购买法力</label>
@@ -1476,14 +1484,14 @@
             探索者公会与各种各样的大篷车签订了旅行合同. 他们教会了你获取通行证的秘密手势. 而且这辆车正好还有一些逸散的法力可以在旅途中吸收!<br/>
             前往商业小镇.
         ]]></tooltip>
-		 <story_1><![CDATA[<b>搭便车:</b>⮀ 探索者公会的马车就在村子的边上停着, 你向他们打暗号就能上车. 马夫说 "欢迎上车公会同胞, 我们打算去商业小镇喝一杯. 不介意捎你一程." 在去往商业小镇的路上马夫一直唱着歌, 到了之后他说 "我们到商业小镇了! 祝你旅途顺利!" 你感谢了马夫然后下了车.]]></story_1>
+		 <story_1><![CDATA[<b>Hitched a Ride:</b>⮀ You step up to the caravan rolling by, give the necessary handsigns, and are directed to a small wagon near the back of the line. As you climb in and see your fellow explorers, you can't help but grin - they may not recognize you, but you recognize several of them. Drinks are eagerly shared, numerous bad jokes are made, and the trip passes in the blink of an eye. When the caravan reaches Merchanton, you're singing so loudly you miss the call to get off, and you end up having to walk the half mile the wagon traveled before you noticed the retreating city in the back window.]]></story_1>
         </hitch_ride>
         <open_rift>
             <label>打开裂缝</label>
             <tooltip><![CDATA[
             利用你渊博的黑暗知识, 你可以打开一条通往初始小镇的裂缝.<br>不幸的是, 它看上去并不能让你带着补给通过.<br>解锁于 300 黑暗魔法和 100 空间魔法.
         ]]></tooltip>
-            <story_1><![CDATA[<b>打开裂缝:</b>⮀ 你利用女巫那里学来的知识张开了一道裂缝. 利用你深厚的魔法知识, 你似乎总算可以穿过它了. 你踏入了裂缝然后你就到了初始城镇!]]></story_1>
+            <story_1><![CDATA[<b>Opening the Rift:</b>⮀ Angering the gods just to reach the shadow realm is so much work, and makes you feel a bit bad inside. Thinking back to the lessons from the Witch, you conjure a great deal of destructive and chaotic energy to create a gap between worlds. After a strenuous hour of mentally and physically taxing work, you've done it! A small rift has torn through reality, just big enough to fit yourself through. You eagerly step through, excited by accomplishing such a feat, and find yourself in Startington.]]></story_1>
         </open_rift>
         <!--town 2-->
         <explore_forest>
@@ -1513,10 +1521,8 @@
             <tooltip2><![CDATA[
             法力.<br>每 10 个法力源有一个有法力的法力源.
         ]]></tooltip2>
-            <story_1><![CDATA[<b>有法力的法力源:</b>⮀ 它就在那里, 就在路边不远的地方默默的囤积着大量的法力等人获取, 唯一的难题在于周围遍布植物, 想过去得花些力气.]]></story_1>
-<!--	     <story_2><![CDATA[<b>50 Sources checked for mana in a loop:</b>⮀ After exploring the forest 100%, you know the path to get all the mana sources, mana mania!]]></story_2>-->
-<!--	     <story_3><![CDATA[<b>100 Sources checked for mana in a loop:</b>⮀ After exploring the thicket 100%, you know the path of the forest and the thicket to get tons of mana, insane!]]></story_3>-->
-<!--	     <story_4><![CDATA[<b>150 Sources checked for mana in a loop:</b>⮀ In the nooks of the forest there is a secret path that you never even noticed, you probly wanted to see the hermit so much. There is 50 more mana sources with your name on it, god speed.]]></story_4>-->
+            <story_1><![CDATA[<b>Source checked for mana:</b>⮀ It's just sitting there; you stray only slightly from the beaten path and you find an abundance of mana just waiting for someone to take it. The only catch is that you need to extract it from the plants surrounding it, and they've proven slightly unwilling to part with it.]]></story_1>
+            <story_2><![CDATA[<b>100 Sources with mana:</b>⮀ The forest is teeming with clusters of mana, invariably choked by plants feeding off of the ever-useful energy. You're not exactly sure what's producing it all, but it's part of the natural rhythm of the forest. You're almost inclined to leave it be, but if you want to escape the loops you need the mana more than the plants do.]]></story_2>
         </wild_mana>
         <gather_herbs>
             <label>采集草药</label>
@@ -1528,7 +1534,7 @@
             不妨把所有看起来有用的植物都挖出来.<br>每 10 个植物里有一个有用.<br>解锁于 10% 森林探索度.
         ]]></tooltip>
             <story_1><![CDATA[<b>有用的植物:</b>⮀ 你随便找了几棵植物, 它们大部分都没什么用, 只是单纯的在呼吸法力, 但有一些是真正的魔法植物. 外貌区别很小, 但用途区别巨大.]]></story_1>
-<!--	     <story_2><![CDATA[<b>500 Plants checked in a loop:</b>⮀ Every plant you can see has been picked up in the forest, they have many uses for them! ]]></story_2>-->
+<!--	     <story_2><![CDATA[<b>500 Plants with use:</b>⮀ Every plant you can see has been picked up in the forest, they have many uses for them! ]]></story_2>-->
         </gather_herbs>
         <hunt>
             <label>打猎</label>
@@ -1548,11 +1554,11 @@
             <tooltip><![CDATA[
             完美的地方. 瀑布轰鸣, 但非常和平.<br>获得 4x 能力/天赋经验, 每次循环只能完成 <div id='trainingLimitSoul'></div> 次.<br>解锁于 70% 森林探索度.
         ]]></tooltip>
-            <story_1><![CDATA[<b>瀑布下静坐:</b>⮀ 你发现了一个从高山上下落的瀑布奇景, 你决定停下来休息一会, 只是单纯的想感受一下大自然的美丽. 当你注视着瀑布, 瀑布将一块鹅卵石高高卷起然后从山上抛下. 你看着鹅卵石在空中划出奇特的轨迹, 随后在水中不断弹跳. 不知何时你坐下开始冥想, 当你清醒时你发现已经过去了数小时.]]></story_1>
-	     <story_2><![CDATA[<b>100 灵魂天赋:</b>⮀ 你和你的身体越来越契合, 几乎使你焕然一新.]]></story_2>
-	     <story_3><![CDATA[<b>1,000 灵魂天赋:</b>⮀ 你正在试图超越一般人. 你可以感觉到血液在身体里流动, 有点恶心.]]></story_3>
-	     <story_4><![CDATA[<b>10,000 灵魂天赋:</b>⮀ 你的灵魂多到灵魂之王都得点点头, 拥有这么多灵魂意味着你可以随意控制身体任何一个部位.]]></story_4>
-	     <story_5><![CDATA[<b>100,000 灵魂天赋:</b>⮀ 你的灵魂已经达到了天堂的级别, 你已经超脱了, 你感觉很好!]]></story_5>
+            <story_1><![CDATA[<b>Sat by waterfall:</b>⮀ You find a quiet waterfall flowing down a steep cliff and stop to stare for awhile, simply to observe the natural beauty of the sight. As you watch, the force of the water manages to dislodge a small pebble from the top of the waterfall and send it careening down. You're oddly mesmerized as it bounces along the path, constantly being immersed and spat out again by the water. You don't know when you sat down and began meditating, only that you woke from your deep realization hours later.]]></story_1>
+	     <story_2><![CDATA[<b>100 Soul Talent:</b>⮀ Sometimes you get stressed, or scared, or lonely. You don't know how long it'll be until you escape the loops - you don't even know if you ever will escape the loops! It's pretty overwhelming, and the constant repetition of the same tasks over and over doesn't help. It's a relief to take some time to yourself; to relax, meditate, and just breathe.]]></story_2>
+	     <story_3><![CDATA[<b>1,000 Soul Talent:</b>⮀ You still get anxious sometimes, but you're getting better at relaxing at a moment's notice. A few minutes break, a couple of deep breaths, and you're fired up and ready to go again. It's still nice to sit by the waterfall sometimes, though.]]></story_3>
+	     <story_4><![CDATA[<b>10,000 Soul Talent:</b>⮀ You don't have to take breaks anymore to relax. Whenever you feel that anxiety bubbling up within you, you can effortlessly push it away by taking a single deep breath. In... and out.]]></story_4>
+	     <story_5><![CDATA[<b>100,000 Soul Talent:</b>⮀ Sometimes, things are hard, but it's okay. Everything will work out in the end, and you're at peace.]]></story_5>
         </sit_by_waterfall>
         <old_shortcut>
             <label>古老的捷径</label>
@@ -1693,7 +1699,7 @@
             <story_1><![CDATA[<b>1 Dark magic:</b>⮀ You ask the witch for more information on dark magic and then during the conversation slowly reveal your interest in the subject and float the offer that you would be willing to trade if she would teach you the beginning steps. She smirks deviously and agrees to the deal.]]></story_1>
             <story_2><![CDATA[<b>25 Dark magic:</b>⮀ The witch demands more and more of you and you slowly figure out ways of broaching the subject with her that doesn't startle her enough that she stops talking to you or just flat out shuts you down. The magic she begins to teach is brutal, ominous and forceful. You do not work with or help, you take and dominate.]]></story_2>
             <story_3><![CDATA[<b>50 Dark magic:</b>⮀ The dark magic she teaches seems to veer more to the side of ritualistic sacrifice and communion with the dark gods, she tells you when you ask that its because she can't really teach you too much more unless you have a darker being backing you as her mana isn't inherent but a gift from the darker divine powers. She teaches you of a ritual that you can use to summon the dark gods and strike a bargain. She warns that you'll need souls as payment.]]></story_3>
-            <story_4><![CDATA[<b>300 Dark magic:</b>⮀ As you become more skilled at dark magic, the number of applications for it continues to grow. Now you're learning to damage fundamental aspects of the universe, although you can only do it in places where the fabric of the universe is already weak. Also, doing anything useful with the damage is much harder - you might have to bring in another field of magic for that.]]></story_4>
+            <story_4><![CDATA[<b>300 Dark magic:</b>⮀ As you become more skilled at dark magic, the number of applications for it continues to grow; now you're learning to connect to the shadow realm, a world parallel to this one full of dark energy. Unfortunately, whenever you try to access it, all you find is chaos. Trisha tells you that there are stable locations in the shadow realm, but to reach them you have to already know where they are, and to create a stable connection you'll need to know more spatial magic than she can teach you. You don't find that very helpful.]]></story_4>
         </dark_magic>
         <dark_ritual>
             <label>黑暗仪式</label>
@@ -2082,8 +2088,8 @@
                 <name>汲取巨魔的血液</name>
             </segment_names>
 			<story_1><![CDATA[<b>Troll slain:</b>⮀ It was an exciting fight, the nimble human against the powerful troll. Its hide was magically tough and one solid hit could break you in half, but despite that you eventually prevailed. It groans an unintelligible question as it dies, perhaps asking why you wanted it dead, and you can't help but feel a little bad.]]></story_1>
-			<story_2><![CDATA[<b>10 Trolls slain in a loop:</b>⮀ You've stopped getting looks of confusion. They know that something out there is hunting them, and when you bring one down it knows what is happening. Now you're getting hateful glares instead, and they die calling you something in their language. You doubt it's flattering.]]></story_2>
-<!--			<story_3><![CDATA[<b>20 Trolls slain in a loop:</b>⮀ The Group of Trolls start attacking in pain and agony, they where friendly once but now they know your face and are determined to kill you. Wonder if they sold stones cones if they wouldn't of had to die.]]></story_3> -->
+			<story_2><![CDATA[<b>6 Trolls slain in a loop:</b>⮀ You've stopped getting looks of confusion. They know that something out there is hunting them, and when you bring one down it knows what is happening. Now you're getting hateful glares instead, and they die calling you something in their language. You doubt it's flattering.]]></story_2>
+            <story_3><![CDATA[<b>20 Trolls slain in a loop:</b>⮀ By now many trolls attempt to flee when they see you. This one didn't, instead standing in your way and refusing to take a single step backwards. It was an easy kill. On the other side of its corpse you find a small cavern with a tent and the smoldering remains of a campfire. You spot footprints in the ground, some large and some small. It's a fresh trail, the hunt is on.]]></story_3>
         </hunt_trolls>
         <check_walls>
             <label>检查墙壁</label>
@@ -2192,7 +2198,12 @@
             这个城市有一个当地的慈善机构，正在招募志愿者四处游说，寻找潜在的捐助者。假如你知道这些人的信息，肯定会顺利许多<br>
             解锁于10%的游览路线探索度.
         ]]></tooltip>
-            <!--TODO: give this action story-->
+            <story_1><![CDATA[<b>5% Houses Canvassed:</b>⮀ You follow one of the donation-seeking gods around a bit. He's apparently gathering money for the "Valhalla Garden Beautification Fund", which provides homeowners with flower seeds approved for garden use. A surprising amount of residents are willing to contribute a few gold. If a cause like this can draw in money, then perhaps...]]></story_1>
+            <story_2><![CDATA[<b>15% Houses Canvassed:</b>⮀ Valhalla's an odd mixture of extremely ordinary and extremely extraordinary. Right now you're talking to a god who controls the raging ocean currents, rivulets of water coiling around his button-up T-shirt. As you're chatting, he suddenly grins and tells you that a ship of mortals just fell beneath the waves, somewhere out there.]]></story_2>
+            <story_3><![CDATA[<b>30% Houses Canvassed:</b>⮀ You weren't sure that any part of Valhalla could be messy, but it looks like the gods still love their lavish and raucous feasts. There's a divine amount of mess across this whole city block, and a dozen gods diligently cleaning it all up. You're told the Valhalla Feast Group Fund will pay anyone willing to help out.]]></story_3>
+            <story_4><![CDATA[<b>50% Houses Canvassed:</b>⮀ Hair like lightning, scars on his face where the venomous wolf clawed at him, this is undoubtedly the same god you saw recorded on the slopes of Mt. Olympus. He's mowing his lawn and you see a watering can off to the side for the flowerbed. You ask about the story but he's profoundly uninterested in talking his past, and politely tells you he'd like to get back to his mowing.]]></story_4>
+            <story_5><![CDATA[<b>75% Houses Canvassed:</b>⮀ You may have made a mistake, a busybody from city hall is very suspicious of your made-up charity. You try to dodge the question but she isn't having any of it, and as you argue you see dozens of snakes start to slither out of her house. You decide to make yourself scarce.]]></story_5>
+            <story_6><![CDATA[<b>100% Houses Canvassed:</b>⮀ In an odd house that you're pretty sure breaks several Valhalla regulations, dressed in a simple tunic nobody else would be caught dead in, you meet Valhalla's version of a nonconformist. It turns out, he gets away with it because he's the only god in city hall who can balance the budget, and everything would fall apart without him. That only grants him a little bit of leniency, but he'll take what he can get.]]></story_6>
         </canvass>
         <donate>
             <label>捐款</label>
@@ -2200,7 +2211,7 @@
             如果你想你也可以自己给慈善机构捐款.<br>消耗 20 金块.<br>奖励 1 声望.<br>Unlocked at 5% of houses canvassed.
 
         ]]></tooltip>
-            <!--TODO: give this action story-->
+            <story_1><![CDATA[<b>Donated to charity:</b>⮀ It hurts to part ways with the money, and you're not sure why Valhalla needs an entire charity to 'fund inspections of exotic pet manicure facilities' in the first place, but the people here seem to consider it a worthwhile cause and that means you can look good by supporting it.]]></story_1>
         </donate>
         <accept_donations>
             <label>募捐</label>
