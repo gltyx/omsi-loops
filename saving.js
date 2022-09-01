@@ -608,8 +608,10 @@ function load(inChallenge) {
     }
     storyShowing = toLoad.storyShowing === undefined ? 0 : toLoad.storyShowing;
     storyMax = toLoad.storyMax === undefined ? 0 : toLoad.storyMax;
-    if (toLoad.unreadActionStories === undefined) unreadActionStories = [];
-    else {
+    if (toLoad.unreadActionStories === undefined
+        || toLoad.unreadActionStories.find(s => !s.includes('storyContainer'))) {
+        unreadActionStories = [];
+    } else {
         unreadActionStories = toLoad.unreadActionStories;
         for (const name of unreadActionStories) {
             showNotification(name);
