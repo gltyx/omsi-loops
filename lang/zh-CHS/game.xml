@@ -1004,9 +1004,9 @@
             Discreetly kill your mark in this town. The more well-known you are, for either good or evil, the harder pulling this off will be...<br>
             每点法力给予 (开方(实用魔法) + 盗窃 + 刺杀) * 主能力/1000 * 开方(完成次数/100) / 绝对值(声望) / 心脏^2 进度点.<br>
             奖励一个心脏.
-			]]></tooltip>
-		</assassin>
-		<assassinz0>
+            ]]></tooltip>
+        </assassin>
+        <assassinz0>
 		    <story_1><![CDATA[<b>Target Assassinated:</b>⮀ His name was Ethan, you met him on your fifteenth loop. Always seemed to be getting into some sort of trouble. You ambush him as he strolls down an alley and carve out his heart before he knows what happened. He'll be fine next loop, you tell yourself.]]></story_1>
         </assassinz0>
         <assassinz1>
@@ -1193,8 +1193,8 @@
             <label>找到眼镜</label>
             <tooltip><![CDATA[
             你发誓你肯定在什么地方准备了一副备用眼镜. 你几乎翻遍了世界的所有角落. 每个角落的秘密都被你挖掘出来. 你终于找到了它 - 在一个任何人都想不到的地方. 你的头上.<br>
-            你现在总是戴着眼镜开始循环.
-        ]]></tooltip>
+            你现在总是戴着眼镜开始循环.]]>
+            </tooltip>
         </found_glasses>
         <buy_mana_z1>
             <label>购买法力</label>
