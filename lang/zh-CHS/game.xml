@@ -276,8 +276,8 @@
             <import_hover_special>悬停查看</import_hover_special>
             <import_hover_special_tooltip>
                 <![CDATA[In the console, use decode("pasted savefile"), edit, then encode('pasted savefile'), then import it<br>This is mainly for fixing broken savefiles - don't be a cheater.]]></import_hover_special_tooltip>
-            <exportfile_button>Export File</exportfile_button>
-            <importfile_button>Import File</importfile_button>
+            <exportfile_button>导出为文件</exportfile_button>
+            <importfile_button>导入文件</importfile_button>
         </save>
         <faq>
             <meta>
@@ -1014,6 +1014,7 @@
         </assassinz1>
         <assassinz2>
             <story_1><![CDATA[<b>Target Assassinated:</b>⮀ You walked into the casino, looked around to check for cameras and killed someone in the storage room. You got the heart and left quickly before being spotted.]]></story_1>
+        </assassinz2>
         <assassinz3>
             <story_1><![CDATA[<b>Target Assassinated:</b>⮀ You climbed the Mountain and killed one of the yeti's for their heart, what they get for not selling snow cones.]]></story_1>
         </assassinz3>
