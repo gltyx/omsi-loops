@@ -1622,6 +1622,8 @@ Action.GatherHerbs = new Action("Gather Herbs", {
         switch (storyNum) {
             case 1:
                 return towns[1][`checked${this.varName}`] >= 1;
+            case 2:
+                return towns[1][`goods${this.varname}`] >= 500;
         }
         return false;
     },
@@ -1912,8 +1914,10 @@ Action.BrewPotions = new Action("Brew Potions", {
             case 1:
                 return storyReqs.potionBrewed;
             case 2:
-                return storyReqs.failedBrewPotions;
+                return storyReqs.brewed50PotionsInALoop;
             case 3:
+                return storyReqs.failedBrewPotions;
+            case 4:
                 return storyReqs.failedBrewPotionsNegativeRep;
         }
         return false;
@@ -1946,6 +1950,9 @@ Action.BrewPotions = new Action("Brew Potions", {
         addResource("potions", 1);
         handleSkillExp(this.skills);
         unlockStory("potionBrewed");
+        if (resources.potions >= 50) {
+            unlockStory("brewed50PotionsInALoop");
+        }
     },
 });
 
@@ -1957,6 +1964,14 @@ Action.TrainDexterity = new Action("Train Dexterity", {
         switch (storyNum) {
             case 1:
                 return storyReqs.dexterityTrained;
+            case 2:
+                return getTalent("Dex") >= 100;
+            case 3:
+                return getTalent("Dex") >= 1000;
+            case 4:
+                return getTalent("Dex") >= 10000;
+            case 5:
+                return getTalent("Dex") >= 100000;
         }
         return false;
     },
@@ -1989,6 +2004,14 @@ Action.TrainSpeed = new Action("Train Speed", {
         switch (storyNum) {
             case 1:
                 return storyReqs.speedTrained;
+            case 2:
+                return getTalent("Spd") >= 100;
+            case 3:
+                return getTalent("Spd") >= 1000;
+            case 4:
+                return getTalent("Spd") >= 10000;
+            case 5:
+                return getTalent("Spd") >= 100000;
         }
         return false;
     },
@@ -2065,6 +2088,14 @@ Action.BirdWatching = new Action("Bird Watching", {
         switch (storyNum) {
             case 1:
                 return storyReqs.birdsWatched;
+            case 2:
+                return getTalent("Per") >= 100;
+            case 3:
+                return getTalent("Per") >= 1000;
+            case 4:
+                return getTalent("Per") >= 10000;
+            case 5:
+                return getTalent("Per") >= 100000;
         }
         return false;
     },
@@ -2559,6 +2590,8 @@ Action.SellPotions = new Action("Sell Potions", {
                 return storyReqs.sell20PotionsInALoop;
             case 3:
                 return storyReqs.sellPotionFor100Gold;
+            case 4:
+                return storyReqs.sellPotionFor1kGold;
         }
         return false;
     },
@@ -2582,6 +2615,7 @@ Action.SellPotions = new Action("Sell Potions", {
         resetResource("potions");
         unlockStory("potionSold");
         if (getSkillLevel("Alchemy") >= 100) unlockStory("sellPotionFor100Gold");
+        if (getSkillLevel("Alchemy") >= 1000) unlockStory("sellPotionFor1kGold");
     },
 });
 
@@ -3121,6 +3155,14 @@ Action.ReadBooks = new Action("Read Books", {
         switch (storyNum) {
             case 1:
                 return storyReqs.booksRead;
+            case 2:
+                return getTalent("Int") >= 100;
+            case 3:
+                return getTalent("Int") >= 1000;
+            case 4:
+                return getTalent("Int") >= 10000;
+            case 5:
+                return getTalent("Int") >= 100000;
         }
         return false;
     },
@@ -3193,6 +3235,18 @@ Action.HeroesTrial = new TrialAction("Heroes Trial", 0, {
     type: "multipart",
     expMult: 0.2,
     townNum: 2,
+    storyReqs(storyNum) {
+        switch (storyNum) {
+            case 1:
+                return storyReqs.heroTrial1Done;
+            case 2:
+                return storyReqs.heroTrial10Done;
+            case 3:
+                return storyReqs.heroTrial25Done;
+            case 4:
+                return storyReqs.heroTrial50Done;
+        }
+    },
     varName: "HTrial",
     stats: {
         Dex: 0.11,
@@ -3225,6 +3279,10 @@ Action.HeroesTrial = new TrialAction("Heroes Trial", 0, {
     },
     floorReward() {
         if (this.currentFloor() >= getBuffLevel("Heroism")) addBuffAmt("Heroism", 1);
+        if (this.currentFloor() >= 1) unlockStory("heroTrial1Done");
+        if (this.currentFloor() >= 10) unlockStory("heroTrial10Done");
+        if (this.currentFloor() >= 25) unlockStory("heroTrial25Done");
+        if (this.currentFloor() >= 50) unlockStory("heroTrial50Done");
     },
     visible() {
         return towns[this.townNum].getLevel("Survey") >= 100;
@@ -3278,6 +3336,12 @@ Action.Underworld = new Action("Underworld", {
     type: "normal",
     expMult: 1,
     townNum: 2,
+    storyReqs(storyNum) {
+        switch(storyNum){
+            case 1:
+                return storyReqs.charonPaid;
+        }
+    },
     stats: {
         Cha: 0.5,
 		Per: 0.5
@@ -3305,6 +3369,7 @@ Action.Underworld = new Action("Underworld", {
     },
     finish() {
         unlockTown(7);
+        unlockStory("charonPaid")
     },
 });
 
@@ -3369,6 +3434,8 @@ Action.ManaGeyser = new Action("Mana Geyser", {
                 return towns[3][`good${this.varName}`] >= 1;
             case 2:
                 return towns[3][`good${this.varName}`] >= 10;
+            case 3:
+                return towns[3][`good${this.varName}`] >= 15;
         }
         return false;
     },
@@ -3462,6 +3529,8 @@ Action.Chronomancy = new Action("Chronomancy", {
                 return getSkillLevel("Chronomancy") >= 50;
             case 3:
                 return getSkillLevel("Chronomancy") >= 100;
+            case 4:
+                return getSkillLevel("Chronomancy") >= 1000;
         }
         return false;
     },
@@ -3543,6 +3612,8 @@ Action.Pyromancy = new Action("Pyromancy", {
                 return getSkillLevel("Pyromancy") >= 50;
             case 3:
                 return getSkillLevel("Pyromancy") >= 100;
+            case 4:
+                return getSkillLevel("Pyromancy") >= 1000;
         }
         return false;
     },
@@ -3627,6 +3698,8 @@ Action.MineSoulstones = new Action("Mine Soulstones", {
                 return towns[3][`good${this.varName}`] >= 1;
             case 3:
                 return towns[3][`good${this.varName}`] >= 30;
+            case 4:
+                return towns[3][`good${this.varName}`] >= 75;
         }
         return false;
     },
@@ -3777,6 +3850,8 @@ Action.TakeArtifacts = new Action("Take Artifacts", {
                 return towns[3][`good${this.varName}`] >= 1;
             case 2:
                 return towns[3][`good${this.varName}`] >= 20;
+            case 3:
+                return towns[3][`good${this.varName}`] >= 50;
         }
         return false;
     },
@@ -3816,6 +3891,10 @@ Action.ImbueMind = new MultipartAction("Imbue Mind", {
                 return storyReqs.imbueMindThirdSegmentReached || getBuffLevel("Imbuement") >= 1;
             case 2:
                 return getBuffLevel("Imbuement") >= 1;
+            case 3:
+                return getBuffLevel("Imbuement") >= 250;
+            case 4:
+                return getBuffLevel("Imbuement") >= 500;
         }
         return false;
     },
@@ -3870,6 +3949,19 @@ Action.ImbueBody = new MultipartAction("Imbue Body", {
     type: "multipart",
     expMult: 5,
     townNum: 3,
+    storyReqs(storyNum) {
+        switch (storyNum) {
+            case 1:
+                return storyReqs.imbueBodyThirdSegmentReached || getBuffLevel("Imbuement2") >= 1;
+            case 2:
+                return getBuffLevel("Imbuement2") >= 1;
+            case 3:
+                return getBuffLevel("Imbuement2") >= 250;
+            case 4:
+                return getBuffLevel("Imbuement2") >= 500;
+        }
+        return false;
+    },
     stats: {
         Dex: 0.1,
         Str: 0.1,
@@ -3971,6 +4063,12 @@ Action.Guru = new Action("Guru", {
     type: "normal",
     expMult: 1,
     townNum: 3,
+    storyReqs(storyNum) {
+        switch (storyNum) {
+            case 1:
+                return storyReqs.spokeToGuru;
+        }
+    },
     stats: {
         Cha: 0.5,
         Soul: 0.5
@@ -3995,6 +4093,7 @@ Action.Guru = new Action("Guru", {
     },
     finish() {
         unlockTown(4);
+        unlockStory("spokeToGuru");
     },
 });
 
