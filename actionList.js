@@ -3246,6 +3246,7 @@ Action.BuyPickaxe = new Action("Buy Pickaxe", {
 });
 
 Action.HeroesTrial = new TrialAction("Heroes Trial", 0, {
+    //50 floors
     type: "multipart",
     expMult: 0.2,
     townNum: 2,
@@ -5254,6 +5255,19 @@ Action.Meander = new Action("Meander", {
     type: "progress",
     expMult: 1,
     townNum: 5,
+    storyReqs(storyNum) {
+        switch(storyNum) {
+                case 1: return towns[5].getLevel("Meander") >= 1;
+                case 2: return towns[5].getLevel("Meander") >= 5;
+                case 3: return towns[5].getLevel("Meander") >= 10;
+                case 4: return towns[5].getLevel("Meander") >= 15;
+                case 5: return towns[5].getLevel("Meander") >= 25;
+                case 6: return towns[5].getLevel("Meander") >= 50;
+                case 7: return towns[5].getLevel("Meander") >= 75;
+                case 8: return towns[5].getLevel("Meander") >= 100;
+                case 9: return towns[5].getLevel("Meander") >= 1 && getBuffLevel("Imbuement") >= 100;
+        }
+    },
     stats: {
         Per: 0.2,
         Con: 0.2,
@@ -5286,6 +5300,13 @@ Action.ManaWell = new Action("Mana Well", {
     expMult: 1,
     townNum: 5,
     varName: "Wells",
+    storyReqs(storyNum) {
+        switch(storyNum) {
+                case 1: return storyReqs.wellDrawn;
+                case 2: return storyReqs.drew10Wells;
+                case 3: return storyReqs.drewDryWell;
+        }
+    },
     stats: {
         Str: 0.6,
         Per: 0.3,
@@ -5307,8 +5328,13 @@ Action.ManaWell = new Action("Mana Well", {
         towns[5].finishRegular(this.varName, 100, () => {
         let wellMana = Math.max(5000 - Math.floor(10 * effectiveTime), 0);
         addMana(wellMana);
+        if (wellMana === 0) 
+            unlockStory("drewDryWell");
+        else
+            unlockStory("wellDrawn");
         return wellMana;
         });
+        if (towns[5].goodWells >= 10) unlockStory("drew10Wells");
     },
 });
 function adjustWells() {
@@ -5322,6 +5348,13 @@ Action.DestroyPylons = new Action("Destroy Pylons", {
     expMult: 1,
     townNum: 5,
     varName: "Pylons",
+    storyReqs(storyNum) {
+        switch(storyNum) {
+                case 1: return towns[5].goodPylons >= 1;
+                case 2: return towns[5].goodPylons >= 10;
+                case 3: return towns[5].goodPylons >= 20;
+        }
+    },
     stats: {
         Str: 0.4,
         Dex: 0.3,
@@ -5349,6 +5382,12 @@ Action.RaiseZombie = new Action("Raise Zombie", {
     type: "normal",
     expMult: 1,
     townNum: 5,
+    storyReqs(storyNum) {
+        switch(storyNum) {
+                case 1: return storyReqs.attemptedRaiseZombie;
+                case 2: return storyReqs.failedRaiseZombie;
+        }
+    },
     stats: {
         Con: 0.4,
         Int: 0.3,
@@ -5373,6 +5412,7 @@ Action.RaiseZombie = new Action("Raise Zombie", {
         return getSkillLevel("Dark") >= 1000;
     },
     finish() {
+        unlockStory("attemptedRaiseZombie");
         handleSkillExp(this.skills);
         addResource("zombie", 1);
     },
@@ -5382,6 +5422,13 @@ Action.DarkSacrifice = new Action("Dark Sacrifice", {
     type: "normal",
     expMult: 1,
     townNum: 5,
+    storyReqs(storyNum) {
+        switch(storyNum) {
+                case 1: return getBuffLevel("Commune") >= 1;
+                case 2: return getBuffLevel("Commune") >= 100;
+                case 3: return getBuffLevel("Commune") >= 1000;
+        }
+    },
     stats: {
         Int: 0.2,
         Soul: 0.8
@@ -5415,6 +5462,17 @@ Action.TheSpire = new DungeonAction("The Spire", 2, {
     expMult: 1,
     townNum: 5,
     varName: "TheSpire",
+    storyReqs(storyNum) {
+        switch(storyNum) {
+            //TODO: decide on some reasonable/better floor requirements for progress stories.
+                case 1: return storyReqs.spireAttempted;
+                case 2: return towns[5].totalTheSpire >= 1000;
+                case 3: return towns[5].totalTheSpire >= 5000;
+                case 4: return storyReqs.clearedSpire;
+                case 5: return storyReqs.spire10Pylons;
+                case 6: return storyReqs.spire20Pylons;
+        }
+    },
     stats: {
         Str: 0.1,
         Dex: 0.1,
@@ -5466,6 +5524,11 @@ Action.PurchaseSupplies = new Action("Purchase Supplies", {
     type: "normal",
     expMult: 1,
     townNum: 5,
+    storyReqs(storyNum) {
+        switch(storyNum) {
+                case 1: return storyReqs.suppliesPurchased;
+        }
+    },
     stats: {
         Cha: 0.8,
         Luck: 0.1,
@@ -5495,9 +5558,17 @@ Action.PurchaseSupplies = new Action("Purchase Supplies", {
 });
 
 Action.DeadTrial = new TrialAction("Dead Trial", 4, {
+    //25 floors
     type: "multipart",
     expMult: 0.25,
     townNum: 5,
+    storyReqs(storyNum) {
+        switch(storyNum) {
+            case 1: return storyReqs.deadTrial1Done;
+            case 2: return storyReqs.deadTrial10Done;
+            case 3: return storyReqs.deadTrial25Done;
+        }
+    },
     stats: {
         Cha: 0.25,
         Int: 0.25,
@@ -5529,6 +5600,9 @@ Action.DeadTrial = new TrialAction("Dead Trial", 4, {
         return towns[this.townNum].getLevel("Survey") >= 100;
     },
     finish() {
+        if (this.currentFloor() >= 1) unlockStory("deadTrial1Done");
+        if (this.currentFloor() >= 10) unlockStory("deadTrial10Done");
+        if (this.currentFloor() >= 25) unlockStory("deadTrial25Done");
     },
 });
 
@@ -5536,6 +5610,11 @@ Action.JourneyForth = new Action("Journey Forth", {
     type: "normal",
     expMult: 2,
     townNum: 5,
+    storyReqs(storyNum) {
+        switch(storyNum) {
+                case 1: return townsUnlocked.includes(6);
+        }
+    },
     stats: {
         Con: 0.4,
         Per: 0.3,
@@ -6372,6 +6451,7 @@ Action.PurchaseKey = new Action("Purchase Key", {
 });
 
 Action.SecretTrial = new TrialAction("Secret Trial", 3, {
+    //1000 floors
     type: "multipart",
     expMult: 0,
     townNum: 7,
@@ -6544,6 +6624,7 @@ Action.BuildTower = new Action("Build Tower", {
 });
 
 Action.GodsTrial = new TrialAction("Gods Trial", 1, {
+    //100 floors
     type: "multipart",
     expMult: 0.2,
     townNum: 8,
@@ -6592,6 +6673,7 @@ Action.GodsTrial = new TrialAction("Gods Trial", 1, {
 });
 
 Action.ChallengeGods = new TrialAction("Challenge Gods", 2, {
+    //7 floors
     type: "multipart",
     expMult: 0.5,
     townNum: 8,

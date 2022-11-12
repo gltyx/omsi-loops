@@ -2534,6 +2534,15 @@
             <tooltip><![CDATA[
             This place seems familiar, and yet... not. Everything is twisted and wrong. Just being here hurts your head. You'll need to fortify your mind to make any progress here.<br>Gives exp equal to Imbue Mind level.
             ]]></tooltip>
+            <story_1><![CDATA[<b>1% Explored:</b>⮀ The gloomy darkness in this twisted copy of that town you were in so long ago is pulling on your mind, making it hard to focus as you drift aimlessly.]]></story_1>
+            <story_2><![CDATA[<b>5% Explored:</b>⮀ Given how it's the only source of light for apparently miles around, the glowing spire draws you to its base like a moth to a candleflame. Up close, you can feel the tell-tale tingle in your heart telling you there are a <i>lot</i> of soul stones in there.]]></story_2>
+            <story_3><![CDATA[<b>10% Explored:</b>⮀ Even though thinking makes your head spin, you're starting to notice a few things around this basically-dead town. For one, there are wells build over rapidly evaporating mana pools and for another is the <i>awful</i> little pylon you found in one house.]]></story_3>
+            <story_4><![CDATA[<b>15% Explored:</b>⮀ Knowing a little bit of Dark magic turns out to be quite useful: stumbling across a cemetary, you realize the conditions here are perfect for raising your personal Army Of The Dead! ...Assuming you have any idea how to, anyway.]]></story_4>
+            <story_5><![CDATA[<b>25% Explored:</b>⮀ The church you passed by is... not what it looks like, clearly. For one, you've felt the Touch of the Gods before, and this place feels like the polar opposite. Maybe you can have a chat with the Gods' less liked relatives here?]]></story_5>
+            <story_6><![CDATA[<b>50% Explored:</b>⮀ On your many aimless wanderings through the town, you occasionally hear the sound of a little bell; the kind you might find in a cash register. How strange, is there a supply salesman near here as well?]]></story_6>
+            <story_7><![CDATA[<b>75% Explored:</b>⮀ One thing you have noticed differs between this town and the one you reset to, is the location of the exit. As you wander, you occasionally catch a glimpse of a tower, just tall enough to be seen over the roofs. Maybe that's where you can leave town?]]></story_7>
+            <story_8><![CDATA[<b>100% Explored:</b>⮀ No matter how hard the town tried to confuse and mislead you, you're now pretty sure that you've got the entire layout memorized. It's still not a walk in the park, but at least you can now reliably make your way from your starting position to the stubby tower along the path out of town.]]></story_8>
+            <story_9><![CDATA[<b>Meandered with 100 Imbue Mind:</b>⮀ If you focus, you can still feel the gloom pull on your thoughts, but by this point it feels like a gentle breeze getting upset you won't dance like the leaves it carries.]]></story_9>
         </meander>
         <mana_well>
             <label>Mana Well</label>
@@ -2546,6 +2555,9 @@
             Full wells have 5000 mana, but lose 10 mana for every second that has passed in the loop.<br>
             Every 100 wells still has mana.
         ]]></tooltip>
+            <story_1><![CDATA[<b>Mana Well drained:</b>⮀ While the town is absolutely lousy with wells, so far all of them have already ran dry. This one still has a little, but you can tell it woulnd't last much longer as you drain it.]]></story_1>
+            <story_2><![CDATA[<b>10 Mana Wells with mana found:</b>⮀ Having scoured the entire town and marked all the wells, you've come to two conclusions: whatever source they drew from must have been running out for a while, and if you were as much as 10 minutes later, all of them would be bone dry. Good thing the loops start in the instant they do.]]></story_2>
+            <story_3><![CDATA[<b>Drawn from an empty well:</b>⮀ You're too late. As you try and pull any little droplet you can get, the well just stays every bit as empty as all the other ones around town. You resolve to pick up the pace and get here earlier, next time.]]></story_3>
         </mana_well>
         <destroy_pylons>
             <label>Destroy Pylons</label>
@@ -2556,18 +2568,26 @@
             <tooltip><![CDATA[
             There are strange pylons humming with energy in the abandoned buildings of this town. You're not sure why, but you feel compelled to break them.<br>Every 100 abandon buildings have 1 breakable plyon.<br>Reduces the mana cost of The Spire by 10% for each pylon destroyed.
         ]]></tooltip>
+            <story_1><![CDATA[<b>Pylon Destroyed:</b>⮀ As you pick up one of the Pylon's fragments, you wonder why you broke it. It didn't even feel particularly good, just like it had to be done. Shrugging, you put the fragment in your pocket. As a tropy.]]></story_1>
+            <story_2><![CDATA[<b>10 Pylons Destroyed:</b>⮀ The strange drive to smash those Pylons still lingers, even now that you've found and destroyed all that you can find in town. ...Maybe there are more after all, and it would be a good idea to go looking again when you have some new way of finding the blasted things.]]></story_2>
+            <story_3><![CDATA[<b>10 Pylons Destroyed:</b>⮀ You let out a sigh of relief while you pocket your twentieth tropy-fragment. With that last, frustratingly well-hidden Pylon down, the drive to seek and destroy finally quiets down. Now, the Spire beckons you, inviting you to reach its apex.]]></story_3>
         </destroy_pylons>
         <raise_zombie>
             <label>Raise Zombie</label>
             <tooltip><![CDATA[
             Upon stumbling by the local cemetery, you realize that those numerous tombstones could perhaps benefit you in ways besides acting as building materials. With your knowledge of dark magic and a hint of troll's blood, you might just be able to raise a zombie of your very own!<br>Costs 1 blood.<br>Each zombie adds (dark magic / 2) to your team combat.<br>Unlocked at 1000 dark magic.
         ]]></tooltip>
+            <story_1><![CDATA[<b>Zombie raised:</b>⮀ You swear the soul you plucked from the afterlife was crying as you forced it into the rotting corpse, but now it is entirely silent as the zombie sways a little in front of you.]]></story_1>
+            <story_2><![CDATA[<b>Zombie raising attempt failed:</b>⮀ No matter how hard you try, the soul you plucked leaks out of the dead body well before your magic can force it into moving. Without some Trolls' blood, you're not going to be able to raise anything.]]></story_2>
         </raise_zombie>
         <dark_sacrifice>
             <label>Dark Sacrifice</label>
             <tooltip><![CDATA[
             You make a sacrifice of troll's blood to dark gods.<br>Costs 1 blood.<br>Reduces the soulstone cost of dark ritual.<br>Unlocked at 60 dark ritual.
         ]]></tooltip>
+            <story_1><![CDATA[<b>Made a Dark Sacrifice:</b>⮀ The Dark Gods are a lot easier to reach in this world nearly without light, and you can feel their approval wash over you as you offer them the blood of an innocent creature, slain by your cruel hand. Maybe they'll accept a bit of haggling if you try a ritual now.]]></story_1>
+            <story_2><![CDATA[<b>100 Commune:</b>⮀ While the Dark Gods are still accepting your offerings, you can feel an undercurrent of boredom when you attempt the ritual now. Still, the discount to the number of Soul Stones you need for the other ritual is too good to pass up.]]></story_2>
+            <story_3><![CDATA[<b>1000 Commune:</b>⮀ Right as you finish the ritual, one of your Dark Masters manifests in front of you. You don't get a word in edgewise before he speaks up. "While we appreciate the free drinks, you really should stop this now. We'd rather have some Trolls left to drink later on, and you're going a long way to drive them extinct. Just give it a damn rest," he says before just disappearing into the puddle of freshly sacrificed blood.]]></story_3>
         </dark_sacrifice>
         <the_spire>
             <label>The Spire</label>
@@ -2593,13 +2613,19 @@
                 <name>Fight Dark Amalgamation</name>
                 <name>Cleanse Floor</name>
             </segment_names>
-            <!--TODO: give this action story-->
+            <story_1><![CDATA[<b>Spire attempted:</b>⮀ Even finding the entrance is something of a challenge, and it only gets worse as you make your way through the first floor of the Spire. If it wasn't for the bounty of Soul Stones surely waiting for you at the end, you wouldn't even have bothered.]]></story_1>
+            <story_2><![CDATA[<b>1000 floors looted:</b>⮀ The wild variations from loop to loop are starting to show their pattern to you, and you're beginning to figure out what kinds of changes can happen on the lower floors to the point where you can anticipate the worst of it. The spiders still get their webs all over your hair, though.]]></story_2>
+            <story_3><![CDATA[<b>5000 floors looted:</b>⮀ You no longer get lost in the Door Maze any more, the subtle hints hidden in the wood grain of the doors standing out as much as signposts to your well-trained eye. Doesn't make it any easier when you have to back-track at the end of each floor to ensure none of the beasts come back, though.]]></story_3>
+            <story_4><![CDATA[<b>20 floors cleared in a loop:</b>⮀ You pant as you slump into the convenient park bench waiting at the very top of the spire. While your bag is heavy with Soul Stones, you silently hope you won't have to do this too many times before you run out of things to spend those stones on. At least the town is now lit with a much less gloomy light.]]></story_4>
+            <story_5><![CDATA[<b>Spire challenged with 10 destroyed Pylons:</b>⮀ Looks like keeping a trophy from those delightfully fragile Pylons was the right call. Somehow, climbing the stairs is significantly less taxing, nor does the air in the higher floors drain you as much any more.]]></story_5>
+            <story_6><![CDATA[<b>Spire challenged with 20 destroyed Pylons:</b>⮀ The lower floors of the Spire are so welcoming to you now that you nearly trip an Explosive Rune, having forgotten for a moment that this is not the Small dungeon in Startington's brighter counterpart.]]></story_6>
         </the_spire>
         <purchase_supplies>
         <label>Buy Supplies</label>
             <tooltip><![CDATA[
             Prepare to move on.<br>Costs 500 gold.<br>This merchant doesn't seem to be willing to haggle with you though.<br>You only need one set of supplies.<br>
         ]]></tooltip>
+            <story_1><![CDATA[<b>Supplies bought:</b>⮀ Try as you might, the merchant seems completely deaf at your every attempt at haggling. While you aren't happy to part with half a thousand gold, you do so anyway and take your bundle of supplies. In retrospect, the fact that the merchant had nothing else for sale suggests business isn't going all that smoothly.]]></story_1>
         </purchase_supplies>
         <dead_trial>
             <label>Trial of the Dead</label>
@@ -2617,12 +2643,16 @@
                 <name>Avoid the Spikes</name>
                 <name>Transform the Dead</name>
             </segment_names>
+            <story_1><![CDATA[<b>Floor 1 completed:</b>⮀ Dungeon-crawling at a distance is a hassle, but watching one of your zombies get turned into undead shish-kebob very quickly convinces you this place isn't worth going in yourself. Besides, the corpse-filled alcoves just before the way down to the next floor let you refil (and then some) your army anyway.]]></story_1>
+            <story_2><![CDATA[<b>Floor 10 completed:</b>⮀ You can't help but feel that whoever made this place was looking into the future, what with how you always end up with exactly one more zombie than you started the floor with; whether you lose all but one or none at all, you've not even once got more than 1 additional zombie.]]></story_2>
+            <story_3><![CDATA[<b>Floor 25 completed:</b>⮀ With a sigh, you give your zombies a nod as they smash into the glowing sphere that's been ensuring this place is crawling with specters of every stripe for so very long. While having a larger workforce is nice and all, this still feels like a waste of time.]]></story_3>
         </dead_trial>
         <journey_forth>
             <label>Journey Forth</label>
             <tooltip><![CDATA[
             Follow the trail out of town. Anywhere has to be better than here. You think as you look at the looming Jungle ahead.<br>Costs 1 supplies.
         ]]></tooltip>
+            <story_1><![CDATA[<b>Journeyed out of town:</b>⮀ You adjust the straps of your backpack as you head out. While the town felt like it was dying by itself, the air around you starts to feel <i>hungry</i> as you make your way into the dense jungle rising before you.]]></story_1>
         </journey_forth>
         <!--town 7-->
         <fight_jungle_monsters>
@@ -2663,7 +2693,7 @@
             Costs 10 herbs and 1 blood.<br>
             Gives Gluttony exp equal to (Rescued Survivors * 5).
         ]]></tooltip>
-		<!--story action for You finish preparing the buffet but have nobody to share it with. You spot somebody sprinting through the area saying something about being too fast and offer to share the buffet with them. To your surprise they fanatically refuse the free meal, exclaiming they may never taste food-->>
+		<!--story action for You finish preparing the buffet but have nobody to share it with. You spot somebody sprinting through the area saying something about being too fast and offer to share the buffet with them. To your surprise they fanatically refuse the free meal, exclaiming they may never taste food-->
         </prepare_buffet>
         <totem>
             <label>Totem</label>

@@ -310,6 +310,19 @@ const storyReqs = {
     blessingSought: false,
     greatBlessingSought: false,
     feastAttempted: false,
+    wellDrawn: false,
+    drew10Wells: false,
+    drewDryWell: false,
+    attemptedRaiseZombie: false,
+    failedRaiseZombie: false,
+    spireAttempted: false,
+    clearedSpire: false,
+    spire10Pylons: false,
+    spire20Pylons: false,
+    suppliesPurchased: false,
+    deadTrial1Done: false,
+    deadTrial10Done: false,
+    deadTrial25Done: false,
 };
 
 const curDate = new Date();
