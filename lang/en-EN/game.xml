@@ -2663,7 +2663,17 @@
             Gives (self combat) * (1 + main stat / 100) * sqrt(1 + times completed / 1000) * (original mana cost / actual mana cost) progress points per mana.<br>
             Gives 1 blood per segment completed.
         ]]></tooltip>
-        </fight_jungle_monsters>
+            <story_1><![CDATA[<b>Jungle creature fought:</b>⮀ Finding something to fight is the easy part, as you quickly find yourself face to face with a <i>very</i> hungry giant frog! You ready your weapon while preparing for a tough fight; far too little space between the dense trees to fight alongside anyone else.]]></story_1>
+            <story_2><![CDATA[<b>Sloth slain:</b>⮀ You wince as you quickly patch up your wounds and take careful note for next time: while the giant sloth you just killed didn't look like much of a problem at first, those claws can do a lot of damage if you ignore them.]]></story_2>
+            <story_3><![CDATA[<b>Python slain:</b>⮀ That was one hell of a strange fight. Sure, finding a snake large enough to swallow a pig whole is par for the course here, but seeing it nudge a rusted-out birdcage with some bones inside around the entire time you were fighting made things a lot weirder.]]></story_3>
+            <story_4><![CDATA[<b>Okapi slain:</b>⮀ This creature didn't feel like it belonged here. It was constantly stumbling while you fought it, and while it charged you like its life depended on it, the blunt teeth in its mouth suggest it couldn't eat you even if it wanted to. What was going on in this place?!]]></story_4>
+            <story_5><![CDATA[<b>Jaguar slain:</b>⮀ Leaning against a tree, you keep a wary eye on the body of the large feline you just barely managed to hit with a heavy branch. While this creature seems like the kind of thing you'd expect around here, the way it stalked you makes you feel like you just got lucky in killing it.]]></story_5>
+            <story_6><![CDATA[<b>Anaconda slain:</b>⮀ You swear as you push the long, muscular body of the now-dead snake off of you. That last snake wasn't nearly as much of a problem as this one, but at least as weird with how you couldn't shake the knowledge that her name is Anna.]]></story_6>
+            <story_7><![CDATA[<b>Tiger slain:</b>⮀ The fight is over, but you're still shaking with the adrenaline from being jumped. This time, you're certain that the beast was stalking you for a while and specifically struck while you were distracted by a noise further into the jungle.]]></story_7>
+            <story_8><![CDATA[<b>Crocodile slain:</b>⮀ You shake your head while looking at the tough-skinned animal that tried to jump you while crossing a river. Note to self: Nowhere is safe, assume the trees themselves are just animals waiting to swallow you whole.]]></story_8>
+            <story_9><![CDATA[<b>Gorilla slain:</b>⮀ This fight felt different. All of the other beasts you've killed so far looked like they wanted you dead to eat, but this muscular ape felt a lot more malicious. As if it had taken grievous offense to you making eye contact...]]></story_9>
+            <story_10><![CDATA[<b>Elephant slain:</b>⮀ Something is extremely wrong. How did that massive beast even get into this jungle, let alone survive long enough to try and attack you too?! Whatever the case, that last kill must have set off some alarm bells for the other critters, because you hear trees getting uprooted and rocks smashed a little further in. Maybe it's time to leave, before you get stampeded over yourself.]]></story_10>
+            </fight_jungle_monsters>
         <explore_jungle>
             <label>Explore Jungle</label>
             <label_done>Explored</label_done>
@@ -2672,6 +2682,14 @@
             Gives progress based on Jungle Creatures Defeated.<br>
             Gives 1 herb.
         ]]></tooltip>
+            <story_1><![CDATA[<b>1% Explored:</b>⮀ Even after taking out the worst of the beasts making this Jungle their home, you constantly have to watch out for even the smallest movement in the corner of your eye as you explore.]]></story_1>
+            <story_2><![CDATA[<b>10% Explored:</b>⮀ If the vibe of the jungle was "hungry" as you approached it, being among the densely growing trees feels like you've been swallowed by some impossibly massive monster that is taking its sweet time digesting you.]]></story_2>
+            <story_3><![CDATA[<b>20% Explored:</b>⮀ You've heard far-off cries for help off and on again while you're mapping out this place, but now you know their source. Coming around a tree, you find yourself face-to-face with a haggard-looking man, who bolts between the trees his eyes lock with yours. Maybe you can help?]]></story_3>
+            <story_4><![CDATA[<b>40% Explored:</b>⮀ There is an odd irony to having a meal inside a jungle that's trying its level best to eat you, so you've gotten quite fond of organizing a small buffet for the people you've rescued. They all look like they can use a bite anyway.]]></story_4>
+            <story_5><![CDATA[<b>50% Explored:</b>⮀ While there are traces of civilisation and settlement spread all over the Jungle, finding the imposing totem in its small clearing was quite the surprise...]]></story_5>
+            <story_6><![CDATA[<b>60% Explored:</b>⮀ You have had your suspicions before, but now you're certain: the Jungle is actively trying to keep you from leaving! There was a path leading back to Startington, but barely a minute later the path is overgrown thicker than you can get through! ...good thing you just have to wait for your mana to run out in order to leave.]]></story_6>
+            <story_7><![CDATA[<b>80% Explored:</b>⮀ With every loop, you learn a little more about how the Jungle tries to keep you trapped, how even the most well-worn paths are drowned in foilage within minutes of your arrival. Getting through this place will be a matter of picking up the pace by a <i>lot</i>!]]></story_7>
+            <story_8><![CDATA[<b>100% Explored:</b>⮀ It took a lot of luck, but you're sure that you've found a way out! Up ahead, almost exactly directly across from your entry point to the Jungle, you can occasionally make out some muted sounds of a city! Making it there before the Jungle traps you is going to be a whole different matter, though.]]></story_8>
         </explore_jungle>
         <rescue_survivors>
             <label>Rescue Survivor</label>
@@ -2685,6 +2703,9 @@
                 <name>Help</name>
                 <name>Assure</name>
             </segment_names>
+            <story_1><![CDATA[<b>Survivor rescued:</b>⮀ You're not sure what the harder part of this operation was; finding the man, or convincing him that you were not going to eat him. Still, helping him recover a little from the many wounds he suffered makes you feel a little better.]]></story_1>
+            <story_2><![CDATA[<b>6 Survivors rescued in one loop:</b>⮀ The last person you managed to coax into joining you was a little girl. While her clothes were mostly intact and she did confirm she hadn't been in the Jungle for long, the mean gash on her arm would almost definitely have gotten infected if you hadn't helped.]]></story_2>
+            <story_3><![CDATA[<b>20 Survivors rescued in one loop:</b>⮀ By now, the sheer number of people following you as their rescuer is getting in the way of finding further survivors. You can still occasionally catch a glimpse of someone bolting away from you, but most of the time they don't let you get a word in edgewise out of fear you're going to eat them.]]></story_3>
         </rescue_survivors>
         <prepare_buffet>
             <label>Prepare Buffet</label>
@@ -2693,7 +2714,11 @@
             Costs 10 herbs and 1 blood.<br>
             Gives Gluttony exp equal to (Rescued Survivors * 5).
         ]]></tooltip>
-		<!--story action for You finish preparing the buffet but have nobody to share it with. You spot somebody sprinting through the area saying something about being too fast and offer to share the buffet with them. To your surprise they fanatically refuse the free meal, exclaiming they may never taste food-->
+        <story_1><![CDATA[<b>Prepared a Buffet:</b>⮀ Sure, the meat is a little on the thin side and the herbs quite bitter, but even a simple meal like that feels better than most you've had in your life. Somehow, you feel more hungry after you finish eating.]]></story_1>
+        <story_2><![CDATA[<b>Held a Buffet with a Rescued Survivor:</b>⮀ The man looks at the meal with poorly disguised suspicion. When you ask, he explains that it feels dangerous to eat, no matter how many times you promise the food is not poisonous or anything. Honestly, you thought he'd be wolfing it down the moment you gave him a plate. Oh well, more for you.]]></story_2>
+        <story_3><![CDATA[<b>Held a Buffet with 6 Rescued Survivors:</b>⮀ There still is a lot of wariness on everyone's faces, but watching the little girl dig into the meal like it's a feast for royalty motivates some more people to have a bite. Afterwards, they all ask for seconds too!]]></story_3>
+        <story_4><![CDATA[<b>10 Gluttony:</b>⮀ The food you manage to scrounge together is less and less filling, and you find yourself spending more and more time hunting for the sake of having something to eat. Maybe it's time to try and get something to eat from somewhere else?]]></story_4>
+        <story_5><![CDATA[<b>100 Gluttony:</b>⮀ Even as you stuff your face with every last morsel you can get your hands on, you feel emptier and emptier every time. You are so hungry, you could <i>genuinely</i> eat a horse.]]></story_5>
         </prepare_buffet>
         <totem>
             <label>Totem</label>
@@ -2704,21 +2729,27 @@
             Unlocked at 50% Jungle Explored.<br>
             Grants 100 Wunderkind exp.
         ]]></tooltip>
+        <story_1><![CDATA[<b>Drank a looping potion:</b>⮀ After saying a quick prayer that this won't outright undo all your progress to escape the loops, you lean your back against the totem and down the potion in one swig. Almost immediately, you feel <i>something</i> inside shift, as if the lowest you can be has gotten a lot higher!]]></story_1>
+        <story_2><![CDATA[<b>5 Wunderkind:</b>⮀ While you don't get the dramatic increase that first swig earned you any more, you can feel your mind getting a little clearer with every loop you fulfill the ritual and your understanding of the deeper mechanics of your abilities comes that much smoother too!]]></story_2>
+        <story_3><![CDATA[<b>60 Wunderkind:</b>⮀ You don't recall what loop you started doing so, but you've fallen into the habit of kneeling down and patting the head at the bottom of the totem after each looping potion you've drank. Stranger still, you're certain the face is smiling a lot brighter than the first time you found the totem...]]></story_3>
+        <story_4><![CDATA[<b>360 Wunderkind:</b>⮀ The totem is a familiar face to you now, and you even make a point of passing by it on the loops where you don't brew a looping potion. Whatever the reason it was placed there, you are happy it's there and you hope that it might bring some small relief to the many other people stuck in the Jungle.]]></story_4>
         </totem>
         <escape>
             <label>Escape</label>
             <tooltip><![CDATA[
-            The jungle seems to grow ever larger with every passing moment. You'll have to get out of here fast.<br>Must be started before 60 seconds have passed this loop (hover Mana Used for effective time.)
+            The Jungle seems to grow ever larger with every passing moment. You'll have to get out of here fast.<br>Must be started before 60 seconds have passed this loop (hover Mana Used for effective time.)
         ]]></tooltip>
+        <story_1><![CDATA[<b>Escaped successfully:</b>⮀ Your throat burns and sweat runs down the sides of your face as you sprint full-tilt through the Jungle, trying to reach the narrow gap between the trees before the thick vines chasing behind you can choke off the exit. Fearing you might not make it, you desparately <i>hurl</i> yourself forward... And land face-first on a dirt road as the treeline breaks abruptly. Staggering to your feet, you let out a sigh of relief before turning your attention to the city that fills Merchanton's place in this dark realm: Commerceville.]]></story_1>
         </escape>
         <open_portal>
             <label>Open Portal</label>
             <tooltip><![CDATA[
-            The Explorers' guild tells you of a secret grove within jungle, where the barrier between realms is weakest. With enough restoration skill, you might be able to open a rift back and leave the shadow realm. However, it seems a bit of time passes when you use the portal, and some merchants have closed up shop.<br>
+            The Explorers' guild tells you of a secret grove within the Jungle, where the barrier between realms is weakest. With enough restoration skill, you might be able to open a rift back and leave the shadow realm. However, it seems quite a bit of time passes in the portal, and some merchants have closed up shop.<br>
             Travels to Forest Path.<br>
             Buy Mana actions can not be used for the rest of the current loop.<br>
             Requires 1000 Restoration.
         ]]></tooltip>
+        <story_1><![CDATA[<b>Portal opened:</b>⮀ Despite the Veil being thin in this place, you still have to push quite a bit to get through. Whether it is due to the Gods trying to keep the Shadow Realm from invading or the simple physics of inter-realm travel, you can feel the hunger from the Jungle grow quiet as you approach the rippling portal you just created and step through to the forest on the other side. Looking at the sky, you're surprised to find that night is falling now!]]></story_1>
         </open_portal>
         <!--town 8-->
         <excursion>

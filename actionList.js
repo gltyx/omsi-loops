@@ -5653,6 +5653,19 @@ Action.ExploreJungle = new Action("Explore Jungle", {
     type: "progress",
     expMult: 1,
     townNum: 6,
+    varName: "ExploreJungle",
+    storyReqs(storyNum) {
+        switch(storyNum) {
+            case 1: return Towns[6].getLevel(this.varName) >= 1;
+            case 2: return Towns[6].getLevel(this.varName) >= 10;
+            case 3: return Towns[6].getLevel(this.varName) >= 20;
+            case 4: return Towns[6].getLevel(this.varName) >= 40;
+            case 5: return Towns[6].getLevel(this.varName) >= 50;
+            case 6: return Towns[6].getLevel(this.varName) >= 60;
+            case 7: return Towns[6].getLevel(this.varName) >= 80;
+            case 8: return Towns[6].getLevel(this.varName) >= 100;
+        }
+    },
     stats: {
         Per: 0.2,
         Con: 0.2,
@@ -5681,6 +5694,20 @@ Action.FightJungleMonsters = new MultipartAction("Fight Jungle Monsters", {
     expMult: 1,
     townNum: 6,
     varName: "FightJungleMonsters",
+    storyReqs(storyNum) {
+        switch(storyNum) {
+                case 1: return storyReqs.monsterGuildTestTaken;
+                case 2: return storyReqs.monsterGuildRankDReached;
+                case 3: return storyReqs.monsterGuildRankCReached;
+                case 4: return storyReqs.monsterGuildRankBReached;
+                case 5: return storyReqs.monsterGuildRankAReached;
+                case 6: return storyReqs.monsterGuildRankSReached;
+                case 7: return storyReqs.monsterGuildRankSSReached;
+                case 8: return storyReqs.monsterGuildRankSSSReached;
+                case 9: return storyReqs.monsterGuildRankUReached;
+                case 10: return storyReqs.monsterGuildRankGodlikeReached;
+        }
+    },
     stats: {
         Str: 0.3,
         Dex: 0.3,
@@ -5708,10 +5735,22 @@ Action.FightJungleMonsters = new MultipartAction("Fight Jungle Monsters", {
         handleSkillExp(this.skills);
     },
     segmentFinished() {
-    },
-    segmentFinished() {
         curFightJungleMonstersSegment++;
         addResource("blood", 1);
+        //Since the action stories are for having *slain* the beast,
+        //unlock *after* the last segment of the beast in question.
+        //I.e., the sloth fight is segments 6, 7 and 8, so the unlock
+        //happens when the 8th segment is done and the current segment
+        //is 9 or more.
+        if (curFightJungleMonstersSegment > 8) unlockStory("monsterGuildRankDReached");
+        if (curFightJungleMonstersSegment > 14) unlockStory("monsterGuildRankCReached");
+        if (curFightJungleMonstersSegment > 20) unlockStory("monsterGuildRankBReached");
+        if (curFightJungleMonstersSegment > 26) unlockStory("monsterGuildRankAReached");
+        if (curFightJungleMonstersSegment > 32) unlockStory("monsterGuildRankSReached");
+        if (curFightJungleMonstersSegment > 38) unlockStory("monsterGuildRankSSReached");
+        if (curFightJungleMonstersSegment > 44) unlockStory("monsterGuildRankSSSReached");
+        if (curFightJungleMonstersSegment > 50) unlockStory("monsterGuildRankUReached");
+        if (curFightJungleMonstersSegment > 56) unlockStory("monsterGuildRankGodlikeReached");
         // Additional thing?
     },
     getPartName() {
@@ -5727,29 +5766,31 @@ Action.FightJungleMonsters = new MultipartAction("Fight Jungle Monsters", {
         return true;
     },
     finish() {
+        unlockStory("monsterGuildTestTaken");
     },
 });
 function getFightJungleMonstersRank(offset) {
     let name = [
         "Frog",
         "Toucan",
-        "Sloth",
+        "Sloth",     //D
         "Pangolin",
-        "Python",
+        "Python",    //C
         "Tapir",
-        "Okapi",
+        "Okapi",     //B
         "Bonobo",
-        "Jaguar",
+        "Jaguar",    //A
         "Chimpanzee",
-        "Annaconda",
+        "Annaconda", //S
         "Lion",
-        "Tiger",
+        "Tiger",     //SS
         "Bear",
-        "Crocodile",
+        "Crocodile", //SSS
         "Rhino",
-        "Gorilla",
+        "Gorilla",   //U
         "Hippo",
-        "Elephant"][Math.floor(curFightJungleMonstersSegment / 3 + 0.00001)];
+        "Elephant"   //godlike
+    ][Math.floor(curFightJungleMonstersSegment / 3 + 0.00001)];
     const segment = (offset === undefined ? 0 : offset - (curFightJungleMonstersSegment % 3)) + curFightJungleMonstersSegment;
     let bonus = precision3(1 + 0.05 * Math.pow(segment, 1.05));
     if (name) {
@@ -5771,6 +5812,13 @@ Action.RescueSurvivors = new MultipartAction("Rescue Survivors", {
     expMult: 1,
     townNum: 6,
     varName: "Rescue",
+    storyReqs(storyNum) {
+        switch(storyNum) {
+                case 1: return storyReqs.survivorRescued;
+                case 2: return storyReqs.rescued6Survivors;
+                case 3: return storyReqs.rescued20Survivors;
+        }
+    },
     stats: {
         Per: 0.4,
         Dex: 0.2,
@@ -5795,6 +5843,9 @@ Action.RescueSurvivors = new MultipartAction("Rescue Survivors", {
     },
     loopsFinished() {
         addResource("reputation", 4);
+        unlockStory("survivorRescued");
+        if (towns[6].RescueLoopCounter >= 6) unlockStory("rescued6Survivors");
+        if (towns[6].RescueLoopCounter >= 20) unlockStory("rescued20Survivors");
     },
     getPartName() {
         return `${_txt(`actions>${getXMLName(this.name)}>label_part`)} ${numberToWords(Math.floor((towns[6].RescueLoopCounter + 0.0001) / this.segments + 1))}`;
@@ -5814,6 +5865,15 @@ Action.PrepareBuffet = new Action("Prepare Buffet", {
     type: "normal",
     expMult: 1,
     townNum: 6,
+    storyReqs(storyNum) {
+        switch(storyNum) {
+            case 1: return storyReqs.buffetHeld;
+            case 2: return storyReqs.buffetFor1;
+            case 3: return storyReqs.buffetFor6;
+            case 4: return getSkillLevel("Gluttony") >= 10;
+            case 5: return getSkillLevel("Gluttony") >= 100;
+        }
+    },
     stats: {
         Con: 0.3,
         Per: 0.1,
@@ -5842,6 +5902,9 @@ Action.PrepareBuffet = new Action("Prepare Buffet", {
     finish() {
         this.skills.Gluttony = Math.floor(towns[6].RescueLoopCounter * 5);
         handleSkillExp(this.skills);
+        unlockStory("buffetHeld");
+        if (towns[6].RescueLoopCounter >= 1) unlockStory("buffetFor1");
+        if (towns[6].RescueLoopCounter >= 6) unlockStory("buffetFor6");
     },
 });
 
@@ -5849,6 +5912,14 @@ Action.Totem = new Action("Totem", {
     type: "normal",
     expMult: 1,
     townNum: 6,
+    storyReqs(storyNum) {
+        switch(storyNum) {
+            case 1: return getSkillLevel("Wunderkind") >= 1;
+            case 2: return getSkillLevel("Wunderkind") >= 5;
+            case 3: return getSkillLevel("Wunderkind") >= 60;
+            case 4: return getSkillLevel("Wunderkind") >= 360;
+        }
+    },
     stats: {
         Con: 0.3,
         Per: 0.2,
@@ -5881,6 +5952,11 @@ Action.Escape = new Action("Escape", {
     type: "normal",
     expMult: 2,
     townNum: 6,
+    storyReqs(storyNum) {
+        switch(storyNum) {
+            case 1: return townsUnlocked.includes(7);
+        }
+    },
     stats: {
         Dex: 0.2,
         Spd: 0.8
@@ -5914,6 +5990,11 @@ Action.OpenPortal = new Action("Open Portal", {
     type: "normal",
     expMult: 1,
     townNum: 6,
+    storyReqs(storyNum) {
+        switch(storyNum) {
+            case 1: return storyReqs.portalOpened;
+        }
+    },
     stats: {
         Int: 0.2,
         Luck: 0.1,
