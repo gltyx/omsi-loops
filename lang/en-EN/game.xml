@@ -2761,6 +2761,14 @@
             Currently costs
             ]]></tooltip>
             <tooltip2>gold.</tooltip2>
+            <story_1><![CDATA[<b>1% Seen:</b>⮀ Finding someone to show you around town was looking to be a non-starter, until you flashed one of the (many) street urchins a few coins. Turns out just about everyone here will work for the right price.]]></story_1>
+            <story_2><![CDATA[<b>10% Seen:</b>⮀ One of the street urchins leads you past a slightly run-down but highly active building, with multiple people entering and leaving in the brief time you watch the front door. The Urchin (after a small fee) explains this is the Explorers' Guild, one of the few places here that values something besides money.]]></story_2>
+            <story_3><![CDATA[<b>25% Seen:</b>⮀ This loop, you decided to hire the urchin that <i>almost</i> managed to snatch some money from your pockets. By way of showing thanks, she eventually leads you to an out-of-sight door and tells you to let "The Boss" know that she sent you. When you ask her why she's showing you this, she just smiles and says you're the first one to even catch her. The Thieves' guild could use a sharp pair of eyes like that.]]></story_3>
+            <story_4><![CDATA[<b>40% Seen:</b>⮀ You've walked past the big building overseeing the marketplace almost every time you've been here. The urchins say that it's a place where rich people magically get richer, so maybe it's time you made a few (more) investments of your own.]]></story_4>
+            <story_5><![CDATA[<b>60% Seen:</b>⮀ As you get more familiar with the place, you start to notice how there always seems to be some kind of speech happening. You can't pinpoint where exactly the sound is coming from or even what it's about, and the street urchins just shrug when you ask.]]></story_5>
+            <story_6><![CDATA[<b>80% Seen:</b>⮀ You noticed a richly-dressed man pass by while your street urchin guide is tugging you along. The man must have a hole in one of his pockets, because your guide suddenly freezes before quickly darting around you to snatch up a coin before it can bounce a second time against the street's cobblestones. The man doesn't even seem to notice.]]></story_6>
+            <story_7><![CDATA[<b>100% Seen:</b>⮀ One story that comes up every now and then while you talk to your guides is how money is everything in this town, down to the town itself being (symbolically) for sale to anyone who can afford it. You've been keeping an eye out for any way to leave, maybe it's time to plan how you'll afford the steep cost...]]></story_7>
+            <story_8><![CDATA[<b>Went on an excursion as a local guildsmember:</b>⮀ You've been around town enough times to know where to find some street urchins that might be swayed to show you around, but this time the kid holds a hand up as you're about to pay him. "Guildmates don't steal from each other," he says in the most serious tone he can muster, while flashing his own guild-mark. He still accepts a few coins, but not as many as what he asked last loop.]]></story_8>
         </excursion>
         <explorers_guild>
             <label>Explorers' Guild</label>
@@ -2773,6 +2781,11 @@
             Unlocks new shortcuts for every 25% world survey progress<br>
             Current world survey progress: <div id='totalSurveyProgress'></div>%.
         ]]></tooltip>
+        <story_1><![CDATA[<b>Joined the Explorers' Guild:</b>⮀ While the building looks like it missed a few rounds of maintenence, the people inside are almost too eager to take you on once you tell them you passed through the Jungle. Apparently, adventurers capable of surviving harsh environments like that are always in short supply! Once your introduction is done and you've had your crash-course intro to cartography, the guildmaster all but kicks you out of the building while telling you to "go explore already!"]]></story_1>
+        <story_2><![CDATA[<b>Turned in a complete map:</b>⮀ The guildmaster, in his typical brusque manner, nearly tears the map as he snatches it from your hand and starts inspecting it. After a while though, he gives you a nod before rummaging through the mountain of paper on his desk, giving you a partial map of another place you've been. You commit as much of the details to memory before heading out again.]]></story_2>
+        <story_3><![CDATA[<b>Fully surveyed a zone:</b>⮀ Rather than snatching the map out of your hand, the guildmaster lets you hand it to him before he calmly, carefully studies it. "...Yeah, I think you're done with that spot. Keep up the good work," he mutters before once more tossing a few half-done maps your way as your "reward."]]></story_3>
+        <story_4><![CDATA[<b>Fully surveyed 4 zones:</b>⮀ While the guildmaster is a man of few words, the other guildmembers are a fair bit more talkative. You spend a little time just chatting with a few of them, exchanging hidden things you've seen and secrets they've found. You even learn a few secret tricks to make your travels easier and faster!]]></story_4>
+        <story_5><![CDATA[<b>Fully surveyed all zones:</b>⮀ You're pretty sure that you've seen the entire world in great detail by now, and that none of the places you know have any secrets left to find. As you walk through the Guild's entrance, the guildmaster makes eye contact with you before nodding once. As you give him your maps, he speaks up. "...Been a real pleasure having you. Hope you find what you're looking for, and let me know if you need the kind of thing that's not usually on the map." As you leave, you have a faint feeling that the guildmaster knows more about your situation than he lets on, but perhaps it's best to let sleeping dogs lie.]]></story_5>
         </explorers_guild>
         <thieves_guild>
             <label>Thieves Guild</label>
@@ -2780,6 +2793,15 @@
             <tooltip><![CDATA[
             Learn to transfer wealth to those most in need. You, mostly.<br>Take their tests and earn a rank!<br>Requires negative reputation.<br>You can only join 1 guild at a time (including from the light realm), and only try once.<br>Gives 10 gold per segment completed.<br>Gives (practical magic skill + thievery skill) * (1 + main stat / 100) * sqrt(1 + times completed / 1000) * (original mana cost / actual mana cost) progress points per mana.<br>Gives Thievery exp upon segment completion, rather than upon action completion.
         ]]></tooltip>
+            <story_1><![CDATA[<b>Thieves' guild test taken:</b>⮀ You make your way into the hidden guild your young "guide" brought you to last time and introduce yourself as a new recruit. The old yet intimidatingly muscular man in charge just grunts and demands you show your skills.]]></story_1>
+            <story_2><![CDATA[<b>Thief rank E reached:</b>⮀ While your experiences with the other guilds prepared you for this, it's clear you once again are starting from the bottom. "Stealing candy from a baby" isn't nearly as easy as you were led to believe previously.]]></story_2>
+            <story_3><![CDATA[<b>Thief rank D reached:</b>⮀ The man in charge still doesn't seem to care much about you, but at least he's stopped pointing out your errors for longer than it took you to complete the test this time.]]></story_3>
+            <story_4><![CDATA[<b>Thief rank C reached:</b>⮀ The boss gives you an approving nod after you manage to sneak a key from a hired guard's pocket. The guard in question grumbles something aobut how that would have cost her her job if she'd been employed anywhere else.]]></story_4>
+            <story_5><![CDATA[<b>Thief rank B reached:</b>⮀ You've tried your tests often enough that you're getting a good feel of how the guild works now, and while you still slip up occasionally and call a thief by their name before they've introduced themselves, the boss now trusts you enough to send you on bigger hits.]]></story_5>
+            <story_6><![CDATA[<b>Thief rank A reached:</b>⮀ You got overconfident this time. Knowing the guild as well as you do, you snuck in unnoticed, intending to dramatically introduce yourself. While the Boss was impressed, he still sent you out on a mission with a bunch of bumbling newcomers, and you only barely managed to keep them from blowing up the entire heist.]]></story_6>
+            <story_7><![CDATA[<b>Thief rank S reached:</b>⮀ All your thieving over the last bunch of loops definitely taught you the value of subtlety and restraint. While you no longer try to impress with big stunts, the Boss was <i>very</i> impressed that you managed to steal the hat off his head, unnoticed.]]></story_7>
+            <story_8><![CDATA[<b>Thief rank U reached:</b>⮀ You've stolen the spotlight. Right in the middle of a major performance, and nobody noticed until the big solo ten minutes after you escaped the theatre. Along with <i>every</i> last wallet from the audience. Not bad for a solo run.]]></story_8>
+            <story_9><![CDATA[<b>Thief rank Godlike reached:</b>⮀ Technically speaking, you own the guild. The Boss still runs the day-to-day details, but ever since you managed to steal the entire contents of his office <i>while he was in it,</i> he's admitted you're the better thief between the two of you. Honestly, not having to worry about the minutae of guild leadership suits you well enough.]]></story_9>
         </thieves_guild>
         <pick_pockets>
             <label>Pick Pockets</label>
@@ -2791,6 +2813,13 @@
             Rewards
         ]]></tooltip>
         <tooltip2>gold, multiplied by your Thieves guild multiplier.</tooltip2>
+            <story_1><![CDATA[<b>1% of pockets picked:</b>⮀ Picking your first target is kind of tricky, honestly. Eventually, you settle on a practically passed-out drunk. He takes a swing at you when he notices your hand in his pocket, but dodging it isn't difficult.]]></story_1>
+            <story_2><![CDATA[<b>10% of pockets picked:</b>⮀ Bit by bit, you're getting the hang of picking your targets. This time, you try to pick a rich-looking guy. He doesn't notice, but his bodyguards do and you barely manage to shake them off in the maze of alleyways.]]></story_2>
+            <story_3><![CDATA[<b>20% of pockets picked:</b>⮀ It's crystal clear to you that picking pockets is the most common kind of criminal activity in this area. More than once, you have to spend more attention making sure you don't get your own pockets picked while finding a mark.]]></story_3>
+            <story_4><![CDATA[<b>40% of pockets picked:</b>⮀ You're finally feeling like you got the hang of this. Looting the pockets of drunks rarely gets you noticed any more, and your fellow guildmembers are starting to teach you the tricks of the trade now.]]></story_4>
+            <story_5><![CDATA[<b>60% of pockets picked:</b>⮀ To properly pick a rich guy's pocket, you really have to pay more attention to the body guards than the guy himself. With how oblivious some of the walking wealth in this town is, you figure a good bodyguard is worth their weight in gold. You idly wonder if you've stolen a bodyguard's weight in gold so far.]]></story_5>
+            <story_6><![CDATA[<b>80% of pockets picked:</b>⮀ More out of boredom than anything else, you try your hand at picking the pockets of a rich guy's bodyguards. Unsurprisingly, they notice, and you only barely make it out without having your fingers snapped, but more importantly: you've learned that indeed, the bodyguards are well-paid.]]></story_6>
+            <story_7><![CDATA[<b>100% of pockets picked:</b>⮀ After cashing in your latest haul of odds and ends people keep in their pockets, you decide to treat yourself and head to a tavern. While you enjoy the fruits of your labours, you overhear someone brag how their caravan has just delivered a load of expensive fabrics to their warehouse. Maybe it's time to diversify your thieving expertise...]]></story_7>
         </pick_pockets>
         <rob_warehouse>
             <label>Rob Warehouse</label>
@@ -2802,6 +2831,13 @@
             Rewards
         ]]></tooltip>
         <tooltip2>gold, multiplied by your Thieves guild multiplier.</tooltip2>
+            <story_1><![CDATA[<b>1% of warehouses robbed:</b>⮀ Your first attempt was an unmitigated disaster. Unlocking the door took ages, you had no way to grab most of the loot, and the warehouse guards nearly managed to grab you. All that, and you only managed to grab a few small knicknacks.]]></story_1>
+            <story_2><![CDATA[<b>10% of warehouses robbed:</b>⮀ This time, you spend a while practicing your lockpicking before you try again. The guard still spots you though, and you have to leave most of the loot in-place, but at least you got a better haul this time.]]></story_2>
+            <story_3><![CDATA[<b>20% of warehouses robbed:</b>⮀ Since the guard has been a wrench in your plans every time, you make sure to knock him out on this trip. His patrol route is the same every loop anyway, so sneaking up from behind isn't much of a problem.]]></story_3>
+            <story_4><![CDATA[<b>40% of warehouses robbed:</b>⮀ You convinced a few of your guildmates to help you out this time. While you're still doing most of the work yourself, having a few extra hands to carry the loot out means that you practically clear the warehouse's various valuables before the guard gets back up!]]></story_4>
+            <story_5><![CDATA[<b>60% of warehouses robbed:</b>⮀ The Boss has gotten wind of your ability to coordinate an effective warehouse robbery, and insists that you get involved in a larger heist: one of the trading companies is going to hold an art auction soon, and the Boss wants a few pieces "cheaply." The warehouse is a lot better protected, though...]]></story_5>
+            <story_6><![CDATA[<b>80% of warehouses robbed:</b>⮀ Scoping out the auction's warehouse confirms your suspicions. Dozens of guards, entrances that are under magical protection, even the lots themselves are bolted to the floor in several cases! Still, you plot and plan until finally, you've got your game plan <i>and</i> a crew that can pull it off!]]></story_6>
+            <story_7><![CDATA[<b>100% of warehouses robbed:</b>⮀ The heist was almost as much of a mess as your very first, but with one key difference: you made off with almost every last lot in the auction's catalog! One of your crewmembers expresses his concerns that the trading company will be out for blood, but the Boss insists that it's all insured so they'll get their money. ...Insurance, huh? Wonder if you could get in on that racket as well...]]></story_7>
         </rob_warehouse>
         <insurance_fraud>
             <label>Insurance Fraud</label>
@@ -2812,7 +2848,14 @@
             Can be completed <div id='actionAllowedInsurance'>x</div> times based on excursion progress and spatiomancy.<br>
             Rewards
         ]]></tooltip>
-        <tooltip2>gold, multiplied by your Thieves guild multiplier.</tooltip2>
+            <tooltip2>gold, multiplied by your Thieves guild multiplier.</tooltip2>
+            <story_1><![CDATA[<b>1% of fraud committed:</b>⮀ As per usual, your first attempts run into a few snags. More specifically, the insurance company is immediately suspicious that someone who signed up with them three minutes ago immediately has damages to declare, and only your silver tongue keeps them off your back until the end of the loop.]]></story_1>
+            <story_2><![CDATA[<b>10% of fraud committed:</b>⮀ Slowly but surely, you're getting a little smarter. This time around, your insurance agent gives you a suspicious glare before handing over the agreed-upon sum after you put on a sob story of how you were beaten up right in front of the office and had your watch stolen! If anything, it's a little scary how eager your fellow guildmembers are to knock your teeth out.]]></story_2>
+            <story_3><![CDATA[<b>20% of fraud committed:</b>⮀ You had a realization during the planning phase of this loop's fraud: If the insurance company gets suspicious due to insured items suffering damage within a day, then the "obvious" solution is to do a little impersonation and cut with both sides of the knife. Your guildmates snatch the priceless artifacts, then you convince the insurers that yes, <i>you</i> are in fact the owner and should be compensated. Now just to get better at disguising yourself.]]></story_3>
+            <story_4><![CDATA[<b>40% of fraud committed:</b>⮀ While stealing entire buildings is not quite an option, there is a lot of money to be made by 'informing' rivaling trading companies that the other group is working with the thieves that fleeced them last week, and that they won't get their stuff back because the Guard's been bought. Sure, none of them are exactly <i>happy</i> with it, but they're all to eager to pay you for the information once you sweeten the deal with the patrol schedules, and snatching up some insurance claims once the rival warehouse has burned down is a nice bonus too.]]></story_4>
+            <story_5><![CDATA[<b>60% of fraud committed:</b>⮀ While drinking tea with the elderly man, you idly wonder just how much your moral compass has drifted over the last couple of loops. As a courier, you had a strict moral code regarding not taking what isn't yours, but here you are. The man in question has been put in a hairy situation by his insurance company, and is now discussing how to get revenge. You don't really care about the particulars, but the last few loops have been very profitable thanks to the old man's involvement.]]></story_5>
+            <story_6><![CDATA[<b>75% of fraud committed:</b>⮀ You were in the process of concocting a scheme where you take out a life insurance on someone and then have them killed, when one of your guildmates bluntly tells you that she won't be helping you with something so "suicidally stupid." Pressing her for a bit, you learn that there is a certain "secret" guild in town that handles murder and assassination, who are none to eager to let some upstart start killing without paying their guild dues...]]></story_6>
+            <story_7><![CDATA[<b>100% of fraud committed:</b>⮀ The biggest problems in defrauding an insurance company are always related to making sure you don't get caught in a lie, so you've taken to visiting their officess off-hours and making some adjustments to some of the documentation related to your cases. This time however, you spot a folder you haven't seen before in the insurance company's director's office. It's a thin, black folder simply labled <i>in case of problems</i>. Inside, you find contact information for the Assassin's guild. You try not to think why an insurance company would need such a thing as you sneak away.]]></story_7>
         </insurance_fraud>
         <guild_assassin>
             <label>Assassins Guild</label>
@@ -2821,6 +2864,12 @@
                 Gives Assassin exp equal to 100 * hearts^2.<br>
                 Unlocked at 100% Insurance Fraud.
             ]]></tooltip>
+            <story_1><![CDATA[<b>Joined the Assassin's guild:</b>⮀ You grit your teeth as you sneak around in the sewage tunnel that connects to the city harbour. Turning a corner, you get to see the entrance to the Guild for less than a second before someone's got a knife pressed to your throat and demands you explain how you found this place. Joining the Assassin's guild definitely is going to be your largest achievement in smooth-talking to date, but by the end of it all you walk out with a list of targets in hand, several lessons in how to keep a heart beating outside of its body and a still-hurting brand under your armpit.]]></story_1>
+            <story_2><![CDATA[<b>Delivered a heart:</b>⮀ The guard, unable to remember you between loops, is quite suspicious that you made your way back here, but once you show the beating heart in your hands is a lot more eager to let you in. You're rewarded well for carrying out a mission they didn't even know they gave you, and while getting branded <i>again</i> still hurts to the high heavens, you're definitely getting into the swing of things.]]></story_2>
+            <story_3><![CDATA[<b>Completed assassinations in 4 zones:</b>⮀ While you make your way to the guild's hideout, you muse on how you've managed to hunt down half the targets on the original list. Of course, with each kill in a loop, it gets harder to sneak up on the other targets. Looks like they have more of a connection than they seemed at first glance...]]></story_3>
+            <story_4><![CDATA[<b>Delivered four hearts in one loop:</b>⮀ You remember to give the guard the keyword this time around, and while you still get your guild-brand, at least the head assassin is impressed both by your uncanny ability to stay out of their notice <i>and</i> deal with some of their more far-flung targets.]]></story_4>
+            <story_5><![CDATA[<b>Completed assassinations in all zones:</b>⮀ Having landed a hit on every target on your list, you briefly reflect on how little guilt you feel for the plentiful murders you have committed over the course of your "career" with the assassin's guild. In any case, you carefully and thoroughly plot how you're going to pull off the final challenge this guild has to offer you: killing all eight targets in a single loop, without getting caught.]]></story_5>
+            <story_6><![CDATA[<b>Delivered eight hearts in one loop:</b>⮀ The head assassin takes a few moments to triple-check that the hearts are, in fact, the targets' hearts and not from some unfortunate schmucks left dead in an alleyway. Eventually, they get up and gesture to the side. Barely a word is exchanged the entire time, but shortly after you walk out of the hideout with a hefty sum of money and a <i>very</i> fancy wrist-mounted, automatically retracting and extending blade. Real shame you had to leave your ringfinger behind though.]]></story_6>
         </guild_assassin>
         <invest>
             <label>Invest</label>
@@ -2828,6 +2877,11 @@
             Invest into the perpetual bank. The interest it makes should be available to you in the future.<br>
             Total gold invested: <div id='goldInvested'></div>
         ]]></tooltip>
+            <story_1><![CDATA[<b>Made an investment:</b>⮀ The investment bank is, in a word, gaudy. White and marble everywhere, seats that somehow make you feel like you're sitting on an emperor's throne, the whole nine yards. The ]]></story_1>
+            <story_2><![CDATA[<b>Made a second investment:</b>⮀ When you make your way into the gaudy building, ready to open a new account (again,) the cleric gives you a strange look before informing you that you already have an account. Seems like the name <i>perpetual</i> bank isn't just for show.]]></story_2>
+            <story_3><![CDATA[<b>Invested 1,000,000 gold:</b>⮀ By now, you're getting used to the shiny gold the bank has absolutely everywhere as you go about your business. The staff is treating you a little nicer, and some even ask for your name every now and then.]]></story_3>
+            <story_4><![CDATA[<b>Invested 1,000,000,000 gold:</b>⮀ You ask the cleric just how much you've invested, and you're briefly taken aback by the number you're given. A bit of back-of-an-envelope math says you could have bought a castle for that much money! Oh well, at least you get interest.]]></story_4>
+            <story_5><![CDATA[<b>Invested 999,999,999,999 gold:</b>⮀ The cleric double-takes as you drop by with yet another bag of jingling gold. "My most sincere apologies, dear client, but... You have maxed out your account," the cleric tells you before quickly explaining that, if the bank would accept more, they'd run out of vault space in hours. Looks like you can stop investing now.]]></story_5>>
         </invest>
         <collect_interest>
             <label>Collect Interest</label>
@@ -2836,6 +2890,10 @@
             Gives 0.1% of your total gold invested.<br>
             Current interest: <div id='bankInterest'></div>
         ]]></tooltip>
+            <story_1><![CDATA[<b>Interest collected:</b>⮀ Being on the other side of the transaction doesn't make the bank look any less gaudy, but the money is nice to get.]]></story_1>
+            <story_2><![CDATA[<b>1,000 gold collected in one loop:</b>⮀ While it's nice to get a grand "for free," you feel that the investment you made should entitle you to more.]]></story_2>
+            <story_3><![CDATA[<b>1,000,000 gold collected in one loop:</b>⮀ A million gold noisily rattles in your luggage as you leave the bank. By now, finding a place to <i>use</i> the money has become a bigger problem than getting it...]]></story_3>
+            <story_4><![CDATA[<b>999,999,999 gold collected in one loop:</b>⮀ You're surprised to find that the bank apparently has dedicated servants, just to carry the money of their richest clients! The guy doesn't say much, but you're glad you don't have to break your own back carrying nearly a billion gold.]]></story_4>
         </collect_interest>
         <seminar>
             <label>Seminar</label>
@@ -2843,6 +2901,10 @@
             You can buy entrance to a motivational seminar - learn to be your best self and make people love you. You're pretty sure turning back time is the only way you can get off these people's mailing list.<br>Costs
         ]]></tooltip>
         <tooltip2>gold.</tooltip2>
+        <story_1><![CDATA[<b>Attended seminar:</b>⮀ You reflect on all you've heard at the seminar. A lot of it just came across to you as useless grandstanding by the organiser, sure, but something about <i>how</i> he spoke kept you from losing focus. A useful skill to train, perhaps.]]></story_1>
+        <story_2><![CDATA[<b>Attended with 10 leadership:</b>⮀ Even now that you've seen him a few times, you have to admit that the man in charge at the seminar is damn good at what he does. Little by little, you're making those skills your own; you're sure you'll find a use for them once you're out of the loops.]]></story_2>
+        <story_3><![CDATA[<b>Attended with 100 leadership:</b>⮀ By now, the seminar leader looks up as you enter the room, but the moment of enchantment doesn't last. Still, you smirk to yourself as you notice the little tells of frustration as he realizes he's not the absolute center of attention any more.]]></story_3>
+        <story_4><![CDATA[<b>Attended with 1000 leadership:</b>⮀ It's automatic now. You walk into the room and take off your coat, blindly tossing it to the side where someone is already waiting to catch it despite not even knowing your name (this loop) five seconds ago. You amuse yourself taking over the seminar, confident that even the leader cannot deny the air of <i>Leadership</i> you wear like a cloak.]]></story_4>
         </seminar>
         <purchase_key>
             <label>Purchase Key</label>
@@ -2850,6 +2912,7 @@
             With enough money, you can buy the town itself. Then they'll <i>have</i> to let you out.<br>Costs
         ]]></tooltip>
         <tooltip2>gold.</tooltip2>
+        <story_1><![CDATA[<b>Key bought:</b>⮀ You smile as you shake the former mayor's hand, your free hand holding on to the ornate, clearly ceremonial key you just bought. While all the pomp and circumstance doesn't change your mind on leaving this place as soon as you can, you do enjoy the looks ranging from minor annoyance at having the key to town snatched out from under their nose to admiration that a newcomer could rise the ranks so very quickly. You're sure the novelty will wear off in a loop or five.]]></story_1>
         </purchase_key>
         <secret_trial>
             <label>Trial of Vanity</label>
@@ -2860,6 +2923,12 @@
             There is a crowd watching as you and your team step up to the trial, and you're pretty sure some bets are made against you.<br> 
             Rewards +1 Bragging Rights.
         ]]></tooltip>
+        <story_1><![CDATA[<b>Faced the Trial of Vanity:</b>⮀ For a long time, you've heard of a "special trial" for the most "stubborn and determined souls," and now you've finally found it: the Trial of Vanity. You can't see the faces of the crowd as you and your team head out to face the gruelling challenge head on!]]></story_1>
+        <story_2><![CDATA[<b>Defeated the Entity:</b>⮀ You pant for breath as the unspeakable, incomprehensible <i>thing</i> finally stops moving in a slouched-over heap at your feet, all while the crowd goes absolutely <i>wild</i> over your victory. You're about to start your obligatory "I know I'm awesome" speech when you see the Hydra you fought earlier stand up, the wounds you inflicted closing on their own as it roars at you in defiance. ...Oh well, did it before, can do it again.]]></story_2>
+        <story_3><![CDATA[<b>Defeated the Entity 10 times in one loop:</b>⮀ Your mounting annoyance at having that big <i>jerk<\i> of an Ice Titan just stand up from the puddle you melted it into is actively fighting the frustration of having those Behemoths repeatedly ruin your clothes with their blood.]]></story_3>
+        <story_4><![CDATA[<b>Defeated the Entity 100 times in one loop:</b>⮀ You scream a wordless howl of rage at that smug Lich King <i>yet again</i> grabbing his own head and jamming it back on his neck while the Entity slowly but surely reconstitutes behind you. It wouldn't be such an annoyance if the bastards didn't insist on getting stronger with every kill, but you can't stop now!]]></story_4>
+        <story_5><![CDATA[<b>Defeated the Entity 500 times in one loop:</b>⮀ The arena has become a blur before your eyes, only your teammates standing out clearly against the increasingly indistinct crowd. Still, the cheers and jeers manage to fill your ears over the deafening roar of the Red Dragonborn, urging you to keep going.]]></story_5>
+        <story_6><![CDATA[<b>Defeated the Entity 1000 times in one loop:</b>⮀ Is it the fact that the crowd has turned into a psychedelic blur of colours and swirls? The realization that you've been cutting down outer gods for hours now? Or is the fatigue finally pushing through whatever enchantment has been messing with your head this entire time? Whatever the case, when the Entity is once again laying at your feet, you ready your weapon for the final blow... And then just turn your back and head for the exit. A trail of Vanity, you reflect as you tell your teammates to head out, can only end when you're ready to let go of it. Not like you got anything for all the trouble, anyway.]]></story_6>
  		<segment_names>
                 <name>Fight Hydra</name>
                 <name>Fight Cthulhu</name>
@@ -2877,6 +2946,7 @@
             <tooltip><![CDATA[
             These people are wolves, it's time to get out of here.<br>Requires the Key to the City.
         ]]></tooltip>
+        <story_1><![CDATA[<b>Left the City:</b>⮀ While the Key to the City still looks like a gaudy prop, you're surprised to find that it actually works as a key on exactly one door: The tiny back door in the city walls with a lock that looks bigger than the door itself! Whatever the reason to put such imposing security on the single exit (other than the now entirely impermeable jungle) out of the City, you persevere as you head down the track heading towards where you expected to see a mountain. Strangely enough, you can't see any mountain peaks on the horizon...]]></story_1>
         </leave_city>
         <!--town 9-->
         <imbue_soul>

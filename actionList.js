@@ -6032,6 +6032,18 @@ Action.Excursion = new Action("Excursion", {
     type: "progress",
     expMult: 1,
     townNum: 7,
+    storyReqs(storyNum) {
+        switch(storyNum) {
+            case 1: return towns[7].getLevel("Excursion") >= 1;
+            case 2: return towns[7].getLevel("Excursion") >= 10;
+            case 3: return towns[7].getLevel("Excursion") >= 25;
+            case 4: return towns[7].getLevel("Excursion") >= 40;
+            case 5: return towns[7].getLevel("Excursion") >= 60;
+            case 6: return towns[7].getLevel("Excursion") >= 80;
+            case 7: return towns[7].getLevel("Excursion") >= 100;
+            case 8: return storyReqs.excursionAsGuildmember;
+        }
+    },
     stats: {
         Per: 0.2,
         Con: 0.2,
@@ -6056,6 +6068,7 @@ Action.Excursion = new Action("Excursion", {
         return (guild === "Thieves" || guild === "Explorer") ? 2 : 10;
     },
     finish() {
+        if (guild === "Thieves" || guild === "Explorer") unlockStory("excursionAsGuildmember");
         towns[7].finishProgress(this.varName, 50 * (resources.glasses ? 2 : 1));
         addResource("gold", -1 * this.goldCost());
     }
@@ -6080,9 +6093,21 @@ function adjustInsurance() {
 }
 
 Action.ExplorersGuild = new Action("Explorers Guild", {
+    //Note: each time the 'survey' action is performed, one 'map' is exchanged for a 
+    //'completed map'; not just when a zone is 100% surveyed.
     type: "normal",
     expMult: 1,
     townNum: 7,
+    storyReqs(storyNum) {
+        zonesDone = fullyExploredZones();
+        switch(storyNum) {
+            case 1: return storyReqs.explorerGuildTestTaken;
+            case 2: return storyReqs.mapTurnedIn;
+            case 3: return zonesDone >= 1;
+            case 4: return zonesDone >= 4;
+            case 5: return zonesDone >= towns.length;
+        }
+    },
     stats: {
         Per: 0.3,
         Cha: 0.3,
@@ -6105,14 +6130,26 @@ Action.ExplorersGuild = new Action("Explorers Guild", {
         return towns[7].getLevel("Excursion") >= 10;
     },
     finish() {
+        unlockStory("explorerGuildTestTaken");
         if (getExploreSkill() == 0) towns[this.townNum].finishProgress("SurveyZ"+this.townNum, 100);
         if (resources.map === 0) addResource("map", 30);
-        if (resources.completedMap > 0) exchangeMap();
+        if (resources.completedMap > 0) {
+            exchangeMap();
+            unlockStory("mapTurnedIn");
+        }
         guild = "Explorer";
         view.requestUpdate("adjustGoldCost", {varName: "Excursion", cost: Action.Excursion.goldCost()});
     }
 });
+function fullyExploredZones() {
+    let fullyExplored = 0;
+    towns.forEach((town, index) => {
+        if (town.getLevel(`SurveyZ${index}`) == 100) fullyExplored++;
+    })
+    return fullyExplored;
+}
 function getExploreProgress() {
+    //ExploreProgress == mean of all zones' exploration progress, rounded down.
     let totalExploreProgress = 0;
     towns.forEach((town, index) => {
         if (town.getLevel("SurveyZ"+index)) totalExploreProgress += town.getLevel("SurveyZ"+index);
@@ -6128,6 +6165,8 @@ function exchangeMap() {
     towns.forEach((town, index) => {
         if (town.getLevel("Survey") < 100) unfinishedSurveyZones.push(index);
     });
+    //For each completed map, give 2*ExploreSkill survey exp to a random unfinished zone's
+    //survey progress (if no unfinished zones remain, skip all of this.)
     while (resources.completedMap > 0 && unfinishedSurveyZones.length > 0) {
         let rand = unfinishedSurveyZones[Math.floor(Math.random() * unfinishedSurveyZones.length)];
         let name = "expSurveyZ"+rand;
@@ -6148,6 +6187,19 @@ Action.ThievesGuild = new MultipartAction("Thieves Guild", {
     expMult: 2,
     townNum: 7,
     varName: "ThievesGuild",
+    storyReqs(storyNum) {
+        switch(storyNum) {
+            case 1: return storyReqs.thiefGuildTestsTaken;
+            case 2: return storyReqs.thiefGuildRankEReached;
+            case 3: return storyReqs.thiefGuildRankDReached;
+            case 4: return storyReqs.thiefGuildRankCReached;
+            case 5: return storyReqs.thiefGuildRankBReached;
+            case 6: return storyReqs.thiefGuildRankAReached;
+            case 7: return storyReqs.thiefGuildRankSReached;
+            case 8: return storyReqs.thiefGuildRankUReached;
+            case 9: return storyReqs.thiefGuildRankGodlikeReached;
+        }
+    },
     stats: {
         Dex: 0.4,
         Per: 0.3,
@@ -6199,6 +6251,15 @@ Action.ThievesGuild = new MultipartAction("Thieves Guild", {
         guild = "Thieves";
         view.requestUpdate("adjustGoldCost", {varName: "Excursion", cost: Action.Excursion.goldCost()});
         handleSkillExp(this.skills);
+        unlockStory("thiefGuildTestsTaken");
+        if (curThievesGuildSegment >= 3) unlockStory("thiefGuildRankEReached");
+        if (curThievesGuildSegment >= 6) unlockStory("thiefGuildRankDReached");
+        if (curThievesGuildSegment >= 9) unlockStory("thiefGuildRankCReached");
+        if (curThievesGuildSegment >= 12) unlockStory("thiefGuildRankBReached");
+        if (curThievesGuildSegment >= 15) unlockStory("thiefGuildRankAReached");
+        if (curThievesGuildSegment >= 18) unlockStory("thiefGuildRankSReached");
+        if (curThievesGuildSegment >= 30) unlockStory("thiefGuildRankUReached");
+        if (curThievesGuildSegment >= 42) unlockStory("thiefGuildRankGodlikeReached");
     },
 });
 function getThievesGuildRank(offset) {
@@ -6224,6 +6285,17 @@ Action.PickPockets = new Action("Pick Pockets", {
     type: "progress",
     expMult: 1.5,
     townNum: 7,
+    storyReqs(storyNum) {
+        switch(storyNum) {
+            case 1: return towns[7].getLevel("PickPockets") >= 1;
+            case 2: return towns[7].getLevel("PickPockets") >= 10;
+            case 3: return towns[7].getLevel("PickPockets") >= 20;
+            case 4: return towns[7].getLevel("PickPockets") >= 40;
+            case 5: return towns[7].getLevel("PickPockets") >= 60;
+            case 6: return towns[7].getLevel("PickPockets") >= 80;
+            case 7: return towns[7].getLevel("PickPockets") >= 100;
+        }
+    },
     stats: {
         Dex: 0.4,
         Spd: 0.4,
@@ -6267,6 +6339,17 @@ Action.RobWarehouse = new Action("Rob Warehouse", {
     type: "progress",
     expMult: 2,
     townNum: 7,
+    storyReqs(storyNum) {
+        switch(storyNum) {
+            case 1: return towns[7].getLevel("RobWarehouse") >= 1;
+            case 2: return towns[7].getLevel("RobWarehouse") >= 10;
+            case 3: return towns[7].getLevel("RobWarehouse") >= 20;
+            case 4: return towns[7].getLevel("RobWarehouse") >= 40;
+            case 5: return towns[7].getLevel("RobWarehouse") >= 60;
+            case 6: return towns[7].getLevel("RobWarehouse") >= 80;
+            case 7: return towns[7].getLevel("RobWarehouse") >= 100;
+        }
+    },
     stats: {
         Dex: 0.4,
         Spd: 0.2,
@@ -6311,6 +6394,17 @@ Action.InsuranceFraud = new Action("Insurance Fraud", {
     type: "progress",
     expMult: 2.5,
     townNum: 7,
+    storyReqs(storyNum) {
+        switch(storyNum) {
+            case 1: return towns[7].getLevel("InsuranceFraud") >= 1;
+            case 2: return towns[7].getLevel("InsuranceFraud") >= 10;
+            case 3: return towns[7].getLevel("InsuranceFraud") >= 20;
+            case 4: return towns[7].getLevel("InsuranceFraud") >= 40;
+            case 5: return towns[7].getLevel("InsuranceFraud") >= 60;
+            case 6: return towns[7].getLevel("InsuranceFraud") >= 75;
+            case 7: return towns[7].getLevel("InsuranceFraud") >= 100;
+        }
+    },
     stats: {
         Dex: 0.2,
         Spd: 0.2,
@@ -6355,6 +6449,16 @@ Action.GuildAssassin = new Action("Guild Assassin", {
     type: "normal",
     expMult: 1,
     townNum: 7,
+    storyReqs(storyNum) {
+        switch(storyNum) {
+            case 1: return getSkillLevel("Assassin") > 0;
+            case 2: return storyReqs.assassinHeartDelivered;
+            case 3: return totalAssassinations() >= 4;
+            case 4: return storyReqs.assassin4HeartsDelivered;
+            case 5: return totalAssassinations() >= 8;
+            case 6: return storyReqs.assassin8HeartsDelivered;
+        }
+    },
     stats: {
         Per: 0.1,
         Cha: 0.3,
@@ -6380,6 +6484,9 @@ Action.GuildAssassin = new Action("Guild Assassin", {
         return towns[this.townNum].getLevel("Excursion") >= 100;
     },
     finish() {
+        if (resources.heart >= 1) unlockStory("assassinHeartDelivered");
+        if (resources.heart >= 4) unlockStory("assassin4HeartsDelivered");
+        if (resources.heart >= 8) unlockStory("assassin8HeartsDelivered");
         let assassinExp = 0;
         if (getSkillLevel("Assassin") === 0) assassinExp = 100;
         if (resources.heart > 0) assassinExp = 100 * Math.pow(resources.heart, 2);
@@ -6390,10 +6497,29 @@ Action.GuildAssassin = new Action("Guild Assassin", {
     }
 });
 
+function totalAssassinations(){
+    //Counts all zones with at least one successful assassination.
+    let total = 0
+    for (i = 0; i < towns.length; i++)
+    {
+        if (towns[i][`totalAssassinZ${i}`] > 0) total++
+    }
+    return total
+}
+
 Action.Invest = new Action("Invest", {
     type: "normal",
     expMult: 1,
     townNum: 7,
+    storyReqs(storyNum) {
+        switch(storyNum) {
+            case 1: return storyReqs.investedOne;
+            case 2: return storyReqs.investedTwo;
+            case 3: return goldInvested >= 1000000;
+            case 4: return goldInvested >= 1000000000;
+            case 5: return goldInvested == 999999999999;
+        }
+    },
     stats: {
         Con: 0.4,
         Per: 0.3,
@@ -6422,6 +6548,8 @@ Action.Invest = new Action("Invest", {
         goldInvested += resources.gold;
         if (goldInvested > 999999999999) goldInvested = 999999999999;
         resetResource("gold");
+        if (storyReqs.investedOne) unlockStory("investedTwo");
+        unlockStory("investedOne");
         view.requestUpdate("updateActionTooltips", null);
     },
 });
@@ -6430,6 +6558,14 @@ Action.CollectInterest = new Action("Collect Interest", {
     type: "normal",
     expMult: 1,
     townNum: 7,
+    storyReqs(storyNum) {
+        switch(storyNum) {
+            case 1: return storyReqs.interestCollected;
+            case 2: return storyReqs.collected1KInterest;
+            case 3: return storyReqs.collected1MInterest;
+            case 4: return storyReqs.collectedMaxInterest;
+        }
+    },
     stats: {
         Con: 0.4,
         Per: 0.3,
@@ -6457,6 +6593,10 @@ Action.CollectInterest = new Action("Collect Interest", {
         handleSkillExp(this.skills);
         let interestGold = Math.floor(goldInvested * .001);
         addResource("gold", interestGold);
+        unlockStory("interestCollected");
+        if (interestGold >= 1000) unlockStory("collected1KInterest");
+        if (interestGold >= 1000000) unlockStory("collected1MInterest");
+        if (interestGold >= 999999999) unlockStory("collectedMaxInterest");
         return interestGold;
     },
 });
@@ -6465,6 +6605,14 @@ Action.Seminar = new Action("Seminar", {
     type: "normal",
     expMult: 1,
     townNum: 7,
+    storyReqs(storyNum) {
+        switch(storyNum) {
+            case 1: return storyReqs.seminarAttended;
+            case 2: return storyReqs.leadership10;
+            case 3: return storyReqs.leadership100;
+            case 4: return storyReqs.leadership1k;
+        }
+    },
     stats: {
         Cha: 0.8,
         Luck: 0.1,
@@ -6493,6 +6641,11 @@ Action.Seminar = new Action("Seminar", {
     },
     finish() {
         handleSkillExp(this.skills);
+        let leadershipLevel = getSkillLevel("Leadership");
+        if (leadershipLevel >= 10) unlockStory("leadership10");
+        if (leadershipLevel >= 100) unlockStory("leadership100");
+        if (leadershipLevel >= 1000) unlockStory("leadership1k");
+        unlockStory("seminarAttended");
     },
 });
 
@@ -6500,6 +6653,11 @@ Action.PurchaseKey = new Action("Purchase Key", {
     type: "normal",
     expMult: 1,
     townNum: 7,
+    storyReqs(storyNum) {
+        switch(storyNum) {
+            case 1: return storyReqs.keyBought;
+        }
+    },
     stats: {
         Cha: 0.8,
         Luck: 0.1,
@@ -6528,6 +6686,7 @@ Action.PurchaseKey = new Action("Purchase Key", {
     },
     finish() {
         addResource("key", true);
+        unlockStory("keyBought");
     },
 });
 
@@ -6537,6 +6696,16 @@ Action.SecretTrial = new TrialAction("Secret Trial", 3, {
     expMult: 0,
     townNum: 7,
     varName: "STrial",
+    storyReqs(storyNum) {
+        switch(storyNum) {
+            case 1: return storyReqs.trailSecretFaced;
+            case 2: return storyReqs.trailSecret1Done;
+            case 3: return storyReqs.trailSecret10Done;
+            case 4: return storyReqs.trailSecret100Done;
+            case 5: return storyReqs.trailSecret500Done;
+            case 6: return storyReqs.trailSecretAllDone;
+        }
+    },
     stats: {
         Dex: 0.11,
         Str: 0.11,
@@ -6571,6 +6740,13 @@ Action.SecretTrial = new TrialAction("Secret Trial", 3, {
         return storyMax >= 12 && getBuffLevel("Imbuement3") >= 7;
     },
     finish() {
+        unlockStory("trailSecretFaced");
+        let floor = this.currentFloor();
+        if (floor >= 1) unlockStory("trailSecret1Done");
+        if (floor >= 10) unlockStory("trailSecret10Done");
+        if (floor >= 100) unlockStory("trailSecret100Done");
+        if (floor >= 500) unlockStory("trailSecret500Done");
+        if (floor == 1000) unlockStory("trailSecretAllDone");
     },
 });
 
@@ -6578,6 +6754,11 @@ Action.LeaveCity = new Action("Leave City", {
     type: "normal",
     expMult: 2,
     townNum: 7,
+    storyReqs(storyNum) {
+        switch(storyNum) {
+            case 1: return townsUnlocked.includes(8);
+        }
+    },
     stats: {
         Con: 0.4,
         Per: 0.3,
