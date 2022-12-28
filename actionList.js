@@ -6794,6 +6794,16 @@ Action.ImbueSoul = new MultipartAction("Imbue Soul", {
     type: "multipart",
     expMult: 5,
     townNum: 8,
+    storyReqs(storyNum) {
+        switch(storyNum) {
+            case 1: return storyReqs.soulInfusionAttempted;
+            case 2: return buffs["Imbuement3"].amt > 0;
+            case 3: return buffs["Imbuement3"].amt > 6;
+            case 4: return buffs["Imbuement"].amt > 499 
+                        && buffs["Imbuement2"].amt > 499 
+                        && buffs["Imbuement3"] > 6;
+        }
+    },
     stats: {
         Soul: 1.0
     },
@@ -6856,6 +6866,18 @@ Action.BuildTower = new Action("Build Tower", {
     type: "progress",
     expMult: 1,
     townNum: 8,
+    storyReqs(storyNum) {
+        buildingProg = towns[this.townNum].expBuildTower / 505;
+        switch(storyNum) {
+            case 1: return buildingProg >= 1;
+            case 2: return buildingProg >= 10;
+            case 3: return buildingProg >= 100;
+            case 4: return buildingProg >= 250;
+            case 5: return buildingProg >= 500;
+            case 6: return buildingProg >= 750;
+            case 7: return buildingProg >= 999;
+        }
+    },
     stats: {
         Dex: 0.1,
         Str: 0.3,
@@ -6891,6 +6913,21 @@ Action.GodsTrial = new TrialAction("Gods Trial", 1, {
     expMult: 0.2,
     townNum: 8,
     varName: "GTrial",
+    storyReqs(storyNum) {
+        switch(storyNum) {
+            case 1: return storyReqs.trailGodsFaced;
+            case 2: return storyReqs.trailGods10Done;
+            case 3: return storyReqs.trailGods20Done;
+            case 4: return storyReqs.trailGods30Done;
+            case 5: return storyReqs.trailGods40Done;
+            case 6: return storyReqs.trailGods50Done;
+            case 7: return storyReqs.trailGods60Done;
+            case 8: return storyReqs.trailGods70Done;
+            case 9: return storyReqs.trailGods80Done;
+            case 10: return storyReqs.trailGods90Done;
+            case 11: return storyReqs.trailGodsAllDone;
+        }
+    },
     stats: {
         Dex: 0.11,
         Str: 0.11,
@@ -6921,7 +6958,22 @@ Action.GodsTrial = new TrialAction("Gods Trial", 1, {
         return getTeamCombat();
     },
     floorReward() {
-        if (this.currentFloor() === trialFloors[this.trialNum] - 1) addResource("power", 1);
+        unlockStory("trailGodsFaced");
+        if (this.currentFloor() >= 10) unlockStory("trailGods10Done");
+        if (this.currentFloor() >= 20) unlockStory("trailGods20Done");
+        if (this.currentFloor() >= 30) unlockStory("trailGods30Done");
+        if (this.currentFloor() >= 40) unlockStory("trailGods40Done");
+        if (this.currentFloor() >= 50) unlockStory("trailGods50Done");
+        if (this.currentFloor() >= 60) unlockStory("trailGods60Done");
+        if (this.currentFloor() >= 70) unlockStory("trailGods70Done");
+        if (this.currentFloor() >= 80) unlockStory("trailGods80Done");
+        if (this.currentFloor() >= 90) unlockStory("trailGods90Done");
+        
+        if (this.currentFloor() === trialFloors[this.trialNum] - 1) 
+        {
+            unlockStory("trailGodsAllDone");
+            addResource("power", 1);
+        }
     },
     visible() {
         return towns[this.townNum].getLevel("BuildTower") >= 100;
@@ -6968,6 +7020,31 @@ Action.ChallengeGods = new TrialAction("Challenge Gods", 2, {
     },
     floorReward() {
         addResource("power", 1);
+        //Ideally, there would be some way to directly respond to a segment being completed
+        //which would, in turn, trigger the story unlocks. For now, give all the initial
+        //stories upon completion of the first floor and check the talent requirements upon
+        //completion of the final floor.
+        unlockStory("fightGods01");
+        unlockStory("fightGods03");
+        unlockStory("fightGods05");
+        unlockStory("fightGods07");
+        unlockStory("fightGods09");
+        unlockStory("fightGods11");
+        unlockStory("fightGods13");
+        unlockStory("fightGods15");
+        unlockStory("fightGods17");
+        if (this.currentFloor() >= (trialFloors[this.trialNum] - 1))
+        {
+            if (getTalent("Dex") > 500000) unlockStory("fightGods02");
+            if (getTalent("Str") > 500000) unlockStory("fightGods04");
+            if (getTalent("Con") > 500000) unlockStory("fightGods06");
+            if (getTalent("Spd") > 500000) unlockStory("fightGods08");
+            if (getTalent("Per") > 500000) unlockStory("fightGods10");
+            if (getTalent("Cha") > 500000) unlockStory("fightGods12");
+            if (getTalent("Int") > 500000) unlockStory("fightGods14");
+            if (getTalent("Luck")> 500000) unlockStory("fightGods16");
+            if (getTalent("Soul")> 500000) unlockStory("fightGods18");
+        }
     },
     visible() {
         return towns[this.townNum].getLevel("BuildTower") >= 100;
@@ -6987,6 +7064,11 @@ Action.RestoreTime = new Action("Restore Time", {
     type: "normal",
     expMult: 0,
     townNum: 8,
+    storyReqs(storyNum) {
+        switch(storyNum) {
+            case 1: return storyMax >= 12;
+        }
+    },
     stats: {
         Luck: 0.5,
         Soul: 0.5,
