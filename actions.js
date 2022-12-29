@@ -149,6 +149,7 @@ function Actions() {
         curFightFrostGiantsSegment = 0;
         curFightJungleMonstersSegment = 0;
         curThievesGuildSegment = 0;
+        curGodsSegment = 0;
         for (const town of towns) {
             for (const action of town.totalActionList) {
                 if (action.type === "multipart") {

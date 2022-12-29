@@ -312,6 +312,7 @@ const storyReqs = {
     feastAttempted: false,
     wellDrawn: false,
     drew10Wells: false,
+    drew15Wells: false,
     drewDryWell: false,
     attemptedRaiseZombie: false,
     failedRaiseZombie: false,
@@ -436,6 +437,8 @@ let curFightFrostGiantsSegment = 0;
 let curFightJungleMonstersSegment = 0;
 // eslint-disable-next-line prefer-const
 let curThievesGuildSegment = 0;
+// eslint-disable-next-line prefer-const
+let curGodsSegment = 0;
 
 const options = {
     theme: "normal",
