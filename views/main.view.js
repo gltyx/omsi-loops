@@ -173,15 +173,21 @@ function View() {
 
 
     this.adjustTooltipPosition = function(tooltipDiv) {
-        let parent = tooltipDiv.parentNode;
-        let y = parent.getBoundingClientRect().y;
-        let windowHeight = window.innerHeight;
-        let windowScrollY = window.scrollY;
-        let border = (windowHeight / 2) + windowScrollY;
-        if (y > border) {
-            tooltipDiv.classList.add("showthisOver");
+        const parent = tooltipDiv.parentNode;
+        const boundingRect = parent.getBoundingClientRect();
+
+        const borderY = (window.innerHeight / 2) + window.scrollY;
+        if (boundingRect.y > borderY) {
+            tooltipDiv.classList.add("showthisToTheTop");
         } else {
-            tooltipDiv.classList.remove("showthisOver");
+            tooltipDiv.classList.remove("showthisToTheTop");
+        }
+
+        const borderX = (window.innerWidth / 2) + window.scrollX;
+        if (boundingRect.x > borderX) {
+            tooltipDiv.classList.add("showthisToTheLeft");
+        } else {
+            tooltipDiv.classList.remove("showthisToTheLeft");
         }
     }
 
