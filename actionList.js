@@ -6876,7 +6876,7 @@ Action.BuildTower = new Action("Build Tower", {
     expMult: 1,
     townNum: 8,
     storyReqs(storyNum) {
-        buildingProg = towns[this.townNum].expBuildTower / 505;
+        let buildingProg = towns[this.townNum].expBuildTower / 505;
         switch(storyNum) {
             case 1: return buildingProg >= 1;
             case 2: return buildingProg >= 10;
