@@ -1695,8 +1695,8 @@
             ]]></tooltip>
             <story_1><![CDATA[<b>Potion brewed:</b>⮀ The old man happily lets you use his apparatus to brew your own potions after much haranguing about your technique and the fact that you're not buying ingredients off him, he leaves you to it. His workstations are old, well used and obviously well looked after. The only fault you can lay at their feet is that the measuring system used is older than dirt. Fits you suppose.]]></story_1>
 	        <story_2><![CDATA[<b>50 Potions brewed in a loop:</b>⮀ The hermit is impressed with the collection you have made as you showcase the multiple boxes full of flawless concoctions. Time to hit the next town and sell them!]]></story_2>
-            <story_2><![CDATA[<b>Action failed with low reputation:</b>⮀ The hermit refuses to allow you near his workstations and potion brewing equipment no matter how much you ask and offer to pay. He tells you that you don't have a good enough karma for him to even be willing to risk you using his workstations and potion benches.]]></story_2>
-            <story_3><![CDATA[<b>Action failed with negative reputation:</b>⮀ The hermit shoos you away from his clearing when you even make a mention of using his potion supplies, something about not wanting you to taint his equipment with your karma.]]></story_3>
+            <story_3><![CDATA[<b>Action failed with low reputation:</b>⮀ The hermit refuses to allow you near his workstations and potion brewing equipment no matter how much you ask and offer to pay. He tells you that you don't have a good enough karma for him to even be willing to risk you using his workstations and potion benches.]]></story_3>
+            <story_4><![CDATA[<b>Action failed with negative reputation:</b>⮀ The hermit shoos you away from his clearing when you even make a mention of using his potion supplies, something about not wanting you to taint his equipment with your karma.]]></story_4>
         </brew_potions>
         <train_dexterity>
             <label>Train Dexterity</label>
