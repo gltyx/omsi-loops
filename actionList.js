@@ -6109,13 +6109,12 @@ Action.ExplorersGuild = new Action("Explorers Guild", {
     expMult: 1,
     townNum: 7,
     storyReqs(storyNum) {
-        zonesDone = fullyExploredZones();
         switch(storyNum) {
             case 1: return storyReqs.explorerGuildTestTaken;
             case 2: return storyReqs.mapTurnedIn;
-            case 3: return zonesDone >= 1;
-            case 4: return zonesDone >= 4;
-            case 5: return zonesDone >= towns.length;
+            case 3: return fullyExploredZones() >= 1;
+            case 4: return fullyExploredZones() >= 4;
+            case 5: return fullyExploredZones() >= towns.length;
         }
     },
     stats: {
