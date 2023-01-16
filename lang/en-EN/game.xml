@@ -781,9 +781,10 @@
             <label>Practical Magic</label>
             <desc>Mage Hand, Prestidigitation, Detect Magic, and other useful tricks to help out.</desc>
             <desc2><![CDATA[Smash Pots and Wild Mana costs are reduced to the original / (1 + level / 100) (rounded up).<br>
-      Pick Locks get 1% more gold per level from 1-200 (rounded down).<br>
-      Short Quests get 1% more gold per level from 101-300 (rounded down).<br>
-      Long Quests get 1% more gold per level from 201-400 (rounded down).<br>
+      The following actions get 1% more gold per level in their level range (rounded down).<br>	
+      1-200 Pick Locks<br>
+      101-300 Short Quests<br>
+      201-400 Long Quests<br>
       Currently multiplying costs by <div id='skillBonusPractical'></div>x.]]></desc2>
         </practical>
         <alchemy>
@@ -819,21 +820,22 @@
             <label>Spatiomancy</label>
             <desc>Who knew bending reality to your will could be so useful!</desc>
             <desc2><![CDATA[Mana Geyser and Mana Well are reduced to the original / (1 + level / 100).<br>
-            Houses to build increased by 1% per level from 1 - 500. <br>
-            Locked houses is increased by 0.5% per level from 101-300.<br>
-            Short quests to finish is increased by 0.5% per level from 201-400.<br>
-            Long quests to finish is increased by 0.5% per level from 301-500.<br>
-            Animals in the forest increased by 0.5% per level from 401-600.<br>
-            Herbs to gather increased by 0.5% per level from 501-700.<br>
-            Possible suckers is increased by 0.5% per level from 601-800.<br>
-            Soulstones to mine increased by 0.5% per level from 701-900.<br>
-            Artifacts to take increased by 0.5% per level from 801-1000.<br>
-            People to ask for donations increased by 0.5% per level from 901-1100.<br>
-            Buildings to check for pylons increased by 0.5% per level from 1001-1200.<br>
-            Pockets to pick increased by 0.5% per level from from 1101-1300.<br>
-            Warehouses to rob increased by 0.5% per level from 1201-1400.<br>
-            Insurance companies to defraud increased by 0.5% per level from 1301-1500.<br>
-            Currently multiplying costs by <div id='skillBonusSpatiomancy'></div>x.]]></desc2>
+            Houses to build increased by 1% per level from 1 - 500.<br>
+            The following actions are increased by 0.5% per level in their level range.<br>
+            101-300 Locked houses<br>
+            201-400 Short quests to finish<br>
+            301-500 Long quests to finish<br>
+            401-600 Animals in the forest<br>
+            501-700 Herbs to gather<br>
+            601-800 Possible suckers<br>
+            701-900 Soulstones to mine<br>
+            801-1000 Artifacts to take<br>
+            901-1100 People to ask for donations<br>
+            1001-1200 Buildings to check for pylons<br>
+            1101-1300 Pockets to pick<br>
+            1201-1400 Warehouses to rob<br>
+            1301-1500 Insurance companies to defraud<br>
+            Currently multiplying costs by <div id="skillBonusSpatiomancy">0.971</div>x.]]></desc2>
         </spatiomancy>
 		<mercantilism>
 			<label>Mercantilism</label>
@@ -2557,7 +2559,10 @@
             <info_text2>Spots with full wells total</info_text2>
             <info_text3>Spots to check for wells</info_text3>
             <tooltip><![CDATA[
-            Search the town for wells that still have any mana left. They seem to be rapidly draining.<br>Full wells have 5000 mana, but lose 10 mana for every second that has passed in the loop.<br>Every 100 wells still has mana.<br>Unlocked with 2% town meandered.
+            Search the town for wells that still have any mana left. They seem to be rapidly draining.<br>
+            Full wells have 5000 mana, but lose 10 mana for every second that has passed in the loop.<br>
+            Every 100 wells still has mana.<br>
+            Unlocked with 2% town meandered.
             ]]></tooltip>
             <story_1><![CDATA[<b>Mana Well drained:</b>⮀ While the town is absolutely lousy with wells, so far all of them have already ran dry. This one still has a little, but you can tell it woulnd't last much longer as you drain it.]]></story_1>
             <story_2><![CDATA[<b>10 Mana Wells with mana found:</b>⮀ Having scoured the entire town and marked all the wells, you've come to two conclusions: whatever source they drew from must have been running out for a while, and if you were as much as 10 minutes later, all of them would be bone dry. Good thing the loops start in the instant they do.]]></story_2>
@@ -2571,7 +2576,9 @@
             <info_text2>Buildings with pylons total</info_text2>
             <info_text3>Buildings to check for pylons</info_text3>
             <tooltip><![CDATA[
-            There are strange pylons humming with energy in the abandoned buildings of this town. You're not sure why, but you feel compelled to break them.<br>Every 100 abandon buildings have 1 breakable plyon.<br>Reduces the mana cost of The Spire by 10% for each pylon destroyed.
+            There are strange pylons humming with energy in the abandoned buildings of this town. You're not sure why, but you feel compelled to break them.<br>
+            Every 100 abandon buildings have 1 breakable plyon.<br>Reduces the mana cost of The Spire by 10% for each pylon destroyed.<br>
+            Unlocked at 5% town meandered.<br>
             ]]></tooltip>
             <story_1><![CDATA[<b>Pylon Destroyed:</b>⮀ As you pick up one of the Pylon's fragments, you wonder why you broke it. It didn't even feel particularly good, just like it had to be done. Shrugging, you put the fragment in your pocket. As a tropy.]]></story_1>
             <story_2><![CDATA[<b>10 Pylons Destroyed:</b>⮀ The strange drive to smash those Pylons still lingers, even now that you've found and destroyed all that you can find in town. ...Maybe there are more after all, and it would be a good idea to go looking again when you have some new way of finding the blasted things.]]></story_2>
