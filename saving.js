@@ -42,7 +42,7 @@ function cheatProgress()
     stonesUsed = {1:250, 3:250, 5:250, 6:250};
 }
 
-function cheatTalent(stat, targetTalentLevel) 
+function cheatTalent(stat, targetTalentLevel)
 {
     if (stat === "all" || stat === "All")
         for (const stat in stats)
@@ -180,9 +180,12 @@ let actionTownNum;
 let trainingLimits = 10;
 let storyShowing = 0;
 let storyMax = 0;
+let unreadActionStories;
 const storyReqs = {
     maxSQuestsInALoop: false,
+    realMaxSQuestsInALoop: false,
     maxLQuestsInALoop: false,
+    realMaxLQuestsInALoop: false,
     heal10PatientsInALoop: false,
     failedHeal: false,
     clearSDungeon: false,
@@ -201,6 +204,7 @@ const storyReqs = {
     speedTrained: false,
     birdsWatched: false,
     darkRitualThirdSegmentReached: false,
+    brewed50PotionsInALoop: false,
     failedBrewPotions: false,
     failedBrewPotionsNegativeRep: false,
     potionBrewed: false,
@@ -209,6 +213,8 @@ const storyReqs = {
     potionSold: false,
     sell20PotionsInALoop: false,
     sellPotionFor100Gold: false,
+    sellPotionFor1kGold: false,
+    manaZ3Bought:false,
     advGuildTestsTaken: false,
     advGuildRankEReached: false,
     advGuildRankDReached: false,
@@ -234,16 +240,170 @@ const storyReqs = {
     craftGuildRankGodlikeReached: false,
     armorCrafted: false,
     craft10Armor: false,
+    craft20Armor: false,
     failedCraftArmor: false,
     booksRead: false,
     pickaxeBought: false,
+    heroTrial1Done: false,
+    heroTrial10Done: false,
+    heroTrial25Done: false,
+    heroTrial50Done: false,
+    charonPaid: false,
     loopingPotionMade: false,
-    slay10TrollsInALoop: false,
+    slay6TrollsInALoop: false,
+    slay20TrollsInALoop: false,
     imbueMindThirdSegmentReached: false,
+    imbueBodyThirdSegmentReached: false,
+    failedImbueBody: false,
     judgementFaced: false,
     acceptedIntoValhalla: false,
     castIntoShadowRealm: false,
-    fellFromGrace: false
+    spokeToGuru: false,
+    fellFromGrace: false,
+    donatedToCharity: false,
+    receivedDonation: false,
+    failedReceivedDonations: false,
+    tidiedUp: false,
+    tidiedUp1Time: false,
+    tidiedUp6Times: false,
+    tidiedUp20Times: false,
+    manaZ5Bought: false,
+    artifactSold: false,
+    artifactDonated: false,
+    donated20Artifacts: false,
+    donated40Artifacts: false,
+    charmSchoolVisited: false,
+    oracleVisited: false,
+    armorEnchanted: false,
+    enchanted10Armor: false,
+    enchanted20Armor: false,
+    wizardGuildTestTaken: false,
+    wizardGuildRankEReached: false,
+    wizardGuildRankDReached: false,
+    wizardGuildRankCReached: false,
+    wizardGuildRankBReached: false,
+    wizardGuildRankAReached: false,
+    wizardGuildRankSReached: false,
+    wizardGuildRankSSReached: false,
+    wizardGuildRankSSSReached: false,
+    wizardGuildRankUReached: false,
+    wizardGuildRankGodlikeReached: false,
+    repeatedCitizenExam: false,
+    houseBuilt: false,
+    housesBuiltGodlike: false,
+    built50Houses: false,
+    collectedTaxes: false,
+    collected50Taxes: false,
+    acquiredPegasus: false,
+    acquiredPegasusWithTeam: false,
+    giantGuildTestTaken: false,
+    giantGuildRankDReached: false,
+    giantGuildRankCReached: false,
+    giantGuildRankEReached: false,
+    giantGuildRankBReached: false,
+    giantGuildRankAReached: false,
+    giantGuildRankSReached: false,
+    giantGuildRankSSReached: false,
+    giantGuildRankSSSReached: false,
+    giantGuildRankUReached: false,
+    giantGuildRankGodlikeReached: false,
+    blessingSought: false,
+    greatBlessingSought: false,
+    feastAttempted: false,
+    wellDrawn: false,
+    drew10Wells: false,
+    drew15Wells: false,
+    drewDryWell: false,
+    attemptedRaiseZombie: false,
+    failedRaiseZombie: false,
+    spireAttempted: false,
+    clearedSpire: false,
+    spire10Pylons: false,
+    spire20Pylons: false,
+    suppliesPurchased: false,
+    deadTrial1Done: false,
+    deadTrial10Done: false,
+    deadTrial25Done: false,
+    monsterGuildTestTaken: false,
+    monsterGuildRankDReached: false,
+    monsterGuildRankCReached: false,
+    monsterGuildRankBReached: false,
+    monsterGuildRankAReached: false,
+    monsterGuildRankAReached: false,
+    monsterGuildRankSReached: false,
+    monsterGuildRankSSReached: false,
+    monsterGuildRankSSSReached: false,
+    monsterGuildRankUReached: false,
+    monsterGuildRankGodlikeReached: false,
+    survivorRescued: false,
+    rescued6Survivors: false,
+    rescued20Survivors: false,
+    buffetHeld: false,
+    buffetFor1: false,
+    buffetFor6: false,
+    portalOpened: false,
+    excursionAsGuildmember: false,
+    explorerGuildTestTaken: false,
+    mapTurnedIn: false,
+    thiefGuildTestsTaken: false,
+    thiefGuildRankEReached: false,
+    thiefGuildRankDReached: false,
+    thiefGuildRankCReached: false,
+    thiefGuildRankBReached: false,
+    thiefGuildRankAReached: false,
+    thiefGuildRankSReached: false,
+    thiefGuildRankUReached: false,
+    thiefGuildRankGodlikeReached: false,
+    assassinHeartDelivered: false,
+    assassin4HeartsDelivered: false,
+    assassin8HeartsDelivered: false,
+    investedOne:false,
+    investedTwo:false,
+    interestCollected:false,
+    collected1KInterest:false,
+    collected1MInterest:false,
+    collectedMaxInterest:false,
+    seminarAttended:false,
+    leadership10:false,
+    leadership100:false,
+    leadership1k:false,
+    keyBought:false,
+    trailSecretFaced:false,
+    trailSecret1Done:false,
+    trailSecret10Done:false,
+    trailSecret100Done:false,
+    trailSecret500Done:false,
+    trailSecretAllDone:false,
+    soulInfusionAttempted:false,
+    trailGodsFaced:false,
+    trailGods10Done:false,
+    trailGods20Done:false,
+    trailGods30Done:false,
+    trailGods40Done:false,
+    trailGods50Done:false,
+    trailGods60Done:false,
+    trailGods70Done:false,
+    trailGods80Done:false,
+    trailGods90Done:false,
+    trailGodsAllDone:false,
+    fightGods01:false,
+    fightGods02:false,
+    fightGods03:false,
+    fightGods04:false,
+    fightGods05:false,
+    fightGods06:false,
+    fightGods07:false,
+    fightGods08:false,
+    fightGods09:false,
+    fightGods10:false,
+    fightGods11:false,
+    fightGods12:false,
+    fightGods13:false,
+    fightGods14:false,
+    fightGods15:false,
+    fightGods16:false,
+    fightGods17:false,
+    fightGods18:false,
 };
 
 const curDate = new Date();
@@ -277,6 +437,8 @@ let curFightFrostGiantsSegment = 0;
 let curFightJungleMonstersSegment = 0;
 // eslint-disable-next-line prefer-const
 let curThievesGuildSegment = 0;
+// eslint-disable-next-line prefer-const
+let curGodsSegment = 0;
 
 const options = {
     theme: "normal",
@@ -339,6 +501,9 @@ function load(inChallenge) {
 
     loadouts = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []];
     loadoutnames = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], []];
+    // loadoutnames[-1] is what displays in the loadout renaming box when no loadout is selected
+    // It isn't technically part of the array, just a property on it, so it doesn't count towards loadoutnames.length
+    loadoutnames[-1] = "";
 
     let toLoad = {};
     // has a save file
@@ -600,6 +765,15 @@ function load(inChallenge) {
     }
     storyShowing = toLoad.storyShowing === undefined ? 0 : toLoad.storyShowing;
     storyMax = toLoad.storyMax === undefined ? 0 : toLoad.storyMax;
+    if (toLoad.unreadActionStories === undefined
+        || toLoad.unreadActionStories.find(s => !s.includes('storyContainer'))) {
+        unreadActionStories = [];
+    } else {
+        unreadActionStories = toLoad.unreadActionStories;
+        for (const name of unreadActionStories) {
+            showNotification(name);
+        }
+    }
 
     totalOfflineMs = toLoad.totalOfflineMs === undefined ? 0 : toLoad.totalOfflineMs;
     if (toLoad.totals != undefined) {
@@ -694,6 +868,7 @@ function save() {
     toSave.storyShowing = storyShowing;
     toSave.storyMax = storyMax;
     toSave.storyReqs = storyReqs;
+    toSave.unreadActionStories = unreadActionStories;
     toSave.buffCaps = buffCaps;
 
     toSave.date = new Date();
@@ -717,6 +892,10 @@ function exportSave() {
 
 function importSave() {
     const saveData = document.getElementById("exportImport").value;
+    processSave(saveData);
+}
+
+function processSave(saveData) {
     if (saveData === "") {
         if (confirm("Importing nothing will delete your save. Are you sure you want to delete your save?")) {
             challengeSave = {};
@@ -737,6 +916,39 @@ function importSave() {
     load();
     pauseGame();
     restart();
+}
+
+function saveFileName() {
+    const gameName = document.title.replace('*PAUSED* ','')
+    const version = document.querySelector('#changelog').childNodes[1].firstChild.textContent.trim()
+    return `${gameName} ${version} - Loop ${totals.loops}.txt`
+}
+
+function exportSaveFile() {
+    save();
+    const saveData = `ILSV01${LZString.compressToBase64(window.localStorage[saveName])}`;
+    const a = document.createElement('a');
+    a.setAttribute('href', 'data:text/plain;charset=utf-8,' + saveData);
+    a.setAttribute('download', saveFileName());
+    a.setAttribute('id', 'downloadSave');
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+}
+
+function openSaveFile() {
+    document.getElementById('SaveFileInput').click();
+}
+
+function importSaveFile(e) {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = function (e) {
+        const saveData = e.target.result;
+        processSave(saveData);
+    }
+    reader.readAsText(file)
 }
 
 function exportCurrentList() {
@@ -778,7 +990,7 @@ function beginChallenge(challengeNum) {
     if (challengeSave.challengeMode === 0) {
         challengeSave.inChallenge = true;
         save();
-        console.log ("Saving to: " + saveName); 
+        console.log ("Saving to: " + saveName);
     }
     challengeSave.challengeMode = challengeNum;
     saveName = challengeSaveName;

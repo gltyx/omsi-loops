@@ -70,8 +70,8 @@ function View() {
                 <div class='statLabelContainer'>
                     <div class='medium bold' style='margin-left:18px;margin-top:5px;'>${_txt(`stats>${stat}>long_form`)}</div>
                     <div style='color:#737373;' class='statNum'><div class='medium' id='stat${stat}ss'></div></div>
-                    <div class='statNum'><div class='medium' id='stat${stat}Talent'>0</div></div> 
-                    <div class='medium statNum bold' id='stat${stat}Level'>0</div> 
+                    <div class='statNum'><div class='medium' id='stat${stat}Talent'>0</div></div>
+                    <div class='medium statNum bold' id='stat${stat}Level'>0</div>
                 </div>
                 <div class='thinProgressBarUpper'><div class='statBar statLevelBar' id='stat${stat}LevelBar'></div></div>
                 <div class='thinProgressBarLower'><div class='statBar statTalentBar' id='stat${stat}TalentBar'></div></div>
@@ -173,15 +173,21 @@ function View() {
 
 
     this.adjustTooltipPosition = function(tooltipDiv) {
-        let parent = tooltipDiv.parentNode;
-        let y = parent.getBoundingClientRect().y;
-        let windowHeight = window.innerHeight;
-        let windowScrollY = window.scrollY;
-        let border = (windowHeight / 2) + windowScrollY;
-        if (y > border) {
-            tooltipDiv.classList.add("showthisOver");
+        const parent = tooltipDiv.parentNode;
+        const boundingRect = parent.getBoundingClientRect();
+
+        const borderY = (window.innerHeight / 2) + window.scrollY;
+        if (boundingRect.y > borderY) {
+            tooltipDiv.classList.add("showthisToTheTop");
         } else {
-            tooltipDiv.classList.remove("showthisOver");
+            tooltipDiv.classList.remove("showthisToTheTop");
+        }
+
+        const borderX = (window.innerWidth / 2) + window.scrollX;
+        if (boundingRect.x > borderX) {
+            tooltipDiv.classList.add("showthisToTheLeft");
+        } else {
+            tooltipDiv.classList.remove("showthisToTheLeft");
         }
     }
 
@@ -460,7 +466,7 @@ function View() {
                     draggable='true' data-index='${i}'
                     style='background: ${color}; ${opacity}; ${display};'
                 >
-                    <div><img src='img/${imageName}.svg' class='smallIcon imageDragFix'> x 
+                    <div><img src='img/${imageName}.svg' class='smallIcon imageDragFix'> x
                     <div class='bold'>${actionLoops}</div></div>
                     <div style='float:right; margin-top: 1px; margin-right: 3px;'>
                         ${capButton}
@@ -548,6 +554,9 @@ function View() {
             if (action.name === "Gamble" && resources.gold < 20 && resources.reputation > -6) unlockStory("failedGambleLowMoney");
             if (action.name === "Gather Team") unlockStory("failedGatherTeam");
             if (action.name === "Craft Armor") unlockStory("failedCraftArmor");
+            if (action.name === "Imbue Body") unlockStory("failedImbueBody");
+            if (action.name === "Accept Donations") unlockStory("failedReceivedDonations");
+            if (action.name === "Raise Zombie") unlockStory("failedRaiseZombie")
         } else if (action.loopsLeft === 0) {
             div.style.width = "100%";
             div.style.backgroundColor = "#6d6d6d";
@@ -594,7 +603,7 @@ function View() {
     this.updateCurrentActionLoops = function(index) {
         const action = actions.current[index];
         if (action !== undefined) {
-            document.getElementById(`action${index}LoopsDone`).textContent = (action.loops - action.loopsLeft) > 99999 
+            document.getElementById(`action${index}LoopsDone`).textContent = (action.loops - action.loopsLeft) > 99999
                 ? toSuffix(action.loops - action.loopsLeft) : formatNumber(action.loops - action.loopsLeft);
             document.getElementById(`action${index}Loops`).textContent = action.loops > 99999 ? toSuffix(action.loops) : formatNumber(action.loops);
         }
@@ -698,7 +707,10 @@ function View() {
                     }
                     if (document.getElementById(divName).children[2].innerHTML !== storyTooltipText) {
                         document.getElementById(divName).children[2].innerHTML = storyTooltipText;
-                        if (!init) showNotification(divName);
+                        if (!init) {
+                            showNotification(divName);
+                            if (!unreadActionStories.includes(divName)) unreadActionStories.push(divName);
+                        }
                         if (storiesUnlocked === storyAmt) {
                             document.getElementById(divName).classList.add("storyContainerCompleted");
                         } else {
@@ -796,6 +808,7 @@ function View() {
         for (let i = 0; i < loadoutnames.length; i++) {
             document.getElementById(`load${i + 1}`).textContent = loadoutnames[i];
         }
+        document.getElementById("renameLoadout").value = loadoutnames[curLoadout - 1];
     };
 
     this.createTownActions = function() {
@@ -842,7 +855,7 @@ function View() {
             }
         }
         if (action.skills !== undefined) {
-            const skillKeyNames = Object.keys(action.skills); 
+            const skillKeyNames = Object.keys(action.skills);
             const l = skillList.length;
             for (let i = 0; i < l; i++) {
                 for (const skill of skillKeyNames) {
@@ -1214,7 +1227,7 @@ function View() {
     this.createTravelMenu = function() {
         let travelMenu = $("#TownSelect");
         travelMenu.empty()
-        townNames.forEach((town, index) => {           
+        townNames.forEach((town, index) => {
             travelMenu.append("<option value="+index+" hidden=''>"+town+"</option>");
         });
         travelMenu.change(function() {
