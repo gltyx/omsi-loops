@@ -5430,9 +5430,9 @@ Action.DarkSacrifice = new Action("Dark Sacrifice", {
     townNum: 5,
     storyReqs(storyNum) {
         switch(storyNum) {
-            case 1: return getBuffLevel("Commune") >= 1;
-            case 2: return getBuffLevel("Commune") >= 100;
-            case 3: return getBuffLevel("Commune") >= 1000;
+            case 1: return getBuffLevel("Ritual") >= 1;
+            case 2: return getBuffLevel("Ritual") >= 100;
+            case 3: return getBuffLevel("Ritual") >= 1000;
         }
     },
     stats: {
