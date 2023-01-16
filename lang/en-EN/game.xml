@@ -6,10 +6,11 @@
                 <title>Changelog</title>
                 <version_prefix>Version</version_prefix>
             </meta>
-            <version verNum="2.9.1"><![CDATA[
-            <b> December 29th, 2022<br>
-            Writing update!<br>
-            Vera double-checked the entire English translation, and added more action stories.
+            <version verNum="3.0"><![CDATA[
+            <b> Jan 23rd, 2023</b>
+            • Writing update! Vera from Discord has contributed a ton of new action stories for content across the game.<br>
+            • Tooltip updates from Quiaaaa to Spatiomancyy and Practical magic.<br>
+            • Tooltip fixes from SyDr to hopefully resolve the age-old bug with tooltips going off-screen.<br>
             ]]></version>
             <version verNum="2.9"><![CDATA[
             <b> July 25th, 2022</b>
