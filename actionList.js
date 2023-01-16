@@ -5666,14 +5666,14 @@ Action.ExploreJungle = new Action("Explore Jungle", {
     varName: "ExploreJungle",
     storyReqs(storyNum) {
         switch(storyNum) {
-            case 1: return Towns[6].getLevel(this.varName) >= 1;
-            case 2: return Towns[6].getLevel(this.varName) >= 10;
-            case 3: return Towns[6].getLevel(this.varName) >= 20;
-            case 4: return Towns[6].getLevel(this.varName) >= 40;
-            case 5: return Towns[6].getLevel(this.varName) >= 50;
-            case 6: return Towns[6].getLevel(this.varName) >= 60;
-            case 7: return Towns[6].getLevel(this.varName) >= 80;
-            case 8: return Towns[6].getLevel(this.varName) >= 100;
+            case 1: return towns[6].getLevel(this.varName) >= 1;
+            case 2: return towns[6].getLevel(this.varName) >= 10;
+            case 3: return towns[6].getLevel(this.varName) >= 20;
+            case 4: return towns[6].getLevel(this.varName) >= 40;
+            case 5: return towns[6].getLevel(this.varName) >= 50;
+            case 6: return towns[6].getLevel(this.varName) >= 60;
+            case 7: return towns[6].getLevel(this.varName) >= 80;
+            case 8: return towns[6].getLevel(this.varName) >= 100;
         }
     },
     stats: {
