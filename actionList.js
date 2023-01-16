@@ -6508,12 +6508,12 @@ Action.GuildAssassin = new Action("Guild Assassin", {
 
 function totalAssassinations(){
     //Counts all zones with at least one successful assassination.
-    let total = 0
-    for (i = 0; i < towns.length; i++)
+    let total = 0;
+    for (var i = 0; i < towns.length; i++)
     {
         if (towns[i][`totalAssassinZ${i}`] > 0) total++
     }
-    return total
+    return total;
 }
 
 Action.Invest = new Action("Invest", {
