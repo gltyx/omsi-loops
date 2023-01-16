@@ -4521,9 +4521,9 @@ Action.CharmSchool = new Action("Charm School", {
     storyReqs(storyNum) {
         switch(storyNum) {
             case 1: return storyReqs.charmSchoolVisited;
-            case 2: return getTalent("Charisma") >= 100;
-            case 3: return getTalent("Charisma") >= 1000;
-            case 4: return getTalent("Charisma") >= 10000;
+            case 2: return getTalent("Cha") >= 100;
+            case 3: return getTalent("Cha") >= 1000;
+            case 4: return getTalent("Cha") >= 10000;
         }
     },
     stats: {
