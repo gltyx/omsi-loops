@@ -554,6 +554,9 @@ function View() {
             if (action.name === "Gamble" && resources.gold < 20 && resources.reputation > -6) unlockStory("failedGambleLowMoney");
             if (action.name === "Gather Team") unlockStory("failedGatherTeam");
             if (action.name === "Craft Armor") unlockStory("failedCraftArmor");
+            if (action.name === "Imbue Body") unlockStory("failedImbueBody");
+            if (action.name === "Accept Donations") unlockStory("failedReceivedDonations");
+            if (action.name === "Raise Zombie") unlockStory("failedRaiseZombie")
         } else if (action.loopsLeft === 0) {
             div.style.width = "100%";
             div.style.backgroundColor = "#6d6d6d";
