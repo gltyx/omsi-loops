@@ -31,7 +31,7 @@ body {
 {
     display: block;
 }
-.showthat:hover .showthis, .showthat:hover .showthisOver, .showthatO:hover .showthis, .showthatO:hover .showthisH, .showthat:hover .showthisname, .showthat:hover .showthisstory
+.showthat:hover .showthis, .showthat:hover .showthisToTheTop, .showthat:hover .showthisToTheLeft, .showthatO:hover .showthis, .showthatO:hover .showthisH, .showthat:hover .showthisname, .showthat:hover .showthisstory
 {
     display: block;
 }
@@ -62,8 +62,13 @@ body {
     z-index: 999999;
     text-align:left;
 }
-.showthisOver {
+
+.showthisToTheTop {
     bottom:100%;
+}
+
+.showthisToTheLeft {
+    right:0%;
 }
 
 .showthat2 {

@@ -173,15 +173,21 @@ function View() {
 
 
     this.adjustTooltipPosition = function(tooltipDiv) {
-        let parent = tooltipDiv.parentNode;
-        let y = parent.getBoundingClientRect().y;
-        let windowHeight = window.innerHeight;
-        let windowScrollY = window.scrollY;
-        let border = (windowHeight / 2) + windowScrollY;
-        if (y > border) {
-            tooltipDiv.classList.add("showthisOver");
+        const parent = tooltipDiv.parentNode;
+        const boundingRect = parent.getBoundingClientRect();
+
+        const borderY = (window.innerHeight / 2) + window.scrollY;
+        if (boundingRect.y > borderY) {
+            tooltipDiv.classList.add("showthisToTheTop");
         } else {
-            tooltipDiv.classList.remove("showthisOver");
+            tooltipDiv.classList.remove("showthisToTheTop");
+        }
+
+        const borderX = (window.innerWidth / 2) + window.scrollX;
+        if (boundingRect.x > borderX) {
+            tooltipDiv.classList.add("showthisToTheLeft");
+        } else {
+            tooltipDiv.classList.remove("showthisToTheLeft");
         }
     }
 
@@ -548,6 +554,9 @@ function View() {
             if (action.name === "Gamble" && resources.gold < 20 && resources.reputation > -6) unlockStory("failedGambleLowMoney");
             if (action.name === "Gather Team") unlockStory("failedGatherTeam");
             if (action.name === "Craft Armor") unlockStory("failedCraftArmor");
+            if (action.name === "Imbue Body") unlockStory("failedImbueBody");
+            if (action.name === "Accept Donations") unlockStory("failedReceivedDonations");
+            if (action.name === "Raise Zombie") unlockStory("failedRaiseZombie")
         } else if (action.loopsLeft === 0) {
             div.style.width = "100%";
             div.style.backgroundColor = "#6d6d6d";
