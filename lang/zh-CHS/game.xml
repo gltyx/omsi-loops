@@ -370,10 +370,10 @@
             <meta>
                 <title>挑战</title>
             </meta>
-            <standard_game>The original experience, as the game was meant to be played.</standard_game>
-            <mana_drought>新手村的法力商人只出售 5k 法力, 并且价格翻倍. 没有其他法力商人.</mana_drought>
-            <noodle_arms>你没有个人战斗力. 所有战斗力都得依靠队友. 个人战斗力等于你队友和僵尸中更高的那个的一半.</noodle_arms>
-            <mana_burn>你有能跑一整天的法力, 但一旦法力耗尽, 你就会立即停止. 你能走多远?</mana_burn>
+            <standard_game>原版体验，按照游戏设计初衷进行游戏。</standard_game>
+            <mana_drought>新手村的法力商人只出售 5k 法力，并且价格翻倍。没有其他法力商人。</mana_drought>
+            <noodle_arms>你没有个人战斗力。所有战斗力都得依靠队友。个人战斗力等于你队友和僵尸中更高的那个的一半。</noodle_arms>
+            <mana_burn>你有能跑一整天的法力，但一旦法力耗尽，你就会立即停止。你能走多远？</mana_burn>
         </challenges>
         <totals>
             <meta>
@@ -409,7 +409,7 @@
         <resource>
             <title>金块:</title>
             <id>gold</id>
-            <desc>Coins to buy mana crystals and other items with.</desc>
+            <desc>用于购买法力水晶和其他物品的货币。</desc>
         </resource>
         <resource initially_hidden="true">
             <title>声望:</title>
@@ -449,7 +449,7 @@
         <resource initially_hidden="true">
             <title>古董:</title>
             <id>artifacts</id>
-            <desc>Various old rings, bracelets, amulets, and pendants. They look like they're worth a pretty penny.</desc>
+            <desc>各种古老的戒指、手镯、护身符和吊坠。它们看起来价值不菲。</desc>
         </resource>
         <resource initially_hidden="true">
             <title>支持度:</title>
@@ -469,7 +469,7 @@
         <resource initially_hidden="true">
             <title>电缆塔:</title>
             <id>pylons</id>
-            <desc>Lingering fragments from the destroyed pylon.</desc>
+            <desc>被摧毁的电缆塔留下的残留碎片。</desc>
         </resource>
         <resource initially_hidden="true">
             <title>僵尸:</title>
@@ -484,7 +484,7 @@
         <resource initially_hidden="true">
             <title>完成的地图:</title>
             <id>completedMap</id>
-            <desc>You've mapped out some part of the world. The Explorer's guild would happily buy this knowledge off of you.</desc>
+            <desc>你已经绘制了世界的一部分。探险家公会很乐意从你这里购买这些知识。</desc>
         </resource>
         <resource initially_hidden="true">
             <title><![CDATA[<img src="img/heart.svg" class="smallIcon">]]></title>
@@ -530,7 +530,7 @@
         <resource initially_hidden="true" no_count="true">
             <title><![CDATA[<img src="img/temporalStone.svg" class="smallIcon">]]></title>
             <id>stone</id>
-            <desc>A strange rock that seems unaffected by the time loops.</desc>
+            <desc>一种奇怪的岩石，似乎不受时间循环的影响。</desc>
         </resource>
     </tracked_resources>
     <time_controls>
@@ -667,20 +667,20 @@
             <bonus_xp>奖励经验</bonus_xp>
             <mana_cost_reduction>法力消耗减少</mana_cost_reduction>
             <explanation><![CDATA[
-          Each stat level reduces the relevant part of an action's mana cost by a percentage.<br>
-          天赋经验获取是能力经验的 1% , 并且循环不会重置它.<br>
-          天赋可以给予能力经验 (1+(天赋等级)^0.4/3) 倍率加成.<br>
-          一个行动能获得的经验是 (原始法力 / 当前法力) * (天赋加成) 每刻度.<br>
-          Total Mult is the product of your talent and soulstone bonuses.<br><br>
-          举例：交朋友消耗800法力且属性比例为 <div class="bold">Int</div> 10% <div class="bold">Cha</div> 80% <div class="bold">Soul</div> 10%.<br>
-          意思是其中80法力是 <div class="bold">Int</div>, 另外 80 是 <div class="bold">Soul</div>, 然后剩余的 640 是 <div class="bold">Cha</div>.<br>
-          如果你的 <div class="bold">Cha</div> 在行动开始时等级为 20 , 加成就是 x1.2 也就是实际法力消耗为 640 / 1.2 = 533.33<br>
-          再加上 <div class="bold">Soul</div> 和 <div class="bold">Int</div> 的 160 法力消耗, 总行动消耗 (向下取整) 应该是 694, 也就是 ~87% 的总消耗.<br>
-          行动将提供 (800/694)*(1+(天赋)^0.4/3) 经验每法力总计 694 法力.]]></explanation>
+            每个属性等级减少相关行动法力消耗的百分比。<br>
+            天赋经验获取是能力经验的 1%，并且循环不会重置它。<br>
+            天赋可以给予能力经验 (1+(天赋等级)^0.4/3) 倍率加成。<br>
+            一个行动能获得的经验是 (原始法力 / 当前法力) * (天赋加成) 每刻度。<br>
+            总倍率是你的天赋和灵魂石加成的乘积。<br><br>
+            举例：交朋友消耗800法力且属性比例为 <div class="bold">Int</div> 10% <div class="bold">Cha</div> 80% <div class="bold">Soul</div> 10%。<br>
+            意思是其中80法力是 <div class="bold">Int</div>，另外 80 是 <div class="bold">Soul</div>，然后剩余的 640 是 <div class="bold">Cha</div>。<br>
+            如果你的 <div class="bold">Cha</div> 在行动开始时等级为 20，加成就是 x1.2 也就是实际法力消耗为 640 / 1.2 = 533.33<br>
+            再加上 <div class="bold">Soul</div> 和 <div class="bold">Int</div> 的 160 法力消耗，总行动消耗 (向下取整) 应该是 694，也就是 ~87% 的总消耗。<br>
+            行动将提供 (800/694)*(1+(天赋)^0.4/3) 经验每法力总计 694 法力。]]></explanation>
             <graph_legend><![CDATA[
-          点击传说以显示/隐藏它们.<br>
-          在刚开始, 等级和天赋对游戏的影响很小.<br>
-          悬停在能力上获取更多信息.]]></graph_legend>
+            点击传说以显示/隐藏它们。<br>
+            在刚开始，等级和天赋对游戏的影响很小。<br>
+            悬停在能力上获取更多信息。]]></graph_legend>
         </tooltip>
         <view>
             <regular>常规视图</regular>
@@ -709,11 +709,11 @@
             <label>实用魔法</label>
             <desc>魔法手, 变戏法, 侦测魔法, 以及一些其他实用的小魔法.</desc>
             <desc2><![CDATA[踢罐子和野生法力的法力消耗乘以 初始消耗 / (1 + 等级 / 100) (向上取整).<br>
-      The following actions get 1% more gold per level in their level range (rounded down).<br>	
-      1-200 Pick Locks<br>
-      101-300 Short Quests<br>
-      201-400 Long Quests<br>
-      当前使成本乘以 <div id='skillBonusPractical'></div>x.]]></desc2>
+            以下行动在其等级范围内每级获得1%更多金币（向下取整）。<br>
+            1-200 开锁<br>
+            101-300 短任务<br>
+            201-400 长任务<br>
+            当前使成本乘以 <div id='skillBonusPractical'></div>x.]]></desc2>
         </practical>
         <alchemy>
             <label>炼金术</label>
@@ -747,23 +747,23 @@
         <spatiomancy>
             <label>空间魔法</label>
             <desc>谁能想到空间魔法竟然这么有用!</desc>
-            <desc2><![CDATA[法力喷泉和法力井消耗乘以 初始 / (1 + 等级 / 100).<br>
-            Houses to build increased by 1% per level from 1 - 500.<br>
-            The following actions are increased by 0.5% per level in their level range.<br>
-            101-300 Locked houses<br>
-            201-400 Short quests to finish<br>
-            301-500 Long quests to finish<br>
-            401-600 Animals in the forest<br>
-            501-700 Herbs to gather<br>
-            601-800 Possible suckers<br>
-            701-900 Soulstones to mine<br>
-            801-1000 Artifacts to take<br>
-            901-1100 People to ask for donations<br>
-            1001-1200 Buildings to check for pylons<br>
-            1101-1300 Pockets to pick<br>
-            1201-1400 Warehouses to rob<br>
-            1301-1500 Insurance companies to defraud<br>
-            Currently multiplying costs by <div id="skillBonusSpatiomancy">0.971</div>x.]]></desc2>
+            <desc2><![CDATA[法力喷泉和法力井的消耗乘以 初始 / (1 + 等级 / 100).<br>
+            可建造的房屋数量每级增加1%，从1级到500级。<br>
+            以下行动在其等级范围内每级增加0.5%。<br>
+            101-300 锁定的房屋<br>
+            201-400 短任务完成<br>
+            301-500 长任务完成<br>
+            401-600 森林中的动物<br>
+            501-700 采集的草药<br>
+            601-800 可能的傻瓜<br>
+            701-900 开采的灵魂石<br>
+            801-1000 拿取的文物<br>
+            901-1100 请求捐赠的人<br>
+            1001-1200 检查柱子的建筑<br>
+            1101-1300 扒窃的口袋<br>
+            1201-1400 抢劫的仓库<br>
+            1301-1500 欺诈的保险公司<br>
+            当前成本乘以 <div id="skillBonusSpatiomancy">0.971</div>x.]]></desc2>
         </spatiomancy>
 		<mercantilism>
 			<label>重商主义</label>
@@ -799,21 +799,21 @@
         </gluttony>
         <thievery>
             <label>偷窃</label>
-            <desc>Allows you to redistribute wealth. Other people's wealth.</desc>
-            <desc2><![CDATA[提高开锁, 赌博, 以及盗贼工会的金块获取 (1 + 等级 / 60) ^ 0.25.<br>
-            当前给予 <div id='skillBonusThievery'></div>x 金块倍率.]]></desc2>
+            <desc>允许你重新分配财富。不过是其他人的财富。</desc>
+            <desc2><![CDATA[提高开锁、赌博以及盗贼工会的金块获取 (1 + 等级 / 60) ^ 0.25。<br>
+            当前给予 <div id='skillBonusThievery'></div>x 金块倍率。]]></desc2>
         </thievery>
         <leadership>
             <label>领导力</label>
             <desc>你准备好开始建立邪教了!</desc>
-            <desc2><![CDATA[Increases the number of followers you can recruit by 1 for every 100 levels. Increases your followers' contributions to team combat by (1 + level / 60) ^ 0.25.<br>
-            当前给予 <div id='skillBonusLeadership'></div>x 队友属性.]]></desc2>
+            <desc2><![CDATA[每100级增加一个可招募的追随者数量。增加你的追随者在团队战斗中的贡献，增加量为 (1 + 等级 / 60) ^ 0.25。<br>
+            当前给予 <div id='skillBonusLeadership'></div>x 队友属性。]]></desc2>
         </leadership>
         <assassin>
             <label>刺杀</label>
-            <desc>Nothing is true. Everything is permitted.</desc>
-            <desc2><![CDATA[Increases progress of assassination actions, reduces the reputation penalty of assassination, and reduces the difficulty scaling of trials by original / (1 + level / 2000).<br>
-            当前试炼难度乘以 <div id='skillBonusAssassin'></div>x.]]></desc2>
+            <desc>万物皆虚，万事皆允。</desc>
+            <desc2><![CDATA[增加刺杀行动的进度，减少刺杀的声望惩罚，并减少试炼难度的缩放，减少量为 原始 / (1 + 等级 / 2000)。<br>
+            当前试炼难度乘以 <div id='skillBonusAssassin'></div>x。]]></desc2>
         </assassin>
         <tooltip>
             <level>等级:</level>
@@ -888,7 +888,7 @@
         </town2>
         <town3>
             <name>奥林匹斯山</name>
-            <desc><![CDATA[You could have taken that path to the other town, but no! You just <i>had</i> to go to Mt. Olympus, didn't you. But anyways, while you're here, thanks to being neither a canine nor old, you can learn a few new tricks. And kill some innocent trolls while you're at it.]]></desc>
+            <desc><![CDATA[你本可以走那条路去另一个城镇，但不行！你就是要去奥林匹斯山，对吧。但无论如何，既然你在这里，由于你既不是狗也不是老人，你可以学一些新技巧。同时，你还可以顺便杀一些无辜的巨魔。]]></desc>
         </town3>
         <town4>
             <name>瓦尔哈拉</name>
@@ -997,85 +997,85 @@
             当前每次行动给予 <div class='surveySkill'></div> 经验.
             ]]></tooltip>
             <!--Note: figure out how/where to show these stories.-->
-            <story_1><![CDATA[<b>20% World Survey:</b>⮀ You decide it is time to discover the world, the journey is long but so worth it.]]></story_1>
-            <story_2><![CDATA[<b>40% World Survey:</b>⮀ Crazy how discovering the world all over again is shedding a new light on the world! New things you have never seen before turned out to be just around the corner.]]></story_2>
-            <story_3><![CDATA[<b>60% World Survey:</b>⮀ Nobody is stopping you from exploring more and more, it feels nice. And the views are spectacular to boot!]]></story_3>
-            <story_4><![CDATA[<b>80% World Survey:</b>⮀ You are almost done with your world trip and you have enjoyed every second of it. You wish the explorer's guild would have found more locations to visit, but even the world has its boundaries.]]></story_4>
-            <story_5><![CDATA[<b>100% World Survey:</b>⮀ You have discovered the whole world once more. Knowing there are no more new horizons to explore makes you a little sad, but the satisfaction from the achievement is stronger!]]></story_5>
+            <story_1><![CDATA[<b>20% 世界勘测：</b>⮀你决定是时候去发现这个世界了，旅程虽然漫长但非常值得。]]></story_1>
+            <story_2><![CDATA[<b>40% 世界勘测：</b>⮀重新发现世界的方式真是疯狂，它为世界带来了新的光芒！你从未见过的新事物原来就在拐角处。]]></story_2>
+            <story_3><![CDATA[<b>60% 世界勘测：</b>⮀没有人阻止你继续探索，这种感觉很好。而且景色也非常壮观！]]></story_3>
+            <story_4><![CDATA[<b>80% 世界勘测：</b>⮀你几乎完成了你的世界之旅，你享受了每一秒钟。你希望探险家公会能找到更多可以访问的地方，但即使是世界也有它的边界。]]></story_4>
+            <story_5><![CDATA[<b>100% 世界勘测：</b>⮀你再次发现了整个世界。知道没有更多的新地平线可以探索让你有点难过，但成就感更强烈！]]></story_5>
         </survey>
         <assassin>
             <label>刺杀</label>
             <label_done>已刺杀</label_done>
             <tooltip><![CDATA[
-            Discreetly kill your mark in this town. The more well-known you are, for either good or evil, the harder pulling this off will be...<br>
+            在这个城镇中悄悄地杀死你的目标。你越出名，无论是好是坏，完成这件事就越困难...<br>
             每点法力给予 (开方(实用魔法) + 盗窃 + 刺杀) * 主能力/1000 * 开方(完成次数/100) / 绝对值(声望) / 心脏^2 进度点.<br>
             奖励一个心脏.
             ]]></tooltip>
         </assassin>
         <assassinz0>
-		    <story_1><![CDATA[<b>Target Assassinated:</b>⮀ His name was Ethan, you met him on your fifteenth loop. Always seemed to be getting into some sort of trouble. You ambush him as he strolls down an alley and carve out his heart before he knows what happened. He'll be fine next loop, you tell yourself.]]></story_1>
+            <story_1><![CDATA[<b>目标刺杀：</b>⮀他的名字是伊桑，你在第十五个循环中遇到他。他总是似乎陷入某种麻烦。你在他漫步穿过小巷时伏击他，在他意识到发生了什么之前挖出他的心脏。他下次循环会没事的，你告诉自己。]]></story_1>
         </assassinz0>
         <assassinz1>
-            <story_1><![CDATA[<b>Target Assassinated:</b>⮀ A big man dressed in muddy leathers, he's crouching in the bushes with his bow, just as he usually is. They told you his name is Gustav, but you had to take their word for it; you've seen him multiple times but have never actually spoken to him, and after this, you never plan to. You watch him take down a bear with a single arrow to its head, but before he can rise to harvest his prey, one of your arrows is in his head and you're making your way over to begin harvesting his heart.]]></story_1>
+            <story_1><![CDATA[<b>目标刺杀：</b>⮀一个穿着泥泞皮革的大个子，他像往常一样蹲在灌木丛中，拿着他的弓。他们告诉你他的名字是古斯塔夫，但你只能相信他们的话；你见过他多次但从未真正和他说过话，而且在这之后，你从未打算这样做。你看着他用一支箭射中一头熊的头部，但在他能够站起来收割猎物之前，你的箭已经射入他的头部，你正走向他开始收割他的心脏。]]></story_1>
         </assassinz1>
         <assassinz2>
-            <story_1><![CDATA[<b>Target Assassinated:</b>⮀ You made your way into the casino, spending some time just playing around until you spotted your target. Aleandro, according to your contact in the Guild. Whether it's a nickname or his given name, a mark is a mark, so you set to work. Throwing your last game, you politely declare that you're out of money and leave the table, just as your mark heads out to the restrooms. You follow behind him and, once you've completed your mission, make sure to lock his stall behind you to try and delay the discovery as you leave with heart in hand.]]></story_1>
+            <story_1><![CDATA[<b>目标刺杀：</b>⮀你进入赌场，花了一些时间只是玩玩，直到你发现你的目标。根据你的公会联系人，他的名字是阿兰德罗。无论是昵称还是他的真名，目标就是目标，所以你开始工作。在输掉最后一场游戏后，你礼貌地宣布你没钱了并离开桌子，就在你的目标去洗手间的时候。你跟在他后面，一旦你完成了任务，确保锁上他的隔间以延迟发现，然后你带着心脏离开。]]></story_1>
         </assassinz2>
         <assassinz3>
-            <story_1><![CDATA[<b>Target Assassinated:</b>⮀ The name for your next mark is... just some kind of unintelligible jumble of throaty sounds. The hard part is to figure out which of the many trolls that make the mountain their home, but you get lucky eventually. Better yet, your mark is missing an arm, making it stand out in the crowd. Planning the kill is smooth sailing from there on out, and you manage to strike your mark in the neck while it's eating, then gut it for its heart.]]></story_1>
+            <story_1><![CDATA[<b>目标刺杀：</b>⮀你的下一个目标的名字是...某种难以理解的喉音混杂。要找出众多居住在山上的巨魔中的哪一个很难，但你最终幸运地找到了。更幸运的是，你的目标少了一只手臂，这让它在人群中脱颖而出。从那时起，计划刺杀变得顺风顺水，你设法在它吃饭时从脖子处刺中它，然后剖开它取出心脏。]]></story_1>
         </assassinz3>
         <assassinz4>
-            <story_1><![CDATA[<b>Target Assassinated:</b>⮀ This mark is different in that you know her well. For a self-declared Goddess of hearth and home, Hestia sure is tardy when it comes to paying her taxes. The plan goes smoothly as well; build a house you know she'll like with a little extra sound insulation and a faulty lock on one of the windows, slip in under cover of night and slit her throat before she can wake up. Having the blood of a Goddess on your hands makes you feel dirty in a way that your previous marks didn't, though.]]></story_1>
+            <story_1><![CDATA[<b>目标刺杀：</b>⮀这个目标不同之处在于你很了解她。作为一个自称家庭和炉灶的女神，赫斯提亚在纳税方面确实迟到了。计划进行得很顺利；建造一个你知道她会喜欢的房子，有一点额外的隔音效果和一扇窗户上的故障锁，在夜幕的掩护下滑入并割断她的喉咙，在她醒来之前。手上沾有女神的鲜血让你感到一种以前的目标没有的肮脏感。]]></story_1>
         </assassinz4>
         <assassinz5>
-            <story_1><![CDATA[<b>Target Assassinated:</b>⮀ You have to hurry to get the kill on your mark here, since everyone still around seems to be on the verge of death anyway. Subtlety goes straight out of the window as you walk over to your mark with knife drawn, while they look at you with a hopeful expression. You could even swear you heard a "thank you" on their last, gurgling breath.]]></story_1>
+            <story_1><![CDATA[<b>目标刺杀：</b>⮀你不得不匆忙完成这里的刺杀，因为周围的每个人都似乎濒临死亡。当你拿着刀走向你的目标时，隐秘性直接被抛到窗外，而他们看着你时带着希望的表情。你甚至可以发誓你在他们最后的咕噜声中听到了“谢谢你”。]]></story_1>
         </assassinz5>
         <assassinz6>
-            <story_1><![CDATA[<b>Target Assassinated:</b>⮀ You swear this one would have been a sick joke from the Guild, if you weren't even more convinced that killing your sense of humour is part of the induction process. Having to track down some half-wild survivor and gut them before the jungle does it first is a pain, and it takes you far more time than you like to even find your mark in the first place. Thankfully, you eventually spot them, running away from the Jungle's actual inhabitants, and it doesn't take more than a few words to convince him to all but run into your blade.]]></story_1>
+            <story_1><![CDATA[<b>目标刺杀：</b>⮀你发誓如果这不是公会的恶作剧，你更加确信杀死你的幽默感是入会过程的一部分。追踪一些半野生的幸存者并在丛林先下手之前剖开他们是一种痛苦，而且找到你的目标本身就花费了你比你喜欢的时间更多。幸运的是，你最终发现了他们，逃离丛林真正的居民，而你只需要几句话就能说服他几乎跑进你的刀刃。]]></story_1>
         </assassinz6>
         <assassinz7>
-            <story_1><![CDATA[<b>Target Assassinated:</b>⮀ You idly wonder why the Guild even bothered to send you out for a job on their home turf. With the headquarters here, there should be plenty of more trusted guild members chomping at the bit to take care of this one. In any case, you opt to blend into the crowd rather than jump across the roofs. Too many eyes looking up in the search for trouble around here. Getting the mark away from his entourage goes smoothly after you give a street urchin a bribe to cause a distraction, giving you plenty of time to drag the rich fool into an alleyway and cut him open for his heart.]]></story_1>
+            <story_1><![CDATA[<b>目标刺杀：</b>⮀你闲着没事想为什么公会甚至让你来他们的地盘执行任务。既然总部在这里，应该有很多更受信任的公会成员急于处理这个任务。无论如何，你选择融入人群而不是跳过屋顶。这里太多眼睛在寻找麻烦。在给一个街头顽童一笔贿赂制造干扰后，将目标从他的随从中带走进行得很顺利，给你足够的时间把他拖进一个巷子里并剖开他取出心脏。]]></story_1>
         </assassinz7>
         <!--ruins-->
         <ruinsZ1>
             <label>遗迹</label>
             <label_done>翻找</label_done>
             <tooltip><![CDATA[
-            As you explore, you find ruins scattered among the trees. You better explore them, who knows what useful secrets they hide.
+            当你探索时，你发现树林中散布着一些遗迹。你最好探索它们，谁知道它们隐藏着什么有用的秘密。
             ]]></tooltip>
-            <story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins in the Forest and notice some weird looking rocks, wondering idly what they do.]]></story_1>
-            <story_2><![CDATA[<b>50% delved:</b>⮀ After investigating these weird looking rocks you notice they are cubical and are heavy, looks like they are dusty from the time they have been sitting here.]]></story_2>
-            <story_3><![CDATA[<b>100% delved:</b>⮀ You have discovered everything in these ruins, and notice that there are so many cubical stones lying everywhere, as if a massive battle happend.]]></story_3>
+            <story_1><![CDATA[<b>10% 探索:</b>⮀ 你决定探索森林中的遗迹，并注意到一些看起来奇怪的石头，好奇它们有什么用途。]]></story_1>
+            <story_2><![CDATA[<b>50% 探索:</b>⮀ 在调查这些奇怪的石头后，你注意到它们是立方形的且很重，看起来因为长时间放置在这里而积满了灰尘。]]></story_2>
+            <story_3><![CDATA[<b>100% 探索:</b>⮀ 你已经发现了这些遗迹中的所有东西，并注意到到处都是立方形的石头，仿佛发生了一场大规模的战斗。]]></story_3>
         </ruinsZ1>
         <ruinsZ3>
             <label>遗迹</label>
             <label_done>翻找</label_done>
             <tooltip><![CDATA[
-            As you explore, you find ruins scattered around the Mountain. You better explore them, who knows what useful secrets they hide.
+            当你探索时，你发现山脉周围散布着一些遗迹。你最好探索它们，谁知道它们隐藏着什么有用的秘密。
             ]]></tooltip>
-            <story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins around Mt. Olympus and notice the same cubical rocks as you found in the forest. You wonder what they were made for.]]></story_1>
-            <story_2><![CDATA[<b>50% delved:</b>⮀ There is a stone with some writing, with your high intelligence you might be able to read this strange language.]]></story_2>
-            <story_3><![CDATA[<b>100% delved:</b>⮀ After looking around the ruins for some time, you find something curious: a rusted weapon, resembling that of Valhalla's Valkyries. You wonder what really happened here.]]></story_3>
+            <story_1><![CDATA[<b>10% 探索:</b>⮀ 你决定探索奥林匹斯山周围的遗迹，并注意到与你在森林中发现的相同的立方形石头。你好奇它们是用来做什么的。]]></story_1>
+            <story_2><![CDATA[<b>50% 探索:</b>⮀ 有一块石头上有一些文字，凭借你的高智商，你可能能够读懂这种奇怪的语言。]]></story_2>
+            <story_3><![CDATA[<b>100% 探索:</b>⮀ 在遗迹中探索了一段时间后，你发现了一些有趣的东西：一把生锈的武器，类似于瓦尔哈拉女武神的武器。你好奇这里究竟发生了什么。]]></story_3>
         </ruinsZ3>
         <ruinsZ5>
             <label>遗迹</label>
             <label_done>翻找</label_done>
             <tooltip><![CDATA[
-            As you explore, you find ruins scattered around the shadowy village. You better explore them, who knows what useful secrets they hide.
+            当你探索时，你发现阴影村庄周围散布着一些遗迹。你最好探索它们，谁知道它们隐藏着什么有用的秘密。
             ]]></tooltip>
-            <story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins of Startington and notice the same dusty cubical rocks as you found in the other ruins. You wonder what they do.]]></story_1>
-            <story_2><![CDATA[<b>50% delved:</b>⮀ After deciphering the text on this stone block, You can see some writing on them. Sadly, much of the writing is too eroded to make out.]]></story_2>
-            <story_3><![CDATA[<b>100% delved:</b>⮀ The text explains that the Valkyries started a war that lasted for a month, but after only a month of fighting they suddenly declared peace. Who did they fight against though?]]></story_3>
+            <story_1><![CDATA[<b>10% 探索:</b>⮀ 你决定探索斯塔廷顿的遗迹，并注意到与你在其他遗迹中发现的相同的积满灰尘的立方形石头。你好奇它们有什么用途。]]></story_1>
+            <story_2><![CDATA[<b>50% 探索:</b>⮀ 在破译这块石块上的文字后，你看到上面有一些文字。遗憾的是，大部分文字因风化太严重而无法辨认。]]></story_2>
+            <story_3><![CDATA[<b>100% 探索:</b>⮀ 文字解释说女武神们发起了一场持续一个月的战争，但在仅仅一个月的战斗后，她们突然宣布和平。她们究竟是与谁作战呢？]]></story_3>
         </ruinsZ5>
         <ruinsZ6>
             <label>遗迹</label>
             <label_done>翻找</label_done>
             <tooltip><![CDATA[
-            As you explore, you find ruins scattered around the dense jungle. You better explore them, who knows what useful secrets they hide.
+            当你探索时，你发现茂密丛林周围散布着一些遗迹。你最好探索它们，谁知道它们隐藏着什么有用的秘密。
             ]]></tooltip>
-            <story_1><![CDATA[<b>10% delved:</b>⮀ You decide to explore the ruins along the Jungle Path and notice yet again more of the same dusty and heavy cubical rocks. The mystery of the rocks endures...]]></story_1>
-            <story_2><![CDATA[<b>50% delved:</b>⮀ During your ruin exploration, you find a weapon. Ancient, heavy and ornate. It takes some thinking, but you eventually recall a legend of a God weilding this particular weapon into battle.]]></story_2>
-            <story_3><![CDATA[<b>100% delved:</b>⮀ After much delving, you find a different God's weapon. This one was buried under a small pile of rubble like a grave. The blade has an inscription declaring the end of a war. The same war the Valkyries' writing mentioned? Was there a war between the Gods and the Valkyries?]]></story_3>
+            <story_1><![CDATA[<b>10% 探索:</b>⮀ 你决定探索丛林小径旁的遗迹，并再次注意到更多相同的积满灰尘且沉重的立方形石头。这些石头的谜团依然存在...]]></story_1>
+            <story_2><![CDATA[<b>50% 探索:</b>⮀ 在你的遗迹探索中，你发现了一件武器。古老、沉重且装饰华丽。经过一番思考，你最终回忆起一个关于一位神使用这件特定武器投入战斗的传说。]]></story_2>
+            <story_3><![CDATA[<b>100% 探索:</b>⮀ 经过大量的探索，你发现了一件不同神的武器。这件武器被埋在一小堆碎石下，像一座坟墓。刀刃上刻有宣告战争结束的铭文。这与女武神文字中提到的战争是同一场吗？神与女武神之间是否发生过战争？]]></story_3>
         </ruinsZ6>
         <haulZ1>
             <label>拖动</label>
@@ -1084,13 +1084,13 @@
             <info_text2>时间石头总计</info_text2>
             <info_text3>还需检查的石头</info_text3>
             <tooltip><![CDATA[
-            You find a strange kind of stone that resists change from the loop. When you move them, they remain in the new location the next time you return. Most of the rocks around are just ordinary though. It'll take a while to find the interesting ones.<br>
-            You're sure you can use them for something, but they're too heavy to move more than one at a time.<br>
-            One in every one thousand Stones is Temporal.
+            你发现一种奇怪的石头，它们抵抗循环中的变化。当你移动它们时，它们在下一次返回时仍保持在新的位置。周围的岩石大多只是普通的。需要一段时间才能找到有趣的那些。<br>
+            你确信可以用它们做些什么，但它们太重了，一次只能移动一个。<br>
+            每一千块石头中有一块是时间石头。
             ]]></tooltip>
-            <story_1><![CDATA[<b>First Temporal Stone Found:</b>⮀ After digging through the cubical stones, you notice a swirl of light blue light glowing on the sides of the rock. While the light makes them easier to hold on to, they still weigh a ton...]]></story_1>
-            <story_2><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ Carrying a chunk of rock nearly all the way from the very start of the loop to the Valley of Olympus is backbreaking work, but you're managing! Just keep putting one foot in front of the other.]]></story_2>
-            <story_3><![CDATA[<b>Moved 250 Temporal Stones:</b>⮀ You wipe the sweat off your brow as the last Temporal stone from the Forest settles down in the Valley of Olympus. ...Imposing as the pile of rocks is, it won't be enough yet.]]></story_3>
+            <story_1><![CDATA[<b>首次发现时间石头：</b>⮀在挖掘立方体石头时，你注意到岩石侧面发出淡蓝色的光芒。虽然光线使它们更容易抓握，但它们仍然重得惊人...]]></story_1>
+            <story_2><![CDATA[<b>移动了100块时间石头：</b>⮀从循环的起点几乎一路搬运岩石到奥林匹斯山谷是极其辛苦的工作，但你正在努力！只需一步一步来。]]></story_2>
+            <story_3><![CDATA[<b>移动了250块时间石头：</b>⮀你擦去额头上的汗水，森林中的最后一块时间石头在奥林匹斯山谷安顿下来。...尽管岩石堆看起来很壮观，但还不够。]]></story_3>
         </haulZ1>
         <haulZ3>
             <label>拖动</label>
@@ -1099,13 +1099,13 @@
             <info_text2>时间石头总计</info_text2>
             <info_text3>还需检查的石头</info_text3>
             <tooltip><![CDATA[
-            Among the ruins on Mount Olympus, you find several large stones that appear mundane at first, but which seem unaffected by the time loops you're stuck in. Not many, and finding the ones with this trait will take some serious work.<br>
-            You're sure you can use them for something, but they're too heavy to move more than one at a time.<br>
-            One in every one thousand Stones is Temporal.
+            在奥林匹斯山的废墟中，你发现了几块看似平凡的大石头，但它们似乎不受你所困的时间循环影响。不多，找到具有这种特性的石头需要一些认真的工作。<br>
+            你确信可以用它们做些什么，但它们太重了，一次只能移动一个。<br>
+            每一千块石头中有一块是时间石头。
             ]]></tooltip>
-            <story_1><![CDATA[<b>First Temporal Stone Found:</b>⮀ Digging through the large stone cubes, your hand brushes over a spiral glyph. As the previously invisible design begins to glow a cool blue, you find that you can hold on to the rock more easily! It still weighs a ton, though.]]></story_1>
-            <story_2><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ You're not even halfway done and the pace is horrendously slow, but since you're certain you'd be crushed to jelly if you even tried to carry more than one, you just keep at it. One stone cube at a time.]]></story_2>
-    		<story_3><![CDATA[<b>Moved 250 Temporal Stones:</b>⮀ You stretch with a satisfied groan as the final chunk of Temporal stone from Mount Olympus settles in the pile at the Valley of Olympus. Maybe you can rebuild the mountain, you have time...]]></story_3>
+            <story_1><![CDATA[<b>首次发现时间石头：</b>⮀在挖掘大石块时，你的手触碰到一个螺旋形符号。当之前看不见的设计开始发出凉爽的蓝光时，你发现你可以更容易地抓住岩石！尽管它仍然重得惊人。]]></story_1>
+            <story_2><![CDATA[<b>移动了100块时间石头：</b>⮀你甚至还没完成一半，进度极其缓慢，但既然你确信如果你试图一次搬运多个会被压成肉酱，你就继续这样做。一次一块石块。]]></story_2>
+            <story_3><![CDATA[<b>移动了250块时间石头：</b>⮀你满意地呻吟着伸展身体，奥林匹斯山的最后一块时间石头在奥林匹斯山谷的石堆中安顿下来。也许你可以重建这座山，你有时间...]]></story_3>
         </haulZ3>
         <haulZ5>
             <label>拖动</label>
@@ -1114,13 +1114,13 @@
             <info_text2>时间石头总计</info_text2>
             <info_text3>还需检查的石头</info_text3>
             <tooltip><![CDATA[
-            While exploring Startington, you find the ruins of a few buildings you're certain do not exist in Beginnersville. Investigating further, you find that some of the stonework of those buildings is unaffected by the loops. Figuring which ones is going to take some doing...<br>
-            You're sure you can use them for something, but they're too heavy to move more than one at a time.<br>
-            One in every one thousand Stones is Temporal.
+            在探索斯塔廷顿时，你发现了几个你确信在初学者村不存在的建筑废墟。进一步调查，你发现这些建筑的一些石工不受循环影响。找出哪些需要一些工作...<br>
+            你确信可以用它们做些什么，但它们太重了，一次只能移动一个。<br>
+            每一千块石头中有一块是时间石头。
             ]]></tooltip>
-            <story_1><![CDATA[<b>First Temporal Stone Found:</b>⮀ Practically the moment you identify one grey cube of rock as different from the surrounding, identical-looking grey cubes of rock, a spiral pattern lights up on its sides, practically glueing itself to your hand! You can still set it down, but it clearly wants to be carried.]]></story_1>
-            <story_2><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ Wiggling the temporal stones out from among the mundane ones is the easy part, dragging them to the Valley of Olympus is the real pain in your back.]]></story_2>
-            <story_3><![CDATA[<b>Moved 250 Temporal Stones:</b>⮀ The final stone, conveniently enough, was near the top of a wall that housed several Temporal stones. The wall has collapsed from having so many bricks removed by the time you're looking for the final stone, so you can just pick it up and make the final delivery to the Valley of Olympus.]]></story_3>
+            <story_1><![CDATA[<b>首次发现时间石头：</b>⮀几乎在你确定一块灰色石块与周围相同的灰色石块不同的一瞬间，一个螺旋图案在其侧面亮起，几乎粘在你的手上！你仍然可以放下它，但它显然想被携带。]]></story_1>
+            <story_2><![CDATA[<b>移动了100块时间石头：</b>⮀从平凡的石头中扭出时间石头是容易的部分，将它们拖到奥林匹斯山谷才是真正让你背部疼痛的部分。]]></story_2>
+            <story_3><![CDATA[<b>移动了250块时间石头：</b>⮀最后一块石头，方便地，位于一个包含几块时间石头的墙的顶部。当你寻找最后一块石头时，墙已经因为移除了这么多砖块而倒塌，所以你可以直接拿起它并将最后的交付送到奥林匹斯山谷。]]></story_3>
         </haulZ5>
         <haulZ6>
             <label>拖动</label>
@@ -1129,21 +1129,21 @@
             <info_text2>时间石头总计</info_text2>
             <info_text3>还需检查的石头</info_text3>
             <tooltip><![CDATA[
-            On one loop, you trip over a loose piece of stone. On the following loop, you notice it's no longer in the spot you tripped over it. Looking around more closely, you find that there are a few stones with this property. Too bad the Jungle is home to a <b>lot</b> of stones...<br>
-            You're sure you can use them for something, but they're too heavy to move more than one at a time.<br>
-            One in every one thousand Stones is Temporal.
+            在一个循环中，你被一块松动的石头绊倒了。在下一个循环中，你注意到它不再是你绊倒它的地方。仔细观察周围，你发现有几块石头具有这种特性。可惜丛林里有很多石头...<br>
+            你确信可以用它们做些什么，但它们太重了，一次只能移动一个。<br>
+            每一千块石头中有一块是时间石头。
             ]]></tooltip>
-            <story_1><![CDATA[<b>First Temporal Stone Found:</b>⮀ Many of the temporal stones are covered in vegetation, and you nearly throw out your back trying to dislodge one. Lift from your legs!]]></story_1>
-            <story_2><![CDATA[<b>Moved 100 Temporal Stones:</b>⮀ Heavy and hidden as they are, the blue swirl that ignites on the rocks makes them a lot easier to track. That, and it helps that they "let" you pick them up.]]></story_2>
-            <story_3><![CDATA[<b>On the final stone-hauling trip from the Jungle to the Valley, you smirk a little at the various ditches and holes from which you pulled stones previously. Thank the stars you're done here.]]></story_3>
+            <story_1><![CDATA[<b>首次发现时间石头：</b>⮀许多时间石头被植被覆盖，你几乎因为试图移除一块而扭伤了背部。用腿发力！]]></story_1>
+            <story_2><![CDATA[<b>移动了100块时间石头：</b>⮀尽管它们又重又隐蔽，但岩石上点燃的蓝色螺旋使它们更容易追踪。而且，它们“让你”捡起它们也很有帮助。]]></story_2>
+            <story_3><![CDATA[<b>在丛林到山谷的最后一次石头搬运之旅中，你对着之前拉出石头留下的各种沟渠和洞穴微微一笑。感谢星星你在这里完成了。]]></story_3>
         </haulZ6>
         <!--town 1-->
         <map>
             <label>购买地图</label>
-            <tooltip><![CDATA[The Explorers' guild has taught you how to use cartographer's kits to map your surroundings. This will help you keep track of things and, with some luck, find secrets you overlooked before.<br>
-            新手村有个商店会售卖空地图, 每张只要 ]]></tooltip>
-            <tooltip2>金块.</tooltip2>
-		    <story_1><![CDATA[<b>Bought a Map:</b>⮀ The map you purchase isn't exactly sparse; the roads are inked in with precision and all the major buildings are labeled. However, there's still a lot of work to do - many of the minor buildings are unlabeled, foliage is marked only as vague scribblings, and you distinctly recall several alleys that are missing on it. And this map is only for one small section of town; charting out the entirety of this place is going to take a lot of time... and a lot of ink. You wait until the attendant is occupied, then grab a set of scribing tools on your way out.]]></story_1>
+            <tooltip><![CDATA[探险者公会教会了你如何使用制图工具来绘制周围环境。这将帮助你记录事物，并有望发现之前忽略的秘密。<br>
+            新手村有一个商店会售卖空地图，每张只要]]></tooltip>
+            <tooltip2>金块。</tooltip2>
+            <story_1><![CDATA[<b>购买了一张地图：</b>⮀你购买的地图并不稀疏；道路用精确的墨水绘制，所有主要建筑都有标记。然而，还有很多工作要做——许多小建筑没有标记，植被只用模糊的涂鸦表示，你清楚地记得有几个小巷没有在地图上标出。而且这张地图只涵盖了城镇的一小部分；绘制整个地方的地图将需要大量的时间和墨水。你等到店员忙碌时，然后顺手拿了一套书写工具离开。]]></story_1>
         </map>
         <wander>
             <label>漫步</label>
@@ -1192,9 +1192,9 @@
             <tooltip><![CDATA[
             这不公平. 是时候了. 我总是需要它.<br>现在你需要花费 10 金块来买一副新眼镜!<br>在本次循环的剩余时间使漫步效果 4x .<br>对所有带有眼镜标记的行动生效<br>你只能进行 1 次购买眼镜行动.<br>解锁于 20% 探索度.
         ]]></tooltip>
-            <story_1><![CDATA[<b>已购买眼镜:</b>⮀ 当你戴上它时整个世界瞬间变得清晰起来, 与之前的世界形成了鲜明的对比. 你甚至有点惊讶于这个变化.]]></story_1>
-            <!-- Stories for Found Glasses won't show up because the action is always disabled, so we put its story here instead -->
-            <story_2><![CDATA[<b>Glasses found:</b>⮀ You grumble a little as you pull your backup glasses from your head and put them on. Got to give it to that merchant, he never so much as blinked in surprise while you were buying yet another pair from him.]]></story_2>
+        <story_1><![CDATA[<b>已购买眼镜:</b>⮀ 当你戴上它时整个世界瞬间变得清晰起来，与之前的世界形成了鲜明的对比。你甚至有点惊讶于这个变化。]]></story_1>
+        <!-- Stories for Found Glasses won't show up because the action is always disabled, so we put its story here instead -->
+        <story_2><![CDATA[<b>找到眼镜:</b>⮀ 你咕哝着从头上取下备用眼镜并戴上。不得不承认那个商人，当你从他那里买另一副眼镜时，他连眼都没眨一下。]]></story_2>
         </buy_glasses>
         <found_glasses>
             <label>找到眼镜</label>
