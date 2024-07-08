@@ -548,115 +548,55 @@
         <talents_button>天赋</talents_button>
         <story_title>故事</story_title>
         <stories>
-            <story num="0"> <!--Beginning of Game-->
-                You're a simple courier, on a long trip to deliver a high priority package. Just as you entered town,
-                you tripped - breaking your glasses - and the package burst open, spilling a strange liquid on you.
-                Immediately, your meager amount of mana started draining rapidly. Right as your mana completely ran out, 
-                you found yourself back in the moment the liquid was absorbed into your skin, with your tiny reserves
-                filled... yet draining just as before. This happened again and again, the world resetting with you,
-                until you decided you had to figure out a way to prolong how long these 'loops' were. Mana crystals are
-                often stored in pottery around town, perhaps you'll start there ...
+            <story num="0"> <!--游戏开始-->
+                您是一名普通的信使，正在进行一次长途旅行，运送一件高优先级的包裹。刚进入城镇时，您不慎绊倒，摔坏了眼镜，包裹也突然破裂，一种奇怪的液体溅洒在您身上。立刻，您微薄的魔力开始迅速流失。就在您的魔力完全耗尽的那一刻，您发现自己回到了液体被皮肤吸收的那一刻，微小的魔力储备再次充满……但仍然像之前一样流失。这种情况一次又一次地发生，世界随着您重置，直到您决定必须找到一种方法来延长这些“循环”的时间。城镇周围的陶器中经常存放着魔力水晶，也许您应该从那里开始……
             </story>
-            <story num="1"> <!--First Soulstone-->
+            <story num="1"> <!--第一颗灵魂石-->
                 您到达了地牢的终点，一个踏板上，悬浮着一个散发着柔和光芒的球体。那就是地牢核心，不过也只是第一层的核心。您抓住了它，它的精华开始涌入您的身体，它的力量逐渐为您所用。它蕴含的能量虽然不多，但毕竟这个地牢也不大。您一定会再回来的，因为获得这些能量时您同时也获得了外来的知识，知道这些能量将永远与您同在。
             </story>
-            <story num="2"> <!--No Soulstone-->
-                You reach the end of the dungeon again, but for the first time the core isn't glowing. It's always been
-                thought that dungeon cores feed upon the mana spent around them, but you're beginning to think the
-                essence of its previous incarnations drains it somehow. It doesn't always happen, but you'll need to
-                put more mana into the world to reap the core's benefits out of it. You shrug, accepting yet another
-                oddity of the loops.
+            <story num="2"> <!--没有灵魂石-->
+                您再次到达地牢的终点，但这次核心没有发光。人们一直认为地牢核心吸收周围的魔力，但您开始认为前几代的核心精华以某种方式消耗了它。这种情况并不总是发生，但您需要向世界注入更多魔力以获取核心的好处。您耸耸肩，接受了循环中的又一个奇怪现象。
             </story>
-			<story num="3"> <!--Change 3 to Forest-->
-				After spending most of a loop preparing, you're finally ready to leave Beginnersville. In a way, you're
-				going to miss this town, and the thought of leaving almost brings a tear to your eye - until you realize
-				you'll just be back next loop. Grumbling, you set off, hiking into the forest. By the time you're
-				ready to make camp, you're in a good mood again. The forest is beautiful, teeming with life, and looks
-				to have boundless places to explore. Best of all, on your way here, you passed several locations that
-				are absolutely saturated with mana - you think you'll check those out first.
-		</story>
-		    <story num="4"> <!--Merchanton-->
-				It's always nice, after doing the same dull tasks over and over, to make your way through the forest and 
-                get to do something new. Whether you're exploring, hunting, learning something or just sitting by the 
-                waterfall, the forest always makes a great backdrop. However, as pleasant as it's been here, it's time to 
-                move on, at least for now. It would be a long trip, but luckily, after all your exploring, you know some 
-                shortcuts, and before long, Merchanton emerges out of the trees. There's a lot to do here! Maybe one of 
-                the guilds can help you with your looping problem! Or maybe there's a book in the library that can lead you 
-                to a solution! Or maybe... or maybe... that all sounds like a lot of work, and you have been going through a
-			</story>
-			<story num="5"> <!--Change 5 to Mt. Olympus-->
-				a pickaxe and start the climb! Reaching Mt. Olympus takes a lot of climbing but along the way, you discover these mana
-				geysers which look like they can be harvested with a pickaxe. You also discover runes scattered around the mountain, maybe
-				deciphering them might be useful? Finally, about half way up this mountain, you discover a massive cavern with room to take a
-				break climbing and explore it. You met these Friendly Trolls in these caverns. Sadly, they don't sell snowcones...
-			</story>
-			<story num="6"> <!--Good Reputation Story--> <!--Change 6 to Valhalla-->
-				You have finally reached the top of Mt. Olympus! There is a giant door at the very top and a voice rings out: "Mortal! You stand
-                to be JUDGED by the GODS! Step forth and face JUDGEMENT!" After waiting for what feels like hours, the voice rings out once more: 
-                "You may PASS!". You enter the wonderful, otherwoldly home of the gods, Valhalla, where... you spot a tourist guide almost immediately.
-                Unexpected as the guide is, having a God show you around turns out to be well worth the money. Several Gods busy themselves with 
-                house-to-house charity collections, there are museums and shops where you can find wonders beyond the reaches of mere mortals,
-                and you even learn there are opportunities to become a registered citizen, even as a mere mortal! Whether you want to study at the
-                Wizard's college or fight alongside the Valkyries, there are many benefits to living among the Gods.
-			</story>
-			<story num="7"> <!--Bad Reputation Story--> <!--Change 7 to Startington-->
-                A booming voice rings out as the clouds part overhead, and you instinctively cover your ears as every word makes your bones rattle:
-                "YOU HAVE BEEN JUDGED!" The world around you becomes a blur, and it takes a second before you realize you are falling off the side of
-                Mt. Olymups. Even as the wind pulls on your skin, you can tell that you're not just falling in a physical sense as the world around
-                you is drained of every last bit of colour, the last streak of purple light off in the distance by the time you realize you've stopped
-                falling some time ago. Pushing yourself to your feet, you look around and find yourself right in front of a very familiar town-gate.
-                The purple light is coming from a massive pillar reaching up from the center of town, casting the only light for miles around in this,
-                the Shadow Realm. Oh, and the sign on the gates states this place is called "Startington." Evidently, you're not in any familiar territory
-                any more.
-			</story>
-			<story num="8"> <!--Change 8 to Jungle Path-->
-                Shadow realm or not, there are enough things that haven't changed that you still lean on your established routine. Right down
-                to the part where you have to get some supplies to brave the jungle just outside the small town, from a local trader. Too bad
-                this one is quite selectively deaf to your attempts at haggling, but hey. You've gotten good enough at budgeting and scrounging
-                up coins that you could pay him in the end. Turning your eyes to the narrow trail through the dense jungle before you, you set
-                foot among the wild trees, noting the ruins among the tree-trunks. Wonder if this place had always been a jungle...
-			</story>
-			<story num="9"> <!--Made the Looping Potion--> <!--Change 9 to Looping Potion-->
-                Learning the finer points of alchemy, of the subtle rules underpinning the "simple" brewing of potions had been a long, exhausting
-                trial, but since you have nothing but time on your hands, you have become an expert by any standard. As you let a bundle of herbs
-                soak in a mana geyser, you double-check your notes and prepare your equipment. The brew itself is finnicky but finally, you fill
-                a bottle with the fruits of your Great Work. The Loop Potion, the exact same brew that got you into this situation. 
-                ...Reflecting for a moment, you wonder if there was much of a point to all of this. Not like making more of the stuff will get you
-                out of the loops.
-			</story>
-			<story num="10"> <!--Change 10 to Commerceville-->
-                Exploring the jungle ruins took quite a lot of time, and you just barely manage to make your way to the other side before the imposing
-                gate among the trees closes. You mentally take note that you're on a time limit if you want to make it here on future loops, and that
-                the pattern of the "normal" world still holds: On the other side of the jungle lies a small-ish city that proudly identifies itself
-                as "Commerceville, the heart of trade!" according to the statue along the way to the city gates. While just wandering is liable to get
-                you in trouble with some of the townsfolk, there is a helpful tourist guide willing to show you around for a "reasonable" sum. Even if
-                the guide looks a little too eager to lead you down the city's many narrow alleyways, you can't deny that learning about the Thieves guild
-                was worth the risk to get there. Finally, at the end of the tour, you learn that your guide also works for the tax collectors and really
-                can't stay to chat. At least your guide was nice enough to show you to the Bank. There is an imposing hooded figure leaning against a wall
-                of the bank, maybe they can tell you something more...
-			</story>
-			<story num="11"> <!--Change 11 to Valley of Olympus-->
+            <story num="3"> <!--改为森林-->
+                在大部分循环中准备后，您终于准备好离开新手村。在某种程度上，您会想念这个城镇，离开的想法几乎让您流泪——直到您意识到下个循环您还会回来。咕哝着，您出发了，徒步进入森林。当您准备好扎营时，您的心情又好了起来。森林美丽，充满生机，似乎有无尽的地方可以探索。最重要的是，在来这里的路上，您经过了几处魔力极其充沛的地方——您认为您应该先去那里看看。
+            </story>
+            <story num="4"> <!--商人镇-->
+                在反复做着同样乏味的任务后，穿过森林去做一些新的事情总是很愉快的。无论是探索、狩猎、学习还是只是坐在瀑布旁，森林总是一个绝佳的背景。然而，尽管这里很愉快，现在是时候继续前进了，至少目前是这样。这将是一次长途旅行，但幸运的是，经过您的探索，您知道一些捷径，不久，商人镇从树林中显现出来。这里有很多事情要做！也许其中一个公会可以帮助您解决循环问题！或者图书馆里有一本书可以引导您找到解决方案！或者……或者……这听起来像是很多工作，而且您一直在经历……
+            </story>
+            <story num="5"> <!--改为奥林匹斯山-->
+                您拿起镐头开始攀登！到达奥林匹斯山需要大量的攀爬，但沿途您发现了这些魔力喷泉，看起来可以用镐头采集。您还在山上发现了散落的符文，也许破译它们会有用？最后，在这座山的一半高度，您发现了一个巨大的洞穴，有空间可以休息和探索。您在这些洞穴中遇到了友好的巨魔。遗憾的是，他们不卖雪糕……
+            </story>
+            <story num="6"> <!--好名声故事--> <!--改为瓦尔哈拉-->
+                您终于到达了奥林匹斯山的顶峰！在山顶有一扇巨大的门，一个声音响起：“凡人！你将接受众神的审判！上前接受审判！”在等待了仿佛几个小时后，声音再次响起：“你可以通过了！”您进入了众神美妙、超凡的家园，瓦尔哈拉，在那里……您几乎立刻就看到了一个旅游指南。尽管这个指南出乎意料，但有一位神明带您游览确实物有所值。几位神明忙于挨家挨户的慈善募捐，有博物馆和商店，您可以在那里找到凡人无法触及的奇迹，您甚至了解到有机会成为注册公民，即使是凡人！无论您是想在巫师学院学习还是与女武神并肩作战，生活在众神之中有许多好处。
+            </story>
+            <story num="7"> <!--坏名声故事--> <!--改为起点镇-->
+                一个洪亮的声音响起，云层分开，您本能地捂住耳朵，因为每个字都让您的骨头颤抖：“你已被审判！”您周围的世界变得模糊，过了一会儿您才意识到自己正从奥林匹斯山的侧面坠落。即使风在拉扯您的皮肤，您也能感觉到不仅仅是身体上的坠落，周围的世界失去了所有的颜色，最后一抹紫光在远处消失，当您意识到自己已经停止坠落时。您挣扎着站起来，环顾四周，发现自己正站在一个非常熟悉的城镇门前。紫光来自城镇中心的一根巨大柱子，这是阴影领域中唯一的光源。哦，门上的标志显示这个地方叫做“起点镇”。显然，您不再在任何熟悉的领域了。
+            </story>
+            <story num="8"> <!--改为丛林小径-->
+                无论是否在阴影领域，有足够多的事物没有改变，您仍然依赖于您建立的常规。从当地商人那里购买一些物资，准备穿越小镇外的丛林，这是您常规的一部分。遗憾的是，这个商人对于您的讨价还价相当耳聋，但嘿。您已经足够擅长预算和凑齐硬币，最终能够支付他。您将目光转向面前密林中的狭窄小径，踏入野生的树木中，注意到树干间的废墟。想知道这个地方是否一直是个丛林……
+            </story>
+            <story num="9"> <!--制作了循环药水--> <!--改为循环药水-->
+                学习炼金术的精细之处，了解“简单”药水酿造背后的微妙规则，是一个漫长而疲惫的考验，但由于您有的是时间，您已经成为任何标准下的专家。当您让一束草药在魔力喷泉中浸泡时，您再次检查笔记并准备设备。酿造本身很棘手，但最终，您将您伟大工作的成果装满了一瓶。循环药水，正是这种药水让您陷入这种境地。……反思片刻，您想知道这一切是否有意义。不像制作更多的药水会让您摆脱循环。
+            </story>
+			<story num="10"> <!--将10改为Commerceville-->
+                探索丛林废墟花费了相当多的时间，你勉强在树木间的巨大门关闭之前到达了另一边。你心里记下，如果你想在未来循环中到达这里，你必须有时间限制，而且“正常”世界的模式仍然适用：丛林的另一边是一个自称“商业镇，贸易的心脏！”的小城市，根据通往城市大门的路上的雕像。虽然只是闲逛可能会让你与一些镇民发生麻烦，但有一个乐于助人的导游愿意以“合理”的费用带你四处参观。即使导游看起来有点过于急切地想带你穿过城市的许多狭窄小巷，你也不能否认了解盗贼公会是值得冒险的。最后，在游览结束时，你得知你的导游也为税务员工作，真的不能留下来聊天。至少导游很友好，带你去了银行。银行里有一个令人印象深刻的蒙面人物靠在墙上，也许他们能告诉你更多...
+            </story>
+			<story num="11"> <!--改为奥林匹斯谷-->
                 <![CDATA[
-                    You can't help but chuckle as you make your way out of the Bank's "Big Shot" office, keys to the <i>entirety</i> of Commerceville in hand.
-                    Sure, the loan wasn't cheap and you'd probably get into a lot of trouble if you'd stick around for the first payment, but there's no way
-                    your mana reserves will last that long. Looking ahead, you blink at the first blatant difference between this world and the normal one:
-                    There is no Mt. Olympus. Instead, there is a large, wide valley with the ruins of a tower in the middle of it. It takes a bit of Doing,
-                    but you eventually find a stone covered in familiar runic script: "Children of the land! We, the seven guardian deities, challenge you!
-                    Find us, fight us, and claim the throne of the gods!" ...Oh well, time for a bit of deicide. The "throne of the gods" sounds like just the
-                    kind of thing that could break you out of the loops, and they <i>did</i> issue a challenge for anyone to find. Step one will be to reach them.
+                    您忍不住轻笑，手里拿着商业镇“大人物”办公室的钥匙，整个商业镇都在您的掌控之中。当然，贷款不便宜，如果您留下来支付第一笔款项，可能会遇到很多麻烦，但您的魔力储备不可能持续那么久。向前看，您注意到这个世界与正常世界之间的第一个明显差异：这里没有奥林匹斯山。取而代之的是一个宽阔的谷地，中间有一座塔的废墟。经过一番努力，您最终找到了一块覆盖着熟悉符文文字的石头：“大地的孩子们！我们，七位守护神，向你们挑战！找到我们，与我们战斗，夺取神座！”……好吧，是时候进行一些弑神行动了。“神座”听起来正是能打破循环的东西，而且他们确实向任何人发出了挑战。第一步将是找到他们。
                 ]]>
-			</story>
-			<story num="12"> <!--Finally--> <!-- Change 12 to Ending the Loop-->
-				<![CDATA[
-				   您终于成功了！您击败了众神，使时间恢复了正常的流动。您可以随时停止循环了。但您也可以继续循环，只要您想要这么做。循环终有时……感谢您游玩我的放置循环模组！也感谢Stop_Sign制作了及其优秀的原版游戏，还有Omsi制作了Omsi版。您二位给我的启发或许超过了二位的想象罢。最后，希望所有玩家都玩的开心！(比心)<br>
-				   ————作者Lloyd
-				]]>
+            </story>
+            <story num="12"> <!--最终--> <!--改为结束循环-->
+                <![CDATA[
+                    您终于成功了！您击败了众神，使时间恢复了正常的流动。您可以随时停止循环了。但您也可以继续循环，只要您想要这么做。循环终有时……感谢您游玩我的放置循环模组！也感谢Stop_Sign制作了及其优秀的原版游戏，还有Omsi制作了Omsi版。您二位给我的启发或许超过了二位的想象罢。最后，希望所有玩家都玩的开心！(比心)<br>
+                    ————作者Lloyd
+                ]]>
             </story>
         </stories>
         <bonus_seconds>
             <title>奖励时间</title>
             <main_text><![CDATA[
-          While this bonus is on, you get 4 extra seconds per second (5x faster).<br>
+          当此奖励生效时，您每秒获得额外 4 秒（即 5 倍速度）。<br>
           离线或暂停时每秒可以获得 1 点奖励点. (离线奖励最多 1 个月)<br>
           奖励点开关
         ]]></main_text>
