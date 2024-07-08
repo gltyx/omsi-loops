@@ -896,36 +896,36 @@
         </town4>
         <town5>
             <name>初始小镇</name>
-            <desc>A once familiar place, now crawling with shadows and ominous feelings of wasted sick days. There stands a large pillar of gloomy purple light in the center of it all, emanating from a spire surrounded by black clouds. The pillar seems to be the only source of light in town, though it's connected to 10 locations in town with weaker beams. Maybe you should check those spots out.</desc>
+            <desc>一个曾经熟悉的地方，如今充满了阴影和浪费病假日的阴森感觉。在这一切的中心，矗立着一根巨大的阴郁紫色光柱，从被黑云环绕的尖塔中散发出来。这根光柱似乎是镇上唯一的光源，尽管它与镇上的10个地点通过较弱的光束相连。也许你应该去那些地方看看。</desc>
         </town5>
         <town6>
             <name>丛林小路</name>
-            <desc>A twisting jungle that seems determined to swallow you in its depths. All the same, you can hear people somewhere in the near distance and magical herbs growing by the bushel.</desc>
+            <desc>一片扭曲的丛林，似乎决心将你吞噬在其深处。尽管如此，你仍能听到附近某处有人声，以及成簇生长的魔法草药。</desc>
         </town6>
         <town7>
             <name>商业都市</name>
-            <desc>A central hub of commerce in this dark, dour place. Everyone here is looking to make a buck and you don't get the feeling that "honest work" is paying much here.</desc>
+            <desc>这个黑暗、阴郁之地的一个商业中心。这里的每个人都想赚一笔，你感觉“诚实的工作”在这里并不怎么赚钱。</desc>
         </town7>
         <town8>
             <name>奥林匹斯山谷</name>
-            <desc>A mountain-shaped hole in the ground. It is ever so faint, but even here in this dark realm, you can feel the presence of the gods looking down upon you.</desc>
+            <desc>一个地面上的山形洞穴。虽然非常微弱，但即便在这个黑暗的领域，你也能感受到神明俯视着你的存在。</desc>
         </town8>
     </towns>
-    <talents>
-        <!--Talents are not currently implemented.-->
-        <calculated_shattering>
-            <name>精确击碎</name>
-            <desc><![CDATA[
-            Practicing your Shattering technique to get through all these pots as quickly as possible seems surprisingly productive.<br>Reduces the mana cost of <span class="localized" data-lockey="actions>smash_pots>name"></span> by 1 per level.
-        ]]></desc>
-        </calculated_shattering>
-        <no_frill_frames>
-            <name>无边框眼镜</name>
-            <desc><![CDATA[
-            如果你愿意花点时间挑选一下眼镜, 你可以找到更便宜的镜框. 考虑到你可能不会用多久, 所以不会花费多少时间, 你只是单纯的觉得省点钱更好.<br>每级降低 <span class="localized" data-lockey="actions>buy_glasses>name"></span> 1 的法力消耗.
-        ]]></desc>
-        </no_frill_frames>
-    </talents>
+        <talents>
+            <!--Talents are not currently implemented.-->
+            <calculated_shattering>
+                <name>精确击碎</name>
+                <desc><![CDATA[
+                练习你的击碎技巧，尽可能快地通过这些罐子，这出奇地有效。<br>每级减少 <span class="localized" data-lockey="actions>smash_pots>name"></span> 的法力消耗1点。
+            ]]></desc>
+            </calculated_shattering>
+            <no_frill_frames>
+                <name>无边框眼镜</name>
+                <desc><![CDATA[
+                如果你愿意花点时间挑选眼镜，你可以找到更便宜的镜框。考虑到你可能不会用多久，所以不会花费太多时间，你只是单纯觉得省点钱更好。<br>每级降低 <span class="localized" data-lockey="actions>buy_glasses>name"></span> 1 的法力消耗。
+            ]]></desc>
+            </no_frill_frames>
+        </talents>
     <actions>
         <title>行动选项</title>
         <title_stories>行动故事</title_stories>
