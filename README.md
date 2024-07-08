@@ -1,1 +1,1 @@
-:ok_hand: :ok_hand: :ok_hand: :ok_hand: :ok_hand: :ok_hand: :ok_hand: :ok_hand: :ok_hand: :ok_hand: 
+更新了新部分的中文，但老部分的中文没管，因为那部分我已经玩过了x
